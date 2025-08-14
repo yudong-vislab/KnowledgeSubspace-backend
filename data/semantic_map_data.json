@@ -1,0 +1,1152 @@
+{
+  "subspaces": [
+    {
+      "panelIdx": 0,
+      "subspaceName": "Methods",
+      "hexList": [
+        {
+          "q": 0,
+          "r": 0,
+          "modality": "text",
+          "country_id": "c1"
+        },
+        {
+          "q": 1,
+          "r": 0,
+          "modality": "text",
+          "country_id": "c1"
+        },
+        {
+          "q": 2,
+          "r": -1,
+          "modality": "text",
+          "country_id": "c1"
+        },
+        {
+          "q": 1,
+          "r": -1,
+          "modality": "text",
+          "country_id": "c1"
+        },
+        {
+          "q": 0,
+          "r": -1,
+          "modality": "image",
+          "country_id": "c1"
+        },
+        {
+          "q": -1,
+          "r": 0,
+          "modality": "image",
+          "country_id": "c1"
+        },
+        {
+          "q": -1,
+          "r": 1,
+          "modality": "text",
+          "country_id": "c1"
+        },
+        {
+          "q": 0,
+          "r": 1,
+          "modality": "image",
+          "country_id": "c1"
+        },
+        {
+          "q": 1,
+          "r": 1,
+          "modality": "image",
+          "country_id": "c1"
+        },
+        {
+          "q": 2,
+          "r": 0,
+          "modality": "text",
+          "country_id": "c1"
+        },
+        {
+          "q": 2,
+          "r": 1,
+          "modality": "image",
+          "country_id": "c1"
+        },
+        {
+          "q": 1,
+          "r": 2,
+          "modality": "image",
+          "country_id": "c1"
+        },
+        {
+          "q": 0,
+          "r": 2,
+          "modality": "text",
+          "country_id": "c1"
+        },
+        {
+          "q": -1,
+          "r": 2,
+          "modality": "image",
+          "country_id": "c1"
+        },
+        {
+          "q": -2,
+          "r": 1,
+          "modality": "text",
+          "country_id": "c1"
+        },
+        {
+          "q": -2,
+          "r": 0,
+          "modality": "image",
+          "country_id": "c1"
+        },
+        {
+          "q": -1,
+          "r": -1,
+          "modality": "text",
+          "country_id": "c1"
+        },
+        {
+          "q": 0,
+          "r": -2,
+          "modality": "image",
+          "country_id": "c1"
+        },
+        {
+          "q": 1,
+          "r": -2,
+          "modality": "image",
+          "country_id": "c1"
+        },
+        {
+          "q": 2,
+          "r": -2,
+          "modality": "text",
+          "country_id": "c1"
+        },
+        {
+          "q": 4,
+          "r": 0,
+          "modality": "text",
+          "country_id": "c2"
+        },
+        {
+          "q": 4,
+          "r": -1,
+          "modality": "image",
+          "country_id": "c2"
+        },
+        {
+          "q": 3,
+          "r": 0,
+          "modality": "text",
+          "country_id": "c2"
+        },
+        {
+          "q": 3,
+          "r": 1,
+          "modality": "image",
+          "country_id": "c2"
+        },
+        {
+          "q": 4,
+          "r": 1,
+          "modality": "text",
+          "country_id": "c2"
+        },
+        {
+          "q": 5,
+          "r": 0,
+          "modality": "image",
+          "country_id": "c2"
+        },
+        {
+          "q": 5,
+          "r": -1,
+          "modality": "text",
+          "country_id": "c2"
+        },
+        {
+          "q": 5,
+          "r": 1,
+          "modality": "image",
+          "country_id": "c2"
+        },
+        {
+          "q": 6,
+          "r": 0,
+          "modality": "text",
+          "country_id": "c2"
+        },
+        {
+          "q": 6,
+          "r": -1,
+          "modality": "image",
+          "country_id": "c2"
+        },
+        {
+          "q": 3,
+          "r": -1,
+          "modality": "image",
+          "country_id": "c2"
+        },
+        {
+          "q": 2,
+          "r": -2,
+          "modality": "image",
+          "country_id": "c2"
+        },
+        {
+          "q": 3,
+          "r": -2,
+          "modality": "text",
+          "country_id": "c2"
+        },
+        {
+          "q": 4,
+          "r": -2,
+          "modality": "image",
+          "country_id": "c2"
+        },
+        {
+          "q": 5,
+          "r": -2,
+          "modality": "image",
+          "country_id": "c2"
+        },
+        {
+          "q": 6,
+          "r": -2,
+          "modality": "text",
+          "country_id": "c2"
+        },
+        {
+          "q": 5,
+          "r": 2,
+          "modality": "image",
+          "country_id": "c2"
+        },
+        {
+          "q": 6,
+          "r": 1,
+          "modality": "text",
+          "country_id": "c2"
+        }
+      ],
+      "countries": [
+        {
+          "country_id": "c1",
+          "hexes": [
+            {
+              "q": 0,
+              "r": 0
+            },
+            {
+              "q": 1,
+              "r": 0
+            },
+            {
+              "q": 2,
+              "r": -1
+            },
+            {
+              "q": 1,
+              "r": -1
+            },
+            {
+              "q": 0,
+              "r": -1
+            },
+            {
+              "q": -1,
+              "r": 0
+            },
+            {
+              "q": -1,
+              "r": 1
+            },
+            {
+              "q": 0,
+              "r": 1
+            },
+            {
+              "q": 1,
+              "r": 1
+            },
+            {
+              "q": 2,
+              "r": 0
+            },
+            {
+              "q": 2,
+              "r": 1
+            },
+            {
+              "q": 1,
+              "r": 2
+            },
+            {
+              "q": 0,
+              "r": 2
+            },
+            {
+              "q": -1,
+              "r": 2
+            },
+            {
+              "q": -2,
+              "r": 1
+            },
+            {
+              "q": -2,
+              "r": 0
+            },
+            {
+              "q": -1,
+              "r": -1
+            },
+            {
+              "q": 0,
+              "r": -2
+            },
+            {
+              "q": 1,
+              "r": -2
+            },
+            {
+              "q": 2,
+              "r": -2
+            }
+          ]
+        },
+        {
+          "country_id": "c2",
+          "hexes": [
+            {
+              "q": 4,
+              "r": 0
+            },
+            {
+              "q": 4,
+              "r": -1
+            },
+            {
+              "q": 3,
+              "r": 0
+            },
+            {
+              "q": 3,
+              "r": 1
+            },
+            {
+              "q": 4,
+              "r": 1
+            },
+            {
+              "q": 5,
+              "r": 0
+            },
+            {
+              "q": 5,
+              "r": -1
+            },
+            {
+              "q": 5,
+              "r": 1
+            },
+            {
+              "q": 6,
+              "r": 0
+            },
+            {
+              "q": 6,
+              "r": -1
+            },
+            {
+              "q": 3,
+              "r": -1
+            },
+            {
+              "q": 2,
+              "r": -2
+            },
+            {
+              "q": 3,
+              "r": -2
+            },
+            {
+              "q": 4,
+              "r": -2
+            },
+            {
+              "q": 5,
+              "r": -2
+            },
+            {
+              "q": 6,
+              "r": -2
+            },
+            {
+              "q": 5,
+              "r": 2
+            },
+            {
+              "q": 6,
+              "r": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "panelIdx": 1,
+      "subspaceName": "Results",
+      "hexList": [
+        {
+          "q": 0,
+          "r": 5,
+          "modality": "image",
+          "country_id": "c3"
+        },
+        {
+          "q": 1,
+          "r": 4,
+          "modality": "image",
+          "country_id": "c3"
+        },
+        {
+          "q": 2,
+          "r": 4,
+          "modality": "text",
+          "country_id": "c3"
+        },
+        {
+          "q": 3,
+          "r": 3,
+          "modality": "text",
+          "country_id": "c3"
+        },
+        {
+          "q": 3,
+          "r": 2,
+          "modality": "image",
+          "country_id": "c3"
+        },
+        {
+          "q": 2,
+          "r": 3,
+          "modality": "text",
+          "country_id": "c3"
+        },
+        {
+          "q": 1,
+          "r": 3,
+          "modality": "image",
+          "country_id": "c3"
+        },
+        {
+          "q": 0,
+          "r": 4,
+          "modality": "text",
+          "country_id": "c3"
+        },
+        {
+          "q": 1,
+          "r": 5,
+          "modality": "image",
+          "country_id": "c3"
+        },
+        {
+          "q": 2,
+          "r": 5,
+          "modality": "text",
+          "country_id": "c3"
+        },
+        {
+          "q": 3,
+          "r": 4,
+          "modality": "image",
+          "country_id": "c3"
+        },
+        {
+          "q": 4,
+          "r": 3,
+          "modality": "text",
+          "country_id": "c3"
+        },
+        {
+          "q": 5,
+          "r": 2,
+          "modality": "image",
+          "country_id": "c3"
+        },
+        {
+          "q": 5,
+          "r": 3,
+          "modality": "text",
+          "country_id": "c3"
+        },
+        {
+          "q": 4,
+          "r": 2,
+          "modality": "text",
+          "country_id": "c3"
+        },
+        {
+          "q": 3,
+          "r": 1,
+          "modality": "image",
+          "country_id": "c3"
+        },
+        {
+          "q": 2,
+          "r": 2,
+          "modality": "text",
+          "country_id": "c3"
+        },
+        {
+          "q": 1,
+          "r": 2,
+          "modality": "image",
+          "country_id": "c3"
+        },
+        {
+          "q": 0,
+          "r": 3,
+          "modality": "image",
+          "country_id": "c3"
+        },
+        {
+          "q": -1,
+          "r": 4,
+          "modality": "text",
+          "country_id": "c3"
+        },
+        {
+          "q": 6,
+          "r": 5,
+          "modality": "text",
+          "country_id": "c4"
+        },
+        {
+          "q": 5,
+          "r": 5,
+          "modality": "image",
+          "country_id": "c4"
+        },
+        {
+          "q": 6,
+          "r": 4,
+          "modality": "text",
+          "country_id": "c4"
+        },
+        {
+          "q": 7,
+          "r": 4,
+          "modality": "text",
+          "country_id": "c4"
+        },
+        {
+          "q": 7,
+          "r": 5,
+          "modality": "image",
+          "country_id": "c4"
+        },
+        {
+          "q": 8,
+          "r": 4,
+          "modality": "text",
+          "country_id": "c4"
+        },
+        {
+          "q": 8,
+          "r": 5,
+          "modality": "image",
+          "country_id": "c4"
+        },
+        {
+          "q": 9,
+          "r": 4,
+          "modality": "image",
+          "country_id": "c4"
+        },
+        {
+          "q": 9,
+          "r": 5,
+          "modality": "text",
+          "country_id": "c4"
+        },
+        {
+          "q": 8,
+          "r": 6,
+          "modality": "image",
+          "country_id": "c4"
+        },
+        {
+          "q": 7,
+          "r": 6,
+          "modality": "text",
+          "country_id": "c4"
+        },
+        {
+          "q": 6,
+          "r": 6,
+          "modality": "image",
+          "country_id": "c4"
+        },
+        {
+          "q": 7,
+          "r": 3,
+          "modality": "text",
+          "country_id": "c4"
+        },
+        {
+          "q": 6,
+          "r": 3,
+          "modality": "image",
+          "country_id": "c4"
+        },
+        {
+          "q": 5,
+          "r": 4,
+          "modality": "image",
+          "country_id": "c4"
+        },
+        {
+          "q": 5,
+          "r": 6,
+          "modality": "text",
+          "country_id": "c4"
+        },
+        {
+          "q": 8,
+          "r": 3,
+          "modality": "image",
+          "country_id": "c4"
+        },
+        {
+          "q": 9,
+          "r": 3,
+          "modality": "text",
+          "country_id": "c4"
+        }
+      ],
+      "countries": [
+        {
+          "country_id": "c3",
+          "hexes": [
+            {
+              "q": 0,
+              "r": 5
+            },
+            {
+              "q": 1,
+              "r": 4
+            },
+            {
+              "q": 2,
+              "r": 4
+            },
+            {
+              "q": 3,
+              "r": 3
+            },
+            {
+              "q": 3,
+              "r": 2
+            },
+            {
+              "q": 2,
+              "r": 3
+            },
+            {
+              "q": 1,
+              "r": 3
+            },
+            {
+              "q": 0,
+              "r": 4
+            },
+            {
+              "q": 1,
+              "r": 5
+            },
+            {
+              "q": 2,
+              "r": 5
+            },
+            {
+              "q": 3,
+              "r": 4
+            },
+            {
+              "q": 4,
+              "r": 3
+            },
+            {
+              "q": 5,
+              "r": 2
+            },
+            {
+              "q": 5,
+              "r": 3
+            },
+            {
+              "q": 4,
+              "r": 2
+            },
+            {
+              "q": 3,
+              "r": 1
+            },
+            {
+              "q": 2,
+              "r": 2
+            },
+            {
+              "q": 1,
+              "r": 2
+            },
+            {
+              "q": 0,
+              "r": 3
+            },
+            {
+              "q": -1,
+              "r": 4
+            }
+          ]
+        },
+        {
+          "country_id": "c4",
+          "hexes": [
+            {
+              "q": 6,
+              "r": 5
+            },
+            {
+              "q": 5,
+              "r": 5
+            },
+            {
+              "q": 6,
+              "r": 4
+            },
+            {
+              "q": 7,
+              "r": 4
+            },
+            {
+              "q": 7,
+              "r": 5
+            },
+            {
+              "q": 8,
+              "r": 4
+            },
+            {
+              "q": 8,
+              "r": 5
+            },
+            {
+              "q": 9,
+              "r": 4
+            },
+            {
+              "q": 9,
+              "r": 5
+            },
+            {
+              "q": 8,
+              "r": 6
+            },
+            {
+              "q": 7,
+              "r": 6
+            },
+            {
+              "q": 6,
+              "r": 6
+            },
+            {
+              "q": 7,
+              "r": 3
+            },
+            {
+              "q": 6,
+              "r": 3
+            },
+            {
+              "q": 5,
+              "r": 4
+            },
+            {
+              "q": 5,
+              "r": 6
+            },
+            {
+              "q": 8,
+              "r": 3
+            },
+            {
+              "q": 9,
+              "r": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "subspaceName": "Subspace 3",
+      "hexList": [],
+      "countries": []
+    },
+    {
+      "subspaceName": "Subspace 4",
+      "hexList": [],
+      "countries": []
+    },
+    {
+      "subspaceName": "Subspace 5",
+      "hexList": [],
+      "countries": []
+    },
+    {
+      "subspaceName": "Subspace 6",
+      "hexList": [],
+      "countries": []
+    }
+  ],
+  "links": [
+    {
+      "type": "road",
+      "panelIdx": 0,
+      "countryFrom": "c1",
+      "countryTo": "c1",
+      "path": [
+        {
+          "q": 0,
+          "r": 0
+        },
+        {
+          "q": 1,
+          "r": 0
+        },
+        {
+          "q": 2,
+          "r": -1
+        }
+      ]
+    },
+    {
+      "type": "river",
+      "panelIdx": 0,
+      "countryFrom": "c1",
+      "countryTo": "c1",
+      "path": [
+        {
+          "q": -1,
+          "r": 0
+        },
+        {
+          "q": 0,
+          "r": -1
+        },
+        {
+          "q": 1,
+          "r": -1
+        }
+      ]
+    },
+    {
+      "type": "road",
+      "panelIdx": 0,
+      "countryFrom": "c1",
+      "countryTo": "c1",
+      "path": [
+        {
+          "q": 1,
+          "r": 1
+        },
+        {
+          "q": 2,
+          "r": 1
+        },
+        {
+          "q": 1,
+          "r": 2
+        }
+      ]
+    },
+    {
+      "type": "river",
+      "panelIdx": 0,
+      "countryFrom": "c1",
+      "countryTo": "c1",
+      "path": [
+        {
+          "q": -2,
+          "r": 1
+        },
+        {
+          "q": -2,
+          "r": 0
+        },
+        {
+          "q": -1,
+          "r": -1
+        }
+      ]
+    },
+    {
+      "type": "road",
+      "panelIdx": 0,
+      "countryFrom": "c1",
+      "countryTo": "c2",
+      "path": [
+        {
+          "q": 2,
+          "r": -2
+        },
+        {
+          "q": 4,
+          "r": 0
+        }
+      ]
+    },
+    {
+      "type": "river",
+      "panelIdx": 0,
+      "countryFrom": "c1",
+      "countryTo": "c2",
+      "path": [
+        {
+          "q": 0,
+          "r": 2
+        },
+        {
+          "q": 5,
+          "r": 2
+        }
+      ]
+    },
+    {
+      "type": "road",
+      "panelIdx": 0,
+      "countryFrom": "c2",
+      "countryTo": "c2",
+      "path": [
+        {
+          "q": 3,
+          "r": 0
+        },
+        {
+          "q": 4,
+          "r": -1
+        },
+        {
+          "q": 5,
+          "r": -1
+        }
+      ]
+    },
+    {
+      "type": "river",
+      "panelIdx": 0,
+      "countryFrom": "c2",
+      "countryTo": "c2",
+      "path": [
+        {
+          "q": 5,
+          "r": 1
+        },
+        {
+          "q": 6,
+          "r": 0
+        },
+        {
+          "q": 6,
+          "r": -1
+        }
+      ]
+    },
+    {
+      "type": "road",
+      "panelIdx": 0,
+      "countryFrom": "c2",
+      "countryTo": "c2",
+      "path": [
+        {
+          "q": 5,
+          "r": 0
+        },
+        {
+          "q": 6,
+          "r": 1
+        }
+      ]
+    },
+    {
+      "type": "road",
+      "panelIdx": 1,
+      "countryFrom": "c3",
+      "countryTo": "c3",
+      "path": [
+        {
+          "q": 2,
+          "r": 2
+        },
+        {
+          "q": 2,
+          "r": 3
+        },
+        {
+          "q": 2,
+          "r": 4
+        }
+      ]
+    },
+    {
+      "type": "river",
+      "panelIdx": 1,
+      "countryFrom": "c3",
+      "countryTo": "c3",
+      "path": [
+        {
+          "q": 0,
+          "r": 4
+        },
+        {
+          "q": 0,
+          "r": 5
+        }
+      ]
+    },
+    {
+      "type": "road",
+      "panelIdx": 1,
+      "countryFrom": "c3",
+      "countryTo": "c4",
+      "path": [
+        {
+          "q": 5,
+          "r": 3
+        },
+        {
+          "q": 6,
+          "r": 4
+        }
+      ]
+    },
+    {
+      "type": "river",
+      "panelIdx": 1,
+      "countryFrom": "c4",
+      "countryTo": "c4",
+      "path": [
+        {
+          "q": 8,
+          "r": 5
+        },
+        {
+          "q": 9,
+          "r": 5
+        },
+        {
+          "q": 8,
+          "r": 6
+        }
+      ]
+    },
+    {
+      "type": "road",
+      "panelIdx": 1,
+      "countryFrom": "c4",
+      "countryTo": "c4",
+      "path": [
+        {
+          "q": 6,
+          "r": 5
+        },
+        {
+          "q": 7,
+          "r": 5
+        },
+        {
+          "q": 8,
+          "r": 5
+        }
+      ]
+    },
+    {
+      "type": "road",
+      "panelIdx": 1,
+      "countryFrom": "c4",
+      "countryTo": "c3",
+      "path": [
+        {
+          "q": 9,
+          "r": 4
+        },
+        {
+          "q": 3,
+          "r": 4
+        }
+      ]
+    },
+    {
+      "type": "flight",
+      "panelIdxFrom": 0,
+      "panelIdxTo": 1,
+      "from": {
+        "q": 6,
+        "r": 1,
+        "panelIdx": 0
+      },
+      "to": {
+        "q": 8,
+        "r": 3,
+        "panelIdx": 1
+      },
+      "path": [
+        {
+          "q": 6,
+          "r": 1,
+          "panelIdx": 0
+        },
+        {
+          "q": 8,
+          "r": 3,
+          "panelIdx": 1
+        }
+      ]
+    },
+    {
+      "type": "flight",
+      "panelIdxFrom": 1,
+      "panelIdxTo": 0,
+      "from": {
+        "q": 8,
+        "r": 5,
+        "panelIdx": 1
+      },
+      "to": {
+        "q": 2,
+        "r": -1,
+        "panelIdx": 0
+      },
+      "path": [
+        {
+          "q": 8,
+          "r": 5,
+          "panelIdx": 1
+        },
+        {
+          "q": 2,
+          "r": -1,
+          "panelIdx": 0
+        }
+      ]
+    }
+  ]
+}
