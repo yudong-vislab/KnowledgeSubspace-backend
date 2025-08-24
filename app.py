@@ -1,6 +1,12 @@
 from flask import Flask, jsonify, request, abort
 from flask_cors import CORS
 import json, os
+from openai import OpenAI
+
+# ========== 配置 OpenAI Key ==========
+API_KEY ="sk-UJYl2J6urdV4kgORmsFP8xfoAtOl6AbVc75PPBCoz1qPdGhv"
+client = OpenAI(api_key=API_KEY, base_url="https://api.chatanywhere.tech/v1")
+
 
 app = Flask(__name__)
 CORS(app)  # 开发期允许跨域
@@ -51,6 +57,49 @@ def rename_subspace(idx):
     subs[idx]["subspaceName"] = new_name
     save_data(data)
     return jsonify({"index": idx, "subspace": subs[idx]})
+
+
+# # ========== 配置代理 (如 Clash 本地代理 7890) ==========
+# # 如果你没有代理，这部分可以注释掉
+# os.environ["http_proxy"] = "http://127.0.0.1:7890"
+# os.environ["https_proxy"] = "http://127.0.0.1:7890"
+
+# ========== 系统提示 ==========
+system_prompt = """
+你是一个科研助手，专注于帮助用户检索学术文献。
+当用户输入查询时，你要：
+1. 理解领域和关键词（如气象、空气质量）。
+2. 提供最近五年相关文献列表（可附作者、年份、论文标题）。
+3. 尽量返回结构化信息，方便前端显示。
+"""
+
+# ========== Flask API ==========
+@app.route("/api/query", methods=["POST"])
+def query_gpt():
+    data = request.json
+    user_query = data.get("query")
+    if not user_query:
+        return jsonify({"error": "No query provided"}), 400
+
+    try:
+        response = client.chat.completions.create(
+            model="gpt-3.5-turbo",
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_query}
+            ],
+            temperature=0.2,
+            max_tokens=500,
+            timeout=30.0
+        )
+        answer = response.choices[0].message.content
+        return jsonify({"answer": answer})
+
+    except Exception as e:
+        print("GPT调用出错：", e)
+        return jsonify({"error": str(e)}), 500
+
+
 
 if __name__ == "__main__":
     app.run(host="127.0.0.1", port=5000, debug=True)
