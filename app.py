@@ -1,12 +1,19 @@
+# app.py
 from flask import Flask, jsonify, request, abort
 from flask_cors import CORS
-import json, os
-from openai import OpenAI
+import os, json, sys, pathlib
 from dotenv import load_dotenv
+from openai import OpenAI
 
-# ========== 加载环境变量 ==========
+# 让同目录的 prompts.py 一定可见（无论从哪里启动）
+sys.path.append(str(pathlib.Path(__file__).parent.resolve()))
+
+# 从 prompts 模块导入固定提示
+from prompts import SYSTEM_PROMPT as PROMPT_BASE_SYSTEM
+from prompts import PROMPT_LITERATURE_SEARCH, PROMPT_SUBSPACE_ANALYSIS
+
+# ========== 环境变量 ==========
 load_dotenv()
-
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "").strip()
 OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", "https://api.chatanywhere.tech/v1").strip()
 OPENAI_DEFAULT_MODEL = os.getenv("OPENAI_DEFAULT_MODEL", "gpt-3.5-turbo").strip()
@@ -16,20 +23,14 @@ if not OPENAI_API_KEY:
 
 client = OpenAI(api_key=OPENAI_API_KEY, base_url=OPENAI_BASE_URL)
 
+# 系统提示允许被环境变量覆盖（如果 .env 里提供了 SYSTEM_PROMPT）
+ENV_SYSTEM_PROMPT = (os.getenv("SYSTEM_PROMPT") or "").strip()
+SYSTEM_PROMPT_ACTIVE = ENV_SYSTEM_PROMPT if ENV_SYSTEM_PROMPT else PROMPT_BASE_SYSTEM
+
 app = Flask(__name__)
 CORS(app)
 
 DATA_PATH = os.path.join(os.path.dirname(__file__), "data", "semantic_map_data.json")
-
-# ---------- 系统提示（模块常量；可被环境变量覆盖） ----------
-DEFAULT_SYSTEM_PROMPT = """
-你是一个科研助手，专注于帮助用户检索学术文献。
-当用户输入查询时，你要：
-1. 理解领域和关键词（如气象、空气质量）。
-2. 提供最近五年相关文献列表（可附作者、年份、论文标题）。
-3. 尽量返回结构化信息，方便前端显示。
-"""
-SYSTEM_PROMPT = os.getenv("SYSTEM_PROMPT", DEFAULT_SYSTEM_PROMPT)
 
 def load_data():
     if not os.path.exists(DATA_PATH):
@@ -50,7 +51,7 @@ def get_semantic_map():
 @app.post("/api/subspaces")
 def create_subspace():
     body = request.get_json(force=True) or {}
-    name = body.get("subspaceName") or None
+    name = (body.get("subspaceName") or "").strip()
     data = load_data()
     new_idx = len(data.get("subspaces", []))
     subspace = {
@@ -63,9 +64,9 @@ def create_subspace():
     return jsonify({"index": new_idx, "subspace": subspace}), 201
 
 @app.patch("/api/subspaces/<int:idx>")
-def rename_subspace(idx):
+def rename_subspace(idx: int):
     body = request.get_json(force=True) or {}
-    new_name = body.get("subspaceName")
+    new_name = (body.get("subspaceName") or "").strip()
     if not new_name:
         abort(400, "subspaceName required")
     data = load_data()
@@ -76,7 +77,6 @@ def rename_subspace(idx):
     save_data(data)
     return jsonify({"index": idx, "subspace": subs[idx]})
 
-# ✅ 补齐：改标题路由（配合你的前端 renameMapTitle）
 @app.post("/api/semantic-map/title")
 def update_map_title():
     body = request.get_json(force=True) or {}
@@ -88,9 +88,12 @@ def update_map_title():
     save_data(data)
     return jsonify({"title": new_title})
 
+# ---------- LLM 路由 ----------
+TASK_PROMPTS = {
+    "literature": PROMPT_LITERATURE_SEARCH,
+    "subspace":   PROMPT_SUBSPACE_ANALYSIS,
+}
 
-        
-# /api/query 路由：支持 history + model  // ★★ 修改点
 @app.post("/api/query")
 def query_gpt():
     body = request.get_json(force=True) or {}
@@ -98,31 +101,27 @@ def query_gpt():
     if not user_query:
         return jsonify({"error": "No query provided"}), 400
 
+    task_type = (body.get("task") or "literature").lower()
+    task_prompt = TASK_PROMPTS.get(task_type, "")
+
     try:
         resp = client.chat.completions.create(
-            model=body.get("model", "gpt-3.5-turbo"),
+            model=body.get("model", OPENAI_DEFAULT_MODEL),
             messages=[
-                {"role": "system", "content": SYSTEM_PROMPT},
-                {"role": "user", "content": user_query}
+                {"role": "system", "content": SYSTEM_PROMPT_ACTIVE},
+                {"role": "user", "content": f"{task_prompt}\n\nUser query:\n{user_query}"}
             ],
             temperature=0.2,
-            max_tokens=800,
+            max_tokens=900,
             timeout=30.0
         )
         answer = resp.choices[0].message.content
         return jsonify({"answer": answer})
     except Exception as e:
         print("GPT 调用出错：", e)
-        return jsonify({"error": f"{e}"}), 500
-
-    except Exception as e:
-        print("GPT 调用出错：", e)
-        return jsonify({"ok": False, "error": str(e)}), 500
-
-
+        return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":
-    # 用环境变量管理 host/port 更稳妥
     host = os.getenv("FLASK_HOST", "127.0.0.1")
     port = int(os.getenv("FLASK_PORT", "5000"))
     app.run(host=host, port=port, debug=True)
