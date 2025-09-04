@@ -1,0 +1,962 @@
+[
+    {
+        "sentence": "We present many spatiotemporal datasets collected over Seoul city in Korea.",
+        "category": "Experiment",
+        "rank": -1,
+        "type": "text",
+        "para_id": 1,
+        "paper_id": 0,
+        "paragraph_info": "*Abstract*\u2014Recently, air pollution is one of the most concerns for big cities. Predicting air quality for any regions and at any time is a critical requirement of urban citizens. However, air pollution prediction for the whole city is a challenging problem. The reason is, there are many spatiotemporal factors affecting air pollution throughout the city. Collecting as many of them could help us to forecast air pollution better. In this research, we present many spatiotemporal datasets collected over Seoul city in Korea, which is currently much suffered by air pollution problem as well. These datasets include air pollution data, meteorological data, traffic volume, average driving speed, and air pollution indexes of external areas which are known to impact Seoul's air pollution. To the best of our knowledge, traffic volume and average driving speed data are two new datasets in air pollution research. In addition, recent research in air pollution has tried to build models to interpolate and predict air pollution in the city. Nevertheless, they mostly focused on predicting air quality in discrete locations or used hand-crafted spatial and temporal features. In this paper, we propose the usage of Convolutional Long Short-Term Memory (ConvLSTM) model [\\[16\\]](#page-7-0), a combination of Convolutional Neural Networks and Long Short-Term Memory, which automatically manipulates both the spatial and temporal features of the data. Specially, we introduce how to transform the air pollution data into sequences of images which leverages the using of ConvLSTM model to interpolate and predict air quality for the entire city at the same time. We prove that our approach is suitable for spatiotemporal air pollution problems and also outperforms other related research.",
+        "paper_info": "1911.12919v1",
+        "2d_coord": [
+            -2.021660804748535,
+            -1.652695894241333
+        ],
+        "MSU_id": 5
+    },
+    {
+        "sentence": "These datasets include air pollution data, meteorological data, traffic volume, average driving speed, and air pollution indexes of external areas.",
+        "category": "Experiment",
+        "rank": -1,
+        "type": "text",
+        "para_id": 1,
+        "paper_id": 0,
+        "paragraph_info": "*Abstract*\u2014Recently, air pollution is one of the most concerns for big cities. Predicting air quality for any regions and at any time is a critical requirement of urban citizens. However, air pollution prediction for the whole city is a challenging problem. The reason is, there are many spatiotemporal factors affecting air pollution throughout the city. Collecting as many of them could help us to forecast air pollution better. In this research, we present many spatiotemporal datasets collected over Seoul city in Korea, which is currently much suffered by air pollution problem as well. These datasets include air pollution data, meteorological data, traffic volume, average driving speed, and air pollution indexes of external areas which are known to impact Seoul's air pollution. To the best of our knowledge, traffic volume and average driving speed data are two new datasets in air pollution research. In addition, recent research in air pollution has tried to build models to interpolate and predict air pollution in the city. Nevertheless, they mostly focused on predicting air quality in discrete locations or used hand-crafted spatial and temporal features. In this paper, we propose the usage of Convolutional Long Short-Term Memory (ConvLSTM) model [\\[16\\]](#page-7-0), a combination of Convolutional Neural Networks and Long Short-Term Memory, which automatically manipulates both the spatial and temporal features of the data. Specially, we introduce how to transform the air pollution data into sequences of images which leverages the using of ConvLSTM model to interpolate and predict air quality for the entire city at the same time. We prove that our approach is suitable for spatiotemporal air pollution problems and also outperforms other related research.",
+        "paper_info": "1911.12919v1",
+        "2d_coord": [
+            -2.1390068531036377,
+            -1.5215480327606201
+        ],
+        "MSU_id": 6
+    },
+    {
+        "sentence": "In fig. 2, we plot the locations of all traffic volume and vehicle speed survey points in the Seoul city's map.",
+        "category": "Experiment",
+        "rank": -1,
+        "type": "text",
+        "para_id": 9,
+        "paper_id": 0,
+        "paragraph_info": "The hourly air pollution and meteorological datasets are quite common in recent research about air pollution predicting. The traffic volume and average driving speed data are new datasets within all known air pollution related research. The traffic volume is collected hourly by vehicle detector devices at survey points in the road. They have both the inflow and outflow directions along the survey roads. The average driving speed data is also collected hourly and by the speed checkpoints. In fig. 2, we plot the locations of all traffic volume and vehicle speed survey points in the Seoul city's map. As we can observe, the traffic volume survey points and speed checkpoints are dense and cover quite well the area of Seoul city compared with the air pollution monitoring stations (in markers). Table I also represents some statistic analysis of these 2 datasets. In Table I, turns/hr is the number of vehicles running across a survey point in an hour.",
+        "paper_info": "1911.12919v1",
+        "2d_coord": [
+            -1.7683441638946533,
+            -0.25611943006515503
+        ],
+        "MSU_id": 64
+    },
+    {
+        "sentence": "We reimplemented the model for the datasets from Seoul city.",
+        "category": "Experiment",
+        "rank": -1,
+        "type": "text",
+        "para_id": 39,
+        "paper_id": 0,
+        "paragraph_info": "To make this model as our baseline comparison, we reimplemented it for the datasets from Seoul city. In [\\[15\\]](#page-7-8), they used a pre-trained auto-encoder for input data and then tuned with their proposed spatiotemporal loss. We also trained an auto-encoder with 4 layers and used the pre-trained model for the next phase training. We implemented DAL for both interpolation and prediction tasks.",
+        "paper_info": "1911.12919v1",
+        "2d_coord": [
+            -1.9210000038146973,
+            -1.8084934949874878
+        ],
+        "MSU_id": 193
+    },
+    {
+        "sentence": "We use PM2.5 pollutant to demonstrate our proposed model and its results.",
+        "category": "Experiment",
+        "rank": -1,
+        "type": "text",
+        "para_id": 41,
+        "paper_id": 0,
+        "paragraph_info": "The air pollution data has 6 air pollutants for each row, which are SO2, CO, O3, NO2, PM10, and PM25. Because each type of air pollutants has a different distribution, we save 6 datasets of air pollution input and train different models for each dataset with the same model architecture. For all experiments in this paper, we use PM2.5 pollutant to demonstrate our proposed model and its results. The gridbased air pollution data is then normalized to the range [0-1] by using Min-Max normalization.",
+        "paper_info": "1911.12919v1",
+        "2d_coord": [
+            -1.1315454244613647,
+            -0.41975247859954834
+        ],
+        "MSU_id": 206
+    },
+    {
+        "sentence": "We split the input dataset into the training set of 2 years, 2015 and 2016, and the test set is the year 2017.",
+        "category": "Experiment",
+        "rank": -1,
+        "type": "text",
+        "para_id": 45,
+        "paper_id": 0,
+        "paragraph_info": "For experiments and evaluations, we split the input dataset into the training set of 2 years, 2015 and 2016, and the test set is the year 2017. This splitting mechanism, choosing the training set is 2 years, and test set is the remaining year, ensures the training and test set have the same distribution and still make our model to have a good generalization. Regarding the forecasting task, we chose to predict for 12 hours ahead. That means we can predict from 1 to 12 hours in the future.",
+        "paper_info": "1911.12919v1",
+        "2d_coord": [
+            -0.8431037664413452,
+            -1.8432788848876953
+        ],
+        "MSU_id": 221
+    },
+    {
+        "sentence": "We performed 2 experiments: ConvLSTM model with only labeled data loss and ConvLSTM model with both labeled and unlabeled data spatiotemporal loss.",
+        "category": "Experiment",
+        "rank": -1,
+        "type": "text",
+        "para_id": 48,
+        "paper_id": 0,
+        "paragraph_info": "The implementation of ConvLSTM interpolation model is similar with 1 hour ahead for interpolating function. The number of layers for the interpolation model is 1 encoder and 1 decoder (prediction) layer with the output channels are 64. The kernel size chosen for all layers is 3x3. We performed 2 experiments, ConvLSTM model with only labeled data loss and ConvLSTM model with both labeled and unlabeled data spatiotemporal loss as introduced in DAL model. The result is shown in Table II.",
+        "paper_info": "1911.12919v1",
+        "2d_coord": [
+            -1.7253972291946411,
+            -1.5182679891586304
+        ],
+        "MSU_id": 249
+    },
+    {
+        "sentence": "We evaluated how our proposed design is better in both spatial and temporal exploration.",
+        "category": "Experiment",
+        "rank": -1,
+        "type": "text",
+        "para_id": 49,
+        "paper_id": 0,
+        "paragraph_info": "Besides DAL model as the competitive baseline, we implemented 2 other models based on Stacked FC-LSTM and CNN Encoder-Decoder to evaluate how our proposed design better in both spatial and temporal exploration, respectively. With Stacked FC-LSTM model (or FC-LSTM for short), we use the input as the gray-scale images of 32x32 size. We picked the number of hidden units for an LSTM cell is 2000 and stacked 3 LSTM cells to increase the models capacity. The output of LSTM cells is then flowed through a fully connected neural network (FCNN) to produce the final output. Regarding CNN Encoder-Decoder model, we applied an Encoder-Decoder network with the encoder is a convolutional layer and decoder is a deconvolution layer similar to [\\[25\\]](#page-7-11). To be comparable with ConvLSTM, we also used 1 encoder and 1 decoder layer with the same parameters (3x3 filter size and 64 output channels). The RMSE of CNN Encoder-Decoder and FC-LSTM model in the test set can be seen from Table II.",
+        "paper_info": "1911.12919v1",
+        "2d_coord": [
+            -0.6077380180358887,
+            0.6109058856964111
+        ],
+        "MSU_id": 252
+    },
+    {
+        "sentence": "In fig. 8, we plot the output images of DAL, ConvLSTM, CNN Encoder-Decoder, and FC-LSTM model.",
+        "category": "Experiment",
+        "rank": -1,
+        "type": "text",
+        "para_id": 53,
+        "paper_id": 0,
+        "paragraph_info": "The RMSE values shown in Table II are useful for quantitative evaluation but they are hard to show the quality of interpolated results for the whole city. In fig. 8, we plot the output images of DAL, ConvLSTM, CNN Encoder-Decoder, and FC-LSTM model to see the distribution of air pollution interpolated values. Intuitively, FC-LSTM model shows the worst output with all the grid-cells except the existing monitoring stations have the same value. The reason is FC-LSTM networks do not learn the spatial features well, and thus do not give good interpolation output. For the remaining 3 models, ConvLSTM and DAL show pretty good air pollution interpolation compared with the CNN Encoder-Decoder model. To prove that ConvLSTM model produces better air pollution interpolated values over other baselines, we compare it with the actual air pollution values distribution. Here, we suggest testing the variance of the interpolated values.",
+        "paper_info": "1911.12919v1",
+        "2d_coord": [
+            -1.6697460412979126,
+            -1.7068954706192017
+        ],
+        "MSU_id": 268
+    },
+    {
+        "sentence": "We compare the ConvLSTM model with the actual air pollution values distribution to prove it produces better interpolated values over other baselines.",
+        "category": "Experiment",
+        "rank": -1,
+        "type": "text",
+        "para_id": 53,
+        "paper_id": 0,
+        "paragraph_info": "The RMSE values shown in Table II are useful for quantitative evaluation but they are hard to show the quality of interpolated results for the whole city. In fig. 8, we plot the output images of DAL, ConvLSTM, CNN Encoder-Decoder, and FC-LSTM model to see the distribution of air pollution interpolated values. Intuitively, FC-LSTM model shows the worst output with all the grid-cells except the existing monitoring stations have the same value. The reason is FC-LSTM networks do not learn the spatial features well, and thus do not give good interpolation output. For the remaining 3 models, ConvLSTM and DAL show pretty good air pollution interpolation compared with the CNN Encoder-Decoder model. To prove that ConvLSTM model produces better air pollution interpolated values over other baselines, we compare it with the actual air pollution values distribution. Here, we suggest testing the variance of the interpolated values.",
+        "paper_info": "1911.12919v1",
+        "2d_coord": [
+            -1.8449208736419678,
+            -1.6964305639266968
+        ],
+        "MSU_id": 272
+    },
+    {
+        "sentence": "This section presents the experiments results of air pollution interpolation along with spatiotemporal air pollution impact factors.",
+        "category": "Experiment",
+        "rank": -1,
+        "type": "text",
+        "para_id": 59,
+        "paper_id": 0,
+        "paragraph_info": "*2) Interpolation with air pollution influence factors:* In this section, we show the experiments results of air pollution interpolating along with spatiotemporal air pollution impact factors like meteorology, traffic volume, driving average speed, and external air pollution sources. We implement the experiments with following models: ConvLSTM (ConvLSTM with only air pollution data), ConvLSTM + Met (air pollution and meteorological data), ConvLSTM + Traffic (air pollution and traffic volume data), ConvLSTM + Speed (air pollution and vehicles average speed data), ConvLSTM + External (air pollution and external air pollution data), ConvLSTM + All (air pollution and all related factors). Table III shows the RMSE in the test set of pure ConvLSTM and other combination models.",
+        "paper_info": "1911.12919v1",
+        "2d_coord": [
+            -1.9743502140045166,
+            -1.7188488245010376
+        ],
+        "MSU_id": 289
+    },
+    {
+        "sentence": "We checked the regression error of the interpolated air pollution value with the existing one.",
+        "category": "Experiment",
+        "rank": -1,
+        "type": "text",
+        "para_id": 63,
+        "paper_id": 0,
+        "paragraph_info": "lowing test: removing one of the existing air pollution values from input data but still keep the values of other impacted spatiotemporal data and then check the regression error of the interpolated air pollution value with the existing one. If the error is small then we can infer that other spatiotemporal data has a remarkable effect on air pollution interpolation. To measure the error, we alternately set the air pollution value of each existed input pixel to zero, keep other data of that pixel unchanged, running the trained model on this modified input data and calculate RMSE between the inferred value with the actual pixel value of the same position. The final error is the mean of all errors after doing this procedure with all existing air pollution values. We call this error spRMSE, which means the RMSE caused by spatiotemporal factors. The experiments results are shown in Table III. We can notice that ConvLSTM + Speed model has a better spRMSE than ConvLSTM in spite it has worse overall RMSE; which indicates the driving average speed affects air pollution in spatiotemporal form. ConvLSTM + All model has the best spRMSE, proves that we can improve the citywide interpolation with more spatiotemporal data.",
+        "paper_info": "1911.12919v1",
+        "2d_coord": [
+            -1.5470635890960693,
+            -1.7189615964889526
+        ],
+        "MSU_id": 307
+    },
+    {
+        "sentence": "We evaluate the forecasting results in terms of combination with air pollution related spatiotemporal factors.",
+        "category": "Experiment",
+        "rank": -1,
+        "type": "text",
+        "para_id": 69,
+        "paper_id": 0,
+        "paragraph_info": "*1) Forecasting with air pollution influence factors:* For the next experiment, we evaluate the forecasting results in term of combination with air pollution related spatiotemporal factors. The examining models are: ConvLSTM (as baseline), ConvLSTM + Met (air pollution and meteorological data), ConvLSTM + Traffic (air pollution and transportation traffic data), ConvLSTM + Speed (air pollution and vehicles average speed data), ConvLSTM + External (air pollution and external air pollution data), ConvLSTM + All (air pollution and all related factors). Table V shows the RMSE of each examined models in the test set.",
+        "paper_info": "1911.12919v1",
+        "2d_coord": [
+            -1.762225866317749,
+            -1.7447417974472046
+        ],
+        "MSU_id": 339
+    },
+    {
+        "sentence": "Some papers used specific datasets such as GPS trajectories generated by over 30,000 taxis in Beijing.",
+        "category": "Experiment",
+        "rank": -1,
+        "type": "text",
+        "para_id": 73,
+        "paper_id": 0,
+        "paragraph_info": "Recently, some air pollution related research has leveraged Machine Learning/Neural Networks based models in predicting Air pollution [\\[3\\]](#page-7-12), [\\[7\\]](#page-7-13), [\\[15\\]](#page-7-8), [\\[23\\]](#page-7-14), [\\[24\\]](#page-7-15). Most of these papers used common datasets like monitoring air pollution, meteorological data. Some papers used specific datasets such as GPS trajectories generated by over 30,000 taxis in Beijing in [\\[23\\]](#page-7-14) or road networks data in [\\[7\\]](#page-7-13). The proposed air pollution predicting models are quite diversity, from cotraining-based semi-supervised learning approach [\\[23\\]](#page-7-14), linear regression-based temporal predictor [\\[24\\]](#page-7-15) to Spatiotemporal Semi-supervised Learning [\\[15\\]](#page-7-8) and Attention Model [\\[3\\]](#page-7-12). Some research proposed grid-based air pollution interpolation or prediction. Nevertheless, they only focused on forecasting air pollution for discrete locations, not considering the whole city to be an image as in our approach. Furthermore, they used much hand-crafted spatial and temporal features that were difficult to generalize to other similar problems.",
+        "paper_info": "1911.12919v1",
+        "2d_coord": [
+            -2.11281418800354,
+            -0.2947278618812561
+        ],
+        "MSU_id": 358
+    },
+    {
+        "sentence": "Some papers used road networks data.",
+        "category": "Experiment",
+        "rank": -1,
+        "type": "text",
+        "para_id": 73,
+        "paper_id": 0,
+        "paragraph_info": "Recently, some air pollution related research has leveraged Machine Learning/Neural Networks based models in predicting Air pollution [\\[3\\]](#page-7-12), [\\[7\\]](#page-7-13), [\\[15\\]](#page-7-8), [\\[23\\]](#page-7-14), [\\[24\\]](#page-7-15). Most of these papers used common datasets like monitoring air pollution, meteorological data. Some papers used specific datasets such as GPS trajectories generated by over 30,000 taxis in Beijing in [\\[23\\]](#page-7-14) or road networks data in [\\[7\\]](#page-7-13). The proposed air pollution predicting models are quite diversity, from cotraining-based semi-supervised learning approach [\\[23\\]](#page-7-14), linear regression-based temporal predictor [\\[24\\]](#page-7-15) to Spatiotemporal Semi-supervised Learning [\\[15\\]](#page-7-8) and Attention Model [\\[3\\]](#page-7-12). Some research proposed grid-based air pollution interpolation or prediction. Nevertheless, they only focused on forecasting air pollution for discrete locations, not considering the whole city to be an image as in our approach. Furthermore, they used much hand-crafted spatial and temporal features that were difficult to generalize to other similar problems.",
+        "paper_info": "1911.12919v1",
+        "2d_coord": [
+            -2.0857372283935547,
+            -0.4949904680252075
+        ],
+        "MSU_id": 359
+    },
+    {
+        "sentence": "The spatiotemporal problems included moving MNIST and weather radar echo images of Hong Kong for precipitation forecasting.",
+        "category": "Experiment",
+        "rank": -1,
+        "type": "text",
+        "para_id": 74,
+        "paper_id": 0,
+        "paragraph_info": "Furthermore, we survey general Spatiotemporal Deep Learning algorithms. In [\\[16\\]](#page-7-0), the authors have proposed a ConvLSTM model and used for precipitation forecasting. In the paper, the authors demonstrated that ConvLSTM was better than Fully Connected LSTM in spatiotemporal problems like moving MNIST and weather radar echo images of Hong Kong for precipitation forecasting.",
+        "paper_info": "1911.12919v1",
+        "2d_coord": [
+            -1.9289064407348633,
+            -1.3432787656784058
+        ],
+        "MSU_id": 372
+    },
+    {
+        "sentence": "The system collects meteorological data from 3,514 cities/districts every hour.",
+        "category": "Experiment",
+        "rank": -1,
+        "type": "text",
+        "para_id": 123,
+        "paper_id": 1,
+        "paragraph_info": "Meteorological data: The system collects meteorological data from 3,514 cities/districts every hour. Most major cities have both district-level and city-level granularity for the data, while small cities only have a city-level report. Each record consists of weather (sunny, cloudy, overcast, foggy, snow, small rain, moderate rain, and heavy rain), humidity, temperature, pressure, wind speed, and wind direction.",
+        "paper_info": "3219819.3219822",
+        "2d_coord": [
+            -1.0677024126052856,
+            -0.7386860251426697
+        ],
+        "MSU_id": 607
+    },
+    {
+        "sentence": "We use three-year data from 2014/5/1 to 2017/4/30 in nine major Chinese cities.",
+        "category": "Experiment",
+        "rank": -1,
+        "type": "text",
+        "para_id": 125,
+        "paper_id": 1,
+        "paragraph_info": "For evaluation, we use three-year (from 2014/5/1 to 2017/4/30) data in nine major Chinese cities (Beijing, Tianjin, Shanghai, Nanjing, Hangzhou, Guangzhou, Shenzhen, Chengdu, and Chongqing). Figure 7 shows the distribution about AQI of PM2.5 between 2014/5 to 2017/4 in nine cities, which the colors, defined by Chinese standards, represent the level of air pollution. In general, Beijing and Tianjin have worse air quality and Shenzhen and Guangzhou are better. As Beijing has the most complicated air quality, we focus on Beijing's data when comparing with different baselines, while showing overall results for the other eight cities. Table 2 details the statistical results about Beijing dataset. To predict the air quality of 36 monitoring stations in Beijing, 74 neighbor stations within 100km (semidiameter) to Beijing are retrieved. Among all air quality records, 2.3% cases are sudden changes. In the experiments, the data in the first 24 months is used for training, and the data in last 12 months is used for testing.",
+        "paper_info": "3219819.3219822",
+        "2d_coord": [
+            -0.9652178287506104,
+            -0.462105929851532
+        ],
+        "MSU_id": 617
+    },
+    {
+        "sentence": "We compare DeepAir with following ten baselines.",
+        "category": "Experiment",
+        "rank": -1,
+        "type": "text",
+        "para_id": 128,
+        "paper_id": 1,
+        "paragraph_info": "We compare DeepAir with following ten baselines.",
+        "paper_info": "3219819.3219822",
+        "2d_coord": [
+            0.1739589422941208,
+            -1.4386194944381714
+        ],
+        "MSU_id": 630
+    },
+    {
+        "sentence": "We compared our approach with 10 baselines using three-year data from 9 Chinese cities.",
+        "category": "Experiment",
+        "rank": -1,
+        "type": "text",
+        "para_id": 144,
+        "paper_id": 1,
+        "paragraph_info": "In this paper, we propose a DNN-based approach to predict air quality. Based on the domain knowledge about air pollution, we adopt a novel distributed fusion architecture to fuse heterogeneous urban data, which can simultaneously capture the individual and holistic effects from all influential factors affecting air quality. Comparing with 10 baselines with three-year data from 9 Chinese cities, our approach achieves a higher accuracy in both general cases and sudden changes. We have deployed DeepAir in AirPollutionPrediction system, providing fine-grained air quality forecasts for 300+ Chinese cities every hour. Comparing with the previous online approach in the system, we have 2.4%, 12.2%, 63.2% relative accuracy improvements on short-term, long-term and sudden changes prediction, respectively.",
+        "paper_info": "3219819.3219822",
+        "2d_coord": [
+            -1.8640280961990356,
+            0.48026198148727417
+        ],
+        "MSU_id": 732
+    },
+    {
+        "sentence": "We conducted a 2-month field campaign in the months of March and April 2022.",
+        "category": "Experiment",
+        "rank": 3,
+        "type": "text",
+        "para_id": 156,
+        "paper_id": 2,
+        "paragraph_info": "While previous studies conducted in the Po Valley have reported frequent NPF events characterized by high nucleation and growth rates, the clustering mechanism and the dominant precursors for particle growth have not been investigated to date. Specifically with respect to the distinct features of the Po Valley compared with the more intensely researched megacity environments, a deeper understanding of frequent NPF events, including their precursors, nucleation mechanisms and growth processes, is crucial for air pollution control and the effective implementation of  $PM_{2.5}$  mitigation measures in such a semi-urban but highly industrialized region. In this study, we conducted a 2-month field campaign in the months of March and April 2022. During this field campaign, we  $(1)$  identified the chemical composition of atmospheric neutral and ion clusters using a set of state-ofthe-art mass spectrometers,  $(2)$  characterized the initial NPF and further growth rates using particle number size distribution measurements down to  $1 \\text{ nm}$ , and (3) compared the field measurement results with the recent Cosmics Leaving Outdoor Droplets (CLOUD) chamber experiments to investigate the mechanism of NPF events in the Po Valley region. This allowed us to elucidate the NPF and growth mechanisms at a polluted southern European site and to give insights into the best mitigation strategies for ultrafine particle pollution in the context of already implemented  $PM_{2.5}$  reduction strategies.",
+        "paper_info": "acp-24-2423-2024",
+        "2d_coord": [
+            0.341156005859375,
+            0.6314661502838135
+        ],
+        "MSU_id": 799
+    },
+    {
+        "sentence": "Dimethylamine (DMA) measurements were performed with a Vocus CI-ToF mass spectrometer using $H_3O^+$ as a reagent ion.",
+        "category": "Experiment",
+        "rank": 4,
+        "type": "text",
+        "para_id": 161,
+        "paper_id": 2,
+        "paragraph_info": "Dimethylamine (DMA) measurements were performed with a Vocus CI-ToF (time-of-flight) mass spectrometer (hereafter Vocus, Aerodyne Research Inc. and Tofwerk AG) using  $H_3O^+$  as a reagent ion. The Vocus has been described in detail in Krechmer et al. (2018), and the study by Wang et al. (2020) utilized a Vocus instrument for DMA observations. In this study, the focusing ion-molecule reactor (FIMR) of the Vocus instrument operated at a pressure of 2.0 mbar and a temperature of 100\u00b0C with a radio frequency amplitude of 350 V and a frequency of  $1.4 \\times 10^6$  Hz. Data acquisition was performed with a time resolution of  $10 \\text{ s}$  in the atomic mass unit range of  $0-1000$  amu.",
+        "paper_info": "acp-24-2423-2024",
+        "2d_coord": [
+            2.0293214321136475,
+            -0.3917836546897888
+        ],
+        "MSU_id": 834
+    },
+    {
+        "sentence": "The total particle number concentrations obtained from integrating the particle size distribution measured by the DMPS was compared with a reference CPC operated at the same site.",
+        "category": "Experiment",
+        "rank": 4,
+        "type": "text",
+        "para_id": 170,
+        "paper_id": 2,
+        "paragraph_info": "Sampling from the same inlet and using the same charging device, a conventional DMPS system equipped with a Hauke-type DMA (aerosol flow 1 LPM, sheath flow 5 LPM) and a TSI Inc. CPC (Model 3772) measured the particle size distribution from 10 to 800 nm at 16 predefined size steps within 10 min. In addition, a DMPS measuring from 15 to 800 nm was available in another measurement container at the same field site. The total particle number concentrations obtained from integrating the particle size distribution measured by the DMPS was compared with a reference CPC (Model 3025A, TSI Inc.) operated at the same site during the first weeks of the campaign. It revealed, on average, a factor of 2 lower concentrations measured by the Hauke-type DMPS that was confirmed to be rather size-independent via a comparison of the measured size distributions and their overlap with the HFDMPS system and was, thus, subsequently corrected for.",
+        "paper_info": "acp-24-2423-2024",
+        "2d_coord": [
+            1.3916542530059814,
+            0.46699246764183044
+        ],
+        "MSU_id": 879
+    },
+    {
+        "sentence": "We investigated the NPF mechanism in the Po Valley.",
+        "category": "Experiment",
+        "rank": 4,
+        "type": "text",
+        "para_id": 185,
+        "paper_id": 2,
+        "paragraph_info": "To investigate the NPF mechanism in the Po Valley, we firstly compared the simultaneously measured  $J_{1,7}$  and SA with recent Cosmics Leaving Outdoor Droplets (CLOUD) chamber experiments that simulated NPF under polluted boundary layer conditions with anthropogenic emissions (Xiao et",
+        "paper_info": "acp-24-2423-2024",
+        "2d_coord": [
+            1.745527744293213,
+            0.2584281861782074
+        ],
+        "MSU_id": 961
+    },
+    {
+        "sentence": "We compared the simultaneously measured $J_{1,7}$ and SA with recent CLOUD chamber experiments.",
+        "category": "Experiment",
+        "rank": 5,
+        "type": "text",
+        "para_id": 185,
+        "paper_id": 2,
+        "paragraph_info": "To investigate the NPF mechanism in the Po Valley, we firstly compared the simultaneously measured  $J_{1,7}$  and SA with recent Cosmics Leaving Outdoor Droplets (CLOUD) chamber experiments that simulated NPF under polluted boundary layer conditions with anthropogenic emissions (Xiao et",
+        "paper_info": "acp-24-2423-2024",
+        "2d_coord": [
+            1.416864037513733,
+            -1.1529258489608765
+        ],
+        "MSU_id": 962
+    },
+    {
+        "sentence": "Amines, ammonia, and aromatics were added to reflect an environment influenced by anthropogenic emissions.",
+        "category": "Experiment",
+        "rank": 3,
+        "type": "text",
+        "para_id": 188,
+        "paper_id": 2,
+        "paragraph_info": "al., 2021). In those experiments, amines, ammonia and aromatics were added to reflect an environment that was heavily influenced by anthropogenic emissions. Certain alkaline molecules, including amines (e.g., dimethylamine \u2013 DMA) and ammonia (NH3) have been shown to substantially enhance nucleation and reduce evaporation by stabilizing atmospheric SA in chamber studies (Almeida et al., 2013). Furthermore, oxygenated organic molecules (OOMs) can also contribute to NPF and subsequent particle growth, even without the inclusion of SA (Kirkby et al., 2016; Xiao et al., 2021). As shown in Fig. 3a, most of the measurements were above the SA\u2013NH<sup>3</sup> system at 278 K from the CLOUD chamber, suggesting that the SA\u2013NH<sup>3</sup> mechanism itself cannot solely explain the measured J1.<sup>7</sup> and that other species are most likely participating in NPF in the Po Valley. For instance, amines, such as DMA or trimethylamine (TMA), with higher basicity may contribute to NPF, consistent with non-negligible concentrations of amines in previous studies in the aerosol at SPC (Paglione et al., 2014; Decesari et al., 2014). For the whole sampling period, the median SA and J1.<sup>7</sup> values in the Po Valley follow the SA\u2013DMA\u2013NH<sup>3</sup> (4 ppt DMA and 1 ppb NH3) and SA\u2013DMA\u2013NH3\u2013Org (adding additional oxidized aromatic organics; Xiao et al., 2021) lines from the CLOUD chamber at 293 K, even though the average noontime temperature was around 285 K during most of the NPF days (Fig. 3a).",
+        "paper_info": "acp-24-2423-2024",
+        "2d_coord": [
+            0.7110022902488708,
+            -0.27810731530189514
+        ],
+        "MSU_id": 977
+    },
+    {
+        "sentence": "We compared the measured SA dimer concentrations with the simulated values under different DMA levels.",
+        "category": "Experiment",
+        "rank": 4,
+        "type": "text",
+        "para_id": 190,
+        "paper_id": 2,
+        "paragraph_info": "To further assess the influence of DMA, one of the most common and efficient alkaline molecules for NPF in urban environments (Yao et al.,  $2018$ ), we compared the measured SA dimer concentrations with the simulated values under different DMA levels (from 0.1 ppt to reaching the kinetic limit) using the kinetic model (Fig. 3b). From our cluster kinetics simulations, during the peak hours of NPF, DMA concentrations are expected to be in the range of  $0.1$  to  $5 \\text{ ppt}$ , which is lower than the requirement to reach the kinetic limit (Figs. 3b and S3). This implies that other factors, e.g., the abundant ambient NH<sub>3</sub> ( $\\sim 10 \\text{ ppb}$ ) or TMA during our study period, may also participate in cluster formation. This is consistent with the Vocus measurement, which suggests that the ambient DMA signals were close to the background levels (Fig. S4). Possible reasons for not reaching SA-DMA limit during the campaign could be  $(1)$  the relatively lower DMA emissions (such as vehicle flows) than those in Chinese megacities (Ge et al., 2011; Zhu et al., 2022) and (2) the quick scavenging caused by photolysis and nighttime high RH (85 %) (Leng et al., 2015; Yao et al., 2016). Therefore, both the abundant ambient NH<sub>3</sub> concentrations ( $\\sim 10 \\text{ ppb}$ ) and amines likely participated in cluster formation during our study period.",
+        "paper_info": "acp-24-2423-2024",
+        "2d_coord": [
+            1.9031751155853271,
+            -0.3273966312408447
+        ],
+        "MSU_id": 991
+    },
+    {
+        "sentence": "We observed and identified different types of ion clusters using the APi-ToF.",
+        "category": "Experiment",
+        "rank": 4,
+        "type": "text",
+        "para_id": 192,
+        "paper_id": 2,
+        "paragraph_info": "During the campaign, we observed and identified different types of ion clusters using the APi-ToF, including  $SA-NH_3$ , SA-amine, SA-NH<sub>3</sub>-amine and SA-NH<sub>3</sub>-Org, during NPF events. In Fig. 4a, we presented the mass defect plot of the naturally charged ion clusters on 20 April, when strong NPF events were observed ( $J_{1.7}$  of 83 cm<sup>-3</sup> s<sup>-1</sup>). The presence of these clusters was usually in conjunction with SA tetramers  $(SA_4)$ , pentamers  $(SA_5)$  and hexamers  $(SA_6)$ , which potentially contribute to the NPF events. In APi-ToF measurement, the absence of alkaline species in the smallest sulfuric acid clusters is likely attributed to the loss of alkaline molecules within the mass spectrometer (Cai et al., 2022; Zha et al., 2023b; Alfaouri et al., 2022).",
+        "paper_info": "acp-24-2423-2024",
+        "2d_coord": [
+            1.7573343515396118,
+            0.13297027349472046
+        ],
+        "MSU_id": 1014
+    },
+    {
+        "sentence": "We conducted a continuous 2-month measurement campaign in the Italian Po Valley during springtime.",
+        "category": "Experiment",
+        "rank": 3,
+        "type": "text",
+        "para_id": 211,
+        "paper_id": 2,
+        "paragraph_info": "In this study, we conducted a continuous 2-month measurement campaign in the Italian Po Valley during springtime, where frequent NPF events were observed on 66 % of all days. Through direct ion cluster measurement, kinetic models and comparison with the CLOUD chamber experiment, we have determined that sulfuric acid\u2013base nucleation is the dominant formation mechanism in the Po Valley region. Abundant sulfuric acid and alkaline molecules, including amines and ammonia derived from agriculture activities, provided ample precursors for NPF events. In contrast to megacity environments, the CS showed no significant difference between NPF event days and non-event days, indicating that it is more the abundance of precursors than the variations in the sink controlling the occurrence of NPF in the Po Valley. Furthermore, we observed that, apart from DMA, a typical basic precursor, NH<sup>3</sup> and other amines were also likely to be involved in NPF in the Po Valley. This was supported by the high abundance of SA\u2013NH<sup>3</sup> and SA\u2013NH3\u2013amine clusters measured by the APi-ToF during NPF events. DMA, while more efficient than ammonia, was insufficient to stabilize all SA during our sampling period. This resulted in a more scattered correlation between sulfuric acid concentrations and measured formation rates compared with Chinese megacities. In that sense, we could show that the clustering during NPF is clearly distinct between polluted megacity environments and polluted semi-urbanized regions such as the Po Valley. Similar to Beijing, we found that OOMs did not play a decisive role in initial cluster formation, likely due to the absence of ultra-low-volatility organics (typical OOM dimers) in the ion and neutral cluster measurements. However, low-volatility organics were abundant enough to induce fast growth processes above 3 nm. The comparable GRs and formation rates, along with the lower efficient CS compared with megacity environments, indicate a high survival probability for the newly formed particles. Therefore, NPF is likely to play an important role in the fine-particle concentrations and pollution levels in the Po Valley region. Further reductions in key NPF species, including SO2, amines and NH3, can contribute to suppressing the NPF event frequency and lowering particle numbers. This, in turn, would improve air quality in the Po Valley region.",
+        "paper_info": "acp-24-2423-2024",
+        "2d_coord": [
+            1.088195562362671,
+            0.7165026664733887
+        ],
+        "MSU_id": 1140
+    },
+    {
+        "sentence": "During the summer of 2021, we conducted a two-month period of online observations of aerosol IN and ON in urban Shanghai.",
+        "category": "Experiment",
+        "rank": 3,
+        "type": "text",
+        "para_id": 231,
+        "paper_id": 3,
+        "paragraph_info": "We have developed an analyzer system that utilizes programmed thermal evolution of carbonaceous and nitrogenous aerosols and chemiluminescence detection coupled with multivariate curve resolution data treatment (Yu et al., 2021). This system enables simultaneous quantification of aerosol IN and ON with high sensitivity and accuracy. Unlike conventional methods, our new approach avoids the occurrence of negative ON concentrations, which are often encountered in difference methods. Furthermore, the method allows for both offline and online measurements of aerosol ON. During the summer of 2021, we conducted a two-month period of online observations of aerosol IN and ON in urban Shanghai (Yu et al., 2023). Our findings revealed significant diurnal variations in ON concentrations, with vehicle emissions and secondary formation processes identified as major drivers of episodic ON enhancements. However, due to the lack of comprehensive organic source markers, we were unable to fully attribute the contributions of certain potentially important sources and/or formation processes to the ON budget.",
+        "paper_info": "acp-25-9061-2025",
+        "2d_coord": [
+            -0.6506726741790771,
+            -0.9012985825538635
+        ],
+        "MSU_id": 1201
+    },
+    {
+        "sentence": "We extended our investigation through online measurements of aerosol ON in urban Shanghai during the fall-winter period of 2021.",
+        "category": "Experiment",
+        "rank": 3,
+        "type": "text",
+        "para_id": 232,
+        "paper_id": 3,
+        "paragraph_info": "In this study, we extended our investigation through online measurements of aerosol ON in urban Shanghai during the fall-winter period of 2021. Concurrently, we conducted comprehensive measurements of aerosol major components and source markers on an hourly/bihourly scale. Specifically, we measured a comprehensive array of organic tracers representing distinct primary emission sources and secondary formation processes. These measurements enabled us to quantitatively apportion total ON to different primary and secondary sources using positive matrix factorization (PMF) receptor modeling. Our focus lies in examining the secondary formation sources of ON, as our knowledge regarding the formation mechanisms of ON aerosols remains limited. By combining the high-time resolution measurements of ON and comprehensive organic markers, we demonstrate the successful quantitative source analysis of ON aerosols in an urban atmosphere, revealing significant contributions of secondary formation pathways to ON.",
+        "paper_info": "acp-25-9061-2025",
+        "2d_coord": [
+            -0.4703676998615265,
+            -1.2080570459365845
+        ],
+        "MSU_id": 1205
+    },
+    {
+        "sentence": "The field measurement was conducted in Shanghai.",
+        "category": "Experiment",
+        "rank": 3,
+        "type": "text",
+        "para_id": 233,
+        "paper_id": 3,
+        "paragraph_info": "The field measurement was conducted in Shanghai, a megacity located in the Yangtze River Delta (YRD) region of China and with a population of over 24 million. In recent years, the city has experienced frequent episodes of  $PM_{2.5}$  pollution, with nitrogenous components becoming increasingly prominent contributors to  $PM_{2.5}$  mass (Zhou et al., 2022). All measurements were carried out at a monitoring site (31.17\u00b0N,  $121.43^{\\circ} \\text{E}$ ) situated on the rooftop of an eight-story building, approximately 30 m above the ground, at the Shanghai Academy of Environmental Sciences (SAES). This site is surrounded by urban roads, commercial activities, and residential dwellings, making it a representative urban location influenced by a diverse range of emission sources (Wang et al., 2018; Zhou et al., 2022). The observations were conducted during the fall-winter period from 6 November to 31 December 2021.",
+        "paper_info": "acp-25-9061-2025",
+        "2d_coord": [
+            0.0507248155772686,
+            -0.629360556602478
+        ],
+        "MSU_id": 1213
+    },
+    {
+        "sentence": "The observations were conducted during the fall-winter period from 6 November to 31 December 2021.",
+        "category": "Experiment",
+        "rank": 3,
+        "type": "text",
+        "para_id": 233,
+        "paper_id": 3,
+        "paragraph_info": "The field measurement was conducted in Shanghai, a megacity located in the Yangtze River Delta (YRD) region of China and with a population of over 24 million. In recent years, the city has experienced frequent episodes of  $PM_{2.5}$  pollution, with nitrogenous components becoming increasingly prominent contributors to  $PM_{2.5}$  mass (Zhou et al., 2022). All measurements were carried out at a monitoring site (31.17\u00b0N,  $121.43^{\\circ} \\text{E}$ ) situated on the rooftop of an eight-story building, approximately 30 m above the ground, at the Shanghai Academy of Environmental Sciences (SAES). This site is surrounded by urban roads, commercial activities, and residential dwellings, making it a representative urban location influenced by a diverse range of emission sources (Wang et al., 2018; Zhou et al., 2022). The observations were conducted during the fall-winter period from 6 November to 31 December 2021.",
+        "paper_info": "acp-25-9061-2025",
+        "2d_coord": [
+            0.8718304634094238,
+            0.41624176502227783
+        ],
+        "MSU_id": 1223
+    },
+    {
+        "sentence": "Aerosol ON was measured bihourly using our newly developed analytical system.",
+        "category": "Experiment",
+        "rank": 4,
+        "type": "text",
+        "para_id": 234,
+        "paper_id": 3,
+        "paragraph_info": "Aerosol ON was measured bihourly using our newly developed analytical system, which enables sensitive and simultaneous measurements of aerosol ON and IN. Detailed descriptions of the new method can be found in our previous work (Yu et al., 2021, 2023). In brief, the analyzer system integrates two commercial instruments: an online aerosol carbon (C) analyzer and a chemiluminescence  $NO_x$  analyzer. Carbonaceous and nitrogenous aerosols collected on quartz filters were thermally evolved under programmed temperatures and then catalytically oxidized to  $CO_2$  and nitrogen oxides ( $NO_{\\nu}$ ), respectively. The C signal was monitored using the non-dispersive infrared (NDIR) method, while the N signal was recorded through chemiluminescence detection after converting  $NO_{\\nu}$  to NO. The C signal assists in differentiating IN and ON components since ON aerosols produce both C and N signals, while the IN fraction only gives an N signal. The programmed thermal evolution facilitates the separation of aerosol IN and ON, as they exhibit distinct thermal characteristics. The quantification of IN and ON is achieved through multivariate curve resolution data treatment of C and N thermal fractions (Yu et al., 2021).",
+        "paper_info": "acp-25-9061-2025",
+        "2d_coord": [
+            0.744940996170044,
+            0.22032272815704346
+        ],
+        "MSU_id": 1224
+    },
+    {
+        "sentence": "Quantification of a suite of speciated organic markers was conducted using a thermal desorption Aerosol Gas chromatography-mass spectrometer (TAG, Aerodyne Research Inc.).",
+        "category": "Experiment",
+        "rank": 4,
+        "type": "text",
+        "para_id": 237,
+        "paper_id": 3,
+        "paragraph_info": "Quantification of a suite of speciated organic markers was conducted using a thermal desorption Aerosol Ggas chromatography-mass spectrometer (TAG, Aerodyne Research Inc.). The measurement principle and operational procedure of the TAG system have been described in detail in previous studies (Williams et al., 2006; He et al., 2020; Zhu et al., 2021). In brief, the TAG system operated at a time resolution of 2 h. During the first hour, ambient air was drawn through a  $PM_{2.5}$  cyclone at a flow rate of  $10 \\text{ L min}^{-1}$ , passing through a carbon denuder to remove the gas phase, and particles were then collected onto a thermal desorption cell (CTD). In the second hour, the collected particles underwent thermal desorption and gas chromatography-mass spectrometry (GC-MS) analysis. In each analysis, 5 \u00b5L of an internal standard mixture was added to the CTD that was loaded with particles collected in the preceding hour. During the thermal desorption step, the polar organic compounds in the  $PM_{2.5}$  were derivatized to their trimethylsilyl derivatives under a helium stream saturated with the derivatization agent Nmethyl-N-(trimethylsilyl) trifluoroacetamide (MSTFA). Subsequently, the organic compounds were reconcentrated onto a focusing trap cooled by a fan. Following this, the CTD was purged with pure helium to remove excess MSTFA, and the focusing trap was heated to  $330\\,^{\\circ}\\mathrm{C}$  to transfer the organic compounds into the valveless injection system, which utilizes a restrictive capillary tube to connect to the GC inlet. The GC-MS analysis was then initiated. A total of approximately 100 polar and non-polar organic compounds could be identified and quantified with authentic standards (Zhu et al., 2021). The individual TAG-measured source tracers used for PMF receptor modeling are listed in Table S1 in the Supplement.",
+        "paper_info": "acp-25-9061-2025",
+        "2d_coord": [
+            1.5441174507141113,
+            0.18559640645980835
+        ],
+        "MSU_id": 1252
+    },
+    {
+        "sentence": "Gaseous pollutants, including sulfur dioxide (SO2), ozone (O3), nitrogen dioxide (NO2), nitric oxide (NO), and carbon monoxide (CO), were recorded.",
+        "category": "Experiment",
+        "rank": 4,
+        "type": "text",
+        "para_id": 238,
+        "paper_id": 3,
+        "paragraph_info": "Gaseous pollutants, including sulfur dioxide  $(SO_2)$ , ozone  $(O_3)$ , nitrogen dioxide (NO<sub>2</sub>), nitric oxide (NO), and carbon monoxide (CO), along with meteorological parameters such as temperature, relative humidity, atmospheric pressure, visibility, wind speed, and wind direction, were also recorded. The trace gas and meteorological data were averaged to an hourly resolution to match the time resolution of other analyses.",
+        "paper_info": "acp-25-9061-2025",
+        "2d_coord": [
+            -0.49976488947868347,
+            -1.736573576927185
+        ],
+        "MSU_id": 1266
+    },
+    {
+        "sentence": "Meteorological parameters such as temperature, relative humidity, atmospheric pressure, visibility, wind speed, and wind direction were also recorded.",
+        "category": "Experiment",
+        "rank": 4,
+        "type": "text",
+        "para_id": 238,
+        "paper_id": 3,
+        "paragraph_info": "Gaseous pollutants, including sulfur dioxide  $(SO_2)$ , ozone  $(O_3)$ , nitrogen dioxide (NO<sub>2</sub>), nitric oxide (NO), and carbon monoxide (CO), along with meteorological parameters such as temperature, relative humidity, atmospheric pressure, visibility, wind speed, and wind direction, were also recorded. The trace gas and meteorological data were averaged to an hourly resolution to match the time resolution of other analyses.",
+        "paper_info": "acp-25-9061-2025",
+        "2d_coord": [
+            0.3455415368080139,
+            -1.9698666334152222
+        ],
+        "MSU_id": 1267
+    },
+    {
+        "sentence": "This study quantified four nitroaromatic compounds in aerosols.",
+        "category": "Experiment",
+        "rank": 4,
+        "type": "text",
+        "para_id": 247,
+        "paper_id": 3,
+        "paragraph_info": "ON associated with the factors related to nitrocatechol and nitrophenol formation probably represent the amount of N bound within nitroaromatic compounds, averaging approximately 60 ngN m\u2212<sup>3</sup> (Fig. 2). This study quantified four nitroaromatic compounds in aerosols, namely, 4-nitrophenol, 4-nitrocatechol, 3-methyl-5-nitrocatechol, and 4-methyl-5 nitrocatechol, using the TAG system. The combined N content in the four nitroaromatic compounds averaged at 1.14 ngN m\u2212<sup>3</sup> , accounting for approximately 2 % of the estimated total nitroaromatic-N. In most cases (> 90 %), the speciated nitroaromatic-N represented less than 10 % of total nitroaromatic-N (Fig. S10a). Nitroaromatic compounds are known for their remarkable contributions to aerosol light absorption, and some are recognized as toxicants (Laskin et al., 2015; Zhang et al., 2023). Our findings indicated the substantial presence of the un-speciated mass within this group of N-containing compounds, thus the importance to identify and quantify the unknown nitroaromatics.",
+        "paper_info": "acp-25-9061-2025",
+        "2d_coord": [
+            1.020451307296753,
+            0.451636403799057
+        ],
+        "MSU_id": 1346
+    },
+    {
+        "sentence": "We examined the relationship between DCA_ON and $NH_{4}^{+}$ concentrations during periods of continuous increment in DCA_ON lasting 4h or longer.",
+        "category": "Experiment",
+        "rank": 4,
+        "type": "text",
+        "para_id": 254,
+        "paper_id": 3,
+        "paragraph_info": "We examined the relationship between DCA\\_ON and  $NH_{4}^{+}$  concentrations during periods of continuous increment in DCA\\_ON lasting 4h or longer. We identified 17 such cases during the field observation period. Interestingly, DCA\\_ON showed a strong correlation with  $NH_4^+$  in all these cases (Fig. 3a). This result lends support for the hypothesis that DCA\\_ON may represent reduced ON species formed through the reactions between DCAs and  $NH_3 / NH_4^+$ . The slopes of linear regression between DCA\\_ON and  $NH_{4}^{+}$  varied largely among the cases and could be roughly divided into higher-slope cases and lower-slope cases, with 7 and 10 in these two categories, respectively (Fig. 3a). A higherslope value indicated a more rapid formation of DCA\\_ON at a given concentration level of  $NH_4^+$ . The higher-slope cases were distinctly associated with higher  $O_3$  concentration (Fig. 3b), suggesting an elevated oxidation capacity and hence enhanced formation of secondary products such as DCAs, which serve as the precursors of DCA\\_ON. This argument was supported by the overall higher increment of DCAs concentration in the higher-slope cases (Fig. 3b). Note that the aqueous formation of imines such as imidazoles through the reactions between carbonyls and  $NH_3 / NH_4^+$  has been established in laboratory studies (Galloway et al., 2009; Noziere et al., 2009) and confirmed by field observations (Zhang et al., 2020; Lian et al., 2021; Liu et al., 2023). Considering the close relationship between carbonyls and DCAs, the possibility that imines contributed to DCA\\_ON could not be excluded. Overall, while we acknowledge that a positive correlation with  $NH_4^+$  is not exclusive to DCA\\_ON, the combination of observational evidence described above and mechanistic plausibility strengthens our interpretation that the DCA-related ON probably contributes to reduced ON formation.",
+        "paper_info": "acp-25-9061-2025",
+        "2d_coord": [
+            1.5632877349853516,
+            0.23191896080970764
+        ],
+        "MSU_id": 1398
+    },
+    {
+        "sentence": "In a recent study conducted in rural Shanghai (Liu et al., 2023), eight imidazoles were detected.",
+        "category": "Experiment",
+        "rank": 3,
+        "type": "text",
+        "para_id": 255,
+        "paper_id": 3,
+        "paragraph_info": "The concentration of DCA\\_ON had an interquartile range of 8\u2013111 ng N m<sup> $-3$ </sup>, with an average  $\\pm$  standard deviation (SD) of  $66 \\pm 81 \\text{ ng N m}^{-3}$  over the observation period. Assuming an average molecular formula of  $C_5H_7N_{1.5}O_{1.5}$  for the reduced-ON species, considering these compounds may contain  $3-7$  carbon,  $1-2$  nitrogen, and  $1-2$  oxygen atoms, the concentration of these ON compounds would be 43- $592 \\text{ ng m}^{-3}$  with the average  $\\pm$  SD being  $352 \\pm 432 \\text{ ng m}^{-3}$ . This result provides a rough estimation of the total reduced ON compounds that are formed through  $NH_3 / NH_4^+$  reactions in urban Shanghai. In a recent study conducted in rural Shanghai (Liu et al., 2023), eight imidazoles were detected, and the total concentration of these species ranged from  $1.3-15.8 \\text{ ng m}^{-3}$  (average:  $5.5 \\pm 3.4 \\text{ ng m}^{-3}$ ). Furthermore, significant increases in imidazole concentrations were observed during humid haze periods, suggesting an aque-",
+        "paper_info": "acp-25-9061-2025",
+        "2d_coord": [
+            -0.520875871181488,
+            0.13616636395454407
+        ],
+        "MSU_id": 1417
+    },
+    {
+        "sentence": "Correlations between DCA_ON and $NH_{+}^{4}$ concentrations were analyzed in each of 17 cases.",
+        "category": "Experiment",
+        "rank": 3,
+        "type": "text",
+        "para_id": 262,
+        "paper_id": 3,
+        "paragraph_info": "**Figure 3.** The relationship between ON associated with dicarboxylic acids (DCA) formation (DCA\\_ON) and ammonium  $(NH_4^+)$  in the cases that DCA\\_ON showed continuous increments, and the potential influence factors. (a) Correlations between DCA\\_ON and  $NH_{+}^{4}$ concentrations in each of 17 cases where DCA\\_ON exhibited a continuous increment. The cases can be separated into two groups based on their linear regression slopes, those with higher slopes, enclosed in yellow dashed circles, and those with lower slopes, enclosed in blue dashed circles. (b) Comparisons of levels of ozone  $(O_3)$  and  $\\Delta DCAs$  in higher slope cases and lower slope cases.  $\\Delta DCAs$  refers to the differences in DCAs concentrations at the beginning and end of each case.",
+        "paper_info": "acp-25-9061-2025",
+        "2d_coord": [
+            1.480750560760498,
+            0.1599326729774475
+        ],
+        "MSU_id": 1450
+    },
+    {
+        "sentence": "Comparisons of levels of ozone $(O_3)$ and $\\Delta DCAs$ in higher slope cases and lower slope cases were made.",
+        "category": "Experiment",
+        "rank": 3,
+        "type": "text",
+        "para_id": 262,
+        "paper_id": 3,
+        "paragraph_info": "**Figure 3.** The relationship between ON associated with dicarboxylic acids (DCA) formation (DCA\\_ON) and ammonium  $(NH_4^+)$  in the cases that DCA\\_ON showed continuous increments, and the potential influence factors. (a) Correlations between DCA\\_ON and  $NH_{+}^{4}$ concentrations in each of 17 cases where DCA\\_ON exhibited a continuous increment. The cases can be separated into two groups based on their linear regression slopes, those with higher slopes, enclosed in yellow dashed circles, and those with lower slopes, enclosed in blue dashed circles. (b) Comparisons of levels of ozone  $(O_3)$  and  $\\Delta DCAs$  in higher slope cases and lower slope cases.  $\\Delta DCAs$  refers to the differences in DCAs concentrations at the beginning and end of each case.",
+        "paper_info": "acp-25-9061-2025",
+        "2d_coord": [
+            0.2079286128282547,
+            -0.36901921033859253
+        ],
+        "MSU_id": 1453
+    },
+    {
+        "sentence": "Case studies analyzed the air pollution problem in Beijing, China.",
+        "category": "Experiment",
+        "rank": 3,
+        "type": "text",
+        "para_id": 299,
+        "paper_id": 4,
+        "paragraph_info": "The rapidly progressing problem of air pollution has become a major issue for many large cities. Among all factors involved in the development of air pollution, the regional transportation of pollutants is generally considered the foremost one, as demonstrated by case studies where environmental scientists analyzed the air pollution problem in Beijing, China [\\[31,](#page-9-1) [73\\]](#page-10-1). To address this problem, it is important to trace back to the source areas where the pollutants are generated along the propagation pathways and enforce specific policies to mitigate the pollution, such as limiting road traffic and suspending chemical factories. To this end, this paper presents the following concepts to characterize the pattern-based analysis of air pollution propagation and help urban and environmental science experts better understand the transmission of pollutants among multiple cities at a large spatial scale.",
+        "paper_info": "airvis",
+        "2d_coord": [
+            -2.0055205821990967,
+            0.7257919907569885
+        ],
+        "MSU_id": 1678
+    },
+    {
+        "sentence": "We generate a massive number of propagation graphs until all the transportation graphs have been visited.",
+        "category": "Experiment",
+        "rank": 5,
+        "type": "text",
+        "para_id": 318,
+        "paper_id": 4,
+        "paragraph_info": "To better illustrate the construction of propagation graphs, we first define the concept of *spatiotemporal continuity* (Fig. 4): two transportation graphs are spatiotemporally continuous iff they share one and only one node, where the locations and timestamps of the shared nodes are equal, respectively. Based on this concept, we follow a depth-first search procedure outlined as follows: starting from a random transportation graph, we recursively add the transportation graphs that are spatiotemporally continuous with the added ones to the propagation graph. To simulate the decomposition of air pollutants, we limit the maximum time span of the propagation graph to 200 hours, as recommended by the experts. By repeating this procedure, we are able to generate a massive number of propagation graphs  $pG = (V, E)$  until all the transportation graphs have been visited. The attributes associated with the nodes and edges in the propagation graphs are identical to those in the transportation graphs. Such method allows us to obtain the continuous long-distance propagation instances naturally as paths in the graphs, which are almost impossible to detect with the prior methods.",
+        "paper_info": "airvis",
+        "2d_coord": [
+            -2.2754647731781006,
+            0.5977284908294678
+        ],
+        "MSU_id": 1793
+    },
+    {
+        "sentence": "The experts explored the propagation patterns with the system.",
+        "category": "Experiment",
+        "rank": 4,
+        "type": "text",
+        "para_id": 372,
+        "paper_id": 4,
+        "paragraph_info": "We demonstrated the effectiveness and usability of AirVis via two case studies and the interviews with three domain experts (EA, EB, and EC). Before the case studies, we conducted a training session to walk the experts through our system, including the visual encodings and user interactions. Thereafter, the experts explored the propagation patterns with the system and investigated their subjects of interest: a) the propagation patterns in the North China Plain, and b) the propagation patterns that involved Beijing. In these case studies, the experts obtained valuable insights that could potentially alleviate the air pollution problem and guide the pollution control policies in China. We then interviewed the experts to collect their comments and feedback.",
+        "paper_info": "airvis",
+        "2d_coord": [
+            -2.3936963081359863,
+            0.8827832937240601
+        ],
+        "MSU_id": 2025
+    },
+    {
+        "sentence": "The experts investigated their subjects of interest: a) the propagation patterns in the North China Plain, and b) the propagation patterns that involved Beijing.",
+        "category": "Experiment",
+        "rank": 4,
+        "type": "text",
+        "para_id": 372,
+        "paper_id": 4,
+        "paragraph_info": "We demonstrated the effectiveness and usability of AirVis via two case studies and the interviews with three domain experts (EA, EB, and EC). Before the case studies, we conducted a training session to walk the experts through our system, including the visual encodings and user interactions. Thereafter, the experts explored the propagation patterns with the system and investigated their subjects of interest: a) the propagation patterns in the North China Plain, and b) the propagation patterns that involved Beijing. In these case studies, the experts obtained valuable insights that could potentially alleviate the air pollution problem and guide the pollution control policies in China. We then interviewed the experts to collect their comments and feedback.",
+        "paper_info": "airvis",
+        "2d_coord": [
+            -2.3045740127563477,
+            0.9204583764076233
+        ],
+        "MSU_id": 2026
+    },
+    {
+        "sentence": "The experts opened the system and immediately noticed a heavily colored pattern cluster at the top left of the projection view.",
+        "category": "Experiment",
+        "rank": 3,
+        "type": "text",
+        "para_id": 374,
+        "paper_id": 4,
+        "paragraph_info": "The experts opened the system and immediately noticed a heavily colored pattern cluster at the top left of the projection view (Fig. 1A3), which represented a group of patterns with high pollutant concentrations. Given that the projection view captures the similarities of the patterns based on their spatiotemporal contexts, this pattern cluster indicates that the propagation of air pollution with high pollutant concentrations occurs consistently in the same spatiotemporal domain. Such an observation triggered the experts' interest. After these patterns were selected by drawing a polygon, a set of significant motifs were displayed in the motif view (Fig. 1B). Most of these motifs comprised four or even five nodes, indicating that this cluster of propagation patterns involved many districts and covered a large area.",
+        "paper_info": "airvis",
+        "2d_coord": [
+            -0.4277457594871521,
+            1.2210912704467773
+        ],
+        "MSU_id": 2034
+    },
+    {
+        "sentence": "The experts clicked on the motif.",
+        "category": "Experiment",
+        "rank": 3,
+        "type": "text",
+        "para_id": 378,
+        "paper_id": 4,
+        "paragraph_info": "propagation, the experts clicked on the motif and retrieved a set of the propagation patterns with such topology in the pattern view (Fig. [1C](#page-0-0)).",
+        "paper_info": "airvis",
+        "2d_coord": [
+            -2.1042211055755615,
+            1.008596658706665
+        ],
+        "MSU_id": 2051
+    },
+    {
+        "sentence": "EA wanted to examine the patterns with medium air pollution.",
+        "category": "Experiment",
+        "rank": 4,
+        "type": "text",
+        "para_id": 382,
+        "paper_id": 4,
+        "paragraph_info": "Medium-polluted pattern analysis. Furthermore, EA also wanted to examine the patterns with medium air pollution that were represented by the relatively transparent points sparsely distributed in the",
+        "paper_info": "airvis",
+        "2d_coord": [
+            -1.8303501605987549,
+            0.4419737756252289
+        ],
+        "MSU_id": 2082
+    },
+    {
+        "sentence": "We conducted informal interviews with the experts.",
+        "category": "Experiment",
+        "rank": 4,
+        "type": "text",
+        "para_id": 393,
+        "paper_id": 4,
+        "paragraph_info": "After the case studies, we conducted informal interviews with the experts and gathered their comments and feedback regarding the visual design, user interactions, and usability of the proposed system.",
+        "paper_info": "airvis",
+        "2d_coord": [
+            -1.8252719640731812,
+            0.623843789100647
+        ],
+        "MSU_id": 2138
+    },
+    {
+        "sentence": "We characterized the user requirements in the topology-driven analysis of propagation processes.",
+        "category": "Experiment",
+        "rank": 4,
+        "type": "text",
+        "para_id": 403,
+        "paper_id": 4,
+        "paragraph_info": "In this study, we propose a novel visual analytics approach to incorporate domain knowledge in analyzing the uncertain propagation of air pollution. By closely collaborating with the experts, we characterized the user requirements in the topology-driven analysis of propagation processes and derived a set of extensive design goals accordingly to guide the subsequent visual design. Based on the requirements and design goals, we developed AirVis, a visual analytics system that assists users in hierarchically exploring and interpreting massive propagation patterns extracted with a novel FSM-based pattern mining framework. The effectiveness of our system is demonstrated via two case studies conducted on the real-world dataset and the positive feedback received from the experts. Our approach is also generalizable to other similar problems that involve the topology-driven analysis of massive small graphs. In the future, we would like to incorporate fine-grained atmospheric data to obtain more accurate results and deploy our system in the field to reveal the insights in pollution propagation to a wider audience, including environmental scientists and government officials.",
+        "paper_info": "airvis",
+        "2d_coord": [
+            -2.2075397968292236,
+            0.37146225571632385
+        ],
+        "MSU_id": 2196
+    },
+    {
+        "sentence": "The effectiveness of our system is demonstrated via two case studies conducted on the real-world dataset.",
+        "category": "Experiment",
+        "rank": 4,
+        "type": "text",
+        "para_id": 403,
+        "paper_id": 4,
+        "paragraph_info": "In this study, we propose a novel visual analytics approach to incorporate domain knowledge in analyzing the uncertain propagation of air pollution. By closely collaborating with the experts, we characterized the user requirements in the topology-driven analysis of propagation processes and derived a set of extensive design goals accordingly to guide the subsequent visual design. Based on the requirements and design goals, we developed AirVis, a visual analytics system that assists users in hierarchically exploring and interpreting massive propagation patterns extracted with a novel FSM-based pattern mining framework. The effectiveness of our system is demonstrated via two case studies conducted on the real-world dataset and the positive feedback received from the experts. Our approach is also generalizable to other similar problems that involve the topology-driven analysis of massive small graphs. In the future, we would like to incorporate fine-grained atmospheric data to obtain more accurate results and deploy our system in the field to reveal the insights in pollution propagation to a wider audience, including environmental scientists and government officials.",
+        "paper_info": "airvis",
+        "2d_coord": [
+            -2.1914780139923096,
+            1.1324321031570435
+        ],
+        "MSU_id": 2200
+    },
+    {
+        "sentence": "This method was tested and validated in a year-long case study of the air quality index (AQI of PM2.5) in Beijing, China.",
+        "category": "Experiment",
+        "rank": -1,
+        "type": "text",
+        "para_id": 405,
+        "paper_id": 5,
+        "paragraph_info": "**Abstract:** In recent years, frequent occurrences of significant air pollution events in China have routinely caused panic and are a major topic of discussion by the public and air pollution experts in government and academia. Therefore, this study proposed an efficient visualization method to represent directly, quickly, and clearly the spatio-temporal information contained in air pollution data. Data quality check and cleansing during a preliminary visual analysis is presented in tabular form, heat matrix, or line chart, upon which hypotheses can be deduced. Further visualizations were designed to verify the hypotheses and obtain useful findings. This method was tested and validated in a year-long case study of the air quality index (AQI of PM2.5) in Beijing, China. We found that PM2.5, PM10, and NO<sup>2</sup> may be emitted by the same sources, and strong winds may accelerate the spread of pollutants. The average concentration of PM2.5 in Beijing was greater than the AQI value of 50 over the six-year study period. Furthermore, arable lands exhibited considerably higher concentrations of air pollutants than vegetation-covered areas. The findings of this study showed that our visualization method is intuitive and reliable through data quality checking and information sharing with multi-perspective air pollution graphs. This method allows the data to be easily understood by the public and inspire or aid further studies in other fields.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -0.43716368079185486,
+            1.1809731721878052
+        ],
+        "MSU_id": 2216
+    },
+    {
+        "sentence": "This method was tested and validated in a year-long case study of the air quality index (AQI of $PM_{2.5}$) in Beijing, China.",
+        "category": "Experiment",
+        "rank": -1,
+        "type": "text",
+        "para_id": 413,
+        "paper_id": 5,
+        "paragraph_info": "Air composition analysis and remote-sensing methods require complex computations and are time consuming. Moreover, the current graphical approaches for air pollution analysis lack interactive and sharable multi-perspective visualizations. The public urgently needs rapid and reliable knowledge on air pollution to make daily decisions. Similarly, most of the government staff are not professionals and need intuitive understanding of the conditions before they can execute any actions against the increasingly serious air pollutants. Thus, a visual methodology is needed for efficient and reliable exploration, particularly in the case of air pollution data, to improve the depth, readability, and accuracy of data analysis. We were motivated by the idea of visual thinking and the geovisualization concept [\\[12\\]](#page-18-15), which may be well suited for the exploration of air pollution data. Building on the extensive body of previous work, our paper presents a visualization exploration method that realizes the process of observation\u2013hypothesis\u2013verification. This method was tested and validated in a year-long case study of the air quality index (AQI of  $PM_{2.5}$ ) in Beijing, China. The useful findings of air pollution in Beijing show that our new method extends the existing work and fills a gap in the research, focusing on visual exploration to support various applications, such as knowledge-based decision making and aided research of air pollution.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -0.44144657254219055,
+            0.8313705325126648
+        ],
+        "MSU_id": 2279
+    },
+    {
+        "sentence": "We analyzed the characteristics of various types of graphs.",
+        "category": "Experiment",
+        "rank": -1,
+        "type": "text",
+        "para_id": 423,
+        "paper_id": 5,
+        "paragraph_info": "We achieved a better visual effect from multi-perspective visualization for spatio-temporal analysis. Conventional plots, such as scatter and line plots, are usually used for the time-series data exploration of air pollution [\\[7\\]](#page-17-3) without spatial analysis and do not include the new attractive graphs. We analyzed the characteristics of various types of graphs and found that the circular heat map is extremely suitable to display time series data and calendar view [\\[33\\]](#page-19-2) is useful for displaying years of daily data. This method provides a new perspective on time series data and a means to comprehensively understand the conventional line charts or matrix plots that fail to deliver because they separate the data into several parts according to seasons or years. We also used the geovisualization graphs to represent the spatial distribution of air pollution data clearly.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -2.2217090129852295,
+            0.8482943177223206
+        ],
+        "MSU_id": 2341
+    },
+    {
+        "sentence": "This method will be tested and validated in a year-long case study of the AQI of PM2.5 in Beijing, China.",
+        "category": "Experiment",
+        "rank": -1,
+        "type": "text",
+        "para_id": 426,
+        "paper_id": 5,
+        "paragraph_info": "Visualization value can be assessed from three viewpoints: technology, art, and empiric science [\\[9\\]](#page-18-1). Our method is efficient and extendable from the technological viewpoint and beautiful from the artistic viewpoint. Meanwhile, it follows the \"observation\u2013hypothesis\u2013verification\" process of the scientific method and thus complies with the demands of empirical science. In Section [3,](#page-5-0) this method will be tested and validated in a year-long case study of the AQI of PM2.5 in Beijing, China.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -0.22298724949359894,
+            1.3722949028015137
+        ],
+        "MSU_id": 2368
+    },
+    {
+        "sentence": "Two datasets are utilized for the case study of air quality in Beijing.",
+        "category": "Experiment",
+        "rank": -1,
+        "type": "text",
+        "para_id": 427,
+        "paper_id": 5,
+        "paragraph_info": "Two datasets are utilized for the case study of air quality in Beijing, the capital of China. The first dataset is historical hourly PM2.5 data (2009\u20132014) of Beijing obtained from the US Department of State air quality files available on its website [\\[34\\]](#page-19-3) as measured at the US Embassy in Beijing. Observation values include PM2.5 concentration, with parameter concentration units in micrograms per cubic meter (\u00b5g/m\u00b3) transformed to AQI values for our case study. However, these data are not completely verified or validated as indicated in the data statement. These data were used to demonstrate a practical application of the visualization approach, as well as its feasibility and efficiency. The data are referred to as the USE data in the rest of this paper.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -1.7318512201309204,
+            -1.6717923879623413
+        ],
+        "MSU_id": 2369
+    },
+    {
+        "sentence": "These data were used to demonstrate a practical application of the visualization approach.",
+        "category": "Experiment",
+        "rank": -1,
+        "type": "text",
+        "para_id": 427,
+        "paper_id": 5,
+        "paragraph_info": "Two datasets are utilized for the case study of air quality in Beijing, the capital of China. The first dataset is historical hourly PM2.5 data (2009\u20132014) of Beijing obtained from the US Department of State air quality files available on its website [\\[34\\]](#page-19-3) as measured at the US Embassy in Beijing. Observation values include PM2.5 concentration, with parameter concentration units in micrograms per cubic meter (\u00b5g/m\u00b3) transformed to AQI values for our case study. However, these data are not completely verified or validated as indicated in the data statement. These data were used to demonstrate a practical application of the visualization approach, as well as its feasibility and efficiency. The data are referred to as the USE data in the rest of this paper.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -1.226264238357544,
+            1.4983303546905518
+        ],
+        "MSU_id": 2374
+    },
+    {
+        "sentence": "In this case study, the precipitation data were integrated to determine whether rainy weather can affect pollutant concentration.",
+        "category": "Experiment",
+        "rank": -1,
+        "type": "text",
+        "para_id": 433,
+        "paper_id": 5,
+        "paragraph_info": "These problems can be handled in several ways. Multi-source data fusion may supplement the missing data and replace the part with logic errors. In this case study, the precipitation data were integrated to determine whether rainy weather can affect pollutant concentration. Interpolation for missing or coarse records is another commonly used method [23]. In addition, data could be divided into parts and analyzed separately to be used for the missing data problem in this case study.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -0.6065573692321777,
+            1.001486897468567
+        ],
+        "MSU_id": 2400
+    },
+    {
+        "sentence": "The relationship between pollutants and weather factors is analyzed.",
+        "category": "Experiment",
+        "rank": -1,
+        "type": "text",
+        "para_id": 451,
+        "paper_id": 5,
+        "paragraph_info": "We explore results in this section using multi-perspective analysis and various visual graphs. The relationship between pollutants and weather factors is analyzed first, followed by the presentation of temporal characteristics of  $PM_{2.5}$ . Afterward, spatial features of air pollution are shown and studied with stations overlaid on a satellite map. The last subsection includes the findings of air pollution in Beijing.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -0.4841052293777466,
+            0.23155972361564636
+        ],
+        "MSU_id": 2459
+    },
+    {
+        "sentence": "Spatial features of air pollution are shown and studied with stations overlaid on a satellite map.",
+        "category": "Experiment",
+        "rank": -1,
+        "type": "text",
+        "para_id": 451,
+        "paper_id": 5,
+        "paragraph_info": "We explore results in this section using multi-perspective analysis and various visual graphs. The relationship between pollutants and weather factors is analyzed first, followed by the presentation of temporal characteristics of  $PM_{2.5}$ . Afterward, spatial features of air pollution are shown and studied with stations overlaid on a satellite map. The last subsection includes the findings of air pollution in Beijing.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -1.6333543062210083,
+            -0.30302947759628296
+        ],
+        "MSU_id": 2461
+    },
+    {
+        "sentence": "Observations of the 36 stations from November 2013 to February 2014 are used.",
+        "category": "Experiment",
+        "rank": 3,
+        "type": "text",
+        "para_id": 463,
+        "paper_id": 5,
+        "paragraph_info": "Spatial distribution of the mean AQI of  $PM_{2.5}$  is analyzed in this section. Observations of the 36 stations from November 2013 to February 2014 are used. We first interpolate the AQI surface through the values of those stations by Ordinary Kriging (OK) [40], which is a geostatistical method where the weights for interpolation are computed by the neighboring values called \"semivariances\" ( $\\gamma$ ). In Equation (2), *n* is the number of pairs of sample points *z* separated by distance *h*, and  $\\hat{\\gamma}(h)$  is the semivariogram which is a function of distance [41].The basic formula for OK is Equation (3), in which the  $\\lambda_i$  is the kriging weight and  $Z(x_0)$  is the observed value at point  $x_0$ .",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            0.23364336788654327,
+            -0.11947079747915268
+        ],
+        "MSU_id": 2519
+    },
+    {
+        "sentence": "We created the Geovisualization heatmap of Beijing air pollution.",
+        "category": "Experiment",
+        "rank": -1,
+        "type": "text",
+        "para_id": 464,
+        "paper_id": 5,
+        "paragraph_info": "With Equations (2) and (3), provided by Clark [42], we created the Geovisualization heatmap of Beijing air pollution shown in Figure 11. The interpolation heatmap presents higher concentrations of pollutants in red, and lower concentrations in blue. It can be observed that air pollution has an increasing trend from north to south. From the land use figure of the year 2011 [43], it can be found that the north area in Beijing is mainly wood and orchard land, the center area is urban land, and the",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -1.223530650138855,
+            1.1192840337753296
+        ],
+        "MSU_id": 2524
+    },
+    {
+        "sentence": "The attribute data can be selected for analysis; for example, we can choose January from the 'month' attribute for analysis.",
+        "category": "Experiment",
+        "rank": -1,
+        "type": "text",
+        "para_id": 485,
+        "paper_id": 5,
+        "paragraph_info": "Figure [A1](#page-2-0) is the PivotTable GUI, showing its basic function areas. As seen in the figure, A and B are drop-down boxes that display options for users. A is the renderer, used to select the type of visualization, such as table, heat map, and line chart. B is the aggregator, used for selecting data for display, like mean AQI of PM2.5. C is the container for the attributes, and D is the Row attribute. E is the Column, to which attributes are dragged from C for visualization. The attribute data can be selected for analysis; for example, we can choose January from the 'month' attribute for analysis. F is the Data Visualization area, where the renderer builds an appropriate visualization.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -1.2526994943618774,
+            0.6538045406341553
+        ],
+        "MSU_id": 2632
+    }
+]

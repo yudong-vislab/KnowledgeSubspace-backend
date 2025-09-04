@@ -1,0 +1,2552 @@
+[
+    {
+        "sentence": "In Table I, turns/hr is the number of vehicles running across a survey point in an hour.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 9,
+        "paper_id": 0,
+        "paragraph_info": "The hourly air pollution and meteorological datasets are quite common in recent research about air pollution predicting. The traffic volume and average driving speed data are new datasets within all known air pollution related research. The traffic volume is collected hourly by vehicle detector devices at survey points in the road. They have both the inflow and outflow directions along the survey roads. The average driving speed data is also collected hourly and by the speed checkpoints. In fig. 2, we plot the locations of all traffic volume and vehicle speed survey points in the Seoul city's map. As we can observe, the traffic volume survey points and speed checkpoints are dense and cover quite well the area of Seoul city compared with the air pollution monitoring stations (in markers). Table I also represents some statistic analysis of these 2 datasets. In Table I, turns/hr is the number of vehicles running across a survey point in an hour.",
+        "paper_info": "1911.12919v1",
+        "2d_coord": [
+            -0.8759104013442993,
+            0.11278332769870758
+        ],
+        "MSU_id": 67
+    },
+    {
+        "sentence": "We will present in some next sections how we construct the input data to fit with ConvLSTM model and how to use it efficiently in air pollution relating problems.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 12,
+        "paper_id": 0,
+        "paragraph_info": "Based on the observation that air pollution changes in spatiotemporal form, we propose to use a recent model named Convolutional Long Short-term Memory (ConvLSTM) by [\\[16\\]](#page-7-0). This model was proved to be superior in processing both spatial and temporal features of the input data. We also confirm in this paper that by transforming air pollution data into sequences of images, a ConvLSTM model is the best suitable for the air pollution interpolation and prediction problem, outperforms other baselines based on recurrent neural network (RNN) or convolutional neural network (CNN). Furthermore, ConvLSTM model helps us to learn the spatial and temporal features of input data at the same time and automatically, surpassing recent research that much relied on hand-crafted spatiotemporal features. We will present in some next sections how we construct the input data to fit with ConvLSTM model and how to use it efficiently in air pollution relating problems.",
+        "paper_info": "1911.12919v1",
+        "2d_coord": [
+            -1.981825828552246,
+            -1.6002477407455444
+        ],
+        "MSU_id": 78
+    },
+    {
+        "sentence": "The architecture of an LSTM layer is illustrated in fig. 3.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 15,
+        "paper_id": 0,
+        "paragraph_info": "LSTM is a special kind of Recurrent Neural Network (RNN), which recently works as a standard Deep Learning algorithm for sequence predicting problems like speech recognition, language translation, to name a few. The architecture of an LSTM layer is following [\\[4\\]](#page-7-7) and illustrated in fig. 3. At any time t, the input to an LSTM cell is the actual data input at time t, x<sup>t</sup> , and the hidden state from previous cell ht-1. An LSTM cell uses some \"gate\" mechanisms such as forget gate, input gate and output gate to decide which part of the information will be output from the cell state and which information will be stored. Following are the equations which represent the transformation from input to output of an LSTM cell. f<sup>t</sup> is the output of the forget gate, W<sup>f</sup> and b<sup>f</sup> are corresponding weights and biases. \\* is the matrix-vector multiplication.",
+        "paper_info": "1911.12919v1",
+        "2d_coord": [
+            -1.5754956007003784,
+            -1.8774384260177612
+        ],
+        "MSU_id": 93
+    },
+    {
+        "sentence": "* is the matrix-vector multiplication.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 15,
+        "paper_id": 0,
+        "paragraph_info": "LSTM is a special kind of Recurrent Neural Network (RNN), which recently works as a standard Deep Learning algorithm for sequence predicting problems like speech recognition, language translation, to name a few. The architecture of an LSTM layer is following [\\[4\\]](#page-7-7) and illustrated in fig. 3. At any time t, the input to an LSTM cell is the actual data input at time t, x<sup>t</sup> , and the hidden state from previous cell ht-1. An LSTM cell uses some \"gate\" mechanisms such as forget gate, input gate and output gate to decide which part of the information will be output from the cell state and which information will be stored. Following are the equations which represent the transformation from input to output of an LSTM cell. f<sup>t</sup> is the output of the forget gate, W<sup>f</sup> and b<sup>f</sup> are corresponding weights and biases. \\* is the matrix-vector multiplication.",
+        "paper_info": "1911.12919v1",
+        "2d_coord": [
+            -1.7299911975860596,
+            -1.5930927991867065
+        ],
+        "MSU_id": 98
+    },
+    {
+        "sentence": "Fig. 3 illustrates the architecture of a common LSTM layer.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 18,
+        "paper_id": 0,
+        "paragraph_info": "Fig. 3. The architecture of a common LSTM layer with three consecutive LSTM cells. Taken from [\\[4\\]](#page-7-7).",
+        "paper_info": "1911.12919v1",
+        "2d_coord": [
+            -1.55424165725708,
+            -1.8661646842956543
+        ],
+        "MSU_id": 102
+    },
+    {
+        "sentence": "The architecture is taken from reference [4].",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 18,
+        "paper_id": 0,
+        "paragraph_info": "Fig. 3. The architecture of a common LSTM layer with three consecutive LSTM cells. Taken from [\\[4\\]](#page-7-7).",
+        "paper_info": "1911.12919v1",
+        "2d_coord": [
+            -0.4584410488605499,
+            -0.40524381399154663
+        ],
+        "MSU_id": 103
+    },
+    {
+        "sentence": "We will describe how a new variant of LSTM model like ConvLSTM model could be fit well to our tackling problem.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 19,
+        "paper_id": 0,
+        "paragraph_info": "The equations from (1) to (6) are commonly applied for 1 dimensional (1D) time series input data. For a higher dimensional input such as 2D or 3D tensors data, we can easily extend these transformations by replacing matrix-vector multiplication operator with matrix-matrix multiplication. This is called fully connected LSTM (FC-LSTM) model. Nevertheless, in [\\[16\\]](#page-7-0), the authors claimed that FC-LSTM model is not efficient for spatiotemporal based data because of its poor ability in spatial learning. For the next subsection, we will describe how a new variant of LSTM model like ConvLSTM model could be fit well to our tackling problem.",
+        "paper_info": "1911.12919v1",
+        "2d_coord": [
+            -1.5635502338409424,
+            -1.7666276693344116
+        ],
+        "MSU_id": 108
+    },
+    {
+        "sentence": "The equations for ConvLSTM are shown from (7) to (11) with * as the convolutional operator.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 22,
+        "paper_id": 0,
+        "paragraph_info": "To address the spatiotemporal problem, in ConvLSTM model, Shi et al. proposed to replace the fully connected operators by convolutional structures in both the input-tostate and state-to-state transitions. All the inputs X1,, X<sup>t</sup> , cell outputs C1,, C<sup>t</sup> , hidden states H1,, H<sup>t</sup> , and gates i<sup>t</sup> , f<sup>t</sup> , o<sup>t</sup> of the ConvLSTM are 3D tensors whose last two dimensions are spatial dimensions. The equations for ConvLSTM are shown from (7) to (11) with \\* is now the convolutional operator and",
+        "paper_info": "1911.12919v1",
+        "2d_coord": [
+            -1.6038808822631836,
+            -1.6623848676681519
+        ],
+        "MSU_id": 119
+    },
+    {
+        "sentence": "Element-wise matrix-matrix multiplication is still used.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 23,
+        "paper_id": 0,
+        "paragraph_info": "is still element-wise matrix-matrix multiplication.",
+        "paper_info": "1911.12919v1",
+        "2d_coord": [
+            -1.7535221576690674,
+            -1.6608831882476807
+        ],
+        "MSU_id": 120
+    },
+    {
+        "sentence": "Fig. 5 shows gray-scale images of air pollution for Seoul city.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 30,
+        "paper_id": 0,
+        "paragraph_info": "Fig. 5. Gray-scale \"images\" of air pollution and spatiotemporal data for the Seoul city.",
+        "paper_info": "1911.12919v1",
+        "2d_coord": [
+            -2.163862705230713,
+            -1.296433448791504
+        ],
+        "MSU_id": 150
+    },
+    {
+        "sentence": "Fig. 5 includes spatiotemporal data for the Seoul city.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 30,
+        "paper_id": 0,
+        "paragraph_info": "Fig. 5. Gray-scale \"images\" of air pollution and spatiotemporal data for the Seoul city.",
+        "paper_info": "1911.12919v1",
+        "2d_coord": [
+            -1.9339005947113037,
+            -1.4768656492233276
+        ],
+        "MSU_id": 151
+    },
+    {
+        "sentence": "The graph of the spatiotemporal semi-supervised neural network in DAL model is presented.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 38,
+        "paper_id": 0,
+        "paragraph_info": "Fig. 7. The graph of the spatiotemporal semi-supervised neural network in DAL model [\\[15\\]](#page-7-8).",
+        "paper_info": "1911.12919v1",
+        "2d_coord": [
+            -1.707700490951538,
+            -1.5981117486953735
+        ],
+        "MSU_id": 192
+    },
+    {
+        "sentence": "We can refer to fig. 5 to see the results of these transformations.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 40,
+        "paper_id": 0,
+        "paragraph_info": "In this section, we describe how we pre-process the collected datasets for our experiments. We can refer to fig. 5 to see the results of these transformation.",
+        "paper_info": "1911.12919v1",
+        "2d_coord": [
+            -0.30973657965660095,
+            -1.880671739578247
+        ],
+        "MSU_id": 200
+    },
+    {
+        "sentence": "This method is mentioned in the previous section.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 44,
+        "paper_id": 0,
+        "paragraph_info": "The external air pollution of 3 areas in China is kept untouched cause we use an additional neural network to embed their spatiotemporal effects with Seoul air pollution as mentioned in previous section.",
+        "paper_info": "1911.12919v1",
+        "2d_coord": [
+            -1.151353120803833,
+            -0.5397575497627258
+        ],
+        "MSU_id": 220
+    },
+    {
+        "sentence": "The result is shown in Table II.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 48,
+        "paper_id": 0,
+        "paragraph_info": "The implementation of ConvLSTM interpolation model is similar with 1 hour ahead for interpolating function. The number of layers for the interpolation model is 1 encoder and 1 decoder (prediction) layer with the output channels are 64. The kernel size chosen for all layers is 3x3. We performed 2 experiments, ConvLSTM model with only labeled data loss and ConvLSTM model with both labeled and unlabeled data spatiotemporal loss as introduced in DAL model. The result is shown in Table II.",
+        "paper_info": "1911.12919v1",
+        "2d_coord": [
+            -1.7956840991973877,
+            -1.4340845346450806
+        ],
+        "MSU_id": 250
+    },
+    {
+        "sentence": "TABLE II presents the RMSE of the ConvLSTM interpolation model with other baselines.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 50,
+        "paper_id": 0,
+        "paragraph_info": "TABLE II RMSE OF CONVLSTM INTERPOLATION MODEL WITH OTHER BASELINES",
+        "paper_info": "1911.12919v1",
+        "2d_coord": [
+            -1.5583624839782715,
+            -1.796938180923462
+        ],
+        "MSU_id": 259
+    },
+    {
+        "sentence": "Fig. 8 shows the plotting of interpolated output images.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 56,
+        "paper_id": 0,
+        "paragraph_info": "Fig. 8. Plotting of interpolated output images for 4 interpolation models.",
+        "paper_info": "1911.12919v1",
+        "2d_coord": [
+            -1.463104009628296,
+            -1.1725131273269653
+        ],
+        "MSU_id": 283
+    },
+    {
+        "sentence": "The plotting is done for 4 interpolation models.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 56,
+        "paper_id": 0,
+        "paragraph_info": "Fig. 8. Plotting of interpolated output images for 4 interpolation models.",
+        "paper_info": "1911.12919v1",
+        "2d_coord": [
+            -1.170471429824829,
+            -1.564324140548706
+        ],
+        "MSU_id": 284
+    },
+    {
+        "sentence": "TABLE III INTERPOLATION ERROR (RMSE) OF CONVLSTM MODEL AND ITS COMBINATION WITH OTHER SPATIOTEMPORAL FACTORS.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 62,
+        "paper_id": 0,
+        "paragraph_info": "TABLE III INTERPOLATION ERROR (RMSE) OF CONVLSTM MODEL AND ITS COMBINATION WITH OTHER SPATIOTEMPORAL FACTORS",
+        "paper_info": "1911.12919v1",
+        "2d_coord": [
+            -1.419274926185608,
+            -1.9698916673660278
+        ],
+        "MSU_id": 305
+    },
+    {
+        "sentence": "The experiments results are shown in Table III.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 63,
+        "paper_id": 0,
+        "paragraph_info": "lowing test: removing one of the existing air pollution values from input data but still keep the values of other impacted spatiotemporal data and then check the regression error of the interpolated air pollution value with the existing one. If the error is small then we can infer that other spatiotemporal data has a remarkable effect on air pollution interpolation. To measure the error, we alternately set the air pollution value of each existed input pixel to zero, keep other data of that pixel unchanged, running the trained model on this modified input data and calculate RMSE between the inferred value with the actual pixel value of the same position. The final error is the mean of all errors after doing this procedure with all existing air pollution values. We call this error spRMSE, which means the RMSE caused by spatiotemporal factors. The experiments results are shown in Table III. We can notice that ConvLSTM + Speed model has a better spRMSE than ConvLSTM in spite it has worse overall RMSE; which indicates the driving average speed affects air pollution in spatiotemporal form. ConvLSTM + All model has the best spRMSE, proves that we can improve the citywide interpolation with more spatiotemporal data.",
+        "paper_info": "1911.12919v1",
+        "2d_coord": [
+            -1.649585247039795,
+            -0.7151721715927124
+        ],
+        "MSU_id": 313
+    },
+    {
+        "sentence": "TABLE IV PREDICTION ERROR (RMSE) OF CONVLSTM AND BASELINE MODELS",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 68,
+        "paper_id": 0,
+        "paragraph_info": "TABLE IV PREDICTION ERROR (RMSE) OF CONVLSTM AND BASELINE MODELS",
+        "paper_info": "1911.12919v1",
+        "2d_coord": [
+            -1.4808385372161865,
+            -1.8362542390823364
+        ],
+        "MSU_id": 338
+    },
+    {
+        "sentence": "TABLE V RMSE OF CONVLSTM MODEL WITH SPATIOTEMPORAL FACTORS",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 70,
+        "paper_id": 0,
+        "paragraph_info": "TABLE V RMSE OF CONVLSTM MODEL WITH SPATIOTEMPORAL FACTORS",
+        "paper_info": "1911.12919v1",
+        "2d_coord": [
+            -1.5188713073730469,
+            -1.8420366048812866
+        ],
+        "MSU_id": 347
+    },
+    {
+        "sentence": "External factors include meteorology and holidays.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 75,
+        "paper_id": 0,
+        "paragraph_info": "The spatiotemporal problem is also fit for the crowd flows prediction problem. In [\\[20\\]](#page-7-16), the authors presented a Deep Neural Network Spatiotemporal (DeepST) for predicting crowd flows in Beijing and New York. They proposed the DeepST model based on Convolutional Neural Network and used Residual Units (as in ResNet model) to build a very deep network to capture more citywide dependencies. The last layer was a Fusion layer to combine deep network results with external factors (such as meteorology, holidays).",
+        "paper_info": "1911.12919v1",
+        "2d_coord": [
+            1.037699580192566,
+            -0.1741029918193817
+        ],
+        "MSU_id": 379
+    },
+    {
+        "sentence": "We have introduced 3 main contributions.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 76,
+        "paper_id": 0,
+        "paragraph_info": "In this research, we have introduced 3 main contributions. First, we described and resolved the citywide scale Air Pollution Interpolation and Prediction problem by considering a whole city to be one image. Second, we pointed out and collected several spatiotemporal datasets, which have effects on air pollution throughout the city. Lastly, we proposed a spatiotemporal Deep Learning based model for citywide air pollution interpolation and prediction. We proved that the proposed model does not only work better than CNN and LSTM themselves in spatial and temporal features analysis but also outperforms state-of-the-art relevant models. The leverage of using other spatiotemporal factors gives us a powerful model in interpolating and forecasting air pollution over the city.",
+        "paper_info": "1911.12919v1",
+        "2d_coord": [
+            0.5274467468261719,
+            -1.363451361656189
+        ],
+        "MSU_id": 380
+    },
+    {
+        "sentence": "Figure 1 illustrates multiple influential factors.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 84,
+        "paper_id": 1,
+        "paragraph_info": "**Figure 1: Multiple influential factors**",
+        "paper_info": "3219819.3219822",
+        "2d_coord": [
+            0.1667928546667099,
+            -1.0138353109359741
+        ],
+        "MSU_id": 417
+    },
+    {
+        "sentence": "Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 86,
+        "paper_id": 1,
+        "paragraph_info": "Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than ACM must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. KDD'18, August 19-23, 2018, London, United Kingdom.",
+        "paper_info": "3219819.3219822",
+        "2d_coord": [
+            0.18457932770252228,
+            -0.042396433651447296
+        ],
+        "MSU_id": 425
+    },
+    {
+        "sentence": "Copies must not be made or distributed for profit or commercial advantage.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 86,
+        "paper_id": 1,
+        "paragraph_info": "Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than ACM must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. KDD'18, August 19-23, 2018, London, United Kingdom.",
+        "paper_info": "3219819.3219822",
+        "2d_coord": [
+            -0.1772281378507614,
+            1.1382280588150024
+        ],
+        "MSU_id": 426
+    },
+    {
+        "sentence": "Copies must bear this notice and the full citation on the first page.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 86,
+        "paper_id": 1,
+        "paragraph_info": "Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than ACM must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. KDD'18, August 19-23, 2018, London, United Kingdom.",
+        "paper_info": "3219819.3219822",
+        "2d_coord": [
+            -0.572846531867981,
+            1.0346256494522095
+        ],
+        "MSU_id": 427
+    },
+    {
+        "sentence": "Copyrights for components of this work owned by others than ACM must be honored.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 86,
+        "paper_id": 1,
+        "paragraph_info": "Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than ACM must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. KDD'18, August 19-23, 2018, London, United Kingdom.",
+        "paper_info": "3219819.3219822",
+        "2d_coord": [
+            -0.9688720703125,
+            -1.132841944694519
+        ],
+        "MSU_id": 428
+    },
+    {
+        "sentence": "Abstracting with credit is permitted.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 86,
+        "paper_id": 1,
+        "paragraph_info": "Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than ACM must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. KDD'18, August 19-23, 2018, London, United Kingdom.",
+        "paper_info": "3219819.3219822",
+        "2d_coord": [
+            -1.6778395175933838,
+            -0.005063869059085846
+        ],
+        "MSU_id": 429
+    },
+    {
+        "sentence": "To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 86,
+        "paper_id": 1,
+        "paragraph_info": "Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than ACM must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. KDD'18, August 19-23, 2018, London, United Kingdom.",
+        "paper_info": "3219819.3219822",
+        "2d_coord": [
+            -0.33876001834869385,
+            0.004465162754058838
+        ],
+        "MSU_id": 430
+    },
+    {
+        "sentence": "Request permissions from permissions@acm.org.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 86,
+        "paper_id": 1,
+        "paragraph_info": "Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than ACM must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. KDD'18, August 19-23, 2018, London, United Kingdom.",
+        "paper_info": "3219819.3219822",
+        "2d_coord": [
+            -1.7121596336364746,
+            -0.31722450256347656
+        ],
+        "MSU_id": 431
+    },
+    {
+        "sentence": "KDD'18 took place from August 19-23, 2018, in London, United Kingdom.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 86,
+        "paper_id": 1,
+        "paragraph_info": "Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for profit or commercial advantage and that copies bear this notice and the full citation on the first page. Copyrights for components of this work owned by others than ACM must be honored. Abstracting with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior specific permission and/or a fee. Request permissions from permissions@acm.org. KDD'18, August 19-23, 2018, London, United Kingdom.",
+        "paper_info": "3219819.3219822",
+        "2d_coord": [
+            -0.05779128149151802,
+            -1.1409369707107544
+        ],
+        "MSU_id": 432
+    },
+    {
+        "sentence": "Most people have the sense that air quality will be better after rain.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 88,
+        "paper_id": 1,
+        "paragraph_info": "Second, the interactions between these factors are complex. Most people have the sense of air quality will be better after rain. However, based on the statistical results of three-year data in Beijing which depicted in Figure 2(a), it still has above 20% ratio that air quality will be worse in the next few hours after rain. Though rain has a higher ratio of air quality will be better, it is still difficult to model the interaction as the effect is not absolute. The reason behind it is that air quality is affected by multiple factors simultaneously shown in Figure 1, which the interactions are complex. As a result, it is hard to determine the weight of each factor due to the dynamic environment. Likewise, it is very difficult to capture the spatio-temporal characterizations of air pollution dispersion as air quality changes over location and fluctuate along time without an obvious periodic pattern.",
+        "paper_info": "3219819.3219822",
+        "2d_coord": [
+            0.2317679077386856,
+            0.9225587248802185
+        ],
+        "MSU_id": 437
+    },
+    {
+        "sentence": "Figure 2 shows air quality change over multiple factors.",
+        "category": "others",
+        "rank": 2,
+        "type": "text",
+        "para_id": 90,
+        "paper_id": 1,
+        "paragraph_info": "Figure 2: Air quality change over multiple factors. Ratios in a) is calculated by  $\\Delta = A\\bar{Q}I_{t+k} - AQI_t$ , where  $AQI_t > 100$ ,  $Weather_t = rain$  and k is the time interval after rain.",
+        "paper_info": "3219819.3219822",
+        "2d_coord": [
+            0.34547102451324463,
+            -1.4485268592834473
+        ],
+        "MSU_id": 446
+    },
+    {
+        "sentence": "k is the time interval after rain.",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 90,
+        "paper_id": 1,
+        "paragraph_info": "Figure 2: Air quality change over multiple factors. Ratios in a) is calculated by  $\\Delta = A\\bar{Q}I_{t+k} - AQI_t$ , where  $AQI_t > 100$ ,  $Weather_t = rain$  and k is the time interval after rain.",
+        "paper_info": "3219819.3219822",
+        "2d_coord": [
+            -0.2679915130138397,
+            -0.8843433260917664
+        ],
+        "MSU_id": 449
+    },
+    {
+        "sentence": "We take AQI of PM<sub>2.5</sub> for example.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 94,
+        "paper_id": 1,
+        "paragraph_info": "As PM<sub>2.5</sub> (Particulate matter with a diameter smaller than 2.5 micrometers) is most reported and most difficult-to-predict, in the following, we take AQI of  $PM_{2.5}$  for example.",
+        "paper_info": "3219819.3219822",
+        "2d_coord": [
+            0.8359953761100769,
+            -1.2837445735931396
+        ],
+        "MSU_id": 469
+    },
+    {
+        "sentence": "Figure 3 presents the website of AirPollutionPrediction.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 95,
+        "paper_id": 1,
+        "paragraph_info": "AirPollutionPrediction system [8] is deployed through a \"cloud + client\" framework, where the cloud continuously collects realtime data and make predictions [9], and the web client public air quality information available. Figure 3 presents the website of AirPollutionPrediction, where the chart on the map showing AQI forecasts. For visualization, we show the min-max range of AQI for time intervals 7-12, 12-24, and 24-48 hours.",
+        "paper_info": "3219819.3219822",
+        "2d_coord": [
+            -0.3140955865383148,
+            -1.6742993593215942
+        ],
+        "MSU_id": 473
+    },
+    {
+        "sentence": "Figure 3 shows the web client of AirPollutionPrediction.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 97,
+        "paper_id": 1,
+        "paragraph_info": "Figure 3. Web client of AirPollutionPrediction",
+        "paper_info": "3219819.3219822",
+        "2d_coord": [
+            -0.5586299300193787,
+            -1.5883299112319946
+        ],
+        "MSU_id": 477
+    },
+    {
+        "sentence": "Figure 4 shows the framework of our approach.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 100,
+        "paper_id": 1,
+        "paragraph_info": "Figure 4: Framework of our approach",
+        "paper_info": "3219819.3219822",
+        "2d_coord": [
+            0.6025992035865784,
+            0.3664720952510834
+        ],
+        "MSU_id": 492
+    },
+    {
+        "sentence": "Figure 5 illustrates spatial transformation.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 107,
+        "paper_id": 1,
+        "paragraph_info": "**Figure 5: Spatial transformation**",
+        "paper_info": "3219819.3219822",
+        "2d_coord": [
+            0.7690640687942505,
+            -1.155809760093689
+        ],
+        "MSU_id": 534
+    },
+    {
+        "sentence": "Figure 6 shows the architectures of fusion.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 114,
+        "paper_id": 1,
+        "paragraph_info": "**Figure 6: Architectures of fusion**",
+        "paper_info": "3219819.3219822",
+        "2d_coord": [
+            0.9849948883056641,
+            -1.3986047506332397
+        ],
+        "MSU_id": 570
+    },
+    {
+        "sentence": "Algorithm 1 outlines the DeepAir training process.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 121,
+        "paper_id": 1,
+        "paragraph_info": "Algorithm 1 outlines the DeepAir training process. We first construct the training instances from original heterogeneous urban data (lines 1-11). Then, DeepAir is trained via backpropagation to minimize the mean absolute error between predictions and ground values (lines 12-16).",
+        "paper_info": "3219819.3219822",
+        "2d_coord": [
+            0.29123321175575256,
+            -1.6916176080703735
+        ],
+        "MSU_id": 601
+    },
+    {
+        "sentence": "Figure 7 shows the distribution of AQI of PM2.5.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 127,
+        "paper_id": 1,
+        "paragraph_info": "**Figure 7: Distribution about AQI of PM2.5. Each color represents the level of air pollution.**",
+        "paper_info": "3219819.3219822",
+        "2d_coord": [
+            1.4150919914245605,
+            -1.777197241783142
+        ],
+        "MSU_id": 628
+    },
+    {
+        "sentence": "Each color represents the level of air pollution.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 127,
+        "paper_id": 1,
+        "paragraph_info": "**Figure 7: Distribution about AQI of PM2.5. Each color represents the level of air pollution.**",
+        "paper_info": "3219819.3219822",
+        "2d_coord": [
+            -2.166827440261841,
+            -1.025746464729309
+        ],
+        "MSU_id": 629
+    },
+    {
+        "sentence": "Prediction accuracy ( $acc$ ) and mean absolute error ( $mae$ ) are defined as follows.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 129,
+        "paper_id": 1,
+        "paragraph_info": "We use prediction accuracy ( $acc$ ) and mean absolute error ( $mae$ ) to evaluate our algorithms, which are defined as follow:",
+        "paper_info": "3219819.3219822",
+        "2d_coord": [
+            0.11736343801021576,
+            -1.9327155351638794
+        ],
+        "MSU_id": 633
+    },
+    {
+        "sentence": "Figure 8 shows the comparison between DeepAir and previous state-of-the-art online approach, FFA, in AirPollutionPrediction system on 9 major Chinese cities.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 133,
+        "paper_id": 1,
+        "paragraph_info": "Figure 8 shows the comparison between DeepAir and previous state-of-the-art online approach, FFA, in AirPollutionPrediction system on 9 major Chinese cities. In general, DeepAir can achieve an average accuracy of (81.1%, 63%, 46%) in (1-6h, 7-48h, sudden changes) for all cities. Comparing with FFA, our approach has a better performance in all nine cities, with 2.4%,  $12.2\\%,\\ 63.2\\%$  relative accuracy improvements on short-term, long-term and sudden changes prediction. The reason behind it is that FFA trains four separate prediction models for modeling influential features respectively, which may fail to capture the interactions among all factors. Also, FFA is a shallow method which cannot capture the underlying complex pattern of each factor. Moreover, the features in FFA is not strong enough as it ignores the dynamic change of weather forecasts.",
+        "paper_info": "3219819.3219822",
+        "2d_coord": [
+            0.30194228887557983,
+            -1.930111050605774
+        ],
+        "MSU_id": 667
+    },
+    {
+        "sentence": "We want to investigate the long-term sudden changes prediction.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 145,
+        "paper_id": 1,
+        "paragraph_info": "In the future, we want to investigate the long-term sudden changes prediction as it is very difficult and important.",
+        "paper_info": "3219819.3219822",
+        "2d_coord": [
+            0.3417803943157196,
+            -1.7240978479385376
+        ],
+        "MSU_id": 737
+    },
+    {
+        "sentence": "A detailed description of the instrument can be found in Junninen et al. (2010).",
+        "category": "others",
+        "rank": 2,
+        "type": "text",
+        "para_id": 159,
+        "paper_id": 2,
+        "paragraph_info": "The chemical composition of cluster ions was measured using a high-resolution atmospheric-pressure-interface timeof-flight mass spectrometer (APi-ToF, Aerodyne Research Inc. and Tofwerk AG). The APi-ToF measures naturally charged ions in the ambient environment. A detailed description of the instrument can be found in Junninen et al.  $(2010)$ . In this study, ambient air was sampled through a 0.57 m stainless-steel tube with a flow rate of  $\\sim 10 \\, \\text{L} \\, \\text{min}^{-1}$  (LPM), with 0.8 LPM of the sample flow entering the APi-ToF.",
+        "paper_info": "acp-24-2423-2024",
+        "2d_coord": [
+            0.1196296364068985,
+            0.824228823184967
+        ],
+        "MSU_id": 827
+    },
+    {
+        "sentence": "The shaded areas present the 25th and 75th percentiles.",
+        "category": "others",
+        "rank": 2,
+        "type": "text",
+        "para_id": 164,
+        "paper_id": 2,
+        "paragraph_info": "**Figure 1.** Diurnal variation in (a) average wind vectors, (b) wind speed, (c) relative humidity (RH) and (d) temperature. The shaded areas present the 25th and 75th percentiles.",
+        "paper_info": "acp-24-2423-2024",
+        "2d_coord": [
+            -0.40801483392715454,
+            0.4855605363845825
+        ],
+        "MSU_id": 850
+    },
+    {
+        "sentence": "Detailed information on the mass spectrometer data analysis methods can be found in previous studies.",
+        "category": "others",
+        "rank": 2,
+        "type": "text",
+        "para_id": 177,
+        "paper_id": 2,
+        "paragraph_info": "The APi-ToF and CI-APi-ToF data were analyzed using the Tofware package (v.3.1.0, Tofwerk, Switzerland, and Aerodyne, USA) in the Igor Pro software (v.7.08, WaveMetrics, USA). The mass accuracy was within  $10 \\text{ ppm}$  (APi-ToF) and 5 ppm (CI-APi-ToF), and the mass resolutions were  $\\sim$  $4500 \\text{ (API-ToF)}$  and  $\\sim 5000 \\text{ (CI-APi-ToF)}$  for ions  $> 200 \\text{ Th.}$ The raw signals were first normalized by the primary ions  $(NO_3^-$ , monomer, dimer and trimer) and then multiplied by the calibration factor of SA. Detailed information on the mass spectrometer data analysis methods can be found in previous studies (Cai et al., 2022; J. Cai et al., 2023; Zha et al., 2018, 2023a, b; Fan et al., 2021).",
+        "paper_info": "acp-24-2423-2024",
+        "2d_coord": [
+            0.8527950048446655,
+            0.12814629077911377
+        ],
+        "MSU_id": 917
+    },
+    {
+        "sentence": "The detailed settings of the kinetic model can be found in Cai et al. (2021).",
+        "category": "others",
+        "rank": 2,
+        "type": "text",
+        "para_id": 178,
+        "paper_id": 2,
+        "paragraph_info": "In order to evaluate the contribution of SA-amine clustering to cluster formation in the Po Valley, we applied a kinetic model to simulate SA dimer concentrations. We simulated the cluster concentrations and particle formation rates under different amine levels based on the model. The simulation was performed with a temperature of 283 K, an atmospheric pressure of  $1.01 \\times 10^5$  Pa and a condensation sink (CS) of  $0.01 \\text{ s}^{-1}$ , based on our measurement during the sampling period. In the model, the formation rate of SA tetramer was regarded as the simulated particle formation rate. The standard molar Gibbs free energy of formation and the corresponding evaporation of SA-amine clusters was based on quantum chemistry with corrections from the experimental data. The detailed settings of the kinetic model can be found in Cai et al. (2021).",
+        "paper_info": "acp-24-2423-2024",
+        "2d_coord": [
+            0.9989275932312012,
+            -0.8875164985656738
+        ],
+        "MSU_id": 923
+    },
+    {
+        "sentence": "The values in parentheses represent the respective 25th and 75th percentiles.",
+        "category": "others",
+        "rank": 2,
+        "type": "text",
+        "para_id": 183,
+        "paper_id": 2,
+        "paragraph_info": "The median of particle formation rate average values at 1.7, 3 and 7 nm for all sampling days with NPF with growth events were  $87 \\text{ cm}^{-3} \\text{ s}^{-1}$  (32\u2013133 cm<sup>-3</sup> s<sup>-1</sup>),<br>3.2 cm<sup>-3</sup> s<sup>-1</sup> (1.4\u20137.0 cm<sup>-3</sup> s<sup>-1</sup>) and 1.4 cm<sup>-3</sup> s<sup>-1</sup> (0.3\u2013  $3.0 \\text{ cm}^{-3} \\text{ s}^{-1}$ ), respectively, where the values in parentheses represent the respective 25th and 75th percentiles. The formation rate at 1.7 nm during NPF with growth days (NPF with growth,  $87 \\text{ cm}^{-3} \\text{ s}^{-1}$ ) is similar to that observed previously at the same site by Kontkanen et al. (2016) in summer. The high formation rate, which is comparable to heavily polluted urban environments, such as Beijing and Shanghai in China (59\u2013225 cm<sup> $-3$ </sup> s<sup> $-1$ </sup>; Deng et al., 2020; Yao et al., 2018), will be further discussed in Sect. 3.4. The average formation rate ( $J_{1.7}$ ) on NPF days without growth ( $24 \\text{ cm}^{-3} \\text{ s}^{-1}$ ) is much lower. During noontime, the formation rate of particles for NPF events with no growth was less than half of NPF with growth (Fig. S2). This suggests that, for particles to grow in a polluted environment such as the Po Valley, there needs to be abundant clustering to overcome losses to the existing condensation sink so that at least some of the particles survive to grow into larger sizes.",
+        "paper_info": "acp-24-2423-2024",
+        "2d_coord": [
+            1.2247029542922974,
+            -0.14523157477378845
+        ],
+        "MSU_id": 946
+    },
+    {
+        "sentence": "Cai et al. (2022), Zha et al. (2023b), and Alfaouri et al. (2022) are referenced.",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 192,
+        "paper_id": 2,
+        "paragraph_info": "During the campaign, we observed and identified different types of ion clusters using the APi-ToF, including  $SA-NH_3$ , SA-amine, SA-NH<sub>3</sub>-amine and SA-NH<sub>3</sub>-Org, during NPF events. In Fig. 4a, we presented the mass defect plot of the naturally charged ion clusters on 20 April, when strong NPF events were observed ( $J_{1.7}$  of 83 cm<sup>-3</sup> s<sup>-1</sup>). The presence of these clusters was usually in conjunction with SA tetramers  $(SA_4)$ , pentamers  $(SA_5)$  and hexamers  $(SA_6)$ , which potentially contribute to the NPF events. In APi-ToF measurement, the absence of alkaline species in the smallest sulfuric acid clusters is likely attributed to the loss of alkaline molecules within the mass spectrometer (Cai et al., 2022; Zha et al., 2023b; Alfaouri et al., 2022).",
+        "paper_info": "acp-24-2423-2024",
+        "2d_coord": [
+            -0.9165029525756836,
+            -1.0970529317855835
+        ],
+        "MSU_id": 1021
+    },
+    {
+        "sentence": "The hourly CS levels quantify the ability of pre-existing particles.",
+        "category": "others",
+        "rank": 2,
+        "type": "text",
+        "para_id": 199,
+        "paper_id": 2,
+        "paragraph_info": "Throughout the entire sampling period, relatively high concentrations of fine particulate matter ( $PM_{2.5}$ ) were measured, with a daily average of  $17 \\mu \\text{g m}^{-3}$  and a maximum value of  $43 \\,\\mu\\text{g m}^{-3}$ . Correspondingly, the hourly CS levels, which quantify the ability of pre-existing particles to",
+        "paper_info": "acp-24-2423-2024",
+        "2d_coord": [
+            1.4533960819244385,
+            -0.17324373126029968
+        ],
+        "MSU_id": 1068
+    },
+    {
+        "sentence": "Diamonds represent the median values; the error bars represent the 25th and 75th percentiles.",
+        "category": "others",
+        "rank": 2,
+        "type": "text",
+        "para_id": 208,
+        "paper_id": 2,
+        "paragraph_info": "**Figure 5.** Parameters and gaseous precursors related to NPF in the Po Valley and other environments: (a) the formation rate of sub-2 nm particles, (b) the atmospheric NH3 concentrations, (c) the SA concentrations, (d) the DMA concentrations, (e) the CS levels and (f) the growth rate in different environments. Diamonds represent the median values; the error bars represent the 25th and 75th percentiles. For the Po Valley data, the formation rates, growth rates, SA concentrations and CS data were selected for 10:00\u201314:00 LT. The formation rates, growth rates, SA concentrations and CS during NPF in Beijing, Shanghai, Hyyti\u00e4l\u00e4, Jungfraujoch and Chacaltaya are from Deng et al. (2020). The GR calculation range used for comparison varies for different sites: Beijing (GR7\u201315; Deng et al., 2020), Shanghai (GR7\u201325; Yao et al., 2018), Nanjing (GR3\u201320; Yu et al., 2016), Hyyti\u00e4l\u00e4 (GR3\u201320; Vana et al., 2016), Jungfraujoch (GR7\u201320; Boulon et al., 2010), Chacaltaya (GR7\u201320; Rose et al., 2015) and Po Valley (GR7\u201315; this study). The NH3 and DMA concentrations are from the literature (as listed in the Table S1). Half of the limit of detection (LOD) of DMA concentrations in Hyyti\u00e4l\u00e4 was applied in panel (d) (Hemmil\u00e4 et al., 2018). DMA concentrations in the Po Valley were presented as the detection limit reported by Wang et al. (2020) with large uncertainties, as they were not quantified in this study (Fig. S4, Table S1).",
+        "paper_info": "acp-24-2423-2024",
+        "2d_coord": [
+            -1.6668277978897095,
+            0.3635602593421936
+        ],
+        "MSU_id": 1119
+    },
+    {
+        "sentence": "The supplement related to this article is available online.",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 210,
+        "paper_id": 2,
+        "paragraph_info": "**Supplement.** The supplement related to this article is available online at: [https://doi.org/10.5194/acp-24-2423-2024-supplement.](https://doi.org/10.5194/acp-24-2423-2024-supplement)",
+        "paper_info": "acp-24-2423-2024",
+        "2d_coord": [
+            0.2970408499240875,
+            -0.5897209048271179
+        ],
+        "MSU_id": 1139
+    },
+    {
+        "sentence": "Data are available from the authors upon request.",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 212,
+        "paper_id": 2,
+        "paragraph_info": "**Data availability.** Data are available from the authors upon request.",
+        "paper_info": "acp-24-2423-2024",
+        "2d_coord": [
+            -1.4307812452316284,
+            0.4189315140247345
+        ],
+        "MSU_id": 1158
+    },
+    {
+        "sentence": "The study was published in P. Natl. Acad. Sci. USA, volume 110, pages 17223\u201317228 in 2013.",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 226,
+        "paper_id": 2,
+        "paragraph_info": "S., Curtius, J., Hansel, A., Petaja, T., Kulmala, M., Donahue, N. M., and Worsnop, D. R.: Molecular understanding of atmospheric particle formation from sulfuric acid and large oxidized organic molecules, P. Natl. Acad. Sci. USA, 110, 17223\u201317228, https://doi.org[/10.1073/pnas.1306973110,](https://doi.org/10.1073/pnas.1306973110) 2013.",
+        "paper_info": "acp-24-2423-2024",
+        "2d_coord": [
+            1.135488510131836,
+            0.6484845876693726
+        ],
+        "MSU_id": 1161
+    },
+    {
+        "sentence": "The study can be accessed via the DOI link provided.",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 226,
+        "paper_id": 2,
+        "paragraph_info": "S., Curtius, J., Hansel, A., Petaja, T., Kulmala, M., Donahue, N. M., and Worsnop, D. R.: Molecular understanding of atmospheric particle formation from sulfuric acid and large oxidized organic molecules, P. Natl. Acad. Sci. USA, 110, 17223\u201317228, https://doi.org[/10.1073/pnas.1306973110,](https://doi.org/10.1073/pnas.1306973110) 2013.",
+        "paper_info": "acp-24-2423-2024",
+        "2d_coord": [
+            -0.7869020700454712,
+            0.2821480333805084
+        ],
+        "MSU_id": 1162
+    },
+    {
+        "sentence": "Frege, C., Heyn, C., Guida, R., Hakala, J., Heikkinen, L., Hoyle, C. R., Jokinen, T., Kangasluoma, J., Kirkby, J., Kontkanen, J., K\u00fcrten, A., Lawler, M. J., Mai, H., Mathot, S., Mauldin, R. L., Molteni, U., Nichman, L., Nieminen, T., Nowak, J., Ojdanic, A., Onnela, A., Pajunoja, A., Pet\u00e4j\u00e4, T., Piel, F., Qu\u00e9l\u00e9ver, L. L. J., Sarnela, N., Schallhart, S., Sengupta, K., Sipil\u00e4, M., Tom\u00e9, A., Tr\u00f6stl, J., V\u00e4is\u00e4nen, O., Wagner, A. C., Ylisirni\u00f6, A., Zha, Q., Baltensperger, U., Carslaw, K. S., Curtius, J., Flagan, R. C., Hansel, A., Riipinen, I., Smith, J. N., Virtanen, A., Winkler, P. M., Donahue, N. M., Kerminen, V.-M., Kulmala, M., Ehn, M., and Worsnop, D. R. authored a paper.",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 227,
+        "paper_id": 2,
+        "paragraph_info": "Frege, C., Heyn, C., Guida, R., Hakala, J., Heikkinen, L., Hoyle, C. R., Jokinen, T., Kangasluoma, J., Kirkby, J., Kontkanen, J., K\u00fcrten, A., Lawler, M. J., Mai, H., Mathot, S., Mauldin, R. L., Molteni, U., Nichman, L., Nieminen, T., Nowak, J., Ojdanic, A., Onnela, A., Pajunoja, A., Pet\u00e4j\u00e4, T., Piel, F., Qu\u00e9l\u00e9ver, L. L. J., Sarnela, N., Schallhart, S., Sengupta, K., Sipil\u00e4, M., Tom\u00e9, A., Tr\u00f6stl, J., V\u00e4is\u00e4nen, O., Wagner, A. C., Ylisirni\u00f6, A., Zha, Q., Baltensperger, U., Carslaw, K. S., Curtius, J., Flagan, R. C., Hansel, A., Riipinen, I., Smith, J. N., Virtanen, A., Winkler, P. M., Donahue, N. M., Kerminen, V.-M., Kulmala, M., Ehn, M., and Worsnop, D. R.: Size-dependent influence of NOx r on the growth rates of organic aerosol particles, Sci. Adv., 6, eaay4945, https://doi.org[/10.1126/sciadv.aay4945,](https://doi.org/10.1126/sciadv.aay4945) 2020.",
+        "paper_info": "acp-24-2423-2024",
+        "2d_coord": [
+            0.21367965638637543,
+            0.14841938018798828
+        ],
+        "MSU_id": 1163
+    },
+    {
+        "sentence": "The findings were published in Sci. Adv., 6, eaay4945.",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 227,
+        "paper_id": 2,
+        "paragraph_info": "Frege, C., Heyn, C., Guida, R., Hakala, J., Heikkinen, L., Hoyle, C. R., Jokinen, T., Kangasluoma, J., Kirkby, J., Kontkanen, J., K\u00fcrten, A., Lawler, M. J., Mai, H., Mathot, S., Mauldin, R. L., Molteni, U., Nichman, L., Nieminen, T., Nowak, J., Ojdanic, A., Onnela, A., Pajunoja, A., Pet\u00e4j\u00e4, T., Piel, F., Qu\u00e9l\u00e9ver, L. L. J., Sarnela, N., Schallhart, S., Sengupta, K., Sipil\u00e4, M., Tom\u00e9, A., Tr\u00f6stl, J., V\u00e4is\u00e4nen, O., Wagner, A. C., Ylisirni\u00f6, A., Zha, Q., Baltensperger, U., Carslaw, K. S., Curtius, J., Flagan, R. C., Hansel, A., Riipinen, I., Smith, J. N., Virtanen, A., Winkler, P. M., Donahue, N. M., Kerminen, V.-M., Kulmala, M., Ehn, M., and Worsnop, D. R.: Size-dependent influence of NOx r on the growth rates of organic aerosol particles, Sci. Adv., 6, eaay4945, https://doi.org[/10.1126/sciadv.aay4945,](https://doi.org/10.1126/sciadv.aay4945) 2020.",
+        "paper_info": "acp-24-2423-2024",
+        "2d_coord": [
+            0.36977365612983704,
+            0.6916503310203552
+        ],
+        "MSU_id": 1165
+    },
+    {
+        "sentence": "The paper can be accessed via the DOI link https://doi.org/10.1126/sciadv.aay4945.",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 227,
+        "paper_id": 2,
+        "paragraph_info": "Frege, C., Heyn, C., Guida, R., Hakala, J., Heikkinen, L., Hoyle, C. R., Jokinen, T., Kangasluoma, J., Kirkby, J., Kontkanen, J., K\u00fcrten, A., Lawler, M. J., Mai, H., Mathot, S., Mauldin, R. L., Molteni, U., Nichman, L., Nieminen, T., Nowak, J., Ojdanic, A., Onnela, A., Pajunoja, A., Pet\u00e4j\u00e4, T., Piel, F., Qu\u00e9l\u00e9ver, L. L. J., Sarnela, N., Schallhart, S., Sengupta, K., Sipil\u00e4, M., Tom\u00e9, A., Tr\u00f6stl, J., V\u00e4is\u00e4nen, O., Wagner, A. C., Ylisirni\u00f6, A., Zha, Q., Baltensperger, U., Carslaw, K. S., Curtius, J., Flagan, R. C., Hansel, A., Riipinen, I., Smith, J. N., Virtanen, A., Winkler, P. M., Donahue, N. M., Kerminen, V.-M., Kulmala, M., Ehn, M., and Worsnop, D. R.: Size-dependent influence of NOx r on the growth rates of organic aerosol particles, Sci. Adv., 6, eaay4945, https://doi.org[/10.1126/sciadv.aay4945,](https://doi.org/10.1126/sciadv.aay4945) 2020.",
+        "paper_info": "acp-24-2423-2024",
+        "2d_coord": [
+            1.7838771343231201,
+            -0.182908296585083
+        ],
+        "MSU_id": 1166
+    },
+    {
+        "sentence": "Detailed descriptions of the new method can be found in our previous work (Yu et al., 2021, 2023).",
+        "category": "others",
+        "rank": 2,
+        "type": "text",
+        "para_id": 234,
+        "paper_id": 3,
+        "paragraph_info": "Aerosol ON was measured bihourly using our newly developed analytical system, which enables sensitive and simultaneous measurements of aerosol ON and IN. Detailed descriptions of the new method can be found in our previous work (Yu et al., 2021, 2023). In brief, the analyzer system integrates two commercial instruments: an online aerosol carbon (C) analyzer and a chemiluminescence  $NO_x$  analyzer. Carbonaceous and nitrogenous aerosols collected on quartz filters were thermally evolved under programmed temperatures and then catalytically oxidized to  $CO_2$  and nitrogen oxides ( $NO_{\\nu}$ ), respectively. The C signal was monitored using the non-dispersive infrared (NDIR) method, while the N signal was recorded through chemiluminescence detection after converting  $NO_{\\nu}$  to NO. The C signal assists in differentiating IN and ON components since ON aerosols produce both C and N signals, while the IN fraction only gives an N signal. The programmed thermal evolution facilitates the separation of aerosol IN and ON, as they exhibit distinct thermal characteristics. The quantification of IN and ON is achieved through multivariate curve resolution data treatment of C and N thermal fractions (Yu et al., 2021).",
+        "paper_info": "acp-25-9061-2025",
+        "2d_coord": [
+            -0.5635177493095398,
+            -1.2141526937484741
+        ],
+        "MSU_id": 1235
+    },
+    {
+        "sentence": "The measurement methods for $PM_{2.5}$ mass and major aerosol components at the site have been described in detail elsewhere.",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 236,
+        "paper_id": 3,
+        "paragraph_info": "The measurement methods for  $PM_{2.5}$  mass and major aerosol components at the site have been described in detail elsewhere (Qiao et al., 2014).  $PM_{2.5}$  concentration was measured using a beta attenuation particulate monitor (Thermo Fisher Scientific, FH 62 C14 series). Organic and elemental carbon (OC and EC) were monitored using a semicontinuous OC/EC analyzer (model RT-4, Sunset Laboratory, Tigard, OR, USA). The major water-soluble ionic species  $(NO_3^-, Cl^-, SO_4^{2-},$  $\\mathrm{Na}^+$ ,  $\\mathrm{NH}_4^+$ ,  $\\mathrm{K}^+$ ,  $\\mathrm{Mg}^{2+}$ , and  $\\mathrm{Ca}^{2+}$ ) in PM<sub>2.5</sub> were measured using the MARGA (ADI, 2080; Applikon Analytical B.V.). Elements in PM<sub>2.5</sub> (e.g., Al, K, Ca, Mn, Fe, Ni, Cu, Zn, As, Se, Cd, Pb) were monitored using an online X-ray fluorescence (XRF) spectrometer (Xact<sup>\u00ae</sup> 625, Cooper Environmental Services, Tigard, OR, USA). All the instruments were equipped with individual sampling inlets with a cyclone to achieve a  $2.5 \\,\\mu\\text{m}$  cut size. The sampling lines, made of stainless steel, were approximately  $2-2.5$  m in length.",
+        "paper_info": "acp-25-9061-2025",
+        "2d_coord": [
+            0.4504237174987793,
+            -1.535422444343567
+        ],
+        "MSU_id": 1245
+    },
+    {
+        "sentence": "The averaging was done to match the time resolution of other analyses.",
+        "category": "others",
+        "rank": 2,
+        "type": "text",
+        "para_id": 238,
+        "paper_id": 3,
+        "paragraph_info": "Gaseous pollutants, including sulfur dioxide  $(SO_2)$ , ozone  $(O_3)$ , nitrogen dioxide (NO<sub>2</sub>), nitric oxide (NO), and carbon monoxide (CO), along with meteorological parameters such as temperature, relative humidity, atmospheric pressure, visibility, wind speed, and wind direction, were also recorded. The trace gas and meteorological data were averaged to an hourly resolution to match the time resolution of other analyses.",
+        "paper_info": "acp-25-9061-2025",
+        "2d_coord": [
+            0.0004198215901851654,
+            -0.6436347365379333
+        ],
+        "MSU_id": 1269
+    },
+    {
+        "sentence": "Details regarding the PMF configuration and diagnostics are provided in Text S1 in the Supplement.",
+        "category": "others",
+        "rank": 2,
+        "type": "text",
+        "para_id": 241,
+        "paper_id": 3,
+        "paragraph_info": "In this study, bihourly measurements of aerosol total ON, together with a comprehensive list of organic and inorganic source markers, were available. These data enabled a quantitative source apportionment of ON using PMF receptor modeling. The PMF results allowed investigation of the diel variations in ON sources. Details regarding the PMF configuration and diagnostics are provided in Text S1 in the Supplement. Benefiting from the comprehensive array of molecular source tracers, the PMF analysis resolved a total of 18 factors, including eight primary emission sources and 10 secondary formation sources. The factor profiles and contributions are displayed in Figs. S3 and S4 in the Supplement, respectively. Source identification was based on established molecular and elemental markers (Qiao et al., 2014; Wang et al., 2015). These factors and their corresponding markers are as follows. (1) Industrial emissions were represented by manganese (Mn), iron (Fe), and zinc (Zn). (2) Coal combustion was identified through selenium (Se) and lead (Pb). (3) Biomass burning was characterized by the presence of levoglucosan, mannosan, and galactosan. (4) Vehicle emissions were indicated by hopanes, nitrogen oxides  $(NO_x)$ , and elemental carbon (EC). (5) Residue oil combustion was marked by high loadings of nickel (Ni). (6) Cooking emissions were indicated by saturated and unsaturated fatty acids. (7) Oxygenated cooking OA formation was characterized by the high loadings of azelaic acid, 9-oxononanoic acid, and nonanoic acid, which are oxidation products of oleic acid or other unsaturated fatty acids with  $-C = C$  at the C9 position that are emitted directly from cooking activities (Huang et al., 2021a; Wang and Yu, 2021). This factor reflects secondary oxidation products originating from primary cooking emissions and showed pronounced enhancements during dinner hours, as illustrated in Fig. S4a. (8) Sea salt emissions were distinguished by sodium  $(Na^+)$  and chloride  $(Cl^-)$ . (9) Soil dust was indicated by silicon (Si) and calcium (Ca). (10) Nitrocatechol formation processes were represented by 4-nitrocatechol, 3-",
+        "paper_info": "acp-25-9061-2025",
+        "2d_coord": [
+            0.994099497795105,
+            -0.26955071091651917
+        ],
+        "MSU_id": 1290
+    },
+    {
+        "sentence": "The factor profiles and contributions are displayed in Figs. S3 and S4 in the Supplement.",
+        "category": "others",
+        "rank": 2,
+        "type": "text",
+        "para_id": 241,
+        "paper_id": 3,
+        "paragraph_info": "In this study, bihourly measurements of aerosol total ON, together with a comprehensive list of organic and inorganic source markers, were available. These data enabled a quantitative source apportionment of ON using PMF receptor modeling. The PMF results allowed investigation of the diel variations in ON sources. Details regarding the PMF configuration and diagnostics are provided in Text S1 in the Supplement. Benefiting from the comprehensive array of molecular source tracers, the PMF analysis resolved a total of 18 factors, including eight primary emission sources and 10 secondary formation sources. The factor profiles and contributions are displayed in Figs. S3 and S4 in the Supplement, respectively. Source identification was based on established molecular and elemental markers (Qiao et al., 2014; Wang et al., 2015). These factors and their corresponding markers are as follows. (1) Industrial emissions were represented by manganese (Mn), iron (Fe), and zinc (Zn). (2) Coal combustion was identified through selenium (Se) and lead (Pb). (3) Biomass burning was characterized by the presence of levoglucosan, mannosan, and galactosan. (4) Vehicle emissions were indicated by hopanes, nitrogen oxides  $(NO_x)$ , and elemental carbon (EC). (5) Residue oil combustion was marked by high loadings of nickel (Ni). (6) Cooking emissions were indicated by saturated and unsaturated fatty acids. (7) Oxygenated cooking OA formation was characterized by the high loadings of azelaic acid, 9-oxononanoic acid, and nonanoic acid, which are oxidation products of oleic acid or other unsaturated fatty acids with  $-C = C$  at the C9 position that are emitted directly from cooking activities (Huang et al., 2021a; Wang and Yu, 2021). This factor reflects secondary oxidation products originating from primary cooking emissions and showed pronounced enhancements during dinner hours, as illustrated in Fig. S4a. (8) Sea salt emissions were distinguished by sodium  $(Na^+)$  and chloride  $(Cl^-)$ . (9) Soil dust was indicated by silicon (Si) and calcium (Ca). (10) Nitrocatechol formation processes were represented by 4-nitrocatechol, 3-",
+        "paper_info": "acp-25-9061-2025",
+        "2d_coord": [
+            0.8620180487632751,
+            -0.33012843132019043
+        ],
+        "MSU_id": 1292
+    },
+    {
+        "sentence": "The sources of OC can be found in Fig. S5.",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 257,
+        "paper_id": 3,
+        "paragraph_info": "**Figure 2.** PMF source apportionment results for aerosol ON. (a) Overall mass and percent contributions of resolved sources to aerosol ON during the fall\u2013winter observation period. (b) Diel variations of source compositions of ON. (c) Diel variation patterns of each ON source. The numerical ranges show the lowest to highest averages of percent contributions of sources at sampling hours (e.g., 02:00, 04:00). The number in parentheses are overall percent contributions of sources to ON pool during the observation (i.e., results in a). Contributions of nitrophenol formation and \u03b2-caryophyllene SOA formation to ON were very minor and not shown for their diel variations in (c). Secondary sources of ON are highlighted with a purple box. The sources of OC can be found in Fig. S5.",
+        "paper_info": "acp-25-9061-2025",
+        "2d_coord": [
+            0.730469822883606,
+            -0.5052769184112549
+        ],
+        "MSU_id": 1430
+    },
+    {
+        "sentence": "The ensuing discussion includes subsequent source analyses.",
+        "category": "others",
+        "rank": 2,
+        "type": "text",
+        "para_id": 260,
+        "paper_id": 3,
+        "paragraph_info": "A total of 24 local SON formation cases were identified and classified into five types based on the dominant formation pathway of SON, as revealed by the PMF analysis. Figure 4 illustrates the variations in the sources of SON and secondary organic carbon (SOC) for the five types of local SON increment. The ensuing discussion shows our paired measurements of bulk aerosol ON and OC, along with subsequent source analyses, provide unique insights into the formation processes of N-containing OA.",
+        "paper_info": "acp-25-9061-2025",
+        "2d_coord": [
+            -0.7570537328720093,
+            0.4060957431793213
+        ],
+        "MSU_id": 1446
+    },
+    {
+        "sentence": "One of the foremost prerequisites in alleviating air pollution is to understand how pollutants propagate.",
+        "category": "others",
+        "rank": 3,
+        "type": "text",
+        "para_id": 280,
+        "paper_id": 4,
+        "paragraph_info": "Air pollution has become a global concern due to its severe impacts on many aspects of modern society, such as public health [28] and sustainable development [72]. One of the foremost prerequisites in alleviating air pollution is to understand how pollutants propagate at",
+        "paper_info": "airvis",
+        "2d_coord": [
+            -1.0043433904647827,
+            1.4627149105072021
+        ],
+        "MSU_id": 1564
+    },
+    {
+        "sentence": "Manuscript received xx xxx. 201x; accepted xx xxx. 201x.",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 281,
+        "paper_id": 4,
+        "paragraph_info": "Manuscript received xx xxx. 201x; accepted xx xxx. 201x. Date of Publication xx xxx. 201x; date of current version xx xxx. 201x. For information on obtaining reprints of this article, please send e-mail to: reprints@ieee.org. Digital Object Identifier: xx.xxxx/TVCG.201x.xxxxxxx",
+        "paper_info": "airvis",
+        "2d_coord": [
+            -0.12275542318820953,
+            -0.5871964693069458
+        ],
+        "MSU_id": 1565
+    },
+    {
+        "sentence": "Date of Publication xx xxx. 201x; date of current version xx xxx. 201x.",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 281,
+        "paper_id": 4,
+        "paragraph_info": "Manuscript received xx xxx. 201x; accepted xx xxx. 201x. Date of Publication xx xxx. 201x; date of current version xx xxx. 201x. For information on obtaining reprints of this article, please send e-mail to: reprints@ieee.org. Digital Object Identifier: xx.xxxx/TVCG.201x.xxxxxxx",
+        "paper_info": "airvis",
+        "2d_coord": [
+            1.1197495460510254,
+            -0.37594470381736755
+        ],
+        "MSU_id": 1566
+    },
+    {
+        "sentence": "For information on obtaining reprints of this article, please send e-mail to: reprints@ieee.org.",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 281,
+        "paper_id": 4,
+        "paragraph_info": "Manuscript received xx xxx. 201x; accepted xx xxx. 201x. Date of Publication xx xxx. 201x; date of current version xx xxx. 201x. For information on obtaining reprints of this article, please send e-mail to: reprints@ieee.org. Digital Object Identifier: xx.xxxx/TVCG.201x.xxxxxxx",
+        "paper_info": "airvis",
+        "2d_coord": [
+            -1.2540913820266724,
+            -0.485248327255249
+        ],
+        "MSU_id": 1567
+    },
+    {
+        "sentence": "Digital Object Identifier: xx.xxxx/TVCG.201x.xxxxxxx",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 281,
+        "paper_id": 4,
+        "paragraph_info": "Manuscript received xx xxx. 201x; accepted xx xxx. 201x. Date of Publication xx xxx. 201x; date of current version xx xxx. 201x. For information on obtaining reprints of this article, please send e-mail to: reprints@ieee.org. Digital Object Identifier: xx.xxxx/TVCG.201x.xxxxxxx",
+        "paper_info": "airvis",
+        "2d_coord": [
+            0.2019975632429123,
+            -0.6611250042915344
+        ],
+        "MSU_id": 1568
+    },
+    {
+        "sentence": "Our contributions are summarized as follows.",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 289,
+        "paper_id": 4,
+        "paragraph_info": "To address these challenges, we first derive a novel pattern mining framework based on frequent subgraph mining (FSM) method [\\[25\\]](#page-9-5) by combining air quality data with meteorological data to model the transportation of air pollutants and detect latent propagation patterns at large spatial and temporal scales. FSM is particularly effective in extracting frequent subgraphs that represent typical propagation patterns. On the basis of this framework, we further propose AirVis, a visual analytics system that enables scalable and intuitive analyses of massive propagation patterns. In particular, we extract significant motifs (i.e., contextless frequent topological structures) from these patterns and aggregate the patterns based on topology similarities with the minimum description length (MDL) principle [\\[46\\]](#page-9-6) which compresses data by creating summary representations for similar data items. Moreover, the patterns are organized hierarchically with multiple coordinated views and presented with uncertainty visualization techniques to facilitate the effective exploration and analyses of the pollution propagation processes. To the best of our knowledge, AirVis is the first attempt to establish an interactive topology-driven analysis of uncertain air pollution propagation. Our contributions are summarized as follows.",
+        "paper_info": "airvis",
+        "2d_coord": [
+            1.021536946296692,
+            -1.3229632377624512
+        ],
+        "MSU_id": 1614
+    },
+    {
+        "sentence": "We focus on the most related parts of visualizing a large number of graphs.",
+        "category": "others",
+        "rank": 3,
+        "type": "text",
+        "para_id": 297,
+        "paper_id": 4,
+        "paragraph_info": "A subgraph is essentially a type of graph. Graph visualization is a broad research field [\\[23,](#page-9-33) [60\\]](#page-10-22). We focus on the most related parts of visualizing a large number of graphs. Some studies focus on either the structure- [\\[30,](#page-9-34) [71\\]](#page-10-23) or metric-oriented [\\[18,](#page-9-35) [27\\]](#page-9-36) analyses of a large number of graphs, but they cannot be applied to propagation patterns wherein both uncertainties and structure are meaningful. Techniques of dynamic graph visualization [\\[4\\]](#page-9-37) aim to organize numerous chronologically evolving graphs (e.g., in a radial [\\[20\\]](#page-9-38) or list layout [\\[9,](#page-9-39) [57\\]](#page-10-24)) for efficient time-oriented analysis. These techniques cannot deal with propagation patterns that are not chronologically ordered. Therefore, we propose an MDL-based hierarchical organization of massive patterns exploiting their topology similarities, wherein the uncertainties of the patterns are also visually encoded.",
+        "paper_info": "airvis",
+        "2d_coord": [
+            -1.950862169265747,
+            0.9263400435447693
+        ],
+        "MSU_id": 1665
+    },
+    {
+        "sentence": "These stations are referred to as districts because they represent the regional atmospheric conditions.",
+        "category": "others",
+        "rank": 2,
+        "type": "text",
+        "para_id": 301,
+        "paper_id": 4,
+        "paragraph_info": "Without loss of generality, this study focuses mainly on analyzing the propagation of PM2*.*5, a major type of air pollutant that can be transported over long distances [\\[61\\]](#page-10-25) and seriously affects public health [\\[67\\]](#page-10-26). After data cleaning and preprocessing, a meteorological sample and an air quality sample for every hour (5,448 hours) were obtained between Sept. 16, 2014 and Apr. 30, 2015 from 138 meteorological stations and 38 air quality stations. We refer to these stations as *districts* because they represent the regional atmospheric conditions.",
+        "paper_info": "airvis",
+        "2d_coord": [
+            -0.9550114870071411,
+            -0.9918256402015686
+        ],
+        "MSU_id": 1696
+    },
+    {
+        "sentence": "We closely worked with three domain experts, EA, EB, and EC, from the fields of urban computing and atmospheric science.",
+        "category": "others",
+        "rank": 2,
+        "type": "text",
+        "para_id": 302,
+        "paper_id": 4,
+        "paragraph_info": "To identify the user requirements for analyzing air pollution propagation, we closely worked with three domain experts, EA, EB, and EC, from the fields of urban computing and atmospheric science in the past year. EA and EB have decades of experience in utilizing data-driven automated approaches to study various urban problems, including air pollution, while EC is a recognized environmental scientist specializing in the analysis of air pollution and its propagation. This cooperation attempts to integrate their expertise in evaluating significant propagation patterns and finding major sources of air pollution using the visual analytics approach. To achieve this goal, we closely followed the *ninestage design study methodology framework* [\\[49\\]](#page-9-40). In particular, we first conducted comprehensive literature review (*learn*) regarding the analysis of pollution propagation and the visualization of spatiotemporal graph data, and then attempted to identify user requirements (*discover*) by holding bi-weekly discussions with the experts for three months. During the development of our system, we iteratively prototyped and implemented several design alternatives (*design & implement*) and evaluated the proposed designs with the experts (*deploy*) to verify the effectiveness of our approach. The derived user requirements are summarized as follows.",
+        "paper_info": "airvis",
+        "2d_coord": [
+            -1.5892552137374878,
+            -0.7560864090919495
+        ],
+        "MSU_id": 1697
+    },
+    {
+        "sentence": "This cooperation attempts to integrate their expertise in evaluating significant propagation patterns and finding major sources of air pollution using the visual analytics approach.",
+        "category": "others",
+        "rank": 2,
+        "type": "text",
+        "para_id": 302,
+        "paper_id": 4,
+        "paragraph_info": "To identify the user requirements for analyzing air pollution propagation, we closely worked with three domain experts, EA, EB, and EC, from the fields of urban computing and atmospheric science in the past year. EA and EB have decades of experience in utilizing data-driven automated approaches to study various urban problems, including air pollution, while EC is a recognized environmental scientist specializing in the analysis of air pollution and its propagation. This cooperation attempts to integrate their expertise in evaluating significant propagation patterns and finding major sources of air pollution using the visual analytics approach. To achieve this goal, we closely followed the *ninestage design study methodology framework* [\\[49\\]](#page-9-40). In particular, we first conducted comprehensive literature review (*learn*) regarding the analysis of pollution propagation and the visualization of spatiotemporal graph data, and then attempted to identify user requirements (*discover*) by holding bi-weekly discussions with the experts for three months. During the development of our system, we iteratively prototyped and implemented several design alternatives (*design & implement*) and evaluated the proposed designs with the experts (*deploy*) to verify the effectiveness of our approach. The derived user requirements are summarized as follows.",
+        "paper_info": "airvis",
+        "2d_coord": [
+            -2.197260618209839,
+            0.9548006057739258
+        ],
+        "MSU_id": 1700
+    },
+    {
+        "sentence": "The derived user requirements are summarized as follows.",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 302,
+        "paper_id": 4,
+        "paragraph_info": "To identify the user requirements for analyzing air pollution propagation, we closely worked with three domain experts, EA, EB, and EC, from the fields of urban computing and atmospheric science in the past year. EA and EB have decades of experience in utilizing data-driven automated approaches to study various urban problems, including air pollution, while EC is a recognized environmental scientist specializing in the analysis of air pollution and its propagation. This cooperation attempts to integrate their expertise in evaluating significant propagation patterns and finding major sources of air pollution using the visual analytics approach. To achieve this goal, we closely followed the *ninestage design study methodology framework* [\\[49\\]](#page-9-40). In particular, we first conducted comprehensive literature review (*learn*) regarding the analysis of pollution propagation and the visualization of spatiotemporal graph data, and then attempted to identify user requirements (*discover*) by holding bi-weekly discussions with the experts for three months. During the development of our system, we iteratively prototyped and implemented several design alternatives (*design & implement*) and evaluated the proposed designs with the experts (*deploy*) to verify the effectiveness of our approach. The derived user requirements are summarized as follows.",
+        "paper_info": "airvis",
+        "2d_coord": [
+            -0.3964489698410034,
+            -0.5678830742835999
+        ],
+        "MSU_id": 1706
+    },
+    {
+        "sentence": "Explore a topology-based overview of patterns.",
+        "category": "others",
+        "rank": 2,
+        "type": "text",
+        "para_id": 303,
+        "paper_id": 4,
+        "paragraph_info": "R1: Explore a topology-based overview of patterns. To interpret the massive propagation patterns extracted from atmospheric data, the experts must first grasp an overview of these patterns through their topologies, which are the key factors in understanding their roles. For example, a star-like topology indicates that the district at the center of the topology could be a major source of air pollution, while a linked topology represents the long-range transportation of pollutants. Such topology analysis allows the experts to intuitively classify patterns and find promising ones on the basis of their spatial structures.",
+        "paper_info": "airvis",
+        "2d_coord": [
+            -2.181755542755127,
+            0.9888089299201965
+        ],
+        "MSU_id": 1707
+    },
+    {
+        "sentence": "The conversion involves the following concepts.",
+        "category": "others",
+        "rank": 2,
+        "type": "text",
+        "para_id": 322,
+        "paper_id": 4,
+        "paragraph_info": "tion graphs with the frequent subgraph mining (FSM) techniques. We convert the extraction of the propagation patterns to an FSM problem with the following concepts (Fig. 2E):",
+        "paper_info": "airvis",
+        "2d_coord": [
+            0.7685905694961548,
+            -1.9233242273330688
+        ],
+        "MSU_id": 1804
+    },
+    {
+        "sentence": "Please refer to the appendices for all used notations and details of pattern extraction.",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 324,
+        "paper_id": 4,
+        "paragraph_info": "Finally, the massive propagation patterns (i.e., frequent subgraphs) can be efficiently extracted. Each pattern  $P = (V, E)$  comprises a node set V comprising the involved districts and an edge set  $E$  comprising the propagation pathways. Each node  $v_i \\in V$  maintains a list of the pollution concentrations  $v_i$ .C collected from the corresponding nodes in the matched propagation graphs. Similarly, each pathway  $w_{ij} \\in E$ from district i to j is associated with  $w_{ij}.TT$ ,  $w_{ij}.P$ ,  $w_{ij}.TC$ ,  $w_{ij}.A$ , lists of transportation times, transportation probabilities, transported pollutant concentrations, impact factors, respectively. Please refer to the appendices for all used notations and details of pattern extraction.",
+        "paper_info": "airvis",
+        "2d_coord": [
+            -1.75870680809021,
+            -0.5366995930671692
+        ],
+        "MSU_id": 1815
+    },
+    {
+        "sentence": "We further compile a set of design goals.",
+        "category": "others",
+        "rank": 3,
+        "type": "text",
+        "para_id": 326,
+        "paper_id": 4,
+        "paragraph_info": "To satisfy the user requirements and support the analytical tasks, we further compile a set of design goals summarized as follows:",
+        "paper_info": "airvis",
+        "2d_coord": [
+            -0.5775333046913147,
+            -0.7172648310661316
+        ],
+        "MSU_id": 1819
+    },
+    {
+        "sentence": "The design goals are summarized as follows.",
+        "category": "others",
+        "rank": 2,
+        "type": "text",
+        "para_id": 326,
+        "paper_id": 4,
+        "paragraph_info": "To satisfy the user requirements and support the analytical tasks, we further compile a set of design goals summarized as follows:",
+        "paper_info": "airvis",
+        "2d_coord": [
+            0.27877241373062134,
+            -0.14359042048454285
+        ],
+        "MSU_id": 1820
+    },
+    {
+        "sentence": "G5: Comparative visual analysis of propagation patterns.",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 331,
+        "paper_id": 4,
+        "paragraph_info": "G5: Comparative visual analysis of propagation patterns. The proposed design should allow users to compare among multiple interesting patterns according to their topologies and attributes (e.g., expected amount of propagated pollution) and find their similarities and differences (R4). This comparison can likewise be facilitated further by automated approaches, such as dimensionality reduction techniques, to enable the effective discovery of pattern clusters and outliers.",
+        "paper_info": "airvis",
+        "2d_coord": [
+            -2.3861007690429688,
+            0.7877768874168396
+        ],
+        "MSU_id": 1841
+    },
+    {
+        "sentence": "Please refer to the appendix C for more details.",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 344,
+        "paper_id": 4,
+        "paragraph_info": "where  $|S_i|$  and  $|C_{ij}|$  denote the number of edges in the respective graphs. The greedy algorithm proposed by Navlakha et al. [42] can be applied to calculating  $S$  by iteratively merging the pair of the motifs  $S_i$  and  $S_i$  that maximizes the decrease of  $L(G)$ , until no such pair exists. In addition, we introduce a constraint  $L_i(G, S_i)/k_i > L_m(G, S_m)/k_m$ and  $L_i(G, S_j)/k_j > L_m(G, S_m)/k_m$  based on the average of description lengths, where  $S_m$  is the summary after merging and  $k_m = k_i + k_j$  is the number of the patterns associated with the motif  $S_m$ . This constraint allows the resulting motifs to bias towards the similarity requirement, thereby generating more accurate topological representations. Please refer to the appendix C for more details.",
+        "paper_info": "airvis",
+        "2d_coord": [
+            0.11329248547554016,
+            0.44344258308410645
+        ],
+        "MSU_id": 1899
+    },
+    {
+        "sentence": "Two limitations are observed in such design.",
+        "category": "others",
+        "rank": 2,
+        "type": "text",
+        "para_id": 348,
+        "paper_id": 4,
+        "paragraph_info": "**Design alternatives.** An alternative to the aforementioned glyph design is to encode the probability distribution directly along the edges with the summarization representations like heatmaps (Fig. 6A). Users can obtain the fine-grained propagation probability information from the motifs. However, two limitations are observed in such design: a)",
+        "paper_info": "airvis",
+        "2d_coord": [
+            -0.6919325590133667,
+            -0.2926521897315979
+        ],
+        "MSU_id": 1921
+    },
+    {
+        "sentence": "The inspection list includes a juxtaposed comparative analysis.",
+        "category": "others",
+        "rank": 2,
+        "type": "text",
+        "para_id": 359,
+        "paper_id": 4,
+        "paragraph_info": "In addition to the juxtaposed comparative analysis in the inspection list, the projection view (Fig. 1A3) is designed to assist users in understanding the similarities and differences among the patterns and identifying the interesting pattern clusters and outliers efficiently.",
+        "paper_info": "airvis",
+        "2d_coord": [
+            -1.192513346672058,
+            0.7122331261634827
+        ],
+        "MSU_id": 1973
+    },
+    {
+        "sentence": "The interactions are incorporated to further enhance its usability.",
+        "category": "others",
+        "rank": 2,
+        "type": "text",
+        "para_id": 368,
+        "paper_id": 4,
+        "paragraph_info": "The following three interactions are incorporated into the proposed system to further enhance its usability.",
+        "paper_info": "airvis",
+        "2d_coord": [
+            -1.600400447845459,
+            0.5920179486274719
+        ],
+        "MSU_id": 2008
+    },
+    {
+        "sentence": "The experts aimed to identify the districts that acted as the pollution sources in air pollution propagation.",
+        "category": "others",
+        "rank": 2,
+        "type": "text",
+        "para_id": 373,
+        "paper_id": 4,
+        "paragraph_info": "The North China Plain is not only the political center but also the most polluted area in China. The experts aimed to identify the districts that acted as the pollution sources in air pollution propagation and understand how the districts interacted with one another.",
+        "paper_info": "airvis",
+        "2d_coord": [
+            -2.186652421951294,
+            1.0312108993530273
+        ],
+        "MSU_id": 2032
+    },
+    {
+        "sentence": "The experts aimed to understand how the districts interacted with one another.",
+        "category": "others",
+        "rank": 2,
+        "type": "text",
+        "para_id": 373,
+        "paper_id": 4,
+        "paragraph_info": "The North China Plain is not only the political center but also the most polluted area in China. The experts aimed to identify the districts that acted as the pollution sources in air pollution propagation and understand how the districts interacted with one another.",
+        "paper_info": "airvis",
+        "2d_coord": [
+            -2.0150046348571777,
+            1.1533808708190918
+        ],
+        "MSU_id": 2033
+    },
+    {
+        "sentence": "Chain-like motif exploration.",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 375,
+        "paper_id": 4,
+        "paragraph_info": "Chain-like motif exploration. The experts noticed a motif with a chain-like topology (Fig. 1B1), and each edge of this motif had a nearly-opaque but wide fusiform glyph indicating both of the high transportation probability and uncertainty. Curious about this type of",
+        "paper_info": "airvis",
+        "2d_coord": [
+            -2.143486976623535,
+            0.619917631149292
+        ],
+        "MSU_id": 2044
+    },
+    {
+        "sentence": "Curious about this type of.",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 375,
+        "paper_id": 4,
+        "paragraph_info": "Chain-like motif exploration. The experts noticed a motif with a chain-like topology (Fig. 1B1), and each edge of this motif had a nearly-opaque but wide fusiform glyph indicating both of the high transportation probability and uncertainty. Curious about this type of",
+        "paper_info": "airvis",
+        "2d_coord": [
+            -1.2526012659072876,
+            0.6932412385940552
+        ],
+        "MSU_id": 2045
+    },
+    {
+        "sentence": "The experts skimmed through these patterns and quickly acquired a general impression.",
+        "category": "others",
+        "rank": 2,
+        "type": "text",
+        "para_id": 379,
+        "paper_id": 4,
+        "paragraph_info": "The experts skimmed through these patterns and quickly acquired a general impression. In particular, all patterns in the pattern view (Fig. [1C](#page-0-0)) exhibited an almost linear shape spatially and spread across the southwestern and northeastern regions. The experts suggested that the low uncertainty of such topology might result from the constant and strong winds along these paths. Moreover, the temporal distributions and the propagation direction arrows also showed that the propagation patterns from southwest to northeast (e.g., the first two patterns in Fig. [1C](#page-0-0)) mainly occurred in autumn and early winter, whereas those in the reversed direction (e.g., the last three patterns in Fig. [1C](#page-0-0)) often occurred in late winter and spring. This phenomenon is consistent with the meteorological conditions. While browsing the spatial contexts inside the glyphs, the experts found two patterns (i.e., the first two patterns in Fig. [1C](#page-0-0)) that started near Shijiazhuang in winter and autumn and propagated the air pollutants towards Langfang along two different but almost parallel paths. The experts were interested in these patterns because there were many coal-fired power plants around Shijiazhuang.",
+        "paper_info": "airvis",
+        "2d_coord": [
+            -2.0672922134399414,
+            1.0199649333953857
+        ],
+        "MSU_id": 2053
+    },
+    {
+        "sentence": "Experts further unfolded these patterns to study their propagation processes.",
+        "category": "others",
+        "rank": 2,
+        "type": "text",
+        "para_id": 380,
+        "paper_id": 4,
+        "paragraph_info": "Experts further unfolded these patterns to study their propagation processes. In the pattern graphs illustrated in Fig. [1C](#page-0-0)5 and [1C](#page-0-0)6, two districts, Xinjishi and Xinleshi, were identified as the origins of air pollution. The large sizes of the inner orange circles suggested that these two districts were seriously polluted. Moreover, the pie charts in Fig. [1C](#page-0-0)5 and [1C](#page-0-0)6 indicated that the pollution propagated along two different paths was largely contributed by the pollution in these two districts, which were constantly exposed to the pollution from Shijiazhuang. EA and EB hypothesized that the coal-fired power plants could be a severe air pollution source that had a considerable impact on remote regions. This hypothesis needs to be confirmed with advanced chemical reaction analysis. Moreover, EC also indicated that the pollution in Shijiazhuang might reach northeastern districts, including Beijing and Langfang, via these two paths. Therefore, informed pollution control policies can be made with these patterns, such as suspending a few power plants in Shijiazhuang based on the forecasted wind conditions, which has been proven to be particularly effective [\\[54\\]](#page-10-27).",
+        "paper_info": "airvis",
+        "2d_coord": [
+            -2.3059146404266357,
+            0.9334415793418884
+        ],
+        "MSU_id": 2063
+    },
+    {
+        "sentence": "types of propagation processes:",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 388,
+        "paper_id": 4,
+        "paragraph_info": "types of propagation processes:",
+        "paper_info": "airvis",
+        "2d_coord": [
+            -0.900428056716919,
+            -0.4287588596343994
+        ],
+        "MSU_id": 2113
+    },
+    {
+        "sentence": "From Beijing to Baoding.",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 390,
+        "paper_id": 4,
+        "paragraph_info": "2) From Beijing to Baoding (Fig. [9C](#page-7-1)). Surprisingly, Beijing also served as a source that polluted Baoding. In contrast to the propagation processes described above (Fig. [9B](#page-7-1)), the pollution in Beijing were propagated along the exactly same path but in the opposite direction. Moreover, the experts noted that the impact factors in these processes (Fig. [9C](#page-7-1)1) were smaller than those shown in Fig. [9B](#page-7-1)1, indicating that the pollution from Beijing were not the main cause of the pollution in the downstream districts. EB also told us that most of the pollution locally produced in Beijing came from traffic emissions, which were less serious than the industrial emissions in southern districts.",
+        "paper_info": "airvis",
+        "2d_coord": [
+            -2.258678913116455,
+            0.857311487197876
+        ],
+        "MSU_id": 2127
+    },
+    {
+        "sentence": "In contrast to the propagation processes described above.",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 390,
+        "paper_id": 4,
+        "paragraph_info": "2) From Beijing to Baoding (Fig. [9C](#page-7-1)). Surprisingly, Beijing also served as a source that polluted Baoding. In contrast to the propagation processes described above (Fig. [9B](#page-7-1)), the pollution in Beijing were propagated along the exactly same path but in the opposite direction. Moreover, the experts noted that the impact factors in these processes (Fig. [9C](#page-7-1)1) were smaller than those shown in Fig. [9B](#page-7-1)1, indicating that the pollution from Beijing were not the main cause of the pollution in the downstream districts. EB also told us that most of the pollution locally produced in Beijing came from traffic emissions, which were less serious than the industrial emissions in southern districts.",
+        "paper_info": "airvis",
+        "2d_coord": [
+            -0.6526896953582764,
+            -0.27707475423812866
+        ],
+        "MSU_id": 2128
+    },
+    {
+        "sentence": "Experts noted the impact factors in these processes.",
+        "category": "others",
+        "rank": 2,
+        "type": "text",
+        "para_id": 390,
+        "paper_id": 4,
+        "paragraph_info": "2) From Beijing to Baoding (Fig. [9C](#page-7-1)). Surprisingly, Beijing also served as a source that polluted Baoding. In contrast to the propagation processes described above (Fig. [9B](#page-7-1)), the pollution in Beijing were propagated along the exactly same path but in the opposite direction. Moreover, the experts noted that the impact factors in these processes (Fig. [9C](#page-7-1)1) were smaller than those shown in Fig. [9B](#page-7-1)1, indicating that the pollution from Beijing were not the main cause of the pollution in the downstream districts. EB also told us that most of the pollution locally produced in Beijing came from traffic emissions, which were less serious than the industrial emissions in southern districts.",
+        "paper_info": "airvis",
+        "2d_coord": [
+            -0.17640866339206696,
+            -0.06951627880334854
+        ],
+        "MSU_id": 2129
+    },
+    {
+        "sentence": "This section discusses the implications and limitations of our work.",
+        "category": "others",
+        "rank": 2,
+        "type": "text",
+        "para_id": 397,
+        "paper_id": 4,
+        "paragraph_info": "This section discusses the implications and limitations of our work. We also share several important design lessons we learned.",
+        "paper_info": "airvis",
+        "2d_coord": [
+            0.44342339038848877,
+            -1.3514434099197388
+        ],
+        "MSU_id": 2157
+    },
+    {
+        "sentence": "We also share several important design lessons we learned.",
+        "category": "others",
+        "rank": 2,
+        "type": "text",
+        "para_id": 397,
+        "paper_id": 4,
+        "paragraph_info": "This section discusses the implications and limitations of our work. We also share several important design lessons we learned.",
+        "paper_info": "airvis",
+        "2d_coord": [
+            -1.2197550535202026,
+            -0.10260366648435593
+        ],
+        "MSU_id": 2158
+    },
+    {
+        "sentence": "In the future, we would like to incorporate fine-grained atmospheric data to obtain more accurate results.",
+        "category": "others",
+        "rank": 2,
+        "type": "text",
+        "para_id": 403,
+        "paper_id": 4,
+        "paragraph_info": "In this study, we propose a novel visual analytics approach to incorporate domain knowledge in analyzing the uncertain propagation of air pollution. By closely collaborating with the experts, we characterized the user requirements in the topology-driven analysis of propagation processes and derived a set of extensive design goals accordingly to guide the subsequent visual design. Based on the requirements and design goals, we developed AirVis, a visual analytics system that assists users in hierarchically exploring and interpreting massive propagation patterns extracted with a novel FSM-based pattern mining framework. The effectiveness of our system is demonstrated via two case studies conducted on the real-world dataset and the positive feedback received from the experts. Our approach is also generalizable to other similar problems that involve the topology-driven analysis of massive small graphs. In the future, we would like to incorporate fine-grained atmospheric data to obtain more accurate results and deploy our system in the field to reveal the insights in pollution propagation to a wider audience, including environmental scientists and government officials.",
+        "paper_info": "airvis",
+        "2d_coord": [
+            -0.33700376749038696,
+            -1.754978060722351
+        ],
+        "MSU_id": 2203
+    },
+    {
+        "sentence": "We would like to deploy our system in the field to reveal insights in pollution propagation to a wider audience.",
+        "category": "others",
+        "rank": 2,
+        "type": "text",
+        "para_id": 403,
+        "paper_id": 4,
+        "paragraph_info": "In this study, we propose a novel visual analytics approach to incorporate domain knowledge in analyzing the uncertain propagation of air pollution. By closely collaborating with the experts, we characterized the user requirements in the topology-driven analysis of propagation processes and derived a set of extensive design goals accordingly to guide the subsequent visual design. Based on the requirements and design goals, we developed AirVis, a visual analytics system that assists users in hierarchically exploring and interpreting massive propagation patterns extracted with a novel FSM-based pattern mining framework. The effectiveness of our system is demonstrated via two case studies conducted on the real-world dataset and the positive feedback received from the experts. Our approach is also generalizable to other similar problems that involve the topology-driven analysis of massive small graphs. In the future, we would like to incorporate fine-grained atmospheric data to obtain more accurate results and deploy our system in the field to reveal the insights in pollution propagation to a wider audience, including environmental scientists and government officials.",
+        "paper_info": "airvis",
+        "2d_coord": [
+            -2.331451177597046,
+            0.318130761384964
+        ],
+        "MSU_id": 2204
+    },
+    {
+        "sentence": "We thank all reviewers for their constructive comments.",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 404,
+        "paper_id": 4,
+        "paragraph_info": "We thank all reviewers for their constructive comments. The work was supported by National Key R&D Program of China (2018YFB100430 0), NSFC-Zhejiang Joint Fund for the Integration of Industrialization and Informatization (U1609217), NSFC (61761136020), Zhejiang Provincial Natural Science Foundation (LR18F020001) and the 100 Talents Program of Zhejiang University.",
+        "paper_info": "airvis",
+        "2d_coord": [
+            -1.5187246799468994,
+            1.2541415691375732
+        ],
+        "MSU_id": 2205
+    },
+    {
+        "sentence": "The work was supported by National Key R&D Program of China (2018YFB100430 0).",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 404,
+        "paper_id": 4,
+        "paragraph_info": "We thank all reviewers for their constructive comments. The work was supported by National Key R&D Program of China (2018YFB100430 0), NSFC-Zhejiang Joint Fund for the Integration of Industrialization and Informatization (U1609217), NSFC (61761136020), Zhejiang Provincial Natural Science Foundation (LR18F020001) and the 100 Talents Program of Zhejiang University.",
+        "paper_info": "airvis",
+        "2d_coord": [
+            1.303587794303894,
+            0.5242747068405151
+        ],
+        "MSU_id": 2206
+    },
+    {
+        "sentence": "The work was supported by NSFC-Zhejiang Joint Fund for the Integration of Industrialization and Informatization (U1609217).",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 404,
+        "paper_id": 4,
+        "paragraph_info": "We thank all reviewers for their constructive comments. The work was supported by National Key R&D Program of China (2018YFB100430 0), NSFC-Zhejiang Joint Fund for the Integration of Industrialization and Informatization (U1609217), NSFC (61761136020), Zhejiang Provincial Natural Science Foundation (LR18F020001) and the 100 Talents Program of Zhejiang University.",
+        "paper_info": "airvis",
+        "2d_coord": [
+            -0.21184228360652924,
+            -0.04838261753320694
+        ],
+        "MSU_id": 2207
+    },
+    {
+        "sentence": "The work was supported by NSFC (61761136020).",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 404,
+        "paper_id": 4,
+        "paragraph_info": "We thank all reviewers for their constructive comments. The work was supported by National Key R&D Program of China (2018YFB100430 0), NSFC-Zhejiang Joint Fund for the Integration of Industrialization and Informatization (U1609217), NSFC (61761136020), Zhejiang Provincial Natural Science Foundation (LR18F020001) and the 100 Talents Program of Zhejiang University.",
+        "paper_info": "airvis",
+        "2d_coord": [
+            0.9751091003417969,
+            0.5287799835205078
+        ],
+        "MSU_id": 2208
+    },
+    {
+        "sentence": "The work was supported by Zhejiang Provincial Natural Science Foundation (LR18F020001).",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 404,
+        "paper_id": 4,
+        "paragraph_info": "We thank all reviewers for their constructive comments. The work was supported by National Key R&D Program of China (2018YFB100430 0), NSFC-Zhejiang Joint Fund for the Integration of Industrialization and Informatization (U1609217), NSFC (61761136020), Zhejiang Provincial Natural Science Foundation (LR18F020001) and the 100 Talents Program of Zhejiang University.",
+        "paper_info": "airvis",
+        "2d_coord": [
+            0.41691821813583374,
+            0.7925331592559814
+        ],
+        "MSU_id": 2209
+    },
+    {
+        "sentence": "The work was supported by the 100 Talents Program of Zhejiang University.",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 404,
+        "paper_id": 4,
+        "paragraph_info": "We thank all reviewers for their constructive comments. The work was supported by National Key R&D Program of China (2018YFB100430 0), NSFC-Zhejiang Joint Fund for the Integration of Industrialization and Informatization (U1609217), NSFC (61761136020), Zhejiang Provincial Natural Science Foundation (LR18F020001) and the 100 Talents Program of Zhejiang University.",
+        "paper_info": "airvis",
+        "2d_coord": [
+            0.44456714391708374,
+            1.0591951608657837
+        ],
+        "MSU_id": 2210
+    },
+    {
+        "sentence": "Keywords include air pollution, PM2.5, visual exploration, and spatio-temporal data analysis.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 406,
+        "paper_id": 5,
+        "paragraph_info": "**Keywords:** air pollution; PM2.5; visual exploration; spatio-temporal data analysis",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -2.275986433029175,
+            -0.3508252501487732
+        ],
+        "MSU_id": 2223
+    },
+    {
+        "sentence": "Considerations include data quality, correlations in multivariate data, and spatio-temporal pattern analysis.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 412,
+        "paper_id": 5,
+        "paragraph_info": "Numerous researchers focus on systematic theories of visual exploration for spatio-temporal data. Kraak [\\[12\\]](#page-18-15) claims that graphics can reveal patterns that are not necessarily visible when conventional map display methods are applied, demonstrating the usefulness of geovisualization. The idea of a generic scenario extends the idea of geovisualization following the schema developed [\\[9,](#page-18-1)[13\\]](#page-18-16). A general framework was proposed then for using aggregation in visual exploration of massive movement data [\\[27\\]](#page-18-17). Similarly, another framework [\\[28\\]](#page-18-18) was discussed for spatio-temporal visualization with the visual method space\u2013time cube. However, these frameworks must be extended further and adapted for the visual exploration of air pollution data considering data quality, correlations in multivariate data, and spatio-temporal pattern analysis.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -0.6542893648147583,
+            -0.5608344078063965
+        ],
+        "MSU_id": 2270
+    },
+    {
+        "sentence": "Figure 1 shows a visualization workflow for air pollution data.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 416,
+        "paper_id": 5,
+        "paragraph_info": "Figure 1. Visualization workflow for air pollution data.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -1.6312546730041504,
+            0.8604163527488708
+        ],
+        "MSU_id": 2288
+    },
+    {
+        "sentence": "Data accessing and storage are displayed as Step (1) in Figure 1.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 417,
+        "paper_id": 5,
+        "paragraph_info": "Data accessing and storage are displayed as Step (1) in Figure 1. The backend data are acquired from our previous work through the real-time data provision system architecture for sensor webs (ReSDaP) [29]. Air pollution data often contain time and geographic location and can include an AQI, a  $PM_{2.5}$  concentration measurement. The data may also include other information related to air pollution, such as weather and economic development data. These data exist in various formats and are stored based on these formats in different types of databases. Data similar to tab-separated values, comma-separated values, spreadsheets, and other types of data tables can be directly stored in a relational database, such as the open source database MySQL. For unstructured data, such as text, pictures, and videos, the NoSQL (not only SQL) database can be used for storage, such as the MongoDB open source database that can also store structured data. Through ReSDaP [29], air pollution data are directly stored in the database, providing support for data access and storage.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -0.6113107204437256,
+            0.7786694765090942
+        ],
+        "MSU_id": 2289
+    },
+    {
+        "sentence": "The Preliminary analysis block is shown as Step (2) in Figure 1.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 418,
+        "paper_id": 5,
+        "paragraph_info": "The Preliminary analysis block is shown as Step (2) in Figure 1. The main goal of this layer is to carry out an overall analysis of the data, perform basic data cleansing, and obtain several elementary discoveries. The next block shows the Hypotheses as Step (3). Verification is shown in Step (4), which is used to verify previously tested hypotheses. The main processes in this block include visualization design, data preprocessing, and visual analytics to achieve visualization flexibility with various methods, such as heat maps, parallel coordinate plots, heat circles, and calendar views. The last step is the application block seen as Step (5) in Figure [1.](#page-2-0) The following subsections will describe these four blocks in detail.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -0.5772122740745544,
+            0.757457971572876
+        ],
+        "MSU_id": 2297
+    },
+    {
+        "sentence": "The next block shows the Hypotheses as Step (3).",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 418,
+        "paper_id": 5,
+        "paragraph_info": "The Preliminary analysis block is shown as Step (2) in Figure 1. The main goal of this layer is to carry out an overall analysis of the data, perform basic data cleansing, and obtain several elementary discoveries. The next block shows the Hypotheses as Step (3). Verification is shown in Step (4), which is used to verify previously tested hypotheses. The main processes in this block include visualization design, data preprocessing, and visual analytics to achieve visualization flexibility with various methods, such as heat maps, parallel coordinate plots, heat circles, and calendar views. The last step is the application block seen as Step (5) in Figure [1.](#page-2-0) The following subsections will describe these four blocks in detail.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -1.4599330425262451,
+            -0.16274678707122803
+        ],
+        "MSU_id": 2301
+    },
+    {
+        "sentence": "The last step is the application block seen as Step (5) in Figure 1.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 418,
+        "paper_id": 5,
+        "paragraph_info": "The Preliminary analysis block is shown as Step (2) in Figure 1. The main goal of this layer is to carry out an overall analysis of the data, perform basic data cleansing, and obtain several elementary discoveries. The next block shows the Hypotheses as Step (3). Verification is shown in Step (4), which is used to verify previously tested hypotheses. The main processes in this block include visualization design, data preprocessing, and visual analytics to achieve visualization flexibility with various methods, such as heat maps, parallel coordinate plots, heat circles, and calendar views. The last step is the application block seen as Step (5) in Figure [1.](#page-2-0) The following subsections will describe these four blocks in detail.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -0.565824031829834,
+            0.24767732620239258
+        ],
+        "MSU_id": 2307
+    },
+    {
+        "sentence": "The following subsections will describe these four blocks in detail.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 418,
+        "paper_id": 5,
+        "paragraph_info": "The Preliminary analysis block is shown as Step (2) in Figure 1. The main goal of this layer is to carry out an overall analysis of the data, perform basic data cleansing, and obtain several elementary discoveries. The next block shows the Hypotheses as Step (3). Verification is shown in Step (4), which is used to verify previously tested hypotheses. The main processes in this block include visualization design, data preprocessing, and visual analytics to achieve visualization flexibility with various methods, such as heat maps, parallel coordinate plots, heat circles, and calendar views. The last step is the application block seen as Step (5) in Figure [1.](#page-2-0) The following subsections will describe these four blocks in detail.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            0.26252463459968567,
+            -0.3018566966056824
+        ],
+        "MSU_id": 2308
+    },
+    {
+        "sentence": "The data are referred to as the USE data in the rest of this paper.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 427,
+        "paper_id": 5,
+        "paragraph_info": "Two datasets are utilized for the case study of air quality in Beijing, the capital of China. The first dataset is historical hourly PM2.5 data (2009\u20132014) of Beijing obtained from the US Department of State air quality files available on its website [\\[34\\]](#page-19-3) as measured at the US Embassy in Beijing. Observation values include PM2.5 concentration, with parameter concentration units in micrograms per cubic meter (\u00b5g/m\u00b3) transformed to AQI values for our case study. However, these data are not completely verified or validated as indicated in the data statement. These data were used to demonstrate a practical application of the visualization approach, as well as its feasibility and efficiency. The data are referred to as the USE data in the rest of this paper.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -1.7824773788452148,
+            -1.0416921377182007
+        ],
+        "MSU_id": 2375
+    },
+    {
+        "sentence": "These data are termed the U-Air data in the rest of this paper.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 428,
+        "paper_id": 5,
+        "paragraph_info": "The second dataset was created from the U-Air project [\\[35\\]](#page-19-4) and comprises one year (8 February 2013 to 8 February 2014) of air quality data from 36 air quality monitoring stations in Beijing, all with geographic coordinates. The stations are shown in Figure [2.](#page-5-1) The observation data include time, AQI of PM2.5, PM10, NO2, temperature, humidity, wind speed, and weather. Notably, the original weather data have several anomalies; thus, we decided to explore the relationship between pollution and the rainy weather with precipitation data only [\\[36\\]](#page-19-5). These data are termed the U-Air data in the rest of this paper.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -0.09479159116744995,
+            -1.3843165636062622
+        ],
+        "MSU_id": 2381
+    },
+    {
+        "sentence": "Figure 2 shows the distribution of Beijing observation stations.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 430,
+        "paper_id": 5,
+        "paragraph_info": "Figure 2. Distribution of Beijing observation stations. Blue star represents the US Embassy (39.92 N,  $116.44 \\text{ E}$ ) located in the city center.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -1.7055201530456543,
+            0.9905897974967957
+        ],
+        "MSU_id": 2383
+    },
+    {
+        "sentence": "The blue star represents the US Embassy located in the city center.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 430,
+        "paper_id": 5,
+        "paragraph_info": "Figure 2. Distribution of Beijing observation stations. Blue star represents the US Embassy (39.92 N,  $116.44 \\text{ E}$ ) located in the city center.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            0.3456993103027344,
+            1.2867168188095093
+        ],
+        "MSU_id": 2384
+    },
+    {
+        "sentence": "The coordinates of the US Embassy are 39.92 N, 116.44 E.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 430,
+        "paper_id": 5,
+        "paragraph_info": "Figure 2. Distribution of Beijing observation stations. Blue star represents the US Embassy (39.92 N,  $116.44 \\text{ E}$ ) located in the city center.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            1.025773525238037,
+            -0.0361626073718071
+        ],
+        "MSU_id": 2385
+    },
+    {
+        "sentence": "These problems can be handled in several ways.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 433,
+        "paper_id": 5,
+        "paragraph_info": "These problems can be handled in several ways. Multi-source data fusion may supplement the missing data and replace the part with logic errors. In this case study, the precipitation data were integrated to determine whether rainy weather can affect pollutant concentration. Interpolation for missing or coarse records is another commonly used method [23]. In addition, data could be divided into parts and analyzed separately to be used for the missing data problem in this case study.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -2.158339738845825,
+            0.4500000774860382
+        ],
+        "MSU_id": 2398
+    },
+    {
+        "sentence": "Figure 4 shows the missing data in stations 23\u201336 from March to October.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 434,
+        "paper_id": 5,
+        "paragraph_info": "Figure 4 shows the missing data in stations 23\u201336 from March to October. To minimize the effect of these missing data in the analysis, we separated the data into two parts and outlined them in Table 1. The first strategy involves the time pattern analysis of  $PM_{2.5}$  for stations 01\u201322 for all months. This analysis includes visualizing the average AQI of  $PM_{2.5}$  by month, day, and hour. The second strategy is spatial distribution analysis of  $PM_{2.5}$  for observations in January, February, November, and December because all stations in these months have complete data records. With this separated analysis, more reliable exploration can be performed.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -0.4989091455936432,
+            -0.281989187002182
+        ],
+        "MSU_id": 2403
+    },
+    {
+        "sentence": "Figure 4 shows a heat table of month and week mean air quality index of PM2.5.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 436,
+        "paper_id": 5,
+        "paragraph_info": "**Figure 4.** Heat table of month and week mean air quality index of  $PM_{2.5}$ .",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -0.8246236443519592,
+            0.6230025887489319
+        ],
+        "MSU_id": 2411
+    },
+    {
+        "sentence": "Table 1 presents a visualized design for the discovery of defects in the U-Air data.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 437,
+        "paper_id": 5,
+        "paragraph_info": "**Table 1.** Visualized design for discovery of defects in the U-Air data.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -1.6912128925323486,
+            1.0244386196136475
+        ],
+        "MSU_id": 2412
+    },
+    {
+        "sentence": "We used the U-Air data.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 438,
+        "paper_id": 5,
+        "paragraph_info": "We performed the global visualization of data using basic charts. Based on these visualizations, possible hypotheses were generated for the visualization design program. We used the U-Air data. According to Table 1, the first strategy is used to determine whether a temporal pattern is evident in the data from stations  $01-22$  for all months. Through basic visualization, as shown in the heat table in Figure 4, higher PM<sub>2.5</sub> concentrations are observed from Friday to Sunday from February to March than during other times in this period.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            0.35296911001205444,
+            -1.8507925271987915
+        ],
+        "MSU_id": 2415
+    },
+    {
+        "sentence": "Monthly mean values of $PM_{2.5}$ are represented in Figure 5.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 441,
+        "paper_id": 5,
+        "paragraph_info": "**Figure 5.** Monthly mean values of  $PM_{2.5}$ . Colored lines represent days from Monday to Sunday.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            0.005587439984083176,
+            0.4394156336784363
+        ],
+        "MSU_id": 2421
+    },
+    {
+        "sentence": "Colored lines represent days from Monday to Sunday.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 441,
+        "paper_id": 5,
+        "paragraph_info": "**Figure 5.** Monthly mean values of  $PM_{2.5}$ . Colored lines represent days from Monday to Sunday.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -1.0263069868087769,
+            1.1862934827804565
+        ],
+        "MSU_id": 2422
+    },
+    {
+        "sentence": "Figure 6 displays an area chart.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 448,
+        "paper_id": 5,
+        "paragraph_info": "<span id=\"page-8-1\"></span>**Figure 6.** Area chart displaying the mean AQI of  $PM_{2.5}$  on each observation site (id: 01\u201336) in January, February, November, and December.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -0.19061219692230225,
+            1.2406314611434937
+        ],
+        "MSU_id": 2453
+    },
+    {
+        "sentence": "The data is presented for the months of January, February, November, and December.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 448,
+        "paper_id": 5,
+        "paragraph_info": "<span id=\"page-8-1\"></span>**Figure 6.** Area chart displaying the mean AQI of  $PM_{2.5}$  on each observation site (id: 01\u201336) in January, February, November, and December.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -0.42517057061195374,
+            1.3396612405776978
+        ],
+        "MSU_id": 2455
+    },
+    {
+        "sentence": "Figure 7 shows the correlation matrix of the U-Air data.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 450,
+        "paper_id": 5,
+        "paragraph_info": "Figure 7. Correlation matrix of the U-Air data.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            0.4056752920150757,
+            -1.419289469718933
+        ],
+        "MSU_id": 2457
+    },
+    {
+        "sentence": "We explore results using multi-perspective analysis and various visual graphs.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 451,
+        "paper_id": 5,
+        "paragraph_info": "We explore results in this section using multi-perspective analysis and various visual graphs. The relationship between pollutants and weather factors is analyzed first, followed by the presentation of temporal characteristics of  $PM_{2.5}$ . Afterward, spatial features of air pollution are shown and studied with stations overlaid on a satellite map. The last subsection includes the findings of air pollution in Beijing.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -2.014477014541626,
+            0.9264885783195496
+        ],
+        "MSU_id": 2458
+    },
+    {
+        "sentence": "Circular heat maps from 2010 to 2014 are selected.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 459,
+        "paper_id": 5,
+        "paragraph_info": "Figure 9. Circular heat maps from 2010 to 2014 are selected: (a) year and month circular heat map showing the monthly air pollution concentration; and (b) year and hour circular heat map showing the daily air pollution concentration.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            0.18471579253673553,
+            1.208054542541504
+        ],
+        "MSU_id": 2505
+    },
+    {
+        "sentence": "Figure 10 shows a calendar view.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 462,
+        "paper_id": 5,
+        "paragraph_info": "Figure 10. Calendar view: the relationship between pollutants and days from 2009 to 2014.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -0.24783557653427124,
+            1.1408053636550903
+        ],
+        "MSU_id": 2515
+    },
+    {
+        "sentence": "The calendar view illustrates the relationship between pollutants and days.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 462,
+        "paper_id": 5,
+        "paragraph_info": "Figure 10. Calendar view: the relationship between pollutants and days from 2009 to 2014.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -0.2828969955444336,
+            1.5564231872558594
+        ],
+        "MSU_id": 2516
+    },
+    {
+        "sentence": "The data covers the years from 2009 to 2014.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 462,
+        "paper_id": 5,
+        "paragraph_info": "Figure 10. Calendar view: the relationship between pollutants and days from 2009 to 2014.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -0.14265687763690948,
+            0.9165121912956238
+        ],
+        "MSU_id": 2517
+    },
+    {
+        "sentence": "This could be further inspected through the satellite map of this area.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 465,
+        "paper_id": 5,
+        "paragraph_info": "<span id=\"page-12-0\"></span>south is mainly arable land with a few residential areas. This could be further inspected through the satellite map of this area.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -0.4879554510116577,
+            1.5143637657165527
+        ],
+        "MSU_id": 2530
+    },
+    {
+        "sentence": "Figure 11 shows the average AQI heatmap of PM2.5 in Beijing.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 467,
+        "paper_id": 5,
+        "paragraph_info": "Figure 11. Average AQI Heatmap of PM<sub>2.5</sub> from November 2013 to February 2014 in Beijing.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -0.9499070048332214,
+            0.6537708044052124
+        ],
+        "MSU_id": 2532
+    },
+    {
+        "sentence": "A satellite map with 36 overlaid monitoring stations is shown in Figure 12.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 468,
+        "paper_id": 5,
+        "paragraph_info": "A satellite map with 36 overlaid monitoring stations is shown in Figure 12. Stations 30, 31, and 32 are found in areas covered with vegetation. These stations showed lower concentrations of  $PM_{2.5}$ compared with the other sites. The north and west of Beijing have higher terrain, are densely covered by vegetation, and are sparsely populated. Station 32 had the lowest pollutant concentration (Figure 6). As shown in Figure 12a, station 32 is surrounded by mountains and a lake and is far from residential areas. Figures 6 and 11 present that the central area  $(03-04, 06-16, \\text{ and } 20-22)$  has average air pollution concentrations. The southern areas of Beijing have a mix of arable and residential lands, and the air pollution concentrations in the corresponding stations (IDs  $05$ ,  $17-19$ ) have relatively higher AQIs. Stations 34\u201336 in the south end of Beijing, a major part of which is arable land, show the highest concentrations among other areas of the city. Figures in this section suggest that air pollutants exhibit strong spatial distribution. Vegetation, terrain, and land use influence air contamination. Vegetation can reduce the diffusion of atmospheric pollutants and absorb some pollutants. Arable lands have considerably higher air pollutant concentrations than vegetation-covered areas.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -0.2536447048187256,
+            1.7544771432876587
+        ],
+        "MSU_id": 2534
+    },
+    {
+        "sentence": "Figure 12 shows the distribution of monitoring stations overlaid on a satellite map.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 470,
+        "paper_id": 5,
+        "paragraph_info": "Figure 12. Distribution of monitoring stations (labels are IDs) overlaid on a satellite map. Three areas are enlarged to show the conditions of the corresponding land surface. (a) The lowest average observation was in station 32; (b) The highest one was in station 36; (c) The central area is also enlarged to show the locations of stations and the US Embassy, which is marked in yellow.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -0.12999612092971802,
+            1.7537158727645874
+        ],
+        "MSU_id": 2549
+    },
+    {
+        "sentence": "Three areas are enlarged to show the conditions of the corresponding land surface.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 470,
+        "paper_id": 5,
+        "paragraph_info": "Figure 12. Distribution of monitoring stations (labels are IDs) overlaid on a satellite map. Three areas are enlarged to show the conditions of the corresponding land surface. (a) The lowest average observation was in station 32; (b) The highest one was in station 36; (c) The central area is also enlarged to show the locations of stations and the US Embassy, which is marked in yellow.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -0.4949154853820801,
+            1.0256701707839966
+        ],
+        "MSU_id": 2550
+    },
+    {
+        "sentence": "The central area is enlarged to show the locations of stations and the US Embassy.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 470,
+        "paper_id": 5,
+        "paragraph_info": "Figure 12. Distribution of monitoring stations (labels are IDs) overlaid on a satellite map. Three areas are enlarged to show the conditions of the corresponding land surface. (a) The lowest average observation was in station 32; (b) The highest one was in station 36; (c) The central area is also enlarged to show the locations of stations and the US Embassy, which is marked in yellow.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -0.7393860816955566,
+            0.5004792213439941
+        ],
+        "MSU_id": 2553
+    },
+    {
+        "sentence": "This work was supported by grants from the National Natural Science Foundation Projects of China (No. 41471323, PI: Hong Fan).",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 476,
+        "paper_id": 5,
+        "paragraph_info": "**Acknowledgments:** This work was supported by grants from the National Natural Science Foundation Projects of China (No. 41471323, PI: Hong Fan), the Science and Technology Development Project of Guizhou Province Tobacco Corporation of China National Tobacco Corporation (Contract No. 201407), and the National High Technology Research and Development Program of China (Grant No. 2012AA121401, PI: Jianya Gong). We sincerely thank Stephen C. McClure for the English modification of this paper.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            0.5257587432861328,
+            0.5052747130393982
+        ],
+        "MSU_id": 2582
+    },
+    {
+        "sentence": "This work was supported by the Science and Technology Development Project of Guizhou Province Tobacco Corporation of China National Tobacco Corporation (Contract No. 201407).",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 476,
+        "paper_id": 5,
+        "paragraph_info": "**Acknowledgments:** This work was supported by grants from the National Natural Science Foundation Projects of China (No. 41471323, PI: Hong Fan), the Science and Technology Development Project of Guizhou Province Tobacco Corporation of China National Tobacco Corporation (Contract No. 201407), and the National High Technology Research and Development Program of China (Grant No. 2012AA121401, PI: Jianya Gong). We sincerely thank Stephen C. McClure for the English modification of this paper.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            1.2696810960769653,
+            0.3046579658985138
+        ],
+        "MSU_id": 2583
+    },
+    {
+        "sentence": "This work was supported by the National High Technology Research and Development Program of China (Grant No. 2012AA121401, PI: Jianya Gong).",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 476,
+        "paper_id": 5,
+        "paragraph_info": "**Acknowledgments:** This work was supported by grants from the National Natural Science Foundation Projects of China (No. 41471323, PI: Hong Fan), the Science and Technology Development Project of Guizhou Province Tobacco Corporation of China National Tobacco Corporation (Contract No. 201407), and the National High Technology Research and Development Program of China (Grant No. 2012AA121401, PI: Jianya Gong). We sincerely thank Stephen C. McClure for the English modification of this paper.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            0.8396360278129578,
+            0.30551278591156006
+        ],
+        "MSU_id": 2584
+    },
+    {
+        "sentence": "We sincerely thank Stephen C. McClure for the English modification of this paper.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 476,
+        "paper_id": 5,
+        "paragraph_info": "**Acknowledgments:** This work was supported by grants from the National Natural Science Foundation Projects of China (No. 41471323, PI: Hong Fan), the Science and Technology Development Project of Guizhou Province Tobacco Corporation of China National Tobacco Corporation (Contract No. 201407), and the National High Technology Research and Development Program of China (Grant No. 2012AA121401, PI: Jianya Gong). We sincerely thank Stephen C. McClure for the English modification of this paper.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            0.23666788637638092,
+            -0.08487650007009506
+        ],
+        "MSU_id": 2585
+    },
+    {
+        "sentence": "Huan Li conceived the idea.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 477,
+        "paper_id": 5,
+        "paragraph_info": "**Author Contributions:** Huan Li conceived the idea, designed the experiments, and wrote the paper. Hong Fan provided important suggestions and supported the paper. Feiyue Mao partly analyzed the experimental data based on his knowledge of atmospheric science.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -1.000627875328064,
+            1.2505064010620117
+        ],
+        "MSU_id": 2586
+    },
+    {
+        "sentence": "Huan Li designed the experiments.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 477,
+        "paper_id": 5,
+        "paragraph_info": "**Author Contributions:** Huan Li conceived the idea, designed the experiments, and wrote the paper. Hong Fan provided important suggestions and supported the paper. Feiyue Mao partly analyzed the experimental data based on his knowledge of atmospheric science.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            0.018659133464097977,
+            0.8628060221672058
+        ],
+        "MSU_id": 2587
+    },
+    {
+        "sentence": "Huan Li wrote the paper.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 477,
+        "paper_id": 5,
+        "paragraph_info": "**Author Contributions:** Huan Li conceived the idea, designed the experiments, and wrote the paper. Hong Fan provided important suggestions and supported the paper. Feiyue Mao partly analyzed the experimental data based on his knowledge of atmospheric science.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -0.893966555595398,
+            0.3168633282184601
+        ],
+        "MSU_id": 2588
+    },
+    {
+        "sentence": "Hong Fan provided important suggestions.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 477,
+        "paper_id": 5,
+        "paragraph_info": "**Author Contributions:** Huan Li conceived the idea, designed the experiments, and wrote the paper. Hong Fan provided important suggestions and supported the paper. Feiyue Mao partly analyzed the experimental data based on his knowledge of atmospheric science.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -1.2214527130126953,
+            1.0197861194610596
+        ],
+        "MSU_id": 2589
+    },
+    {
+        "sentence": "Hong Fan supported the paper.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 477,
+        "paper_id": 5,
+        "paragraph_info": "**Author Contributions:** Huan Li conceived the idea, designed the experiments, and wrote the paper. Hong Fan provided important suggestions and supported the paper. Feiyue Mao partly analyzed the experimental data based on his knowledge of atmospheric science.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -0.09310068190097809,
+            1.0805232524871826
+        ],
+        "MSU_id": 2590
+    },
+    {
+        "sentence": "Feiyue Mao partly analyzed the experimental data.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 477,
+        "paper_id": 5,
+        "paragraph_info": "**Author Contributions:** Huan Li conceived the idea, designed the experiments, and wrote the paper. Hong Fan provided important suggestions and supported the paper. Feiyue Mao partly analyzed the experimental data based on his knowledge of atmospheric science.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            0.05327305570244789,
+            -0.3998991847038269
+        ],
+        "MSU_id": 2591
+    },
+    {
+        "sentence": "Feiyue Mao based his analysis on his knowledge of atmospheric science.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 477,
+        "paper_id": 5,
+        "paragraph_info": "**Author Contributions:** Huan Li conceived the idea, designed the experiments, and wrote the paper. Hong Fan provided important suggestions and supported the paper. Feiyue Mao partly analyzed the experimental data based on his knowledge of atmospheric science.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            0.14301393926143646,
+            0.7142966389656067
+        ],
+        "MSU_id": 2592
+    },
+    {
+        "sentence": "The authors declare no conflict of interest.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 478,
+        "paper_id": 5,
+        "paragraph_info": "**Conflicts of Interest:** The authors declare no conflict of interest.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            0.7146711349487305,
+            1.1665678024291992
+        ],
+        "MSU_id": 2593
+    },
+    {
+        "sentence": "We introduce two tools used for our paper: PivotTable.js and D3.js.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 479,
+        "paper_id": 5,
+        "paragraph_info": "The open source tools were used to realize the visualization in the paper. Because open source software is free, it is easily accessible by researchers in developing countries or young scientists who may not have enough funds to support their studies. In addition, the open codes are modifiable and extendable for custom usage. Moreover, open communities like Github, provide an abundance of example plots, which are updated in real-time for multi-perspective spatio-temporal visualization exploration. Therefore, it is reasonable and suitable to use those tools for visual analytics. In this appendix, we introduce two tools used for our paper: PivotTable.js and D3.js.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -1.2999186515808105,
+            0.2193969488143921
+        ],
+        "MSU_id": 2599
+    },
+    {
+        "sentence": "PivotTable.js is an open source JavaScript library with drag-and-drop functionality based on jQuery and jQueryUI.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 480,
+        "paper_id": 5,
+        "paragraph_info": "PivotTable.js [\\[45\\]](#page-19-14) is an open source JavaScript library with drag-and-drop functionality based on jQuery and jQueryUI. PivotTable's core function is to import structured data as a summary table that displays specific attribute data with a drag-and-drop interface. The summary table can be rendered into various charts, transforming the table directly into figures. PivotTable has the following characteristics.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -0.8362420797348022,
+            -0.3140847086906433
+        ],
+        "MSU_id": 2600
+    },
+    {
+        "sentence": "PivotTable has the following characteristics.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 480,
+        "paper_id": 5,
+        "paragraph_info": "PivotTable.js [\\[45\\]](#page-19-14) is an open source JavaScript library with drag-and-drop functionality based on jQuery and jQueryUI. PivotTable's core function is to import structured data as a summary table that displays specific attribute data with a drag-and-drop interface. The summary table can be rendered into various charts, transforming the table directly into figures. PivotTable has the following characteristics.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -0.05078582838177681,
+            -0.3064750134944916
+        ],
+        "MSU_id": 2605
+    },
+    {
+        "sentence": "It is an efficient and intuitive basic visual analysis tool.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 483,
+        "paper_id": 5,
+        "paragraph_info": "Third, it is an efficient and intuitive basic visual analysis tool that includes the capacity to create heat maps and bar, line, and pie charts using interactive drag-and-drop operations.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -0.9357137084007263,
+            1.4852780103683472
+        ],
+        "MSU_id": 2616
+    },
+    {
+        "sentence": "Figure A1 is the PivotTable GUI, showing its basic function areas.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 485,
+        "paper_id": 5,
+        "paragraph_info": "Figure [A1](#page-2-0) is the PivotTable GUI, showing its basic function areas. As seen in the figure, A and B are drop-down boxes that display options for users. A is the renderer, used to select the type of visualization, such as table, heat map, and line chart. B is the aggregator, used for selecting data for display, like mean AQI of PM2.5. C is the container for the attributes, and D is the Row attribute. E is the Column, to which attributes are dragged from C for visualization. The attribute data can be selected for analysis; for example, we can choose January from the 'month' attribute for analysis. F is the Data Visualization area, where the renderer builds an appropriate visualization.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -0.5103034377098083,
+            0.5600518584251404
+        ],
+        "MSU_id": 2625
+    },
+    {
+        "sentence": "A and B are drop-down boxes that display options for users.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 485,
+        "paper_id": 5,
+        "paragraph_info": "Figure [A1](#page-2-0) is the PivotTable GUI, showing its basic function areas. As seen in the figure, A and B are drop-down boxes that display options for users. A is the renderer, used to select the type of visualization, such as table, heat map, and line chart. B is the aggregator, used for selecting data for display, like mean AQI of PM2.5. C is the container for the attributes, and D is the Row attribute. E is the Column, to which attributes are dragged from C for visualization. The attribute data can be selected for analysis; for example, we can choose January from the 'month' attribute for analysis. F is the Data Visualization area, where the renderer builds an appropriate visualization.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -1.603500247001648,
+            -0.021234311163425446
+        ],
+        "MSU_id": 2626
+    },
+    {
+        "sentence": "C is the container for the attributes.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 485,
+        "paper_id": 5,
+        "paragraph_info": "Figure [A1](#page-2-0) is the PivotTable GUI, showing its basic function areas. As seen in the figure, A and B are drop-down boxes that display options for users. A is the renderer, used to select the type of visualization, such as table, heat map, and line chart. B is the aggregator, used for selecting data for display, like mean AQI of PM2.5. C is the container for the attributes, and D is the Row attribute. E is the Column, to which attributes are dragged from C for visualization. The attribute data can be selected for analysis; for example, we can choose January from the 'month' attribute for analysis. F is the Data Visualization area, where the renderer builds an appropriate visualization.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            0.11598043143749237,
+            -0.7171618342399597
+        ],
+        "MSU_id": 2629
+    },
+    {
+        "sentence": "D is the Row attribute.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 485,
+        "paper_id": 5,
+        "paragraph_info": "Figure [A1](#page-2-0) is the PivotTable GUI, showing its basic function areas. As seen in the figure, A and B are drop-down boxes that display options for users. A is the renderer, used to select the type of visualization, such as table, heat map, and line chart. B is the aggregator, used for selecting data for display, like mean AQI of PM2.5. C is the container for the attributes, and D is the Row attribute. E is the Column, to which attributes are dragged from C for visualization. The attribute data can be selected for analysis; for example, we can choose January from the 'month' attribute for analysis. F is the Data Visualization area, where the renderer builds an appropriate visualization.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            0.6612510085105896,
+            -0.6188057065010071
+        ],
+        "MSU_id": 2630
+    },
+    {
+        "sentence": "Figure A1 shows the PivotTable Graphical User Interface (GUI).",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 487,
+        "paper_id": 5,
+        "paragraph_info": "**Figure A1.** PivotTable Graphical User Interface (GUI). A to F represent function areas.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -0.6499606370925903,
+            0.9982283115386963
+        ],
+        "MSU_id": 2638
+    },
+    {
+        "sentence": "A to F represent function areas.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 487,
+        "paper_id": 5,
+        "paragraph_info": "**Figure A1.** PivotTable Graphical User Interface (GUI). A to F represent function areas.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -0.36338168382644653,
+            -1.5013543367385864
+        ],
+        "MSU_id": 2639
+    },
+    {
+        "sentence": "This supplement file is to strengthen the idea and give more inspection to the original data.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 489,
+        "paper_id": 5,
+        "paragraph_info": "It has been noted in the paper that the U-Air data used in the cased study has some defects. This supplement file is to strengthen the idea and give more inspection to the original data. We use another visualization to show the data missing and a table to present the anomaly weather data in it.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -0.8631709814071655,
+            1.1778473854064941
+        ],
+        "MSU_id": 2647
+    },
+    {
+        "sentence": "Figure A2 shows a scatterplot for 12 months and 36 stations.",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 491,
+        "paper_id": 5,
+        "paragraph_info": "Figure A2. A scatterplot for 12 months and 36 stations.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -0.19372570514678955,
+            1.6365625858306885
+        ],
+        "MSU_id": 2651
+    },
+    {
+        "sentence": "Three hypotheses are shown in Table [A2.](#page-17-5).",
+        "category": "others",
+        "rank": -1,
+        "type": "text",
+        "para_id": 496,
+        "paper_id": 5,
+        "paragraph_info": "Three hypotheses are shown in Table [A2.](#page-17-5) The first hypothesis is that there is a correlation among the AQI of PM2.5, PM10, NO<sup>2</sup> and wind speed. This can be visualized by scatterplots showing the relationship between any two factors. The second is that there is a regular time pattern for air pollutants. Heat maps would be an ideal visualization method, including a circle heat map, calendar view, and heat matrix, as generated using D3. The third hypothesis is that air contaminants have a geographical distribution. This can be represented appropriately by geovisualization, a method suitable for illustrating continuous spatial distributions. There are different ways to achieve Geovisualization with D3 or OpenLayers.",
+        "paper_info": "atmosphere-07-00035",
+        "2d_coord": [
+            -1.587621808052063,
+            0.16797032952308655
+        ],
+        "MSU_id": 2669
+    }
+]
