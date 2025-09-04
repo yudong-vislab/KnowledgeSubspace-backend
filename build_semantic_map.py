@@ -45,6 +45,14 @@ build_semantic_map.py (multi-subspaces, keep-all-raw + indices)
     --subspace-names Background Methods Conclusion \
     --out data/semantic_map_data.json
 
+  # 构建case1: python build_semantic_map.py \
+    --case-dir case1 \
+    --out data/semantic_map_data.json
+
+  # 构建case2: python build_semantic_map.py \
+    --case-dir case2 \
+    --out data/semantic_map_data.json
+
 可选参数：
   --embed-msu-details
   --strict-format
@@ -150,6 +158,63 @@ def infer_name_from_path(path: str) -> str:
     base = os.path.basename(path)
     name, _ = os.path.splitext(base)
     return name or base or "Subspace"
+
+def discover_case_forms(case_dir: str, hex_info_name: str = None):
+    """从 case 目录里自动发现：
+    - hex 信息文件：优先使用参数 hex_info_name；否则自动匹配：
+        1) 文件名恰为 'hexagon_info.json'
+        2) 或者以 'hexinfo.json' 结尾（比如 case1_hexinfo.json / case2_hexinfo.json）
+       若匹配到多个候选而未指定 hex_info_name，则报错提示手动指定。
+    - 其它 *.json 作为“子空间” form 文件（文件名 = 子空间名）
+    返回: (hex_info_path, [form_file_paths], [subspace_names])
+    """
+    if not os.path.isdir(case_dir):
+        raise RuntimeError(f"--case-dir not found: {case_dir}")
+
+    # 列出所有 json
+    entries = sorted([f for f in os.listdir(case_dir) if f.lower().endswith(".json")])
+
+    # 先确定 hexinfo 文件
+    hex_path = None
+    if hex_info_name:
+        cand = os.path.join(case_dir, hex_info_name)
+        if not os.path.isfile(cand):
+            raise RuntimeError(f"hex info file not found in case dir: {cand}")
+        hex_path = cand
+    else:
+        # 自动候选：恰好命名 hexagon_info.json 或 以 hexinfo.json 结尾
+        cand_list = []
+        for f in entries:
+            fl = f.lower()
+            if fl == "hexagon_info.json" or fl.endswith("hexinfo.json"):
+                cand_list.append(f)
+        if len(cand_list) == 1:
+            hex_path = os.path.join(case_dir, cand_list[0])
+        elif len(cand_list) == 0:
+            raise RuntimeError(
+                f"No hexinfo found in {case_dir}. "
+                f"Expected a file named 'hexagon_info.json' or '*hexinfo.json' "
+                f"(e.g., 'case1_hexinfo.json')."
+            )
+        else:
+            raise RuntimeError(
+                "Multiple hexinfo candidates found: "
+                + ", ".join(cand_list)
+                + ". Please specify one with --hex-info-name"
+            )
+
+    # 其它 JSON 作为子空间（排除刚选中的 hexinfo 文件）
+    form_files, names = [], []
+    for f in entries:
+        if os.path.join(case_dir, f) == hex_path:
+            continue
+        form_files.append(os.path.join(case_dir, f))
+        names.append(os.path.splitext(f)[0])
+
+    if not form_files:
+        raise RuntimeError(f"No form JSON files found in {case_dir} (excluding hexinfo).")
+
+    return hex_path, form_files, names
 
 
 # -----------------------
@@ -289,27 +354,39 @@ def main():
     ap.add_argument("--strict-format", action="store_true", help="do NOT include msu_ids/msu_details in hexList entries")
     ap.add_argument("--embed-msu-details", action="store_true", help="embed full raw MSU objects into each hex cell (bigger file but zero lookup)")
     ap.add_argument("--include-unknown-msu", action="store_true", help="if hex references an unknown MSU_id, create a stub object so that everything is preserved")
+    ap.add_argument("--case-dir", default=None, help="directory that contains hexagon_info.json and multiple form JSONs (each becomes a subspace)")
+    ap.add_argument( "--hex-info-name", default=None, help="file name of hex info inside --case-dir (e.g. case1_hexinfo.json). " "If omitted, auto-detects '*hexinfo.json' or 'hexagon_info.json'.")
+
+
+
     args = ap.parse_args()
 
-    # 读取 hexagon_info（全局）
-    hex_info = load_json(args.hex_info)
-
-    # 读取 form 数据（单文件 or 多文件）
+    # 读取 form 数据（来自 case-dir / form-files / form）
     form_files: List[str] = []
     subspace_names: List[str] = []
 
-    if args.form_files:
+    # 优先使用 --case-dir
+    if args.case_dir:
+        found_hex, form_files, subspace_names = discover_case_forms(args.case_dir, args.hex_info_name)
+        # 优先用 case 目录中的 hexinfo
+        hex_info = load_json(found_hex)
+    # 其次支持 --form-files
+    elif args.form_files:
+        hex_info = load_json(args.hex_info)
         form_files = list(args.form_files)
         if args.subspace_names and len(args.subspace_names) == len(form_files):
             subspace_names = list(args.subspace_names)
         else:
-            # 未提供名字，则按文件名推断
             subspace_names = [infer_name_from_path(p) for p in form_files]
+    # 最后兼容单文件 --form
     elif args.form:
+        hex_info = load_json(args.hex_info)
         form_files = [args.form]
         subspace_names = [infer_name_from_path(args.form)]
     else:
-        raise RuntimeError("必须提供 --form（单文件）或 --form-files（多文件）。")
+        raise RuntimeError("必须提供 --case-dir 或 --form-files 或 --form。")
+
+
 
     # 读入所有 form
     forms_raw: List[List[Dict[str, Any]]] = [load_json(p) for p in form_files]

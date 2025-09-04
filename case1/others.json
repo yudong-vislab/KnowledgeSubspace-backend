@@ -1,0 +1,394 @@
+[
+    {
+        "sentence": "Index Terms: Visual Analytics.",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 3,
+        "paper_id": 0,
+        "2d_coord": [
+            1.0530198812484741,
+            -0.8764374256134033
+        ],
+        "para_info": "Index Terms: Visual Analytics, Temporal Flow Field, Scientific Data Simulation, Vision Transformer.",
+        "paper_info": "ChinaVis_2025___JOV___TemporalFlowViz__A_Visual_Analytics_Approach_to_Analyse_Temporal_Flow_Field_of_Scramjet_Combustion",
+        "MSU_id": 19
+    },
+    {
+        "sentence": "Index Terms: Temporal Flow Field.",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 3,
+        "paper_id": 0,
+        "2d_coord": [
+            -2.213747978210449,
+            -1.8738279342651367
+        ],
+        "para_info": "Index Terms: Visual Analytics, Temporal Flow Field, Scientific Data Simulation, Vision Transformer.",
+        "paper_info": "ChinaVis_2025___JOV___TemporalFlowViz__A_Visual_Analytics_Approach_to_Analyse_Temporal_Flow_Field_of_Scramjet_Combustion",
+        "MSU_id": 20
+    },
+    {
+        "sentence": "Index Terms: Scientific Data Simulation.",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 3,
+        "paper_id": 0,
+        "2d_coord": [
+            -0.007365111261606216,
+            -1.6125714778900146
+        ],
+        "para_info": "Index Terms: Visual Analytics, Temporal Flow Field, Scientific Data Simulation, Vision Transformer.",
+        "paper_info": "ChinaVis_2025___JOV___TemporalFlowViz__A_Visual_Analytics_Approach_to_Analyse_Temporal_Flow_Field_of_Scramjet_Combustion",
+        "MSU_id": 21
+    },
+    {
+        "sentence": "Index Terms: Vision Transformer.",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 3,
+        "paper_id": 0,
+        "2d_coord": [
+            -2.9735336303710938,
+            -1.7808313369750977
+        ],
+        "para_info": "Index Terms: Visual Analytics, Temporal Flow Field, Scientific Data Simulation, Vision Transformer.",
+        "paper_info": "ChinaVis_2025___JOV___TemporalFlowViz__A_Visual_Analytics_Approach_to_Analyse_Temporal_Flow_Field_of_Scramjet_Combustion",
+        "MSU_id": 22
+    },
+    {
+        "sentence": "We summarize our contributions.",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 11,
+        "paper_id": 0,
+        "2d_coord": [
+            -0.5452195405960083,
+            -2.491943120956421
+        ],
+        "para_info": "We summarize our contributions as follows:",
+        "paper_info": "ChinaVis_2025___JOV___TemporalFlowViz__A_Visual_Analytics_Approach_to_Analyse_Temporal_Flow_Field_of_Scramjet_Combustion",
+        "MSU_id": 63
+    },
+    {
+        "sentence": "Overview of TemporalFlowViz.",
+        "category": "others",
+        "rank": 2,
+        "type": "text",
+        "para_id": 37,
+        "paper_id": 0,
+        "2d_coord": [
+            -1.2090615034103394,
+            -2.232292413711548
+        ],
+        "para_info": "Figure 2: **Overview of TemporalFlowViz**, including preprocessing and embedding, temporal trajectory-based exploration, and report generation via expert-informed vision-language modeling.",
+        "paper_info": "ChinaVis_2025___JOV___TemporalFlowViz__A_Visual_Analytics_Approach_to_Analyse_Temporal_Flow_Field_of_Scramjet_Combustion",
+        "MSU_id": 194
+    },
+    {
+        "sentence": "Flow Field Data Preprocessing and Embedding (supports R1, R4).",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 40,
+        "paper_id": 0,
+        "2d_coord": [
+            -1.651490330696106,
+            -0.2208964079618454
+        ],
+        "para_info": "Flow Field Data Preprocessing and Embedding (supports R1, R4). Simulation outputs are organized into time-sequenced flow field frames. These frames are encoded into high-dimensional embeddings and filtered based on user-specified initial conditions (e.g., static pressure, temperature, humidity), enabling comparative analysis across selected cases.",
+        "paper_info": "ChinaVis_2025___JOV___TemporalFlowViz__A_Visual_Analytics_Approach_to_Analyse_Temporal_Flow_Field_of_Scramjet_Combustion",
+        "MSU_id": 208
+    },
+    {
+        "sentence": "Semantic Summarization and Report Generation (supports R3).",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 42,
+        "paper_id": 0,
+        "2d_coord": [
+            0.2178049236536026,
+            -1.6653199195861816
+        ],
+        "para_info": "Semantic Summarization and Report Generation (supports R3). Expert-provided annotations on centroids of representative clusters are used to condition a vision-language model, which generates descriptive summaries of individual frames and entire cases. These outputs help contextualize visual observations and facilitate communication.",
+        "paper_info": "ChinaVis_2025___JOV___TemporalFlowViz__A_Visual_Analytics_Approach_to_Analyse_Temporal_Flow_Field_of_Scramjet_Combustion",
+        "MSU_id": 215
+    },
+    {
+        "sentence": "Case Study 1 was performed by E3, a postdoctoral researcher specializing in reactive flow diagnostics.",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 91,
+        "paper_id": 0,
+        "2d_coord": [
+            -1.52363920211792,
+            0.7002689838409424
+        ],
+        "para_info": "Case Study 1 focused on pressure field evolution and combustion mode interpretation and was performed by E3, a postdoctoral researcher specializing in reactive flow diagnostics. Case Study 2 explored the classification of combustion modes based on OH field trajectories and was conducted by E4, a senior simulation engineer engaged in engine configuration evaluation.",
+        "paper_info": "ChinaVis_2025___JOV___TemporalFlowViz__A_Visual_Analytics_Approach_to_Analyse_Temporal_Flow_Field_of_Scramjet_Combustion",
+        "MSU_id": 430
+    },
+    {
+        "sentence": "Case Study 2 was conducted by E4, a senior simulation engineer engaged in engine configuration evaluation.",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 91,
+        "paper_id": 0,
+        "2d_coord": [
+            0.15284864604473114,
+            -0.6296204924583435
+        ],
+        "para_info": "Case Study 1 focused on pressure field evolution and combustion mode interpretation and was performed by E3, a postdoctoral researcher specializing in reactive flow diagnostics. Case Study 2 explored the classification of combustion modes based on OH field trajectories and was conducted by E4, a senior simulation engineer engaged in engine configuration evaluation.",
+        "paper_info": "ChinaVis_2025___JOV___TemporalFlowViz__A_Visual_Analytics_Approach_to_Analyse_Temporal_Flow_Field_of_Scramjet_Combustion",
+        "MSU_id": 432
+    },
+    {
+        "sentence": "A zoomed-in view was shown in [Fig. 6a1], while frame snapshots were shown in (af).",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 99,
+        "paper_id": 0,
+        "2d_coord": [
+            -2.1104087829589844,
+            -0.9048115015029907
+        ],
+        "para_info": "In a separate analysis, we focused on case (a) to study stable scramjet combustion. As shown in [Fig. 6\\(](#page-7-0)a), the trajectory remained within a tight cluster throughout the simulation. A zoomedin view was shown in [Fig. 6\\(](#page-7-0)a1), while frame snapshots were shown in (af). In this case, the pressure surges consistently occured between the isolator and cavity, and remained stationary\u2014indicative of stable scramjet operation. According to InternViT-based clustering results, trajectories corresponding to stable scramjet combustion always remained within small round clusters, such as circles (a)\u2013(d) in [Fig. 6.](#page-7-0) In contrast, ramjet cases typically originated from such clusters and terminated in larger clusters such as (e), which aggregated stable ramjet frames.",
+        "paper_info": "ChinaVis_2025___JOV___TemporalFlowViz__A_Visual_Analytics_Approach_to_Analyse_Temporal_Flow_Field_of_Scramjet_Combustion",
+        "MSU_id": 466
+    },
+    {
+        "sentence": "Users could access these semantic summaries by clicking on.",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 101,
+        "paper_id": 0,
+        "2d_coord": [
+            -0.4585220515727997,
+            -2.2856271266937256
+        ],
+        "para_info": "Users could access these semantic summaries by clicking on",
+        "paper_info": "ChinaVis_2025___JOV___TemporalFlowViz__A_Visual_Analytics_Approach_to_Analyse_Temporal_Flow_Field_of_Scramjet_Combustion",
+        "MSU_id": 476
+    },
+    {
+        "sentence": "Points in the Temporal Trajectory View or selecting frames in the Report View.",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 104,
+        "paper_id": 0,
+        "2d_coord": [
+            -0.6122727394104004,
+            -2.441033363342285
+        ],
+        "para_info": "points in the Temporal Trajectory View or selecting frames in the Report View. E3 positively evaluated this feature, citing its ability to accelerate the correction of inappropriate combustion-mode descriptions. The ability to toggle between frame- and trajectorylevel summaries allowed for efficient browsing and interpretation of different simulation outcomes.",
+        "paper_info": "ChinaVis_2025___JOV___TemporalFlowViz__A_Visual_Analytics_Approach_to_Analyse_Temporal_Flow_Field_of_Scramjet_Combustion",
+        "MSU_id": 485
+    },
+    {
+        "sentence": "The following summarizes key insights drawn from these expert reflections.",
+        "category": "others",
+        "rank": 2,
+        "type": "text",
+        "para_id": 113,
+        "paper_id": 0,
+        "2d_coord": [
+            -1.3882282972335815,
+            -1.3999509811401367
+        ],
+        "para_info": "In addition to the structured analyses presented in our case studies, we also conducted post-session interviews with the domain experts to gather broader impressions of system usability, interpretability, and analytical value. These sessions aimed to evaluate not only how well the system supported specific tasks, but also how experts perceived its potential for generalization to larger workflows and collaboration scenarios. The following summarizes key insights drawn from these expert reflections.",
+        "paper_info": "ChinaVis_2025___JOV___TemporalFlowViz__A_Visual_Analytics_Approach_to_Analyse_Temporal_Flow_Field_of_Scramjet_Combustion",
+        "MSU_id": 530
+    },
+    {
+        "type": "figure",
+        "para_id": 129,
+        "paper_id": 1,
+        "paragraph_text": "_page_0_Picture_6.jpeg",
+        "number": "The combustion process in the scramjet engines generally takes place in unsteady conditions. The unsteadiness of the flame can be present locally or globally in supersonic combustion, for instance, reactant mixing, ignition, flame stabilization, and blow-off. Thus, unsteady supersonic combustion is an urgent problem that needs to be solved for real scramjet engine applications. This work helps to advance the knowledge of dual-mode scramjet combustion operating with different equivalence ratios by conducting quantitative analyses that characterize flame dynamics under flow separation. A hydrogenfueled direct-injection scheme was computed using *blastFoam* code via large-eddy simulation of a scramjet test rig at a stagnation temperature of 950 K and a pressure of 0.82 MPa. The computational results were in good agreement with the experimental data, and two typical flame structures (cavity shear-layer and cavity assisted jet-wake stabilized flame) corresponding to the scram/ram operating modes were reproduced. The local flame structure and flow regime were investigated using a modified flame index and filter functions. A particular focus was set on the continuous flame flashback during mode transition, which could be divided into three stages involving jet/shear-layer interaction, unsteady heat release, and the establishment of a large-area separation zone, with the decay of the cavity recirculation zone. Additionally, the unsteady jet-wake ram combustion presented three oscillation modes, giving rise to intermittent flameout of varying levels. The coherent-structures motion caused by the combined effects of low-speed separated flow and the fuel-jet was the main cause for this kind of unsteady combustion.",
+        "2d_coord": [
+            -1.7178417444229126,
+            -1.6791512966156006
+        ],
+        "para_info": "_page_0_Picture_6.jpeg",
+        "paper_info": "largeeddy",
+        "MSU_id": 602,
+        "sentence": "The image is a button labeled 'Check for updates' with a circular design and a bookmark icon in the center.",
+        "category": "others",
+        "rank": 1
+    },
+    {
+        "sentence": "The paper is structured as follows: The next section describes the methodology and quantitative comparison.",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 135,
+        "paper_id": 1,
+        "2d_coord": [
+            -0.36001449823379517,
+            -2.077176332473755
+        ],
+        "para_info": "Large-eddy simulation (LES) shows a high potential to predict such time varying phenomena [\\[17,22,31,32](#page-11-0)]. Given these justifications, the present work uses *blastFoam* [[33](#page-11-0)], an open-source generally/highly compressible reactive system solver, to perform LES for two operating conditions illustrative of dual-mode scram/ram combustion in a configuration identical to the experiment of Tian et al. [[5](#page-11-0)]. The primary objective is to obtain a comprehensive understanding of flow characteristics, flame stabilization mechanisms, and unsteady flame dynamics in separated flow. The paper is structured as follows: The next section describes the methodology and quantitative comparison. After that a phenomenological description of flame stabilization mechanism is presented following a comprehensive analysis of the optical and numerical images. Then, the combustion and flow regimes are vividly demonstrated. Subsequently, the temporal evolution of dynamic behaviors, including mode transition and oscillating flame, is characterized to reveal the potential control mechanism. Finally, some significant conclusions are drawn.",
+        "paper_info": "largeeddy",
+        "MSU_id": 679
+    },
+    {
+        "sentence": "A phenomenological description of flame stabilization mechanism is presented following a comprehensive analysis of the optical and numerical images.",
+        "category": "others",
+        "rank": 2,
+        "type": "text",
+        "para_id": 135,
+        "paper_id": 1,
+        "2d_coord": [
+            -1.4445115327835083,
+            0.530295729637146
+        ],
+        "para_info": "Large-eddy simulation (LES) shows a high potential to predict such time varying phenomena [\\[17,22,31,32](#page-11-0)]. Given these justifications, the present work uses *blastFoam* [[33](#page-11-0)], an open-source generally/highly compressible reactive system solver, to perform LES for two operating conditions illustrative of dual-mode scram/ram combustion in a configuration identical to the experiment of Tian et al. [[5](#page-11-0)]. The primary objective is to obtain a comprehensive understanding of flow characteristics, flame stabilization mechanisms, and unsteady flame dynamics in separated flow. The paper is structured as follows: The next section describes the methodology and quantitative comparison. After that a phenomenological description of flame stabilization mechanism is presented following a comprehensive analysis of the optical and numerical images. Then, the combustion and flow regimes are vividly demonstrated. Subsequently, the temporal evolution of dynamic behaviors, including mode transition and oscillating flame, is characterized to reveal the potential control mechanism. Finally, some significant conclusions are drawn.",
+        "paper_info": "largeeddy",
+        "MSU_id": 680
+    },
+    {
+        "sentence": "The combustion and flow regimes are vividly demonstrated.",
+        "category": "others",
+        "rank": 2,
+        "type": "text",
+        "para_id": 135,
+        "paper_id": 1,
+        "2d_coord": [
+            -0.038355980068445206,
+            0.3602724075317383
+        ],
+        "para_info": "Large-eddy simulation (LES) shows a high potential to predict such time varying phenomena [\\[17,22,31,32](#page-11-0)]. Given these justifications, the present work uses *blastFoam* [[33](#page-11-0)], an open-source generally/highly compressible reactive system solver, to perform LES for two operating conditions illustrative of dual-mode scram/ram combustion in a configuration identical to the experiment of Tian et al. [[5](#page-11-0)]. The primary objective is to obtain a comprehensive understanding of flow characteristics, flame stabilization mechanisms, and unsteady flame dynamics in separated flow. The paper is structured as follows: The next section describes the methodology and quantitative comparison. After that a phenomenological description of flame stabilization mechanism is presented following a comprehensive analysis of the optical and numerical images. Then, the combustion and flow regimes are vividly demonstrated. Subsequently, the temporal evolution of dynamic behaviors, including mode transition and oscillating flame, is characterized to reveal the potential control mechanism. Finally, some significant conclusions are drawn.",
+        "paper_info": "largeeddy",
+        "MSU_id": 681
+    },
+    {
+        "sentence": "The temporal evolution of dynamic behaviors, including mode transition and oscillating flame, is characterized to reveal the potential control mechanism.",
+        "category": "others",
+        "rank": 3,
+        "type": "text",
+        "para_id": 135,
+        "paper_id": 1,
+        "2d_coord": [
+            -1.6522109508514404,
+            0.5155160427093506
+        ],
+        "para_info": "Large-eddy simulation (LES) shows a high potential to predict such time varying phenomena [\\[17,22,31,32](#page-11-0)]. Given these justifications, the present work uses *blastFoam* [[33](#page-11-0)], an open-source generally/highly compressible reactive system solver, to perform LES for two operating conditions illustrative of dual-mode scram/ram combustion in a configuration identical to the experiment of Tian et al. [[5](#page-11-0)]. The primary objective is to obtain a comprehensive understanding of flow characteristics, flame stabilization mechanisms, and unsteady flame dynamics in separated flow. The paper is structured as follows: The next section describes the methodology and quantitative comparison. After that a phenomenological description of flame stabilization mechanism is presented following a comprehensive analysis of the optical and numerical images. Then, the combustion and flow regimes are vividly demonstrated. Subsequently, the temporal evolution of dynamic behaviors, including mode transition and oscillating flame, is characterized to reveal the potential control mechanism. Finally, some significant conclusions are drawn.",
+        "paper_info": "largeeddy",
+        "MSU_id": 682
+    },
+    {
+        "sentence": "Finally, some significant conclusions are drawn.",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 135,
+        "paper_id": 1,
+        "2d_coord": [
+            0.3757678270339966,
+            -1.5120294094085693
+        ],
+        "para_info": "Large-eddy simulation (LES) shows a high potential to predict such time varying phenomena [\\[17,22,31,32](#page-11-0)]. Given these justifications, the present work uses *blastFoam* [[33](#page-11-0)], an open-source generally/highly compressible reactive system solver, to perform LES for two operating conditions illustrative of dual-mode scram/ram combustion in a configuration identical to the experiment of Tian et al. [[5](#page-11-0)]. The primary objective is to obtain a comprehensive understanding of flow characteristics, flame stabilization mechanisms, and unsteady flame dynamics in separated flow. The paper is structured as follows: The next section describes the methodology and quantitative comparison. After that a phenomenological description of flame stabilization mechanism is presented following a comprehensive analysis of the optical and numerical images. Then, the combustion and flow regimes are vividly demonstrated. Subsequently, the temporal evolution of dynamic behaviors, including mode transition and oscillating flame, is characterized to reveal the potential control mechanism. Finally, some significant conclusions are drawn.",
+        "paper_info": "largeeddy",
+        "MSU_id": 683
+    },
+    {
+        "sentence": "For interpretation of the colors in the figure(s), the reader is referred to the web version of this article.",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 147,
+        "paper_id": 1,
+        "2d_coord": [
+            -1.3086214065551758,
+            0.44665828347206116
+        ],
+        "para_info": "**Fig. 1.** Sketch of the CARDC scramjet facility. The channel surrounded by the yellow region corresponds to the computational domain. The green line is the section mapped to air inlet for the velocity profile. (For interpretation of the colors in the figure(s), the reader is referred to the web version of this article.)",
+        "paper_info": "largeeddy",
+        "MSU_id": 758
+    },
+    {
+        "sentence": "More inflow parameters are presented in Table 1.",
+        "category": "others",
+        "rank": 2,
+        "type": "text",
+        "para_id": 149,
+        "paper_id": 1,
+        "2d_coord": [
+            -2.0233097076416016,
+            -0.5416423082351685
+        ],
+        "para_info": "As for the inflow conditions, all the inlets are set to Dirichlet boundaries based on the experimental parameters, and the airinlet velocity profile is mapped from the section 50 mm downstream. Additionally, synthetic turbulence with a 5% fluctuation intensity is added using the LEMOS generator [\\[47\\]](#page-12-0) to reproduce the fully-developed inflow that follows a 1/7th power law. The supersonic outflow quantities are extrapolated from the nearest cells and no-slip adiabatic boundary condition is imposed on all the walls. In the current work, two cases with different global equivalence ratios (case 1: *ER* = 0*.*1 and case 2: *ER* = 0*.*3) are comparatively studied by changing the fuel jet's injection stagnation pressure (*p*<sup>0</sup> = 1*.*5 MPa and *p*<sup>0</sup> = 4*.*0 MPa), and then achieves a phenomenological scram-to-ram transition by directly switching the injection pressure from case 1 to case 2 to study the intermediate state. More inflow parameters are presented in Table 1, where the isentropic flow hypothesis is used to convert the stagnation temperature and pressure of the inflow into static values.",
+        "paper_info": "largeeddy",
+        "MSU_id": 774
+    },
+    {
+        "sentence": "Fig. [8](#page-7-0)(b) shows the engine's perspective views.",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 176,
+        "paper_id": 1,
+        "2d_coord": [
+            -3.0955657958984375,
+            -0.8941185474395752
+        ],
+        "para_info": "Fig. [8](#page-7-0)(b) shows the engine's perspective views, where the vortex structures are identified using the Q-criterion iso-surface (1 \u00d7 105 s<sup>\u2212</sup>1). The 3-D vortex structures in the cavity of case 2 are found to be larger than those of case 1, primarily initiated by the shock/boundary-layer interaction in the isolator and intensified by thermal expansion in the cavity. Moreover, hairpin-like vortexes induced by the shock/boundary-layer interaction are observed on the lower wall. Both flames are confined in the vortexes that enhance fluid mixing, causing the flame in case 1 to be inside the cavity or close to the upper wall of the expansion section, while that in case 2 oscillates violently and the intermittent blowoff is observed downstream. Fig. [8](#page-7-0)(c) shows the time-averaged Mach number contours, embodying two typical features of a dual-mode scramjet. In scram mode, the flow in almost the entire combustor, except for the cavity, is supersonic. In ram mode, the subsonic region extends to the isolator and expansion section, and the supersonic channel is similar to the Laval nozzle, with a thermal throat at the cavity rear-part (*x* = 250 mm).",
+        "paper_info": "largeeddy",
+        "MSU_id": 890
+    },
+    {
+        "sentence": "Fig. [8](#page-7-0)(c) shows the time-averaged Mach number contours.",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 176,
+        "paper_id": 1,
+        "2d_coord": [
+            -2.4955737590789795,
+            -0.03641287982463837
+        ],
+        "para_info": "Fig. [8](#page-7-0)(b) shows the engine's perspective views, where the vortex structures are identified using the Q-criterion iso-surface (1 \u00d7 105 s<sup>\u2212</sup>1). The 3-D vortex structures in the cavity of case 2 are found to be larger than those of case 1, primarily initiated by the shock/boundary-layer interaction in the isolator and intensified by thermal expansion in the cavity. Moreover, hairpin-like vortexes induced by the shock/boundary-layer interaction are observed on the lower wall. Both flames are confined in the vortexes that enhance fluid mixing, causing the flame in case 1 to be inside the cavity or close to the upper wall of the expansion section, while that in case 2 oscillates violently and the intermittent blowoff is observed downstream. Fig. [8](#page-7-0)(c) shows the time-averaged Mach number contours, embodying two typical features of a dual-mode scramjet. In scram mode, the flow in almost the entire combustor, except for the cavity, is supersonic. In ram mode, the subsonic region extends to the isolator and expansion section, and the supersonic channel is similar to the Laval nozzle, with a thermal throat at the cavity rear-part (*x* = 250 mm).",
+        "paper_info": "largeeddy",
+        "MSU_id": 899
+    },
+    {
+        "sentence": "M. Yuan, P. Wang, Y. Zhang et al. Aerospace Science and Technology 139 (2023) 108401",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 179,
+        "paper_id": 1,
+        "2d_coord": [
+            -1.2274545431137085,
+            -1.8075300455093384
+        ],
+        "para_info": "This section examines the dynamic behaviors of shock wave and flame during scram-to-ram transition, both qualitatively and quantitatively. Fig. [10](#page-8-0) presents the evolution of pressure and flame during the mode transition. In the left-hand figures, the white arrows indicate the direction of oblique shocks propagation. Following an increase in injection pressure, a high-pressure zone is generated below the jet due to the impediment effect with the forward propagating shocks. At snapshot \"C\", the shocks are blown back into the cavity owing to pressure relief and insufficient heatrelease, and a normal shock is observed in the cavity entrance, as <span id=\"page-7-0\"></span>*M. Yuan, P. Wang, Y. Zhang et al. Aerospace Science and Technology 139 (2023) 108401*",
+        "paper_info": "largeeddy",
+        "MSU_id": 922
+    },
+    {
+        "sentence": "M. Yuan, P. Wang, Y. Zhang et al. Aerospace Science and Technology 139 (2023) 108401",
+        "category": "others",
+        "rank": 1,
+        "type": "text",
+        "para_id": 187,
+        "paper_id": 1,
+        "2d_coord": [
+            -1.2274545431137085,
+            -1.8075300455093384
+        ],
+        "para_info": "<span id=\"page-8-0\"></span>*M. Yuan, P. Wang, Y. Zhang et al. Aerospace Science and Technology 139 (2023) 108401*",
+        "paper_info": "largeeddy",
+        "MSU_id": 954
+    }
+]
