@@ -53,6 +53,11 @@ build_semantic_map.py (multi-subspaces, keep-all-raw + indices)
     --case-dir case2 \
     --out data/semantic_map_data.json
 
+    #构建case1 with llm summaries:
+    python build_semantic_map.py \
+    --case-dir case1_with_summaries \
+    --out data/semantic_map_data.json
+
 可选参数：
   --embed-msu-details
   --strict-format
