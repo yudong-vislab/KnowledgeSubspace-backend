@@ -274,6 +274,7 @@ def build_subspace_from_formslice(
     - 针对“某个子空间的 MSU 子集”（msu_map_slice）构建一个 subspace。
     - hex_info 仍是统一的 hexagon_info（通过 MSU 交集筛选到该子空间）。
     - modality/countries/hexList 都基于“属于该子空间的 MSU_ids”计算。
+    - 新增：把 hex_info 中的可选字段 `summary` 透传到输出；若不存在则置为空字符串。
     """
     # 该子空间允许的 MSU 集
     allowed_mids = set(msu_map_slice.keys())
@@ -308,17 +309,27 @@ def build_subspace_from_formslice(
         modality = majority_modality(msu_ids, msu_map_global)
         country_id = f"{country_prefix}{country_raw + country_offset}"
 
+        # ⬇ 新增：读取可选 summary；若不存在则为空字符串
+        summary_val = cell.get("summary", "")
+        if summary_val is None:
+            summary_val = ""  # 保证为字符串
+
         item = {
             "q": q,
             "r": r,
             "modality": modality,
             "country_id": country_id,
             "__country_raw": country_raw,
+            "summary": summary_val,   # ✅ 无论 strict-format 与否，都写出 summary
         }
+
         if not strict_format:
             item["msu_ids"] = msu_ids
             if embed_msu_details:
                 item["msu_details"] = [msu_map_global[mid] for mid in msu_ids if mid in msu_map_global]
+
+        # 如果你希望 strict-format 下去掉 summary，把上面的 "summary": summary_val
+        # 放到 `if not strict_format:` 分支里即可。
 
         hex_items.append(item)
 
@@ -339,7 +350,6 @@ def build_subspace_from_formslice(
         "unknown_msu_ids": unknown_msu_ids
     }
     return subspace, stats
-
 
 # -----------------------
 # Main
