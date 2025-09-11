@@ -1,7 +1,7 @@
 {
   "version": "1.1",
   "build_info": {
-    "ts": 1757485947,
+    "ts": 1757488912,
     "tool": "build_semantic_map.py",
     "options": {
       "strict_format": false,
@@ -11,8 +11,7 @@
       "country_offset": 0,
       "forms": [
         "case1/Background.json",
-        "case1/Conclusion.json",
-        "case1/engine_summaries.json"
+        "case1/Conclusion.json"
       ]
     }
   },
@@ -3975,12 +3974,6 @@
           ]
         }
       ]
-    },
-    {
-      "panelIdx": 2,
-      "subspaceName": "engine_summaries",
-      "hexList": [],
-      "countries": []
     }
   ],
   "links": [],
@@ -15843,12 +15836,6 @@
         "name": "Conclusion",
         "cells": 106,
         "countries": 2
-      },
-      {
-        "panelIdx": 2,
-        "name": "engine_summaries",
-        "cells": 0,
-        "countries": 0
       }
     ],
     "totals": {
