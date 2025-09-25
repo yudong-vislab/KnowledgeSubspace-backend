@@ -1,4 +1,20 @@
 python-dotenv==1.0.1
 flask==3.0.2
 flask-cors==4.0.0
+flask-compress==1.15
+
+# OpenAI SDK（与你当前 app.py 兼容）
 openai==1.101.0
+
+# LangChain 生态：核心  社区扩展  OpenAI 适配
+# 说明：0.2* 版本将加载器/向量库分拆到 langchain-community
+langchain>=0.2,<0.3
+langchain-community>=0.2,<0.3
+langchain-openai>=0.1.7,<0.2
+
+# 向量库（本地 CPU 版）与 PDF 解析
+faiss-cpu>=1.8,<2
+pypdf>=4.2,<5
+
+# 可选：部分统计/估算 token 的工具
+tiktoken>=0.7,<1
