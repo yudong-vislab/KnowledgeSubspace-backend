@@ -1,9 +1,9 @@
 # =========================================================
-# train_all_v4.py  —— 稳定版多损失融合训练, 加入 Neighborhood CE 的稳定版训练脚本
+# train_all_v4_fixed.py —— 修复“圆环/椭圆”问题的稳定版
+# 关键点：区间层级 + 半难负采样(diff) + 局部排斥 + 论文中心
 # =========================================================
-# pip install torch sentence-transformers tqdm scikit-learn matplotlib
+# pip install torch sentence-transformers tqdm matplotlib
 
-import os
 import json
 from typing import List, Dict
 from tqdm import tqdm
@@ -14,22 +14,20 @@ import torch.optim as optim
 from torch.utils.data import Dataset, DataLoader
 from sentence_transformers import SentenceTransformer, models
 import matplotlib.pyplot as plt
+import torch.nn.functional as F
 
-# =========================================================
+
+# =========================
 # 1) 数据集
-# =========================================================
+# =========================
 class TripletTextDataset(Dataset):
-    """
-    Expect json list of {"anchor": "...", "positive": "...", "negative": "...", 
-                        "anchor_idx": int, "positive_idx": int, "negative_idx": int}
-    """
+    """json list of {anchor, positive, negative, anchor_idx, positive_idx, negative_idx}"""
     def __init__(self, json_path: str):
         with open(json_path, "r", encoding="utf-8") as f:
             self.data = json.load(f)
-        assert isinstance(self.data, list), "json must be a list of triplets"
+        assert isinstance(self.data, list)
 
-    def __len__(self):
-        return len(self.data)
+    def __len__(self): return len(self.data)
 
     def __getitem__(self, idx):
         t = self.data[idx]
@@ -38,316 +36,278 @@ class TripletTextDataset(Dataset):
 
 def collate_fn(batch, tokenizer_model: SentenceTransformer, device="cpu"):
     anchors, positives, negatives, anchor_idxs, positive_idxs, negative_idxs = zip(*batch)
-    a_emb = tokenizer_model.encode(list(anchors), convert_to_tensor=True, device=device).detach()
+    a_emb = tokenizer_model.encode(list(anchors),  convert_to_tensor=True, device=device).detach()
     p_emb = tokenizer_model.encode(list(positives), convert_to_tensor=True, device=device).detach()
     n_emb = tokenizer_model.encode(list(negatives), convert_to_tensor=True, device=device).detach()
-    return a_emb, p_emb, n_emb, anchor_idxs, positive_idxs, negative_idxs
+    return a_emb, p_emb, n_emb, list(anchor_idxs), list(positive_idxs), list(negative_idxs)
 
 
-# =========================================================
-# 2) 映射模型
-# =========================================================
+# =========================
+# 2) 映射模型（无 per-sample L2）
+# =========================
 class Bert2DMapper(nn.Module):
-    def __init__(self, embed_dim=768, hidden_dims=(256, 64), out_dim=2, dropout=0.1):
+    def __init__(self, embed_dim=768, hidden=(256, 64, 32), out_dim=2, dropout=0.1):
         super().__init__()
         self.layers = nn.ModuleList()
         self.norms = nn.ModuleList()
-        self.activations = nn.ModuleList()
-        self.dropouts = nn.ModuleList()
         in_dim = embed_dim
-        for h in hidden_dims:
+        for h in hidden:
             self.layers.append(nn.Linear(in_dim, h))
-            self.norms.append(nn.LayerNorm(h))  # 更稳
-            self.activations.append(nn.GELU())
-            self.dropouts.append(nn.Dropout(dropout))
+            self.norms.append(nn.LayerNorm(h))
             in_dim = h
         self.final = nn.Linear(in_dim, out_dim)
+        self.drop = nn.Dropout(dropout)
+        self.act = nn.GELU()
 
     def forward(self, x):
-        out = x
-        for layer, norm, act, drop in zip(self.layers, self.norms, self.activations, self.dropouts):
-            out = drop(act(norm(layer(out))))
-        out = self.final(out)
-        # 每样本 L2 归一化，锁定尺度
-        out = out / (out.norm(dim=1, keepdim=True) + 1e-8)
-        return out  # (batch, 2)
+        z = x
+        for lin, ln in zip(self.layers, self.norms):
+            z = self.drop(self.act(ln(lin(z))))
+        z = self.final(z)       # 不做 L2/单位圆归一
+        return z
 
 
-# =========================================================
+# =========================
 # 3) 损失函数
-# =========================================================
-def repulsion_loss(points: torch.Tensor, min_dist=0.3):
-    """只惩罚过近的点对，平滑稳定。"""
-    b = points.size(0)
-    if b < 2:
-        return torch.tensor(0.0, device=points.device)
-    diffs = points.unsqueeze(1) - points.unsqueeze(0)
-    dist = torch.norm(diffs, dim=-1)
-    mask = torch.triu(torch.ones_like(dist, dtype=torch.bool), 1)
-    loss = torch.relu(min_dist - dist[mask]) ** 2
-    return loss.mean() if loss.numel() > 0 else torch.tensor(0.0, device=points.device)
+# =========================
+def triplet_margin_loss(a, p, n, margin=1.0):
+    d_pos = torch.norm(a - p, p=2, dim=-1)
+    d_neg = torch.norm(a - n, p=2, dim=-1)
+    return F.relu(d_pos - d_neg + margin).mean()
 
+def local_repulsion(points: torch.Tensor, k=15, min_dist=0.22):
+    """仅对 top-k 近邻施加最小间距，不做全局均匀化"""
+    n = points.size(0)
+    if n < 2: return torch.tensor(0.0, device=points.device)
+    D = torch.cdist(points, points)
+    k = min(k, n-1)
+    idx = D.topk(k+1, largest=False).indices[:,1:]
+    rows = torch.arange(n, device=points.device).unsqueeze(1).expand_as(idx)
+    near = D[rows, idx]
+    return F.relu(min_dist - near).pow(2).mean()
 
-def hierarchical_pull_loss(coords: torch.Tensor, metadata: Dict, anchor_idxs: List[int],
-                          r_para=0.3, r_same=0.8, r_diff=1.5,
-                          w_para=2.0, w_same=1.0, w_diff=2.0):
-    """
-    带区间的层级约束：
-    - 同段落: d ≤ r_para
-    - 同论文不同段落: d ≤ r_same
-    - 不同论文: d ≥ r_diff
-    """
-    n = coords.size(0)
-    loss = 0.0
-    count = 0
+def hierarchical_band_loss(coords: torch.Tensor, metadata: Dict, idxs: List[int],
+                           para_low=0.18, para_high=0.45,
+                           same_low=0.55, same_high=1.20,
+                           w_para=2.0, w_same=1.0):
+    """同段/同论文双边带宽（只惩罚越界），不对异论文做下限——交给 diff_sampled"""
+    n = coords.size(0); loss=0.0; c=0
     for i in range(n):
-        idx_i = anchor_idxs[i]
-        meta_i = metadata.get(str(idx_i), {})
-        paper_i = meta_i.get("paper_id", -1)
-        para_i = meta_i.get("para_id", -1)
-        for j in range(i + 1, n):
-            idx_j = anchor_idxs[j]
-            meta_j = metadata.get(str(idx_j), {})
-            paper_j = meta_j.get("paper_id", -2)
-            para_j = meta_j.get("para_id", -2)
-            dist = torch.norm(coords[i] - coords[j])
-            if paper_i == paper_j:
-                if para_i == para_j:
-                    loss += w_para * torch.relu(dist - r_para) ** 2
-                else:
-                    loss += w_same * torch.relu(dist - r_same) ** 2
+        mi = metadata.get(str(idxs[i]), {}); pi, si = mi.get("paper_id",-1), mi.get("para_id",-1)
+        for j in range(i+1, n):
+            mj = metadata.get(str(idxs[j]), {}); pj, sj = mj.get("paper_id",-2), mj.get("para_id",-2)
+            if pi != pj: continue
+            d = torch.norm(coords[i]-coords[j])
+            if si == sj:
+                loss += w_para*(F.relu(d-para_high)**2 + F.relu(para_low-d)**2)
             else:
-                loss += w_diff * torch.relu(r_diff - dist) ** 2
-            count += 1
-    return loss / max(1, count)
+                loss += w_same*(F.relu(d-same_high)**2 + F.relu(same_low-d)**2)
+            c += 1
+    return loss / max(1, c)
 
-
-def variance_reg(z, gamma=0.5):
-    std = z.std(dim=0) + 1e-4
-    return torch.relu(gamma - std).mean()
-
-
-def radius_reg(z, target_r=1.0):
-    mean_r = z.norm(dim=1).mean()
-    return (mean_r - target_r).pow(2)
-
-
-triplet_loss_fn = nn.TripletMarginWithDistanceLoss(
-    distance_function=lambda x, y: torch.norm(x - y, p=2, dim=-1),
-    margin=1.0,
-    reduction='mean'
-)
-
-# ---------- 新增：邻域保持项（高维→低维的本地一致性） ----------
-@torch.no_grad()
-def _topk_neighbors(dist_mat: torch.Tensor, k: int):
-    """返回每个 i 的 top-k 近邻索引（排除自身）"""
-    k = min(k, dist_mat.size(1) - 1)
-    idx = dist_mat.topk(k + 1, largest=False).indices[:, 1:]
-    return idx
-
-def neighborhood_ce(x_hd: torch.Tensor, z_ld: torch.Tensor, t_hd=2.0, t_ld=0.5, k=15):
+def diff_sampled_margin(coords_2d: torch.Tensor, embeds_hd: torch.Tensor,
+                        metadata: Dict, idxs: List[int], K=10, diff_low=1.35, w_diff=2.0):
     """
-    x_hd: (N, D)  高维（SBERT）嵌入
-    z_ld: (N, 2)  低维映射
-    t_hd/t_ld: 温度
-    k: 仅用 top-k 邻居形成软目标，稳定高效
-    返回：平均交叉熵
+    只对每个点的 K 个“半难负样本”(异论文、高维相近)施加 d>=diff_low 的下限。
+    这样不会用“所有 diff pair”把半径统统往外推。
     """
+    N = coords_2d.size(0)
+    if N < 2: return torch.tensor(0.0, device=coords_2d.device)
+    # 高维近邻（找候选）
+    D_hd = torch.cdist(embeds_hd, embeds_hd)                    # (N,N)
+    _, hd_idx = D_hd.topk(min(K+1, N), largest=False)
+    hd_idx = hd_idx[:,1:]                                       # 去掉自身
+    # 低维距离
+    D_ld = torch.cdist(coords_2d, coords_2d)                    # (N,N)
+    loss = 0.0; cnt = 0
+    for i in range(N):
+        mi = metadata.get(str(idxs[i]), {}); pi = mi.get("paper_id",-1)
+        for j in hd_idx[i]:
+            j = j.item()
+            mj = metadata.get(str(idxs[j]), {}); pj = mj.get("paper_id",-2)
+            if pi == pj: continue
+            d = D_ld[i, j]
+            loss += w_diff * F.relu(diff_low - d)**2
+            cnt += 1
+    return loss / max(1, cnt)
+
+def paper_center_loss(z2d: torch.Tensor, paper_ids: List[int], pull_w=0.5, sep_w=0.5, margin=1.0):
+    """
+    批内“论文中心”拉近 + 中心分离：让簇在平面里散开而不是靠同半径区分
+    """
+    device = z2d.device
+    ids = torch.tensor(paper_ids, device=device)
+    uniq = ids.unique()
+    centers = []
+    pull = 0.0
+    for pid in uniq:
+        mask = (ids == pid)
+        c = z2d[mask].mean(0)
+        centers.append(c)
+        pull += ((z2d[mask] - c)**2).sum(dim=1).mean()
+    pull = pull / max(1, len(uniq))
+    if len(uniq) < 2:
+        sep = torch.tensor(0.0, device=device)
+    else:
+        C = torch.stack(centers)                # (G,2)
+        Dc = torch.cdist(C, C)
+        mask = torch.triu(torch.ones_like(Dc, dtype=torch.bool), 1)
+        sep = F.relu(margin - Dc[mask]).pow(2).mean()
+    return pull_w * pull + sep_w * sep
+
+def neighborhood_ce(x_hd: torch.Tensor, z_ld: torch.Tensor, t_hd=2.0, t_ld=0.75, k=10):
+    """温和邻域保持（可关）。给低维更多自由度，避免固化成环。"""
     N = x_hd.size(0)
-    # 高维距离（不回传梯度）
+    if N < 3: return torch.tensor(0.0, device=x_hd.device)
     with torch.no_grad():
-        d_hd = torch.cdist(x_hd, x_hd)  # (N,N)
-        idx = _topk_neighbors(d_hd, k)  # (N,k)
-        # 软目标分布 P(j|i)
+        d_hd = torch.cdist(x_hd, x_hd)
+        k = min(k, N-1)
+        idx = d_hd.topk(k+1, largest=False).indices[:,1:]
         P = torch.zeros(N, k, device=x_hd.device, dtype=x_hd.dtype)
         for i in range(N):
-            nei = idx[i]
-            logits = -d_hd[i, nei] / t_hd
+            logits = -d_hd[i, idx[i]]/t_hd
             P[i] = torch.softmax(logits, dim=0)
-
-    # 低维分布 Q(j|i)
-    d_ld = torch.cdist(z_ld, z_ld)  # (N,N)
+    d_ld = torch.cdist(z_ld, z_ld)
     loss = 0.0
     for i in range(N):
-        nei = idx[i]
-        q_log = torch.log_softmax(-d_ld[i, nei] / t_ld, dim=0)
-        loss += -(P[i] * q_log).sum()
+        q_log = torch.log_softmax(-d_ld[i, idx[i]]/t_ld, dim=0)
+        loss += -(P[i]*q_log).sum()
     return loss / N
 
+def variance_reg(z, gamma=0.30):
+    std = z.std(dim=0) + 1e-4
+    return F.relu(gamma - std).mean()
 
-# =========================================================
+
+# =========================
 # 4) 训练
-# =========================================================
+# =========================
 def train_single_stage(
     json_path: str,
     metadata_path: str,
     sbert_model_name: str = "/home/lxy/bgemodel",
     device: str = "cuda" if torch.cuda.is_available() else "cpu",
     embed_dim: int = 384,
-    hidden_dims: tuple = (256, 64),
+    hidden_dims: tuple = (256, 64, 32),
     batch_size: int = 128,
     epochs: int = 20,
     lr: float = 1e-3,
-    lambda_repulsion: float = 0.4,
-    lambda_hierarchical: float = 10.0,
-    lambda_neigh: float = 1.0,          # <—— 新增：邻域保持项权重
+    # 损失权重（先让簇在平面里成形，再净化边界）
+    w_triplet: float = 1.0,
+    w_repulsion: float = 0.30,
+    w_hier: float = 6.0,
+    w_diff: float = 2.0,
+    w_center: float = 0.50,
+    w_neigh: float = 0.50,     # 如仍有粘连可加到 0.8
+    w_var: float = 0.03,
     freeze_sbert: bool = True,
-    save_path: str = "./model_2d_v5.pt"
+    save_path: str = "./model_2d_v4_fixed.pt"
 ):
-    # ---------- 元数据 ----------
+    # ---- 元数据 ----
     with open(metadata_path, "r", encoding="utf-8") as f:
-        metadata_list = json.load(f)
-    metadata_dict = {str(item.get("idx", i)): item for i, item in enumerate(metadata_list)}
+        metas = json.load(f)
+    meta = {str(it.get("idx", i)): it for i, it in enumerate(metas)}
 
-    # ---------- SBERT ----------
+    # ---- SBERT ----
     try:
         sbert = SentenceTransformer(sbert_model_name, device=device)
-        print("模型直接加载成功")
-    except Exception as e:
-        print(f"直接加载失败: {e}")
-        print("尝试手动构建模型...")
+    except Exception:
         word_embedding_model = models.Transformer(sbert_model_name)
-        pooling_model = models.Pooling(
-            word_embedding_model.get_word_embedding_dimension(),
-            pooling_mode_mean_tokens=True
-        )
+        pooling_model = models.Pooling(word_embedding_model.get_word_embedding_dimension(),
+                                       pooling_mode_mean_tokens=True)
         sbert = SentenceTransformer(modules=[word_embedding_model, pooling_model], device=device)
-        print("手动构建模型成功")
-
     sample_emb = sbert.encode("test", convert_to_tensor=True, device=device)
-    actual_embed_dim = sample_emb.shape[-1]
-    if actual_embed_dim != embed_dim:
-        embed_dim = actual_embed_dim
-        print(f"调整 embed_dim 为 {embed_dim}")
+    if sample_emb.shape[-1] != embed_dim:
+        embed_dim = sample_emb.shape[-1]
 
-    # ---------- 数据 ----------
+    # ---- DataLoader ----
     ds = TripletTextDataset(json_path)
-    dataloader = DataLoader(
-        ds, batch_size=batch_size, shuffle=True,
-        collate_fn=lambda b: collate_fn(b, sbert, device),
-        drop_last=True
-    )
+    dl = DataLoader(ds, batch_size=batch_size, shuffle=True,
+                    collate_fn=lambda b: collate_fn(b, sbert, device), drop_last=True)
 
-    # ---------- 模型/优化 ----------
-    mapper = Bert2DMapper(embed_dim=embed_dim, hidden_dims=hidden_dims, out_dim=2).to(device)
-    params = list(mapper.parameters()) if freeze_sbert else list(mapper.parameters()) + list(sbert.parameters())
-    if not freeze_sbert:
-        print("警告: 解冻 SBERT 参数")
+    # ---- 模型/优化器 ----
+    mapper = Bert2DMapper(embed_dim=embed_dim, hidden=hidden_dims, out_dim=2).to(device)
+    params = list(mapper.parameters()) if freeze_sbert else list(mapper.parameters())+list(sbert.parameters())
     optimizer = optim.AdamW(params, lr=lr, weight_decay=1e-5)
     scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=10, gamma=0.5)
 
-    # ---------- 训练 ----------
-    print("Training with Triplet + Repulsion + Hierarchical + NeighborhoodCE + Variance + Radius")
-    mapper.train()
+    print("Train: Triplet + 局部排斥 + 区间层级(同论文) + 采样异论文下限 + 论文中心 + 温和邻域 + 方差下限")
+    loss_hist = {k: [] for k in ["total","triplet","repel","hier","diff","center","neigh","var"]}
 
-    loss_history = {k: [] for k in ["total", "triplet", "repulsion", "hierarchical", "neigh_ce", "variance", "radius"]}
-
-    for epoch in range(epochs):
-        total = trip = repel = hier = neigh = varr = radi = 0.0
+    for ep in range(epochs):
+        tot = {k:0.0 for k in loss_hist}
         n_batches = 0
 
-        for a_emb, p_emb, n_emb, anchor_idxs, positive_idxs, negative_idxs in tqdm(dataloader):
+        for a_emb, p_emb, n_emb, a_idx, p_idx, n_idx in tqdm(dl):
             optimizer.zero_grad()
-
-            # 低维
             a2d, p2d, n2d = mapper(a_emb), mapper(p_emb), mapper(n_emb)
             all2d = torch.cat([a2d, p2d, n2d], dim=0)
+            allhd = torch.cat([a_emb, p_emb, n_emb], dim=0)
+            allidx = a_idx + p_idx + n_idx
+            paper_ids = [meta[str(i)].get("paper_id",-1) for i in allidx]
 
-            # 高维（作为邻域目标）
-            all_hd = torch.cat([a_emb, p_emb, n_emb], dim=0)
+            L_trip  = triplet_margin_loss(a2d, p2d, n2d, margin=1.0)
+            L_rep   = local_repulsion(all2d, k=15, min_dist=0.22)
+            L_hier  = hierarchical_band_loss(all2d, meta, allidx,
+                                             para_low=0.18, para_high=0.45,
+                                             same_low=0.55, same_high=1.20)
+            L_diff  = diff_sampled_margin(all2d, allhd, meta, allidx, K=10, diff_low=1.35, w_diff=2.0)
+            L_center= paper_center_loss(all2d, paper_ids, pull_w=0.5, sep_w=0.5, margin=1.0)
+            L_neigh = neighborhood_ce(allhd, all2d, t_hd=2.0, t_ld=0.75, k=10)
+            L_var   = variance_reg(all2d, gamma=0.30)
 
-            all_idxs = list(anchor_idxs) + list(positive_idxs) + list(negative_idxs)
-
-            # 各项损失
-            loss_trip  = triplet_loss_fn(a2d, p2d, n2d)
-            loss_repel = repulsion_loss(all2d, min_dist=0.3)
-            loss_hier  = hierarchical_pull_loss(all2d, metadata_dict, all_idxs,
-                                                r_para=0.3, r_same=0.8, r_diff=1.5)
-            loss_neigh = neighborhood_ce(all_hd, all2d, t_hd=2.0, t_ld=0.5, k=15)
-            loss_var   = variance_reg(all2d, gamma=0.5)
-            loss_rad   = radius_reg(all2d, target_r=1.0)
-
-            loss = (
-                1.0 * loss_trip +
-                lambda_repulsion * loss_repel +
-                lambda_hierarchical * loss_hier +
-                lambda_neigh * loss_neigh +
-                0.1 * loss_var +
-                0.05 * loss_rad
-            )
+            loss = (w_triplet*L_trip + w_repulsion*L_rep + w_hier*L_hier +
+                    w_diff*L_diff + w_center*L_center + w_neigh*L_neigh + w_var*L_var)
 
             loss.backward()
             torch.nn.utils.clip_grad_norm_(mapper.parameters(), 1.0)
             optimizer.step()
 
-            total += loss.item(); trip += loss_trip.item()
-            repel += loss_repel.item(); hier += loss_hier.item()
-            neigh += loss_neigh.item(); varr += loss_var.item(); radi += loss_rad.item()
+            tot["total"] += loss.item()
+            tot["triplet"]+= L_trip.item(); tot["repel"]+=L_rep.item(); tot["hier"]+=L_hier.item()
+            tot["diff"]+=L_diff.item(); tot["center"]+=L_center.item(); tot["neigh"]+=L_neigh.item(); tot["var"]+=L_var.item()
             n_batches += 1
 
         scheduler.step()
-        hist_vals = [total, trip, repel, hier, neigh, varr, radi]
-        for k, v in zip(loss_history.keys(), hist_vals):
-            loss_history[k].append(v / n_batches)
+        for k in loss_hist: loss_hist[k].append(tot[k]/n_batches)
 
-        print(f"[Epoch {epoch+1}/{epochs}] "
-              f"total={loss_history['total'][-1]:.4f}, trip={loss_history['triplet'][-1]:.4f}, "
-              f"repel={loss_history['repulsion'][-1]:.4f}, hier={loss_history['hierarchical'][-1]:.4f}, "
-              f"neigh={loss_history['neigh_ce'][-1]:.4f}, var={loss_history['variance'][-1]:.4f}, "
-              f"rad={loss_history['radius'][-1]:.4f}")
+        print(f"[Ep {ep+1}/{epochs}] total={loss_hist['total'][-1]:.4f} "
+              f"trip={loss_hist['triplet'][-1]:.3f} repel={loss_hist['repel'][-1]:.3f} "
+              f"hier={loss_hist['hier'][-1]:.3f} diff={loss_hist['diff'][-1]:.3f} "
+              f"center={loss_hist['center'][-1]:.3f} neigh={loss_hist['neigh'][-1]:.3f} var={loss_hist['var'][-1]:.3f}")
 
-        if (epoch + 1) % 2 == 0:
-            ckpt = save_path.replace(".pt", f"_epoch{epoch+1}.pt")
-            torch.save({
-                "mapper_state": mapper.state_dict(),
-                "sbert_name": sbert_model_name,
-                "embed_dim": embed_dim,
-                "hidden_dims": hidden_dims,
-                "epoch": epoch,
-                "loss_history": loss_history
-            }, ckpt)
-            print("Checkpoint saved:", ckpt)
-
-    # ---------- 保存模型 ----------
+    # ---- 保存 ----
     torch.save({
         "mapper_state": mapper.state_dict(),
         "sbert_name": sbert_model_name,
         "embed_dim": embed_dim,
         "hidden_dims": hidden_dims,
-        "loss_history": loss_history
+        "loss_history": loss_hist,
     }, save_path)
-    print("Final model saved to", save_path)
+    print("Saved to:", save_path)
 
-    # ---------- 绘图 ----------
-    plt.figure(figsize=(11,6))
-    for k, v in loss_history.items():
+    # ---- 绘图 ----
+    plt.figure(figsize=(10,6))
+    for k,v in loss_hist.items():
         plt.plot(v, label=k)
-    plt.xlabel("Epoch"); plt.ylabel("Loss")
-    plt.title("Training Loss History")
     plt.legend(); plt.grid(True)
-    plt.savefig(save_path.replace(".pt", "_loss.png"))
-    plt.close()
-    print("Saved loss plot")
+    plt.xlabel("Epoch"); plt.ylabel("Loss"); plt.title("Loss History (v4_fixed)")
+    plt.savefig(save_path.replace(".pt","_loss.png")); plt.close()
+    print("Saved loss curve")
 
 
-# =========================================================
-# 5) 运行示例
-# =========================================================
+# =========================
+# 运行示例（与你当前路径一致）
+# =========================
 if __name__ == "__main__":
     train_single_stage(
         json_path="pollution_result/contrastive_triplets_with_context_all_database_v2.0.json",
         metadata_path="pollution_result/formdatabase_v2.0.json",
         sbert_model_name="/home/lxy/bgemodel",
-        device="cuda" if torch.cuda.is_available() else "cpu",
         embed_dim=384,
         hidden_dims=(256, 64, 32),
         batch_size=128,
         epochs=20,
         lr=1e-3,
-        lambda_repulsion=0.4,
-        lambda_hierarchical=10.0,
-        lambda_neigh=1.0,                      # 可在 0.5–2.0 间微调
-        freeze_sbert=True,
-        save_path="pollution_result/bert2d_mapper_all_v5.pt"
+        save_path="pollution_result/bert2d_mapper_all_v4_fixed.pt"
     )
