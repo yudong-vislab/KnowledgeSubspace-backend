@@ -1,0 +1,1389 @@
+[
+  {
+    "hex_coord": [
+      5,
+      7
+    ],
+    "country": 0,
+    "MSU_ids": [
+      24
+    ],
+    "summary": "The cluster seems to focus on methods for analyzing urban time series data, particularly using causal analysis approaches. The mention of \"positive feedback from domain experts\" suggests that the proposed methods or findings were well-received in the field, possibly indicating the relevance and validity of the research."
+  },
+  {
+    "hex_coord": [
+      1,
+      1
+    ],
+    "country": 0,
+    "MSU_ids": [
+      69,
+      613
+    ],
+    "summary": "The cluster centers on evaluating a causal analysis framework for urban time series data, highlighting its effectiveness through real-world case studies and its usability through intuitive visualizations. Both sentences address validation—practical performance and user interpretability—of the proposed analytical approach."
+  },
+  {
+    "hex_coord": [
+      4,
+      0
+    ],
+    "country": 0,
+    "MSU_ids": [
+      360,
+      510,
+      555,
+      557,
+      599,
+      616
+    ],
+    "summary": "The common theme is the detection and analysis of causal relationships in urban time series data. The sentences discuss the identification of causal graphs, the evaluation of the accuracy of detected relations, and the application of a model (Compass) to capture dynamic causalities, including the consideration of errors and missing causalities. The sentences appear to be discussing different aspects of the same causal analysis framework."
+  },
+  {
+    "hex_coord": [
+      4,
+      -1
+    ],
+    "country": 0,
+    "MSU_ids": [
+      408,
+      512,
+      513,
+      521,
+      536,
+      539,
+      551,
+      552,
+      558,
+      565,
+      588,
+      590,
+      594,
+      610,
+      611
+    ],
+    "summary": "The common theme across these sentences is the visualization and analysis of causal relationships in urban time series data, specifically focusing on the use of a \"compass\" visualization tool to represent these causal links. The sentences discuss how the tool displays dynamic, time-varying, and bidirectional causal relations between sensors, highlighting issues like correlations, patterns, and expert evaluations of the tool's effectiveness and ease of understanding."
+  },
+  {
+    "hex_coord": [
+      3,
+      -1
+    ],
+    "country": 0,
+    "MSU_ids": [
+      409,
+      614,
+      615
+    ],
+    "summary": "**Summary:** These sentences collectively address the importance of causal analysis in urban time series data, emphasizing the existence of causal relations across different time windows, spatial dimensions, and the usability validation by experts."
+  },
+  {
+    "hex_coord": [
+      -5,
+      7
+    ],
+    "country": 0,
+    "MSU_ids": [
+      410,
+      506,
+      507,
+      583
+    ],
+    "summary": "The common theme is the analysis of urban time series data using temporal windows to identify causal patterns and peaks. The relationship between the sentences suggests a focus on the methodological approach, highlighting the use of time windows to detect recurring patterns and causal relationships in the data."
+  },
+  {
+    "hex_coord": [
+      3,
+      0
+    ],
+    "country": 0,
+    "MSU_ids": [
+      458,
+      526,
+      531,
+      560,
+      596,
+      627
+    ],
+    "summary": "The common theme across these sentences is the application of causal analysis to urban time series data, particularly in understanding the relationships between air pollution events and traffic patterns. They discuss methods like heatmaps and scatterplots for visualizing causality, as well as expert analysis and case studies highlighting dynamic causal links."
+  },
+  {
+    "hex_coord": [
+      6,
+      8
+    ],
+    "country": 0,
+    "MSU_ids": [
+      508
+    ],
+    "summary": "The sentence likely refers to the evaluation or validation of a model or method used in urban time series analysis. The experts' satisfaction suggests confidence in the findings, but it doesn’t directly connect to a broader causal analysis, which may need additional context from other sources."
+  },
+  {
+    "hex_coord": [
+      3,
+      9
+    ],
+    "country": 0,
+    "MSU_ids": [
+      516
+    ],
+    "summary": "The sentence concerns cross-regional air pollution transport, highlighting how pollutants originating in one city can spread to others. The cluster likely focuses on analyzing causal relationships and spatial propagation patterns of urban air pollution within interconnected regional systems."
+  },
+  {
+    "hex_coord": [
+      -3,
+      6
+    ],
+    "country": 0,
+    "MSU_ids": [
+      525
+    ],
+    "summary": "The cluster seems to focus on analyzing time series data in urban contexts, particularly identifying patterns or anomalies, such as sharp peaks, in the data over time. The sentences likely address methods or challenges related to temporal analysis in urban systems."
+  },
+  {
+    "hex_coord": [
+      -2,
+      4
+    ],
+    "country": 0,
+    "MSU_ids": [
+      532
+    ],
+    "summary": "The common theme appears to be the analysis of time-series data, specifically focusing on causal relationships and temporal lags in urban systems. The sentences suggest a study on how time differences (or lags) in peaks correspond with observed phenomena, indicating a deeper investigation into causal dynamics in urban environments."
+  },
+  {
+    "hex_coord": [
+      1,
+      4
+    ],
+    "country": 0,
+    "MSU_ids": [
+      534
+    ],
+    "summary": "The cluster appears to discuss methods of analyzing urban time series data, particularly focusing on identifying significant peaks or patterns. The relationship between the papers suggests an emphasis on how experts interpret or respond to notable trends within time series data in urban contexts."
+  },
+  {
+    "hex_coord": [
+      -1,
+      4
+    ],
+    "country": 0,
+    "MSU_ids": [
+      537
+    ],
+    "summary": "The cluster focuses on identifying and analyzing causal relationships within urban time series data, specifically addressing challenges in linking heterogeneous or dissimilar temporal patterns across cities or regions."
+  },
+  {
+    "hex_coord": [
+      0,
+      1
+    ],
+    "country": 0,
+    "MSU_ids": [
+      540
+    ],
+    "summary": "The cluster centers around the analysis of time series data, specifically focusing on identifying and understanding lags between peaks in urban time series. It suggests a causal analysis approach to urban data, particularly with attention to temporal relationships and their impact on understanding urban dynamics."
+  },
+  {
+    "hex_coord": [
+      -3,
+      5
+    ],
+    "country": 0,
+    "MSU_ids": [
+      553
+    ],
+    "summary": "The common theme revolves around analyzing time series data, specifically focusing on causal relationships and temporal shifts between two variables. The proximity of the time series (red and blue) suggests a causal or predictive relationship, likely in the context of urban data analysis."
+  },
+  {
+    "hex_coord": [
+      0,
+      3
+    ],
+    "country": 0,
+    "MSU_ids": [
+      554
+    ],
+    "summary": "The sentence seems to reference a finding consistent with a broader understanding of urban time series analysis. The common theme likely revolves around methods or frameworks for analyzing urban time series data and causal relationships, though the specific details are not fully provided in the given sentence."
+  },
+  {
+    "hex_coord": [
+      0,
+      10
+    ],
+    "country": 0,
+    "MSU_ids": [
+      564
+    ],
+    "summary": "The common theme of this sentence is the analysis of air pollution events in Beijing. The sentence discusses the geographic origins of the most significant pollution events, suggesting a focus on causal factors and geographical influences in urban air quality analysis."
+  },
+  {
+    "hex_coord": [
+      5,
+      -1
+    ],
+    "country": 0,
+    "MSU_ids": [
+      582,
+      593,
+      597,
+      598,
+      618
+    ],
+    "summary": "The common theme revolves around causal analysis in urban time series, focusing on relationships between different variables (e.g., $r1$, $r3$, $r4$, $r5$) across time. The sentences discuss specific causal patterns, their temporal variations, and how these relationships are evaluated in the system, possibly within a broader framework for urban data analysis."
+  },
+  {
+    "hex_coord": [
+      -1,
+      3
+    ],
+    "country": 0,
+    "MSU_ids": [
+      585
+    ],
+    "summary": "The cluster focuses on causal relationships within urban time series data, specifically examining how variations in one variable minimally influence another. It likely relates to methods for identifying or quantifying weak causal effects in complex urban temporal dynamics."
+  },
+  {
+    "hex_coord": [
+      2,
+      0
+    ],
+    "country": 0,
+    "MSU_ids": [
+      633,
+      658
+    ],
+    "summary": "The common theme is the application of the Compass framework for causal analysis in urban time series data. The sentences highlight its practical use in real-world case studies across various domains, showcasing its versatility and effectiveness. The relationship between the sentences is reinforcing, both discussing Compass’s utility in analyzing urban datasets."
+  },
+  {
+    "hex_coord": [
+      9,
+      7
+    ],
+    "country": 1,
+    "MSU_ids": [
+      668,
+      672,
+      673,
+      674,
+      861,
+      862,
+      865,
+      867,
+      869,
+      875,
+      887,
+      901,
+      916,
+      919,
+      922,
+      929,
+      934,
+      936,
+      951,
+      954,
+      972,
+      973,
+      974,
+      990,
+      1002,
+      1042,
+      1044,
+      1051
+    ],
+    "summary": "The common theme across these sentences is the improvement of PM2.5 prediction accuracy in the WRF-Chem model using a combination of data assimilation (DA) and bias correction (BC) methods. The relationship between the sentences indicates that the integration of both techniques (DA and BC) yields the most effective results, with better consistency and reduced errors compared to individual or control methods."
+  },
+  {
+    "hex_coord": [
+      8,
+      7
+    ],
+    "country": 1,
+    "MSU_ids": [
+      669,
+      930,
+      937
+    ],
+    "summary": "These sentences focus on improving the accuracy and spatial consistency of WRF-Chem PM2.5 forecasts using bias correction and data assimilation. They collectively highlight performance differences across regions and demonstrate that deep-learning-based bias correction reduces systematic daily errors in the model."
+  },
+  {
+    "hex_coord": [
+      10,
+      7
+    ],
+    "country": 1,
+    "MSU_ids": [
+      670,
+      715,
+      735,
+      811,
+      850,
+      853,
+      854,
+      855,
+      856,
+      857,
+      859,
+      863,
+      872,
+      873,
+      874,
+      884,
+      886,
+      888,
+      892,
+      893,
+      895,
+      896,
+      897,
+      900,
+      918,
+      935,
+      939,
+      940,
+      941,
+      942,
+      943,
+      948,
+      952,
+      960,
+      977,
+      989,
+      999,
+      1001,
+      1029,
+      1030,
+      1032,
+      1033,
+      1034,
+      1035,
+      1040,
+      1041,
+      1045,
+      1046,
+      1047,
+      1048,
+      1049,
+      1050
+    ],
+    "summary": "The common theme across these sentences is the optimization of WRF-Chem PM2.5 predictions through a combination of data assimilation (DA) and deep learning-based bias correction (BC). These methods are shown to improve the accuracy and consistency of PM2.5 forecasts, with the combined DA and BC approach (WRF-Chem_DA_BC) achieving the best results, particularly in terms of reduced RMSE and improved consistency with observations across various regions. The sentences discuss different facets of these methods' effectiveness, including regional variations in performance and comparison to control experiments."
+  },
+  {
+    "hex_coord": [
+      10,
+      6
+    ],
+    "country": 1,
+    "MSU_ids": [
+      671,
+      852,
+      870,
+      938,
+      944,
+      1000
+    ],
+    "summary": "The common theme across these sentences is the evaluation of a combined data assimilation and deep-learning-based bias correction approach for improving the prediction accuracy of PM2.5 concentrations using the WRF-Chem model. The relationship between the sentences shows how different regions and time periods influence prediction errors (such as RMSE and MB), highlighting the strengths and limitations of this hybrid methodology."
+  },
+  {
+    "hex_coord": [
+      9,
+      8
+    ],
+    "country": 1,
+    "MSU_ids": [
+      676,
+      677,
+      678,
+      679,
+      736,
+      744,
+      849,
+      908,
+      909,
+      920,
+      947,
+      961,
+      983,
+      995,
+      1023,
+      1043,
+      1053
+    ],
+    "summary": "The common theme is the improvement of PM2.5 prediction accuracy using a combination of data assimilation (DA) and deep-learning-based bias correction (BC) in different urban agglomerations. The sentences describe the effectiveness of this method in reducing forecasting errors (RMSE) and improving concentration predictions across various regions."
+  },
+  {
+    "hex_coord": [
+      9,
+      6
+    ],
+    "country": 1,
+    "MSU_ids": [
+      731
+    ],
+    "summary": "The cluster focuses on the use of machine learning, specifically deep learning, to improve atmospheric models, particularly in the context of air quality predictions (like PM2.5) through bias correction methods. The relationship between the sentences suggests a unified theme of enhancing environmental predictions using advanced computational techniques."
+  },
+  {
+    "hex_coord": [
+      10,
+      5
+    ],
+    "country": 1,
+    "MSU_ids": [
+      738
+    ],
+    "summary": "The common theme across the provided sentence is the use of advanced methods to improve air quality predictions, specifically focusing on bias correction in PM2.5 predictions. The relationship highlights the application of data assimilation and deep learning, with a specific emphasis on the Random Forest model for effective bias adjustment."
+  },
+  {
+    "hex_coord": [
+      8,
+      9
+    ],
+    "country": 1,
+    "MSU_ids": [
+      816
+    ],
+    "summary": "The common theme is improving air quality predictions, specifically related to PM2.5, using advanced techniques like data assimilation and deep learning. The sentence suggests a focus on integrating multi-scale data for better pollutant concentration and distribution forecasts."
+  },
+  {
+    "hex_coord": [
+      7,
+      9
+    ],
+    "country": 1,
+    "MSU_ids": [
+      851,
+      957,
+      984,
+      985
+    ],
+    "summary": "The common theme is the spatial distribution and concentration of PM2.5 in China, particularly in different regions, and how they relate to areas with high pollution levels. The sentences examine specific regional concentrations, the impact of seasonal variation, and the accuracy of predictions regarding PM2.5. These elements are part of a larger discussion on improving air quality predictions."
+  },
+  {
+    "hex_coord": [
+      8,
+      8
+    ],
+    "country": 1,
+    "MSU_ids": [
+      876,
+      958,
+      991,
+      1055
+    ],
+    "summary": "The common theme is the improvement of PM2.5 prediction accuracy using WRF-Chem, enhanced by data assimilation and deep learning-based bias correction. The sentences discuss the model's performance in capturing pollution episodes and spatial distribution, with specific focus on regions with high PM2.5 concentrations."
+  },
+  {
+    "hex_coord": [
+      3,
+      7
+    ],
+    "country": 1,
+    "MSU_ids": [
+      882
+    ],
+    "summary": "The cluster focuses on evaluating and improving atmospheric model performance, specifically examining how data assimilation and deep learning enhance the correlation between predicted and observed PM2.5 levels, indicating efforts to refine air quality forecasting accuracy."
+  },
+  {
+    "hex_coord": [
+      11,
+      6
+    ],
+    "country": 1,
+    "MSU_ids": [
+      898
+    ],
+    "summary": "The common theme revolves around improving air quality predictions, specifically addressing model overestimation in WRF-Chem PM2.5 forecasts using data assimilation and deep learning. The relationship is that the sentences focus on refining model accuracy and reducing bias in predictions for better performance."
+  },
+  {
+    "hex_coord": [
+      5,
+      10
+    ],
+    "country": 1,
+    "MSU_ids": [
+      949
+    ],
+    "summary": "The common theme of this cluster is improving the accuracy of air quality predictions, specifically for PM2.5, through advanced methods like data assimilation and deep learning. The relationship points to a focus on improving forecasting performance, with a particular emphasis on bias correction techniques."
+  },
+  {
+    "hex_coord": [
+      -2,
+      7
+    ],
+    "country": 1,
+    "MSU_ids": [
+      992
+    ],
+    "summary": "The sentence suggests a connection to statistical analysis related to PM2.5 prediction improvements, but there is no clear indication of a distinct theme or relationship with other sentences, as the provided sentence merely references previous results. Therefore, no broader thematic synthesis is possible based on this fragment alone."
+  },
+  {
+    "hex_coord": [
+      11,
+      1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1065,
+      1066,
+      1087,
+      1121,
+      1122,
+      1139,
+      1160,
+      1170,
+      1172,
+      1179,
+      1180,
+      1181,
+      1188,
+      1192,
+      1193,
+      1196,
+      1197,
+      1203,
+      1212,
+      1213,
+      1217,
+      1221,
+      1225,
+      1227,
+      1235,
+      1239,
+      1240,
+      1241,
+      1244,
+      1256,
+      1257,
+      1270,
+      1302,
+      1334,
+      1338,
+      1343,
+      1358,
+      1362,
+      1364,
+      1366,
+      1367,
+      1377,
+      1385,
+      1386,
+      1394,
+      1406
+    ],
+    "summary": "The common theme across these sentences is the modeling and uncertainty reduction of aerosol absorption optical depth (AAOD) in biomass burning regions, particularly the Amazon and Africa. The sentences discuss the role of absorbing aerosols, secondary organic aerosol (SOA) formation, emission inventories, and the influence of observational data in improving model accuracy for radiative effects. The relationship between the sentences suggests they focus on refining and validating aerosol emission estimates, correcting model errors, and reducing uncertainties in climate models related to biomass burning aerosols."
+  },
+  {
+    "hex_coord": [
+      11,
+      2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1067,
+      1200,
+      1202,
+      1342,
+      1344,
+      1368,
+      1390,
+      1402,
+      1409
+    ],
+    "summary": "The cluster centers on improving the accuracy of aerosol radiative effect models over biomass burning regions by correcting parameter and observational errors. All sentences describe validation and uncertainty reduction steps confirming that these model corrections significantly enhance agreement with observations and underlying “truth” data."
+  },
+  {
+    "hex_coord": [
+      10,
+      4
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1088,
+      1223
+    ],
+    "summary": "Both sentences address the climatic impact of biomass burning aerosols, emphasizing their warming effects and the dominant role of emissions in shaping these impacts. They collectively highlight improved understanding and reduced uncertainty in modeling aerosol-induced radiative forcing over tropical regions."
+  },
+  {
+    "hex_coord": [
+      10,
+      2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1115,
+      1166,
+      1194,
+      1215,
+      1216
+    ],
+    "summary": "These sentences collectively describe the evaluation and validation of a modeling framework that reduces uncertainty in aerosol optical properties—particularly absorbing aerosols from biomass burning—by constraining key parameters and comparing results across regions, confirming improved agreement with satellite observations and reduced model errors."
+  },
+  {
+    "hex_coord": [
+      12,
+      1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1124,
+      1214,
+      1229,
+      1263,
+      1288,
+      1303
+    ],
+    "summary": "These sentences collectively examine how different atmospheric models and satellite retrievals represent absorbing aerosols and their optical properties (AAOD, SSA, MAC) in biomass-burning regions. They focus on reducing model uncertainty by validating and constraining aerosol simulations against observational datasets."
+  },
+  {
+    "hex_coord": [
+      10,
+      1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1125,
+      1133,
+      1298,
+      1301
+    ],
+    "summary": "These sentences collectively discuss model evaluation and uncertainty reduction in simulating aerosol optical properties and their radiative effects. They focus on validating and constraining modeled parameters (e.g., SSA, AAOD, MAC) to improve agreement with observations and ensure model robustness across biomass-burning regions."
+  },
+  {
+    "hex_coord": [
+      -4,
+      8
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1151
+    ],
+    "summary": "The sentence likely refers to a method for analyzing uncertainty in direct radiative effects over biomass burning regions, specifically focusing on constraining absorbing aerosols. The relationship here points to the use of statistical techniques (like linear regressions with confidence intervals) to reduce uncertainty in climate models."
+  },
+  {
+    "hex_coord": [
+      4,
+      4
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1153
+    ],
+    "summary": "The common theme focuses on uncertainty reduction in modeling direct radiative effects, particularly related to biomass burning and absorbing aerosols. The relationship indicates that the sentences are discussing methods for constraining and refining model uncertainties in aerosol-related climate effects."
+  },
+  {
+    "hex_coord": [
+      7,
+      2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1154
+    ],
+    "summary": "The cluster seems to focus on the use of statistical methods to quantify uncertainty in direct radiative effects, particularly in relation to biomass burning regions and absorbing aerosols. The sentence suggests a focus on modeling uncertainty with confidence intervals, likely to assess the reliability of the data in this context."
+  },
+  {
+    "hex_coord": [
+      12,
+      0
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1156,
+      1171,
+      1262,
+      1274,
+      1319
+    ],
+    "summary": "The common theme of these sentences is the study of absorbing aerosols, particularly carbonaceous aerosols, and their impact on radiative effects in biomass burning regions. The sentences focus on model comparisons, aerosol absorption properties, and observational data related to biomass burning regions like the Amazon and Southern Africa. These components are part of a larger effort to reduce uncertainty in climate models regarding biomass burning aerosols. The relationship is that they all discuss different aspects of modeling and observation techniques for understanding aerosol absorption and its effects on regional climate."
+  },
+  {
+    "hex_coord": [
+      9,
+      4
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1198
+    ],
+    "summary": "The cluster seems to focus on the relationship between aerosols and formaldehyde in biomass burning regions. Specifically, the sentence suggests that an increase in non- or low-absorbing aerosols correlates with higher formaldehyde levels, pointing to a complex interaction between aerosol properties and chemical compositions in these areas."
+  },
+  {
+    "hex_coord": [
+      10,
+      0
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1199
+    ],
+    "summary": "The cluster appears to focus on the role of aerosols, particularly absorbing aerosols, in influencing radiative effects and secondary organic aerosol (SOA) formation, likely in the context of biomass burning regions. The proximity of the sentences suggests they explore how aerosols impact climate modeling and atmospheric processes."
+  },
+  {
+    "hex_coord": [
+      10,
+      6
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1218
+    ],
+    "summary": "The common theme of this cluster is the enhancement of modeling accuracy in estimating direct radiative effects in biomass burning regions by improving the representation of absorbing aerosols. The sentences suggest that this improvement is validated through comparison with AERONET data, indicating a refinement in model predictions."
+  },
+  {
+    "hex_coord": [
+      3,
+      7
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1236
+    ],
+    "summary": "The sentence appears to describe a methodological detail—specifically, a regression analysis used to constrain uncertainties in modeling aerosol radiative effects. This cluster likely centers on quantifying and reducing model uncertainty in aerosol–radiation interactions through statistical or empirical data fitting."
+  },
+  {
+    "hex_coord": [
+      11,
+      0
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1250
+    ],
+    "summary": "The cluster focuses on the role of secondary organic aerosols (SOA) in influencing radiative effects during fire seasons, particularly in biomass burning regions. The papers likely explore the impact of absorbing aerosols, such as SOA, on atmospheric models and their contribution to uncertainty reduction in climate projections."
+  },
+  {
+    "hex_coord": [
+      9,
+      2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1260
+    ],
+    "summary": "The common theme across the sentences focuses on improving the accuracy of radiative effect models, particularly in biomass burning regions, by reducing uncertainties related to absorbing aerosols. The relationship appears to be that the research is addressing the impact of model corrections on simulation errors."
+  },
+  {
+    "hex_coord": [
+      8,
+      0
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1265
+    ],
+    "summary": "The cluster focuses on evaluating and reducing uncertainty in direct radiative effects over biomass burning regions, specifically by constraining absorbing aerosols. The sentence highlights the assessment of aerosol optical depth (AOD) and single scattering albedo (SSA) biases during the fire season."
+  },
+  {
+    "hex_coord": [
+      9,
+      3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1273
+    ],
+    "summary": "The cluster centers on the modeling of direct radiative effects (DRE) related to biomass burning regions, specifically focusing on uncertainty reduction by constraining absorbing aerosols. The sentences likely discuss different aspects of radiative forcing and aerosol interactions within climate modeling."
+  },
+  {
+    "hex_coord": [
+      -5,
+      7
+    ],
+    "country": 4,
+    "MSU_ids": [
+      1495,
+      1631,
+      1780,
+      1859,
+      1883,
+      1891,
+      1912,
+      1952,
+      1960,
+      1999,
+      2013,
+      2044,
+      2063,
+      2094,
+      2096,
+      2099
+    ],
+    "summary": "The common theme across these sentences revolves around the visualization, analysis, and computational efficiency of a tool called GeoChron for large-scale continuous spatial time series. The sentences highlight its ability to identify evolution patterns, render results quickly, and facilitate intuitive visual understanding. The relationship between these sentences centers on demonstrating GeoChron’s effectiveness through case studies, performance metrics, and user evaluations."
+  },
+  {
+    "hex_coord": [
+      -5,
+      8
+    ],
+    "country": 4,
+    "MSU_ids": [
+      1652,
+      1653,
+      1747,
+      1820,
+      1863,
+      1865,
+      1892,
+      1896,
+      1898,
+      1903,
+      1909,
+      1911,
+      1915,
+      1923,
+      1933,
+      1936,
+      1964,
+      1965,
+      1970,
+      1973,
+      2002,
+      2003,
+      2032,
+      2033,
+      2034,
+      2038,
+      2039,
+      2046,
+      2051,
+      2064,
+      2066,
+      2073,
+      2074,
+      2092,
+      2097,
+      2098
+    ],
+    "summary": "The common theme centers on the analysis of spatiotemporal (ST) series data, particularly how communities, trends, and correlations evolve across space and time. The relationship between the sentences reflects different aspects of detecting, visualizing, and analyzing these spatiotemporal trends and their dynamics using volume-based cubes, with a focus on clustering, correlation, and layout optimization techniques."
+  },
+  {
+    "hex_coord": [
+      -2,
+      5
+    ],
+    "country": 4,
+    "MSU_ids": [
+      1716
+    ],
+    "summary": "The sentence seems to focus on comparing the space efficiency of different visual representations in a spatial time series context, likely discussing optimization techniques for visualizing large-scale spatial data over time. The relationship between the sentences points to a technical analysis of space-time visualization efficiency."
+  },
+  {
+    "hex_coord": [
+      -1,
+      12
+    ],
+    "country": 4,
+    "MSU_ids": [
+      1748,
+      2014,
+      2041
+    ],
+    "summary": "The sentences collectively focus on the usability and effectiveness of space-time cube visualizations for exploring large-scale spatiotemporal data, emphasizing how intuitive design and proper visualization choices help users identify meaningful temporal patterns while avoiding visual clutter or misleading clusters."
+  },
+  {
+    "hex_coord": [
+      -4,
+      7
+    ],
+    "country": 4,
+    "MSU_ids": [
+      1763,
+      1864,
+      1890,
+      1897,
+      1900,
+      1901,
+      1916,
+      1920,
+      1922,
+      1934,
+      2049,
+      2069,
+      2093,
+      2095
+    ],
+    "summary": "The common theme centers on the analysis and visualization of spatial-temporal (ST) series data, focusing on how these series evolve and correlate over time using a \"Storyline\" layout and various alignment techniques. The relationship among the sentences suggests a comprehensive exploration of methods for grouping, visualizing, and analyzing the evolution of large-scale ST series, emphasizing trends, correlations, and parameter adjustments for alignment and session grouping."
+  },
+  {
+    "hex_coord": [
+      -3,
+      6
+    ],
+    "country": 4,
+    "MSU_ids": [
+      1856
+    ],
+    "summary": "The sentence provided doesn't directly relate to the technical theme of the \"Volume-Based Space-Time Cube for Large-Scale Continuous Spatial Time Series\" and seems out of place. The paper likely focuses on spatial-temporal data analysis, but this sentence appears more focused on validating findings through expert confirmation, which may be incidental to the main topic."
+  },
+  {
+    "hex_coord": [
+      -1,
+      7
+    ],
+    "country": 4,
+    "MSU_ids": [
+      1884,
+      2009
+    ],
+    "summary": "The common theme is the analysis of large-scale spatial time series data using a volume-based space-time cube approach. The sentences discuss parameter settings for modeling and the assessment of confidence in the results, suggesting a focus on optimizing parameters and evaluating model reliability."
+  },
+  {
+    "hex_coord": [
+      -6,
+      8
+    ],
+    "country": 4,
+    "MSU_ids": [
+      1894,
+      1899,
+      1902,
+      1904,
+      1913,
+      1925,
+      1961,
+      1963,
+      1969,
+      2001,
+      2062
+    ],
+    "summary": "The common theme centers around analyzing spatial-temporal (ST) series data, particularly the evolution, clustering, and correlation of geographic regions over time. These sentences describe the behavior of ST series (e.g., their distribution, changes, and correlations) in large-scale data, likely focusing on trends, patterns, and periodic fluctuations across different regions. Their proximity is not coincidental but relates to the analysis of spatial-temporal trends and pattern detection."
+  },
+  {
+    "hex_coord": [
+      -6,
+      9
+    ],
+    "country": 4,
+    "MSU_ids": [
+      1895
+    ],
+    "summary": "The sentence concerns spatial–temporal data visualization of continuous time series, specifically mapping regional patterns (e.g., in the Beijing–Tianjin–Hebei area) within a space-time cube framework. It likely represents a geographic application example rather than a broader conceptual focus."
+  },
+  {
+    "hex_coord": [
+      -5,
+      9
+    ],
+    "country": 4,
+    "MSU_ids": [
+      1910,
+      1935,
+      2008,
+      2075,
+      2089
+    ],
+    "summary": "The sentences describe the evaluation and performance of a visualization method (the Volume-Based Space-Time Cube) for analyzing large-scale spatiotemporal data, particularly air pollution trends. They address both the method’s effectiveness in capturing temporal correlations and its computational efficiency, indicating a cohesive focus on scalable spatiotemporal visualization and analysis."
+  },
+  {
+    "hex_coord": [
+      -4,
+      6
+    ],
+    "country": 4,
+    "MSU_ids": [
+      1924,
+      2000
+    ],
+    "summary": "The cluster focuses on methods for visualizing and analyzing large-scale, continuous spatial time series data. Specifically, it discusses the use of a volume-based space-time cube and line charts to represent evolving patterns, with a reference to a specific task that illustrates these concepts. The sentences are related, elaborating on visualization techniques for complex data."
+  },
+  {
+    "hex_coord": [
+      0,
+      13
+    ],
+    "country": 4,
+    "MSU_ids": [
+      1938
+    ],
+    "summary": "The sentence seems to be referring to the presence of air pollutants in different regions, but its connection to the \"Volume-Based Space-Time Cube\" concept is unclear from just this fragment. The mention of pollutants might be an example or case study within a broader spatial time series analysis, but more context is needed for a precise conclusion."
+  },
+  {
+    "hex_coord": [
+      1,
+      6
+    ],
+    "country": 4,
+    "MSU_ids": [
+      1955
+    ],
+    "summary": "The common theme appears to involve the analysis of spatial time series data, with a focus on identifying patterns over time. The sentence suggests that seasonal variations, such as those during the summer, may influence the detection of these patterns, indicating a possible relationship between temporal factors and data trends."
+  },
+  {
+    "hex_coord": [
+      -3,
+      10
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2006
+    ],
+    "summary": "The common theme revolves around the analysis and interpretation of spatial and temporal data, possibly in the context of large-scale time series analysis. The sentence seems to relate to confidence intervals of various variables, likely in the context of spatial-time modeling. The relationship is based on quantitative evaluation within this spatial-temporal framework."
+  },
+  {
+    "hex_coord": [
+      -4,
+      5
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2007
+    ],
+    "summary": "The common theme centers around the use of advanced tools or frameworks (like GeoChron) to analyze and extract insights from large-scale spatial time series data. The relationship suggests a discussion of how these tools enhance data exploration and understanding in the context of spatial-temporal analysis."
+  },
+  {
+    "hex_coord": [
+      0,
+      3
+    ],
+    "country": 4,
+    "MSU_ids": [
+      2040
+    ],
+    "summary": "The common theme appears to be issues related to data integrity in spatiotemporal analysis, particularly with regard to entities in large-scale continuous spatial time series. The sentence discusses disruptions in data continuity, likely caused by time slice offsets, pollution events, or errors, pointing to challenges in maintaining accurate spatiotemporal datasets."
+  },
+  {
+    "hex_coord": [
+      1,
+      13
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2141,
+      2536,
+      2555,
+      2556,
+      2608,
+      2614,
+      2708,
+      2718,
+      2741,
+      2749
+    ],
+    "summary": "This cluster centers on evaluating **VolumeSTCube**, a visualization method for **large-scale spatial time series data**, particularly in **air pollution analysis**. The sentences collectively highlight its **superior performance and accuracy** compared to baseline methods and its effectiveness in revealing **spatiotemporal pollution patterns and dissipation trends**."
+  },
+  {
+    "hex_coord": [
+      0,
+      13
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2200,
+      2397,
+      2398,
+      2517,
+      2524,
+      2525,
+      2532,
+      2537,
+      2547,
+      2548,
+      2549,
+      2550,
+      2551,
+      2553,
+      2567,
+      2568,
+      2572,
+      2575,
+      2579,
+      2583,
+      2584,
+      2594,
+      2606,
+      2620,
+      2714,
+      2715,
+      2716,
+      2717,
+      2739,
+      2746,
+      2748,
+      2753,
+      2760,
+      2763,
+      2764,
+      2771,
+      2772,
+      2774,
+      2775,
+      2790,
+      2810,
+      2813
+    ],
+    "summary": "This cluster centers on **VolumeSTCube**, a 3D visualization system for analyzing large-scale spatiotemporal air pollution data. The sentences collectively describe its ability to reveal spatial–temporal pollution patterns, such as dust storm propagation, and its superior accuracy, speed, and user experience compared to baseline visualization methods."
+  },
+  {
+    "hex_coord": [
+      0,
+      12
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2201,
+      2396,
+      2558,
+      2754,
+      2755,
+      2761,
+      2765,
+      2766,
+      2778
+    ],
+    "summary": "This cluster centers on evaluating **VolumeSTCube**, a voxel-based visualization tool for large-scale spatial–temporal data. The sentences collectively highlight its **effectiveness, usability, and clarity**—showing improved accuracy, faster response times, minimal occlusion, and positive user feedback compared to baseline visualization methods."
+  },
+  {
+    "hex_coord": [
+      -4,
+      9
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2405
+    ],
+    "summary": "The cluster likely focuses on visualizing and analyzing spatiotemporal patterns in large-scale data, with an emphasis on comparing different methods or representations for capturing finer details. The sentences seem to discuss how visualization techniques (like the one in Figure 3C) improve the clarity of spatiotemporal patterns compared to others (like Figure 3B)."
+  },
+  {
+    "hex_coord": [
+      2,
+      11
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2500
+    ],
+    "summary": "The cluster focuses on the evaluation of spatial data interpolation methods, particularly Kriging, for large-scale time series analysis. The relationship between the sentences suggests a shared concern with assessing the accuracy and effectiveness of interpolation techniques in visualizing and interpreting spatial time series data."
+  },
+  {
+    "hex_coord": [
+      -1,
+      14
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2518,
+      2523,
+      2533,
+      2607,
+      2612,
+      2613
+    ],
+    "summary": "All sentences describe the temporal and spatial spread of air pollution across regions of China, emphasizing how contamination originated locally and expanded nationally over time. They collectively illustrate GeoChron’s capacity to visualize dynamic pollution patterns in large-scale spatial time series data."
+  },
+  {
+    "hex_coord": [
+      -2,
+      8
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2522
+    ],
+    "summary": "Summary: The cluster addresses the visualization of large-scale spatial time series data using GeoChron. Specifically, it discusses the impact of adjusting λ on revealing macro patterns, illustrated through Figure 6B. The sentences likely relate to exploring visualization techniques and patterns in spatial-temporal data."
+  },
+  {
+    "hex_coord": [
+      1,
+      12
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2527,
+      2599,
+      2601,
+      2619,
+      2751,
+      2784
+    ],
+    "summary": "These sentences collectively discuss the visualization and analysis of large-scale spatiotemporal air pollution patterns in China using the GeoChron system. They describe pollution propagation directions, meteorological influences, and visualization accuracy, indicating an integrated focus on improving 3D visualization techniques for environmental data interpretation."
+  },
+  {
+    "hex_coord": [
+      2,
+      12
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2538,
+      2559,
+      2593,
+      2610,
+      2740
+    ],
+    "summary": "The sentences collectively describe the visualization and interpretation of spatiotemporal air pollution patterns in China using a 3D space-time cube approach, with brief reference to user evaluation results. They address different aspects—data patterns, visualization configuration, and user performance—within a unified visualization study."
+  },
+  {
+    "hex_coord": [
+      -1,
+      9
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2546
+    ],
+    "summary": "The cluster seems to focus on the use of spatial time series visualization techniques, with a specific emphasis on adjusting parameters (like λ = 150) to improve clarity. The relationship between the sentences is about optimizing visualization methods for large-scale data."
+  },
+  {
+    "hex_coord": [
+      0,
+      14
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2561,
+      2762
+    ],
+    "summary": "The common theme is the analysis of air quality data, with a focus on efficient methods for visualizing and processing large-scale spatial time series, particularly during the Spring Festival. The relationship between the sentences suggests that methods like VolumeSTCube are effective for evaluating air quality datasets."
+  },
+  {
+    "hex_coord": [
+      8,
+      6
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2563
+    ],
+    "summary": "The cluster centers on the environmental impact of decreased human activity, specifically how reduced traffic leads to lower pollution emissions, highlighting a link between mobility patterns and air quality."
+  },
+  {
+    "hex_coord": [
+      4,
+      6
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2564
+    ],
+    "summary": "The cluster centers on short-term, event-driven fluctuations in air pollution—specifically, the temporal and spatial visualization of pollution spikes caused by fireworks within broader environmental data analysis."
+  },
+  {
+    "hex_coord": [
+      3,
+      8
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2573
+    ],
+    "summary": "The cluster focuses on geographic analysis, particularly spatial and temporal patterns in large-scale regions of China, including capital cities and provincial hubs. The sentences likely relate to visualizing or mapping regional data for spatial-temporal trends across various locations, emphasizing specific Chinese cities."
+  },
+  {
+    "hex_coord": [
+      -1,
+      13
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2576,
+      2588,
+      2590,
+      2592,
+      2609,
+      2756,
+      2776
+    ],
+    "summary": "The cluster of sentences discusses the visualization of large-scale spatial time series, specifically focusing on the propagation of air pollution across different regions in China, as well as user interactions with the system used to visualize these data. The relationship between the sentences is about understanding and analyzing the patterns of air pollution through spatiotemporal data visualization, with a minor focus on usability testing of the visualization system."
+  },
+  {
+    "hex_coord": [
+      3,
+      11
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2580,
+      2747
+    ],
+    "summary": "The common theme appears to be the analysis and visualization of spatial data, with a focus on comparing different scenarios or conditions. The sentences address the impact of a dust storm on spatial pollution range and the performance of a baseline model, suggesting a larger discussion on evaluating and comparing environmental or data-driven models in spatial contexts."
+  },
+  {
+    "hex_coord": [
+      2,
+      0
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2600
+    ],
+    "summary": "The sentence likely describes a visualization of spatial–temporal data showing bidirectional or cyclical movement across geographic space. The focus is on depicting dynamic propagation patterns over time, suggesting analysis of movement or diffusion processes within a large-scale spatial time series."
+  },
+  {
+    "hex_coord": [
+      -1,
+      12
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2611,
+      2712
+    ],
+    "summary": "The common theme centers on visualizing and analyzing spatial data or time series. The sentences discuss the rapid propagation process of a phenomenon and the evaluation of subject accuracy, likely in the context of understanding or interpreting large-scale spatial temporal data. Their relationship seems to stem from analyzing different aspects of data interpretation and visualization."
+  },
+  {
+    "hex_coord": [
+      -2,
+      12
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2706,
+      2713
+    ],
+    "summary": "The cluster of sentences appears to focus on evaluating responses in a visual or interactive context, likely related to spatial data or time-series visualization. They discuss the accuracy and response time of participants, suggesting an exploration of user performance or engagement in a geo-visualization task."
+  },
+  {
+    "hex_coord": [
+      1,
+      1
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2707
+    ],
+    "summary": "The common theme centers around analyzing and visualizing large-scale spatial time series data, particularly identifying outliers or discrepancies in performance metrics, such as correctness and response time. The sentences likely discuss methods for detecting significant variations in such data for better analysis or decision-making."
+  },
+  {
+    "hex_coord": [
+      -1,
+      5
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2722
+    ],
+    "summary": "This sentence focuses on the system performance of GeoChron, emphasizing its efficiency in visualizing large-scale spatial time-series data with low response times. The core theme is system responsiveness and scalability in geospatial data visualization."
+  },
+  {
+    "hex_coord": [
+      3,
+      10
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2725
+    ],
+    "summary": "The cluster likely centers on evaluating or visualizing spatial–temporal data accuracy, with the cited figure (66.7%) indicating measurement or model performance within a large-scale geospatial time series visualization context. It reflects assessment of data reliability rather than a coincidental statement."
+  },
+  {
+    "hex_coord": [
+      4,
+      10
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2750
+    ],
+    "summary": "The cluster likely concerns evaluating model or visualization performance, specifically highlighting the limited accuracy (58.3%) of a baseline approach in analyzing or visualizing large-scale spatial time series data."
+  },
+  {
+    "hex_coord": [
+      -2,
+      11
+    ],
+    "country": 3,
+    "MSU_ids": [
+      2807
+    ],
+    "summary": "The cluster appears to focus on the visualization of large-scale spatial time series data. Specifically, it discusses the use of a tool (VolumeSTCube) for effectively visualizing such data over a significant geographic area (China) and time span (half a year), under specific hardware conditions."
+  }
+]
