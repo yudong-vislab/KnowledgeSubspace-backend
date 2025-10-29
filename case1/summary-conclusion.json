@@ -1,0 +1,633 @@
+[
+    {
+        "hex_coord": [
+            -2,
+            3
+        ],
+        "country": 1,
+        "MSU_ids": [
+            5
+        ]
+    },
+    {
+        "hex_coord": [
+            -9,
+            2
+        ],
+        "country": 1,
+        "MSU_ids": [
+            16
+        ]
+    },
+    {
+        "hex_coord": [
+            -10,
+            6
+        ],
+        "country": 1,
+        "MSU_ids": [
+            58
+        ]
+    },
+    {
+        "hex_coord": [
+            -9,
+            -2
+        ],
+        "country": 1,
+        "MSU_ids": [
+            70
+        ]
+    },
+    {
+        "hex_coord": [
+            2,
+            -1
+        ],
+        "country": 1,
+        "MSU_ids": [
+            81
+        ]
+    },
+    {
+        "hex_coord": [
+            -5,
+            -3
+        ],
+        "country": 1,
+        "MSU_ids": [
+            82
+        ]
+    },
+    {
+        "hex_coord": [
+            -14,
+            5
+        ],
+        "country": 1,
+        "MSU_ids": [
+            87,
+            396,
+            453
+        ]
+    },
+    {
+        "hex_coord": [
+            -9,
+            6
+        ],
+        "country": 1,
+        "MSU_ids": [
+            88,
+            267
+        ]
+    },
+    {
+        "hex_coord": [
+            -9,
+            5
+        ],
+        "country": 1,
+        "MSU_ids": [
+            89
+        ]
+    },
+    {
+        "hex_coord": [
+            -11,
+            5
+        ],
+        "country": 1,
+        "MSU_ids": [
+            195
+        ]
+    },
+    {
+        "hex_coord": [
+            4,
+            -2
+        ],
+        "country": 1,
+        "MSU_ids": [
+            197
+        ]
+    },
+    {
+        "hex_coord": [
+            -15,
+            1
+        ],
+        "country": 1,
+        "MSU_ids": [
+            205
+        ]
+    },
+    {
+        "hex_coord": [
+            -13,
+            -7
+        ],
+        "country": 1,
+        "MSU_ids": [
+            210
+        ]
+    },
+    {
+        "hex_coord": [
+            -6,
+            -9
+        ],
+        "country": 1,
+        "MSU_ids": [
+            213
+        ]
+    },
+    {
+        "hex_coord": [
+            -16,
+            5
+        ],
+        "country": 1,
+        "MSU_ids": [
+            227,
+            460
+        ]
+    },
+    {
+        "hex_coord": [
+            -15,
+            6
+        ],
+        "country": 1,
+        "MSU_ids": [
+            273,
+            391,
+            452
+        ]
+    },
+    {
+        "hex_coord": [
+            -13,
+            6
+        ],
+        "country": 1,
+        "MSU_ids": [
+            274,
+            403
+        ]
+    },
+    {
+        "hex_coord": [
+            -10,
+            5
+        ],
+        "country": 1,
+        "MSU_ids": [
+            282
+        ]
+    },
+    {
+        "hex_coord": [
+            -14,
+            3
+        ],
+        "country": 1,
+        "MSU_ids": [
+            284
+        ]
+    },
+    {
+        "hex_coord": [
+            -17,
+            4
+        ],
+        "country": 1,
+        "MSU_ids": [
+            306
+        ]
+    },
+    {
+        "hex_coord": [
+            -11,
+            6
+        ],
+        "country": 1,
+        "MSU_ids": [
+            362,
+            388
+        ]
+    },
+    {
+        "hex_coord": [
+            -13,
+            5
+        ],
+        "country": 1,
+        "MSU_ids": [
+            367
+        ]
+    },
+    {
+        "hex_coord": [
+            -14,
+            6
+        ],
+        "country": 1,
+        "MSU_ids": [
+            404
+        ]
+    },
+    {
+        "hex_coord": [
+            -12,
+            2
+        ],
+        "country": 1,
+        "MSU_ids": [
+            419
+        ]
+    },
+    {
+        "hex_coord": [
+            -5,
+            4
+        ],
+        "country": 1,
+        "MSU_ids": [
+            461
+        ]
+    },
+    {
+        "hex_coord": [
+            3,
+            -7
+        ],
+        "country": 1,
+        "MSU_ids": [
+            466
+        ]
+    },
+    {
+        "hex_coord": [
+            -1,
+            -8
+        ],
+        "country": 2,
+        "MSU_ids": [
+            516
+        ]
+    },
+    {
+        "hex_coord": [
+            -1,
+            -10
+        ],
+        "country": 2,
+        "MSU_ids": [
+            547
+        ]
+    },
+    {
+        "hex_coord": [
+            -7,
+            3
+        ],
+        "country": 2,
+        "MSU_ids": [
+            559
+        ]
+    },
+    {
+        "hex_coord": [
+            -2,
+            -12
+        ],
+        "country": 2,
+        "MSU_ids": [
+            591
+        ]
+    },
+    {
+        "hex_coord": [
+            -12,
+            -6
+        ],
+        "country": 2,
+        "MSU_ids": [
+            595
+        ]
+    },
+    {
+        "hex_coord": [
+            1,
+            -7
+        ],
+        "country": 2,
+        "MSU_ids": [
+            625
+        ]
+    },
+    {
+        "hex_coord": [
+            3,
+            2
+        ],
+        "country": 2,
+        "MSU_ids": [
+            626
+        ]
+    },
+    {
+        "hex_coord": [
+            5,
+            -14
+        ],
+        "country": 2,
+        "MSU_ids": [
+            673
+        ]
+    },
+    {
+        "hex_coord": [
+            -2,
+            -8
+        ],
+        "country": 2,
+        "MSU_ids": [
+            705
+        ]
+    },
+    {
+        "hex_coord": [
+            -5,
+            2
+        ],
+        "country": 2,
+        "MSU_ids": [
+            711
+        ]
+    },
+    {
+        "hex_coord": [
+            3,
+            -15
+        ],
+        "country": 2,
+        "MSU_ids": [
+            743
+        ]
+    },
+    {
+        "hex_coord": [
+            -12,
+            -3
+        ],
+        "country": 2,
+        "MSU_ids": [
+            751,
+            796
+        ]
+    },
+    {
+        "hex_coord": [
+            -16,
+            -4
+        ],
+        "country": 2,
+        "MSU_ids": [
+            777
+        ]
+    },
+    {
+        "hex_coord": [
+            6,
+            -3
+        ],
+        "country": 2,
+        "MSU_ids": [
+            795
+        ]
+    },
+    {
+        "hex_coord": [
+            -16,
+            4
+        ],
+        "country": 2,
+        "MSU_ids": [
+            821
+        ]
+    },
+    {
+        "hex_coord": [
+            -10,
+            5
+        ],
+        "country": 2,
+        "MSU_ids": [
+            896
+        ]
+    },
+    {
+        "hex_coord": [
+            -10,
+            4
+        ],
+        "country": 2,
+        "MSU_ids": [
+            899
+        ]
+    },
+    {
+        "hex_coord": [
+            -7,
+            4
+        ],
+        "country": 2,
+        "MSU_ids": [
+            901
+        ]
+    },
+    {
+        "hex_coord": [
+            3,
+            -2
+        ],
+        "country": 2,
+        "MSU_ids": [
+            913
+        ]
+    },
+    {
+        "hex_coord": [
+            -5,
+            4
+        ],
+        "country": 2,
+        "MSU_ids": [
+            973
+        ]
+    },
+    {
+        "hex_coord": [
+            -16,
+            3
+        ],
+        "country": 2,
+        "MSU_ids": [
+            974
+        ]
+    },
+    {
+        "hex_coord": [
+            -3,
+            1
+        ],
+        "country": 2,
+        "MSU_ids": [
+            975
+        ]
+    },
+    {
+        "hex_coord": [
+            2,
+            -1
+        ],
+        "country": 2,
+        "MSU_ids": [
+            993
+        ]
+    },
+    {
+        "hex_coord": [
+            -2,
+            3
+        ],
+        "country": 2,
+        "MSU_ids": [
+            994
+        ]
+    },
+    {
+        "hex_coord": [
+            2,
+            -9
+        ],
+        "country": 2,
+        "MSU_ids": [
+            1005
+        ]
+    },
+    {
+        "hex_coord": [
+            3,
+            -14
+        ],
+        "country": 2,
+        "MSU_ids": [
+            1006
+        ]
+    },
+    {
+        "hex_coord": [
+            -11,
+            -6
+        ],
+        "country": 2,
+        "MSU_ids": [
+            1011
+        ]
+    },
+    {
+        "hex_coord": [
+            -2,
+            -14
+        ],
+        "country": 2,
+        "MSU_ids": [
+            1016
+        ]
+    },
+    {
+        "hex_coord": [
+            -17,
+            -2
+        ],
+        "country": 2,
+        "MSU_ids": [
+            1022
+        ]
+    },
+    {
+        "hex_coord": [
+            -17,
+            2
+        ],
+        "country": 2,
+        "MSU_ids": [
+            1031,
+            1045
+        ]
+    },
+    {
+        "hex_coord": [
+            4,
+            -15
+        ],
+        "country": 2,
+        "MSU_ids": [
+            1032,
+            1049
+        ]
+    },
+    {
+        "hex_coord": [
+            7,
+            -6
+        ],
+        "country": 2,
+        "MSU_ids": [
+            1033
+        ]
+    },
+    {
+        "hex_coord": [
+            -7,
+            -1
+        ],
+        "country": 2,
+        "MSU_ids": [
+            1041
+        ]
+    },
+    {
+        "hex_coord": [
+            1,
+            -15
+        ],
+        "country": 2,
+        "MSU_ids": [
+            1042
+        ]
+    },
+    {
+        "hex_coord": [
+            4,
+            -7
+        ],
+        "country": 2,
+        "MSU_ids": [
+            1047
+        ]
+    },
+    {
+        "hex_coord": [
+            5,
+            -15
+        ],
+        "country": 2,
+        "MSU_ids": [
+            1048
+        ]
+    }
+]
