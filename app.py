@@ -1,7 +1,7 @@
 # app.py
 import os, json, sys, pathlib, hashlib, time
 from typing import List, Dict, Any, Optional
-
+import re
 from flask import Flask, jsonify, request, abort, make_response
 from flask_cors import CORS
 from dotenv import load_dotenv
@@ -82,6 +82,68 @@ def _ensure_full_package(data: dict) -> dict:
 
 def load_data(): return _ensure_full_package(_json_load(DATA_PATH))
 def save_data(data): _json_save(DATA_PATH, data)
+
+def parse_subspace_command(s: str) -> str:
+    """
+    把自然语言的显隐指令规范成前端可路由的简单命令字符串：
+      - "show all subspaces"
+      - "hide all subspaces"
+      - "show background, result"
+      - "hide methods"
+    """
+    t = (s or "").strip().lower()
+    if not t:
+        return "show all subspaces"
+
+    # 归一空白
+    t = re.sub(r"\s+", " ", t)
+
+    # 全部显隐
+    if re.search(r"\b(show|expand)\b.*\b(all)\b.*\b(subspaces?|panels?)\b", t):
+        return "show all subspaces"
+    if re.search(r"\b(hide|collapse)\b.*\b(all)\b.*\b(subspaces?|panels?)\b", t):
+        return "hide all subspaces"
+
+    # 局部显隐：抓取 show/hide 后面的名词短语
+    m = re.search(r"^(show|hide)\s+(.+)$", t)
+    if m:
+        action = m.group(1)
+        rest = m.group(2)
+        # 去掉“subspace(s)”/“panel(s)”字样，并把 and 归一成逗号
+        rest = rest.replace("subspaces", "").replace("subspace", "")
+        rest = rest.replace("panels", "").replace("panel", "")
+        rest = rest.replace(" and ", ",")
+        # 清理标点
+        rest = re.sub(r"[.;|]+", ",", rest)
+        # 拆分、清洗
+        names = [x.strip(" ,") for x in rest.split(",") if x.strip(" ,")]
+        if names:
+            return f"{action} " + ", ".join(names)
+
+    # 兜底：无法解析就让前端显示全部，避免界面卡死
+    return "show all subspaces"
+
+def is_subspace_command(s: str) -> bool:
+    """
+    判断一句自然语言是否是子空间显隐指令（高优先规则）。
+    只要出现 show/hide + subspace(s)/panel(s) 或者像 'show background and result' 这种关键词组合即认为是。
+    """
+    if not s or not s.strip():
+        return False
+    t = re.sub(r"\s+", " ", s.lower().strip())
+    # 典型触发词
+    if re.search(r"\b(show|hide|expand|collapse)\b", t):
+        # 若句子里就明确出现 subspace(s)/panel(s)，直接认为是
+        if re.search(r"\b(subspaces?|panels?)\b", t):
+            return True
+        # 没写 subspace/panel，但写了常见子空间名/模式（background/method/result/ablation/overview 等）
+        if re.search(r"\b(background|method|methods|result|results|ablation|overview|introduction|discussion)\b", t):
+            return True
+        # "show X and Y" 这种也判定为 UI 控制（常见口语化）
+        if re.match(r"^(show|hide)\s+\w+", t):
+            return True
+    return False
+
 
 # ================= Semantic map minimal routes (unchanged interface) =================
 @app.get("/api/semantic-map")
@@ -488,6 +550,38 @@ def query_gpt():
     if not user_query:
         return app.response_class("No query provided", mimetype="text/plain"), 400
 
+    # 0) Highest priority: Subspace control (UI显隐) —— 只要命中就直接返回 JSON
+    task_type = (body.get("task") or "").lower()
+    if task_type == "subspace" or is_subspace_command(user_query):
+        # LLM 严格 JSON（失败则回退到规则解析）
+        try:
+            tool_prompt = (
+                "You are a UI command normalizer for controlling subspace visibility.\n"
+                "From the USER text, output STRICT JSON: {\"command\":\"<string>\"}\n"
+                "Allowed forms:\n"
+                "- \"show all subspaces\" / \"hide all subspaces\"\n"
+                "- \"show <name1>, <name2>\"  or  \"hide <name1>, <name2>\"\n"
+                "Do NOT add extra keys. If ambiguous, choose the most likely show/hide with top-2 names.\n"
+                f"USER: {user_query}\nJSON:"
+            )
+            resp = client.chat.completions.create(
+                model=os.getenv("INTENT_MODEL", OPENAI_DEFAULT_MODEL),
+                messages=[{"role":"user","content":tool_prompt}],
+                temperature=0.0, max_tokens=50, timeout=10.0
+            )
+            js = json.loads(resp.choices[0].message.content or "{}")
+            cmd_from_llm = (js.get("command") or "").strip()
+        except Exception:
+            cmd_from_llm = ""
+
+        command = cmd_from_llm if cmd_from_llm else parse_subspace_command(user_query)
+
+        return jsonify({
+            "mode": "subspace/control",
+            "payload": { "text": command },   # e.g., "show background, result"
+            "meta": {}
+        }), 200
+
     # 1) NL intent for RAG (rules first; then LLM fallback)
     intent = parse_intent_rules(user_query)
     if intent.get("action") == "none":
@@ -529,7 +623,7 @@ def query_gpt():
             return app.response_class(f"RAG error: {e}", mimetype="text/plain"), 500
 
     # 3) Fallback: normal chat → plain text
-    task_type = (body.get("task") or "literature").lower()
+    task_type = (task_type or "literature") or "literature"
     task_prompt = TASK_PROMPTS.get(task_type, "")
     try:
         resp = client.chat.completions.create(
