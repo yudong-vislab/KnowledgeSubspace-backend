@@ -13,29 +13,24 @@ class PDFRAGSystem:
     """PDF文档的检索增强生成(RAG)系统"""
     
     def __init__(self):
-        """初始化RAG系统
+        """初始化RAG系统"""
+        # 从环境变量中读取配置
+        self.api_key = os.getenv("EMBEDDING_API_KEY", os.getenv("OPENAI_API_KEY", ""))
+        self.base_url = os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1")
         
-        Args:
-            openai_api_key: OpenAI API密钥
-        """
-        # 设置OpenAI API密钥
-        # if not openai_api_key:
-        #     raise ValueError("请提供OpenAI API密钥")
-        self.api_key = "sk-TACoyuhVsr9CyWrX960bC42823Bf40218aDb52Bf5fA17543"
-        
-        # 初始化嵌入模型和语言模型
-        # 设置自定义API base_url
-        custom_base_url = "https://www.jcapikey.com/v1"
+        # 验证API密钥是否存在
+        if not self.api_key:
+            print("警告: 未设置API密钥，请确保.env文件中有正确的配置")
         
         self.embeddings = OpenAIEmbeddings(
             openai_api_key=self.api_key,
-            base_url=custom_base_url
+            base_url=self.base_url
         )
         self.llm = ChatOpenAI(
             openai_api_key=self.api_key,
             model_name="gpt-3.5-turbo",  # 可以根据需要更改为gpt-4
             temperature=0.0,
-            base_url=custom_base_url
+            base_url=self.base_url
         )
         
         # 初始化文本分割器

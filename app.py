@@ -463,6 +463,7 @@ class RAGService:
             temperature=self.temperature,
         )
 
+
     def query_structured(self, project_id: str, question: str, k: int = 5, mmr: bool = False) -> str:
         """
         Per-PDF retrieval, then produce a structured answer:
@@ -495,7 +496,7 @@ class RAGService:
                 search_type="mmr" if mmr else "similarity",
                 search_kwargs={"k": k}
             )
-            docs = retriever.get_relevant_documents(question)
+            docs = getattr(retriever, "invoke", retriever.get_relevant_documents)(question)
             ctx = _format_docs(docs) if docs else "(no relevant context retrieved)"
             per_doc_context.append({
                 "doc_id": p.name,
