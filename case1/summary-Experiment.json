@@ -1,0 +1,69 @@
+[
+  {
+    "hex_coord": [
+      -4,
+      5
+    ],
+    "country": 1,
+    "MSU_ids": [
+      6
+    ],
+    "summary": "Based on the provided sentence, the common theme appears to be analyzing flame dynamics in the context of flow separation. The sentences are likely related, focusing on the quantitative characterization of flame behavior in this specific flow condition."
+  },
+  {
+    "hex_coord": [
+      -7,
+      5
+    ],
+    "country": 1,
+    "MSU_ids": [
+      12
+    ],
+    "summary": "Summary:\nThe common theme across the papers appears to be the investigation of continuous flame flashback during mode transition. This suggests a shared focus on the phenomenon of flame behavior under changing operational modes, indicating a specific and focused research area."
+  },
+  {
+    "hex_coord": [
+      -10,
+      3
+    ],
+    "country": 1,
+    "MSU_ids": [
+      32
+    ],
+    "summary": "The sentence \"Tian et al. experimentally studied the combustion mode in a hydrogen-fueled direct-injection scramjet\" falls under the theme of aerospace engineering and propulsion systems, likely discussing research on combustion mechanisms in a scramjet engine. These sentences do share a specific, unified focus on the experimental study of combustion within this propulsion technology."
+  },
+  {
+    "hex_coord": [
+      -11,
+      5
+    ],
+    "country": 1,
+    "MSU_ids": [
+      34
+    ],
+    "summary": "Based on the sentence provided, the common theme seems to be experimental investigation of transition processes related to equivalence ratio changes. This suggests a focus on combustion dynamics or fluid mechanics in the context of large eddy simulations. The relationship appears to be a shared exploration of combustion behavior under varying conditions."
+  },
+  {
+    "hex_coord": [
+      -15,
+      5
+    ],
+    "country": 1,
+    "MSU_ids": [
+      36,
+      421
+    ],
+    "summary": "The sentences provided discuss the numerical exploration of mode transition in a combustor with a combined injection strategy, focusing on the collision of shedding vortices with the rear wall of the cavity. They are related as they both address the aerodynamic phenomena in a combustor system, indicating a specific focus on flow dynamics within this context."
+  },
+  {
+    "hex_coord": [
+      -15,
+      4
+    ],
+    "country": 1,
+    "MSU_ids": [
+      38
+    ],
+    "summary": "The sentence provided discusses a comparison of transition processes from scram to ram and ram to scram by manipulating injection pressure. The common theme across these papers appears to be the study of transition processes in fluid dynamics, suggesting a specific focus on flow behavior under varying conditions."
+  }
+]

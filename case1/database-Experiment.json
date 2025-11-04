@@ -1,0 +1,1714 @@
+[
+  {
+    "sentence": "Quantitative analyses were conducted to characterize flame dynamics under flow separation.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 6,
+    "para_id": 1,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.3155035674571991,
+      0.7012181282043457
+    ],
+    "MSU_id": 6,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "The combustion process in the scramjet engines generally takes place in unsteady conditions. The unsteadiness of the flame can be present locally or globally in supersonic combustion, for instance, reactant mixing, ignition, flame stabilization, and blow-off. Thus, unsteady supersonic combustion is an urgent problem that needs to be solved for real scramjet engine applications. This work helps to advance the knowledge of dual-mode scramjet combustion operating with different equivalence ratios by conducting quantitative analyses that characterize flame dynamics under flow separation. A hydrogenfueled direct-injection scheme was computed using *blastFoam* code via large-eddy simulation of a scramjet test rig at a stagnation temperature of 950 K and a pressure of 0.82 MPa. The computational results were in good agreement with the experimental data, and two typical flame structures (cavity shear-layer and cavity assisted jet-wake stabilized flame) corresponding to the scram/ram operating modes were reproduced. The local flame structure and flow regime were investigated using a modified flame index and filter functions. A particular focus was set on the continuous flame flashback during mode transition, which could be divided into three stages involving jet/shear-layer interaction, unsteady heat release, and the establishment of a large-area separation zone, with the decay of the cavity recirculation zone. Additionally, the unsteady jet-wake ram combustion presented three oscillation modes, giving rise to intermittent flameout of varying levels. The coherent-structures motion caused by the combined effects of low-speed separated flow and the fuel-jet was the main cause for this kind of unsteady combustion."
+  },
+  {
+    "sentence": "The study focused on continuous flame flashback during mode transition.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 12,
+    "para_id": 1,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.7712936401367188,
+      0.7639532089233398
+    ],
+    "MSU_id": 12,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "The combustion process in the scramjet engines generally takes place in unsteady conditions. The unsteadiness of the flame can be present locally or globally in supersonic combustion, for instance, reactant mixing, ignition, flame stabilization, and blow-off. Thus, unsteady supersonic combustion is an urgent problem that needs to be solved for real scramjet engine applications. This work helps to advance the knowledge of dual-mode scramjet combustion operating with different equivalence ratios by conducting quantitative analyses that characterize flame dynamics under flow separation. A hydrogenfueled direct-injection scheme was computed using *blastFoam* code via large-eddy simulation of a scramjet test rig at a stagnation temperature of 950 K and a pressure of 0.82 MPa. The computational results were in good agreement with the experimental data, and two typical flame structures (cavity shear-layer and cavity assisted jet-wake stabilized flame) corresponding to the scram/ram operating modes were reproduced. The local flame structure and flow regime were investigated using a modified flame index and filter functions. A particular focus was set on the continuous flame flashback during mode transition, which could be divided into three stages involving jet/shear-layer interaction, unsteady heat release, and the establishment of a large-area separation zone, with the decay of the cavity recirculation zone. Additionally, the unsteady jet-wake ram combustion presented three oscillation modes, giving rise to intermittent flameout of varying levels. The coherent-structures motion caused by the combined effects of low-speed separated flow and the fuel-jet was the main cause for this kind of unsteady combustion."
+  },
+  {
+    "sentence": "Tian et al. experimentally studied the combustion mode in a hydrogen-fueled direct-injection scramjet.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 32,
+    "para_id": 4,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.4653481245040894,
+      0.4964856803417206
+    ],
+    "MSU_id": 32,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "A fixed-geometry DMSJ engine's mode transition control is often achieved by altering the fuel injection regularity [\\[4](#page-11-0)]. Tian et al. [\\[5](#page-11-0)] experimentally studied the combustion mode in a hydrogenfueled direct-injection scramjet and found that the transition threshold equivalence ratio (*ER*) was 0.23 under Mach 4 flight conditions. Zhang et al. [\\[6\\]](#page-11-0) investigated the transition process via an experiment with a continuous increase in equivalence ratio, and concluded that the large equivalence ratio slope would not lead to slope variation of pressure rising even at high Mach numbers. The mode transition process in a strut-based combustor with a combined injection strategy was numerically explored by Huang et al. [\\[7](#page-11-0)], and it was reported that the airflow conditions and the jet to crossflow pressure ratio both had a large impact except the injection strategy. By varying the injection pressure, Yan et al. [\\[8\\]](#page-11-0) compared the transition processes from scram to ram and from ram to scram. The results revealed that the transition from ram to scram was more challenging than from scram to ram, and the shock waves were still in the isolator when the combustor entered scram mode. Also, a lot of effort has been put into studying the mechanisms that stabilize combustion [\\[5,9](#page-11-0)–[11\\]](#page-11-0). Three common stabilization modes may be distinguished [\\[9](#page-11-0)] based on where the flame anchors: cavity shear-layer stabilized combustion, cavity assisted jet-wake stabilized combustion, and combined cavity shear-layer/recirculation stabilized combustion. The correlation between operating and stabilization modes of the DMSJ combustor was further investigated by Yuan et al. [\\[10\\]](#page-11-0), who observed that the flame was stabilized in the cavity shear-layer at scram mode while in the jet-wake at ram mode."
+  },
+  {
+    "sentence": "Zhang et al. investigated the transition process via an experiment with a continuous increase in equivalence ratio.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 34,
+    "para_id": 4,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.5294361114501953,
+      0.7104675769805908
+    ],
+    "MSU_id": 34,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "A fixed-geometry DMSJ engine's mode transition control is often achieved by altering the fuel injection regularity [\\[4](#page-11-0)]. Tian et al. [\\[5](#page-11-0)] experimentally studied the combustion mode in a hydrogenfueled direct-injection scramjet and found that the transition threshold equivalence ratio (*ER*) was 0.23 under Mach 4 flight conditions. Zhang et al. [\\[6\\]](#page-11-0) investigated the transition process via an experiment with a continuous increase in equivalence ratio, and concluded that the large equivalence ratio slope would not lead to slope variation of pressure rising even at high Mach numbers. The mode transition process in a strut-based combustor with a combined injection strategy was numerically explored by Huang et al. [\\[7](#page-11-0)], and it was reported that the airflow conditions and the jet to crossflow pressure ratio both had a large impact except the injection strategy. By varying the injection pressure, Yan et al. [\\[8\\]](#page-11-0) compared the transition processes from scram to ram and from ram to scram. The results revealed that the transition from ram to scram was more challenging than from scram to ram, and the shock waves were still in the isolator when the combustor entered scram mode. Also, a lot of effort has been put into studying the mechanisms that stabilize combustion [\\[5,9](#page-11-0)–[11\\]](#page-11-0). Three common stabilization modes may be distinguished [\\[9](#page-11-0)] based on where the flame anchors: cavity shear-layer stabilized combustion, cavity assisted jet-wake stabilized combustion, and combined cavity shear-layer/recirculation stabilized combustion. The correlation between operating and stabilization modes of the DMSJ combustor was further investigated by Yuan et al. [\\[10\\]](#page-11-0), who observed that the flame was stabilized in the cavity shear-layer at scram mode while in the jet-wake at ram mode."
+  },
+  {
+    "sentence": "The mode transition process in a strut-based combustor with a combined injection strategy was numerically explored by Huang et al.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 36,
+    "para_id": 4,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.2088217735290527,
+      0.6809900999069214
+    ],
+    "MSU_id": 36,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "A fixed-geometry DMSJ engine's mode transition control is often achieved by altering the fuel injection regularity [\\[4](#page-11-0)]. Tian et al. [\\[5](#page-11-0)] experimentally studied the combustion mode in a hydrogenfueled direct-injection scramjet and found that the transition threshold equivalence ratio (*ER*) was 0.23 under Mach 4 flight conditions. Zhang et al. [\\[6\\]](#page-11-0) investigated the transition process via an experiment with a continuous increase in equivalence ratio, and concluded that the large equivalence ratio slope would not lead to slope variation of pressure rising even at high Mach numbers. The mode transition process in a strut-based combustor with a combined injection strategy was numerically explored by Huang et al. [\\[7](#page-11-0)], and it was reported that the airflow conditions and the jet to crossflow pressure ratio both had a large impact except the injection strategy. By varying the injection pressure, Yan et al. [\\[8\\]](#page-11-0) compared the transition processes from scram to ram and from ram to scram. The results revealed that the transition from ram to scram was more challenging than from scram to ram, and the shock waves were still in the isolator when the combustor entered scram mode. Also, a lot of effort has been put into studying the mechanisms that stabilize combustion [\\[5,9](#page-11-0)–[11\\]](#page-11-0). Three common stabilization modes may be distinguished [\\[9](#page-11-0)] based on where the flame anchors: cavity shear-layer stabilized combustion, cavity assisted jet-wake stabilized combustion, and combined cavity shear-layer/recirculation stabilized combustion. The correlation between operating and stabilization modes of the DMSJ combustor was further investigated by Yuan et al. [\\[10\\]](#page-11-0), who observed that the flame was stabilized in the cavity shear-layer at scram mode while in the jet-wake at ram mode."
+  },
+  {
+    "sentence": "By varying the injection pressure, Yan et al. compared the transition processes from scram to ram and from ram to scram.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 38,
+    "para_id": 4,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.1749942302703857,
+      0.5765568017959595
+    ],
+    "MSU_id": 38,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "A fixed-geometry DMSJ engine's mode transition control is often achieved by altering the fuel injection regularity [\\[4](#page-11-0)]. Tian et al. [\\[5](#page-11-0)] experimentally studied the combustion mode in a hydrogenfueled direct-injection scramjet and found that the transition threshold equivalence ratio (*ER*) was 0.23 under Mach 4 flight conditions. Zhang et al. [\\[6\\]](#page-11-0) investigated the transition process via an experiment with a continuous increase in equivalence ratio, and concluded that the large equivalence ratio slope would not lead to slope variation of pressure rising even at high Mach numbers. The mode transition process in a strut-based combustor with a combined injection strategy was numerically explored by Huang et al. [\\[7](#page-11-0)], and it was reported that the airflow conditions and the jet to crossflow pressure ratio both had a large impact except the injection strategy. By varying the injection pressure, Yan et al. [\\[8\\]](#page-11-0) compared the transition processes from scram to ram and from ram to scram. The results revealed that the transition from ram to scram was more challenging than from scram to ram, and the shock waves were still in the isolator when the combustor entered scram mode. Also, a lot of effort has been put into studying the mechanisms that stabilize combustion [\\[5,9](#page-11-0)–[11\\]](#page-11-0). Three common stabilization modes may be distinguished [\\[9](#page-11-0)] based on where the flame anchors: cavity shear-layer stabilized combustion, cavity assisted jet-wake stabilized combustion, and combined cavity shear-layer/recirculation stabilized combustion. The correlation between operating and stabilization modes of the DMSJ combustor was further investigated by Yuan et al. [\\[10\\]](#page-11-0), who observed that the flame was stabilized in the cavity shear-layer at scram mode while in the jet-wake at ram mode."
+  },
+  {
+    "sentence": "The correlation between operating and stabilization modes of the DMSJ combustor was further investigated by Yuan et al.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 43,
+    "para_id": 4,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.8291667699813843,
+      0.8978731632232666
+    ],
+    "MSU_id": 43,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "A fixed-geometry DMSJ engine's mode transition control is often achieved by altering the fuel injection regularity [\\[4](#page-11-0)]. Tian et al. [\\[5](#page-11-0)] experimentally studied the combustion mode in a hydrogenfueled direct-injection scramjet and found that the transition threshold equivalence ratio (*ER*) was 0.23 under Mach 4 flight conditions. Zhang et al. [\\[6\\]](#page-11-0) investigated the transition process via an experiment with a continuous increase in equivalence ratio, and concluded that the large equivalence ratio slope would not lead to slope variation of pressure rising even at high Mach numbers. The mode transition process in a strut-based combustor with a combined injection strategy was numerically explored by Huang et al. [\\[7](#page-11-0)], and it was reported that the airflow conditions and the jet to crossflow pressure ratio both had a large impact except the injection strategy. By varying the injection pressure, Yan et al. [\\[8\\]](#page-11-0) compared the transition processes from scram to ram and from ram to scram. The results revealed that the transition from ram to scram was more challenging than from scram to ram, and the shock waves were still in the isolator when the combustor entered scram mode. Also, a lot of effort has been put into studying the mechanisms that stabilize combustion [\\[5,9](#page-11-0)–[11\\]](#page-11-0). Three common stabilization modes may be distinguished [\\[9](#page-11-0)] based on where the flame anchors: cavity shear-layer stabilized combustion, cavity assisted jet-wake stabilized combustion, and combined cavity shear-layer/recirculation stabilized combustion. The correlation between operating and stabilization modes of the DMSJ combustor was further investigated by Yuan et al. [\\[10\\]](#page-11-0), who observed that the flame was stabilized in the cavity shear-layer at scram mode while in the jet-wake at ram mode."
+  },
+  {
+    "sentence": "Wang et al. have numerically found two flow-related combustion oscillation mechanisms in the scramjet with hydrogen injected upstream of the cavity.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 50,
+    "para_id": 5,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.40812259912490845,
+      0.007515266537666321
+    ],
+    "MSU_id": 50,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "Although a significant amount of research has been done on scramjet investigations using a variety of configurations and injection schemes [\\[12–14](#page-11-0)], most publications currently in print concentrate on the quasi-steady state that represents stable flame, while limited research is available on the dynamic processes that represent unstable flame, such as ignition dynamics [\\[15](#page-11-0)], thermalacoustic oscillation [\\[16\\]](#page-11-0), flame flashback [[17](#page-11-0)], and flow-induced unstable flame [[18](#page-11-0)]. Therein, the flow instabilities may be attributed to the self-sustained cavity shear-layer oscillation [[19\\]](#page-11-0), unsteady jets in supersonic crossflow [[20](#page-11-0)], and separated boundary layers [\\[21\\]](#page-11-0). Wang et al. [\\[19](#page-11-0)] have numerically found two flowrelated combustion oscillation mechanisms in the scramjet with hydrogen injected upstream of the cavity. One was the intermittent auto-ignition of mixture packets linked to the fuel jet, and the other was the unsteady flame propagation affected by the jet/cavity shear-layer interaction. In the simulation of a cavityfloor direct-injection scramjet, Sitaraman et al. [\\[22](#page-11-0)] also noticed low-frequency heat release and pressure oscillations and attributed them to the periodic fluctuation of jet penetration brought on by the interaction with the shear layer. In a DMSJ engine, intensive heat release will alter the inflow conditions through the large-scale flow separation induced by upstream-propagating backpressure, which in turn modulates the flame stability downstream [\\[23\\]](#page-11-0). The possible interaction with fuel jets complicates the instability process even more. According to a series of well-known studies [\\[5,9,24,25\\]](#page-11-0), once the heat release reached a high enough level, there was a noticeable unsteadiness. Wang et al. [\\[26\\]](#page-11-0) experimentally studied the oscillation features of shock-train structures in an isolator with a choked throat, and found that the shock-train oscillation could propagate further downstream along the thicker boundary layer, resulting in drastic coherence and pressure fluctuations in downstream separated flow. Fotia et al. [\\[18](#page-11-0)] carried out an experimental study on the hydrogen-fueled DMSJ engine and observed some low-frequency periodic oscillations of the flame position under the separated flow, which could be correlated with the upstream unsteady pre-combustion shock-train."
+  },
+  {
+    "sentence": "In the simulation of a cavity-floor direct-injection scramjet, Sitaraman et al. noticed low-frequency heat release and pressure oscillations.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 53,
+    "para_id": 5,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.9291061758995056,
+      0.4002440869808197
+    ],
+    "MSU_id": 53,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "Although a significant amount of research has been done on scramjet investigations using a variety of configurations and injection schemes [\\[12–14](#page-11-0)], most publications currently in print concentrate on the quasi-steady state that represents stable flame, while limited research is available on the dynamic processes that represent unstable flame, such as ignition dynamics [\\[15](#page-11-0)], thermalacoustic oscillation [\\[16\\]](#page-11-0), flame flashback [[17](#page-11-0)], and flow-induced unstable flame [[18](#page-11-0)]. Therein, the flow instabilities may be attributed to the self-sustained cavity shear-layer oscillation [[19\\]](#page-11-0), unsteady jets in supersonic crossflow [[20](#page-11-0)], and separated boundary layers [\\[21\\]](#page-11-0). Wang et al. [\\[19](#page-11-0)] have numerically found two flowrelated combustion oscillation mechanisms in the scramjet with hydrogen injected upstream of the cavity. One was the intermittent auto-ignition of mixture packets linked to the fuel jet, and the other was the unsteady flame propagation affected by the jet/cavity shear-layer interaction. In the simulation of a cavityfloor direct-injection scramjet, Sitaraman et al. [\\[22](#page-11-0)] also noticed low-frequency heat release and pressure oscillations and attributed them to the periodic fluctuation of jet penetration brought on by the interaction with the shear layer. In a DMSJ engine, intensive heat release will alter the inflow conditions through the large-scale flow separation induced by upstream-propagating backpressure, which in turn modulates the flame stability downstream [\\[23\\]](#page-11-0). The possible interaction with fuel jets complicates the instability process even more. According to a series of well-known studies [\\[5,9,24,25\\]](#page-11-0), once the heat release reached a high enough level, there was a noticeable unsteadiness. Wang et al. [\\[26\\]](#page-11-0) experimentally studied the oscillation features of shock-train structures in an isolator with a choked throat, and found that the shock-train oscillation could propagate further downstream along the thicker boundary layer, resulting in drastic coherence and pressure fluctuations in downstream separated flow. Fotia et al. [\\[18](#page-11-0)] carried out an experimental study on the hydrogen-fueled DMSJ engine and observed some low-frequency periodic oscillations of the flame position under the separated flow, which could be correlated with the upstream unsteady pre-combustion shock-train."
+  },
+  {
+    "sentence": "Wang et al. experimentally studied the oscillation features of shock-train structures in an isolator with a choked throat.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 59,
+    "para_id": 5,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.4614524841308594,
+      0.2689830958843231
+    ],
+    "MSU_id": 59,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "Although a significant amount of research has been done on scramjet investigations using a variety of configurations and injection schemes [\\[12–14](#page-11-0)], most publications currently in print concentrate on the quasi-steady state that represents stable flame, while limited research is available on the dynamic processes that represent unstable flame, such as ignition dynamics [\\[15](#page-11-0)], thermalacoustic oscillation [\\[16\\]](#page-11-0), flame flashback [[17](#page-11-0)], and flow-induced unstable flame [[18](#page-11-0)]. Therein, the flow instabilities may be attributed to the self-sustained cavity shear-layer oscillation [[19\\]](#page-11-0), unsteady jets in supersonic crossflow [[20](#page-11-0)], and separated boundary layers [\\[21\\]](#page-11-0). Wang et al. [\\[19](#page-11-0)] have numerically found two flowrelated combustion oscillation mechanisms in the scramjet with hydrogen injected upstream of the cavity. One was the intermittent auto-ignition of mixture packets linked to the fuel jet, and the other was the unsteady flame propagation affected by the jet/cavity shear-layer interaction. In the simulation of a cavityfloor direct-injection scramjet, Sitaraman et al. [\\[22](#page-11-0)] also noticed low-frequency heat release and pressure oscillations and attributed them to the periodic fluctuation of jet penetration brought on by the interaction with the shear layer. In a DMSJ engine, intensive heat release will alter the inflow conditions through the large-scale flow separation induced by upstream-propagating backpressure, which in turn modulates the flame stability downstream [\\[23\\]](#page-11-0). The possible interaction with fuel jets complicates the instability process even more. According to a series of well-known studies [\\[5,9,24,25\\]](#page-11-0), once the heat release reached a high enough level, there was a noticeable unsteadiness. Wang et al. [\\[26\\]](#page-11-0) experimentally studied the oscillation features of shock-train structures in an isolator with a choked throat, and found that the shock-train oscillation could propagate further downstream along the thicker boundary layer, resulting in drastic coherence and pressure fluctuations in downstream separated flow. Fotia et al. [\\[18](#page-11-0)] carried out an experimental study on the hydrogen-fueled DMSJ engine and observed some low-frequency periodic oscillations of the flame position under the separated flow, which could be correlated with the upstream unsteady pre-combustion shock-train."
+  },
+  {
+    "sentence": "Fotia et al. carried out an experimental study on the hydrogen-fueled DMSJ engine and observed some low-frequency periodic oscillations of the flame position under the separated flow.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 61,
+    "para_id": 5,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.7619951963424683,
+      0.8213859796524048
+    ],
+    "MSU_id": 61,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "Although a significant amount of research has been done on scramjet investigations using a variety of configurations and injection schemes [\\[12–14](#page-11-0)], most publications currently in print concentrate on the quasi-steady state that represents stable flame, while limited research is available on the dynamic processes that represent unstable flame, such as ignition dynamics [\\[15](#page-11-0)], thermalacoustic oscillation [\\[16\\]](#page-11-0), flame flashback [[17](#page-11-0)], and flow-induced unstable flame [[18](#page-11-0)]. Therein, the flow instabilities may be attributed to the self-sustained cavity shear-layer oscillation [[19\\]](#page-11-0), unsteady jets in supersonic crossflow [[20](#page-11-0)], and separated boundary layers [\\[21\\]](#page-11-0). Wang et al. [\\[19](#page-11-0)] have numerically found two flowrelated combustion oscillation mechanisms in the scramjet with hydrogen injected upstream of the cavity. One was the intermittent auto-ignition of mixture packets linked to the fuel jet, and the other was the unsteady flame propagation affected by the jet/cavity shear-layer interaction. In the simulation of a cavityfloor direct-injection scramjet, Sitaraman et al. [\\[22](#page-11-0)] also noticed low-frequency heat release and pressure oscillations and attributed them to the periodic fluctuation of jet penetration brought on by the interaction with the shear layer. In a DMSJ engine, intensive heat release will alter the inflow conditions through the large-scale flow separation induced by upstream-propagating backpressure, which in turn modulates the flame stability downstream [\\[23\\]](#page-11-0). The possible interaction with fuel jets complicates the instability process even more. According to a series of well-known studies [\\[5,9,24,25\\]](#page-11-0), once the heat release reached a high enough level, there was a noticeable unsteadiness. Wang et al. [\\[26\\]](#page-11-0) experimentally studied the oscillation features of shock-train structures in an isolator with a choked throat, and found that the shock-train oscillation could propagate further downstream along the thicker boundary layer, resulting in drastic coherence and pressure fluctuations in downstream separated flow. Fotia et al. [\\[18](#page-11-0)] carried out an experimental study on the hydrogen-fueled DMSJ engine and observed some low-frequency periodic oscillations of the flame position under the separated flow, which could be correlated with the upstream unsteady pre-combustion shock-train."
+  },
+  {
+    "sentence": "Kato et al. conducted an experimental investigation on the flame behavior during scram to ram transition.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 71,
+    "para_id": 6,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.8679336309432983,
+      0.6949936151504517
+    ],
+    "MSU_id": 71,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "Combustion mode transition is usually accompanied by the transient establishment of flow separation. The combustion instabilities associated with mode transition are typically more intense and severe due to the tendency toward cavity flame blowout [[21\\]](#page-11-0). Yang et al. [[27](#page-11-0)] provided a mechanical model of the DMSJ engine to analyze the mode transition mechanisms. It was found that the mode transition was a nonlinear and unstable process with significant Mach number fluctuations that had an adverse effect on the scramjet's stability. Kato et al. [[28](#page-11-0)] conducted an experimental investigation on the flame behavior during scram to ram transition. They have concluded that the flame fluctuated in the isolator due to the coupling between fluid dynamics and combustion and that the reversely propagating deflagration flame occurred when the thermal choke was established. In a DMSJ engine with fin-guided injection upstream of the cavity, the scram-to-ram transition was experimentally studied by Aguilera et al. [\\[29](#page-11-0)]. The findings indicated that the transition process could be characterized by a series of flame oscillations driven by hopping cycles, which included transient thermal choking, flame flashback, cavity flame-holding, and detachment. The combustion flow field in a scramjet is inherently unstable and is characterized by the presence of temporal oscillations that have an impact on the fluid flow, mixing, and heat release. Although separation-driven supersonic combustion instability has not yet received enough attention [[30](#page-11-0)], research on backpressure-induced unstable flames is very important in order to understand their physical mechanisms and impose appropriate controls."
+  },
+  {
+    "sentence": "Aguilera et al. experimentally studied the scram-to-ram transition in a DMSJ engine with fin-guided injection upstream of the cavity.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 74,
+    "para_id": 6,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.8946088552474976,
+      0.6771371364593506
+    ],
+    "MSU_id": 74,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "Combustion mode transition is usually accompanied by the transient establishment of flow separation. The combustion instabilities associated with mode transition are typically more intense and severe due to the tendency toward cavity flame blowout [[21\\]](#page-11-0). Yang et al. [[27](#page-11-0)] provided a mechanical model of the DMSJ engine to analyze the mode transition mechanisms. It was found that the mode transition was a nonlinear and unstable process with significant Mach number fluctuations that had an adverse effect on the scramjet's stability. Kato et al. [[28](#page-11-0)] conducted an experimental investigation on the flame behavior during scram to ram transition. They have concluded that the flame fluctuated in the isolator due to the coupling between fluid dynamics and combustion and that the reversely propagating deflagration flame occurred when the thermal choke was established. In a DMSJ engine with fin-guided injection upstream of the cavity, the scram-to-ram transition was experimentally studied by Aguilera et al. [\\[29](#page-11-0)]. The findings indicated that the transition process could be characterized by a series of flame oscillations driven by hopping cycles, which included transient thermal choking, flame flashback, cavity flame-holding, and detachment. The combustion flow field in a scramjet is inherently unstable and is characterized by the presence of temporal oscillations that have an impact on the fluid flow, mixing, and heat release. Although separation-driven supersonic combustion instability has not yet received enough attention [[30](#page-11-0)], research on backpressure-induced unstable flames is very important in order to understand their physical mechanisms and impose appropriate controls."
+  },
+  {
+    "sentence": "The present work performs LES for two operating conditions illustrative of dual-mode scram/ram combustion.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 5,
+    "msuid": 85,
+    "para_id": 7,
+    "paper_id": 1,
+    "2d_coord": [
+      0.07741786539554596,
+      -0.3265154957771301
+    ],
+    "MSU_id": 85,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "Large-eddy simulation (LES) shows a high potential to predict such time varying phenomena [\\[17,22,31,32](#page-11-0)]. Given these justifications, the present work uses *blastFoam* [[33](#page-11-0)], an open-source generally/highly compressible reactive system solver, to perform LES for two operating conditions illustrative of dual-mode scram/ram combustion in a configuration identical to the experiment of Tian et al. [[5](#page-11-0)]. The primary objective is to obtain a comprehensive understanding of flow characteristics, flame stabilization mechanisms, and unsteady flame dynamics in separated flow. The paper is structured as follows: The next section describes the methodology and quantitative comparison. After that a phenomenological description of flame stabilization mechanism is presented following a comprehensive analysis of the optical and numerical images. Then, the combustion and flow regimes are vividly demonstrated. Subsequently, the temporal evolution of dynamic behaviors, including mode transition and oscillating flame, is characterized to reveal the potential control mechanism. Finally, some significant conclusions are drawn."
+  },
+  {
+    "sentence": "The configuration used in this work is identical to the experiment of Tian et al.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 86,
+    "para_id": 7,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.4600597620010376,
+      -0.7541983127593994
+    ],
+    "MSU_id": 86,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "Large-eddy simulation (LES) shows a high potential to predict such time varying phenomena [\\[17,22,31,32](#page-11-0)]. Given these justifications, the present work uses *blastFoam* [[33](#page-11-0)], an open-source generally/highly compressible reactive system solver, to perform LES for two operating conditions illustrative of dual-mode scram/ram combustion in a configuration identical to the experiment of Tian et al. [[5](#page-11-0)]. The primary objective is to obtain a comprehensive understanding of flow characteristics, flame stabilization mechanisms, and unsteady flame dynamics in separated flow. The paper is structured as follows: The next section describes the methodology and quantitative comparison. After that a phenomenological description of flame stabilization mechanism is presented following a comprehensive analysis of the optical and numerical images. Then, the combustion and flow regimes are vividly demonstrated. Subsequently, the temporal evolution of dynamic behaviors, including mode transition and oscillating flame, is characterized to reveal the potential control mechanism. Finally, some significant conclusions are drawn."
+  },
+  {
+    "sentence": "A laboratory-scale direct-connect scramjet facility with a cavity flame-holder is being designed at China Aerodynamics Research and Development Center (CARDC).",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 149,
+    "para_id": 16,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.7732408046722412,
+      0.5584675073623657
+    ],
+    "MSU_id": 149,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "A laboratory-scale direct-connect scramjet facility with a cavity flame-holder is being designed at China Aerodynamics Research and Development Center (CARDC) to simulate at flight Mach number 4 ∼ 7 conditions. The high-enthalpy vitiated air, which has a mole fraction of 21% O2, 12% H2O and 67% N2, is accelerated to Mach 2 at the isolator entry under stagnation conditions of *p*<sup>0</sup> = 0*.*82 MPa and *T*<sup>0</sup> = 950 K, which correspond to a Mach 4 flight condition. At Mach 1, the hydrogen fuel is directly injected into the cavity at ambient temperature (*T*<sup>0</sup> = 295 K). A series of experimental studies using this facility can be found in literature [\\[5](#page-11-0),[45](#page-11-0)[,46](#page-12-0)], in which the data are collected using various measurement techniques such as schlieren, chemiluminescence photography, OH-PLIF, and differential interferometry."
+  },
+  {
+    "sentence": "The facility is being designed to simulate at flight Mach number 4 ∼ 7 conditions.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 150,
+    "para_id": 16,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.8689090013504028,
+      -0.128945991396904
+    ],
+    "MSU_id": 150,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "A laboratory-scale direct-connect scramjet facility with a cavity flame-holder is being designed at China Aerodynamics Research and Development Center (CARDC) to simulate at flight Mach number 4 ∼ 7 conditions. The high-enthalpy vitiated air, which has a mole fraction of 21% O2, 12% H2O and 67% N2, is accelerated to Mach 2 at the isolator entry under stagnation conditions of *p*<sup>0</sup> = 0*.*82 MPa and *T*<sup>0</sup> = 950 K, which correspond to a Mach 4 flight condition. At Mach 1, the hydrogen fuel is directly injected into the cavity at ambient temperature (*T*<sup>0</sup> = 295 K). A series of experimental studies using this facility can be found in literature [\\[5](#page-11-0),[45](#page-11-0)[,46](#page-12-0)], in which the data are collected using various measurement techniques such as schlieren, chemiluminescence photography, OH-PLIF, and differential interferometry."
+  },
+  {
+    "sentence": "Two cases with different global equivalence ratios are comparatively studied.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 178,
+    "para_id": 20,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.6326528787612915,
+      0.6113131046295166
+    ],
+    "MSU_id": 178,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "As for the inflow conditions, all the inlets are set to Dirichlet boundaries based on the experimental parameters, and the airinlet velocity profile is mapped from the section 50 mm downstream. Additionally, synthetic turbulence with a 5% fluctuation intensity is added using the LEMOS generator [\\[47\\]](#page-12-0) to reproduce the fully-developed inflow that follows a 1/7th power law. The supersonic outflow quantities are extrapolated from the nearest cells and no-slip adiabatic boundary condition is imposed on all the walls. In the current work, two cases with different global equivalence ratios (case 1: *ER* = 0*.*1 and case 2: *ER* = 0*.*3) are comparatively studied by changing the fuel jet's injection stagnation pressure (*p*<sup>0</sup> = 1*.*5 MPa and *p*<sup>0</sup> = 4*.*0 MPa), and then achieves a phenomenological scram-to-ram transition by directly switching the injection pressure from case 1 to case 2 to study the intermediate state. More inflow parameters are presented in Table 1, where the isentropic flow hypothesis is used to convert the stagnation temperature and pressure of the inflow into static values."
+  },
+  {
+    "sentence": "Case 1 has an equivalence ratio of *ER* = 0.1, and case 2 has *ER* = 0.3.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 179,
+    "para_id": 20,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.6976938247680664,
+      -0.2342025190591812
+    ],
+    "MSU_id": 179,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "As for the inflow conditions, all the inlets are set to Dirichlet boundaries based on the experimental parameters, and the airinlet velocity profile is mapped from the section 50 mm downstream. Additionally, synthetic turbulence with a 5% fluctuation intensity is added using the LEMOS generator [\\[47\\]](#page-12-0) to reproduce the fully-developed inflow that follows a 1/7th power law. The supersonic outflow quantities are extrapolated from the nearest cells and no-slip adiabatic boundary condition is imposed on all the walls. In the current work, two cases with different global equivalence ratios (case 1: *ER* = 0*.*1 and case 2: *ER* = 0*.*3) are comparatively studied by changing the fuel jet's injection stagnation pressure (*p*<sup>0</sup> = 1*.*5 MPa and *p*<sup>0</sup> = 4*.*0 MPa), and then achieves a phenomenological scram-to-ram transition by directly switching the injection pressure from case 1 to case 2 to study the intermediate state. More inflow parameters are presented in Table 1, where the isentropic flow hypothesis is used to convert the stagnation temperature and pressure of the inflow into static values."
+  },
+  {
+    "sentence": "The fuel jet's injection stagnation pressure is changed between *p*<sup>0</sup> = 1.5 MPa and *p*<sup>0</sup> = 4.0 MPa in the two cases.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 180,
+    "para_id": 20,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.085266590118408,
+      0.8132556676864624
+    ],
+    "MSU_id": 180,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "As for the inflow conditions, all the inlets are set to Dirichlet boundaries based on the experimental parameters, and the airinlet velocity profile is mapped from the section 50 mm downstream. Additionally, synthetic turbulence with a 5% fluctuation intensity is added using the LEMOS generator [\\[47\\]](#page-12-0) to reproduce the fully-developed inflow that follows a 1/7th power law. The supersonic outflow quantities are extrapolated from the nearest cells and no-slip adiabatic boundary condition is imposed on all the walls. In the current work, two cases with different global equivalence ratios (case 1: *ER* = 0*.*1 and case 2: *ER* = 0*.*3) are comparatively studied by changing the fuel jet's injection stagnation pressure (*p*<sup>0</sup> = 1*.*5 MPa and *p*<sup>0</sup> = 4*.*0 MPa), and then achieves a phenomenological scram-to-ram transition by directly switching the injection pressure from case 1 to case 2 to study the intermediate state. More inflow parameters are presented in Table 1, where the isentropic flow hypothesis is used to convert the stagnation temperature and pressure of the inflow into static values."
+  },
+  {
+    "sentence": "A phenomenological scram-to-ram transition is achieved by directly switching the injection pressure from case 1 to case 2.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 5,
+    "msuid": 181,
+    "para_id": 20,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.820490837097168,
+      0.049023598432540894
+    ],
+    "MSU_id": 181,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "As for the inflow conditions, all the inlets are set to Dirichlet boundaries based on the experimental parameters, and the airinlet velocity profile is mapped from the section 50 mm downstream. Additionally, synthetic turbulence with a 5% fluctuation intensity is added using the LEMOS generator [\\[47\\]](#page-12-0) to reproduce the fully-developed inflow that follows a 1/7th power law. The supersonic outflow quantities are extrapolated from the nearest cells and no-slip adiabatic boundary condition is imposed on all the walls. In the current work, two cases with different global equivalence ratios (case 1: *ER* = 0*.*1 and case 2: *ER* = 0*.*3) are comparatively studied by changing the fuel jet's injection stagnation pressure (*p*<sup>0</sup> = 1*.*5 MPa and *p*<sup>0</sup> = 4*.*0 MPa), and then achieves a phenomenological scram-to-ram transition by directly switching the injection pressure from case 1 to case 2 to study the intermediate state. More inflow parameters are presented in Table 1, where the isentropic flow hypothesis is used to convert the stagnation temperature and pressure of the inflow into static values."
+  },
+  {
+    "sentence": "The intermediate state is studied by switching the injection pressure between the two cases.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 182,
+    "para_id": 20,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.4187750816345215,
+      0.6403485536575317
+    ],
+    "MSU_id": 182,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "As for the inflow conditions, all the inlets are set to Dirichlet boundaries based on the experimental parameters, and the airinlet velocity profile is mapped from the section 50 mm downstream. Additionally, synthetic turbulence with a 5% fluctuation intensity is added using the LEMOS generator [\\[47\\]](#page-12-0) to reproduce the fully-developed inflow that follows a 1/7th power law. The supersonic outflow quantities are extrapolated from the nearest cells and no-slip adiabatic boundary condition is imposed on all the walls. In the current work, two cases with different global equivalence ratios (case 1: *ER* = 0*.*1 and case 2: *ER* = 0*.*3) are comparatively studied by changing the fuel jet's injection stagnation pressure (*p*<sup>0</sup> = 1*.*5 MPa and *p*<sup>0</sup> = 4*.*0 MPa), and then achieves a phenomenological scram-to-ram transition by directly switching the injection pressure from case 1 to case 2 to study the intermediate state. More inflow parameters are presented in Table 1, where the isentropic flow hypothesis is used to convert the stagnation temperature and pressure of the inflow into static values."
+  },
+  {
+    "sentence": "The data are collected for 6 flow-through times after 5 τf in order to reach the statistical steady state.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 199,
+    "para_id": 22,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.1928764432668686,
+      -0.26029425859451294
+    ],
+    "MSU_id": 199,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "Fig. [3](#page-4-0) compares experimental and computational pressure profiles. Here, the data are collected for <sup>6</sup> flow-through times (*τ <sup>f</sup>* = *<sup>L</sup>/U*<sup>∞</sup> <sup>≈</sup> <sup>4</sup> <sup>×</sup> <sup>10</sup>−<sup>4</sup> s) after <sup>5</sup>*τ <sup>f</sup>* in order to reach the statistical steady state. Further topologically identical coarser (1.0 million) and finer (7.0 million) grids are generated for case 1 in order to do a grid independence study. The pressure distributions on the upper wall are shown to be nearly identical apart from the leading edge of the expansion section, where the moderate and finer grids predict lower values than the coarser one, which is consistent with what was seen in Cao's investigations [\\[11](#page-11-0)]. This might be due to local refinement capturing multiscale turbulence at the expansion fan. The simulations for both cases are conducted on the moderate grid (5.0 million) in order to make a compromise between the fidelity and efficiency. As can be seen in Fig. [3,](#page-4-0) the pressure distribution on the upper wall matches the experimental results well for both cases except the separation point pressure in the isolator for case 2, which is slightly overpredicted. The absence of good near-wall resolution might be the most important factor among the other factors explaining the overprediction. In addition, a sharp pressure drop can also be observed owing to the rapid expansion of a high-pressure jet near the inlet, but it is not captured by the discrete pressure measurements. Anyway, these discrepancies are all acceptable."
+  },
+  {
+    "sentence": "The Mach number distributions are verified by a 1-D pressure/Mach number response model to the experimental pressure profiles.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 214,
+    "para_id": 23,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.5901132822036743,
+      -0.732791543006897
+    ],
+    "MSU_id": 214,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "Furthermore, the Mach number distributions are verified by a 1-D pressure/Mach number response model [\\[48\\]](#page-12-0) to the experimental pressure profiles. where *γ* = <sup>1</sup>*.*4 is the specific heat ratio, *<sup>A</sup>* is the cross-sectional area of the channel, and *C <sup>f</sup>* = 0*.*003 is the wall skin-friction coefficient. The hydraulic diameter *D* is defined as *D* = 4*A/dw* and *dw* is the wetted perimeter. As shown in Fig. [4](#page-4-0), the one-dimensional"
+  },
+  {
+    "sentence": "Experimental and computational 1-D Mach number distributions.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 243,
+    "para_id": 29,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.5528377294540405,
+      -0.4511750340461731
+    ],
+    "MSU_id": 243,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "**Fig. 4.** Experimental and computational 1-D Mach number distributions."
+  },
+  {
+    "sentence": "Comparison of instantaneous shock and shear-layer structures.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 253,
+    "para_id": 32,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.139899253845215,
+      -0.06300920993089676
+    ],
+    "MSU_id": 253,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "**Fig. 5.** Comparison of (a) instantaneous shock and shear-layer structures, (b) time-averaged temperature and chemiluminescence. (c) instantaneous normalized *YOH* contours of case 1 (left) and case 2 (right) in the center slice with experimental optical images [[5](#page-11-0)]."
+  },
+  {
+    "sentence": "Comparison of time-averaged temperature and chemiluminescence.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 254,
+    "para_id": 32,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.39260733127593994,
+      0.7260520458221436
+    ],
+    "MSU_id": 254,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "**Fig. 5.** Comparison of (a) instantaneous shock and shear-layer structures, (b) time-averaged temperature and chemiluminescence. (c) instantaneous normalized *YOH* contours of case 1 (left) and case 2 (right) in the center slice with experimental optical images [[5](#page-11-0)]."
+  },
+  {
+    "sentence": "Comparison of instantaneous normalized *YOH* contours of case 1 and case 2 in the center slice.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 255,
+    "para_id": 32,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.8131588697433472,
+      -1.0443365573883057
+    ],
+    "MSU_id": 255,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "**Fig. 5.** Comparison of (a) instantaneous shock and shear-layer structures, (b) time-averaged temperature and chemiluminescence. (c) instantaneous normalized *YOH* contours of case 1 (left) and case 2 (right) in the center slice with experimental optical images [[5](#page-11-0)]."
+  },
+  {
+    "sentence": "Comparison includes experimental optical images.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 2,
+    "msuid": 256,
+    "para_id": 32,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.8129611015319824,
+      -0.7002691030502319
+    ],
+    "MSU_id": 256,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "**Fig. 5.** Comparison of (a) instantaneous shock and shear-layer structures, (b) time-averaged temperature and chemiluminescence. (c) instantaneous normalized *YOH* contours of case 1 (left) and case 2 (right) in the center slice with experimental optical images [[5](#page-11-0)]."
+  },
+  {
+    "sentence": "Case 2 (ram mode) displays a parabola shape resembling a 'torch'.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 257,
+    "para_id": 33,
+    "paper_id": 1,
+    "2d_coord": [
+      0.5924824476242065,
+      0.2840110659599304
+    ],
+    "MSU_id": 257,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "observed in case 2 (ram mode), which displays a parabola shape resembling a \"torch\". The OH radicals spread from the fuel orifice to the downstream expansion section, with a negligible amount of them in the leading edge of the cavity. The temperature in the cavity is visibly higher than in case 1 due to the more intense heat release and the ram effect in the isolator, and the high-temperature zone is more widely distributed."
+  },
+  {
+    "sentence": "Fig. [6] shows pictures of the flow field and flame structures that have been overlapped in order to highlight the combustion stabilization mode.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 263,
+    "para_id": 34,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.7456895112991333,
+      0.6437567472457886
+    ],
+    "MSU_id": 263,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "Fig. [6](#page-6-0) shows pictures of the flow field and flame structures that have been overlapped in order to highlight the combustion stabilization mode. The fuel-jet core in case 1 has a branch due to the strong entrainment, and a significant amount of hydrogen collects in the corner to maintain the upstream flame's fuel supply. The downstream flame receives radicals and a hot environment from the cavity recirculation zone, which is located at the rear of the shear-layer. This process is known as cavity shear-layer stabilized combustion. The cold jet penetrates the shear-layer and causes local extinction, in contrast to the outcomes of injection upstream of the cavity [\\[9\\]](#page-11-0). But the whole flame remains stable, since it is mainly held by the vortex interactions with the cavity rather than the streamwise transportation. In case 2, a significant corner recirculation zone is also generated. Nevertheless, its jet momentum is higher and the recirculation velocity is lower than in case 1. In order to prevent hydrogen from being heavily entrained into the corner, hot products collect instead, acting as an ignitor. It is important to note that the cavity lacks a primary recirculation zone, which may be the result of interactions between the fuel jet and low-speed separated flow in a configuration with a large length to depth ratio (L/D = 11). Similarly, it can be inferred as cavity assisted jet-wake stabilized combustion, though it is susceptible to the flow oscillation."
+  },
+  {
+    "sentence": "The volume-averaged heat-release rate is HRR = 2 × 10^8 W/m^3.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 293,
+    "para_id": 36,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.0244203805923462,
+      0.8077654838562012
+    ],
+    "MSU_id": 293,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "Takeno Flame Index (*TFI*) expressed as *TFI* = *(*∇*Y <sup>F</sup>* **·**∇*Y <sup>O</sup> ) /* |∇*Y <sup>F</sup>* **·**∇*Y <sup>O</sup>* | can be used to characterize the flame regimes, where \"*TFI* = −1\" and \"*TFI* = 1\" denote diffusion and premixed regimes, respectively. Additionally, the level of fuel-rich for local premixed regime can be distinguished by weighting with the mixture fraction *Z*. Building upon this framework, the current work proposes a Modified Flame Index (*MFI*) that incorporates the unit-volume heat-release rate to differentiate the flame from flow field in which *Z* is calculated from Bilger et al. [[51\\]](#page-12-0), and *Zst* = 0*.*0219 at stoichiometry. *HRR* = <sup>2</sup> × 108 <sup>W</sup>*/*m3 is the volume-averaged heatrelease rate. The flame regimes indicated by different values are: no flame (*MFI* = −2), lean-premixed flame (*MFI* = −1), diffusion flame (*MFI* = 0), and rich-premixed flame (*MFI* = 1), respectively."
+  },
+  {
+    "sentence": "Time-averaged distribution of velocity vector colored by streamwise component, overlapped with the instantaneous heat-release rate (logarithmic scale) contour and iso-surface of *<sup>Y</sup> <sup>H</sup>*<sup>2</sup> = <sup>0</sup>*.*1 in case <sup>1</sup> (left) and case <sup>2</sup> (right).",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 299,
+    "para_id": 38,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.800935685634613,
+      -0.2951984703540802
+    ],
+    "MSU_id": 299,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "**Fig. 6.** Time-averaged distribution of velocity vector colored by streamwise component, overlapped with the instantaneous heat-release rate (logarithmic scale) contour and iso-surface of *<sup>Y</sup> <sup>H</sup>*<sup>2</sup> = <sup>0</sup>*.*1 in case <sup>1</sup> (left) and case <sup>2</sup> (right). The white lines denote *HRR* = <sup>1</sup>*.*<sup>0</sup> × 109 W/m3."
+  },
+  {
+    "sentence": "Case 1 displays the phenomenon on the cavity side of the shear layer.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 303,
+    "para_id": 40,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.94974946975708,
+      0.8590617179870605
+    ],
+    "MSU_id": 303,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "1 displaying it on the cavity side of the shear layer and case 2 on the inflow side of the flame head. Additionally, it is interesting to observe that the lean-premixed regime occurs in a narrow layer where the flame interacts with the incoming airstream. This occurrence can be attributed to the dilution effect of the downstream-developing rich-mixture, which is entrained by the counter-rotating streamwise vortex-pairs, as previously observed in Liu's research [\\[52](#page-12-0)]."
+  },
+  {
+    "sentence": "Case 2 displays the phenomenon on the inflow side of the flame head.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 304,
+    "para_id": 40,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.016674280166626,
+      0.8490498065948486
+    ],
+    "MSU_id": 304,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "1 displaying it on the cavity side of the shear layer and case 2 on the inflow side of the flame head. Additionally, it is interesting to observe that the lean-premixed regime occurs in a narrow layer where the flame interacts with the incoming airstream. This occurrence can be attributed to the dilution effect of the downstream-developing rich-mixture, which is entrained by the counter-rotating streamwise vortex-pairs, as previously observed in Liu's research [\\[52](#page-12-0)]."
+  },
+  {
+    "sentence": "Fig. [8](#page-7-0)(b) shows the engine's perspective views.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 2,
+    "msuid": 309,
+    "para_id": 41,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.0955657958984375,
+      -0.8941185474395752
+    ],
+    "MSU_id": 309,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "Fig. [8](#page-7-0)(b) shows the engine's perspective views, where the vortex structures are identified using the Q-criterion iso-surface (1 × 105 s<sup>−</sup>1). The 3-D vortex structures in the cavity of case 2 are found to be larger than those of case 1, primarily initiated by the shock/boundary-layer interaction in the isolator and intensified by thermal expansion in the cavity. Moreover, hairpin-like vortexes induced by the shock/boundary-layer interaction are observed on the lower wall. Both flames are confined in the vortexes that enhance fluid mixing, causing the flame in case 1 to be inside the cavity or close to the upper wall of the expansion section, while that in case 2 oscillates violently and the intermittent blowoff is observed downstream. Fig. [8](#page-7-0)(c) shows the time-averaged Mach number contours, embodying two typical features of a dual-mode scramjet. In scram mode, the flow in almost the entire combustor, except for the cavity, is supersonic. In ram mode, the subsonic region extends to the isolator and expansion section, and the supersonic channel is similar to the Laval nozzle, with a thermal throat at the cavity rear-part (*x* = 250 mm)."
+  },
+  {
+    "sentence": "Fig. [8](#page-7-0)(c) shows the time-averaged Mach number contours.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 2,
+    "msuid": 317,
+    "para_id": 41,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.4955737590789795,
+      -0.03641287982463837
+    ],
+    "MSU_id": 317,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "Fig. [8](#page-7-0)(b) shows the engine's perspective views, where the vortex structures are identified using the Q-criterion iso-surface (1 × 105 s<sup>−</sup>1). The 3-D vortex structures in the cavity of case 2 are found to be larger than those of case 1, primarily initiated by the shock/boundary-layer interaction in the isolator and intensified by thermal expansion in the cavity. Moreover, hairpin-like vortexes induced by the shock/boundary-layer interaction are observed on the lower wall. Both flames are confined in the vortexes that enhance fluid mixing, causing the flame in case 1 to be inside the cavity or close to the upper wall of the expansion section, while that in case 2 oscillates violently and the intermittent blowoff is observed downstream. Fig. [8](#page-7-0)(c) shows the time-averaged Mach number contours, embodying two typical features of a dual-mode scramjet. In scram mode, the flow in almost the entire combustor, except for the cavity, is supersonic. In ram mode, the subsonic region extends to the isolator and expansion section, and the supersonic channel is similar to the Laval nozzle, with a thermal throat at the cavity rear-part (*x* = 250 mm)."
+  },
+  {
+    "sentence": "Fig. [10] presents the evolution of pressure and flame during the mode transition.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 338,
+    "para_id": 44,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.487839698791504,
+      0.641730785369873
+    ],
+    "MSU_id": 338,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "This section examines the dynamic behaviors of shock wave and flame during scram-to-ram transition, both qualitatively and quantitatively. Fig. [10](#page-8-0) presents the evolution of pressure and flame during the mode transition. In the left-hand figures, the white arrows indicate the direction of oblique shocks propagation. Following an increase in injection pressure, a high-pressure zone is generated below the jet due to the impediment effect with the forward propagating shocks. At snapshot \"C\", the shocks are blown back into the cavity owing to pressure relief and insufficient heatrelease, and a normal shock is observed in the cavity entrance, as <span id=\"page-7-0\"></span>*M. Yuan, P. Wang, Y. Zhang et al. Aerospace Science and Technology 139 (2023) 108401*"
+  },
+  {
+    "sentence": "The reciprocating process is observed again from snapshots 'D' to 'E'.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 349,
+    "para_id": 47,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.2744309902191162,
+      -1.1753911972045898
+    ],
+    "MSU_id": 349,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "indicated by the dotted circles. Similarly, the reciprocating process is observed again from snapshots \"D\" to \"E\", but the shock waves can now reach farther upstream, and the pressure in combustor is higher due to further heat-release. At snapshot \"F\", the oblique shocks oscillate slightly near the isolator entrance when incoming air is in dynamic balance with the pressure in combustor."
+  },
+  {
+    "sentence": "Fig. [11] depicts the developmental process of the low-energy stream.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 2,
+    "msuid": 369,
+    "para_id": 49,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.237884998321533,
+      0.15257468819618225
+    ],
+    "MSU_id": 369,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "Fig. [11](#page-8-0) depicts the developmental process of the low-energy stream. Examining the recirculation zone of the cavity in the lefthand figures reveals that the low-speed separated flow is inadequate to establish recirculation downstream of the jet as the separation zone advances. The first three snapshots exhibit an evident recirculation, which corroborates the aforementioned cavity stabilized mode. When combined with the flame structure shown in Fig. [10,](#page-8-0) it is apparent that the jet-wake stabilized mode is established when the cavity recirculation zone completely disappears. Furthermore, when observing the pressure evolution, it is found that the boundary layer separates from the wall due to the adverse pressure gradient when shock waves propagate upstream, and return to attach to the wall when normal shock is generated at the separation point upon downstream propagation."
+  },
+  {
+    "sentence": "Examining the recirculation zone of the cavity in the lefthand figures reveals that the low-speed separated flow is inadequate to establish recirculation downstream of the jet as the separation zone advances.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 370,
+    "para_id": 49,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.1106605529785156,
+      0.8511109352111816
+    ],
+    "MSU_id": 370,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "Fig. [11](#page-8-0) depicts the developmental process of the low-energy stream. Examining the recirculation zone of the cavity in the lefthand figures reveals that the low-speed separated flow is inadequate to establish recirculation downstream of the jet as the separation zone advances. The first three snapshots exhibit an evident recirculation, which corroborates the aforementioned cavity stabilized mode. When combined with the flame structure shown in Fig. [10,](#page-8-0) it is apparent that the jet-wake stabilized mode is established when the cavity recirculation zone completely disappears. Furthermore, when observing the pressure evolution, it is found that the boundary layer separates from the wall due to the adverse pressure gradient when shock waves propagate upstream, and return to attach to the wall when normal shock is generated at the separation point upon downstream propagation."
+  },
+  {
+    "sentence": "Figure 11 shows instantaneous snapshots of streamwise velocity in the center slice during mode transition.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 381,
+    "para_id": 52,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.8950886726379395,
+      -0.0799110010266304
+    ],
+    "MSU_id": 381,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "**Fig. 11.** Instantaneous snapshots of streamwise velocity (left) with black isoline at *ux* = 0*m/s*, and Mach number (right) with black isoline at sonic speed, in the center slice during mode transition."
+  },
+  {
+    "sentence": "The streamwise velocity field includes a black isoline at ux = 0 m/s.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 382,
+    "para_id": 52,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.199735164642334,
+      -1.210488200187683
+    ],
+    "MSU_id": 382,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "**Fig. 11.** Instantaneous snapshots of streamwise velocity (left) with black isoline at *ux* = 0*m/s*, and Mach number (right) with black isoline at sonic speed, in the center slice during mode transition."
+  },
+  {
+    "sentence": "Figure 11 also shows instantaneous snapshots of Mach number in the center slice during mode transition.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 383,
+    "para_id": 52,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.015838146209717,
+      -0.15192139148712158
+    ],
+    "MSU_id": 383,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "**Fig. 11.** Instantaneous snapshots of streamwise velocity (left) with black isoline at *ux* = 0*m/s*, and Mach number (right) with black isoline at sonic speed, in the center slice during mode transition."
+  },
+  {
+    "sentence": "The Mach number field includes a black isoline at the sonic speed.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 384,
+    "para_id": 52,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.9136611223220825,
+      0.5745307207107544
+    ],
+    "MSU_id": 384,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "**Fig. 11.** Instantaneous snapshots of streamwise velocity (left) with black isoline at *ux* = 0*m/s*, and Mach number (right) with black isoline at sonic speed, in the center slice during mode transition."
+  },
+  {
+    "sentence": "Fig. [12] presents the temporal evolutions of pressure signals and flame flashback distance.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 389,
+    "para_id": 54,
+    "paper_id": 1,
+    "2d_coord": [
+      -3.1256308555603027,
+      0.17970916628837585
+    ],
+    "MSU_id": 389,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "Fig. [12](#page-9-0) presents the temporal evolutions of pressure signals and flame flashback distance. Notably, the pressure waveform measured in the cavity (P1) exhibits a high-frequency oscillation, which can be attributed to the acoustic motion in the subsonic region [\\[22\\]](#page-11-0). Additionally, the pressure response recorded in the tail of the isolator (P2) depicts the upstream propagation of backpressure. Based on the severity of the flame flashback, the entire process can be categorized into three stages. In stage #1, the pressure in the cavity rapidly increases with an increase in injection pressure. Although a weak backpressure is observed in the isolator, a severe flashback phenomenon is observed, which is also evident in the early stage of Fig. 10. This phenomenon is mainly associated with the sudden disturbance of the jet to shear-layer under stronger penetrability. In stage #2, the pressure tendency in the cavity remains relatively stable, and the combustor is in a state of energy accumulation by heat-release. The propagation abilities of backpressure and flame flashback are both weak, while the frequency is notably higher due to unsteady heat-release. In the critical stage of mode transition (stage #3), long-term and large-amplitude pressure responses can be detected in the isolator, indicating the establishment of a large-area separation zone. Furthermore, multiple reciprocating oscillations of the separated flow and continuous severe flame flashback phenomenon can be observed. The obvious large-amplitude oscillation mode with a rapid-growing trend is monitored in the cavity, which is caused by the continuous pressurization and depressurization cycles. It can be inferred that the transient thermal choking occurs in this stage, and the intensive heat-release plays a significant role in promoting the mode transition in this stage."
+  },
+  {
+    "sentence": "This work examines the impact of coherent structures on flame behavior under the combined action of unstable inflow and vertical jet.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 411,
+    "para_id": 57,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.4110393524169922,
+      0.0005500316619873047
+    ],
+    "MSU_id": 411,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "Under the current conditions, a stable primary recirculation zone cannot be generated in the cavity during ram mode operation. Consequently, the flame is highly susceptible to the combined effects of large-scale separation vortexes and fuel jet. Even when subjected to severe shear-layer oscillations, the flame is prone to intermittent flameout [\\[9\\]](#page-11-0). In order to examine the impact of coherent structures on flame behavior under the combined action of unstable inflow and vertical jet. This work utilizes the height variation of the *T* = 1800 K isoline at *x* = 220 mm in the center slice to characterize the flame oscillation level, as shown in Fig. 13. The temporal evolution of the flame covers a maximum oscillation period (mode #3) from *t* = 3*.*05 ms to *t* = 4*.*45 ms, during which the flame exhibits the largest amplitude and almost touches the cavity floor. In mode #2 (*t* = 3*.*45 ∼ 3*.*90 ms), the flame position extends beyond the cavity step but does not reach the floor. Fig. [2](#page-4-0) provides a close-up view of mode #2, with the yellow line denoting the dominant mode (mode #1) and a frequency of approximately 8796 Hz. It is evident that the dominant mode corresponds to the self-sustained shear-layer oscillation induced by vortex shedding."
+  },
+  {
+    "sentence": "At snapshot 'A', the shedding vortex collides with the rear-wall of the cavity.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 421,
+    "para_id": 58,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.2172653675079346,
+      0.7240625619888306
+    ],
+    "MSU_id": 421,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "Fig. 14 presents a series of crucial flame snapshots that correspond to the phases displayed in Fig. 13. At snapshot \"A\", the shedding vortex collides with the rear-wall of the cavity, causing a considerable amount of the \"free-stream\" fluid to be entrained by the vortex and transported into the cavity. Furthermore, the flame becomes so severely wrinkled that it nearly detaches downstream. Snapshots \"B\" to \"D\" depict the sequential motion of the vortexes in mode #2, where the flame oscillates at the cavity step height. The periodic law of jet penetration depth variation, accompanied by vortex shedding, can be determined. The high-momentum jet"
+  },
+  {
+    "sentence": "The shedding vortex collides with the rear-wall of the cavity, causing a considerable amount of the 'free-stream' fluid to be entrained by the vortex and transported into the cavity.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 5,
+    "msuid": 422,
+    "para_id": 58,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.0273525714874268,
+      0.4334891736507416
+    ],
+    "MSU_id": 422,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "Fig. 14 presents a series of crucial flame snapshots that correspond to the phases displayed in Fig. 13. At snapshot \"A\", the shedding vortex collides with the rear-wall of the cavity, causing a considerable amount of the \"free-stream\" fluid to be entrained by the vortex and transported into the cavity. Furthermore, the flame becomes so severely wrinkled that it nearly detaches downstream. Snapshots \"B\" to \"D\" depict the sequential motion of the vortexes in mode #2, where the flame oscillates at the cavity step height. The periodic law of jet penetration depth variation, accompanied by vortex shedding, can be determined. The high-momentum jet"
+  },
+  {
+    "sentence": "The flame becomes so severely wrinkled that it nearly detaches downstream.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 423,
+    "para_id": 58,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.8724138736724854,
+      0.6635017395019531
+    ],
+    "MSU_id": 423,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "Fig. 14 presents a series of crucial flame snapshots that correspond to the phases displayed in Fig. 13. At snapshot \"A\", the shedding vortex collides with the rear-wall of the cavity, causing a considerable amount of the \"free-stream\" fluid to be entrained by the vortex and transported into the cavity. Furthermore, the flame becomes so severely wrinkled that it nearly detaches downstream. Snapshots \"B\" to \"D\" depict the sequential motion of the vortexes in mode #2, where the flame oscillates at the cavity step height. The periodic law of jet penetration depth variation, accompanied by vortex shedding, can be determined. The high-momentum jet"
+  },
+  {
+    "sentence": "Snapshots 'B' to 'D' depict the sequential motion of the vortexes in mode #2, where the flame oscillates at the cavity step height.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 424,
+    "para_id": 58,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.5646342039108276,
+      0.8398720026016235
+    ],
+    "MSU_id": 424,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "Fig. 14 presents a series of crucial flame snapshots that correspond to the phases displayed in Fig. 13. At snapshot \"A\", the shedding vortex collides with the rear-wall of the cavity, causing a considerable amount of the \"free-stream\" fluid to be entrained by the vortex and transported into the cavity. Furthermore, the flame becomes so severely wrinkled that it nearly detaches downstream. Snapshots \"B\" to \"D\" depict the sequential motion of the vortexes in mode #2, where the flame oscillates at the cavity step height. The periodic law of jet penetration depth variation, accompanied by vortex shedding, can be determined. The high-momentum jet"
+  },
+  {
+    "sentence": "The spatial structures of the first three POMs are depicted in Fig. 15(b).",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 2,
+    "msuid": 449,
+    "para_id": 65,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.29946279525756836,
+      -0.9293131828308105
+    ],
+    "MSU_id": 449,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "Fig. 15(a) presents a comparison of the frequency between POMs and flame oscillation modes, as discussed previously. It is convincing that the most energetic POM (mode #1) is in close proximity to the dominant flame mode. Similar consistency is also observed in the lower-frequency modes. The spatial structures of the first three POMs are depicted in Fig. 15(b). In mode #1, the rapid exchange of momentum generates a pair of counter-rotating vortices when the high-speed jet penetrates the low-speed separated flow. The upstream vortex, which directly interacts with the fuel jet, explains the periodic variation in the penetration depth of the jet, while the downstream vortex determines the oscillation characteristics of the flame. In mode #2, a similar but larger counter-rotating vortex pair is generated, and the upstream vortex extends to the tail of the isolator. Mode #3 embodies the coherent structures that are related to the largest-amplitude flame oscillation. A single large vortex can be observed at the cavity exit, which occupies the entire height and entrains the flame into the cavity floor, consistent with the previous analyses. The vortex is generated by the sudden contraction of the channel when entering the expansion section. Therefore, it is expected that low-frequency oscillations of this kind can be suppressed by optimizing the dimensional parameters of the combustor."
+  },
+  {
+    "sentence": "This work performed LES of a hydrogen-fueled direct-injection scramjet.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 462,
+    "para_id": 66,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.214226722717285,
+      -0.008012063801288605
+    ],
+    "MSU_id": 462,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "This work performed LES of a hydrogen-fueled direct-injection scramjet using *blastFoam* code combined with detailed finite-rate chemistry. The results satisfactorily reproduced two typical flame structures (cavity shear-layer/cavity assisted jet-wake stabilized flames) corresponding to the scram/ram operating modes, which indicated the solver's capability to effectively model the dual-mode scramjet combustion, as evidenced by the qualitative optical diagnostic images, the quantitative wall pressure measurements and Mach number distributions."
+  },
+  {
+    "sentence": "This capability was evidenced by qualitative optical diagnostic images.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 467,
+    "para_id": 66,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.8733922243118286,
+      -0.6550341844558716
+    ],
+    "MSU_id": 467,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "This work performed LES of a hydrogen-fueled direct-injection scramjet using *blastFoam* code combined with detailed finite-rate chemistry. The results satisfactorily reproduced two typical flame structures (cavity shear-layer/cavity assisted jet-wake stabilized flames) corresponding to the scram/ram operating modes, which indicated the solver's capability to effectively model the dual-mode scramjet combustion, as evidenced by the qualitative optical diagnostic images, the quantitative wall pressure measurements and Mach number distributions."
+  },
+  {
+    "sentence": "This capability was evidenced by quantitative wall pressure measurements.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 468,
+    "para_id": 66,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.6816725730895996,
+      0.0190248042345047
+    ],
+    "MSU_id": 468,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "This work performed LES of a hydrogen-fueled direct-injection scramjet using *blastFoam* code combined with detailed finite-rate chemistry. The results satisfactorily reproduced two typical flame structures (cavity shear-layer/cavity assisted jet-wake stabilized flames) corresponding to the scram/ram operating modes, which indicated the solver's capability to effectively model the dual-mode scramjet combustion, as evidenced by the qualitative optical diagnostic images, the quantitative wall pressure measurements and Mach number distributions."
+  },
+  {
+    "sentence": "This capability was evidenced by Mach number distributions.",
+    "subtitle": "/home/lxy/newenginedata/largeeddyMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 469,
+    "para_id": 66,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.19910912215709686,
+      -0.1006416529417038
+    ],
+    "MSU_id": 469,
+    "paper_info": "largeeddyMSU",
+    "paragraph_info": "This work performed LES of a hydrogen-fueled direct-injection scramjet using *blastFoam* code combined with detailed finite-rate chemistry. The results satisfactorily reproduced two typical flame structures (cavity shear-layer/cavity assisted jet-wake stabilized flames) corresponding to the scram/ram operating modes, which indicated the solver's capability to effectively model the dual-mode scramjet combustion, as evidenced by the qualitative optical diagnostic images, the quantitative wall pressure measurements and Mach number distributions."
+  },
+  {
+    "sentence": "Our approach leverages hundreds of simulated combustion cases with varying initial conditions.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 501,
+    "para_id": 71,
+    "paper_id": 2,
+    "2d_coord": [
+      -1.7141486406326294,
+      -0.043729037046432495
+    ],
+    "MSU_id": 501,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "Understanding the complex combustion dynamics within scramjet engines is critical for advancing high-speed propulsion technologies. However, the large scale and high dimensionality of simulation-generated temporal flow field data present significant challenges for visual interpretation, feature differentiation, and cross-case comparison. In this paper, we present TemporalFlowViz, a parameter-aware visual analytics workflow and system designed to support expert-driven clustering, visualization, and interpretation of temporal flow fields from scramjet combustion simulations. Our approach leverages hundreds of simulated combustion cases with varying initial conditions, each producing time-sequenced flow field images. We use pretrained Vision Transformers to extract high-dimensional embeddings from these frames, apply dimensionality reduction and density-based clustering to uncover latent combustion modes, and construct temporal trajectories in the embedding space to track the evolution of each simulation over time. To bridge the gap between latent representations and expert reasoning, domain specialists annotate representative cluster centroids with descriptive labels. These annotations are used as contextual prompts for a vision–language model, which generates natural-language summaries for individual frames and full simulation cases. The system also supports parameter-based filtering, similarity-based case retrieval, and coordinated multi-view exploration to facilitate in-depth analysis. We demonstrate the effectiveness of TemporalFlowViz through two expert-informed case studies and expert feedback, showing TemporalFlowViz enhances hypothesis generation, supports interpretable pattern discovery, and enhances knowledge discovery in large-scale scramjet combustion analysis."
+  },
+  {
+    "sentence": "Each simulated combustion case produces time-sequenced flow field images.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 502,
+    "para_id": 71,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.9081225395202637,
+      -0.1447940170764923
+    ],
+    "MSU_id": 502,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "Understanding the complex combustion dynamics within scramjet engines is critical for advancing high-speed propulsion technologies. However, the large scale and high dimensionality of simulation-generated temporal flow field data present significant challenges for visual interpretation, feature differentiation, and cross-case comparison. In this paper, we present TemporalFlowViz, a parameter-aware visual analytics workflow and system designed to support expert-driven clustering, visualization, and interpretation of temporal flow fields from scramjet combustion simulations. Our approach leverages hundreds of simulated combustion cases with varying initial conditions, each producing time-sequenced flow field images. We use pretrained Vision Transformers to extract high-dimensional embeddings from these frames, apply dimensionality reduction and density-based clustering to uncover latent combustion modes, and construct temporal trajectories in the embedding space to track the evolution of each simulation over time. To bridge the gap between latent representations and expert reasoning, domain specialists annotate representative cluster centroids with descriptive labels. These annotations are used as contextual prompts for a vision–language model, which generates natural-language summaries for individual frames and full simulation cases. The system also supports parameter-based filtering, similarity-based case retrieval, and coordinated multi-view exploration to facilitate in-depth analysis. We demonstrate the effectiveness of TemporalFlowViz through two expert-informed case studies and expert feedback, showing TemporalFlowViz enhances hypothesis generation, supports interpretable pattern discovery, and enhances knowledge discovery in large-scale scramjet combustion analysis."
+  },
+  {
+    "sentence": "We demonstrate the effectiveness of TemporalFlowViz through two expert-informed case studies and expert feedback.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 513,
+    "para_id": 71,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.6887730360031128,
+      -2.3618814945220947
+    ],
+    "MSU_id": 513,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "Understanding the complex combustion dynamics within scramjet engines is critical for advancing high-speed propulsion technologies. However, the large scale and high dimensionality of simulation-generated temporal flow field data present significant challenges for visual interpretation, feature differentiation, and cross-case comparison. In this paper, we present TemporalFlowViz, a parameter-aware visual analytics workflow and system designed to support expert-driven clustering, visualization, and interpretation of temporal flow fields from scramjet combustion simulations. Our approach leverages hundreds of simulated combustion cases with varying initial conditions, each producing time-sequenced flow field images. We use pretrained Vision Transformers to extract high-dimensional embeddings from these frames, apply dimensionality reduction and density-based clustering to uncover latent combustion modes, and construct temporal trajectories in the embedding space to track the evolution of each simulation over time. To bridge the gap between latent representations and expert reasoning, domain specialists annotate representative cluster centroids with descriptive labels. These annotations are used as contextual prompts for a vision–language model, which generates natural-language summaries for individual frames and full simulation cases. The system also supports parameter-based filtering, similarity-based case retrieval, and coordinated multi-view exploration to facilitate in-depth analysis. We demonstrate the effectiveness of TemporalFlowViz through two expert-informed case studies and expert feedback, showing TemporalFlowViz enhances hypothesis generation, supports interpretable pattern discovery, and enhances knowledge discovery in large-scale scramjet combustion analysis."
+  },
+  {
+    "sentence": "We conducted structured interviews and co-design sessions with two domain experts, E1 and E2.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 5,
+    "msuid": 597,
+    "para_id": 85,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.6723566651344299,
+      -2.389486312866211
+    ],
+    "MSU_id": 597,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "Understanding the dynamic behavior of scramjet combustion processes involves interpreting complex spatial and temporal patterns across numerous simulation runs. To ensure our research addresses real-world analytical challenges, we conducted structured interviews and co-design sessions with two domain experts, E1 and E2. E1 is a researcher specializing in computational fluid dynamics and scramjet combustion modeling, with expertise in reactive flow structures and combustion mode transitions, while E2 is an aerospace engineer engaged in propulsion system development, focusing on simulation-based evaluation of engine configurations and their sensitivity to input parameters of initial conditions."
+  },
+  {
+    "sentence": "We conducted structured interviews and co-design sessions to ensure our research addresses real-world analytical challenges.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 598,
+    "para_id": 85,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.6426669955253601,
+      -2.3158047199249268
+    ],
+    "MSU_id": 598,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "Understanding the dynamic behavior of scramjet combustion processes involves interpreting complex spatial and temporal patterns across numerous simulation runs. To ensure our research addresses real-world analytical challenges, we conducted structured interviews and co-design sessions with two domain experts, E1 and E2. E1 is a researcher specializing in computational fluid dynamics and scramjet combustion modeling, with expertise in reactive flow structures and combustion mode transitions, while E2 is an aerospace engineer engaged in propulsion system development, focusing on simulation-based evaluation of engine configurations and their sensitivity to input parameters of initial conditions."
+  },
+  {
+    "sentence": "We constructed a dataset of scramjet combustion simulations in collaboration with domain experts.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 631,
+    "para_id": 97,
+    "paper_id": 2,
+    "2d_coord": [
+      -1.0339655876159668,
+      -1.260419487953186
+    ],
+    "MSU_id": 631,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "To support the parameter-aware analysis tasks described in the previous section, we constructed a dataset of scramjet combustion simulations in collaboration with domain experts. The dataset was generated using a specialized computational fluid dynamics (CFD) platform developed for high-speed reactive flow modeling."
+  },
+  {
+    "sentence": "The simulation campaign covers over 200 individual scramjet combustion cases.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 634,
+    "para_id": 98,
+    "paper_id": 2,
+    "2d_coord": [
+      -1.5099198818206787,
+      -0.7239279747009277
+    ],
+    "MSU_id": 634,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "The simulation campaign covers over 200 individual scramjet combustion cases, each conducted under a distinct combination of initial conditions. Each simulation case outputs a time series of flow field data recorded at regular time intervals, capturing the evolution of combustion dynamics from ignition to either a stable combustion state or an instability-induced shutdown. The total dataset includes approximately 3 terabytes of flow field data. Each case is defined by a unique combination of the following three initial condition parameters:"
+  },
+  {
+    "sentence": "Each simulation case is conducted under a distinct combination of initial conditions.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 635,
+    "para_id": 98,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.3625388145446777,
+      -0.5709781050682068
+    ],
+    "MSU_id": 635,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "The simulation campaign covers over 200 individual scramjet combustion cases, each conducted under a distinct combination of initial conditions. Each simulation case outputs a time series of flow field data recorded at regular time intervals, capturing the evolution of combustion dynamics from ignition to either a stable combustion state or an instability-induced shutdown. The total dataset includes approximately 3 terabytes of flow field data. Each case is defined by a unique combination of the following three initial condition parameters:"
+  },
+  {
+    "sentence": "Figure 3: Comparison of UMAP-projected trajectories using pressure field embeddings from whole frames versus cropped regions.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 692,
+    "para_id": 112,
+    "paper_id": 2,
+    "2d_coord": [
+      -1.0083142518997192,
+      -1.346848964691162
+    ],
+    "MSU_id": 692,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "Figure 3: Comparison of UMAP-projected trajectories using pressure field embeddings from whole frames (top 2 graphs) versus cropped regions (bottom 2 graphs). Cropped inputs yield more compact clusters and clearer trajectory convergence."
+  },
+  {
+    "sentence": "We tested the hypothesis by comparing two preprocessing strategies.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 701,
+    "para_id": 115,
+    "paper_id": 2,
+    "2d_coord": [
+      1.0387864112854004,
+      -0.8258669376373291
+    ],
+    "MSU_id": 701,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "To test the hypothesis, we compared two preprocessing strategies: using the whole flow field frames versus applying a spatial crop around the isolator and cavity region. We kept the size and location of crop box fixed across all frames of a flow field channel (e.g. pressure field) to ensure comparability. Both inputs were passed through the same embedding extraction pipeline and then projected into the UMAP-reduced latent space."
+  },
+  {
+    "sentence": "We tested three pretrained ViT models: BLIP2opt-2.7b, InternViT-6B-v2.5, and AIMv2-1B.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 717,
+    "para_id": 118,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.638084888458252,
+      -0.43705326318740845
+    ],
+    "MSU_id": 717,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "To evaluate how different ViT architectures capture combustionrelated spatial features, we tested three pretrained models: BLIP2opt-2.7b [18], InternViT-6B-v2.5 [4], and AIMv2-1B [11]. For each model, we extracted frame-level embeddings from the same cropped input images and visualized their latent distributions using dimensionality reduction method."
+  },
+  {
+    "sentence": "We tested the models to evaluate how different ViT architectures capture combustion-related spatial features.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 718,
+    "para_id": 118,
+    "paper_id": 2,
+    "2d_coord": [
+      -1.7905831336975098,
+      0.6339151859283447
+    ],
+    "MSU_id": 718,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "To evaluate how different ViT architectures capture combustionrelated spatial features, we tested three pretrained models: BLIP2opt-2.7b [18], InternViT-6B-v2.5 [4], and AIMv2-1B [11]. For each model, we extracted frame-level embeddings from the same cropped input images and visualized their latent distributions using dimensionality reduction method."
+  },
+  {
+    "sentence": "The top two plots illustrate the projection results using t-SNE for both pressure and OH field embeddings.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 739,
+    "para_id": 123,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.1233279705047607,
+      -1.296107292175293
+    ],
+    "MSU_id": 739,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "This projection allows experts to visually assess latent structure, combustion mode separation, and temporal trajectory continuity. As shown in Fig. 4, the top two plots illustrate the projection results using t-SNE for both pressure and OH field embeddings, while the bottom two plots show the corresponding UMAP projections."
+  },
+  {
+    "sentence": "The bottom two plots show the corresponding UMAP projections.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 740,
+    "para_id": 123,
+    "paper_id": 2,
+    "2d_coord": [
+      0.9402599334716797,
+      -1.0063811540603638
+    ],
+    "MSU_id": 740,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "This projection allows experts to visually assess latent structure, combustion mode separation, and temporal trajectory continuity. As shown in Fig. 4, the top two plots illustrate the projection results using t-SNE for both pressure and OH field embeddings, while the bottom two plots show the corresponding UMAP projections."
+  },
+  {
+    "sentence": "Based on visual evaluation and expert feedback, we selected UMAP as the default projection method for OH fields.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 746,
+    "para_id": 125,
+    "paper_id": 2,
+    "2d_coord": [
+      0.4702185392379761,
+      -0.4833213686943054
+    ],
+    "MSU_id": 746,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "Based on visual evaluation and expert feedback, we selected UMAP as the default projection method for OH fields. UMAP not only enables more faithful temporal trajectory construction but also produces cleaner latent clusters that are easier to annotate and interpret."
+  },
+  {
+    "sentence": "Experts evaluated various formulations based on their ability to capture perceptual and physically meaningful similarities.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 769,
+    "para_id": 131,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.9332045316696167,
+      -0.8108240365982056
+    ],
+    "MSU_id": 769,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "To quantify trajectory similarity, we have designed and iteratively refined a temporal dissimilarity metric in collaboration with domain experts. Experts evaluated various formulations based on their ability to capture perceptual and physically meaningful similarities—particularly in late-stage behavior related to convergence and stabilization."
+  },
+  {
+    "sentence": "Experts evaluated various formulations based on their ability to capture late-stage behavior related to convergence and stabilization.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 5,
+    "msuid": 770,
+    "para_id": 131,
+    "paper_id": 2,
+    "2d_coord": [
+      -1.9028183221817017,
+      -1.2507572174072266
+    ],
+    "MSU_id": 770,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "To quantify trajectory similarity, we have designed and iteratively refined a temporal dissimilarity metric in collaboration with domain experts. Experts evaluated various formulations based on their ability to capture perceptual and physically meaningful similarities—particularly in late-stage behavior related to convergence and stabilization."
+  },
+  {
+    "sentence": "We compared two open-source VLMs for this task: InternVL2.5-38B and Gemma-3-27B.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 790,
+    "para_id": 138,
+    "paper_id": 2,
+    "2d_coord": [
+      -1.435799479484558,
+      -0.9656205177307129
+    ],
+    "MSU_id": 790,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "We compared two open-source VLMs for this task: InternVL2.5-38B and Gemma-3-27B [24]. While InternVL2.5 achieves strong performance on vision-language benchmarks, its deployment presented practical limitations, including high VRAM usage, limited quantization support, and a lack of pre-optimized deployment formats. In contrast, Gemma-3 offers lightweight 4-bit and 8-bit quantizations and efficient image-to-text generation speed. It successfully processes multiple images in a single pass without out-ofmemory failures, making it more suitable for our batch-oriented visual analytics workflow. As a result, Gemma-3 is adopted in our workflow deployment."
+  },
+  {
+    "sentence": "To validate the effectiveness of TemporalFlowViz in supporting real-world analytical workflows, we conducted two case studies.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 865,
+    "para_id": 155,
+    "paper_id": 2,
+    "2d_coord": [
+      0.21837002038955688,
+      -1.824486255645752
+    ],
+    "MSU_id": 865,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "To validate the effectiveness of TemporalFlowViz in supporting real-world analytical workflows, we conducted two case studies involving independent exploration. These cases were designed to reflect practical use scenarios and to evaluate how well the system supports expert reasoning, pattern recognition, and semantic interpretation in combustion simulation analysis."
+  },
+  {
+    "sentence": "The case studies involved independent exploration.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 866,
+    "para_id": 155,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.3116580545902252,
+      -2.176872730255127
+    ],
+    "MSU_id": 866,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "To validate the effectiveness of TemporalFlowViz in supporting real-world analytical workflows, we conducted two case studies involving independent exploration. These cases were designed to reflect practical use scenarios and to evaluate how well the system supports expert reasoning, pattern recognition, and semantic interpretation in combustion simulation analysis."
+  },
+  {
+    "sentence": "Two additional experts, E3 and E4, were invited.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 869,
+    "para_id": 156,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.19083110988140106,
+      -2.15443754196167
+    ],
+    "MSU_id": 869,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "To ensure objective evaluation of the final implementation, two additional experts, E3 and E4, were invited to conduct independent analyses using the deployed system."
+  },
+  {
+    "sentence": "The experts conducted independent analyses.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 870,
+    "para_id": 156,
+    "paper_id": 2,
+    "2d_coord": [
+      0.010697420686483383,
+      -1.8023624420166016
+    ],
+    "MSU_id": 870,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "To ensure objective evaluation of the final implementation, two additional experts, E3 and E4, were invited to conduct independent analyses using the deployed system."
+  },
+  {
+    "sentence": "The analyses were conducted using the deployed system.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 5,
+    "msuid": 871,
+    "para_id": 156,
+    "paper_id": 2,
+    "2d_coord": [
+      0.9641103744506836,
+      -0.7369821071624756
+    ],
+    "MSU_id": 871,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "To ensure objective evaluation of the final implementation, two additional experts, E3 and E4, were invited to conduct independent analyses using the deployed system."
+  },
+  {
+    "sentence": "The purpose of involving the experts was to ensure objective evaluation of the final implementation.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 872,
+    "para_id": 156,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.4861431121826172,
+      -2.379528045654297
+    ],
+    "MSU_id": 872,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "To ensure objective evaluation of the final implementation, two additional experts, E3 and E4, were invited to conduct independent analyses using the deployed system."
+  },
+  {
+    "sentence": "Case Study 1 focused on pressure field evolution.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 873,
+    "para_id": 157,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.751894474029541,
+      0.35187336802482605
+    ],
+    "MSU_id": 873,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "Case Study 1 focused on pressure field evolution and combustion mode interpretation and was performed by E3, a postdoctoral researcher specializing in reactive flow diagnostics. Case Study 2 explored the classification of combustion modes based on OH field trajectories and was conducted by E4, a senior simulation engineer engaged in engine configuration evaluation."
+  },
+  {
+    "sentence": "Case Study 1 focused on combustion mode interpretation.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 874,
+    "para_id": 157,
+    "paper_id": 2,
+    "2d_coord": [
+      0.42998409271240234,
+      0.3391401171684265
+    ],
+    "MSU_id": 874,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "Case Study 1 focused on pressure field evolution and combustion mode interpretation and was performed by E3, a postdoctoral researcher specializing in reactive flow diagnostics. Case Study 2 explored the classification of combustion modes based on OH field trajectories and was conducted by E4, a senior simulation engineer engaged in engine configuration evaluation."
+  },
+  {
+    "sentence": "Case Study 2 explored the classification of combustion modes based on OH field trajectories.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 5,
+    "msuid": 876,
+    "para_id": 157,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.27690237760543823,
+      -0.014367334544658661
+    ],
+    "MSU_id": 876,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "Case Study 1 focused on pressure field evolution and combustion mode interpretation and was performed by E3, a postdoctoral researcher specializing in reactive flow diagnostics. Case Study 2 explored the classification of combustion modes based on OH field trajectories and was conducted by E4, a senior simulation engineer engaged in engine configuration evaluation."
+  },
+  {
+    "sentence": "We analyzed how pressure field evolution reflects combustion mode transitions.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 879,
+    "para_id": 158,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.232459783554077,
+      0.7274155616760254
+    ],
+    "MSU_id": 879,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "In this case study, we analyzed how pressure field evolution and latent-space trajectories reflect combustion mode transitions, and how the system facilitated interpretation through trajectory-based comparison and automatic report generation."
+  },
+  {
+    "sentence": "We analyzed how latent-space trajectories reflect combustion mode transitions.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 5,
+    "msuid": 880,
+    "para_id": 158,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.28267771005630493,
+      0.41137203574180603
+    ],
+    "MSU_id": 880,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "In this case study, we analyzed how pressure field evolution and latent-space trajectories reflect combustion mode transitions, and how the system facilitated interpretation through trajectory-based comparison and automatic report generation."
+  },
+  {
+    "sentence": "For three selected cases (a1–c1), we observed the spatiotemporal pressure evolution.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 892,
+    "para_id": 160,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.8971285820007324,
+      0.020154744386672974
+    ],
+    "MSU_id": 892,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "We filtered simulation cases using the Filtering Panel to constrain initial conditions such as pressure, temperature, and humidity. For three selected cases (a1–c1), we observed the spatiotemporal pressure evolution in [Fig. 5\\(](#page-6-0)a2–c2). The blue-red interface indicated a sharp pressure surge. In these cases, the surges appeared well before the cavity—indicative of ramjet-like behavior. As the simulation progressed, the surges either stabilized or oscillated within a narrow region. After 6 ms, the pressure fields remained largely stable in a2, b2, and c2, consistent with steady-state combustion. The first two frames in each series (a2–c2) showed surge positions between the isolator and cavity, a signature of earlystage scramjet ignition."
+  },
+  {
+    "sentence": "The spatiotemporal pressure evolution is shown in Figure 5 (a2–c2).",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 2,
+    "msuid": 893,
+    "para_id": 160,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.940859317779541,
+      -0.21425089240074158
+    ],
+    "MSU_id": 893,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "We filtered simulation cases using the Filtering Panel to constrain initial conditions such as pressure, temperature, and humidity. For three selected cases (a1–c1), we observed the spatiotemporal pressure evolution in [Fig. 5\\(](#page-6-0)a2–c2). The blue-red interface indicated a sharp pressure surge. In these cases, the surges appeared well before the cavity—indicative of ramjet-like behavior. As the simulation progressed, the surges either stabilized or oscillated within a narrow region. After 6 ms, the pressure fields remained largely stable in a2, b2, and c2, consistent with steady-state combustion. The first two frames in each series (a2–c2) showed surge positions between the isolator and cavity, a signature of earlystage scramjet ignition."
+  },
+  {
+    "sentence": "The study compared the Temporal Trajectory View and the Similar Trajectories View.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 902,
+    "para_id": 161,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.2571042776107788,
+      -2.2757859230041504
+    ],
+    "MSU_id": 902,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "By comparing the Temporal Trajectory View and the Similar Trajectories View, we confirmed that cases with similar trajectory shapes exhibited consistent pressure field evolution. In particular,"
+  },
+  {
+    "sentence": "Cases (a1)–(c1) in [Fig. 5] followed highly similar combustion pathways.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 911,
+    "para_id": 163,
+    "paper_id": 2,
+    "2d_coord": [
+      0.502156138420105,
+      0.4739498794078827
+    ],
+    "MSU_id": 911,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "cases (a1)–(c1) in [Fig. 5](#page-6-0) followed highly similar combustion pathways: each began with unstable scramjet ignition and transitioned to stable ramjet combustion by approximately 6 ms. This demonstrated the effectiveness of latent trajectory analysis for understanding dynamic combustion behavior."
+  },
+  {
+    "sentence": "We focused on case (a) to study stable scramjet combustion.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 914,
+    "para_id": 164,
+    "paper_id": 2,
+    "2d_coord": [
+      0.7751390933990479,
+      -0.6218011379241943
+    ],
+    "MSU_id": 914,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "In a separate analysis, we focused on case (a) to study stable scramjet combustion. As shown in [Fig. 6\\(](#page-7-0)a), the trajectory remained within a tight cluster throughout the simulation. A zoomedin view was shown in [Fig. 6\\(](#page-7-0)a1), while frame snapshots were shown in (af). In this case, the pressure surges consistently occured between the isolator and cavity, and remained stationary—indicative of stable scramjet operation. According to InternViT-based clustering results, trajectories corresponding to stable scramjet combustion always remained within small round clusters, such as circles (a)–(d) in [Fig. 6.](#page-7-0) In contrast, ramjet cases typically originated from such clusters and terminated in larger clusters such as (e), which aggregated stable ramjet frames."
+  },
+  {
+    "sentence": "We collaborated with expert E3 to manually annotate representative cluster centroids.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 921,
+    "para_id": 165,
+    "paper_id": 2,
+    "2d_coord": [
+      -1.599624752998352,
+      -1.1816669702529907
+    ],
+    "MSU_id": 921,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "To evaluate the semantic reporting capability, we collaborated with expert E3 to manually annotate representative cluster centroids. As shown in [Fig. 7,](#page-7-1) pressing the *save description* button stored the expert-written description for the centroid of cluster 0 (top-left). The bottom-left panel showed the auto-generated description for the 12th frame of case (a), produced by the Gemma-3 VLM using nearest centroid descriptions and images as context. The right panel showed the case-level summary generated by aggregating frame-level outputs."
+  },
+  {
+    "sentence": "We focused on the hydroxyl radical (OH) field.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 939,
+    "para_id": 169,
+    "paper_id": 2,
+    "2d_coord": [
+      -1.689008116722107,
+      0.5988507270812988
+    ],
+    "MSU_id": 939,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "In this case, we focused on the hydroxyl radical (OH) field, which served as an important indicator of combustion activity. To reduce noise and enhance spatial interpretability, the OH field images were preprocessed by cropping them to retain only the core scramjet engine region, removing irrelevant background areas. Based on domain knowledge, we assigned higher weights to the upper region of the engine, where the OH field exhibited stronger variation and contains more informative flame structures. Less active regions, such as the left portion of the domain, received smaller weights. These weighted OH field images were then encoded into highdimensional embeddings using a pretrained BLIP-2 Vision Transformer (ViT) model, capturing localized combustion characteristics across time."
+  },
+  {
+    "sentence": "The temporal trajectory of the selected case was shown in region (s1).",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 953,
+    "para_id": 170,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.49597710371017456,
+      -2.193263292312622
+    ],
+    "MSU_id": 953,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "Using the Filtering Panel in visual analytics system, E4 interactively adjusted the ranges of initial conditions, along with DB-SCAN clustering parameters including ε and *minSamples*, to refine the separation of trajectory groups. As illustrated in [Fig. 8,](#page-8-0) the temporal trajectory of the selected case was shown in region (s1), with its two most similar trajectories located at (s2) and (s3). The corresponding OH field snapshots were presented in regions (f1)–(f3)."
+  },
+  {
+    "sentence": "The two most similar trajectories were located at regions (s2) and (s3).",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 954,
+    "para_id": 170,
+    "paper_id": 2,
+    "2d_coord": [
+      -1.3187400102615356,
+      -1.2550759315490723
+    ],
+    "MSU_id": 954,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "Using the Filtering Panel in visual analytics system, E4 interactively adjusted the ranges of initial conditions, along with DB-SCAN clustering parameters including ε and *minSamples*, to refine the separation of trajectory groups. As illustrated in [Fig. 8,](#page-8-0) the temporal trajectory of the selected case was shown in region (s1), with its two most similar trajectories located at (s2) and (s3). The corresponding OH field snapshots were presented in regions (f1)–(f3)."
+  },
+  {
+    "sentence": "The corresponding OH field snapshots were presented in regions (f1)–(f3).",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 955,
+    "para_id": 170,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.708515167236328,
+      0.24284884333610535
+    ],
+    "MSU_id": 955,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "Using the Filtering Panel in visual analytics system, E4 interactively adjusted the ranges of initial conditions, along with DB-SCAN clustering parameters including ε and *minSamples*, to refine the separation of trajectory groups. As illustrated in [Fig. 8,](#page-8-0) the temporal trajectory of the selected case was shown in region (s1), with its two most similar trajectories located at (s2) and (s3). The corresponding OH field snapshots were presented in regions (f1)–(f3)."
+  },
+  {
+    "sentence": "The shear layer combustion mode could be observed in the circled regions of Fig. 8d(e).",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 959,
+    "para_id": 171,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.30846571922302246,
+      0.11053121089935303
+    ],
+    "MSU_id": 959,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "The clustering results revealed two distinct combustion modes. The red cluster in the scatter plot corresponded to the *shear layer combustion mode*, characterized by narrow, stratified flame structures forming along the fuel–air interface. This could be observed in the circled regions of [Fig. 8\\(](#page-8-0)d)(e), where the OH field intensity was concentrated along a thin horizontal band. In contrast, the yellow cluster corresponded to the *jet-wake combustion mode*, where the flame emerges directly from the fuel inlet and forms a broad, curved tail. This was evident in the circled regions of [Fig. 8\\(](#page-8-0)a)(b),"
+  },
+  {
+    "sentence": "The jet-wake combustion mode was evident in the circled regions of Fig. 8a(b).",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 964,
+    "para_id": 171,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.7731223106384277,
+      0.5549929141998291
+    ],
+    "MSU_id": 964,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "The clustering results revealed two distinct combustion modes. The red cluster in the scatter plot corresponded to the *shear layer combustion mode*, characterized by narrow, stratified flame structures forming along the fuel–air interface. This could be observed in the circled regions of [Fig. 8\\(](#page-8-0)d)(e), where the OH field intensity was concentrated along a thin horizontal band. In contrast, the yellow cluster corresponded to the *jet-wake combustion mode*, where the flame emerges directly from the fuel inlet and forms a broad, curved tail. This was evident in the circled regions of [Fig. 8\\(](#page-8-0)a)(b),"
+  },
+  {
+    "sentence": "E4 observed that even after the pressure field of a simulation reaches a steady state, the OH field trajectory may continue to fluctuate within a relatively wide region of the embedding space.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 971,
+    "para_id": 174,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.7574543952941895,
+      -0.106937937438488
+    ],
+    "MSU_id": 971,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "Interestingly, E4 also observed that even after the pressure field of a simulation reaches a steady state, the OH field trajectory may continue to fluctuate within a relatively wide region of the embedding space. However, these fluctuations consistently remain within the same cluster. This suggested that while the flame shape exhibited spatial variability, the underlying combustion mode remained stable. This behavior reflected the system's ability to distinguish transient structural changes from actual combustion mode transitions—enabling robust combustion classification despite internal oscillations."
+  },
+  {
+    "sentence": "We conducted post-session interviews with the domain experts.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 979,
+    "para_id": 176,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.3212733268737793,
+      -0.9912371635437012
+    ],
+    "MSU_id": 979,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "In addition to the structured analyses presented in our case studies, we also conducted post-session interviews with the domain experts to gather broader impressions of system usability, interpretability, and analytical value. These sessions aimed to evaluate not only how well the system supported specific tasks, but also how experts perceived its potential for generalization to larger workflows and collaboration scenarios. The following summarizes key insights drawn from these expert reflections."
+  },
+  {
+    "sentence": "The interviews were conducted to gather broader impressions of system usability, interpretability, and analytical value.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 980,
+    "para_id": 176,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.19692695140838623,
+      -2.2832846641540527
+    ],
+    "MSU_id": 980,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "In addition to the structured analyses presented in our case studies, we also conducted post-session interviews with the domain experts to gather broader impressions of system usability, interpretability, and analytical value. These sessions aimed to evaluate not only how well the system supported specific tasks, but also how experts perceived its potential for generalization to larger workflows and collaboration scenarios. The following summarizes key insights drawn from these expert reflections."
+  },
+  {
+    "sentence": "These sessions aimed to evaluate how well the system supported specific tasks.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 981,
+    "para_id": 176,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.10928931832313538,
+      -2.0185248851776123
+    ],
+    "MSU_id": 981,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "In addition to the structured analyses presented in our case studies, we also conducted post-session interviews with the domain experts to gather broader impressions of system usability, interpretability, and analytical value. These sessions aimed to evaluate not only how well the system supported specific tasks, but also how experts perceived its potential for generalization to larger workflows and collaboration scenarios. The following summarizes key insights drawn from these expert reflections."
+  },
+  {
+    "sentence": "These sessions aimed to evaluate how experts perceived the system’s potential for generalization to larger workflows and collaboration scenarios.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 982,
+    "para_id": 176,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.9382097721099854,
+      -2.144785165786743
+    ],
+    "MSU_id": 982,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "In addition to the structured analyses presented in our case studies, we also conducted post-session interviews with the domain experts to gather broader impressions of system usability, interpretability, and analytical value. These sessions aimed to evaluate not only how well the system supported specific tasks, but also how experts perceived its potential for generalization to larger workflows and collaboration scenarios. The following summarizes key insights drawn from these expert reflections."
+  },
+  {
+    "sentence": "The temporal trajectory of the selected case was shown in region (s1).",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 2,
+    "msuid": 985,
+    "para_id": 178,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.49597710371017456,
+      -2.193263292312622
+    ],
+    "MSU_id": 985,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "Figure 8: **Case Study 2: Clustering of OH Field Trajectories to Identify Combustion Modes.** The temporal trajectory of the selected case was shown in region (s1), with its two most similar trajectories located at (s2) and (s3). The corresponding OH field images for these cases were displayed in (f1)–(f3). Two distinct combustion modes were identified: the red cluster corresponds to the *shear layer combustion mode*, characterized by narrow, stratified flame structures along the fuel–air interface (see circled regions in (d)–(e)); the yellow cluster corresponded to the *jet-wake combustion mode*, where the flame formed a wide, curved tail extending from the fuel inlet (see circled regions in (a)–(b)). The clustering results demonstrated that the system could effectively separate and characterize combustion behaviors across different cases, even when OH field trajectories fluctuated at steady state."
+  },
+  {
+    "sentence": "The two most similar trajectories to the selected case were located at (s2) and (s3).",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 2,
+    "msuid": 986,
+    "para_id": 178,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.3954092264175415,
+      -2.0674984455108643
+    ],
+    "MSU_id": 986,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "Figure 8: **Case Study 2: Clustering of OH Field Trajectories to Identify Combustion Modes.** The temporal trajectory of the selected case was shown in region (s1), with its two most similar trajectories located at (s2) and (s3). The corresponding OH field images for these cases were displayed in (f1)–(f3). Two distinct combustion modes were identified: the red cluster corresponds to the *shear layer combustion mode*, characterized by narrow, stratified flame structures along the fuel–air interface (see circled regions in (d)–(e)); the yellow cluster corresponded to the *jet-wake combustion mode*, where the flame formed a wide, curved tail extending from the fuel inlet (see circled regions in (a)–(b)). The clustering results demonstrated that the system could effectively separate and characterize combustion behaviors across different cases, even when OH field trajectories fluctuated at steady state."
+  },
+  {
+    "sentence": "The corresponding OH field images for these cases were displayed in (f1)–(f3).",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 2,
+    "msuid": 987,
+    "para_id": 178,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.6953704357147217,
+      0.09510782361030579
+    ],
+    "MSU_id": 987,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "Figure 8: **Case Study 2: Clustering of OH Field Trajectories to Identify Combustion Modes.** The temporal trajectory of the selected case was shown in region (s1), with its two most similar trajectories located at (s2) and (s3). The corresponding OH field images for these cases were displayed in (f1)–(f3). Two distinct combustion modes were identified: the red cluster corresponds to the *shear layer combustion mode*, characterized by narrow, stratified flame structures along the fuel–air interface (see circled regions in (d)–(e)); the yellow cluster corresponded to the *jet-wake combustion mode*, where the flame formed a wide, curved tail extending from the fuel inlet (see circled regions in (a)–(b)). The clustering results demonstrated that the system could effectively separate and characterize combustion behaviors across different cases, even when OH field trajectories fluctuated at steady state."
+  },
+  {
+    "sentence": "Our case studies focused on steady and quasi-steady combustion.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 1027,
+    "para_id": 186,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.8360873460769653,
+      0.6065548658370972
+    ],
+    "MSU_id": 1027,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "Although our case studies focused on steady and quasi-steady combustion, the system is designed to generalize across unsteady or transient events. Preliminary tests indicate that the current trajectory modeling can serve as a foundation for more expressive representations—such as hierarchical time-scale embedding or eventaware trajectory segmentation—making TemporalFlowViz adaptable to a wider range of phenomena including blowout or reignition."
+  },
+  {
+    "sentence": "We demonstrated the utility of TemporalFlowViz through two expert-driven case studies focusing on pressure and OH field dynamics.",
+    "subtitle": "/home/lxy/newenginedata/temporalvisMSU",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 1038,
+    "para_id": 188,
+    "paper_id": 2,
+    "2d_coord": [
+      -2.1684587001800537,
+      -1.4755136966705322
+    ],
+    "MSU_id": 1038,
+    "paper_info": "temporalvisMSU",
+    "paragraph_info": "In this paper, we presented TemporalFlowViz, a visual analytics workflow and system for expert-guided exploration, clustering, and interpretation of temporal flow-field data from scramjet combustion simulations. TemporalFlowViz combines ViT embeddings, interactive trajectory construction, density-based clustering, and expertaugmented semantic summarization to support interpretable analysis of high-dimensional, time-sequenced combustion data. By allowing experts to annotate representative cluster centroids, which then condition a vision–language model for generating frame- and case-level descriptions, we establish a reusable semantic layer that transforms complex flow field patterns into interpretable textual narratives. This multimodal annotation pipeline enables automated reporting, similarity-driven retrieval, and collaborative analysis with minimal manual overhead. We demonstrated the utility of TemporalFlowViz through two expert-driven case studies focusing on pressure and OH field dynamics. These studies revealed the system's ability to distinguish combustion modes, uncover evolution patterns, and support scalable interpretation across parameterized simulations. Expert feedback confirmed that the system accelerates hypothesis validation, reduces cognitive load, and facilitates knowledge sharing across teams. In summary, TemporalFlowViz represents a step toward deeply integrated, expert-informed visual analytics for scientific simulations—fusing deep learning, trajectorybased reasoning, and semantic interpretability into a unified framework for understanding combustion dynamics at scale."
+  }
+]

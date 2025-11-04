@@ -19,14 +19,13 @@ class PDFRAGSystem:
     def __init__(self):
         """初始化RAG系统"""
         # 从环境变量中读取配置
-        self.api_key = os.getenv("EMBEDDING_API_KEY", os.getenv("OPENAI_API_KEY", ""))
+        self.api_key = os.getenv("OPENAI_API_KEY", os.getenv("OPENAI_API_KEY", ""))
         self.base_url = os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1")
         
         # 验证API密钥是否存在
         if not self.api_key:
             print("警告: 未设置API密钥，请确保.env文件中有正确的配置")
         
-        # 初始化嵌入模型和语言模型
         self.embeddings = OpenAIEmbeddings(
             openai_api_key=self.api_key,
             base_url=self.base_url

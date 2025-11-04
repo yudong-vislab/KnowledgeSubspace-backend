@@ -1,7 +1,7 @@
 # app.py
 import os, json, sys, pathlib, hashlib, time
 from typing import List, Dict, Any, Optional
-
+import re
 from flask import Flask, jsonify, request, abort, make_response
 from flask_cors import CORS
 from dotenv import load_dotenv
@@ -27,12 +27,9 @@ except Exception:
 
 # ================= Env & OpenAI client =================
 load_dotenv()
-# OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "").strip()
-# OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1").strip()
-# OPENAI_DEFAULT_MODEL = os.getenv("OPENAI_DEFAULT_MODEL", "gpt-3.5-turbo").strip()
-OPENAI_API_KEY =  "sk-pZGA3K2BhjI1dE662c8eBfD18b5b4741B8A33f1509012e4c"
-OPENAI_BASE_URL = "https://hk.xty.app/v1"
-OPENAI_DEFAULT_MODEL = "gpt-4"  # 可换成你代理支持的
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "").strip()
+OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1").strip()
+OPENAI_DEFAULT_MODEL = os.getenv("OPENAI_DEFAULT_MODEL", "gpt-3.5-turbo").strip()
 
 from openai import OpenAI
 client = OpenAI(api_key=OPENAI_API_KEY, base_url=OPENAI_BASE_URL)
@@ -85,6 +82,199 @@ def _ensure_full_package(data: dict) -> dict:
 
 def load_data(): return _ensure_full_package(_json_load(DATA_PATH))
 def save_data(data): _json_save(DATA_PATH, data)
+
+def parse_subspace_command(s: str) -> str:
+    """
+    将自然语言标准化为前端可路由的简单命令字符串。
+    仅输出以下几类（与前端 commandRouter.js 完全对齐）：
+      - "show all subspaces"
+      - "hide all subspaces"
+      - "show name1, name2"
+      - "add name1, name2"
+      - "delete name1, name2"
+      - "list subspaces"
+      - "subspace count"
+
+    兼容的输入（示例）：
+      英文：
+        - show all / show all subspaces / reveal all panels
+        - hide all / hide all subspaces / collapse all panels
+        - show background and result (subspaces)
+        - only show experiment subspace / show only methods and results
+        - add subspace A, add A and B, new subspace A
+        - delete/remove methods / delete A, B
+        - list subspaces / show subspace list
+        - how many subspaces / subspace count
+      中文：
+        - 显示所有子空间 / 展示全部子空间
+        - 隐藏所有子空间 / 清空视图
+        - 显示 背景 和 结果 子空间 / 只显示 实验 子空间 / 仅显示 方法 子空间
+        - 新增 子空间 A / 新建 A / 新增 A 和 B
+        - 删除 子空间 A / 删除 A、B
+        - 列出子空间 / 子空间列表
+        - 子空间数量 / 有多少个子空间
+    """
+    import re
+
+    raw = (s or "").strip()
+    if not raw:
+        return "show all subspaces"
+
+    # 原文 & 小写（英文处理用）
+    t = raw.strip()
+    tl = t.lower()
+
+    # 统一空白
+    tl = re.sub(r"\s+", " ", tl)
+
+    # --- 礼貌/填充词清理（英文） ---
+    tl = re.sub(r"^(please|pls|could you|can you|would you|i'?d like to|kindly)\s+", "", tl)
+
+    # --- 动词与同义词标准化（英文） ---
+    # only/just 显示
+    tl = re.sub(r"^(only|just)\s+show\s+", "show ", tl)
+    tl = re.sub(r"^show\s+only\s+", "show ", tl)
+    # display/reveal/present/visualize -> show
+    tl = re.sub(r"^(display|reveal|present|visuali[sz]e)\s+", "show ", tl)
+    # collapse -> hide
+    tl = re.sub(r"^collapse\s+", "hide ", tl)
+
+    # --- 中文动词标准化 ---
+    # 「只/仅 显示」→ show
+    tl = re.sub(r"^(只显示|仅显示)\s*", "显示 ", tl)
+    # 「显示/隐藏/新增/新建/删除/列出/列表」前缀统一
+    tl = re.sub(r"^展示\s*", "显示 ", tl)
+    tl = re.sub(r"^隐藏\s*", "hide ", tl)       # 直接转英文，便于统一处理
+    tl = re.sub(r"^显示\s*", "show ", tl)
+    tl = re.sub(r"^(新增|新建)\s*", "add ", tl)
+    tl = re.sub(r"^删除\s*", "delete ", tl)
+    tl = re.sub(r"^(列出|查看)\s*子空间", "list subspaces", tl)
+    tl = re.sub(r"子空间列表", "list subspaces", tl)
+    tl = re.sub(r"(子空间数量|有多少个子空间)", "subspace count", tl)
+    tl = re.sub(r"(清空视图)", "hide all subspaces", tl)
+
+    # --- 统一“全部/所有” ---
+    tl = tl.replace("all panels", "all subspaces")
+    tl = tl.replace("所有 子空间", "all subspaces")
+    tl = tl.replace("全部 子空间", "all subspaces")
+
+    # --- 快捷判断：list / count ---
+    if re.search(r"\blist subspaces\b|\bshow subspace list\b", tl):
+        return "list subspaces"
+    if re.search(r"\bsubspace count\b|\bhow many subspaces\b", tl):
+        return "subspace count"
+
+    # --- 全部显隐（要在通用 show/hide 前） ---
+    if re.search(r"\b(show|expand)\b.*\ball subspaces\b", tl):
+        return "show all subspaces"
+    if re.search(r"\b(hide|collapse)\b.*\ball subspaces\b", tl):
+        return "hide all subspaces"
+
+    # === 工具：抽取名字（兼顾英/中连接词） ===
+    def _extract_names(segment: str):
+        seg = segment.strip()
+
+        # 去掉 “subspace(s)/panel(s)/子空间/面板/组/类别”等噪音
+        seg = re.sub(r"\b(subspaces?|panels?|groups?|categories?)\b", " ", seg)
+        seg = seg.replace("子空间", " ").replace("面板", " ").replace("类别", " ").replace("组", " ")
+
+        # and/&/with/plus/和/及 ——> 逗号
+        seg = re.sub(r"\s*(,|;|/|\||&|\+|\sand\s| with | plus | 和 | 及 )\s*", ",", seg, flags=re.I)
+
+        # 连续逗号/空白规整
+        seg = re.sub(r"\s*,\s*", ",", seg).strip(" ,.")
+
+        # 中英混合空白也当分隔
+        if "," in seg:
+            parts = [p.strip() for p in seg.split(",") if p.strip()]
+        else:
+            parts = [p.strip() for p in seg.split() if p.strip()]
+        return parts
+
+    # === add / delete（必须在 show/hide 前判断） ===
+    m = re.match(r"^(add|delete)\s+(.+)$", tl)
+    if m:
+        action, rest = m.group(1), m.group(2)
+        names = _extract_names(rest)
+        if names:
+            return f"{action} " + ", ".join(names)
+        # 没名字就忽略，落到后面的处理
+
+    # === show / hide 子集 ===
+    m = re.match(r"^(show|hide)\s+(.+)$", tl)
+    if m:
+        action, rest = m.group(1), m.group(2)
+
+        # 去掉开头的 all（避免 "show all background" 误杀）
+        rest = re.sub(r"^all\s+", "", rest)
+
+        names = _extract_names(rest)
+
+        # 如果没有给出具体名字：
+        if not names:
+            # "show" → 当成 show all
+            if action == "show":
+                return "show all subspaces"
+            # "hide" → 当成 hide all
+            if action == "hide":
+                return "hide all subspaces"
+
+        # 有名字：统一输出 "show name1, name2" / "delete name1, name2" 等
+        # （前端 commandRouter 把 "show <list>" 解释为 showOnlySubspaces）
+        if names:
+            # 支持 "show all except A,B" / "hide except A,B" —— 这里先做弱化处理：
+            # 如检测到 except，则仍返回 "show name1, name2"，由前端按名称做精确控制。
+            # （如需“排除式”显示，需要前端知道全集，这里不做全集运算）
+            rest_l = rest.lower()
+            if "except " in rest_l or "除了" in rest or "除外" in rest:
+                # 把 "show all except A,B" 标准化为 "hide A,B" 会需要前端支持 hide(list)；
+                # 目前前端没有 hide(list)，所以保持 show 子集语义：
+                # 约定：用户通常期望的是“只显示”某些名字，因此仍返回 show <names>。
+                pass
+
+            # "hide X,Y" 前端没有 hide(list)；保持现有能力：把 "hide ..." 映射为 "show ..." 之外的情况走 hide all。
+            if action == "hide" and names:
+                # 尽量不误导：如果用户明确 hide 某些名字，当前能力有限，退化为 hide all。
+                return "hide all subspaces"
+
+            return f"show " + ", ".join(names)
+
+    # —— 中文常见写法（已在上面标准化；如果漏网，也补兜底）——
+    if tl.startswith("显示"):
+        # 比如 "显示 背景 和 结果 子空间"
+        names = _extract_names(tl.replace("显示", "", 1))
+        if names:
+            return "show " + ", ".join(names)
+        return "show all subspaces"
+    if tl.startswith("hide"):
+        rest = tl.replace("hide", "", 1).strip()
+        if not rest or "all subspaces" in rest:
+            return "hide all subspaces"
+
+    # 兜底：避免界面卡死
+    return "show all subspaces"
+
+def is_subspace_command(s: str) -> bool:
+    """
+    判断一句自然语言是否是子空间显隐指令（高优先规则）。
+    只要出现 show/hide + subspace(s)/panel(s) 或者像 'show background and result' 这种关键词组合即认为是。
+    """
+    if not s or not s.strip():
+        return False
+    t = re.sub(r"\s+", " ", s.lower().strip())
+    # 典型触发词
+    if re.search(r"\b(show|hide|expand|collapse)\b", t):
+        # 若句子里就明确出现 subspace(s)/panel(s)，直接认为是
+        if re.search(r"\b(subspaces?|panels?)\b", t):
+            return True
+        # 没写 subspace/panel，但写了常见子空间名/模式（background/method/result/ablation/overview 等）
+        if re.search(r"\b(background|method|methods|result|results|ablation|overview|introduction|discussion)\b", t):
+            return True
+        # "show X and Y" 这种也判定为 UI 控制（常见口语化）
+        if re.match(r"^(show|hide)\s+\w+", t):
+            return True
+    return False
+
 
 # ================= Semantic map minimal routes (unchanged interface) =================
 @app.get("/api/semantic-map")
@@ -273,6 +463,7 @@ class RAGService:
             temperature=self.temperature,
         )
 
+
     def query_structured(self, project_id: str, question: str, k: int = 5, mmr: bool = False) -> str:
         """
         Per-PDF retrieval, then produce a structured answer:
@@ -305,7 +496,7 @@ class RAGService:
                 search_type="mmr" if mmr else "similarity",
                 search_kwargs={"k": k}
             )
-            docs = retriever.get_relevant_documents(question)
+            docs = getattr(retriever, "invoke", retriever.get_relevant_documents)(question)
             ctx = _format_docs(docs) if docs else "(no relevant context retrieved)"
             per_doc_context.append({
                 "doc_id": p.name,
@@ -491,6 +682,38 @@ def query_gpt():
     if not user_query:
         return app.response_class("No query provided", mimetype="text/plain"), 400
 
+    # 0) Highest priority: Subspace control (UI显隐) —— 只要命中就直接返回 JSON
+    task_type = (body.get("task") or "").lower()
+    if task_type == "subspace" or is_subspace_command(user_query):
+        # LLM 严格 JSON（失败则回退到规则解析）
+        try:
+            tool_prompt = (
+                "You are a UI command normalizer for controlling subspace visibility.\n"
+                "From the USER text, output STRICT JSON: {\"command\":\"<string>\"}\n"
+                "Allowed forms:\n"
+                "- \"show all subspaces\" / \"hide all subspaces\"\n"
+                "- \"show <name1>, <name2>\"  or  \"hide <name1>, <name2>\"\n"
+                "Do NOT add extra keys. If ambiguous, choose the most likely show/hide with top-2 names.\n"
+                f"USER: {user_query}\nJSON:"
+            )
+            resp = client.chat.completions.create(
+                model=os.getenv("INTENT_MODEL", OPENAI_DEFAULT_MODEL),
+                messages=[{"role":"user","content":tool_prompt}],
+                temperature=0.0, max_tokens=50, timeout=10.0
+            )
+            js = json.loads(resp.choices[0].message.content or "{}")
+            cmd_from_llm = (js.get("command") or "").strip()
+        except Exception:
+            cmd_from_llm = ""
+
+        command = cmd_from_llm if cmd_from_llm else parse_subspace_command(user_query)
+
+        return jsonify({
+            "mode": "subspace/control",
+            "payload": { "text": command },   # e.g., "show background, result"
+            "meta": {}
+        }), 200
+
     # 1) NL intent for RAG (rules first; then LLM fallback)
     intent = parse_intent_rules(user_query)
     if intent.get("action") == "none":
@@ -532,7 +755,7 @@ def query_gpt():
             return app.response_class(f"RAG error: {e}", mimetype="text/plain"), 500
 
     # 3) Fallback: normal chat → plain text
-    task_type = (body.get("task") or "literature").lower()
+    task_type = (task_type or "literature") or "literature"
     task_prompt = TASK_PROMPTS.get(task_type, "")
     try:
         resp = client.chat.completions.create(

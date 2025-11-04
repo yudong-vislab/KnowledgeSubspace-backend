@@ -1,0 +1,1981 @@
+[
+  {
+    "hex_coord": [
+      -6,
+      -7
+    ],
+    "country": 1,
+    "MSU_ids": [
+      9
+    ],
+    "summary": "It seems that you've only provided one sentence so far, and no additional sentences for comparison. With just this one sentence (\"The computational results were in good agreement with the experimental data\"), it suggests that the focus might be on computational modeling or simulations in comparison to experimental results. However, without other sentences for context, it's hard to determine if there is a broader or more specific theme emerging.\n\nCould you provide more sentences or clarify if you have a full set of inputs?"
+  },
+  {
+    "hex_coord": [
+      -12,
+      3
+    ],
+    "country": 1,
+    "MSU_ids": [
+      10,
+      332,
+      450
+    ],
+    "summary": "**Summary:**  \nThese sentences collectively examine flow dynamics and flame stabilization mechanisms in scramjet or ramjet combustion systems. They describe how different operating modes influence vortex formation, flow symmetry, and flame structures. The cluster is tightly related, focusing on aerodynamic and combustion characteristics in high-speed propulsion configurations."
+  },
+  {
+    "hex_coord": [
+      -15,
+      2
+    ],
+    "country": 1,
+    "MSU_ids": [
+      13,
+      323,
+      448
+    ],
+    "summary": "These sentences collectively discuss fluid dynamics and combustion phenomena within high-speed engine flows. They focus on analyzing flame flashback mechanisms, flow regimes (supersonic vs. subsonic), and frequency-mode behavior—different but related aspects of turbulent combustion and flow stability in propulsion systems."
+  },
+  {
+    "hex_coord": [
+      -5,
+      5
+    ],
+    "country": 1,
+    "MSU_ids": [
+      14,
+      480
+    ],
+    "summary": "The two sentences are identical and reference the concept of \"unsteady jet-wake ram combustion\" and its associated \"three oscillation modes.\" \n\n### Common Theme: \nThe focus is on the oscillation modes observed in unsteady jet-wake ram combustion.\n\n### Relationship:\nSince the sentences are the same, they emphasize a specific phenomenon in combustion dynamics, namely the oscillatory behavior in unsteady jet-wake ram combustion."
+  },
+  {
+    "hex_coord": [
+      -6,
+      5
+    ],
+    "country": 1,
+    "MSU_ids": [
+      15,
+      73,
+      445
+    ],
+    "summary": "The sentences collectively focus on **combustion instability phenomena**, specifically oscillation modes, flame dynamics, and their role in triggering intermittent flameout or deflagration events. They describe different aspects of **unsteady combustion behavior and flame–flow interactions** rather than unrelated topics."
+  },
+  {
+    "hex_coord": [
+      -11,
+      5
+    ],
+    "country": 1,
+    "MSU_ids": [
+      24,
+      52,
+      425
+    ],
+    "summary": "These sentences collectively examine flow dynamics and combustion behavior in high-speed propulsion systems. They focus on unsteady jet–cavity interactions, vortex shedding, and optimal cycle performance across varying Mach numbers—different but related facets of turbulent flow and combustion instability in supersonic or scramjet configurations."
+  },
+  {
+    "hex_coord": [
+      -11,
+      4
+    ],
+    "country": 1,
+    "MSU_ids": [
+      33,
+      294,
+      345,
+      354
+    ],
+    "summary": "The common theme appears to revolve around **aerodynamics and combustion dynamics in high-speed flows**. The sentences discuss aspects such as flame regimes, Mach number contours, and injection pressure effects, suggesting a focus on the behavior of fluid dynamics and combustion under extreme conditions (e.g., high Mach numbers). The relationship between the sentences is centered on understanding the interactions between flow characteristics and combustion processes in such environments."
+  },
+  {
+    "hex_coord": [
+      -13,
+      1
+    ],
+    "country": 1,
+    "MSU_ids": [
+      35,
+      329,
+      454
+    ],
+    "summary": "These sentences collectively focus on **aerodynamic and combustion flow behavior in high-speed or scramjet engine simulations**, particularly analyzing **flow structures, pressure characteristics, and vortex dynamics** under varying operating modes and Mach numbers. They clearly discuss **different aspects of supersonic combustion flow analysis** within the same physical context."
+  },
+  {
+    "hex_coord": [
+      -16,
+      3
+    ],
+    "country": 1,
+    "MSU_ids": [
+      37,
+      202,
+      209,
+      350,
+      353
+    ],
+    "summary": "These sentences collectively discuss **aerodynamic and pressure-related flow phenomena in a supersonic or high-speed jet/combustion system**, focusing on interactions between airflow, pressure distribution, and shock behavior. They appear to describe **different aspects of flow dynamics within a computational or experimental study of jet–crossflow or isolator behavior**, not unrelated topics."
+  },
+  {
+    "hex_coord": [
+      -12,
+      0
+    ],
+    "country": 1,
+    "MSU_ids": [
+      39
+    ],
+    "summary": "The sentence focuses on aerodynamic transition dynamics between ramjet and scramjet propulsion modes. The cluster’s likely theme is **propulsion mode transition challenges in high-speed (supersonic/hypersonic) flight systems**. Since only one sentence is provided, the connection cannot yet be evaluated beyond this single focus."
+  },
+  {
+    "hex_coord": [
+      -2,
+      0
+    ],
+    "country": 1,
+    "MSU_ids": [
+      40
+    ],
+    "summary": "The sentence appears to focus on the behavior of shock waves in a combustion system during a transition to scram mode. Specifically, it suggests a study on isolators in scramjet engines, likely discussing fluid dynamics, shock wave management, and system stability during high-speed operation. \n\nI need more sentences to provide a fully integrated judgment on the overall theme of this cluster."
+  },
+  {
+    "hex_coord": [
+      -8,
+      4
+    ],
+    "country": 1,
+    "MSU_ids": [
+      44,
+      262,
+      398
+    ],
+    "summary": "These sentences all concern combustion dynamics in a scramjet or similar high-speed combustor. They describe flame stabilization, heat release, and temperature distribution under different operating stages or cases. Collectively, they focus on understanding combustion behavior and energy dynamics in high-speed reactive flow environments."
+  },
+  {
+    "hex_coord": [
+      -7,
+      5
+    ],
+    "country": 1,
+    "MSU_ids": [
+      45
+    ],
+    "summary": "It seems you've provided only one sentence along with the paper information. To create a concise summary, I would need additional sentences or context from other papers. Could you share the full list of sentences for me to analyze?"
+  },
+  {
+    "hex_coord": [
+      -4,
+      3
+    ],
+    "country": 1,
+    "MSU_ids": [
+      51
+    ],
+    "summary": "The sentence from the paper **\"largeeddyMSU\"** discusses an oscillation mechanism involving the auto-ignition of mixture packets associated with a fuel jet. However, with only this single sentence provided, it is difficult to assess its relationship to other sentences or confirm a specific common theme across multiple papers. Please provide additional sentences for a more comprehensive analysis."
+  },
+  {
+    "hex_coord": [
+      -2,
+      1
+    ],
+    "country": 1,
+    "MSU_ids": [
+      54
+    ],
+    "summary": "It appears that I only have one sentence from the paper \"largeeddyMSU.\" Given this, I cannot perform a comprehensive analysis based on multiple sources. However, the single sentence seems to be discussing **low-frequency oscillations** in the context of **jet penetration** and **shear layer interaction** in large eddy simulation studies. \n\nIf you provide more sentences or papers, I’d be happy to help synthesize and analyze the broader theme!"
+  },
+  {
+    "hex_coord": [
+      -14,
+      6
+    ],
+    "country": 1,
+    "MSU_ids": [
+      56,
+      249,
+      265,
+      347,
+      357,
+      368,
+      394,
+      397,
+      402,
+      415,
+      432
+    ],
+    "summary": "The common theme of these sentences revolves around the dynamics of combustion processes, particularly in the context of flame stability, oscillations, and fuel flow within a combustion chamber or cavity. The relationship between the sentences is focused on how changes in pressure, fuel supply, and vortex interactions influence flame behavior, stability, and potential flameout."
+  },
+  {
+    "hex_coord": [
+      -11,
+      -3
+    ],
+    "country": 1,
+    "MSU_ids": [
+      60
+    ],
+    "summary": "The sentence focuses on shock-train oscillations and their downstream propagation in thick boundary layers, emphasizing flow coherence and pressure fluctuations. This cluster points to **aerodynamic flow instability and shock–boundary-layer interactions** in high-speed or compressible flows. Only one sentence is provided, so no broader thematic relationship can be assessed."
+  },
+  {
+    "hex_coord": [
+      -9,
+      5
+    ],
+    "country": 1,
+    "MSU_ids": [
+      62,
+      316,
+      418,
+      475,
+      482
+    ],
+    "summary": "The common theme in this cluster of sentences is the study of **combustion dynamics and flame behavior in turbulent flow systems**, particularly in the context of **oscillations, blowoff, and flame instability**. These sentences describe phenomena like low-frequency flame oscillations, violent flame behavior, and shear-layer instabilities, all of which are linked to complex interactions between flames and surrounding flow conditions, often in supersonic or high-speed environments.\n\nThe sentences are discussing different facets of **flame instability and oscillation**, suggesting a relationship where the oscillatory behavior of flames influences fuel injection, blowoff, and shock interactions in combustion systems. They are not unrelated; instead, they appear to form a coherent narrative on the causes and effects of combustion instability."
+  },
+  {
+    "hex_coord": [
+      -10,
+      3
+    ],
+    "country": 1,
+    "MSU_ids": [
+      68,
+      226
+    ],
+    "summary": "The sentences both concern instability and error behavior in flow simulations or experiments, likely within a large-eddy simulation context. Together, they point to challenges in accurately modeling nonlinear, unstable mode transitions and localized error accumulation in specific flow regions."
+  },
+  {
+    "hex_coord": [
+      -14,
+      5
+    ],
+    "country": 1,
+    "MSU_ids": [
+      69,
+      242,
+      313,
+      355,
+      361,
+      372
+    ],
+    "summary": "The common theme centers on **fluid dynamics and combustion** within cavities, particularly focusing on **flow oscillations, vortex interactions, and flame behavior**. The sentences describe phenomena like Mach number fluctuations, shear-layer oscillations, vortex shedding, flame attachment/detachment, and flame flashback. These are all related aspects of complex flow behavior in cavity-induced environments, potentially involving shock-boundary layer interactions."
+  },
+  {
+    "hex_coord": [
+      -9,
+      4
+    ],
+    "country": 1,
+    "MSU_ids": [
+      72,
+      399
+    ],
+    "summary": "Both sentences address **unsteady combustion dynamics in an isolator**, focusing on how **fluid–combustion coupling, backpressure, and flame behavior** interact to cause fluctuations or instabilities. They clearly discuss **different aspects of combustion instability mechanisms** within a single experimental or simulation context, indicating a unified focus."
+  },
+  {
+    "hex_coord": [
+      -8,
+      3
+    ],
+    "country": 1,
+    "MSU_ids": [
+      75,
+      258,
+      351,
+      470
+    ],
+    "summary": "The common theme across these sentences centers around **combustion dynamics**, particularly in high-speed or advanced combustion systems. The sentences address flame behavior, flame stabilization, and the effects of flow dynamics and heat release in combustion chambers, such as those used in scramjet engines or similar technologies. These aspects are all related facets of understanding and controlling combustion processes in complex, high-performance engines."
+  },
+  {
+    "hex_coord": [
+      -12,
+      5
+    ],
+    "country": 1,
+    "MSU_ids": [
+      76,
+      277,
+      296,
+      312,
+      343,
+      408
+    ],
+    "summary": "These sentences collectively analyze **flame stabilization and flow dynamics in a supersonic combustor cavity**, focusing on **recirculation zones, vortex formation, and transient combustion behaviors** such as flashback and thermal choking. They describe **interacting aerodynamic and thermal processes** governing stability in high-speed combustion regimes."
+  },
+  {
+    "hex_coord": [
+      -12,
+      -1
+    ],
+    "country": 1,
+    "MSU_ids": [
+      134
+    ],
+    "summary": "The common theme across the sentence from the paper appears to be turbulence in fluid dynamics, specifically focusing on supersonic flows. The sentence mentions a specific turbulence measure, *Cmix*, in a supersonic channel, suggesting the topic is about analyzing turbulent behavior in high-speed flow conditions."
+  },
+  {
+    "hex_coord": [
+      -2,
+      5
+    ],
+    "country": 1,
+    "MSU_ids": [
+      194
+    ],
+    "summary": "The sentence discusses a comparison of volume fractions in two cases, presumably related to the ratio of two timescales (τc and τm). However, this single sentence lacks sufficient context or related sentences to determine a broader theme or unified focus. It seems to address a specific measurement or parameter in a larger scientific context, likely related to fluid dynamics or material science, but its isolated nature makes it difficult to draw broader connections with other papers or concepts. Therefore, this does not appear to share a common theme with other studies without further context."
+  },
+  {
+    "hex_coord": [
+      -14,
+      -1
+    ],
+    "country": 1,
+    "MSU_ids": [
+      196,
+      297
+    ],
+    "summary": "Both sentences concern the behavior of subgrid-scale (SGS) turbulence and diffusion regimes in large-eddy simulations (LES). They describe flow dynamics where SGS turbulence effects are minor compared to diffusion, indicating analysis of energy transfer or mixing processes in fluid simulations."
+  },
+  {
+    "hex_coord": [
+      -17,
+      4
+    ],
+    "country": 1,
+    "MSU_ids": [
+      198,
+      385,
+      400
+    ],
+    "summary": "The common theme across these sentences is the analysis of pressure and flow dynamics in fluid systems, particularly in the context of computational and experimental comparisons related to subsonic flow, flame movement, and pressure responses. The relationship between them focuses on understanding how pressure variations impact system behavior in different stages of flow or combustion processes."
+  },
+  {
+    "hex_coord": [
+      -17,
+      1
+    ],
+    "country": 1,
+    "MSU_ids": [
+      203
+    ],
+    "summary": "The sentence focuses on grid-resolution effects in computational fluid dynamics, particularly how mesh refinement influences pressure predictions in a large-eddy simulation. Since only one paper and sentence are provided, no broader thematic relationship or cross-paper synthesis can be determined."
+  },
+  {
+    "hex_coord": [
+      -7,
+      -2
+    ],
+    "country": 1,
+    "MSU_ids": [
+      208
+    ],
+    "summary": "The cluster of sentences appears to focus on the comparison of computational fluid dynamics (CFD) models with experimental results, specifically in terms of pressure distribution. The common theme is the validation of simulation results against real-world data, particularly in the context of large-eddy simulations or related models."
+  },
+  {
+    "hex_coord": [
+      -15,
+      6
+    ],
+    "country": 1,
+    "MSU_ids": [
+      211,
+      269,
+      330,
+      331,
+      352,
+      390,
+      401
+    ],
+    "summary": "The common theme in this cluster is fluid dynamics and combustion, specifically in the context of high-pressure jets, cavity flows, and flame stability. The sentences describe various phenomena such as pressure drops, vortex interactions, shock oscillations, and flame flashback in turbulent, subsonic, or supersonic flows. These aspects are all related to the behavior of gases in high-energy systems like combustion chambers and jet flows."
+  },
+  {
+    "hex_coord": [
+      -17,
+      0
+    ],
+    "country": 1,
+    "MSU_ids": [
+      212,
+      431
+    ],
+    "summary": "The common theme centers on fluid dynamics and turbulence, specifically in vortex interactions and pressure measurement in large eddy simulations. The relationship between the sentences highlights challenges in capturing accurate pressure data and the timing between vortices, suggesting a focus on simulation accuracy and vortex behavior in turbulent flows."
+  },
+  {
+    "hex_coord": [
+      0,
+      4
+    ],
+    "country": 1,
+    "MSU_ids": [
+      221
+    ],
+    "summary": "It appears that the input you provided includes only a single sentence from one academic paper, which makes it difficult to identify a cluster or theme based on proximity to other sentences. However, based on the sentence alone, the topic seems to relate to the distribution of volume fractions in a mixture of two components, possibly in a material or fluid dynamics context.\n\nIf you have more sentences or papers to provide, I can offer a more comprehensive analysis."
+  },
+  {
+    "hex_coord": [
+      -16,
+      4
+    ],
+    "country": 1,
+    "MSU_ids": [
+      222,
+      223,
+      360,
+      395
+    ],
+    "summary": "The sentences collectively focus on **computational and experimental analysis of pressure distribution and flow behavior**—including backpressure, flow separation, and flame distortion—in a **combustion or supersonic flow isolator system**. They describe different aspects of **flow dynamics and instability comparisons** within simulation and experimental contexts."
+  },
+  {
+    "hex_coord": [
+      -15,
+      0
+    ],
+    "country": 1,
+    "MSU_ids": [
+      225
+    ],
+    "summary": "It appears that this sentence comes from a paper discussing Large Eddy Simulation (LES) in computational fluid dynamics. The key theme is the comparison between experimental data and simulation results, indicating that LES is being validated against real-world pressure data.\n\nWithout additional context, it's hard to tell if this is part of a broader discussion, but the focus is clearly on evaluating LES performance against experimental data."
+  },
+  {
+    "hex_coord": [
+      2,
+      -3
+    ],
+    "country": 1,
+    "MSU_ids": [
+      233
+    ],
+    "summary": "It appears you only provided one sentence with its paper title. To generate a useful summary, I would need more sentences or additional paper titles. Could you provide more content for analysis?"
+  },
+  {
+    "hex_coord": [
+      0,
+      -6
+    ],
+    "country": 1,
+    "MSU_ids": [
+      234
+    ],
+    "summary": "The single sentence refers to a specific simulation condition (“case 2”) being in “ram mode,” likely within a fluid dynamics or propulsion study. With only this excerpt, there is insufficient context to identify a broader or shared thematic focus beyond that narrow experimental observation."
+  },
+  {
+    "hex_coord": [
+      -13,
+      5
+    ],
+    "country": 1,
+    "MSU_ids": [
+      238,
+      324,
+      371,
+      477
+    ],
+    "summary": "The common theme among the provided sentences from the paper \"largeeddyMSU\" is the analysis of fluid flow characteristics, specifically focusing on recirculation zones, pressure zones near walls, and flame behavior influenced by jet/shear-layer interaction. These sentences collectively discuss various aspects of flow dynamics and flame phenomena in the context of computational fluid dynamics."
+  },
+  {
+    "hex_coord": [
+      -18,
+      1
+    ],
+    "country": 1,
+    "MSU_ids": [
+      241
+    ],
+    "summary": "The sentence focuses on the development of a shock train originating from a separated boundary layer, indicating a study of compressible flow phenomena in high-speed aerodynamics. Since only one sentence is provided, no broader thematic relationship can be inferred beyond shock–boundary layer interactions in fluid dynamics."
+  },
+  {
+    "hex_coord": [
+      -13,
+      4
+    ],
+    "country": 1,
+    "MSU_ids": [
+      245,
+      311
+    ],
+    "summary": "The common theme in these sentences revolves around the study of fluid dynamics and vortex behavior, specifically in the context of large-amplitude oscillations and vortex structures within cavities. The papers seem to explore different aspects of flow phenomena, likely within a controlled experimental setup, suggesting a focus on understanding the characteristics and variations in vortex structures under different conditions."
+  },
+  {
+    "hex_coord": [
+      -8,
+      -12
+    ],
+    "country": 1,
+    "MSU_ids": [
+      246
+    ],
+    "summary": "The single sentence lacks sufficient context to determine a clear thematic or conceptual focus beyond general computational modeling or simulation accuracy. It likely refers to validation of numerical or visual results but cannot be confidently linked to a broader, unified topic without additional data."
+  },
+  {
+    "hex_coord": [
+      -3,
+      1
+    ],
+    "country": 1,
+    "MSU_ids": [
+      247
+    ],
+    "summary": "It appears that you have only provided one sentence from a paper. To give a meaningful synthesis, I would need additional sentences or papers to identify a common theme or relationship.\n\nIf you have more sentences to provide, please share them, and I'll analyze them together for you."
+  },
+  {
+    "hex_coord": [
+      5,
+      -3
+    ],
+    "country": 1,
+    "MSU_ids": [
+      248
+    ],
+    "summary": "The single sentence refers to the “V”-shaped reaction zone in a scramjet-like combustion flow. With only one data point, no broader thematic relationship can be assessed beyond high-speed combustion flow structure in scramjet/large-eddy simulation context."
+  },
+  {
+    "hex_coord": [
+      -16,
+      1
+    ],
+    "country": 1,
+    "MSU_ids": [
+      250
+    ],
+    "summary": "It seems that you only provided one sentence from a paper. To offer a proper synthesis or summary, I would need additional sentences or papers to compare. Could you please provide the rest of the input so I can proceed with analyzing the cluster?"
+  },
+  {
+    "hex_coord": [
+      -15,
+      5
+    ],
+    "country": 1,
+    "MSU_ids": [
+      251,
+      268,
+      335,
+      342,
+      348,
+      457
+    ],
+    "summary": "These sentences collectively describe **flow dynamics and combustion behavior in a cavity-based supersonic or scramjet engine configuration**, focusing on **shock formation, vortex structures, cold fuel jet penetration, and mass flow characteristics**. They examine **interacting flow features influencing mixing, temperature distribution, and stability** within the cavity."
+  },
+  {
+    "hex_coord": [
+      -15,
+      1
+    ],
+    "country": 1,
+    "MSU_ids": [
+      252
+    ],
+    "summary": "Given the limited information provided with the sentence \"A completely different flame structure can be observed\" and no additional context from the paper title, it is challenging to draw a definitive common theme or relationship with other sentences. This isolated sentence does not strongly suggest a specific, unified focus shared with other papers."
+  },
+  {
+    "hex_coord": [
+      -11,
+      6
+    ],
+    "country": 1,
+    "MSU_ids": [
+      259,
+      410,
+      414
+    ],
+    "summary": "These sentences collectively discuss the **dynamics and instability of a cavity-stabilized flame** under shear-layer oscillations, focusing on **flame behavior, radical concentration, and oscillation periods**. They represent different aspects of the same phenomenon—**flame instability and potential flameout in turbulent combustion.**"
+  },
+  {
+    "hex_coord": [
+      -8,
+      5
+    ],
+    "country": 1,
+    "MSU_ids": [
+      260
+    ],
+    "summary": "The single sentence focuses on temperature variation in a cavity flow experiment, likely comparing simulation cases in a large-eddy simulation (LES) study. However, as only one sentence is provided, there is insufficient evidence of a broader thematic relationship beyond this specific thermal comparison."
+  },
+  {
+    "hex_coord": [
+      -6,
+      2
+    ],
+    "country": 1,
+    "MSU_ids": [
+      264
+    ],
+    "summary": "The sentence focuses on fluid dynamics, specifically fuel-jet behavior and entrainment effects in large-eddy simulations. With only this single excerpt, there is insufficient evidence of a broader thematic cluster—its focus is narrowly on turbulent jet flow characteristics."
+  },
+  {
+    "hex_coord": [
+      -13,
+      6
+    ],
+    "country": 1,
+    "MSU_ids": [
+      266,
+      272,
+      386,
+      430,
+      447,
+      474
+    ],
+    "summary": "The common theme across these sentences is the study of combustion dynamics and fluid behavior in high-speed flows, particularly in relation to cavities and flame interaction. The sentences discuss aspects of flame stability, entrainment, vortex dynamics, and flow conditions in combustion systems, likely in scramjet or similar high-speed engine environments. The relationship between the sentences is strong, as they all focus on various aspects of flame interaction with fluid dynamics in a cavity or shear-layer context."
+  },
+  {
+    "hex_coord": [
+      -11,
+      -2
+    ],
+    "country": 1,
+    "MSU_ids": [
+      270
+    ],
+    "summary": "The sentence describes a localized fluid dynamics phenomenon—specifically, the formation of a corner recirculation zone in a flow simulation. With only this single sentence, there is insufficient context to identify a broader or shared theme; it appears to focus solely on a specific flow behavior case."
+  },
+  {
+    "hex_coord": [
+      -9,
+      1
+    ],
+    "country": 1,
+    "MSU_ids": [
+      271,
+      358
+    ],
+    "summary": "The sentences both describe characteristics of fluid flow behavior in a jet simulation. They focus on differences in jet momentum, recirculation, and transitional flow states. Together, they pertain to analyzing unsteady transitional dynamics in large-eddy simulations of jet or recirculating flows."
+  },
+  {
+    "hex_coord": [
+      -2,
+      2
+    ],
+    "country": 1,
+    "MSU_ids": [
+      276,
+      479
+    ],
+    "summary": "The common theme in these sentences is the behavior of fuel jets and combustion zones during specific operational modes (such as scram mode) in combustion systems. Both sentences discuss the formation of distinct combustion regions—such as rich-premixed and hot product zones—and their influence on combustion dynamics, including oscillations and transitions in combustion modes. The relationship between the sentences is direct, as they both focus on the spatial and dynamic behavior of combustion under certain conditions."
+  },
+  {
+    "hex_coord": [
+      -18,
+      2
+    ],
+    "country": 1,
+    "MSU_ids": [
+      278,
+      333
+    ],
+    "summary": "The common theme revolves around the dynamics of supersonic and subsonic flow interactions, particularly focusing on the effects of shear layers, fuel jets, and shock formations. The sentences are related through their discussion of how supersonic flow interacts with obstacles, creating reflected and bow shocks, and balancing subsonic and supersonic flow downstream."
+  },
+  {
+    "hex_coord": [
+      -10,
+      6
+    ],
+    "country": 1,
+    "MSU_ids": [
+      279,
+      281,
+      434
+    ],
+    "summary": "These sentences collectively discuss **flame stabilization mechanisms in jet-wake regions during ram-mode combustion**, focusing on how hot product flow and flame dynamics evolve temporally. They describe different aspects of the **same combustion study**, examining flame behavior, stabilization, and mode transitions within a cavity-based combustor."
+  },
+  {
+    "hex_coord": [
+      -4,
+      2
+    ],
+    "country": 1,
+    "MSU_ids": [
+      280
+    ],
+    "summary": "The sentence focuses on fluid dynamics within combustion systems, specifically how the corner recirculation zone sustains ignition in a fuel jet. As only one sentence is provided, it centers on combustion stability mechanisms rather than a broader multi-paper theme."
+  },
+  {
+    "hex_coord": [
+      -3,
+      -3
+    ],
+    "country": 1,
+    "MSU_ids": [
+      283
+    ],
+    "summary": "The theme emerging from this sentence is related to the study of fluid dynamics, particularly focusing on turbulent flow phenomena such as vortex shedding, shear layers, and shock trains. This sentence suggests a focus on oscillations caused by fluid instabilities in high-speed flows, possibly in aerospace or engineering contexts.\n\nLet me know if you have more sentences or need further analysis!"
+  },
+  {
+    "hex_coord": [
+      -6,
+      -8
+    ],
+    "country": 1,
+    "MSU_ids": [
+      295
+    ],
+    "summary": "The sentence focuses on flow behavior within a diffusion regime, likely in the context of large-eddy simulations or turbulent mixing. Given only this single statement, there is insufficient evidence of broader thematic connections—its focus is specifically on diffusion characteristics in fluid dynamics."
+  },
+  {
+    "hex_coord": [
+      -10,
+      0
+    ],
+    "country": 1,
+    "MSU_ids": [
+      298
+    ],
+    "summary": "The sentence provided focuses on a comparison of different cases in a large-eddy simulation context, specifically regarding the location of the rich-premixed regime. However, without additional sentences from other papers, it's challenging to discern a broader, unifying theme from just this one sentence.\n\nPlease provide more sentences to help me identify any deeper connections or themes."
+  },
+  {
+    "hex_coord": [
+      -9,
+      3
+    ],
+    "country": 1,
+    "MSU_ids": [
+      305
+    ],
+    "summary": "The common theme appears to be the behavior of flames in combustion processes, specifically within the context of lean-premixed regimes. The relationship suggests a focus on flame dynamics and interactions between the flame and airflow, which are central to understanding combustion systems and their efficiency or stability."
+  },
+  {
+    "hex_coord": [
+      -11,
+      1
+    ],
+    "country": 1,
+    "MSU_ids": [
+      314
+    ],
+    "summary": "Summary: The extracted sentence suggests a focus on flames being confined within vortexes to enhance fluid mixing. This common theme implies a shared exploration of combustion dynamics within turbulent flows, pointing towards research on reacting flow phenomena in fluid mechanics."
+  },
+  {
+    "hex_coord": [
+      -12,
+      6
+    ],
+    "country": 1,
+    "MSU_ids": [
+      315,
+      321,
+      334,
+      359,
+      387,
+      472
+    ],
+    "summary": "The common theme of these sentences revolves around the behavior of flames and flow dynamics in high-speed, supersonic flows, particularly in the context of a cavity-based combustion system. They discuss flame positioning, oscillations, thermal choking, and the effects of supersonic flow conditions, such as in ram mode and Laval nozzles. These sentences are related by their focus on flame dynamics and flow interaction in specific combustion scenarios."
+  },
+  {
+    "hex_coord": [
+      -4,
+      -2
+    ],
+    "country": 1,
+    "MSU_ids": [
+      318
+    ],
+    "summary": "The sentence focuses on flow characteristics—specifically, Mach number distributions—in a dual-mode scramjet, indicating analysis of aerodynamic or combustion dynamics in high-speed propulsion. As only one sentence is provided, there is insufficient evidence of broader thematic linkage beyond scramjet flow behavior visualization."
+  },
+  {
+    "hex_coord": [
+      -8,
+      0
+    ],
+    "country": 1,
+    "MSU_ids": [
+      319
+    ],
+    "summary": "The common theme revolves around high-speed flow dynamics within combustion chambers, specifically focusing on supersonic flow behavior under certain operational conditions, such as scram mode. The relationship is direct, discussing the conditions and behavior of the flow in the combustor during scram mode, with a specific exception for the cavity region."
+  },
+  {
+    "hex_coord": [
+      -8,
+      1
+    ],
+    "country": 1,
+    "MSU_ids": [
+      320
+    ],
+    "summary": "The sentence concerns aerodynamic flow behavior—specifically, the characteristics of subsonic regions within a ramjet or similar propulsion system. Since only one sentence is provided, there is insufficient evidence of a broader thematic relationship beyond this focus on ramjet internal flow dynamics."
+  },
+  {
+    "hex_coord": [
+      -12,
+      4
+    ],
+    "country": 1,
+    "MSU_ids": [
+      336
+    ],
+    "summary": "The sentence focuses on quantitative comparison of recirculation ratios in different flow regions and cases within a fluid dynamics or large-eddy simulation study. The theme centers on **turbulent flow behavior and zone-specific recirculation characteristics**. Since only one sentence is provided, no broader thematic relationship can be inferred."
+  },
+  {
+    "hex_coord": [
+      -16,
+      5
+    ],
+    "country": 1,
+    "MSU_ids": [
+      340
+    ],
+    "summary": "The sentence focuses on fluid dynamics under high-pressure injection conditions, describing shock interactions and pressure zones in a jet flow. Since only one paper and sentence are provided, there is insufficient evidence of a broader thematic relationship—no cluster or cross-paper connection can be determined."
+  },
+  {
+    "hex_coord": [
+      -11,
+      3
+    ],
+    "country": 1,
+    "MSU_ids": [
+      341
+    ],
+    "summary": "The sentence from the paper suggests a study related to the dynamics of shockwaves and heat release in a system, possibly related to combustion or fluid dynamics. Based on this, the common theme appears to be the interaction of pressure, heat release, and shockwave behavior in a confined space. However, with only one sentence provided, it is difficult to determine if this sentence connects to other related topics or papers beyond this specific area. Further context would be needed for a clearer synthesis."
+  },
+  {
+    "hex_coord": [
+      -16,
+      2
+    ],
+    "country": 1,
+    "MSU_ids": [
+      344,
+      451
+    ],
+    "summary": "The common theme of these sentences appears to be fluid dynamics, particularly in the context of shock waves and vortex interactions in a turbulent flow, potentially related to combustion or jet dynamics. The sentences seem to discuss different facets of how shock and vortex structures interact with temperature and fuel jets in such systems. The proximity is not coincidental, as they likely relate to the same physical phenomena."
+  },
+  {
+    "hex_coord": [
+      -14,
+      1
+    ],
+    "country": 1,
+    "MSU_ids": [
+      356
+    ],
+    "summary": "The sentence focuses on the phenomenon of **flame flashback**—the backward propagation of a flame into the burner or premixing region—likely within the context of **combustion or fluid dynamics simulations (e.g., large-eddy simulations)**. With only this single sentence, no broader thematic relationship can be inferred."
+  },
+  {
+    "hex_coord": [
+      -14,
+      -2
+    ],
+    "country": 1,
+    "MSU_ids": [
+      366
+    ],
+    "summary": "It seems that only one sentence was provided from a single paper, and there’s not enough additional context or related sentences to identify a cluster or common theme. Based on this sentence alone, the focus appears to be on fluid dynamics or combustion, specifically flame behavior and entrainment into recirculation zones. However, more data is needed to identify any broader or unified theme."
+  },
+  {
+    "hex_coord": [
+      -17,
+      3
+    ],
+    "country": 1,
+    "MSU_ids": [
+      373,
+      374
+    ],
+    "summary": "These sentences describe the dynamics of boundary-layer separation and reattachment in the presence of shock waves. They focus on the interaction between shock propagation and boundary-layer behavior in compressible flow, forming a cohesive discussion of shock–boundary layer interaction phenomena."
+  },
+  {
+    "hex_coord": [
+      -17,
+      -2
+    ],
+    "country": 1,
+    "MSU_ids": [
+      378
+    ],
+    "summary": "It seems like the sentence provided is not enough to extract a clear theme or concept. \"Instantaneous snapshots of pressure\" may refer to a specific data set or experiment, but without additional context or other related sentences, it's difficult to determine a unified focus from just this one statement.\n\nWould you like to provide more sentences or context for a more comprehensive analysis?"
+  },
+  {
+    "hex_coord": [
+      -14,
+      -4
+    ],
+    "country": 1,
+    "MSU_ids": [
+      379
+    ],
+    "summary": "The single sentence provides only a brief reference to visualized data (*YOH* snapshots) without context or conceptual content. There is insufficient information to identify a shared or specific thematic focus."
+  },
+  {
+    "hex_coord": [
+      -15,
+      4
+    ],
+    "country": 1,
+    "MSU_ids": [
+      392,
+      409
+    ],
+    "summary": "The common theme appears to be related to fluid dynamics and combustion in high-pressure or turbulent environments. Specifically, the sentences discuss the behavior of pressure and flame propagation under complex conditions involving vortices and fuel jets, which are likely relevant in areas like isolator design and combustion modeling in gas turbine or aerospace applications. The relationship between the sentences is that they both address factors affecting performance in fluid flow and combustion systems, though from different angles (backpressure propagation vs. flame instability)."
+  },
+  {
+    "hex_coord": [
+      -7,
+      1
+    ],
+    "country": 1,
+    "MSU_ids": [
+      406,
+      473
+    ],
+    "summary": "Summary:\nThe sentences from the papers titled \"largeeddyMSU\" indicate a focus on analyzing flame oscillation waveforms and the diffusion regime within combustion systems. They share a common theme in studying combustion dynamics and the interaction between reaction zones and air streams."
+  },
+  {
+    "hex_coord": [
+      -16,
+      0
+    ],
+    "country": 1,
+    "MSU_ids": [
+      407
+    ],
+    "summary": "The single sentence merely describes a figure highlighting a zoomed-in region, without substantive conceptual or thematic content. There is no identifiable common theme or meaningful relationship to infer from this isolated statement."
+  },
+  {
+    "hex_coord": [
+      -9,
+      6
+    ],
+    "country": 1,
+    "MSU_ids": [
+      416
+    ],
+    "summary": "It seems that you've only provided one sentence so far. Could you please provide the rest of the list for me to analyze and synthesize into a summary?"
+  },
+  {
+    "hex_coord": [
+      -14,
+      4
+    ],
+    "country": 1,
+    "MSU_ids": [
+      427,
+      458,
+      481
+    ],
+    "summary": "The common theme in this cluster is the study of fluid dynamics and flame behavior in a cavity, specifically focusing on vortex dynamics and flame evolution. These sentences describe the interactions between vortices and flames in a cavity, including how vortices affect flame entrainment and oscillations. The sentences are related, exploring different aspects of vortex-flame interaction."
+  },
+  {
+    "hex_coord": [
+      -5,
+      -3
+    ],
+    "country": 1,
+    "MSU_ids": [
+      435
+    ],
+    "summary": "The sentences likely relate to the analysis of spatial flow structures using Proper Orthogonal Modes (POMs) in a large-eddy simulation (LES) study. The common theme is **modal decomposition of turbulent flow structures**. They appear to describe results visualization rather than introduce distinct topics."
+  },
+  {
+    "hex_coord": [
+      -11,
+      0
+    ],
+    "country": 1,
+    "MSU_ids": [
+      455,
+      464
+    ],
+    "summary": "The common theme appears to focus on fluid dynamics and combustion, specifically the behavior of vortex structures and their influence on flame stabilization. These papers discuss vortex dynamics in relation to isolators and the influence of flow structures on flame stability, pointing to a broader interest in understanding fluid interactions in combustion systems."
+  },
+  {
+    "hex_coord": [
+      -11,
+      2
+    ],
+    "country": 1,
+    "MSU_ids": [
+      456
+    ],
+    "summary": "The common theme across these sentences is likely related to flame dynamics and oscillations, specifically focusing on the modes and coherent structures that influence flame behavior. The relationship between the sentences suggests they are discussing different aspects or features of flame oscillations in a large eddy simulation context."
+  },
+  {
+    "hex_coord": [
+      -7,
+      4
+    ],
+    "country": 1,
+    "MSU_ids": [
+      471
+    ],
+    "summary": "The sentence focuses on flame stabilization mechanisms in high-speed (scramjet) combustion, specifically through recirculation zones. Since only one paper and sentence are provided, there is no broader thematic relationship to assess beyond this specific topic of scramjet flame dynamics and stabilization."
+  },
+  {
+    "hex_coord": [
+      -6,
+      4
+    ],
+    "country": 1,
+    "MSU_ids": [
+      478
+    ],
+    "summary": "It seems you've only provided one sentence along with its paper title. In order to generate a concise summary based on multiple sentences, I'll need the rest of the sentences and paper titles to form a clearer judgment. Could you provide the full list?"
+  },
+  {
+    "hex_coord": [
+      1,
+      -12
+    ],
+    "country": 2,
+    "MSU_ids": [
+      514
+    ],
+    "summary": "The common theme in this cluster appears to be the exploration of visualization tools designed to assist in hypothesis generation or analysis, likely in the context of temporal data. The specific focus seems to be on \"TemporalFlowViz,\" which appears to be a tool for improving the process of hypothesis generation, possibly by visualizing temporal dynamics or trends."
+  },
+  {
+    "hex_coord": [
+      -2,
+      -14
+    ],
+    "country": 2,
+    "MSU_ids": [
+      515
+    ],
+    "summary": "It seems the sentence provided is the only input, and thus no broader set of related sentences exists for comparison. \n\nBased on this sentence, the common theme appears to be **interpretable pattern discovery** within the context of **temporal data visualization** (suggested by \"TemporalFlowViz\"). \n\nIf additional sentences or context were provided, a more detailed synthesis could be made. However, with just this one piece of information, the focus seems to be on tools or methods for uncovering and explaining patterns in time-based data."
+  },
+  {
+    "hex_coord": [
+      2,
+      -14
+    ],
+    "country": 2,
+    "MSU_ids": [
+      534
+    ],
+    "summary": "The sentence focuses on using a specific method or technique in fluid dynamics, emphasizing its potential for improving the structural complexity in scientific visualizations. Based on the provided sentence, the theme revolves around advancements in scientific visualization techniques, specifically in the context of fluid dynamics.\n\nThe relationship seems to be centered on visualizing complex phenomena, but no broader context or other connected themes are given."
+  },
+  {
+    "hex_coord": [
+      2,
+      -11
+    ],
+    "country": 2,
+    "MSU_ids": [
+      552
+    ],
+    "summary": "The common theme of the sentences seems to involve the application of Visual Language Models (VLMs) for automated summarization, focusing on generating reports that are descriptive and aligned with specific domains. The relationship between them is cohesive, pointing to a unified approach to leveraging VLMs for report generation in specialized contexts."
+  },
+  {
+    "hex_coord": [
+      -9,
+      -11
+    ],
+    "country": 2,
+    "MSU_ids": [
+      562
+    ],
+    "summary": "The common theme of this sentence focuses on achieving **real-time interactivity in computational frameworks**, particularly for systems involving **large-scale grid-based data**. The relationship appears to center on the **performance and efficiency** of algorithms designed for **interactive processing** in large, complex datasets."
+  },
+  {
+    "hex_coord": [
+      -15,
+      0
+    ],
+    "country": 2,
+    "MSU_ids": [
+      638
+    ],
+    "summary": "It seems you've only provided one paper title and sentence so far. If you have additional sentences and papers to include, feel free to share them, and I can help identify the common theme and relationship between the entries."
+  },
+  {
+    "hex_coord": [
+      -15,
+      2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      649,
+      725
+    ],
+    "summary": "The common theme of these sentences appears to involve the analysis of complex data fields (such as pressure and OH fields) in the context of combustion, possibly utilizing machine learning or data visualization techniques. The mention of \"InternViT\" suggests a machine learning model used for clustering, but its relationship to the combustion data is unclear. Therefore, they seem to discuss different facets of analyzing and interpreting data for combustion studies, potentially with machine learning tools, but the connection between the two is not strong."
+  },
+  {
+    "hex_coord": [
+      1,
+      -14
+    ],
+    "country": 2,
+    "MSU_ids": [
+      676
+    ],
+    "summary": "The sentence centers on visualizing and analyzing temporal patterns, specifically enabling experts to examine transitions between different modes over time. Since only one sentence is provided, it primarily reflects a focus on temporal data visualization and expert analysis of dynamic system behaviors."
+  },
+  {
+    "hex_coord": [
+      -3,
+      -11
+    ],
+    "country": 2,
+    "MSU_ids": [
+      677,
+      693
+    ],
+    "summary": "Both sentences relate to visualization and analysis of temporal data. The first addresses how experts evaluate convergence over time, while the second discusses data clustering quality. Together, they point to techniques for visually assessing and improving the structure or convergence of temporal datasets."
+  },
+  {
+    "hex_coord": [
+      4,
+      -16
+    ],
+    "country": 2,
+    "MSU_ids": [
+      678
+    ],
+    "summary": "**Common Theme:** The cluster of sentences seems focused on **anomalous detection** or **pattern recognition** within **temporal data** or **trajectories**. Several sources mention tools or methods for identifying irregularities, anomalies, or noteworthy patterns over time.\n\n**Relationship:** These sentences likely discuss different approaches or tools for detecting unusual patterns, particularly in the context of time-based data or trajectories. They are related but could represent different aspects of a broader theme."
+  },
+  {
+    "hex_coord": [
+      8,
+      -10
+    ],
+    "country": 2,
+    "MSU_ids": [
+      681
+    ],
+    "summary": "It seems you've provided only one paper's information so far, and no other sentences to compare it with. Based on this single sentence, the focus appears to be on how visual outputs can enhance understanding and communication, likely in the context of data visualization or temporal analysis.\n\nHowever, without additional sentences to examine, I can't offer a more comprehensive judgment or assess potential relationships to other topics. Could you provide more sentences or clarify if you need help with a single topic?"
+  },
+  {
+    "hex_coord": [
+      0,
+      -15
+    ],
+    "country": 2,
+    "MSU_ids": [
+      694,
+      1003
+    ],
+    "summary": "The common theme appears to be the use of visual or data representations (e.g., cropped inputs, VLM-generated summaries) to enhance clarity and facilitate understanding or comparison in simulations or modeling. The sentences are related in the sense that both involve improving clarity or insight through data abstraction or representation techniques in a simulation context."
+  },
+  {
+    "hex_coord": [
+      -1,
+      -15
+    ],
+    "country": 2,
+    "MSU_ids": [
+      708
+    ],
+    "summary": "The sentence focuses on how different input types (cropped vs. whole-frame) affect clustering quality and temporal consistency in data visualization or modeling. The theme is **input preprocessing’s impact on temporal pattern stability and representation quality**. As there’s only one sentence, no broader relationship assessment is possible."
+  },
+  {
+    "hex_coord": [
+      -14,
+      -5
+    ],
+    "country": 2,
+    "MSU_ids": [
+      709
+    ],
+    "summary": "The common theme appears to be related to the impact of data preprocessing (specifically cropping) on the performance of machine learning models, with a focus on PCA (Principal Component Analysis) and its effects on the convergence behavior of flow fields. The relationship between the sentences suggests a study on how cropping influences the performance and convergence characteristics of reduced embeddings in PCA analysis."
+  },
+  {
+    "hex_coord": [
+      -17,
+      -1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      721
+    ],
+    "summary": "The sentence suggests that different models incorporate or reflect the concept of temporal evolution in diverse ways, potentially in the context of modeling dynamic systems or processes. Without more context, it's difficult to pinpoint a more specific common theme, but it likely relates to the modeling of time-dependent phenomena across various domains."
+  },
+  {
+    "hex_coord": [
+      -12,
+      -4
+    ],
+    "country": 2,
+    "MSU_ids": [
+      722
+    ],
+    "summary": "The common theme appears to be an examination of model behavior in terms of their ability to represent and organize data. The relationship between the sentences points to differences in how models produce latent structures, particularly focusing on trajectory continuity, cluster separability, and interpretability. These sentences are likely discussing facets of machine learning models, especially in the context of clustering or dimensionality reduction."
+  },
+  {
+    "hex_coord": [
+      -12,
+      -11
+    ],
+    "country": 2,
+    "MSU_ids": [
+      723
+    ],
+    "summary": "The sentence focuses on **the temporal coherence and embedding quality of BLIP-2 representations**, suggesting attention to how multimodal models capture time-based or sequential information. Since only one statement is given, it **does not form a broader thematic cluster** beyond this observation on temporal embedding behavior."
+  },
+  {
+    "hex_coord": [
+      -1,
+      -1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      724
+    ],
+    "summary": "The common theme among these sentences seems to involve the analysis of combustion sequences and their representation in specific data embeddings, particularly with a focus on BLIP-2 embeddings. The relationship between the sentences is likely centered around examining how combustion processes can be mapped or analyzed through such embeddings, possibly to reveal patterns of progression or evolution in the system.\n\nHowever, this is based on the single sentence provided, and additional context or sentences might be necessary to confirm if the theme is consistent across more papers or concepts."
+  },
+  {
+    "hex_coord": [
+      -8,
+      -1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      726
+    ],
+    "summary": "The provided sentence suggests that the focus is on evaluating the performance of a model (InternViT) with respect to its ability to handle or recognize chronological transitions, possibly in a temporal or visual context. However, without more context or additional sentences from other papers, it’s difficult to discern a clear, unified theme beyond this specific observation. \n\nBased on this single sentence, there isn’t enough information to identify a broader theme."
+  },
+  {
+    "hex_coord": [
+      3,
+      -4
+    ],
+    "country": 2,
+    "MSU_ids": [
+      727
+    ],
+    "summary": "The sentence you provided is from a paper that seems to discuss the impact of a method or model (AIMv2) on pattern noise, but it doesn't provide enough context to link it to a broader theme. Therefore, based on the single sentence, it's difficult to determine any specific, unifying concept. If you have more sentences or paper titles, I could provide a more informed judgment."
+  },
+  {
+    "hex_coord": [
+      -11,
+      3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      728
+    ],
+    "summary": "The sentence refers to a decline in cluster coherence for a model or method named AIMv2, suggesting an evaluation of clustering or visualization quality. With only this single data point, there is insufficient evidence of a broader thematic connection—no unified topic can be identified beyond clustering performance analysis."
+  },
+  {
+    "hex_coord": [
+      -2,
+      -10
+    ],
+    "country": 2,
+    "MSU_ids": [
+      754
+    ],
+    "summary": "The common theme in this sentence is the use of **dimensionality reduction** techniques (specifically t-SNE) to analyze complex data, likely related to **scientific or environmental fields** (pressure and OH fields). The relationship here seems to focus on **data visualization** or **representation** for better understanding of multi-dimensional datasets."
+  },
+  {
+    "hex_coord": [
+      9,
+      -7
+    ],
+    "country": 2,
+    "MSU_ids": [
+      755
+    ],
+    "summary": "The sentence appears to focus on the use of UMAP (Uniform Manifold Approximation and Projection) for dimensionality reduction, likely in the context of visualizing high-dimensional data.\n\nSince the input only contains a single sentence from one paper, there isn't a cluster of related sentences to analyze or synthesize for a broader theme."
+  },
+  {
+    "hex_coord": [
+      4,
+      -11
+    ],
+    "country": 2,
+    "MSU_ids": [
+      756
+    ],
+    "summary": "The common theme in this cluster seems to focus on the comparison of dimensionality reduction techniques, specifically UMAP and t-SNE, in preserving the structure of high-dimensional data, particularly in the context of trajectory shapes in OH (optical holography) fields. The relationship between the sentences indicates a discussion on evaluating the effectiveness of these methods for specific data characteristics."
+  },
+  {
+    "hex_coord": [
+      -2,
+      -1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      757
+    ],
+    "summary": "The common theme in this sentence centers on **dimensionality reduction techniques**—specifically comparing the effectiveness of **UMAP** versus **t-SNE** in preserving cluster separations in data, particularly in relation to **OH fields**. The sentence indicates a performance comparison between these two algorithms for a specific application.\n\nThe relationship is clear, as both methods are being discussed in the context of preserving data structure, suggesting a focus on comparing these techniques for a particular dataset."
+  },
+  {
+    "hex_coord": [
+      0,
+      0
+    ],
+    "country": 2,
+    "MSU_ids": [
+      761
+    ],
+    "summary": "The sentence focuses on analyzing trajectory patterns to identify stable combustion behavior. The theme is **stability analysis in combustion systems through temporal or trajectory-based visualization**. Since only one sentence is provided, no broader relational inference across papers can be made."
+  },
+  {
+    "hex_coord": [
+      -2,
+      3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      762
+    ],
+    "summary": "The single sentence focuses on identifying instability in combustion dynamics, specifically through observing diverging trajectories as indicators of unstabilized combustion. Since only one statement is provided, there is no broader thematic relationship to assess beyond combustion instability detection."
+  },
+  {
+    "hex_coord": [
+      -14,
+      5
+    ],
+    "country": 2,
+    "MSU_ids": [
+      785,
+      970
+    ],
+    "summary": "Both sentences concern **combustion dynamics**, describing observed flame behaviors and their categorization into distinct modes or stages. They appear to address **different aspects of flame evolution and propagation**, suggesting a shared focus on analyzing **temporal or spatial patterns in combustion phenomena** rather than unrelated topics."
+  },
+  {
+    "hex_coord": [
+      -4,
+      -6
+    ],
+    "country": 2,
+    "MSU_ids": [
+      791
+    ],
+    "summary": "The sentence highlights the performance of InternVL2.5, a vision-language model, on benchmark evaluations. With only this information, the cluster appears to focus on **multimodal AI performance assessment**, but since there is only one sentence, no broader thematic relationship can be inferred."
+  },
+  {
+    "hex_coord": [
+      -4,
+      -2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      792
+    ],
+    "summary": "The sentence focuses on the practical deployment challenges of a multimodal model (InternVL2.5), particularly regarding hardware efficiency and optimization.  \n**Summary:** This passage highlights deployment inefficiencies in large multimodal models, emphasizing constraints like high memory usage and limited optimization tools."
+  },
+  {
+    "hex_coord": [
+      -13,
+      -7
+    ],
+    "country": 2,
+    "MSU_ids": [
+      794
+    ],
+    "summary": "The cluster appears to focus on the performance of computational models or systems, particularly addressing memory efficiency. The sentence about *Gemma-3* highlights its ability to process multiple images without memory issues, suggesting a theme of optimizing or scaling machine learning models or algorithms to handle large datasets efficiently."
+  },
+  {
+    "hex_coord": [
+      -5,
+      -1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      805
+    ],
+    "summary": "The sentence centers on generating concise visual or textual summaries that highlight critical dynamic transitions—specifically, events such as flame stabilization or recovery from failure. The focus is on temporal visualization or summarization of important state changes in combustion or similar time-dependent physical processes."
+  },
+  {
+    "hex_coord": [
+      -1,
+      2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      812
+    ],
+    "summary": "The sentence discusses filters for isolating combustion modes in a system, specifically high-pressure lean combustion, to improve data clarity in visual representations.\n\nFrom this sentence alone, the focus is on improving visual clarity in combustion analysis. It doesn’t suggest a broader, unified theme or connect with other concepts without more context. However, if additional papers or sentences in the cluster relate to combustion, visualizations, or filtering techniques, the common theme could be about improving combustion analysis through advanced data visualization or filtering methods."
+  },
+  {
+    "hex_coord": [
+      -7,
+      3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      825
+    ],
+    "summary": "The common theme of the sentences is likely focused on the analysis of dynamic processes, particularly in relation to combustion dynamics and temporal trajectories in latent space. They appear to explore how temporal evolution and high-dimensional representations (latent space) are used to understand or model combustion phenomena. The sentences are likely discussing facets of modeling complex systems over time using advanced techniques like machine learning or state-space modeling."
+  },
+  {
+    "hex_coord": [
+      5,
+      -15
+    ],
+    "country": 2,
+    "MSU_ids": [
+      837
+    ],
+    "summary": "The sentence focuses on visualization techniques for analyzing temporal or trajectory data, emphasizing layout design that supports comparison and pattern recognition. The theme is **visual analytics for temporal or trajectory data**, specifically layouts that reveal cluster dynamics and stabilization over time."
+  },
+  {
+    "hex_coord": [
+      4,
+      -15
+    ],
+    "country": 2,
+    "MSU_ids": [
+      839,
+      1040
+    ],
+    "summary": "Both sentences describe features and outcomes of a visualization system designed for analyzing temporal or multi-case data. The common theme is **a visual analytics tool that enables efficient multi-view exploration and supports collaborative, cognitively efficient hypothesis testing and pattern recognition**. They clearly discuss complementary aspects of the same system."
+  },
+  {
+    "hex_coord": [
+      2,
+      -5
+    ],
+    "country": 2,
+    "MSU_ids": [
+      856
+    ],
+    "summary": "The cluster seems to focus on the use of specialized terminology, particularly in the context of combustion, and how generated summaries incorporate domain-specific language. This suggests the papers may explore natural language processing (NLP) for technical or scientific fields, with an emphasis on summarization and precision in technical language use."
+  },
+  {
+    "hex_coord": [
+      3,
+      -14
+    ],
+    "country": 2,
+    "MSU_ids": [
+      857,
+      927
+    ],
+    "summary": "The sentences focus on analyzing and visualizing temporal dynamics—specifically, generating interpretable summaries and identifying temporal trajectories or clusters over time. They appear to discuss complementary aspects of temporal data interpretation rather than unrelated topics."
+  },
+  {
+    "hex_coord": [
+      -10,
+      -4
+    ],
+    "country": 2,
+    "MSU_ids": [
+      887
+    ],
+    "summary": "The cluster focuses on analyzing patterns within Vision Transformer (ViT) embeddings using a *Temporal Trajectory View*, highlighting consistent structural behaviors across different ViT variants. It centers on visualizing or interpreting temporal dynamics in transformer-based representations rather than introducing unrelated concepts."
+  },
+  {
+    "hex_coord": [
+      -11,
+      -3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      888,
+      915
+    ],
+    "summary": "The common theme of these sentences is the analysis of \"temporal trajectories\" and their spatial clustering behavior over time. Both sentences focus on how the trajectories evolve—one begins dispersed and the other remains tightly clustered. The relationship suggests an exploration of how dynamic data points or objects converge or remain together in a simulated environment."
+  },
+  {
+    "hex_coord": [
+      -10,
+      3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      894,
+      917
+    ],
+    "summary": "Both sentences discuss pressure dynamics in a scramjet engine, specifically the visualization and localization of pressure surges at the isolator–cavity interface. The common theme is diagnosing and interpreting stable scramjet flow behavior through visualization of pressure variations."
+  },
+  {
+    "hex_coord": [
+      -15,
+      5
+    ],
+    "country": 2,
+    "MSU_ids": [
+      895
+    ],
+    "summary": "The sentence likely refers to a temporal or causal relationship between observed surges and the formation of a cavity, possibly in a physical or geophysical context. With only this single, isolated sentence, there is insufficient information to determine a clear thematic or conceptual focus."
+  },
+  {
+    "hex_coord": [
+      -16,
+      2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      897
+    ],
+    "summary": "The sentence appears to describe the dynamic behavior of surges in a simulation, likely related to fluid dynamics or temporal stability analysis. With only this single sentence, there is insufficient context to identify a broader thematic cluster—it primarily concerns simulation stability and oscillatory system behavior."
+  },
+  {
+    "hex_coord": [
+      -10,
+      2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      898
+    ],
+    "summary": "The sentence you've provided seems to focus on the stability of pressure fields over time, possibly in a simulation or experimental context. However, without additional sentences or context about the paper, it’s challenging to determine a larger unifying theme. Based on the available information, this appears to discuss time-dependent behavior in a system, but more context is needed to clarify its relationship to other potential topics."
+  },
+  {
+    "hex_coord": [
+      -12,
+      1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      900
+    ],
+    "summary": "The sentence appears to describe frame-by-frame visualization of dynamic motion or flow between an isolator and a cavity. Given the limited context, it likely concerns **visual or experimental analysis of transient fluid or mechanical behavior**, but there is **insufficient evidence of a broader shared theme** beyond this isolated observation."
+  },
+  {
+    "hex_coord": [
+      -12,
+      2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      903
+    ],
+    "summary": "The common theme in this cluster centers around the analysis of trajectory shapes and pressure field evolution. The sentences seem to discuss how the evolution of pressure fields correlates with the similarity in trajectory shapes, likely in a physical or computational modeling context. They are related by exploring how specific patterns or dynamics in one variable (trajectory) influence another (pressure field)."
+  },
+  {
+    "hex_coord": [
+      7,
+      -12
+    ],
+    "country": 2,
+    "MSU_ids": [
+      906,
+      1007
+    ],
+    "summary": "Both sentences focus on visualization techniques—specifically, the *Temporal Trajectory View*—used to interpret and explore simulation data through clustering and interactive visual analysis. They clearly discuss the same system and highlight how this view aids intuitive understanding of temporal patterns."
+  },
+  {
+    "hex_coord": [
+      6,
+      -14
+    ],
+    "country": 2,
+    "MSU_ids": [
+      907
+    ],
+    "summary": "The sentence appears to focus on \"similar trajectories\" and their calculation within a \"Similar Trajectory View\" framework. Based on the content provided, the common theme seems to be the analysis of trajectory data, potentially in the context of temporal or spatial dynamics. The relationship among the sentences is unclear due to limited context, but they likely relate to methods or metrics for comparing trajectories in a temporal or spatiotemporal context."
+  },
+  {
+    "hex_coord": [
+      -1,
+      -7
+    ],
+    "country": 2,
+    "MSU_ids": [
+      908
+    ],
+    "summary": "The sentence appears to describe labeled visual frames representing flow fields in a temporal or fluid dynamics visualization. Since it only references image panels without conceptual content, there is **no clear thematic or conceptual link** beyond figure annotation or data visualization context."
+  },
+  {
+    "hex_coord": [
+      0,
+      3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      912
+    ],
+    "summary": "The sentence appears to describe a specific aspect of scramjet and ramjet combustion, focusing on the transition from unstable ignition to stable combustion in a high-speed propulsion system. The theme likely revolves around the dynamics of combustion in hypersonic engines or related propulsion technologies, though no clear connection to other sentences has been provided for comparison yet."
+  },
+  {
+    "hex_coord": [
+      -3,
+      -12
+    ],
+    "country": 2,
+    "MSU_ids": [
+      918
+    ],
+    "summary": "**Summary:**  \nThe common theme of this cluster appears to be the analysis of stable patterns or behaviors in complex systems, specifically related to combustion and clustering methods. The sentence suggests that stable scramjet combustion trajectories are identified as consistently forming small, compact clusters, possibly using a method like InternViT for data analysis. The relationship indicates a focus on understanding stable system behaviors through clustering techniques."
+  },
+  {
+    "hex_coord": [
+      -4,
+      -5
+    ],
+    "country": 2,
+    "MSU_ids": [
+      919,
+      936
+    ],
+    "summary": "The common theme in these sentences revolves around combustion dynamics, particularly in the context of scramjet engines. The first sentence describes the stability of scramjet combustion trajectories, while the second discusses a feature that improves the accuracy of combustion-mode descriptions. These sentences are related as they both address aspects of understanding and optimizing combustion behavior in scramjets."
+  },
+  {
+    "hex_coord": [
+      -5,
+      -9
+    ],
+    "country": 2,
+    "MSU_ids": [
+      920
+    ],
+    "summary": "Based on the provided sentence, it appears to be related to the concept of \"ramjet cases\" originating from clusters and terminating in larger stable ramjet frames. The common theme revolves around the process and development of ramjet clusters, possibly in the context of airflow dynamics or propulsion systems. The relationship between the sentences suggests a focus on the evolution and aggregation of ramjet structures within a larger framework."
+  },
+  {
+    "hex_coord": [
+      -10,
+      -7
+    ],
+    "country": 2,
+    "MSU_ids": [
+      923
+    ],
+    "summary": "The sentence focuses on a visual-language model (Gemma-3 VLM) generating contextual image descriptions for a specific video frame. Since only one sentence is provided, there is insufficient evidence of a broader thematic cluster beyond automated visual description or video frame captioning using multimodal models."
+  },
+  {
+    "hex_coord": [
+      3,
+      -15
+    ],
+    "country": 2,
+    "MSU_ids": [
+      924
+    ],
+    "summary": "It seems like you've only provided a single sentence with no other related sentences for comparison. To proceed with your request, I would need a more complete set of sentences from multiple papers. Could you provide the rest of the sentences or papers you would like me to analyze?"
+  },
+  {
+    "hex_coord": [
+      -1,
+      -11
+    ],
+    "country": 2,
+    "MSU_ids": [
+      928
+    ],
+    "summary": "It seems like the input you provided includes only one sentence from a single paper, titled \"temporalvisMSU,\" which discusses zooming in on a \"temporal trajectory.\"\n\nSince there is no other paper or sentence in this cluster, it's not possible to identify a common theme or relationship. Could you provide more sentences or papers for analysis?"
+  },
+  {
+    "hex_coord": [
+      -18,
+      1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      929
+    ],
+    "summary": "The sentence provided, \"The flow field frames were in figure (af),\" seems to refer to a specific visual representation of flow field data within a paper. However, without more context or additional sentences, it's difficult to draw a larger theme or common thread. Based on this single line, the content appears to be discussing visualizations or data presentation methods, likely within the context of fluid dynamics, but further information is needed to identify a unified topic. \n\nFor now, I cannot identify a strong, cohesive theme across this single entry."
+  },
+  {
+    "hex_coord": [
+      5,
+      -16
+    ],
+    "country": 2,
+    "MSU_ids": [
+      930
+    ],
+    "summary": "The provided sentence, \"Similar trajectories are shown at (a2) and (a3),\" does not provide sufficient context or detail to identify a clear, unified topic when considered alone. Without additional sentences or paper titles, it is challenging to infer the common theme or relationship within a larger academic context."
+  },
+  {
+    "hex_coord": [
+      -1,
+      1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      931
+    ],
+    "summary": "The sentences focus on **scramjet combustion behavior**, specifically identifying or categorizing different combustion modes in scramjet operation. This cluster appears unified around **analyzing combustion regimes in scramjet engines**, rather than unrelated or broadly aerodynamic topics."
+  },
+  {
+    "hex_coord": [
+      -7,
+      -1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      932
+    ],
+    "summary": "The sentence refers specifically to data visualization or clustering of flow conditions in a ramjet combustion analysis. Since only one sentence is provided, there is insufficient evidence of a broader thematic connection; it solely concerns ramjet combustion mode characterization."
+  },
+  {
+    "hex_coord": [
+      -2,
+      -15
+    ],
+    "country": 2,
+    "MSU_ids": [
+      935
+    ],
+    "summary": "The single sentence provides too little context to infer a shared or specific theme; it appears to describe an individual’s positive assessment of a feature, possibly in a user study or evaluation setting. No broader or unified topic can be determined from this isolated statement."
+  },
+  {
+    "hex_coord": [
+      -16,
+      3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      944
+    ],
+    "summary": "The sentence focuses on spatial variation in the OH (hydroxyl) field within an engine, likely related to combustion diagnostics or flow visualization. With only this single sentence, there is insufficient evidence of a broader thematic cluster—no clear multi-paper relationship or unified topic can be inferred."
+  },
+  {
+    "hex_coord": [
+      -13,
+      4
+    ],
+    "country": 2,
+    "MSU_ids": [
+      948
+    ],
+    "summary": "The common theme in this cluster seems to revolve around **embedding techniques** used to model and analyze **temporal dynamics** in combustion processes. Specifically, the sentences suggest a focus on how embedding methods capture evolving characteristics in combustion over time. These elements are related to studying **dynamic behaviors** in systems with temporal complexity."
+  },
+  {
+    "hex_coord": [
+      -2,
+      4
+    ],
+    "country": 2,
+    "MSU_ids": [
+      956
+    ],
+    "summary": "The content focuses on identifying and distinguishing different combustion behaviors through data clustering, indicating an analysis of combustion dynamics or mode differentiation. Since only one sentence is provided, the thematic focus is singular—combustion mode classification using clustering methods."
+  },
+  {
+    "hex_coord": [
+      1,
+      1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      957
+    ],
+    "summary": "It seems you’ve provided only a single sentence with its associated paper title (\"temporalvisMSU\"). Without additional sentences or papers for context, I cannot generate a meaningful summary of a common theme or relationship.\n\nIf there are more sentences you would like me to review, please share them and I’ll be happy to analyze them for you!"
+  },
+  {
+    "hex_coord": [
+      -6,
+      5
+    ],
+    "country": 2,
+    "MSU_ids": [
+      958
+    ],
+    "summary": "**Summary:** The sentences likely discuss aspects of combustion and flame behavior, specifically related to shear layer combustion and flame structures formed at fuel–air interfaces. These details are connected by the broader topic of combustion dynamics, particularly flame stabilization and formation in turbulent flows.\n\n**Relationship:** The sentences are focused on different facets of combustion behavior, particularly in relation to flame structure, but they share a common theme on combustion processes in turbulent or stratified conditions."
+  },
+  {
+    "hex_coord": [
+      -5,
+      0
+    ],
+    "country": 2,
+    "MSU_ids": [
+      960
+    ],
+    "summary": "The sentence describes localized concentration of hydroxyl (OH) field intensity, likely in the context of visualizing or analyzing temporal or spatial chemical or physical phenomena. With only this single excerpt, no broader thematic connection or multi-faceted topic can be determined beyond localized field intensity visualization."
+  },
+  {
+    "hex_coord": [
+      -13,
+      6
+    ],
+    "country": 2,
+    "MSU_ids": [
+      961,
+      991,
+      992
+    ],
+    "summary": "The common theme across these sentences is the description of the \"jet-wake combustion mode,\" specifically focusing on the behavior and characteristics of the flame within this combustion mode. All sentences discuss aspects of this mode, with some repetition of information. They are semantically related and describe different facets of the same phenomenon."
+  },
+  {
+    "hex_coord": [
+      -13,
+      5
+    ],
+    "country": 2,
+    "MSU_ids": [
+      962
+    ],
+    "summary": "The sentence focuses on the behavior of flames in a jet-wake combustion mode, specifically their emergence from the fuel inlet. With only this single statement provided, there is insufficient evidence of a broader thematic connection—thus, no shared or comparative topic can yet be identified."
+  },
+  {
+    "hex_coord": [
+      -11,
+      6
+    ],
+    "country": 2,
+    "MSU_ids": [
+      963
+    ],
+    "summary": "The sentence focuses on describing flame behavior—specifically the shape and structure of a flame in a jet-wake combustion mode. With only this single sentence, the topic is narrowly centered on **flame dynamics in combustion flows**, not part of a broader thematic cluster."
+  },
+  {
+    "hex_coord": [
+      -9,
+      -4
+    ],
+    "country": 2,
+    "MSU_ids": [
+      972
+    ],
+    "summary": "The provided sentence suggests that the focus is on the stability or consistency of fluctuations, likely within a specific system or dataset. However, without additional context or further sentences from related papers, it's difficult to definitively identify the broader theme or related concepts. The sentence alone seems to deal with consistency in data or behavior over time. \n\nIf you provide more sentences or context, I could give a more refined summary."
+  },
+  {
+    "hex_coord": [
+      6,
+      -2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      977
+    ],
+    "summary": "The theme centers around **analyzing and identifying combustion modes** through advanced methods like trajectory views, spatial clustering, and multiframe comparison. The sentences suggest a focus on efficient identification of key combustion patterns, likely in experimental or simulation-based research in combustion dynamics."
+  },
+  {
+    "hex_coord": [
+      3,
+      -6
+    ],
+    "country": 2,
+    "MSU_ids": [
+      978
+    ],
+    "summary": "The common theme of this cluster appears to be the application of advanced analytical techniques, such as trajectory views, spatial clustering, and multiframe comparison, to enhance diagnostic insight across different simulation scenarios. These methods seem to be related to understanding or improving simulation analysis, particularly in dynamic or spatiotemporal contexts."
+  },
+  {
+    "hex_coord": [
+      0,
+      4
+    ],
+    "country": 2,
+    "MSU_ids": [
+      988
+    ],
+    "summary": "The common theme appears to be a focus on combustion dynamics, specifically identifying and distinguishing between different modes of combustion. The sentence suggests an analysis of combustion behavior, likely exploring how varying conditions influence combustion patterns. This seems to be discussing different facets of combustion analysis rather than unrelated topics."
+  },
+  {
+    "hex_coord": [
+      -7,
+      4
+    ],
+    "country": 2,
+    "MSU_ids": [
+      989,
+      1039
+    ],
+    "summary": "**Summary:**\nThe sentences suggest a common theme of analyzing combustion modes using temporal visualization techniques. They discuss the visualization of the red cluster representing shear layer combustion and the system's capability to differentiate combustion modes and interpret evolving patterns in parameterized simulations. The relationship is focused on using visualization for understanding combustion processes."
+  },
+  {
+    "hex_coord": [
+      -8,
+      5
+    ],
+    "country": 2,
+    "MSU_ids": [
+      990
+    ],
+    "summary": "The sentence focuses on describing the shear layer combustion mode, emphasizing its narrow, stratified flame structures at the fuel–air interface. Since only one sentence is provided, it represents a specific phenomenon in combustion dynamics rather than a broader thematic cluster."
+  },
+  {
+    "hex_coord": [
+      -2,
+      -3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      997
+    ],
+    "summary": "The sentence focuses on expert validation of combustion behavior through scalable labeling and pattern recognition across similar cases. This suggests a theme of **data-driven validation or visualization methods for large-scale combustion analysis**, though with only one sentence, the broader context remains unclear."
+  },
+  {
+    "hex_coord": [
+      2,
+      -8
+    ],
+    "country": 2,
+    "MSU_ids": [
+      998
+    ],
+    "summary": "It seems like you've only provided one sentence from a single paper so far, which makes it difficult to assess any clustering of ideas or relationships between multiple sentences. Could you please provide the additional sentences or papers you would like me to analyze? That way, I can synthesize them properly into a cohesive summary."
+  },
+  {
+    "hex_coord": [
+      -3,
+      -3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      999
+    ],
+    "summary": "The sentence points to the use of semantic report generation as a method for interpreting or explaining data. Since only one sentence is provided, there is insufficient evidence of a broader thematic relationship; the focus is solely on semantic report generation as an interpretive tool."
+  },
+  {
+    "hex_coord": [
+      3,
+      -13
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1000
+    ],
+    "summary": "The common theme across these sentences appears to be the importance of semantic report generation, especially in fostering communication across different fields or expertise areas. This suggests that the sentences are discussing how generating semantic summaries or reports can improve interdisciplinary collaboration or understanding."
+  },
+  {
+    "hex_coord": [
+      2,
+      -15
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1002,
+      1004
+    ],
+    "summary": "Both sentences describe **VLM-generated summaries** as a shared semantic framework enabling experts to interpret or critique simulation behavior. The common theme is the **use of vision-language models (VLMs) to create interpretable, collaborative explanations of simulation results**, highlighting their role in enhancing expert understanding and discussion."
+  },
+  {
+    "hex_coord": [
+      -8,
+      -2
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1008
+    ],
+    "summary": "The sentence refers to analyzing how \"ignition and stabilization\" evolve in an \"embedding space,\" suggesting the study of dynamic processes or transitions within a structured representation (likely related to machine learning, neural networks, or data embeddings).\n\nSince there is only one sentence and no other context provided, it's challenging to make a clear judgment on the larger theme. However, if there were more sentences, they would likely focus on the evolution of processes in embedding spaces or data representations."
+  },
+  {
+    "hex_coord": [
+      4,
+      -14
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1009
+    ],
+    "summary": "The sentence you provided (\"Experts could explore comparable cases with a single click\") doesn't appear to fit within a broader cluster of related ideas from multiple academic sources based on the context provided. This sentence seems to focus on the potential for efficient case comparison, likely within the realm of information retrieval or decision support systems.\n\nSince you only provided one sentence here without additional context or related sentences, it's difficult to identify a common theme or relationship across multiple sources. If you have more sentences or a broader set of inputs, I’d be happy to reassess!"
+  },
+  {
+    "hex_coord": [
+      2,
+      1
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1010
+    ],
+    "summary": "**Summary:**  \nThe sentence focuses on expert analysis leading to the validation of prior hypotheses and the discovery of hybrid combustion behaviors. The theme centers on **using visualization or analytical methods to uncover and confirm complex combustion phenomena**. Since only one sentence is given, no broader relationship assessment is possible."
+  },
+  {
+    "hex_coord": [
+      -6,
+      -3
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1015
+    ],
+    "summary": "The cluster centers on **visualization and analysis of temporal or flow-based scientific data**, likely focusing on **tools or methods (e.g., TemporalFlowViz)** used for interpreting dynamic processes such as combustion. Since only one sentence is present, no broader thematic relationship can be established beyond this single focus."
+  },
+  {
+    "hex_coord": [
+      -18,
+      0
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1021
+    ],
+    "summary": "The common theme across these sentences seems to be the application of Vision Transformers (ViTs) for analyzing combustion-related phenomena, particularly in pressure and OH fields. The sentences likely discuss how ViTs can capture relevant features from complex data in the context of combustion studies."
+  },
+  {
+    "hex_coord": [
+      3,
+      -12
+    ],
+    "country": 2,
+    "MSU_ids": [
+      1029
+    ],
+    "summary": "It seems you've only provided one sentence along with the paper title. Could you provide additional sentences so I can evaluate the cluster as a whole?"
+  }
+]
