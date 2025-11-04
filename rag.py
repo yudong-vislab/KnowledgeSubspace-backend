@@ -1,4 +1,5 @@
 import time
+import os
 from typing import List, Optional, Dict
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import PyPDFLoader
@@ -7,35 +8,34 @@ from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from langchain.prompts import ChatPromptTemplate
 from langchain.schema.runnable import RunnablePassthrough
 from langchain.schema.output_parser import StrOutputParser
-import os
+from dotenv import load_dotenv
+
+# 加载环境变量
+load_dotenv()
 
 class PDFRAGSystem:
     """PDF文档的检索增强生成(RAG)系统"""
     
     def __init__(self):
-        """初始化RAG系统
+        """初始化RAG系统"""
+        # 从环境变量中读取配置
+        self.api_key = os.getenv("EMBEDDING_API_KEY", os.getenv("OPENAI_API_KEY", ""))
+        self.base_url = os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1")
         
-        Args:
-            openai_api_key: OpenAI API密钥
-        """
-        # 设置OpenAI API密钥
-        # if not openai_api_key:
-        #     raise ValueError("请提供OpenAI API密钥")
-        self.api_key = "sk-TACoyuhVsr9CyWrX960bC42823Bf40218aDb52Bf5fA17543"
+        # 验证API密钥是否存在
+        if not self.api_key:
+            print("警告: 未设置API密钥，请确保.env文件中有正确的配置")
         
         # 初始化嵌入模型和语言模型
-        # 设置自定义API base_url
-        custom_base_url = "https://www.jcapikey.com/v1"
-        
         self.embeddings = OpenAIEmbeddings(
             openai_api_key=self.api_key,
-            base_url=custom_base_url
+            base_url=self.base_url
         )
         self.llm = ChatOpenAI(
             openai_api_key=self.api_key,
-            model_name="gpt-3.5-turbo",  # 可以根据需要更改为gpt-4
+            model_name=os.getenv("OPENAI_MODEL", "gpt-3.5-turbo"),
             temperature=0.0,
-            base_url=custom_base_url
+            base_url=self.base_url
         )
         
         # 初始化文本分割器
@@ -208,8 +208,6 @@ class PDFRAGSystem:
 if __name__ == "__main__":
     # 提示用户输入API密钥和PDF路径
     print("欢迎使用PDF RAG系统！")
-    # api_key = input("请输入您的OpenAI API密钥: ")
-    # pdf_path = input("请输入PDF文件路径: ")
     pdf_path = "NeuroSync.pdf"
     # 初始化RAG系统
     try:

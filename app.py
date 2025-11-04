@@ -27,9 +27,12 @@ except Exception:
 
 # ================= Env & OpenAI client =================
 load_dotenv()
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "").strip()
-OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1").strip()
-OPENAI_DEFAULT_MODEL = os.getenv("OPENAI_DEFAULT_MODEL", "gpt-3.5-turbo").strip()
+# OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "").strip()
+# OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1").strip()
+# OPENAI_DEFAULT_MODEL = os.getenv("OPENAI_DEFAULT_MODEL", "gpt-3.5-turbo").strip()
+OPENAI_API_KEY =  "sk-pZGA3K2BhjI1dE662c8eBfD18b5b4741B8A33f1509012e4c"
+OPENAI_BASE_URL = "https://hk.xty.app/v1"
+OPENAI_DEFAULT_MODEL = "gpt-4"  # 可换成你代理支持的
 
 from openai import OpenAI
 client = OpenAI(api_key=OPENAI_API_KEY, base_url=OPENAI_BASE_URL)
@@ -169,7 +172,7 @@ class RAGService:
     """
     def __init__(self, pdf_root: pathlib.Path, index_root: pathlib.Path,
                  openai_api_key: str, openai_base_url: str,
-                 model: str = "gpt-4o-mini", temperature: float = 0.0):
+                 model: str = OPENAI_DEFAULT_MODEL, temperature: float = 0.0):
         self.pdf_root = pathlib.Path(pdf_root)
         self.index_root = pathlib.Path(index_root)
         self.index_root.mkdir(parents=True, exist_ok=True)
@@ -349,7 +352,7 @@ try:
         index_root=INDEX_ROOT,
         openai_api_key=OPENAI_API_KEY,
         openai_base_url=OPENAI_BASE_URL,
-        model=os.getenv("RAG_MODEL", "gpt-4o-mini"),
+        model=os.getenv("RAG_MODEL", OPENAI_DEFAULT_MODEL),
         temperature=float(os.getenv("RAG_TEMPERATURE", "0.0")),
     )
 except Exception as _e:
