@@ -25,6 +25,21 @@ except Exception:
     PROMPT_SUBSPACE_ANALYSIS = "You help with subspace analysis."
     HAS_PROMPTS = False
 
+PROMPT_MSU_SUMMARY = os.getenv("PROMPT_MSU_SUMMARY", """
+You write a dense, evidence-only overview from given MSU sentences grouped by ordered hops and subspaces.
+Rules:
+- 90–120 words; one paragraph; no markdown; no meta phrases.
+- Use only terms present in the MSUs; preserve hop order and note genuine subspace shifts briefly.
+Output ONLY JSON: {"RouteSummary":"..."}.
+""").strip()
+
+TASK_PROMPTS = {
+    "literature": PROMPT_LITERATURE_SEARCH,
+    "subspace":   PROMPT_SUBSPACE_ANALYSIS,
+    "msu_summary": PROMPT_MSU_SUMMARY,  # ✨ 新增
+}
+
+
 # ================= Env & OpenAI client =================
 load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "").strip()
@@ -279,19 +294,28 @@ def is_subspace_command(s: str) -> bool:
 # ================= Semantic map minimal routes (unchanged interface) =================
 @app.get("/api/semantic-map")
 def get_semantic_map():
+    # 加载最新的语义图数据
     data = load_data()
+    
+    # 获取当前文件的 ETag（用于版本控制）
     etag = _file_etag(DATA_PATH)
+    
+    # 获取客户端请求的 ETag，如果相同则返回 304（表示数据未变）
     inm = request.headers.get("If-None-Match")
+    
     if inm and etag and inm == etag:
         resp = make_response("", 304)
         resp.headers["ETag"] = etag
-        resp.headers["Cache-Control"] = "public, max-age=60"
+        resp.headers["Cache-Control"] = "public, max-age=60"  # 控制缓存
         return resp
+    
+    # 如果数据有变化，则返回新数据
     resp = jsonify(data)
     if etag:
-        resp.headers["ETag"] = etag
-        resp.headers["Cache-Control"] = "public, max-age=60"
+        resp.headers["ETag"] = etag  # 设置新的 ETag
+        resp.headers["Cache-Control"] = "public, max-age=60"  # 控制缓存
     return resp
+
 
 @app.get("/api/semantic-map/indices")
 def get_indices_only():
@@ -669,23 +693,17 @@ def rag_build_index():
         abort(500, f"RAG index error: {e}")
 
 # ================= Unified /api/query =================
-# For answers (chat or RAG ask), returns plain text; for list/index returns JSON.
-TASK_PROMPTS = {
-    "literature": PROMPT_LITERATURE_SEARCH,
-    "subspace":   PROMPT_SUBSPACE_ANALYSIS,
-}
-
 @app.post("/api/query")
 def query_gpt():
     body = request.get_json(force=True) or {}
     user_query = (body.get("query") or "").strip()
+    messages_from_client = body.get("messages")  # 可选：前端传近几轮对话
     if not user_query:
         return app.response_class("No query provided", mimetype="text/plain"), 400
 
-    # 0) Highest priority: Subspace control (UI显隐) —— 只要命中就直接返回 JSON
+    # 0) Subspace 控制（最高优先），LLM 严格 JSON → 前端 UI 路由
     task_type = (body.get("task") or "").lower()
     if task_type == "subspace" or is_subspace_command(user_query):
-        # LLM 严格 JSON（失败则回退到规则解析）
         try:
             tool_prompt = (
                 "You are a UI command normalizer for controlling subspace visibility.\n"
@@ -707,20 +725,19 @@ def query_gpt():
             cmd_from_llm = ""
 
         command = cmd_from_llm if cmd_from_llm else parse_subspace_command(user_query)
-
         return jsonify({
             "mode": "subspace/control",
-            "payload": { "text": command },   # e.g., "show background, result"
+            "payload": { "text": command },
             "meta": {}
         }), 200
 
-    # 1) NL intent for RAG (rules first; then LLM fallback)
+    # 1) NL intent for RAG（规则优先，失败走 LLM）
     intent = parse_intent_rules(user_query)
     if intent.get("action") == "none":
         intent = parse_intent_llm(user_query)
 
-    # 2) RAG routing when intent recognized
-    if intent.get("action") in ("projects","index","ask"):
+    # 2) RAG 路由（projects/index/ask）
+    if intent.get("action") in ("projects", "index", "ask"):
         rag = _ensure_rag()
         try:
             if intent["action"] == "projects":
@@ -742,10 +759,16 @@ def query_gpt():
                         pid = "case1"
                     else:
                         return app.response_class("Please specify which project to query (case1 or case2).", mimetype="text/plain"), 200
-                q = intent.get("question") or user_query
 
-                # Structured, per-PDF retrieval + answer; lazy index build inside
-                answer_text = rag.query_structured(pid, q, k=int(body.get("k",5)), mmr=bool(body.get("mmr",False)))
+                # ✨ 上下文压缩 → 作为检索语义前缀
+                ctx_summary = _condense_messages_to_summary(messages_from_client)
+                condensed_q = (ctx_summary + "\n\n" if ctx_summary else "") + (intent.get("question") or user_query)
+
+                answer_text = rag.query_structured(
+                    pid, condensed_q,
+                    k=int(body.get("k", 5)),
+                    mmr=bool(body.get("mmr", False))
+                )
                 return app.response_class(answer_text, mimetype="text/plain"), 200
 
         except FileNotFoundError as e:
@@ -754,16 +777,31 @@ def query_gpt():
             print("[RAG] NL intent error:", e)
             return app.response_class(f"RAG error: {e}", mimetype="text/plain"), 500
 
-    # 3) Fallback: normal chat → plain text
+    # 3) Fallback: 普通 Chat（会话历史优先，否则用压缩提要）
     task_type = (task_type or "literature") or "literature"
     task_prompt = TASK_PROMPTS.get(task_type, "")
     try:
+        openai_messages = [{"role": "system", "content": SYSTEM_PROMPT_ACTIVE}]
+
+        if isinstance(messages_from_client, list) and messages_from_client:
+            # 直接拼接最近 8 条
+            for m in messages_from_client[-8:]:
+                if isinstance(m, dict) and "role" in m and "content" in m:
+                    openai_messages.append({"role": m["role"], "content": m["content"]})
+        else:
+            # 无历史 → 用 1–3 句的上下文提要
+            ctx_summary = _condense_messages_to_summary(messages_from_client)
+            if ctx_summary:
+                openai_messages.append({"role": "system", "content": f"[Context summary]\n{ctx_summary}"})
+
+        openai_messages.append({
+            "role": "user",
+            "content": f"{task_prompt}\n\nUser query:\n{user_query}"
+        })
+
         resp = client.chat.completions.create(
             model=body.get("model", OPENAI_DEFAULT_MODEL),
-            messages=[
-                {"role": "system", "content": SYSTEM_PROMPT_ACTIVE},
-                {"role": "user", "content": f"{task_prompt}\n\nUser query:\n{user_query}"}
-            ],
+            messages=openai_messages,
             temperature=0.2,
             max_tokens=900,
             timeout=30.0
@@ -773,6 +811,44 @@ def query_gpt():
     except Exception as e:
         print("GPT error:", e)
         return app.response_class(f"Error: {str(e)}", mimetype="text/plain"), 500
+
+
+# ===== 在文件顶部 imports 附近，添加一个极简的压缩器 =====
+def _condense_messages_to_summary(messages: list[str] | list[dict] | None) -> str:
+    """
+    将多轮消息压缩为 1–3 句语义提要（不含私货）。
+    输入 messages 可为 OpenAI messages 结构或简单字符串数组。
+    """
+    if not messages:
+        return ""
+    tail = messages[-6:]  # 取最近 N 条，避免爆 token
+    lines = []
+    for m in tail:
+        if isinstance(m, dict):
+            role = m.get("role", "user")
+            content = (m.get("content") or "").strip()
+        else:
+            role, content = "user", str(m).strip()
+        if content:
+            lines.append(f"{role}: {content}")
+    convo_text = "\n".join(lines[-1200:])  # 再限长度
+
+    prompt = (
+        "Summarize the following multi-turn conversation context into 1–3 concise sentences.\n"
+        "Keep only domain facts, tasks, constraints, and user intent. No extra commentary.\n"
+        "Conversation:\n" + convo_text + "\n\nSummary:"
+    )
+    try:
+        resp = client.chat.completions.create(
+            model=os.getenv("CONDENSE_MODEL", OPENAI_DEFAULT_MODEL),
+            messages=[{"role": "user", "content": prompt}],
+            temperature=0.0,
+            max_tokens=120,
+            timeout=12.0
+        )
+        return (resp.choices[0].message.content or "").strip()
+    except Exception:
+        return ""
 
 # ================= Main =================
 if __name__ == "__main__":

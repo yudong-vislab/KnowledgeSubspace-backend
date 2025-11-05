@@ -102,18 +102,26 @@ class PDFRAGSystem:
         """创建RAG链"""
         # 定义提示模板
         template = """
-        你是一个问答助手，你的任务是基于提供的上下文信息回答用户的问题。
-        请严格根据上下文信息回答，不要添加上下文之外的信息。
-        如果上下文信息不足以回答问题，请如实告知用户。
-        
-        上下文信息:
+        You are a semantic comparison assistant within a retrieval-augmented academic analysis system.
+        Your task is to analyze and compare scientific or technical documents using the retrieved context.
+
+        Instructions:
+        1. Use ONLY the provided context to answer the user's question. Do not rely on outside knowledge.
+        2. When multiple documents are retrieved, summarize key similarities and differences.
+        3. Provide concise, structured analysis (bullet points or numbered lists).
+        4. If evidence is available, quote or reference short text snippets or page indices.
+        5. If the context is insufficient, respond with: "Insufficient context to answer confidently."
+        6. Keep reasoning factual, transparent, and semantically consistent.
+
+        Context:
         {context}
-        
-        用户问题:
+
+        User Question:
         {question}
-        
-        回答:
+
+        Structured Answer:
         """
+
         
         prompt = ChatPromptTemplate.from_template(template)
         
