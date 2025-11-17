@@ -6,7 +6,7 @@ import math
 from collections import defaultdict
 
 class SemanticLinkGenerator:
-    def __init__(self, sentence_file: str, semantic_map_file: str = "../KnowledgeSubspace-backend/data/semantic_map_data.json"):
+    def __init__(self, sentence_file: str, semantic_map_file: str = "../SeSMap-backend/data/semantic_map_data.json"):
         self.sentence_data = self.load_json(sentence_file)
         self.semantic_map_data = self.load_json(semantic_map_file)
         
@@ -287,7 +287,7 @@ class SemanticLinkGenerator:
 # 使用示例
 if __name__ == "__main__":
     generator = SemanticLinkGenerator(
-        sentence_file="../KnowledgeSubspace-backend/case2/formdatabase.json"
+        sentence_file="../SeSMap-backend/case2/formdatabase.json"
     )
     
     # 使用更严格的参数以减少连接数量
