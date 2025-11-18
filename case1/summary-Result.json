@@ -21,7 +21,7 @@
       332,
       450
     ],
-    "summary": "**Summary:**  \nThese sentences collectively examine flow dynamics and flame stabilization mechanisms in scramjet or ramjet combustion systems. They describe how different operating modes influence vortex formation, flow symmetry, and flame structures. The cluster is tightly related, focusing on aerodynamic and combustion characteristics in high-speed propulsion configurations."
+    "summary": "These sentences collectively examine flow dynamics and flame stabilization mechanisms in scramjet or ramjet combustion systems. They describe how different operating modes influence vortex formation, flow symmetry, and flame structures. The cluster is tightly related, focusing on aerodynamic and combustion characteristics in high-speed propulsion configurations."
   },
   {
     "hex_coord": [
@@ -740,7 +740,7 @@
     "MSU_ids": [
       314
     ],
-    "summary": "Summary: The extracted sentence suggests a focus on flames being confined within vortexes to enhance fluid mixing. This common theme implies a shared exploration of combustion dynamics within turbulent flows, pointing towards research on reacting flow phenomena in fluid mechanics."
+    "summary": "The extracted sentence suggests a focus on flames being confined within vortexes to enhance fluid mixing. This common theme implies a shared exploration of combustion dynamics within turbulent flows, pointing towards research on reacting flow phenomena in fluid mechanics."
   },
   {
     "hex_coord": [
@@ -914,7 +914,7 @@
       406,
       473
     ],
-    "summary": "Summary:\nThe sentences from the papers titled \"largeeddyMSU\" indicate a focus on analyzing flame oscillation waveforms and the diffusion regime within combustion systems. They share a common theme in studying combustion dynamics and the interaction between reaction zones and air streams."
+    "summary": "The sentences from the papers titled \"largeeddyMSU\" indicate a focus on analyzing flame oscillation waveforms and the diffusion regime within combustion systems. They share a common theme in studying combustion dynamics and the interaction between reaction zones and air streams."
   },
   {
     "hex_coord": [
@@ -1339,7 +1339,7 @@
     "MSU_ids": [
       792
     ],
-    "summary": "The sentence focuses on the practical deployment challenges of a multimodal model (InternVL2.5), particularly regarding hardware efficiency and optimization.  \n**Summary:** This passage highlights deployment inefficiencies in large multimodal models, emphasizing constraints like high memory usage and limited optimization tools."
+    "summary": "The sentence focuses on the practical deployment challenges of a multimodal model (InternVL2.5), particularly regarding hardware efficiency and optimization. This passage highlights deployment inefficiencies in large multimodal models, emphasizing constraints like high memory usage and limited optimization tools."
   },
   {
     "hex_coord": [
@@ -1575,7 +1575,7 @@
     "MSU_ids": [
       918
     ],
-    "summary": "**Summary:**  \nThe common theme of this cluster appears to be the analysis of stable patterns or behaviors in complex systems, specifically related to combustion and clustering methods. The sentence suggests that stable scramjet combustion trajectories are identified as consistently forming small, compact clusters, possibly using a method like InternViT for data analysis. The relationship indicates a focus on understanding stable system behaviors through clustering techniques."
+    "summary": "The common theme of this cluster appears to be the analysis of stable patterns or behaviors in complex systems, specifically related to combustion and clustering methods. The sentence suggests that stable scramjet combustion trajectories are identified as consistently forming small, compact clusters, possibly using a method like InternViT for data analysis. The relationship indicates a focus on understanding stable system behaviors through clustering techniques."
   },
   {
     "hex_coord": [
@@ -1741,7 +1741,7 @@
     "MSU_ids": [
       958
     ],
-    "summary": "**Summary:** The sentences likely discuss aspects of combustion and flame behavior, specifically related to shear layer combustion and flame structures formed at fuel–air interfaces. These details are connected by the broader topic of combustion dynamics, particularly flame stabilization and formation in turbulent flows.\n\n**Relationship:** The sentences are focused on different facets of combustion behavior, particularly in relation to flame structure, but they share a common theme on combustion processes in turbulent or stratified conditions."
+    "summary": "The sentences likely discuss aspects of combustion and flame behavior, specifically related to shear layer combustion and flame structures formed at fuel–air interfaces. These details are connected by the broader topic of combustion dynamics, particularly flame stabilization and formation in turbulent flows.\n\n**Relationship:** The sentences are focused on different facets of combustion behavior, particularly in relation to flame structure, but they share a common theme on combustion processes in turbulent or stratified conditions."
   },
   {
     "hex_coord": [
@@ -1843,7 +1843,7 @@
       989,
       1039
     ],
-    "summary": "**Summary:**\nThe sentences suggest a common theme of analyzing combustion modes using temporal visualization techniques. They discuss the visualization of the red cluster representing shear layer combustion and the system's capability to differentiate combustion modes and interpret evolving patterns in parameterized simulations. The relationship is focused on using visualization for understanding combustion processes."
+    "summary": "The sentences suggest a common theme of analyzing combustion modes using temporal visualization techniques. They discuss the visualization of the red cluster representing shear layer combustion and the system's capability to differentiate combustion modes and interpret evolving patterns in parameterized simulations. The relationship is focused on using visualization for understanding combustion processes."
   },
   {
     "hex_coord": [
@@ -1943,7 +1943,7 @@
     "MSU_ids": [
       1010
     ],
-    "summary": "**Summary:**  \nThe sentence focuses on expert analysis leading to the validation of prior hypotheses and the discovery of hybrid combustion behaviors. The theme centers on **using visualization or analytical methods to uncover and confirm complex combustion phenomena**. Since only one sentence is given, no broader relationship assessment is possible."
+    "summary": "The sentence focuses on expert analysis leading to the validation of prior hypotheses and the discovery of hybrid combustion behaviors. The theme centers on **using visualization or analytical methods to uncover and confirm complex combustion phenomena**. Since only one sentence is given, no broader relationship assessment is possible."
   },
   {
     "hex_coord": [

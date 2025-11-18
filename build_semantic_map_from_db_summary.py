@@ -38,7 +38,15 @@ build_semantic_map_from_db_summary.py
 用法示例（推荐自动发现配对文件）：
   python build_semantic_map_from_db_summary.py \
     --case-dir case1 \
-    --out data/semantic_map_data.json
+    --out data/case1/semantic_map_data.json
+
+  python build_semantic_map_from_db_summary.py \
+    --case-dir case2 \
+    --out data/case2/semantic_map_data.json
+
+  python build_semantic_map_from_db_summary.py \
+    --case-dir case3 \
+    --out data/case3/semantic_map_data.json
 
 也支持显式传入（同长度、同顺序）：
   python build_semantic_map_from_db_summary.py \

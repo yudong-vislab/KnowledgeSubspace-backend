@@ -1,0 +1,1618 @@
+[
+  {
+    "sentence": "These limitations highlight the demand for intelligent, automated visualization solutions tailored to the unique characteristics of circular genomic data.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 5,
+    "msuid": 30,
+    "para_id": 3,
+    "paper_id": 1,
+    "2d_coord": [
+      0.5252363681793213,
+      3.0220470428466797
+    ],
+    "MSU_id": 30,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "Circular genome visualizations offer aesthetic appeal and spatial efficiency for representing long genomic sequences and their interconnections. Tools, such as Circos, have become standard for visualizing genomic alterations and chromosome structures in circular layout. However, they rely heavily on manual configuration and scripting, imposing steep learning curves and time-consuming workflows. Researchers often need to iteratively adjust parameters to fit data-specific requirements, which can impede productivity and limit the clarity or expressiveness of the final output. These limitations highlight the demand for intelligent, automated visualization solutions tailored to the unique characteristics of circular genomic data."
+  },
+  {
+    "sentence": "Despite their widespread use, circular layouts largely rely on manual design.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 5,
+    "msuid": 81,
+    "para_id": 11,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.8314197063446045,
+      0.012441255152225494
+    ],
+    "MSU_id": 81,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "In bioinformatics, circular layouts have proven to be a highly effective visualization approach. In a study on the collinearity of the bZIP gene family in poplar, Zhao et al. $^{3}$  employed a circular layout analysis method to explore gene functions and regulatory mechanisms by visualizing gene density, homologous blocks, and the distribution of segmental duplicated gene pairs. Peng et al. $^{4}$  utilized circular layouts to depict plasmid structures carrying various genes, alongside sequence alignment results of other Enterobacteriaceae bacteria sharing similar plasmid backbones, thereby illustrating plasmid gene structures, multidrug resistance regions, and homology. Garcia et al. $^{5}$  in their study of the Lima bean genome, used circular layouts to display multiple features to understand genome organization and evolution. Similarly, Zhang et al. $^{6}$  adopted circular layouts to present genome characteristics in tea tree research, visualizing genetic diversity and evolutionary history. Despite their widespread use, these circular layouts largely rely on manual design, limiting their efficiency and general applicability."
+  },
+  {
+    "sentence": "The reliance on manual design limits the efficiency and general applicability of circular layouts.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 5,
+    "msuid": 82,
+    "para_id": 11,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.8355959057807922,
+      1.238892912864685
+    ],
+    "MSU_id": 82,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "In bioinformatics, circular layouts have proven to be a highly effective visualization approach. In a study on the collinearity of the bZIP gene family in poplar, Zhao et al. $^{3}$  employed a circular layout analysis method to explore gene functions and regulatory mechanisms by visualizing gene density, homologous blocks, and the distribution of segmental duplicated gene pairs. Peng et al. $^{4}$  utilized circular layouts to depict plasmid structures carrying various genes, alongside sequence alignment results of other Enterobacteriaceae bacteria sharing similar plasmid backbones, thereby illustrating plasmid gene structures, multidrug resistance regions, and homology. Garcia et al. $^{5}$  in their study of the Lima bean genome, used circular layouts to display multiple features to understand genome organization and evolution. Similarly, Zhang et al. $^{6}$  adopted circular layouts to present genome characteristics in tea tree research, visualizing genetic diversity and evolutionary history. Despite their widespread use, these circular layouts largely rely on manual design, limiting their efficiency and general applicability."
+  },
+  {
+    "sentence": "This highlights the need for automation and intelligence.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 3,
+    "msuid": 102,
+    "para_id": 14,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.17635856568813324,
+      -2.440704345703125
+    ],
+    "MSU_id": 102,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "These tools depend on parameterized designs, making them poorly adaptable to diverse data types and lacking support for automation. This results in low generation efficiency and a reliance on user expertise, highlighting the need for automation and intelligence, which serves as the entry point for this study."
+  },
+  {
+    "sentence": "The need for automation and intelligence serves as the entry point for this study.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 5,
+    "msuid": 103,
+    "para_id": 14,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.8707455396652222,
+      -1.1823066473007202
+    ],
+    "MSU_id": 103,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "These tools depend on parameterized designs, making them poorly adaptable to diverse data types and lacking support for automation. This results in low generation efficiency and a reliance on user expertise, highlighting the need for automation and intelligence, which serves as the entry point for this study."
+  },
+  {
+    "sentence": "These approaches effectively address basic visualization needs.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 3,
+    "msuid": 110,
+    "para_id": 15,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.1929985135793686,
+      1.2509346008300781
+    ],
+    "MSU_id": 110,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "The emergence of LLMs has enabled promising advances in the automatic generation of data visualizations, greatly reducing the technical threshold for manual design. For instance, CHAT2VIS $^{16}$  translates natural language queries and tabular data into executable Python code, ChartGPT $^{17}$  decomposes chart generation into multistep reasoning through fine-tuned FLAN-T5-XL, and LIDA $^{18}$  employs a modular pipeline to support exploratory visual analysis and narrative construction. These approaches effectively address basic visualization needs and mitigate limitations in semantic understanding and long-context reasoning."
+  },
+  {
+    "sentence": "These approaches mitigate limitations in semantic understanding and long-context reasoning.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 4,
+    "msuid": 111,
+    "para_id": 15,
+    "paper_id": 1,
+    "2d_coord": [
+      1.4139471054077148,
+      1.792639970779419
+    ],
+    "MSU_id": 111,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "The emergence of LLMs has enabled promising advances in the automatic generation of data visualizations, greatly reducing the technical threshold for manual design. For instance, CHAT2VIS $^{16}$  translates natural language queries and tabular data into executable Python code, ChartGPT $^{17}$  decomposes chart generation into multistep reasoning through fine-tuned FLAN-T5-XL, and LIDA $^{18}$  employs a modular pipeline to support exploratory visual analysis and narrative construction. These approaches effectively address basic visualization needs and mitigate limitations in semantic understanding and long-context reasoning."
+  },
+  {
+    "sentence": "These findings informed our visual design.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 4,
+    "msuid": 136,
+    "para_id": 18,
+    "paper_id": 1,
+    "2d_coord": [
+      1.2891334295272827,
+      2.5772111415863037
+    ],
+    "MSU_id": 136,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "We began by analyzing 42 genomics papers published in top-tier journals (e.g., Nature and Cell), focusing specifically on the use of circular visualizations to represent complex genomic information, such as chromosomal rearrangements, gene interactions, and differential expression patterns. Rather than analyzing full texts, we systematically reviewed key figures in papers to identify common visualization types, usage contexts, and design goals. Through this process, we derived a taxonomy of three major layout styles: ring-based, radial, and chord-based circular genome visualizations. We also examined the tools used to generate these figures, finding that most relied on static platforms, such as Circos, which offer limited customization and interactivity. These findings informed our visual design and motivated our choice of a D3-based code to support extensibility and dynamic control."
+  },
+  {
+    "sentence": "The findings motivated our choice of a D3-based code to support extensibility and dynamic control.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 5,
+    "msuid": 137,
+    "para_id": 18,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.6574071049690247,
+      -0.14024944603443146
+    ],
+    "MSU_id": 137,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "We began by analyzing 42 genomics papers published in top-tier journals (e.g., Nature and Cell), focusing specifically on the use of circular visualizations to represent complex genomic information, such as chromosomal rearrangements, gene interactions, and differential expression patterns. Rather than analyzing full texts, we systematically reviewed key figures in papers to identify common visualization types, usage contexts, and design goals. Through this process, we derived a taxonomy of three major layout styles: ring-based, radial, and chord-based circular genome visualizations. We also examined the tools used to generate these figures, finding that most relied on static platforms, such as Circos, which offer limited customization and interactivity. These findings informed our visual design and motivated our choice of a D3-based code to support extensibility and dynamic control."
+  },
+  {
+    "sentence": "Based on these findings, we distilled six key requirements that a genome visual analytics framework should fulfill.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 5,
+    "msuid": 145,
+    "para_id": 19,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.47994452714920044,
+      1.2220808267593384
+    ],
+    "MSU_id": 145,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "To complement these figure-derived insights with domain-specific needs, we conducted semistructured interviews and design discussions with eight genomics experts (average experience: 8.6 years) from areas, such as cancer genomics, comparative genomics, transcriptomics, and bioinformatics tool development. These experts were selected from ongoing collaborations and research networks. During sessions, experts reviewed representative circular visualizations extracted from the 42 papers, provided feedback through scenario walkthroughs, and engaged in feature prioritization and mockup evaluations. Their feedback validated the proposed layout taxonomy and further shaped our understanding of critical challenges. Based on these findings, we distilled six key requirements that a genome visual analytics framework should fulfill to enhance analytical efficiency, expressiveness, and usability."
+  },
+  {
+    "sentence": "The requirements aim to enhance analytical efficiency, expressiveness, and usability.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 5,
+    "msuid": 146,
+    "para_id": 19,
+    "paper_id": 1,
+    "2d_coord": [
+      0.018398523330688477,
+      1.4189062118530273
+    ],
+    "MSU_id": 146,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "To complement these figure-derived insights with domain-specific needs, we conducted semistructured interviews and design discussions with eight genomics experts (average experience: 8.6 years) from areas, such as cancer genomics, comparative genomics, transcriptomics, and bioinformatics tool development. These experts were selected from ongoing collaborations and research networks. During sessions, experts reviewed representative circular visualizations extracted from the 42 papers, provided feedback through scenario walkthroughs, and engaged in feature prioritization and mockup evaluations. Their feedback validated the proposed layout taxonomy and further shaped our understanding of critical challenges. Based on these findings, we distilled six key requirements that a genome visual analytics framework should fulfill to enhance analytical efficiency, expressiveness, and usability."
+  },
+  {
+    "sentence": "The purpose of these operations is to support data familiarization.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 3,
+    "msuid": 150,
+    "para_id": 20,
+    "paper_id": 1,
+    "2d_coord": [
+      0.15321102738380432,
+      1.4245442152023315
+    ],
+    "MSU_id": 150,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "R1—Structured Data Ingestion and Profiling: It efficiently ingests tabular genomic data and performs automatic feature recognition and statistical profiling to support data familiarization and downstream tasks."
+  },
+  {
+    "sentence": "The purpose of these operations is to support downstream tasks.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 3,
+    "msuid": 151,
+    "para_id": 20,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.375055193901062,
+      -1.8678354024887085
+    ],
+    "MSU_id": 151,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "R1—Structured Data Ingestion and Profiling: It efficiently ingests tabular genomic data and performs automatic feature recognition and statistical profiling to support data familiarization and downstream tasks."
+  },
+  {
+    "sentence": "The six core requirements ensure scalability in genomic data visualizations.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 3,
+    "msuid": 166,
+    "para_id": 24,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.39738571643829346,
+      1.3415693044662476
+    ],
+    "MSU_id": 166,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "FIGURE 1. Overview of the AuraGenome framework, which integrates a modular multiagent workflow with an interactive visual analytics system to enable end-to-end generation, refinement, and exploration of genome-scale circular visualizations. Together, these two components fulfill six core requirements (R1-R6) to ensure scalability, interpretability, and reproducibility in genomic data visualizations."
+  },
+  {
+    "sentence": "The six core requirements ensure interpretability in genomic data visualizations.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 3,
+    "msuid": 167,
+    "para_id": 24,
+    "paper_id": 1,
+    "2d_coord": [
+      0.11680273711681366,
+      1.6955124139785767
+    ],
+    "MSU_id": 167,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "FIGURE 1. Overview of the AuraGenome framework, which integrates a modular multiagent workflow with an interactive visual analytics system to enable end-to-end generation, refinement, and exploration of genome-scale circular visualizations. Together, these two components fulfill six core requirements (R1-R6) to ensure scalability, interpretability, and reproducibility in genomic data visualizations."
+  },
+  {
+    "sentence": "The six core requirements ensure reproducibility in genomic data visualizations.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 3,
+    "msuid": 168,
+    "para_id": 24,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.5320109128952026,
+      1.0659765005111694
+    ],
+    "MSU_id": 168,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "FIGURE 1. Overview of the AuraGenome framework, which integrates a modular multiagent workflow with an interactive visual analytics system to enable end-to-end generation, refinement, and exploration of genome-scale circular visualizations. Together, these two components fulfill six core requirements (R1-R6) to ensure scalability, interpretability, and reproducibility in genomic data visualizations."
+  },
+  {
+    "sentence": "The process reduces manual trial-and-error.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 3,
+    "msuid": 170,
+    "para_id": 25,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.3768601417541504,
+      -0.11302171647548676
+    ],
+    "MSU_id": 170,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "methylation patterns, thereby reducing manual trial-and-error."
+  },
+  {
+    "sentence": "The structured summaries facilitate reporting.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 3,
+    "msuid": 182,
+    "para_id": 29,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.495179533958435,
+      -0.012388676404953003
+    ],
+    "MSU_id": 182,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "R6—Narrative Exploration and Summarization: It supports annotation of specific tracks or elements and generates structured summaries to facilitate reporting, interpretation, and presentation."
+  },
+  {
+    "sentence": "The structured summaries facilitate interpretation.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 3,
+    "msuid": 183,
+    "para_id": 29,
+    "paper_id": 1,
+    "2d_coord": [
+      0.564914882183075,
+      1.5730911493301392
+    ],
+    "MSU_id": 183,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "R6—Narrative Exploration and Summarization: It supports annotation of specific tracks or elements and generates structured summaries to facilitate reporting, interpretation, and presentation."
+  },
+  {
+    "sentence": "The structured summaries facilitate presentation.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 3,
+    "msuid": 184,
+    "para_id": 29,
+    "paper_id": 1,
+    "2d_coord": [
+      0.40265345573425293,
+      2.330239772796631
+    ],
+    "MSU_id": 184,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "R6—Narrative Exploration and Summarization: It supports annotation of specific tracks or elements and generates structured summaries to facilitate reporting, interpretation, and presentation."
+  },
+  {
+    "sentence": "AuraGenome enables a seamless transition from raw genomic data to publication.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 3,
+    "msuid": 190,
+    "para_id": 30,
+    "paper_id": 1,
+    "2d_coord": [
+      1.0872880220413208,
+      2.5538384914398193
+    ],
+    "MSU_id": 190,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "To address the six task requirements identified through expert interviews and literature analysis, we presented AuraGenome, a framework that supports the intelligent generation and interactive refinement of circular genome visualizations. AuraGenome integrates a semantic-driven multiagent workflow with a user-facing visual analytics system, enabling a seamless transition from raw genomic data to publication-"
+  },
+  {
+    "sentence": "These results guided our agent-model assignment strategy.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 5,
+    "msuid": 238,
+    "para_id": 38,
+    "paper_id": 1,
+    "2d_coord": [
+      1.4191315174102783,
+      -2.628974676132202
+    ],
+    "MSU_id": 238,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "As shown in Figure 2, GPT-4o performed best in semantic parsing and explanation tasks and DeepSeek-R1 excelled in structured code generation. GPT-o1 showed moderate performance but struggled with layout consistency. These results guided our agent-model assignment strategy: GPT-4o was assigned to language-oriented agents, while DeepSeek-R1 was chosen for code-focused agents. This division supports a modular workflow where each agent operates on tasks aligned with the LLM's strengths."
+  },
+  {
+    "sentence": "This division supports a modular workflow where each agent operates on tasks aligned with the LLM's strengths.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 5,
+    "msuid": 241,
+    "para_id": 38,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.4983406066894531,
+      -1.6569136381149292
+    ],
+    "MSU_id": 241,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "As shown in Figure 2, GPT-4o performed best in semantic parsing and explanation tasks and DeepSeek-R1 excelled in structured code generation. GPT-o1 showed moderate performance but struggled with layout consistency. These results guided our agent-model assignment strategy: GPT-4o was assigned to language-oriented agents, while DeepSeek-R1 was chosen for code-focused agents. This division supports a modular workflow where each agent operates on tasks aligned with the LLM's strengths."
+  },
+  {
+    "sentence": "This agent bridges the gap between raw genomic data and visualization design.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 5,
+    "msuid": 274,
+    "para_id": 44,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.6795988082885742,
+      -0.10916781425476074
+    ],
+    "MSU_id": 274,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "This agent relies on embedded domain heuristics and data-profile templates to map data features to visualization strategies (e.g., heatmaps for expression data or links for structural variation). It also generates textual rationales that accompany each recommendation, improving transparency and helping users understand the rationale behind the system's suggestions. This agent bridges the gap between raw genomic data and visualization design, enabling prelayout planning."
+  },
+  {
+    "sentence": "This agent enables prelayout planning.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 4,
+    "msuid": 275,
+    "para_id": 44,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.512026071548462,
+      -1.885475754737854
+    ],
+    "MSU_id": 275,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "This agent relies on embedded domain heuristics and data-profile templates to map data features to visualization strategies (e.g., heatmaps for expression data or links for structural variation). It also generates textual rationales that accompany each recommendation, improving transparency and helping users understand the rationale behind the system's suggestions. This agent bridges the gap between raw genomic data and visualization design, enabling prelayout planning."
+  },
+  {
+    "sentence": "This design promotes continuity in the visualization process.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 3,
+    "msuid": 289,
+    "para_id": 46,
+    "paper_id": 1,
+    "2d_coord": [
+      -2.383334159851074,
+      -0.8904614448547363
+    ],
+    "MSU_id": 289,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "This agent preserves the integrity of the chart structure while applying precise updates aligned with the user's intent. It parses the code context, identifies relevant parameters, and rewrites only the affected components. This design promotes continuity in the visualization process, avoids unintended side effects, and supports real-time iteration and visual feedback."
+  },
+  {
+    "sentence": "This design avoids unintended side effects.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 3,
+    "msuid": 290,
+    "para_id": 46,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.529568076133728,
+      0.048045478761196136
+    ],
+    "MSU_id": 290,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "This agent preserves the integrity of the chart structure while applying precise updates aligned with the user's intent. It parses the code context, identifies relevant parameters, and rewrites only the affected components. This design promotes continuity in the visualization process, avoids unintended side effects, and supports real-time iteration and visual feedback."
+  },
+  {
+    "sentence": "This design supports real-time iteration and visual feedback.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 4,
+    "msuid": 291,
+    "para_id": 46,
+    "paper_id": 1,
+    "2d_coord": [
+      1.3316036462783813,
+      1.4798020124435425
+    ],
+    "MSU_id": 291,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "This agent preserves the integrity of the chart structure while applying precise updates aligned with the user's intent. It parses the code context, identifies relevant parameters, and rewrites only the affected components. This design promotes continuity in the visualization process, avoids unintended side effects, and supports real-time iteration and visual feedback."
+  },
+  {
+    "sentence": "This view facilitates initial familiarization with data.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 3,
+    "msuid": 359,
+    "para_id": 60,
+    "paper_id": 1,
+    "2d_coord": [
+      0.42524397373199463,
+      1.3992136716842651
+    ],
+    "MSU_id": 359,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "(b) Data Store View: It presents uploaded genomic datasets alongside extracted features (e.g., mutation categories, zygosity types, and validation status). This view facilitates initial familiarization with data and informs downstream visualization recommendations."
+  },
+  {
+    "sentence": "This view informs downstream visualization recommendations.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 4,
+    "msuid": 360,
+    "para_id": 60,
+    "paper_id": 1,
+    "2d_coord": [
+      0.3881375789642334,
+      1.5531574487686157
+    ],
+    "MSU_id": 360,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "(b) Data Store View: It presents uploaded genomic datasets alongside extracted features (e.g., mutation categories, zygosity types, and validation status). This view facilitates initial familiarization with data and informs downstream visualization recommendations."
+  },
+  {
+    "sentence": "Real-time reflection of adjustments promotes iterative refinement.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 4,
+    "msuid": 377,
+    "para_id": 65,
+    "paper_id": 1,
+    "2d_coord": [
+      1.5650851726531982,
+      -1.0342656373977661
+    ],
+    "MSU_id": 377,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "(f) Track Parameter Panel: It offers fine-grained, layer-specific customization options, including radius, color, spacing, and angular transparency. All adjustments are reflected in real time within each visualization, promoting iterative refinement."
+  },
+  {
+    "sentence": "This whole process facilitates downstream reporting and publication.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 4,
+    "msuid": 424,
+    "para_id": 74,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.1746639013290405,
+      -1.7208350896835327
+    ],
+    "MSU_id": 424,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "geometry, and track ordering. The interface supports reordering, in-place editing, and annotation overlays, allowing iterative refinement of the layout. Final visualizations can be exported to the Step Snapshots View, preserving the current configuration along with all parameter settings and user notes. This whole process facilitates downstream reporting and publication."
+  },
+  {
+    "sentence": "This helps avoid repeating past errors while maintaining focus on the current branch context.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 4,
+    "msuid": 450,
+    "para_id": 79,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.6185736656188965,
+      0.644275426864624
+    ],
+    "MSU_id": 450,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "model responses—ensuring high interpretability and workflow traceability. In cases of generation failure or suboptimal results, users can rebranch from any previous node to resume iteration with full context. The view also supports efficient reuse: users may double-click a node to draw a dashed link to subsequent steps and collaborate with agents to selectively inherit code and parameters. This helps avoid repeating past errors while maintaining focus on the current branch context."
+  },
+  {
+    "sentence": "The visual alignment supported exploratory hypotheses on regulatory disruptions and disease mechanisms in AML.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 3,
+    "msuid": 481,
+    "para_id": 86,
+    "paper_id": 1,
+    "2d_coord": [
+      1.0868457555770874,
+      3.068312883377075
+    ],
+    "MSU_id": 481,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "To complement the structural data,  $E_{A}$  incorporated a second dataset containing gene expression profiles, which was rendered as a dual-colored annular bar chart encircling the chord layout. Red bars indicated regions of upregulated expression, while blue bars represented downregulated zones. This integration enabled visual alignment of structural variants with transcriptional activity, supporting exploratory hypotheses on regulatory disruptions and disease mechanisms in AML."
+  },
+  {
+    "sentence": "This integrated insight led $E_{A}$ to annotate the region as a potential biomarker for AML.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 4,
+    "msuid": 490,
+    "para_id": 88,
+    "paper_id": 1,
+    "2d_coord": [
+      0.9246724247932434,
+      2.6716737747192383
+    ],
+    "MSU_id": 490,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "The entire process—from data upload to visualization refinement—was completed within 20 min. Notably,  $E_{A}$  identified that the genomic region chr1:16816819-18551718 exhibited both a high frequency of translocation breakpoints and significant gene upregulation. This integrated insight led  $E_{A}$  to annotate the region as a potential biomarker for AML, suggesting it as a candidate for future experimental validation."
+  },
+  {
+    "sentence": "This integrated insight suggests the region as a candidate for future experimental validation.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 4,
+    "msuid": 491,
+    "para_id": 88,
+    "paper_id": 1,
+    "2d_coord": [
+      0.19031016528606415,
+      -2.4615426063537598
+    ],
+    "MSU_id": 491,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "The entire process—from data upload to visualization refinement—was completed within 20 min. Notably,  $E_{A}$  identified that the genomic region chr1:16816819-18551718 exhibited both a high frequency of translocation breakpoints and significant gene upregulation. This integrated insight led  $E_{A}$  to annotate the region as a potential biomarker for AML, suggesting it as a candidate for future experimental validation."
+  },
+  {
+    "sentence": "Lower performance variance suggests improved consistency.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 3,
+    "msuid": 550,
+    "para_id": 99,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.11774490773677826,
+      -1.4569132328033447
+    ],
+    "MSU_id": 550,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "AuraGenome significantly outperformed Circos in both task efficiency and output accuracy. On average, participants completed the assigned visualization task in 34 min (Standard Deviation  $(\\mathrm{SD}) = 9.16$  using AuraGenome, compared to 112 min  $(\\mathrm{SD} = 16.5)$  with Circos—a  $69\\%$  reduction in time. Notably, one participant was unable to complete the task within the allotted time when using Circos. As shown in Figure 8(a), accuracy scores, evaluated by two independent genomics experts, averaged  $89\\%$ $(\\mathrm{SD} = 4.61)$  with AuraGenome versus  $76\\%$ $(\\mathrm{SD} = 18.31)$  with Circos. AuraGenome also exhibited lower performance variance across participants, suggesting improved consistency."
+  },
+  {
+    "sentence": "This cross-disciplinary flexibility was highlighted as a key advantage over traditional tools.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 5,
+    "msuid": 581,
+    "para_id": 108,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.6833044290542603,
+      -0.34576544165611267
+    ],
+    "MSU_id": 581,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "The system was seen as accessible to both computational and wet-lab users. While experienced users valued the ability to issue fine-grained commands, including suggestions for direct SVG editing ( $P_4$  and  $P_{10}$ ), wet-lab participants noted that they could independently produce publication-ready charts—an empowering capability for nonprogrammers ( $P_{11}$  and  $P_{12}$ ). This cross-disciplinary flexibility was highlighted as a key advantage over traditional tools."
+  },
+  {
+    "sentence": "Optional confirmation or stepwise override could improve usability.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 4,
+    "msuid": 588,
+    "para_id": 110,
+    "paper_id": 1,
+    "2d_coord": [
+      1.413321852684021,
+      2.1630051136016846
+    ],
+    "MSU_id": 588,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "optional confirmation or stepwise override could improve usability."
+  },
+  {
+    "sentence": "Together, these design elements make AuraGenome well suited for handling the complex tasks of circular genome visualizations.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 5,
+    "msuid": 596,
+    "para_id": 111,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.3435078859329224,
+      0.9796764850616455
+    ],
+    "MSU_id": 596,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "AuraGenome's multiagent workflow is deliberately designed to decompose complex visualization requests into manageable subtasks—such as intent recognition, layout planning, and code generation—handled by role-specific LLM agents. This structured collaboration enables the system to reliably interpret domain-specific goals and produce customized, multitrack genome visualizations. Unlike prior approaches that generate Circos-based configuration or rely on predefined templates, AuraGenome produces flexible D3-based script, supporting rich interactivity, dynamic interaction, and reuse. Together, these design elements make AuraGenome well suited for handling the complex tasks of circular genome visualizations."
+  },
+  {
+    "sentence": "AuroraGenome's layered feedback, affordance-rich UI, and modular agent structure collectively support both directed editing and open-ended exploration, reinforcing its value as a user-centric tool.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 5,
+    "msuid": 601,
+    "para_id": 112,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.3886772394180298,
+      1.6470870971679688
+    ],
+    "MSU_id": 601,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "User experience varied with domain expertise, yet AuroraGenome proved adaptable across the spectrum—from bioinformatics specialists to experimental researchers with limited visualization backgrounds. The natural language interface, paired with real-time visual feedback and well-aligned agent behavior, enabled users to express high-level goals without needing technical vocabulary or implementation knowledge. Participants consistently highlighted the system's predefined interactive mechanisms—such as dynamic track reordering, attribute refinement, and visual reuse—as unexpectedly intuitive and powerful. These features not only facilitated iterative correction and fine-tuning, but also encouraged exploratory behavior, allowing users to experiment with alternative layout patterns, highlight strategies, or comparative track compositions. AuroraGenome's layered feedback, affordance-rich UI, and modular agent structure collectively support both directed editing and open-ended exploration, reinforcing its value as a user-centric tool."
+  },
+  {
+    "sentence": "Several functional boundaries remain in AuraGenome.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 3,
+    "msuid": 603,
+    "para_id": 113,
+    "paper_id": 1,
+    "2d_coord": [
+      1.5380858182907104,
+      1.707032322883606
+    ],
+    "MSU_id": 603,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "While AuraGenome demonstrates strong adaptability, several functional boundaries remain. The current workflow and system are tailored for circular genome visualizations and do not yet support linear or hybrid visualization generation, which are equally significant"
+  },
+  {
+    "sentence": "These observations point to directions for further refinement.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 2,
+    "msuid": 613,
+    "para_id": 114,
+    "paper_id": 1,
+    "2d_coord": [
+      0.16556623578071594,
+      0.20297744870185852
+    ],
+    "MSU_id": 613,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "in genomic analysis. In addition, performance would be modestly affected by the agents when handling ambiguous, conflicting, or poorly structured prompts, occasionally leading to redundant tracks or minor layout inconsistencies. However, these issues do not interrupt task execution. Thanks to the multiagent workflow, such errors are mitigated through agent-level coordination and fallback strategies, ensuring smooth task progression. These observations point to directions for further refinement while confirming that AuraGenome remains robust and reliable in handling complex genomic visualization tasks."
+  },
+  {
+    "sentence": "These observations confirm that AuraGenome remains robust and reliable in handling complex genomic visualization tasks.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Conclusion",
+    "rank": 5,
+    "msuid": 614,
+    "para_id": 114,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.1068229675292969,
+      1.144391655921936
+    ],
+    "MSU_id": 614,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "in genomic analysis. In addition, performance would be modestly affected by the agents when handling ambiguous, conflicting, or poorly structured prompts, occasionally leading to redundant tracks or minor layout inconsistencies. However, these issues do not interrupt task execution. Thanks to the multiagent workflow, such errors are mitigated through agent-level coordination and fallback strategies, ensuring smooth task progression. These observations point to directions for further refinement while confirming that AuraGenome remains robust and reliable in handling complex genomic visualization tasks."
+  },
+  {
+    "sentence": "Automated generation of configuration files makes Circos suitable for rapid deployment in data analysis and reporting pipelines.",
+    "title": "/home/lxy/newdata_3/Circos_msu",
+    "category": "Conclusion",
+    "rank": 3,
+    "msuid": 644,
+    "para_id": 117,
+    "paper_id": 2,
+    "2d_coord": [
+      -1.6390599012374878,
+      1.098362684249878
+    ],
+    "MSU_id": 644,
+    "paper_info": "/home/lxy/newdata_3/Circos_msu",
+    "paragraph_info": "We created a visualization tool called Circos to facilitate the identification and analysis of similarities and differences arising from comparisons of genomes. Our tool is effective in displaying variation in genome structure and, generally, any other kind of positional relationships between genomic intervals. Such data are routinely produced by sequence alignments, hybridization arrays, genome mapping, and genotyping studies. Circos uses a circular ideogram layout to facilitate the display of relationships between pairs of positions by the use of ribbons, which encode the position, size, and orientation of related genomic elements. Circos is capable of displaying data as scatter, line, and histogram plots, heat maps, tiles, connectors, and text. Bitmap or vector images can be created from GFF-style data inputs and hierarchical configuration files, which can be easily generated by automated tools, making Circos suitable for rapid deployment in data analysis and reporting pipelines."
+  },
+  {
+    "sentence": "New approaches in data modeling and analysis need to be accompanied with corresponding innovations in data visualization.",
+    "title": "/home/lxy/newdata_3/Circos_msu",
+    "category": "Conclusion",
+    "rank": 4,
+    "msuid": 654,
+    "para_id": 119,
+    "paper_id": 2,
+    "2d_coord": [
+      0.629887044429779,
+      1.950391173362732
+    ],
+    "MSU_id": 654,
+    "paper_info": "/home/lxy/newdata_3/Circos_msu",
+    "paragraph_info": "Our growing ability to collect enormous amounts of sequence information to support such studies is arguably outpacing the rate at which we devise new methods to store, process, analyze, and visualize these data. Any new approaches in data modeling and analysis need to be accompanied with corresponding innovations in the visualization of these data. To mitigate the inherent difficulties in detecting, filtering, and classifying patterns within large data sets, we require instructive and clear visualizations that (1) adapt to the density and dynamic range of the data, (2) maintain complexity and detail in the data, and (3) scale well without sacrificing clarity and specificity."
+  },
+  {
+    "sentence": "We require instructive and clear visualizations to mitigate the inherent difficulties in detecting, filtering, and classifying patterns within large data sets.",
+    "title": "/home/lxy/newdata_3/Circos_msu",
+    "category": "Conclusion",
+    "rank": 5,
+    "msuid": 655,
+    "para_id": 119,
+    "paper_id": 2,
+    "2d_coord": [
+      1.5693312883377075,
+      3.2300024032592773
+    ],
+    "MSU_id": 655,
+    "paper_info": "/home/lxy/newdata_3/Circos_msu",
+    "paragraph_info": "Our growing ability to collect enormous amounts of sequence information to support such studies is arguably outpacing the rate at which we devise new methods to store, process, analyze, and visualize these data. Any new approaches in data modeling and analysis need to be accompanied with corresponding innovations in the visualization of these data. To mitigate the inherent difficulties in detecting, filtering, and classifying patterns within large data sets, we require instructive and clear visualizations that (1) adapt to the density and dynamic range of the data, (2) maintain complexity and detail in the data, and (3) scale well without sacrificing clarity and specificity."
+  },
+  {
+    "sentence": "These approaches exemplify the virtues of an effective visualization: clarity, a high data-to-ink ratio, and favorable scaling characteristics.",
+    "title": "/home/lxy/newdata_3/Circos_msu",
+    "category": "Conclusion",
+    "rank": 4,
+    "msuid": 669,
+    "para_id": 121,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.956068217754364,
+      1.1416853666305542
+    ],
+    "MSU_id": 669,
+    "paper_info": "/home/lxy/newdata_3/Circos_msu",
+    "paragraph_info": "ways, and phylogenetic information (Darwin 1859; Ciccarelli et al. 2006; Letunic and Bork 2007); and clustered heat maps to visualize array and expression data (Sneath 1957; Eisen et al. 1998). These approaches exemplify the virtues of an effective visualization: clarity, a high data-to-ink ratio (Tufte 1992), and favorable scaling characteristics. They have been widely adopted because they addressed pressing visualization problems within a domain where data sets were previously opaque to effective visual inspection."
+  },
+  {
+    "sentence": "These approaches have been widely adopted because they addressed pressing visualization problems.",
+    "title": "/home/lxy/newdata_3/Circos_msu",
+    "category": "Conclusion",
+    "rank": 5,
+    "msuid": 670,
+    "para_id": 121,
+    "paper_id": 2,
+    "2d_coord": [
+      1.4583439826965332,
+      3.0677950382232666
+    ],
+    "MSU_id": 670,
+    "paper_info": "/home/lxy/newdata_3/Circos_msu",
+    "paragraph_info": "ways, and phylogenetic information (Darwin 1859; Ciccarelli et al. 2006; Letunic and Bork 2007); and clustered heat maps to visualize array and expression data (Sneath 1957; Eisen et al. 1998). These approaches exemplify the virtues of an effective visualization: clarity, a high data-to-ink ratio (Tufte 1992), and favorable scaling characteristics. They have been widely adopted because they addressed pressing visualization problems within a domain where data sets were previously opaque to effective visual inspection."
+  },
+  {
+    "sentence": "The methods embodied in these approaches are effective for illustrating local alignments between similar sequences.",
+    "title": "/home/lxy/newdata_3/Circos_msu",
+    "category": "Conclusion",
+    "rank": 4,
+    "msuid": 676,
+    "para_id": 122,
+    "paper_id": 2,
+    "2d_coord": [
+      1.5237855911254883,
+      2.9077866077423096
+    ],
+    "MSU_id": 676,
+    "paper_info": "/home/lxy/newdata_3/Circos_msu",
+    "paragraph_info": "Presently, a pressing visualization problem lies in the domain of comparative genomics and specifically in the comparative genomics of individuals. We need to establish a visual paradigm for displaying relationships between genomes in order to leverage the large amounts of sequence data that have been collected and to expand the power of the field of personal genomics. Previous efforts to visualize positional relationships applied linearly arranged ideograms, connected by lines, to represent rearrangements (Dicks 2000; Kozik et al. 2002; Yang et al. 2003; Choudhuri et al. 2004; Engels et al. 2006; Lee et al. 2006; Jakubowska et al. 2007; Kuenne et al. 2007; Sinha and Meller 2007). One approach uses encoding in HSL (hue, saturation, lightness) color space to perform three-way comparisons (Baran et al. 2007). The methods embodied in these approaches are effective for illustrating local alignments between similar sequences. However, the shortcoming of the linear layout becomes apparent in representations that associate many ideograms with numerous relationships (e.g., Fig. 2c in Lee et al. 2006). In such figures, multitudes of lines transgress unrelated ideograms and make patterns very difficult to discern. To mitigate this, color maps are used (e.g., Fig. 2 in Sinha and Meller 2007) as an effective way to represent large syntenic blocks. Although color maps address the problem of overburdened visualizations by mapping a position pair onto a position and a color, they reduce the texture and richness of the data. Circularly arranged ideograms are prevalent in visualizations of microbial genomes, which are circular (Gibson and Smith 2003; Sato and Ehira 2003; Kerkhoven et al. 2004; Stothard and Wishart 2005;"
+  },
+  {
+    "sentence": "The shortcoming of the linear layout becomes apparent in representations that associate many ideograms with numerous relationships.",
+    "title": "/home/lxy/newdata_3/Circos_msu",
+    "category": "Conclusion",
+    "rank": 4,
+    "msuid": 677,
+    "para_id": 122,
+    "paper_id": 2,
+    "2d_coord": [
+      1.4437395334243774,
+      1.9283772706985474
+    ],
+    "MSU_id": 677,
+    "paper_info": "/home/lxy/newdata_3/Circos_msu",
+    "paragraph_info": "Presently, a pressing visualization problem lies in the domain of comparative genomics and specifically in the comparative genomics of individuals. We need to establish a visual paradigm for displaying relationships between genomes in order to leverage the large amounts of sequence data that have been collected and to expand the power of the field of personal genomics. Previous efforts to visualize positional relationships applied linearly arranged ideograms, connected by lines, to represent rearrangements (Dicks 2000; Kozik et al. 2002; Yang et al. 2003; Choudhuri et al. 2004; Engels et al. 2006; Lee et al. 2006; Jakubowska et al. 2007; Kuenne et al. 2007; Sinha and Meller 2007). One approach uses encoding in HSL (hue, saturation, lightness) color space to perform three-way comparisons (Baran et al. 2007). The methods embodied in these approaches are effective for illustrating local alignments between similar sequences. However, the shortcoming of the linear layout becomes apparent in representations that associate many ideograms with numerous relationships (e.g., Fig. 2c in Lee et al. 2006). In such figures, multitudes of lines transgress unrelated ideograms and make patterns very difficult to discern. To mitigate this, color maps are used (e.g., Fig. 2 in Sinha and Meller 2007) as an effective way to represent large syntenic blocks. Although color maps address the problem of overburdened visualizations by mapping a position pair onto a position and a color, they reduce the texture and richness of the data. Circularly arranged ideograms are prevalent in visualizations of microbial genomes, which are circular (Gibson and Smith 2003; Sato and Ehira 2003; Kerkhoven et al. 2004; Stothard and Wishart 2005;"
+  },
+  {
+    "sentence": "Although color maps address the problem of overburdened visualizations by mapping a position pair onto a position and a color, they reduce the texture and richness of the data.",
+    "title": "/home/lxy/newdata_3/Circos_msu",
+    "category": "Conclusion",
+    "rank": 5,
+    "msuid": 680,
+    "para_id": 122,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.047631993889808655,
+      1.25495183467865
+    ],
+    "MSU_id": 680,
+    "paper_info": "/home/lxy/newdata_3/Circos_msu",
+    "paragraph_info": "Presently, a pressing visualization problem lies in the domain of comparative genomics and specifically in the comparative genomics of individuals. We need to establish a visual paradigm for displaying relationships between genomes in order to leverage the large amounts of sequence data that have been collected and to expand the power of the field of personal genomics. Previous efforts to visualize positional relationships applied linearly arranged ideograms, connected by lines, to represent rearrangements (Dicks 2000; Kozik et al. 2002; Yang et al. 2003; Choudhuri et al. 2004; Engels et al. 2006; Lee et al. 2006; Jakubowska et al. 2007; Kuenne et al. 2007; Sinha and Meller 2007). One approach uses encoding in HSL (hue, saturation, lightness) color space to perform three-way comparisons (Baran et al. 2007). The methods embodied in these approaches are effective for illustrating local alignments between similar sequences. However, the shortcoming of the linear layout becomes apparent in representations that associate many ideograms with numerous relationships (e.g., Fig. 2c in Lee et al. 2006). In such figures, multitudes of lines transgress unrelated ideograms and make patterns very difficult to discern. To mitigate this, color maps are used (e.g., Fig. 2 in Sinha and Meller 2007) as an effective way to represent large syntenic blocks. Although color maps address the problem of overburdened visualizations by mapping a position pair onto a position and a color, they reduce the texture and richness of the data. Circularly arranged ideograms are prevalent in visualizations of microbial genomes, which are circular (Gibson and Smith 2003; Sato and Ehira 2003; Kerkhoven et al. 2004; Stothard and Wishart 2005;"
+  },
+  {
+    "sentence": "Local scale adjustment is effective to emphasize fine structure of data in a region.",
+    "title": "/home/lxy/newdata_3/Circos_msu",
+    "category": "Conclusion",
+    "rank": 3,
+    "msuid": 805,
+    "para_id": 145,
+    "paper_id": 2,
+    "2d_coord": [
+      1.0602463483810425,
+      0.48544374108314514
+    ],
+    "MSU_id": 805,
+    "paper_info": "/home/lxy/newdata_3/Circos_msu",
+    "paragraph_info": "A unique aspect of Circos is its ability to adjust the global magnification for each ideogram and, furthermore, to smoothly vary the magnification within a region. This kind of local scale adjustment is effective to emphasize fine structure of data in a region while preserving context."
+  },
+  {
+    "sentence": "Local scale adjustment preserves context.",
+    "title": "/home/lxy/newdata_3/Circos_msu",
+    "category": "Conclusion",
+    "rank": 3,
+    "msuid": 806,
+    "para_id": 145,
+    "paper_id": 2,
+    "2d_coord": [
+      2.672311305999756,
+      -0.5215069055557251
+    ],
+    "MSU_id": 806,
+    "paper_info": "/home/lxy/newdata_3/Circos_msu",
+    "paragraph_info": "A unique aspect of Circos is its ability to adjust the global magnification for each ideogram and, furthermore, to smoothly vary the magnification within a region. This kind of local scale adjustment is effective to emphasize fine structure of data in a region while preserving context."
+  },
+  {
+    "sentence": "The data set benefits from examination at various length scales.",
+    "title": "/home/lxy/newdata_3/Circos_msu",
+    "category": "Conclusion",
+    "rank": 3,
+    "msuid": 808,
+    "para_id": 146,
+    "paper_id": 2,
+    "2d_coord": [
+      1.4659110307693481,
+      1.734692931175232
+    ],
+    "MSU_id": 808,
+    "paper_info": "/home/lxy/newdata_3/Circos_msu",
+    "paragraph_info": "Figure 5 depicts one kind of dense data set that benefits from examination at various length scales. This figure shows whole-genome copy number profiles of five lymphoma samples generated using the Affymetrix Mapping 500K array. Although there are several large regions in which copy number values are consistently altered, most of the statistically significant variation in the figure"
+  },
+  {
+    "sentence": "Rules can simplify the task of identifying patterns in data.",
+    "title": "/home/lxy/newdata_3/Circos_msu",
+    "category": "Conclusion",
+    "rank": 3,
+    "msuid": 843,
+    "para_id": 153,
+    "paper_id": 2,
+    "2d_coord": [
+      1.5737370252609253,
+      2.18438458442688
+    ],
+    "MSU_id": 843,
+    "paper_info": "/home/lxy/newdata_3/Circos_msu",
+    "paragraph_info": "Through rule blocks in the configuration file, Circos allows for control over visibility and format of every data element based on its position, value, or format characteristics. Run-time rules permit changing the appearance of a figure within regions of interest (or ranges of data values), without needing to provide a new data set. Rules can simplify the task of identifying patterns in data by applying formatting that contrasts a subset of the data to the baseline."
+  },
+  {
+    "sentence": "Existing circos plot tools often have a steep learning curve.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 5,
+    "msuid": 1028,
+    "para_id": 179,
+    "paper_id": 3,
+    "2d_coord": [
+      -1.1846147775650024,
+      -0.2917676270008087
+    ],
+    "MSU_id": 1028,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Circos plot authoring tools can be broadly classified into two types: template-based configuration tools and interactive authoring tools. Template-based configuration tools, such as VegaLite [SMWH16], ECharts [LMS\\*18], and ggplot2 [Wil11], predefine data-to-visualization mapping rules, allowing users to input data and configure settings to create charts. For circos plots, Circos  $\\left[\\mathrm{KSB}^{*}09\\right]$  was the first tool offering pre-built track templates and requiring users to write configuration files in Perl. Subsequent tools like RCircos [ZMD13], ggbio [YCL12], circlize [GGE\\*14], and pyCircos [pon22] have integrated circos plot creation into data analysis workflows using R and Python. More recently, Gosling [LWLG21] enabled interactive genomics visualizations, including circos plot, via configuration. While these tools support the creation of circos plots, they often come with a steep learning curve  $\\left[\\mathrm{WLL}^{*}23\\right]$  and lack immediate visual feedback during the iterative configuration modification."
+  },
+  {
+    "sentence": "Existing circos plot tools lack immediate visual feedback during iterative configuration modification.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 5,
+    "msuid": 1029,
+    "para_id": 179,
+    "paper_id": 3,
+    "2d_coord": [
+      -1.233521819114685,
+      0.8184547424316406
+    ],
+    "MSU_id": 1029,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Circos plot authoring tools can be broadly classified into two types: template-based configuration tools and interactive authoring tools. Template-based configuration tools, such as VegaLite [SMWH16], ECharts [LMS\\*18], and ggplot2 [Wil11], predefine data-to-visualization mapping rules, allowing users to input data and configure settings to create charts. For circos plots, Circos  $\\left[\\mathrm{KSB}^{*}09\\right]$  was the first tool offering pre-built track templates and requiring users to write configuration files in Perl. Subsequent tools like RCircos [ZMD13], ggbio [YCL12], circlize [GGE\\*14], and pyCircos [pon22] have integrated circos plot creation into data analysis workflows using R and Python. More recently, Gosling [LWLG21] enabled interactive genomics visualizations, including circos plot, via configuration. While these tools support the creation of circos plots, they often come with a steep learning curve  $\\left[\\mathrm{WLL}^{*}23\\right]$  and lack immediate visual feedback during the iterative configuration modification."
+  },
+  {
+    "sentence": "We aim to provide more practical and tailored guidance for circos plot design.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 3,
+    "msuid": 1063,
+    "para_id": 185,
+    "paper_id": 3,
+    "2d_coord": [
+      -2.391261100769043,
+      -1.0127813816070557
+    ],
+    "MSU_id": 1063,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "ML-based recommendation methods typically rely on high-quality datasets to achieve good performance. However, current recommendation methods mainly focus on general domains and are not suitable for recommending circos plots. Therefore, we developed an ML-based recommendation method for circos plots, while simultaneously collecting a circos plot dataset from published papers to power design recommendations, aiming to provide more practical and tailored guidance for circos plot design."
+  },
+  {
+    "sentence": "These challenges highlight the need for a streamlined approach to simplify the circos plot design stage.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 5,
+    "msuid": 1073,
+    "para_id": 187,
+    "paper_id": 3,
+    "2d_coord": [
+      -1.4259740114212036,
+      0.38217249512672424
+    ],
+    "MSU_id": 1073,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "G1: Assist in the design of circos plots. Currently, support for designing circos plots remains limited, as evidenced in the literature. However, the design stage is inherently challenging, requiring consideration of factors such as track types, visual mappings for each track, and positional relationships between tracks. Furthermore, bioinformatics analysts usually lack expertise in visualization, which exacerbates the difficulty of the task. These challenges highlight the need for a streamlined approach to simplify the circos plot design stage and better support users in their creation efforts."
+  },
+  {
+    "sentence": "A streamlined approach is needed to better support users in their creation of circos plots.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 5,
+    "msuid": 1074,
+    "para_id": 187,
+    "paper_id": 3,
+    "2d_coord": [
+      -1.8738878965377808,
+      -0.13142697513103485
+    ],
+    "MSU_id": 1074,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "G1: Assist in the design of circos plots. Currently, support for designing circos plots remains limited, as evidenced in the literature. However, the design stage is inherently challenging, requiring consideration of factors such as track types, visual mappings for each track, and positional relationships between tracks. Furthermore, bioinformatics analysts usually lack expertise in visualization, which exacerbates the difficulty of the task. These challenges highlight the need for a streamlined approach to simplify the circos plot design stage and better support users in their creation efforts."
+  },
+  {
+    "sentence": "An intelligent, interactive authoring tool is needed to streamline the design process.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 4,
+    "msuid": 1081,
+    "para_id": 189,
+    "paper_id": 3,
+    "2d_coord": [
+      -1.486965537071228,
+      -0.29966971278190613
+    ],
+    "MSU_id": 1081,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "G2: Simplify the implementation of circos plot. Bioinformatics analysts often need to manually implement designs using the Circos software, a process that is time-consuming and lacks immediate visual feedback of modifications. Additionally, for those unfamiliar with Circos, the learning curve is steep. Therefore, an intelligent, interactive authoring tool is needed to streamline the design process and enable more efficient implementation."
+  },
+  {
+    "sentence": "An intelligent, interactive authoring tool is needed to enable more efficient implementation.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 4,
+    "msuid": 1082,
+    "para_id": 189,
+    "paper_id": 3,
+    "2d_coord": [
+      -0.39234358072280884,
+      0.7170829772949219
+    ],
+    "MSU_id": 1082,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "G2: Simplify the implementation of circos plot. Bioinformatics analysts often need to manually implement designs using the Circos software, a process that is time-consuming and lacks immediate visual feedback of modifications. Additionally, for those unfamiliar with Circos, the learning curve is steep. Therefore, an intelligent, interactive authoring tool is needed to streamline the design process and enable more efficient implementation."
+  },
+  {
+    "sentence": "The goal is to simplify the implementation of circos plot.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 5,
+    "msuid": 1083,
+    "para_id": 189,
+    "paper_id": 3,
+    "2d_coord": [
+      -2.2692580223083496,
+      -0.9079886674880981
+    ],
+    "MSU_id": 1083,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "G2: Simplify the implementation of circos plot. Bioinformatics analysts often need to manually implement designs using the Circos software, a process that is time-consuming and lacks immediate visual feedback of modifications. Additionally, for those unfamiliar with Circos, the learning curve is steep. Therefore, an intelligent, interactive authoring tool is needed to streamline the design process and enable more efficient implementation."
+  },
+  {
+    "sentence": "Using more than five rings indicates complex requirements for track combination and ordering.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 4,
+    "msuid": 1132,
+    "para_id": 196,
+    "paper_id": 3,
+    "2d_coord": [
+      0.8629934787750244,
+      1.6872721910476685
+    ],
+    "MSU_id": 1132,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Track Combination Analysis. We conducted a detailed analysis of the track combinations used in circos plots within our dataset. First, we examined the number of rings (Figure 3 (A)) and tracks types (Figure 3 (B)) per plot. The results show that many plots use more than five rings, indicating complex requirements for track combination and ordering. Next, we analyzed the number of tracks per ring (Figure 3 (C)), revealing that multiple tracks are typically stacked rather than synthesized within the same ring. Figure 3 (D)"
+  },
+  {
+    "sentence": "Circos plots tend to stack multiple tracks of the same type.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 5,
+    "msuid": 1153,
+    "para_id": 201,
+    "paper_id": 3,
+    "2d_coord": [
+      0.1017937958240509,
+      0.7321934700012207
+    ],
+    "MSU_id": 1153,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "where  $P(type_{outer}|type_{inner})$  ranges from [0, 1]; values close to 0 indicate that type_{inner} rarely appears adjacent to type_{outer}, while values close to 1 indicate frequent adjacency. Additionally, we designated tracks combined in synthesized relationships as synthesized tracks, and involved the start track (located outside the outermost track) and the end track (located inside the innermost track) to analyze the track types at the boundaries. The results (Figure 3 (E)) reveal that many track types like histogram, line, scatter, and heatmaps have probabilities above 0.5 (diagonal cells), suggesting that circos plots tend to stack multiple tracks of the same type. Furthermore, the high proportion of chord and other views in the end track column indicates that the central position is often reserved for displaying chord or other customized, user-defined views."
+  },
+  {
+    "sentence": "The high proportion of chord and other views in the end track column indicates that the central position is often reserved for displaying chord or other customized, user-defined views.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 5,
+    "msuid": 1154,
+    "para_id": 201,
+    "paper_id": 3,
+    "2d_coord": [
+      0.3879282772541046,
+      2.3197593688964844
+    ],
+    "MSU_id": 1154,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "where  $P(type_{outer}|type_{inner})$  ranges from [0, 1]; values close to 0 indicate that type_{inner} rarely appears adjacent to type_{outer}, while values close to 1 indicate frequent adjacency. Additionally, we designated tracks combined in synthesized relationships as synthesized tracks, and involved the start track (located outside the outermost track) and the end track (located inside the innermost track) to analyze the track types at the boundaries. The results (Figure 3 (E)) reveal that many track types like histogram, line, scatter, and heatmaps have probabilities above 0.5 (diagonal cells), suggesting that circos plots tend to stack multiple tracks of the same type. Furthermore, the high proportion of chord and other views in the end track column indicates that the central position is often reserved for displaying chord or other customized, user-defined views."
+  },
+  {
+    "sentence": "Ideograms enhance the interpretability of gene regions highlighted in the data.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 4,
+    "msuid": 1162,
+    "para_id": 204,
+    "paper_id": 3,
+    "2d_coord": [
+      1.289872407913208,
+      2.9647676944732666
+    ],
+    "MSU_id": 1162,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "The results (Figure 3 (F)) indicate that the ideogram and highlight exhibit the strongest connection, as they are frequently combined within the same track. This is likely because ideograms, which display chromosomes and bands, enhance the interpretability of gene regions highlighted in the data. Additionally, histogram and line are often paired with themselves to present multiple data attributes, likely due to their ability to use colors to distinguish different attributes, making them ideal for visualizing complex datasets."
+  },
+  {
+    "sentence": "Using colors to distinguish attributes makes histogram and line ideal for visualizing complex datasets.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 4,
+    "msuid": 1165,
+    "para_id": 204,
+    "paper_id": 3,
+    "2d_coord": [
+      0.34474071860313416,
+      2.323953151702881
+    ],
+    "MSU_id": 1165,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "The results (Figure 3 (F)) indicate that the ideogram and highlight exhibit the strongest connection, as they are frequently combined within the same track. This is likely because ideograms, which display chromosomes and bands, enhance the interpretability of gene regions highlighted in the data. Additionally, histogram and line are often paired with themselves to present multiple data attributes, likely due to their ability to use colors to distinguish different attributes, making them ideal for visualizing complex datasets."
+  },
+  {
+    "sentence": "The RAG framework overcomes the limitations of language models in domain-specific tasks.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 3,
+    "msuid": 1178,
+    "para_id": 208,
+    "paper_id": 3,
+    "2d_coord": [
+      2.7777504920959473,
+      1.6197158098220825
+    ],
+    "MSU_id": 1178,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Our recommended method uses a Retrieval Augmented Generation (RAG) [LPP*20] framework, a widely adopted approach that combines a model's parameters with external non-parametric memory to generate language, thereby overcoming the limitations of language models in domain-specific tasks. RAG consists of two stages: a retriever and a generator. The retriever takes the user's query and maps both the query and documents from an external corpus into a high-dimensional vector space using a shared embedding model. By calculating similarities (e.g., Euclidean distance) between the query vector and document vectors, it identifies the most relevant documents. The generator, often a pre-trained large language model (LLM), then uses the content of these retrieved documents to produce natural language text that satisfies both syntactic and semantic requirements. The prompt input to the generator is optimized through prompt engineering to guide the model in generating the most relevant output. Our recommendation framework is also divided into two stages based on RAG: the similar sample retriever and the configuration generator, as shown in Figure 4."
+  },
+  {
+    "sentence": "Since both the annotations and the query are embedded in the same semantic space, the similarity between vectors reflects their semantic similarity.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 5,
+    "msuid": 1202,
+    "para_id": 210,
+    "paper_id": 3,
+    "2d_coord": [
+      2.134330987930298,
+      2.1989712715148926
+    ],
+    "MSU_id": 1202,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "a text embedding model and a circos plot vector database which stores encoded circos plot annotations and corresponding configuration vectors. First, we selected the LLM-Embedder [ZXL*23] as the base model for calculating text embeddings, as it is optimized for retrieval-augmented tasks with LLMs. The text embedding model converts a user's query into a 1024-dimensional embedding vector. Similarly, it converts each annotation and its corresponding configuration in the dataset into vectors within the same semantic space. Then, we use Chroma [Tea22] to build the vector database, which stores annotation-configuration vectors generated by the text embedding model, providing external knowledge for the subsequent generator. The vector converted from the user's query is compared with vectors stored in the database using Euclidean Distance, and the top 10 most relevant vectors are selected as examples, where the number of examples can be adjusted by users. Since both the annotations and the query are embedded in the same semantic space, the similarity between vectors reflects their semantic similarity."
+  },
+  {
+    "sentence": "IntelliCircos simplifies the process to reduce users' workload.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 3,
+    "msuid": 1278,
+    "para_id": 224,
+    "paper_id": 3,
+    "2d_coord": [
+      0.4020079970359802,
+      0.9560196399688721
+    ],
+    "MSU_id": 1278,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Configuration Panel (Figure 5 (C)) allows users to manually insert, edit, and delete tracks. The global control form is used to create new tracks, while each track has a corresponding local configuration form with customizable settings such as color and scale. IntelliCircos simplifies the process to reduce users' workload by automatically selecting initial data sources and configuration parameters based on heuristic rules, such as prioritizing unused data sources and copying configurations from tracks of the same type. Any modifications made to the configuration are displayed in real-time on the Circos Dashboard."
+  },
+  {
+    "sentence": "Alex was satisfied with the final design.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 2,
+    "msuid": 1338,
+    "para_id": 235,
+    "paper_id": 3,
+    "2d_coord": [
+      -0.7735764384269714,
+      0.7433809041976929
+    ],
+    "MSU_id": 1338,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Additionally, Alex noticed that the default color scheme used the same color for both human and mouse chromosomes, which caused visual confusion. To solve this problem, she opened the color selection panel corresponding to the ideogram track in Configuration Panel and used the tool's preset color combinations to distinguish these species. Finally, she felt that the height and direction of the histogram did not align with her preference, so she modified these settings in Configuration Panel. Now, Alex was satisfied with the final design, and exported it as an SVG (Scalable Vector Graphics) file to share with other colleagues."
+  },
+  {
+    "sentence": "It is difficult and unfair to compare IntelliCircos with existing tools.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 4,
+    "msuid": 1351,
+    "para_id": 236,
+    "paper_id": 3,
+    "2d_coord": [
+      2.3484487533569336,
+      -0.921601414680481
+    ],
+    "MSU_id": 1351,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "To evaluate the usability and effectiveness of IntelliCircos, we conducted a user study with 8 participants  $(\\mathrm{P_1 - P_8})$ . They were asked to use IntelliCircos to create circos plots and give both qualitative and quantitative feedback. The study setting is introduced in Section 8.1, and the results are presented in Section 8.2. We did not conduct a comparative study since there are no appropriate baselines. Existing tools like Circos and RCircos are often used by bioinformatics analysts. Also, these tools primarily assist in the implementation while overlooking the design process. In contrast, IntelliCircos supports both design and implementation, seamlessly integrating these two stages. It makes it difficult and unfair to compare IntelliCircos with existing tools. As a result, we opted for a qualitative assessment of users' experiences with IntelliCircos, comparing it to their current practices."
+  },
+  {
+    "sentence": "The manageable size of this dataset ensured the study did not last for too long.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 3,
+    "msuid": 1365,
+    "para_id": 239,
+    "paper_id": 3,
+    "2d_coord": [
+      0.31479430198669434,
+      1.5748850107192993
+    ],
+    "MSU_id": 1365,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Task and Data. In our user study, participants were asked to create a circos plot using IntelliCircos. They were required to use the provided data as sufficient as possible. We utilized example data from CircosJS [Koc16], which includes track data for plotting alongside chromosomes, label data for annotation elements in different tracks, and link data to establish connections between pairs of genomic regions. This dataset meets the requirements of circos plots, including relationships and multi-layered annotations across various scales [Krz09], and its manageable size ensured the study did not last for too long."
+  },
+  {
+    "sentence": "IntelliCircos has limited editing capabilities compared to mature software such as Circos.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 5,
+    "msuid": 1420,
+    "para_id": 246,
+    "paper_id": 3,
+    "2d_coord": [
+      1.7542462348937988,
+      1.1324585676193237
+    ],
+    "MSU_id": 1420,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "The distribution of ratings for effectiveness is shown in Figure 7 (Q5 - Q9). Overall, most participants were satisfied with IntelliCircos. Specifically, 7 out of 8 participants appreciated how IntelliCircos simplified the creation process of circos plots (Q5), with a median rating of  $6.5(IQR = 1)$ . They also praised the quality of the final circos plot (Q9) and found design recommendation (Q6) and the design-to-implementation process (Q7) useful and aligned with their expectations. However, the rating for customization support (Q8) was relatively lower, with most participants providing more neutral scores and one participant,  $\\mathrm{P}_6$ , giving a negative score of 3, stating that \"The tool does not support customization of the chart or legend in the center.\" This reflects IntelliCircos's limited editing capabilities compared to mature software (e.g., Circos)."
+  },
+  {
+    "sentence": "We present the design lessons learned.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 4,
+    "msuid": 1459,
+    "para_id": 253,
+    "paper_id": 3,
+    "2d_coord": [
+      1.934510588645935,
+      2.5375008583068848
+    ],
+    "MSU_id": 1459,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "In this section, we present the design lessons learned, which can serve as inspiration for developing future tools."
+  },
+  {
+    "sentence": "The design lessons can serve as inspiration for developing future tools.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 3,
+    "msuid": 1460,
+    "para_id": 253,
+    "paper_id": 3,
+    "2d_coord": [
+      1.1028639078140259,
+      0.8683658838272095
+    ],
+    "MSU_id": 1460,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "In this section, we present the design lessons learned, which can serve as inspiration for developing future tools."
+  },
+  {
+    "sentence": "One important lesson we learned was balancing simplicity and flexibility in the design-to-implementation workflow.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 2,
+    "msuid": 1463,
+    "para_id": 254,
+    "paper_id": 3,
+    "2d_coord": [
+      -0.014993980526924133,
+      -2.152501106262207
+    ],
+    "MSU_id": 1463,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Streamlining the Creation Process from Design to Implementation. IntelliCircos simplifies the creation of circos plots by providing AI-generated recommendations and similar design references sourced from high-quality examples. The tool also automates the implementation of designs while offering customizable configuration options for fine-tuning the created visualization. One important lesson we learned was balancing simplicity and flexibility in the design-to-implementation workflow. Our findings revealed that most participants preferred the progressive recommendation approach over fully-automated suggestions or manual design, as it allowed them to iteratively refine the results to better align with their preferences. This highlights the importance of workflows that adapt to users' evolving needs. Natural language input further simplified the design process by allowing users to intuitively express their requirements. However, early testing revealed challenges in formulating complex prompts. To address this, we integrated predefined templates and auto-completion features, which were well-received by the participants. This underscores the value of intuitive UI enhancements in reducing the learning curve. While track-level configuration provides flexibility for customization, participants found it cumbersome when many adjustments were needed. A promising future direction is to enable users to select circos plots as references, allowing the tool to learn from these examples and recommend similar designs that better align with user preferences, thereby reducing the need for manual adjustments."
+  },
+  {
+    "sentence": "This highlights the importance of workflows that adapt to users' evolving needs.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 3,
+    "msuid": 1465,
+    "para_id": 254,
+    "paper_id": 3,
+    "2d_coord": [
+      -0.1605852097272873,
+      -0.5701601505279541
+    ],
+    "MSU_id": 1465,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Streamlining the Creation Process from Design to Implementation. IntelliCircos simplifies the creation of circos plots by providing AI-generated recommendations and similar design references sourced from high-quality examples. The tool also automates the implementation of designs while offering customizable configuration options for fine-tuning the created visualization. One important lesson we learned was balancing simplicity and flexibility in the design-to-implementation workflow. Our findings revealed that most participants preferred the progressive recommendation approach over fully-automated suggestions or manual design, as it allowed them to iteratively refine the results to better align with their preferences. This highlights the importance of workflows that adapt to users' evolving needs. Natural language input further simplified the design process by allowing users to intuitively express their requirements. However, early testing revealed challenges in formulating complex prompts. To address this, we integrated predefined templates and auto-completion features, which were well-received by the participants. This underscores the value of intuitive UI enhancements in reducing the learning curve. While track-level configuration provides flexibility for customization, participants found it cumbersome when many adjustments were needed. A promising future direction is to enable users to select circos plots as references, allowing the tool to learn from these examples and recommend similar designs that better align with user preferences, thereby reducing the need for manual adjustments."
+  },
+  {
+    "sentence": "This underscores the value of intuitive UI enhancements in reducing the learning curve.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 4,
+    "msuid": 1469,
+    "para_id": 254,
+    "paper_id": 3,
+    "2d_coord": [
+      1.0204583406448364,
+      1.2798688411712646
+    ],
+    "MSU_id": 1469,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Streamlining the Creation Process from Design to Implementation. IntelliCircos simplifies the creation of circos plots by providing AI-generated recommendations and similar design references sourced from high-quality examples. The tool also automates the implementation of designs while offering customizable configuration options for fine-tuning the created visualization. One important lesson we learned was balancing simplicity and flexibility in the design-to-implementation workflow. Our findings revealed that most participants preferred the progressive recommendation approach over fully-automated suggestions or manual design, as it allowed them to iteratively refine the results to better align with their preferences. This highlights the importance of workflows that adapt to users' evolving needs. Natural language input further simplified the design process by allowing users to intuitively express their requirements. However, early testing revealed challenges in formulating complex prompts. To address this, we integrated predefined templates and auto-completion features, which were well-received by the participants. This underscores the value of intuitive UI enhancements in reducing the learning curve. While track-level configuration provides flexibility for customization, participants found it cumbersome when many adjustments were needed. A promising future direction is to enable users to select circos plots as references, allowing the tool to learn from these examples and recommend similar designs that better align with user preferences, thereby reducing the need for manual adjustments."
+  },
+  {
+    "sentence": "A promising future direction is to enable users to select circos plots as references, allowing the tool to learn from these examples and recommend similar designs that better align with user preferences, thereby reducing the need for manual adjustments.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 5,
+    "msuid": 1471,
+    "para_id": 254,
+    "paper_id": 3,
+    "2d_coord": [
+      0.8251647353172302,
+      2.532306671142578
+    ],
+    "MSU_id": 1471,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Streamlining the Creation Process from Design to Implementation. IntelliCircos simplifies the creation of circos plots by providing AI-generated recommendations and similar design references sourced from high-quality examples. The tool also automates the implementation of designs while offering customizable configuration options for fine-tuning the created visualization. One important lesson we learned was balancing simplicity and flexibility in the design-to-implementation workflow. Our findings revealed that most participants preferred the progressive recommendation approach over fully-automated suggestions or manual design, as it allowed them to iteratively refine the results to better align with their preferences. This highlights the importance of workflows that adapt to users' evolving needs. Natural language input further simplified the design process by allowing users to intuitively express their requirements. However, early testing revealed challenges in formulating complex prompts. To address this, we integrated predefined templates and auto-completion features, which were well-received by the participants. This underscores the value of intuitive UI enhancements in reducing the learning curve. While track-level configuration provides flexibility for customization, participants found it cumbersome when many adjustments were needed. A promising future direction is to enable users to select circos plots as references, allowing the tool to learn from these examples and recommend similar designs that better align with user preferences, thereby reducing the need for manual adjustments."
+  },
+  {
+    "sentence": "This underscores the importance of transparency in AI assistance.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 3,
+    "msuid": 1481,
+    "para_id": 255,
+    "paper_id": 3,
+    "2d_coord": [
+      2.1069393157958984,
+      -0.23465710878372192
+    ],
+    "MSU_id": 1481,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Facilitating Effective Collaboration Between Humans and AI. IntelliCircos adopts a Human-AI collaboration workflow to assist in creating circos plots. Users can express their design requirements in natural language, receiving AI-generated recommendations and similar design references. Participants in our study praised the tool in fostering creativity and inspiration, which is achieved by its AI recommendations and reference examples. These references not only guided their designs but also increased trust in the recommendations. This underscores the importance of transparency in AI assistance. In this regard, we believe embedding contextual information, such as provenance or real-world examples, can enhance user confidence in AI-driven tools. Furthermore, participants also appreciated the ability to combine AI recommendations with user-driven refinements, which allowed them to control the pace of design and implementation. This highlights the importance of enabling users to actively guide and refine AI outputs, rather than solely relying on automated suggestions."
+  },
+  {
+    "sentence": "Embedding contextual information such as provenance or real-world examples can enhance user confidence in AI-driven tools.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 5,
+    "msuid": 1482,
+    "para_id": 255,
+    "paper_id": 3,
+    "2d_coord": [
+      1.3864163160324097,
+      2.122990131378174
+    ],
+    "MSU_id": 1482,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Facilitating Effective Collaboration Between Humans and AI. IntelliCircos adopts a Human-AI collaboration workflow to assist in creating circos plots. Users can express their design requirements in natural language, receiving AI-generated recommendations and similar design references. Participants in our study praised the tool in fostering creativity and inspiration, which is achieved by its AI recommendations and reference examples. These references not only guided their designs but also increased trust in the recommendations. This underscores the importance of transparency in AI assistance. In this regard, we believe embedding contextual information, such as provenance or real-world examples, can enhance user confidence in AI-driven tools. Furthermore, participants also appreciated the ability to combine AI recommendations with user-driven refinements, which allowed them to control the pace of design and implementation. This highlights the importance of enabling users to actively guide and refine AI outputs, rather than solely relying on automated suggestions."
+  },
+  {
+    "sentence": "Enabling users to actively guide and refine AI outputs is important.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 4,
+    "msuid": 1485,
+    "para_id": 255,
+    "paper_id": 3,
+    "2d_coord": [
+      2.089130163192749,
+      -0.07302376627922058
+    ],
+    "MSU_id": 1485,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Facilitating Effective Collaboration Between Humans and AI. IntelliCircos adopts a Human-AI collaboration workflow to assist in creating circos plots. Users can express their design requirements in natural language, receiving AI-generated recommendations and similar design references. Participants in our study praised the tool in fostering creativity and inspiration, which is achieved by its AI recommendations and reference examples. These references not only guided their designs but also increased trust in the recommendations. This underscores the importance of transparency in AI assistance. In this regard, we believe embedding contextual information, such as provenance or real-world examples, can enhance user confidence in AI-driven tools. Furthermore, participants also appreciated the ability to combine AI recommendations with user-driven refinements, which allowed them to control the pace of design and implementation. This highlights the importance of enabling users to actively guide and refine AI outputs, rather than solely relying on automated suggestions."
+  },
+  {
+    "sentence": "Users should not solely rely on automated suggestions.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 3,
+    "msuid": 1486,
+    "para_id": 255,
+    "paper_id": 3,
+    "2d_coord": [
+      2.3484349250793457,
+      1.7676420211791992
+    ],
+    "MSU_id": 1486,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Facilitating Effective Collaboration Between Humans and AI. IntelliCircos adopts a Human-AI collaboration workflow to assist in creating circos plots. Users can express their design requirements in natural language, receiving AI-generated recommendations and similar design references. Participants in our study praised the tool in fostering creativity and inspiration, which is achieved by its AI recommendations and reference examples. These references not only guided their designs but also increased trust in the recommendations. This underscores the importance of transparency in AI assistance. In this regard, we believe embedding contextual information, such as provenance or real-world examples, can enhance user confidence in AI-driven tools. Furthermore, participants also appreciated the ability to combine AI recommendations with user-driven refinements, which allowed them to control the pace of design and implementation. This highlights the importance of enabling users to actively guide and refine AI outputs, rather than solely relying on automated suggestions."
+  },
+  {
+    "sentence": "This section discusses the limitations of IntelliCircos.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 3,
+    "msuid": 1487,
+    "para_id": 256,
+    "paper_id": 3,
+    "2d_coord": [
+      2.6586475372314453,
+      0.09148310124874115
+    ],
+    "MSU_id": 1487,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "In this section, we discuss the limitations and future work, regarding the functionalities, and evaluations of IntelliCircos."
+  },
+  {
+    "sentence": "This section discusses the future work of IntelliCircos.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 3,
+    "msuid": 1488,
+    "para_id": 256,
+    "paper_id": 3,
+    "2d_coord": [
+      1.8818711042404175,
+      -1.7988122701644897
+    ],
+    "MSU_id": 1488,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "In this section, we discuss the limitations and future work, regarding the functionalities, and evaluations of IntelliCircos."
+  },
+  {
+    "sentence": "The discussion concerns the functionalities of IntelliCircos.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 2,
+    "msuid": 1489,
+    "para_id": 256,
+    "paper_id": 3,
+    "2d_coord": [
+      0.7150583863258362,
+      1.0856767892837524
+    ],
+    "MSU_id": 1489,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "In this section, we discuss the limitations and future work, regarding the functionalities, and evaluations of IntelliCircos."
+  },
+  {
+    "sentence": "The discussion concerns the evaluations of IntelliCircos.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 2,
+    "msuid": 1490,
+    "para_id": 256,
+    "paper_id": 3,
+    "2d_coord": [
+      1.4496461153030396,
+      2.156646728515625
+    ],
+    "MSU_id": 1490,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "In this section, we discuss the limitations and future work, regarding the functionalities, and evaluations of IntelliCircos."
+  },
+  {
+    "sentence": "The functionalities of IntelliCircos can be further extended.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 3,
+    "msuid": 1491,
+    "para_id": 257,
+    "paper_id": 3,
+    "2d_coord": [
+      0.9931215047836304,
+      -0.3894302248954773
+    ],
+    "MSU_id": 1491,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Functionalities. The functionalities of IntelliCircos can be further extended. The tool currently does not support sufficient data processing to prepare the data for circos plots, it only supports mapping the data to tracks. In the future, the tool can be enhanced to support data processing tasks, e.g., data filtering, so as to broaden the use cases of IntelliCircos. Currently, users need to modify relevant configurations one by one to adjust the chart to meet their needs, which is kind of cumbersome. In the future, IntelliCircos can be enhanced to recommend tailored configurations. By learning from users' created circos plots, the tool could suggest preferences for track combinations, track types, color schemes, and more, streamlining the customization process."
+  },
+  {
+    "sentence": "The tool can be enhanced in the future to support data processing tasks such as data filtering.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 4,
+    "msuid": 1494,
+    "para_id": 257,
+    "paper_id": 3,
+    "2d_coord": [
+      1.0874392986297607,
+      -1.533178687095642
+    ],
+    "MSU_id": 1494,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Functionalities. The functionalities of IntelliCircos can be further extended. The tool currently does not support sufficient data processing to prepare the data for circos plots, it only supports mapping the data to tracks. In the future, the tool can be enhanced to support data processing tasks, e.g., data filtering, so as to broaden the use cases of IntelliCircos. Currently, users need to modify relevant configurations one by one to adjust the chart to meet their needs, which is kind of cumbersome. In the future, IntelliCircos can be enhanced to recommend tailored configurations. By learning from users' created circos plots, the tool could suggest preferences for track combinations, track types, color schemes, and more, streamlining the customization process."
+  },
+  {
+    "sentence": "Enhancing data processing capabilities could broaden the use cases of IntelliCircos.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 5,
+    "msuid": 1495,
+    "para_id": 257,
+    "paper_id": 3,
+    "2d_coord": [
+      2.1521291732788086,
+      0.8775702714920044
+    ],
+    "MSU_id": 1495,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Functionalities. The functionalities of IntelliCircos can be further extended. The tool currently does not support sufficient data processing to prepare the data for circos plots, it only supports mapping the data to tracks. In the future, the tool can be enhanced to support data processing tasks, e.g., data filtering, so as to broaden the use cases of IntelliCircos. Currently, users need to modify relevant configurations one by one to adjust the chart to meet their needs, which is kind of cumbersome. In the future, IntelliCircos can be enhanced to recommend tailored configurations. By learning from users' created circos plots, the tool could suggest preferences for track combinations, track types, color schemes, and more, streamlining the customization process."
+  },
+  {
+    "sentence": "In the future, IntelliCircos can be enhanced to recommend tailored configurations.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 5,
+    "msuid": 1498,
+    "para_id": 257,
+    "paper_id": 3,
+    "2d_coord": [
+      1.2626186609268188,
+      -2.4295873641967773
+    ],
+    "MSU_id": 1498,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Functionalities. The functionalities of IntelliCircos can be further extended. The tool currently does not support sufficient data processing to prepare the data for circos plots, it only supports mapping the data to tracks. In the future, the tool can be enhanced to support data processing tasks, e.g., data filtering, so as to broaden the use cases of IntelliCircos. Currently, users need to modify relevant configurations one by one to adjust the chart to meet their needs, which is kind of cumbersome. In the future, IntelliCircos can be enhanced to recommend tailored configurations. By learning from users' created circos plots, the tool could suggest preferences for track combinations, track types, color schemes, and more, streamlining the customization process."
+  },
+  {
+    "sentence": "Suggesting user-specific preferences could streamline the customization process.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 4,
+    "msuid": 1500,
+    "para_id": 257,
+    "paper_id": 3,
+    "2d_coord": [
+      1.2085367441177368,
+      1.0197019577026367
+    ],
+    "MSU_id": 1500,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Functionalities. The functionalities of IntelliCircos can be further extended. The tool currently does not support sufficient data processing to prepare the data for circos plots, it only supports mapping the data to tracks. In the future, the tool can be enhanced to support data processing tasks, e.g., data filtering, so as to broaden the use cases of IntelliCircos. Currently, users need to modify relevant configurations one by one to adjust the chart to meet their needs, which is kind of cumbersome. In the future, IntelliCircos can be enhanced to recommend tailored configurations. By learning from users' created circos plots, the tool could suggest preferences for track combinations, track types, color schemes, and more, streamlining the customization process."
+  },
+  {
+    "sentence": "Evaluating trust and cognitive load in AI assistance could provide empirical insights.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 2,
+    "msuid": 1507,
+    "para_id": 258,
+    "paper_id": 3,
+    "2d_coord": [
+      1.1019269227981567,
+      0.03555317223072052
+    ],
+    "MSU_id": 1507,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "**Evaluations.** In our user study, participants were tasked to create circos plots using IntelliCircos to evaluate its support for plot creation. However, the evaluation process could be improved from several perspectives. First, while we assessed the usability and effectiveness of IntelliCircos's main features, we did not evaluate AI assistance in terms of trust and perceived cognitive load, which is an interesting part to dive deeper for empirical insights as suggested by [YWWW19, GKC*23]. Examining these aspects would offer additional insights into the tool's overall effectiveness. Second, this paper primarily focuses on the design and development of the tool, and as outlined in Section 8.1, we did not include a baseline comparison in our study. However, a thorough empirical investigation comparing different approaches (e.g., IntelliCircos and Circos software) could provide a broader understanding of their respective strengths and limitations. Third, the study's participant pool was limited. Future work should involve a larger and more diverse group, including those not experienced creators to better assess the tool's real-world value. Lastly, all questions in the questionnaire are positive. A better design approach would involve inverting the polarity of questions to validate participants' responses."
+  },
+  {
+    "sentence": "Examining trust and cognitive load would offer additional insights into the tool’s overall effectiveness.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 3,
+    "msuid": 1508,
+    "para_id": 258,
+    "paper_id": 3,
+    "2d_coord": [
+      -1.3529495000839233,
+      -1.747930645942688
+    ],
+    "MSU_id": 1508,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "**Evaluations.** In our user study, participants were tasked to create circos plots using IntelliCircos to evaluate its support for plot creation. However, the evaluation process could be improved from several perspectives. First, while we assessed the usability and effectiveness of IntelliCircos's main features, we did not evaluate AI assistance in terms of trust and perceived cognitive load, which is an interesting part to dive deeper for empirical insights as suggested by [YWWW19, GKC*23]. Examining these aspects would offer additional insights into the tool's overall effectiveness. Second, this paper primarily focuses on the design and development of the tool, and as outlined in Section 8.1, we did not include a baseline comparison in our study. However, a thorough empirical investigation comparing different approaches (e.g., IntelliCircos and Circos software) could provide a broader understanding of their respective strengths and limitations. Third, the study's participant pool was limited. Future work should involve a larger and more diverse group, including those not experienced creators to better assess the tool's real-world value. Lastly, all questions in the questionnaire are positive. A better design approach would involve inverting the polarity of questions to validate participants' responses."
+  },
+  {
+    "sentence": "A thorough empirical investigation comparing different approaches such as IntelliCircos and Circos software could provide a broader understanding of their respective strengths and limitations.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 4,
+    "msuid": 1511,
+    "para_id": 258,
+    "paper_id": 3,
+    "2d_coord": [
+      -0.34004414081573486,
+      1.3322190046310425
+    ],
+    "MSU_id": 1511,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "**Evaluations.** In our user study, participants were tasked to create circos plots using IntelliCircos to evaluate its support for plot creation. However, the evaluation process could be improved from several perspectives. First, while we assessed the usability and effectiveness of IntelliCircos's main features, we did not evaluate AI assistance in terms of trust and perceived cognitive load, which is an interesting part to dive deeper for empirical insights as suggested by [YWWW19, GKC*23]. Examining these aspects would offer additional insights into the tool's overall effectiveness. Second, this paper primarily focuses on the design and development of the tool, and as outlined in Section 8.1, we did not include a baseline comparison in our study. However, a thorough empirical investigation comparing different approaches (e.g., IntelliCircos and Circos software) could provide a broader understanding of their respective strengths and limitations. Third, the study's participant pool was limited. Future work should involve a larger and more diverse group, including those not experienced creators to better assess the tool's real-world value. Lastly, all questions in the questionnaire are positive. A better design approach would involve inverting the polarity of questions to validate participants' responses."
+  },
+  {
+    "sentence": "Future work should involve a larger and more diverse participant group.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 2,
+    "msuid": 1513,
+    "para_id": 258,
+    "paper_id": 3,
+    "2d_coord": [
+      -1.1941429376602173,
+      -1.699328064918518
+    ],
+    "MSU_id": 1513,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "**Evaluations.** In our user study, participants were tasked to create circos plots using IntelliCircos to evaluate its support for plot creation. However, the evaluation process could be improved from several perspectives. First, while we assessed the usability and effectiveness of IntelliCircos's main features, we did not evaluate AI assistance in terms of trust and perceived cognitive load, which is an interesting part to dive deeper for empirical insights as suggested by [YWWW19, GKC*23]. Examining these aspects would offer additional insights into the tool's overall effectiveness. Second, this paper primarily focuses on the design and development of the tool, and as outlined in Section 8.1, we did not include a baseline comparison in our study. However, a thorough empirical investigation comparing different approaches (e.g., IntelliCircos and Circos software) could provide a broader understanding of their respective strengths and limitations. Third, the study's participant pool was limited. Future work should involve a larger and more diverse group, including those not experienced creators to better assess the tool's real-world value. Lastly, all questions in the questionnaire are positive. A better design approach would involve inverting the polarity of questions to validate participants' responses."
+  },
+  {
+    "sentence": "Including participants who are not experienced creators would better assess the tool's real-world value.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 3,
+    "msuid": 1514,
+    "para_id": 258,
+    "paper_id": 3,
+    "2d_coord": [
+      -0.7151303291320801,
+      -0.33801496028900146
+    ],
+    "MSU_id": 1514,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "**Evaluations.** In our user study, participants were tasked to create circos plots using IntelliCircos to evaluate its support for plot creation. However, the evaluation process could be improved from several perspectives. First, while we assessed the usability and effectiveness of IntelliCircos's main features, we did not evaluate AI assistance in terms of trust and perceived cognitive load, which is an interesting part to dive deeper for empirical insights as suggested by [YWWW19, GKC*23]. Examining these aspects would offer additional insights into the tool's overall effectiveness. Second, this paper primarily focuses on the design and development of the tool, and as outlined in Section 8.1, we did not include a baseline comparison in our study. However, a thorough empirical investigation comparing different approaches (e.g., IntelliCircos and Circos software) could provide a broader understanding of their respective strengths and limitations. Third, the study's participant pool was limited. Future work should involve a larger and more diverse group, including those not experienced creators to better assess the tool's real-world value. Lastly, all questions in the questionnaire are positive. A better design approach would involve inverting the polarity of questions to validate participants' responses."
+  },
+  {
+    "sentence": "A better design approach would involve inverting the polarity of questionnaire questions to validate participants' responses.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Conclusion",
+    "rank": 2,
+    "msuid": 1516,
+    "para_id": 258,
+    "paper_id": 3,
+    "2d_coord": [
+      -0.8459179997444153,
+      -1.5594168901443481
+    ],
+    "MSU_id": 1516,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "**Evaluations.** In our user study, participants were tasked to create circos plots using IntelliCircos to evaluate its support for plot creation. However, the evaluation process could be improved from several perspectives. First, while we assessed the usability and effectiveness of IntelliCircos's main features, we did not evaluate AI assistance in terms of trust and perceived cognitive load, which is an interesting part to dive deeper for empirical insights as suggested by [YWWW19, GKC*23]. Examining these aspects would offer additional insights into the tool's overall effectiveness. Second, this paper primarily focuses on the design and development of the tool, and as outlined in Section 8.1, we did not include a baseline comparison in our study. However, a thorough empirical investigation comparing different approaches (e.g., IntelliCircos and Circos software) could provide a broader understanding of their respective strengths and limitations. Third, the study's participant pool was limited. Future work should involve a larger and more diverse group, including those not experienced creators to better assess the tool's real-world value. Lastly, all questions in the questionnaire are positive. A better design approach would involve inverting the polarity of questions to validate participants' responses."
+  }
+]

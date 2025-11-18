@@ -9,7 +9,7 @@
       7,
       8
     ],
-    "summary": "Summary: The sentences provided from the papers \"largeeddyMSU\" suggest a common theme of computational modeling and simulations in the context of hydrogen-fueled direct injection and scramjet test rig performance under specific conditions. These sentences likely discuss different aspects of computational fluid dynamics and propulsion systems testing."
+    "summary": "The sentences provided from the papers \"largeeddyMSU\" suggest a common theme of computational modeling and simulations in the context of hydrogen-fueled direct injection and scramjet test rig performance under specific conditions. These sentences likely discuss different aspects of computational fluid dynamics and propulsion systems testing."
   },
   {
     "hex_coord": [
@@ -43,7 +43,7 @@
     "MSU_ids": [
       23
     ],
-    "summary": "Summary: The cluster of sentences focuses on a synergistic design feature in engine operation, eliminating the need for a physical throat between the combustor and expansion system. This reveals a shared emphasis on innovative engineering solutions in propulsion systems, indicating a specific focus on enhancing engine performance and efficiency through integrated design elements."
+    "summary": "The cluster of sentences focuses on a synergistic design feature in engine operation, eliminating the need for a physical throat between the combustor and expansion system. This reveals a shared emphasis on innovative engineering solutions in propulsion systems, indicating a specific focus on enhancing engine performance and efficiency through integrated design elements."
   },
   {
     "hex_coord": [
@@ -110,7 +110,7 @@
     "MSU_ids": [
       96
     ],
-    "summary": "Summary: The sentence extracted from the paper \"Large Eddy Simulation using Unstructured Grids\" discusses the use of spatial filters, like local grid-size or the Favre filter, to extract Large Eddy Simulation governing equations from the reactive Navier-Stokes equations. This cluster does not suggest a specific, unified focus beyond this discussion."
+    "summary": "The sentence extracted from the paper \"Large Eddy Simulation using Unstructured Grids\" discusses the use of spatial filters, like local grid-size or the Favre filter, to extract Large Eddy Simulation governing equations from the reactive Navier-Stokes equations. This cluster does not suggest a specific, unified focus beyond this discussion."
   },
   {
     "hex_coord": [
@@ -122,7 +122,7 @@
       97,
       224
     ],
-    "summary": "**Summary:**\nThe cluster of sentences revolves around the topic of Large Eddy Simulation (LES) applied to reactive flows. Specifically, the sentences discuss deriving LES governing equations from reactive Navier-Stokes equations and obtaining Ma distributions through a cross-section averaging method. These sentences share a unified focus on LES modeling in reactive flows."
+    "summary": "The cluster of sentences revolves around the topic of Large Eddy Simulation (LES) applied to reactive flows. Specifically, the sentences discuss deriving LES governing equations from reactive Navier-Stokes equations and obtaining Ma distributions through a cross-section averaging method. These sentences share a unified focus on LES modeling in reactive flows."
   },
   {
     "hex_coord": [
@@ -179,7 +179,7 @@
       102,
       184
     ],
-    "summary": "Summary:\nThe cluster of sentences revolves around the concepts of mass fraction, static enthalpy, mass diffusivity, and reaction rate of species in a large eddy simulation model. These sentences share a common focus on the conversion of stagnation temperature and pressure into static values using the isentropic flow hypothesis."
+    "summary": "The cluster of sentences revolves around the concepts of mass fraction, static enthalpy, mass diffusivity, and reaction rate of species in a large eddy simulation model. These sentences share a common focus on the conversion of stagnation temperature and pressure into static values using the isentropic flow hypothesis."
   },
   {
     "hex_coord": [
@@ -204,7 +204,7 @@
       104,
       123
     ],
-    "summary": "Summary:\nThe sentences extracted from the papers on large eddy simulations at MSU indicate a common focus on estimating physical properties in fluid dynamics, including molecular dynamic viscosity and nonlinear reaction rates linked to laminar finite-rate chemistry and fine structure volume fraction. They address specific calculation methodologies within this field rather than diverging topics."
+    "summary": "The sentences extracted from the papers on large eddy simulations at MSU indicate a common focus on estimating physical properties in fluid dynamics, including molecular dynamic viscosity and nonlinear reaction rates linked to laminar finite-rate chemistry and fine structure volume fraction. They address specific calculation methodologies within this field rather than diverging topics."
   },
   {
     "hex_coord": [
@@ -237,7 +237,7 @@
     "MSU_ids": [
       111
     ],
-    "summary": "Summary: The common theme across the provided paper titles and sentences appears to be related to the modeling of the subgrid-scale (SGS) stress tensor in a context that likely involves computational fluid dynamics or turbulence modeling. The sentences seem to align in discussing a specific aspect of fluid dynamics simulation rather than a broader topic, suggesting a focused connection."
+    "summary": "The common theme across the provided paper titles and sentences appears to be related to the modeling of the subgrid-scale (SGS) stress tensor in a context that likely involves computational fluid dynamics or turbulence modeling. The sentences seem to align in discussing a specific aspect of fluid dynamics simulation rather than a broader topic, suggesting a focused connection."
   },
   {
     "hex_coord": [
@@ -248,7 +248,7 @@
     "MSU_ids": [
       112
     ],
-    "summary": "Summary: The common theme among the sentences is turbulence modeling, specifically mentioning the modeling of turbulence kinematic viscosity. These sentences likely relate to the analysis and simulation of turbulent flows, indicating a focused discussion on turbulence characteristics in fluid dynamics."
+    "summary": "The common theme among the sentences is turbulence modeling, specifically mentioning the modeling of turbulence kinematic viscosity. These sentences likely relate to the analysis and simulation of turbulent flows, indicating a focused discussion on turbulence characteristics in fluid dynamics."
   },
   {
     "hex_coord": [
@@ -259,7 +259,7 @@
     "MSU_ids": [
       113
     ],
-    "summary": "Summary: The common theme across the provided sentences pertains to the determination of coefficients *Cε* and *Ck* in Eqs. (5) and (6) through the relationship between subgrid-scale stresses at different filtering scales using a box filter. These points collectively address the methodology for calculating these coefficients within the context of large eddy simulations."
+    "summary": "The common theme across the provided sentences pertains to the determination of coefficients *Cε* and *Ck* in Eqs. (5) and (6) through the relationship between subgrid-scale stresses at different filtering scales using a box filter. These points collectively address the methodology for calculating these coefficients within the context of large eddy simulations."
   },
   {
     "hex_coord": [
@@ -317,7 +317,7 @@
     "MSU_ids": [
       121
     ],
-    "summary": "Summary: The sentence extracted from the paper \"largeeddyMSU\" discusses modeling the filtered reaction rate using the Partially Stirred Reactor model to link combustion with turbulent fluctuations. This points to a common theme of integrating combustion and turbulence in modeling approaches within reacting flow systems."
+    "summary": "The sentence extracted from the paper \"largeeddyMSU\" discusses modeling the filtered reaction rate using the Partially Stirred Reactor model to link combustion with turbulent fluctuations. This points to a common theme of integrating combustion and turbulence in modeling approaches within reacting flow systems."
   },
   {
     "hex_coord": [
@@ -408,7 +408,7 @@
       138,
       139
     ],
-    "summary": "Summary: The common theme across the sentences extracted from the papers \"largeeddyMSU\" is the interpolation of left and right states at the interface in computational fluid dynamics simulations. The use of second-order MUSCL reconstruction and the combination with the VanLeer limiter are highlighted in these discussions, suggesting a focus on numerical methods for accurate state interpolation."
+    "summary": "The common theme across the sentences extracted from the papers \"largeeddyMSU\" is the interpolation of left and right states at the interface in computational fluid dynamics simulations. The use of second-order MUSCL reconstruction and the combination with the VanLeer limiter are highlighted in these discussions, suggesting a focus on numerical methods for accurate state interpolation."
   },
   {
     "hex_coord": [
@@ -430,7 +430,7 @@
     "MSU_ids": [
       143
     ],
-    "summary": "Summary: The sentence extracted from the paper \"Large Eddy Simulation for Urban Flows\" mentions the discretization of diffusive fluxes using the second-order central differencing method, indicating a focus on computational modeling and numerical methods in fluid dynamics, particularly related to urban flows. These sentences likely share a common theme of computational fluid dynamics and numerical simulations."
+    "summary": "The sentence extracted from the paper \"Large Eddy Simulation for Urban Flows\" mentions the discretization of diffusive fluxes using the second-order central differencing method, indicating a focus on computational modeling and numerical methods in fluid dynamics, particularly related to urban flows. These sentences likely share a common theme of computational fluid dynamics and numerical simulations."
   },
   {
     "hex_coord": [
@@ -476,7 +476,7 @@
     "MSU_ids": [
       147
     ],
-    "summary": "Summary: The cluster of sentences centers around computational fluid dynamics simulations, specifically referencing the physical time-step size and the corresponding Courant number in the context of a specific model or study (\"largeeddyMSU\").\n\nRelationship: The sentences likely pertain to specific details or parameters within computational fluid dynamics simulations, indicating a focused discussion within the broader field of fluid dynamics. Their proximity appears related to a common study or model rather than a coincidental placement."
+    "summary": "The cluster of sentences centers around computational fluid dynamics simulations, specifically referencing the physical time-step size and the corresponding Courant number in the context of a specific model or study (\"largeeddyMSU\").\n\nRelationship: The sentences likely pertain to specific details or parameters within computational fluid dynamics simulations, indicating a focused discussion within the broader field of fluid dynamics. Their proximity appears related to a common study or model rather than a coincidental placement."
   },
   {
     "hex_coord": [
@@ -510,7 +510,7 @@
       152,
       244
     ],
-    "summary": "Summary: The cluster of sentences pertains to high-enthalpy vitiated air behaviors in a hypersonic propulsion context. The first sentence discusses the acceleration of vitiated air at Mach 2 under specific conditions, while the second highlights challenges in capturing vortex evolution due to experimental limitations. These sentences share a focus on hypersonic flow dynamics and experimental constraints, suggesting a common theme of aerodynamic testing and analysis in high-speed airflows."
+    "summary": "The cluster of sentences pertains to high-enthalpy vitiated air behaviors in a hypersonic propulsion context. The first sentence discusses the acceleration of vitiated air at Mach 2 under specific conditions, while the second highlights challenges in capturing vortex evolution due to experimental limitations. These sentences share a focus on hypersonic flow dynamics and experimental constraints, suggesting a common theme of aerodynamic testing and analysis in high-speed airflows."
   },
   {
     "hex_coord": [
@@ -532,7 +532,7 @@
     "MSU_ids": [
       155
     ],
-    "summary": "Summary: The common theme across the papers seems to be the collection of data using diverse measurement techniques such as schlieren, chemiluminescence photography, OH-PLIF, and differential interferometry. This suggests a focus on experimental methods and instrumentation in research."
+    "summary": "The common theme across the papers seems to be the collection of data using diverse measurement techniques such as schlieren, chemiluminescence photography, OH-PLIF, and differential interferometry. This suggests a focus on experimental methods and instrumentation in research."
   },
   {
     "hex_coord": [
@@ -591,7 +591,7 @@
       236,
       237
     ],
-    "summary": "Summary: The cluster of sentences revolves around aerodynamic phenomena related to reflected shocks and airflow patterns around cavities, particularly focusing on the mapping of air inlet velocity profiles downstream and the impact of cavity geometries on enhancing reflected shocks. These sentences are closely related, highlighting different aspects of the same aerodynamic problem."
+    "summary": "The cluster of sentences revolves around aerodynamic phenomena related to reflected shocks and airflow patterns around cavities, particularly focusing on the mapping of air inlet velocity profiles downstream and the impact of cavity geometries on enhancing reflected shocks. These sentences are closely related, highlighting different aspects of the same aerodynamic problem."
   },
   {
     "hex_coord": [
@@ -624,7 +624,7 @@
     "MSU_ids": [
       176
     ],
-    "summary": "Summary: The cluster of sentences refers to the calibration and extrapolation of supersonic outflow quantities, potentially indicating a focus on computational fluid dynamics or astrophysical simulations. The sentences likely share a common thread of discussing methods or challenges in estimating these fluid properties."
+    "summary": "The cluster of sentences refers to the calibration and extrapolation of supersonic outflow quantities, potentially indicating a focus on computational fluid dynamics or astrophysical simulations. The sentences likely share a common thread of discussing methods or challenges in estimating these fluid properties."
   },
   {
     "hex_coord": [
@@ -646,7 +646,7 @@
     "MSU_ids": [
       186
     ],
-    "summary": "Summary: The sentences from the academic papers suggest a common focus on grid clustering in specific areas like near walls, cavity shear layers, and fuel jets. This indicates a shared interest in the spatial distribution of grids in these flow regions.\n\nRelation: The sentences likely discuss different aspects of grid clustering in fluid dynamics, hinting at a concerted exploration of grid behavior near critical flow structures rather than a mere coincidence in positioning."
+    "summary": "The sentences from the academic papers suggest a common focus on grid clustering in specific areas like near walls, cavity shear layers, and fuel jets. This indicates a shared interest in the spatial distribution of grids in these flow regions.\n\nRelation: The sentences likely discuss different aspects of grid clustering in fluid dynamics, hinting at a concerted exploration of grid behavior near critical flow structures rather than a mere coincidence in positioning."
   },
   {
     "hex_coord": [
@@ -724,7 +724,7 @@
     "MSU_ids": [
       201
     ],
-    "summary": "Summary: The common theme across the papers seems to focus on the generation of different grids for conducting a grid independence study in large eddy simulations (LES). This suggests a shared interest in evaluating the sensitivity of results to grid resolution in turbulent flow simulations.\n\nRelationship: The sentences appear to be discussing different aspects or applications related to grid generation and independence in the context of large eddy simulations, indicating a coherent focus on computational modeling techniques rather than disparate topics."
+    "summary": "The common theme across the papers seems to focus on the generation of different grids for conducting a grid independence study in large eddy simulations (LES). This suggests a shared interest in evaluating the sensitivity of results to grid resolution in turbulent flow simulations.\n\nRelationship: The sentences appear to be discussing different aspects or applications related to grid generation and independence in the context of large eddy simulations, indicating a coherent focus on computational modeling techniques rather than disparate topics."
   },
   {
     "hex_coord": [
@@ -768,7 +768,7 @@
     "MSU_ids": [
       239
     ],
-    "summary": "Summary: The common theme across the provided information seems to be the exploration of the impact of combustion reactions on pressure dynamics, specifically highlighting a scenario where pressure increases significantly in a combustor due to intense reactions.\n\nRelationship: The sentences are likely discussing different aspects or results related to the effects of combustion reactions on pressure within combustors. Their proximity appears to be driven by a shared focus on this particular aspect rather than a coincidence."
+    "summary": "The common theme across the provided information seems to be the exploration of the impact of combustion reactions on pressure dynamics, specifically highlighting a scenario where pressure increases significantly in a combustor due to intense reactions.\n\nRelationship: The sentences are likely discussing different aspects or results related to the effects of combustion reactions on pressure within combustors. Their proximity appears to be driven by a shared focus on this particular aspect rather than a coincidence."
   },
   {
     "hex_coord": [
@@ -879,7 +879,7 @@
     "MSU_ids": [
       436
     ],
-    "summary": "Summary: The clustered sentence from the paper titled \"largeeddyMSU\" highlights the application of Proper Orthogonal Decomposition (POD) to identify large-scale coherent structures influencing flow dynamics, suggesting a focus on flow field analysis and structure identification within fluid mechanics."
+    "summary": "The clustered sentence from the paper titled \"largeeddyMSU\" highlights the application of Proper Orthogonal Decomposition (POD) to identify large-scale coherent structures influencing flow dynamics, suggesting a focus on flow field analysis and structure identification within fluid mechanics."
   },
   {
     "hex_coord": [
@@ -923,7 +923,7 @@
     "MSU_ids": [
       442
     ],
-    "summary": "Summary: The provided sentence pertains to extracting modal energy modal vectors using eigendecomposition in the context of the paper \"largeeddyMSU.\" This cluster appears to focus on modal analysis and eigendecomposition techniques in the context of computational fluid dynamics, suggesting a common theme of numerical methods for studying fluid dynamics."
+    "summary": "The provided sentence pertains to extracting modal energy modal vectors using eigendecomposition in the context of the paper \"largeeddyMSU.\" This cluster appears to focus on modal analysis and eigendecomposition techniques in the context of computational fluid dynamics, suggesting a common theme of numerical methods for studying fluid dynamics."
   },
   {
     "hex_coord": [
@@ -956,7 +956,7 @@
     "MSU_ids": [
       463
     ],
-    "summary": "Summary: The common theme across these sentences appears to be the utilization of large eddy simulation (LES) techniques in computational fluid dynamics (CFD), specifically in conjunction with blastFoam code and detailed finite-rate chemistry. This cluster represents a focused exploration into advanced simulation methods in fluid dynamics research."
+    "summary": "The common theme across these sentences appears to be the utilization of large eddy simulation (LES) techniques in computational fluid dynamics (CFD), specifically in conjunction with blastFoam code and detailed finite-rate chemistry. This cluster represents a focused exploration into advanced simulation methods in fluid dynamics research."
   },
   {
     "hex_coord": [
@@ -967,7 +967,7 @@
     "MSU_ids": [
       487
     ],
-    "summary": "Summary: The co-occurrence of the sentence \"The implementation of higher grid resolution near the wall is anticipated to improve the separation capture\" within the paper \"largeeddyMSU\" suggests a focus on enhancing separation capture through increased grid resolution near walls in a computational fluid dynamics context."
+    "summary": "The co-occurrence of the sentence \"The implementation of higher grid resolution near the wall is anticipated to improve the separation capture\" within the paper \"largeeddyMSU\" suggests a focus on enhancing separation capture through increased grid resolution near walls in a computational fluid dynamics context."
   },
   {
     "hex_coord": [
@@ -993,7 +993,7 @@
       829,
       938
     ],
-    "summary": "Summary: The cluster of sentences revolves around the topic of visualization and analysis of temporal data. They discuss features like filtering, system-level requirements, vision-language models, interactive user functionalities, and the importance of toggling between different levels of data summaries.\n\nRelationship: The sentences share a common focus on the visualization and analysis of temporal data from various perspectives, highlighting different aspects of the process and user interactions, indicating a coherent and related discussion."
+    "summary": "The cluster of sentences revolves around the topic of visualization and analysis of temporal data. They discuss features like filtering, system-level requirements, vision-language models, interactive user functionalities, and the importance of toggling between different levels of data summaries.\n\nRelationship: The sentences share a common focus on the visualization and analysis of temporal data from various perspectives, highlighting different aspects of the process and user interactions, indicating a coherent and related discussion."
   },
   {
     "hex_coord": [
@@ -1017,7 +1017,7 @@
     "MSU_ids": [
       492
     ],
-    "summary": "Summary:\nThe common theme among the provided sentence is the exploration of temporal trajectories through a method referred to as the Similar Trajectories View. The sentences likely discuss different aspects or applications of this visualization technique within various simulation cases."
+    "summary": "The common theme among the provided sentence is the exploration of temporal trajectories through a method referred to as the Similar Trajectories View. The sentences likely discuss different aspects or applications of this visualization technique within various simulation cases."
   },
   {
     "hex_coord": [
@@ -1074,7 +1074,7 @@
     "MSU_ids": [
       503
     ],
-    "summary": "Summary: The sentences point towards the utilization of pretrained Vision Transformers for extracting high-dimensional embeddings from flow field frames. This indicates a focus on the application of advanced visual processing techniques in analyzing temporal data, specifically in the context of flow field frames."
+    "summary": "The sentences point towards the utilization of pretrained Vision Transformers for extracting high-dimensional embeddings from flow field frames. This indicates a focus on the application of advanced visual processing techniques in analyzing temporal data, specifically in the context of flow field frames."
   },
   {
     "hex_coord": [
@@ -1195,7 +1195,7 @@
       588,
       658
     ],
-    "summary": "Summary:\nThese sentences discuss the utilization of advanced methods like Vision Transformers (ViTs) in processing image data to extract rich features, integrating Large Language Models (LLMs) with medical-image CAD networks, and incorporating preprocessing and embedding techniques in TemporalFlowViz.\n\nRelationship:\nThe sentences are related to the application of novel techniques in image processing, including ViTs, LLM integration in medical imaging, and the processing steps in TemporalFlowViz, suggesting a cohesive focus on advanced methods and technologies in visual data analysis."
+    "summary": "These sentences discuss the utilization of advanced methods like Vision Transformers (ViTs) in processing image data to extract rich features, integrating Large Language Models (LLMs) with medical-image CAD networks, and incorporating preprocessing and embedding techniques in TemporalFlowViz.\n\nRelationship:\nThe sentences are related to the application of novel techniques in image processing, including ViTs, LLM integration in medical imaging, and the processing steps in TemporalFlowViz, suggesting a cohesive focus on advanced methods and technologies in visual data analysis."
   },
   {
     "hex_coord": [
@@ -1217,7 +1217,7 @@
     "MSU_ids": [
       536
     ],
-    "summary": "Summary:\nThe common theme among the sentences is the application of dimensionality reduction techniques such as t-SNE and UMAP to reveal underlying patterns and behaviors in temporal flow field data, suggesting a focus on data analysis and visualization in the context of time-dependent phenomena."
+    "summary": "The common theme among the sentences is the application of dimensionality reduction techniques such as t-SNE and UMAP to reveal underlying patterns and behaviors in temporal flow field data, suggesting a focus on data analysis and visualization in the context of time-dependent phenomena."
   },
   {
     "hex_coord": [
@@ -1228,7 +1228,7 @@
     "MSU_ids": [
       537
     ],
-    "summary": "Summary: The shared theme among the sentences is the application of density-based clustering methods like DBSCAN in the analysis of temporal flow field data, focusing on uncovering latent patterns, combustion modes, and transitional behaviors. These sentences are closely related, discussing various aspects of utilizing clustering methods in temporal data analysis."
+    "summary": "The shared theme among the sentences is the application of density-based clustering methods like DBSCAN in the analysis of temporal flow field data, focusing on uncovering latent patterns, combustion modes, and transitional behaviors. These sentences are closely related, discussing various aspects of utilizing clustering methods in temporal data analysis."
   },
   {
     "hex_coord": [
@@ -1239,7 +1239,7 @@
     "MSU_ids": [
       538
     ],
-    "summary": "Summary:\nThe common theme across the paper titles and the corresponding sentences is the use of visual analytics systems to improve interpretability by connecting latent embeddings with raw simulation frames. While there is only one sentence provided, the focus on enhancing interpretability through visual means ties the papers together."
+    "summary": "The common theme across the paper titles and the corresponding sentences is the use of visual analytics systems to improve interpretability by connecting latent embeddings with raw simulation frames. While there is only one sentence provided, the focus on enhancing interpretability through visual means ties the papers together."
   },
   {
     "hex_coord": [
@@ -1252,7 +1252,7 @@
       667,
       737
     ],
-    "summary": "Summary: The common theme across the sentences is the discussion of visual analytics systems in the context of enabling multi-view exploration, trajectory-based reasoning, and clustering visualization components. The sentences collectively emphasize the coordination and utility of such systems for visualization tasks.\n\nRelationship: The sentences share a specific focus on the visualization capabilities of visual analytics systems, suggesting a coherent discussion rather than a coincidence."
+    "summary": "The common theme across the sentences is the discussion of visual analytics systems in the context of enabling multi-view exploration, trajectory-based reasoning, and clustering visualization components. The sentences collectively emphasize the coordination and utility of such systems for visualization tasks.\n\nRelationship: The sentences share a specific focus on the visualization capabilities of visual analytics systems, suggesting a coherent discussion rather than a coincidence."
   },
   {
     "hex_coord": [
@@ -1263,7 +1263,7 @@
     "MSU_ids": [
       548
     ],
-    "summary": "Summary: The sentence extracted from the paper \"temporalvisMSU\" discusses a workflow that utilizes pretrained Vision Transformers (ViTs) to extract high-dimensional embeddings from flow field images, indicating a focus on image analysis and feature extraction methodologies. These sentences are likely related in their discussion of image processing techniques and the application of ViTs in computational analysis."
+    "summary": "The sentence extracted from the paper \"temporalvisMSU\" discusses a workflow that utilizes pretrained Vision Transformers (ViTs) to extract high-dimensional embeddings from flow field images, indicating a focus on image analysis and feature extraction methodologies. These sentences are likely related in their discussion of image processing techniques and the application of ViTs in computational analysis."
   },
   {
     "hex_coord": [
@@ -1301,7 +1301,7 @@
       995,
       1026
     ],
-    "summary": "Summary: The cluster of sentences focuses on a visualization system, TemporalFlowViz, that integrates expert annotations into a pipeline for temporal summarization, trajectory-based pattern analysis, point selection in the Temporal Trajectory View, knowledge transfer across teams, and potential enhancements for consensus building. These sentences are related as they collectively describe different aspects of the same visualization system rather than disparate topics."
+    "summary": "The cluster of sentences focuses on a visualization system, TemporalFlowViz, that integrates expert annotations into a pipeline for temporal summarization, trajectory-based pattern analysis, point selection in the Temporal Trajectory View, knowledge transfer across teams, and potential enhancements for consensus building. These sentences are related as they collectively describe different aspects of the same visualization system rather than disparate topics."
   },
   {
     "hex_coord": [
@@ -1370,7 +1370,7 @@
     "MSU_ids": [
       577
     ],
-    "summary": "Summary:\nThe common theme across the extracted sentence from the paper \"TemporalvisMSU\" is the discussion of distance-based methods in clustering, specifically referencing algorithms like K-means and agglomerative clustering. The relationship between the papers seems to focus on exploring the application and functioning of these methods in data analysis, indicating a shared emphasis on data point relationships through distance metrics."
+    "summary": "The common theme across the extracted sentence from the paper \"TemporalvisMSU\" is the discussion of distance-based methods in clustering, specifically referencing algorithms like K-means and agglomerative clustering. The relationship between the papers seems to focus on exploring the application and functioning of these methods in data analysis, indicating a shared emphasis on data point relationships through distance metrics."
   },
   {
     "hex_coord": [
@@ -1492,7 +1492,7 @@
     "MSU_ids": [
       589
     ],
-    "summary": "Summary: The cluster of sentences points to an approach that utilizes Language Models (LLMs) to improve the outcomes of various Computer-Aided Diagnosis (CAD) networks, encompassing tasks such as diagnosis, lesion segmentation, and report generation. The common theme revolves around the integration of LLMs in the enhancement of CAD network outputs."
+    "summary": "The cluster of sentences points to an approach that utilizes Language Models (LLMs) to improve the outcomes of various Computer-Aided Diagnosis (CAD) networks, encompassing tasks such as diagnosis, lesion segmentation, and report generation. The common theme revolves around the integration of LLMs in the enhancement of CAD network outputs."
   },
   {
     "hex_coord": [
@@ -1526,7 +1526,7 @@
     "MSU_ids": [
       593
     ],
-    "summary": "Summary: The sentences suggest a common theme of leveraging image features and text embeddings to allow pre-trained language models to produce comprehensive radiology reports that combine visual information and clinical terminology. The relationship between the sentences indicates a focus on enhancing the capabilities of language models in the medical imaging domain by incorporating visual data interpretation."
+    "summary": "The sentences suggest a common theme of leveraging image features and text embeddings to allow pre-trained language models to produce comprehensive radiology reports that combine visual information and clinical terminology. The relationship between the sentences indicates a focus on enhancing the capabilities of language models in the medical imaging domain by incorporating visual data interpretation."
   },
   {
     "hex_coord": [
@@ -1550,7 +1550,7 @@
       784,
       809
     ],
-    "summary": "Summary: The common theme across the sentences from the papers titled \"temporalvisMSU\" is the utilization of clustering techniques for analyzing temporal data, allowing for the exploration of domain challenges, flow observations, and enabling experts to navigate through different levels of data examination seamlessly.\n\nRelationship: The sentences are related, focusing on the application of clustering methods like DBSCAN to analyze temporal data and facilitate the exploration of various aspects of data processing and visualization, indicating a coherent discussion on the use of visualization techniques for temporal data analysis."
+    "summary": "The common theme across the sentences from the papers titled \"temporalvisMSU\" is the utilization of clustering techniques for analyzing temporal data, allowing for the exploration of domain challenges, flow observations, and enabling experts to navigate through different levels of data examination seamlessly.\n\nRelationship: The sentences are related, focusing on the application of clustering methods like DBSCAN to analyze temporal data and facilitate the exploration of various aspects of data processing and visualization, indicating a coherent discussion on the use of visualization techniques for temporal data analysis."
   },
   {
     "hex_coord": [
@@ -1561,7 +1561,7 @@
     "MSU_ids": [
       606
     ],
-    "summary": "Summary:\nThe papers in this cluster likely focus on visual analytics workflow and system design driven by domain-specific challenges. The common theme appears to be the integration of domain knowledge into the design process."
+    "summary": "The papers in this cluster likely focus on visual analytics workflow and system design driven by domain-specific challenges. The common theme appears to be the integration of domain knowledge into the design process."
   },
   {
     "hex_coord": [
@@ -1594,7 +1594,7 @@
     "MSU_ids": [
       623
     ],
-    "summary": "Summary: The common theme across the papers seems to be the analysis of temporal flow field data through techniques like clustering and summarization to uncover patterns and trends in evolving systems over time. The sentences likely relate to different aspects of this overarching topic, suggesting a coherent focus on temporal data exploration and visualization techniques."
+    "summary": "The common theme across the papers seems to be the analysis of temporal flow field data through techniques like clustering and summarization to uncover patterns and trends in evolving systems over time. The sentences likely relate to different aspects of this overarching topic, suggesting a coherent focus on temporal data exploration and visualization techniques."
   },
   {
     "hex_coord": [
@@ -1606,7 +1606,7 @@
       624,
       747
     ],
-    "summary": "Summary:\nThe common theme across the sentences is trajectory-based visualization in the context of temporal data analysis, with a specific emphasis on using UMAP for accurate construction of temporal trajectories. These sentences are strongly related, addressing different aspects of the same topic."
+    "summary": "The common theme across the sentences is trajectory-based visualization in the context of temporal data analysis, with a specific emphasis on using UMAP for accurate construction of temporal trajectories. These sentences are strongly related, addressing different aspects of the same topic."
   },
   {
     "hex_coord": [
@@ -1639,7 +1639,7 @@
     "MSU_ids": [
       629
     ],
-    "summary": "Summary:\nThe common theme across the sentences is focused on the parameter-aware case retrieval and analysis for facilitating comparative exploration across simulations with varying initial conditions. These findings likely discuss different aspects or methods related to this central topic."
+    "summary": "The common theme across the sentences is focused on the parameter-aware case retrieval and analysis for facilitating comparative exploration across simulations with varying initial conditions. These findings likely discuss different aspects or methods related to this central topic."
   },
   {
     "hex_coord": [
@@ -1661,7 +1661,7 @@
     "MSU_ids": [
       636
     ],
-    "summary": "Summary: The sentences suggest a common theme related to the analysis of temporal data through flow field simulations, particularly focusing on capturing and visualizing time series data at regular intervals. Their shared focus seems to be on temporal visualization and understanding of flow field dynamics."
+    "summary": "The sentences suggest a common theme related to the analysis of temporal data through flow field simulations, particularly focusing on capturing and visualizing time series data at regular intervals. Their shared focus seems to be on temporal visualization and understanding of flow field dynamics."
   },
   {
     "hex_coord": [
@@ -1710,7 +1710,7 @@
       781,
       1013
     ],
-    "summary": "Summary: The sentences discuss the utilization of visualization techniques in processing VTK data to create clear representations of flow fields within engines. These visualizations aid in building retrieval bases for interpretation and enable specialists to interpret latent trajectory structures visually and transition to hypothesis-driven analysis.\n\nRelationship: The sentences are intricately related as they describe various aspects of using visualization methods to enhance the interpretation of complex data, particularly focusing on flow fields and trajectory structures. Their proximity indicates a shared emphasis on leveraging visualizations for data analysis and interpretation."
+    "summary": "The sentences discuss the utilization of visualization techniques in processing VTK data to create clear representations of flow fields within engines. These visualizations aid in building retrieval bases for interpretation and enable specialists to interpret latent trajectory structures visually and transition to hypothesis-driven analysis.\n\nRelationship: The sentences are intricately related as they describe various aspects of using visualization methods to enhance the interpretation of complex data, particularly focusing on flow fields and trajectory structures. Their proximity indicates a shared emphasis on leveraging visualizations for data analysis and interpretation."
   },
   {
     "hex_coord": [
@@ -1799,7 +1799,7 @@
       733,
       1020
     ],
-    "summary": "Summary:\nThe cluster of sentences revolves around the visualization tool TemporalFlowViz, which decouples embedding from downstream components for flexible use. It incorporates pretrained Vision Transformers sourced from general-purpose corpora to organize simulation outputs into time-sequenced flow field frames. The relationship among these sentences indicates a direct discussion on the development and application of TemporalFlowViz and related techniques."
+    "summary": "The cluster of sentences revolves around the visualization tool TemporalFlowViz, which decouples embedding from downstream components for flexible use. It incorporates pretrained Vision Transformers sourced from general-purpose corpora to organize simulation outputs into time-sequenced flow field frames. The relationship among these sentences indicates a direct discussion on the development and application of TemporalFlowViz and related techniques."
   },
   {
     "hex_coord": [
@@ -1854,7 +1854,7 @@
     "MSU_ids": [
       682
     ],
-    "summary": "Summary: The sentence extracted from the paper \"temporalvisMSU\" suggests a structured approach with a five-stage backend workflow. The common theme appears to revolve around outlining a process for managing temporal visualization data, potentially indicating a focused discussion on streamlining backend operations within this context. There is a specific, unified focus on workflow optimization within the temporal visualization domain."
+    "summary": "The sentence extracted from the paper \"temporalvisMSU\" suggests a structured approach with a five-stage backend workflow. The common theme appears to revolve around outlining a process for managing temporal visualization data, potentially indicating a focused discussion on streamlining backend operations within this context. There is a specific, unified focus on workflow optimization within the temporal visualization domain."
   },
   {
     "hex_coord": [
@@ -1866,7 +1866,7 @@
       683,
       949
     ],
-    "summary": "Summary: The common theme among the sentences is the application of expert-driven visual analytics in TemporalFlowViz and the use of the Filtering Panel in the visual analytics system E4. These sentences likely discuss different aspects of visual analytics tools and interfaces within the temporal visualization domain and share a specific, unified focus on enhancing data analysis through visualization techniques."
+    "summary": "The common theme among the sentences is the application of expert-driven visual analytics in TemporalFlowViz and the use of the Filtering Panel in the visual analytics system E4. These sentences likely discuss different aspects of visual analytics tools and interfaces within the temporal visualization domain and share a specific, unified focus on enhancing data analysis through visualization techniques."
   },
   {
     "hex_coord": [
@@ -2199,7 +2199,7 @@
     "MSU_ids": [
       750
     ],
-    "summary": "Summary: The common theme across the given paper titles and sentences appears to revolve around the methodology of temporal visualization, specifically focusing on the standardization and fine-tuning of UMAP parameters for enhanced visualization effectiveness."
+    "summary": "The common theme across the given paper titles and sentences appears to revolve around the methodology of temporal visualization, specifically focusing on the standardization and fine-tuning of UMAP parameters for enhanced visualization effectiveness."
   },
   {
     "hex_coord": [
@@ -2393,7 +2393,7 @@
     "MSU_ids": [
       799
     ],
-    "summary": "Summary:\nThe sentence refers to the use of inputs for Gemma-3 in a context related to temporal visualization, suggesting a focus on incorporating temporal aspects in visual analytics systems. The relationship between the sentence and the broader context of temporal visualization techniques within Gemma-3 is evident.\n\nThese sentences show a specific focus on utilizing context inputs for Gemma-3 in the context of temporal visualization, indicating a coherent theme around incorporating temporal elements in visual analytics systems. The relationship among the sentences appears deliberate rather than coincidental, sharing a common emphasis on the integration of temporal aspects in the Gemma-3 framework."
+    "summary": "The sentence refers to the use of inputs for Gemma-3 in a context related to temporal visualization, suggesting a focus on incorporating temporal aspects in visual analytics systems. The relationship between the sentence and the broader context of temporal visualization techniques within Gemma-3 is evident.\n\nThese sentences show a specific focus on utilizing context inputs for Gemma-3 in the context of temporal visualization, indicating a coherent theme around incorporating temporal elements in visual analytics systems. The relationship among the sentences appears deliberate rather than coincidental, sharing a common emphasis on the integration of temporal aspects in the Gemma-3 framework."
   },
   {
     "hex_coord": [
@@ -2804,7 +2804,7 @@
     "MSU_ids": [
       886
     ],
-    "summary": "**Summary:**\n\nThe common theme appears to focus on the use of \"TemporalFlowViz\" for processing weighted images, likely in the context of temporal or dynamic visual data analysis. The sentences seem to discuss the application of a specific tool (TemporalFlowViz) in handling image data with a temporal component."
+    "summary": "The common theme appears to focus on the use of \"TemporalFlowViz\" for processing weighted images, likely in the context of temporal or dynamic visual data analysis. The sentences seem to discuss the application of a specific tool (TemporalFlowViz) in handling image data with a temporal component."
   },
   {
     "hex_coord": [

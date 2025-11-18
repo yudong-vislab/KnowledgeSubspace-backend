@@ -1,0 +1,2114 @@
+[
+  {
+    "sentence": "The effectiveness of AuraGenome is validated through two case studies and a comprehensive user study.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 15,
+    "para_id": 1,
+    "paper_id": 1,
+    "2d_coord": [
+      1.3178800344467163,
+      3.4603638648986816
+    ],
+    "MSU_id": 15,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "Circular genome visualizations are essential for exploring structural variants and gene regulation. However, existing tools often require complex scripting and manual configuration, making the process time-consuming, error-prone, and difficult to learn. To address these challenges, we introduce AuraGenome, a large language model (LLM)-powered framework for rapid, reusable, and scalable generation of multilayered circular genome visualizations. AuraGenome combines a semantic-driven multiagent workflow with an interactive visual analytics system. The workflow employs seven specialized LLM-driven agents, each assigned distinct roles, such as intent recognition, layout planning, and code generation, to transform raw genomic data into tailored visualizations. The system supports multiple coordinated views tailored for genomic data, offering ring, radial, and chord-based layouts to represent multilayered circular genome visualizations. In addition to enabling interactions and configuration reuse, the system supports real-time refinement and high-quality report export. We validate its effectiveness through two case studies and a comprehensive user study. AuraGenome is available at https://github.com/Darius18/AuraGenome."
+  },
+  {
+    "sentence": "We conducted feasibility studies using LLMs for D3-based genome visualizations.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 39,
+    "para_id": 5,
+    "paper_id": 1,
+    "2d_coord": [
+      1.1113841533660889,
+      3.115485191345215
+    ],
+    "MSU_id": 39,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "To address these challenges, we present AuraGenome, an LLM-powered framework that enables genomics experts to rapidly generate, flexibly customize, and efficiently reuse multilayered circular genome visualizations. AuraGenome is grounded in task-specific requirements, identified through close collaboration with genomics experts to reflect real-world workflow needs. Based on the requirements, we conducted feasibility studies using LLMs for D3-based genome visualizations and selected GPT-4o and DeepSeek-R1 as the foundation of a semantics-driven multiagent workflow. This workflow decomposes complex visualization tasks into modular steps—such as intent recognition, layout recommendation, code generation, validation, explanation, and refinement."
+  },
+  {
+    "sentence": "We validate AuraGenome through two real-world case studies.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 50,
+    "para_id": 6,
+    "paper_id": 1,
+    "2d_coord": [
+      1.3598095178604126,
+      3.4198598861694336
+    ],
+    "MSU_id": 50,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "Built atop this workflow, the interactive visual analytics system supports generation and editing of circular genome visualizations in three distinct layouts—ring, radial, and chord—with multilayer composition and domain-specific operations. A layer-aware reuse mechanism further enables tracing, adapting, and repurposing visualization steps to support efficient iteration and narrative report construction. We validate AuraGenome through two real-world case studies and both quantitative and qualitative user evaluations. In sum, the main contributions are summarized as follows."
+  },
+  {
+    "sentence": "We validate AuraGenome through quantitative user evaluations.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 51,
+    "para_id": 6,
+    "paper_id": 1,
+    "2d_coord": [
+      1.3284422159194946,
+      3.189960479736328
+    ],
+    "MSU_id": 51,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "Built atop this workflow, the interactive visual analytics system supports generation and editing of circular genome visualizations in three distinct layouts—ring, radial, and chord—with multilayer composition and domain-specific operations. A layer-aware reuse mechanism further enables tracing, adapting, and repurposing visualization steps to support efficient iteration and narrative report construction. We validate AuraGenome through two real-world case studies and both quantitative and qualitative user evaluations. In sum, the main contributions are summarized as follows."
+  },
+  {
+    "sentence": "We validate AuraGenome through qualitative user evaluations.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 52,
+    "para_id": 6,
+    "paper_id": 1,
+    "2d_coord": [
+      1.3639832735061646,
+      3.3711183071136475
+    ],
+    "MSU_id": 52,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "Built atop this workflow, the interactive visual analytics system supports generation and editing of circular genome visualizations in three distinct layouts—ring, radial, and chord—with multilayer composition and domain-specific operations. A layer-aware reuse mechanism further enables tracing, adapting, and repurposing visualization steps to support efficient iteration and narrative report construction. We validate AuraGenome through two real-world case studies and both quantitative and qualitative user evaluations. In sum, the main contributions are summarized as follows."
+  },
+  {
+    "sentence": "A comprehensive evaluation was conducted through two case studies and mixed-method user studies.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 63,
+    "para_id": 9,
+    "paper_id": 1,
+    "2d_coord": [
+      1.293347716331482,
+      3.0204503536224365
+    ],
+    "MSU_id": 63,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "3) A comprehensive evaluation through two case studies and mixed-method user studies, demonstrating the framework's effectiveness in enhancing usability and efficiency."
+  },
+  {
+    "sentence": "Zhao et al. employed a circular layout analysis method in a study on the collinearity of the bZIP gene family in poplar.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 71,
+    "para_id": 11,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.9790881276130676,
+      1.3469942808151245
+    ],
+    "MSU_id": 71,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "In bioinformatics, circular layouts have proven to be a highly effective visualization approach. In a study on the collinearity of the bZIP gene family in poplar, Zhao et al. $^{3}$  employed a circular layout analysis method to explore gene functions and regulatory mechanisms by visualizing gene density, homologous blocks, and the distribution of segmental duplicated gene pairs. Peng et al. $^{4}$  utilized circular layouts to depict plasmid structures carrying various genes, alongside sequence alignment results of other Enterobacteriaceae bacteria sharing similar plasmid backbones, thereby illustrating plasmid gene structures, multidrug resistance regions, and homology. Garcia et al. $^{5}$  in their study of the Lima bean genome, used circular layouts to display multiple features to understand genome organization and evolution. Similarly, Zhang et al. $^{6}$  adopted circular layouts to present genome characteristics in tea tree research, visualizing genetic diversity and evolutionary history. Despite their widespread use, these circular layouts largely rely on manual design, limiting their efficiency and general applicability."
+  },
+  {
+    "sentence": "Zhao et al. used circular layout analysis to explore gene functions and regulatory mechanisms.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 72,
+    "para_id": 11,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.15847580134868622,
+      1.992287516593933
+    ],
+    "MSU_id": 72,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "In bioinformatics, circular layouts have proven to be a highly effective visualization approach. In a study on the collinearity of the bZIP gene family in poplar, Zhao et al. $^{3}$  employed a circular layout analysis method to explore gene functions and regulatory mechanisms by visualizing gene density, homologous blocks, and the distribution of segmental duplicated gene pairs. Peng et al. $^{4}$  utilized circular layouts to depict plasmid structures carrying various genes, alongside sequence alignment results of other Enterobacteriaceae bacteria sharing similar plasmid backbones, thereby illustrating plasmid gene structures, multidrug resistance regions, and homology. Garcia et al. $^{5}$  in their study of the Lima bean genome, used circular layouts to display multiple features to understand genome organization and evolution. Similarly, Zhang et al. $^{6}$  adopted circular layouts to present genome characteristics in tea tree research, visualizing genetic diversity and evolutionary history. Despite their widespread use, these circular layouts largely rely on manual design, limiting their efficiency and general applicability."
+  },
+  {
+    "sentence": "Peng et al. utilized circular layouts to depict plasmid structures carrying various genes.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 74,
+    "para_id": 11,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.7453047037124634,
+      1.9448341131210327
+    ],
+    "MSU_id": 74,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "In bioinformatics, circular layouts have proven to be a highly effective visualization approach. In a study on the collinearity of the bZIP gene family in poplar, Zhao et al. $^{3}$  employed a circular layout analysis method to explore gene functions and regulatory mechanisms by visualizing gene density, homologous blocks, and the distribution of segmental duplicated gene pairs. Peng et al. $^{4}$  utilized circular layouts to depict plasmid structures carrying various genes, alongside sequence alignment results of other Enterobacteriaceae bacteria sharing similar plasmid backbones, thereby illustrating plasmid gene structures, multidrug resistance regions, and homology. Garcia et al. $^{5}$  in their study of the Lima bean genome, used circular layouts to display multiple features to understand genome organization and evolution. Similarly, Zhang et al. $^{6}$  adopted circular layouts to present genome characteristics in tea tree research, visualizing genetic diversity and evolutionary history. Despite their widespread use, these circular layouts largely rely on manual design, limiting their efficiency and general applicability."
+  },
+  {
+    "sentence": "Peng et al. used circular layouts to display sequence alignment results of other Enterobacteriaceae bacteria sharing similar plasmid backbones.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 75,
+    "para_id": 11,
+    "paper_id": 1,
+    "2d_coord": [
+      0.7744188904762268,
+      3.259197235107422
+    ],
+    "MSU_id": 75,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "In bioinformatics, circular layouts have proven to be a highly effective visualization approach. In a study on the collinearity of the bZIP gene family in poplar, Zhao et al. $^{3}$  employed a circular layout analysis method to explore gene functions and regulatory mechanisms by visualizing gene density, homologous blocks, and the distribution of segmental duplicated gene pairs. Peng et al. $^{4}$  utilized circular layouts to depict plasmid structures carrying various genes, alongside sequence alignment results of other Enterobacteriaceae bacteria sharing similar plasmid backbones, thereby illustrating plasmid gene structures, multidrug resistance regions, and homology. Garcia et al. $^{5}$  in their study of the Lima bean genome, used circular layouts to display multiple features to understand genome organization and evolution. Similarly, Zhang et al. $^{6}$  adopted circular layouts to present genome characteristics in tea tree research, visualizing genetic diversity and evolutionary history. Despite their widespread use, these circular layouts largely rely on manual design, limiting their efficiency and general applicability."
+  },
+  {
+    "sentence": "Garcia et al. used circular layouts in their study of the Lima bean genome.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 77,
+    "para_id": 11,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.322151780128479,
+      1.9158782958984375
+    ],
+    "MSU_id": 77,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "In bioinformatics, circular layouts have proven to be a highly effective visualization approach. In a study on the collinearity of the bZIP gene family in poplar, Zhao et al. $^{3}$  employed a circular layout analysis method to explore gene functions and regulatory mechanisms by visualizing gene density, homologous blocks, and the distribution of segmental duplicated gene pairs. Peng et al. $^{4}$  utilized circular layouts to depict plasmid structures carrying various genes, alongside sequence alignment results of other Enterobacteriaceae bacteria sharing similar plasmid backbones, thereby illustrating plasmid gene structures, multidrug resistance regions, and homology. Garcia et al. $^{5}$  in their study of the Lima bean genome, used circular layouts to display multiple features to understand genome organization and evolution. Similarly, Zhang et al. $^{6}$  adopted circular layouts to present genome characteristics in tea tree research, visualizing genetic diversity and evolutionary history. Despite their widespread use, these circular layouts largely rely on manual design, limiting their efficiency and general applicability."
+  },
+  {
+    "sentence": "Zhang et al. adopted circular layouts to present genome characteristics in tea tree research.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 79,
+    "para_id": 11,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.4440237283706665,
+      2.282923460006714
+    ],
+    "MSU_id": 79,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "In bioinformatics, circular layouts have proven to be a highly effective visualization approach. In a study on the collinearity of the bZIP gene family in poplar, Zhao et al. $^{3}$  employed a circular layout analysis method to explore gene functions and regulatory mechanisms by visualizing gene density, homologous blocks, and the distribution of segmental duplicated gene pairs. Peng et al. $^{4}$  utilized circular layouts to depict plasmid structures carrying various genes, alongside sequence alignment results of other Enterobacteriaceae bacteria sharing similar plasmid backbones, thereby illustrating plasmid gene structures, multidrug resistance regions, and homology. Garcia et al. $^{5}$  in their study of the Lima bean genome, used circular layouts to display multiple features to understand genome organization and evolution. Similarly, Zhang et al. $^{6}$  adopted circular layouts to present genome characteristics in tea tree research, visualizing genetic diversity and evolutionary history. Despite their widespread use, these circular layouts largely rely on manual design, limiting their efficiency and general applicability."
+  },
+  {
+    "sentence": "We worked closely with genomics experts in ongoing research projects to identify challenges in current workflows.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 123,
+    "para_id": 17,
+    "paper_id": 1,
+    "2d_coord": [
+      0.3939266800880432,
+      2.5879921913146973
+    ],
+    "MSU_id": 123,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "Over the past two years, we worked closely with genomics experts in ongoing research projects to identify challenges in current workflows. These collaborations revealed pressing pain points in genome visualizations and highlighted the need for more intelligent and user-friendly tools, which motivated the formulation of our research objectives."
+  },
+  {
+    "sentence": "We analyzed 42 genomics papers published in top-tier journals such as Nature and Cell.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 127,
+    "para_id": 18,
+    "paper_id": 1,
+    "2d_coord": [
+      0.07314174622297287,
+      2.8947248458862305
+    ],
+    "MSU_id": 127,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "We began by analyzing 42 genomics papers published in top-tier journals (e.g., Nature and Cell), focusing specifically on the use of circular visualizations to represent complex genomic information, such as chromosomal rearrangements, gene interactions, and differential expression patterns. Rather than analyzing full texts, we systematically reviewed key figures in papers to identify common visualization types, usage contexts, and design goals. Through this process, we derived a taxonomy of three major layout styles: ring-based, radial, and chord-based circular genome visualizations. We also examined the tools used to generate these figures, finding that most relied on static platforms, such as Circos, which offer limited customization and interactivity. These findings informed our visual design and motivated our choice of a D3-based code to support extensibility and dynamic control."
+  },
+  {
+    "sentence": "We focused specifically on the use of circular visualizations to represent complex genomic information.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 128,
+    "para_id": 18,
+    "paper_id": 1,
+    "2d_coord": [
+      0.03737451136112213,
+      2.1862151622772217
+    ],
+    "MSU_id": 128,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "We began by analyzing 42 genomics papers published in top-tier journals (e.g., Nature and Cell), focusing specifically on the use of circular visualizations to represent complex genomic information, such as chromosomal rearrangements, gene interactions, and differential expression patterns. Rather than analyzing full texts, we systematically reviewed key figures in papers to identify common visualization types, usage contexts, and design goals. Through this process, we derived a taxonomy of three major layout styles: ring-based, radial, and chord-based circular genome visualizations. We also examined the tools used to generate these figures, finding that most relied on static platforms, such as Circos, which offer limited customization and interactivity. These findings informed our visual design and motivated our choice of a D3-based code to support extensibility and dynamic control."
+  },
+  {
+    "sentence": "We conducted semistructured interviews and design discussions with eight genomics experts (average experience: 8.6 years).",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 138,
+    "para_id": 19,
+    "paper_id": 1,
+    "2d_coord": [
+      0.8645980358123779,
+      3.0095067024230957
+    ],
+    "MSU_id": 138,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "To complement these figure-derived insights with domain-specific needs, we conducted semistructured interviews and design discussions with eight genomics experts (average experience: 8.6 years) from areas, such as cancer genomics, comparative genomics, transcriptomics, and bioinformatics tool development. These experts were selected from ongoing collaborations and research networks. During sessions, experts reviewed representative circular visualizations extracted from the 42 papers, provided feedback through scenario walkthroughs, and engaged in feature prioritization and mockup evaluations. Their feedback validated the proposed layout taxonomy and further shaped our understanding of critical challenges. Based on these findings, we distilled six key requirements that a genome visual analytics framework should fulfill to enhance analytical efficiency, expressiveness, and usability."
+  },
+  {
+    "sentence": "During sessions, experts reviewed representative circular visualizations extracted from the 42 papers.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 140,
+    "para_id": 19,
+    "paper_id": 1,
+    "2d_coord": [
+      0.9599865078926086,
+      3.1583878993988037
+    ],
+    "MSU_id": 140,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "To complement these figure-derived insights with domain-specific needs, we conducted semistructured interviews and design discussions with eight genomics experts (average experience: 8.6 years) from areas, such as cancer genomics, comparative genomics, transcriptomics, and bioinformatics tool development. These experts were selected from ongoing collaborations and research networks. During sessions, experts reviewed representative circular visualizations extracted from the 42 papers, provided feedback through scenario walkthroughs, and engaged in feature prioritization and mockup evaluations. Their feedback validated the proposed layout taxonomy and further shaped our understanding of critical challenges. Based on these findings, we distilled six key requirements that a genome visual analytics framework should fulfill to enhance analytical efficiency, expressiveness, and usability."
+  },
+  {
+    "sentence": "Experts provided feedback through scenario walkthroughs.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 141,
+    "para_id": 19,
+    "paper_id": 1,
+    "2d_coord": [
+      1.7060855627059937,
+      2.5739517211914062
+    ],
+    "MSU_id": 141,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "To complement these figure-derived insights with domain-specific needs, we conducted semistructured interviews and design discussions with eight genomics experts (average experience: 8.6 years) from areas, such as cancer genomics, comparative genomics, transcriptomics, and bioinformatics tool development. These experts were selected from ongoing collaborations and research networks. During sessions, experts reviewed representative circular visualizations extracted from the 42 papers, provided feedback through scenario walkthroughs, and engaged in feature prioritization and mockup evaluations. Their feedback validated the proposed layout taxonomy and further shaped our understanding of critical challenges. Based on these findings, we distilled six key requirements that a genome visual analytics framework should fulfill to enhance analytical efficiency, expressiveness, and usability."
+  },
+  {
+    "sentence": "Experts engaged in feature prioritization and mockup evaluations.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 142,
+    "para_id": 19,
+    "paper_id": 1,
+    "2d_coord": [
+      1.2270621061325073,
+      0.49041748046875
+    ],
+    "MSU_id": 142,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "To complement these figure-derived insights with domain-specific needs, we conducted semistructured interviews and design discussions with eight genomics experts (average experience: 8.6 years) from areas, such as cancer genomics, comparative genomics, transcriptomics, and bioinformatics tool development. These experts were selected from ongoing collaborations and research networks. During sessions, experts reviewed representative circular visualizations extracted from the 42 papers, provided feedback through scenario walkthroughs, and engaged in feature prioritization and mockup evaluations. Their feedback validated the proposed layout taxonomy and further shaped our understanding of critical challenges. Based on these findings, we distilled six key requirements that a genome visual analytics framework should fulfill to enhance analytical efficiency, expressiveness, and usability."
+  },
+  {
+    "sentence": "The comparison is based on the GenoVis-300 dataset.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 223,
+    "para_id": 35,
+    "paper_id": 1,
+    "2d_coord": [
+      2.367833375930786,
+      -0.8249002695083618
+    ],
+    "MSU_id": 223,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "FIGURE 2. Comparison of LLM output assessments across five evaluation dimensions in GenoVis-300 dataset."
+  },
+  {
+    "sentence": "We listed three LLMs—GPT-4o-2024-11-20, GPT-o1-2024-12-27, and DeepSeek-R1-671B as candidates.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 226,
+    "para_id": 36,
+    "paper_id": 1,
+    "2d_coord": [
+      2.668151378631592,
+      1.7092307806015015
+    ],
+    "MSU_id": 226,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "prestudy evaluating the capabilities of LLMs on domain-specific tasks. We created a benchmark dataset, GenoVis-300, containing 300 natural language prompts derived from real genomics use cases. These prompts spanned six key task types: data parsing, chart recommendation, D3.js code generation, code modification, explanation, and style adjustment. We listed three LLMs—GPT-4o-2024-11-20, GPT-o1-2024-12-27, and DeepSeek-R1-671B as candidates—to evaluate across five criteria relevant to the AuraGenome workflow: semantic understanding, code accuracy, instruction following, response efficiency, and output interpretability."
+  },
+  {
+    "sentence": "We listed the LLMs to evaluate across five criteria relevant to the AuraGenome workflow: semantic understanding, code accuracy, instruction following, response efficiency, and output interpretability.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 5,
+    "msuid": 227,
+    "para_id": 36,
+    "paper_id": 1,
+    "2d_coord": [
+      1.3120828866958618,
+      2.0188724994659424
+    ],
+    "MSU_id": 227,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "prestudy evaluating the capabilities of LLMs on domain-specific tasks. We created a benchmark dataset, GenoVis-300, containing 300 natural language prompts derived from real genomics use cases. These prompts spanned six key task types: data parsing, chart recommendation, D3.js code generation, code modification, explanation, and style adjustment. We listed three LLMs—GPT-4o-2024-11-20, GPT-o1-2024-12-27, and DeepSeek-R1-671B as candidates—to evaluate across five criteria relevant to the AuraGenome workflow: semantic understanding, code accuracy, instruction following, response efficiency, and output interpretability."
+  },
+  {
+    "sentence": "Evaluations were independently conducted by three genomics experts.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 5,
+    "msuid": 233,
+    "para_id": 37,
+    "paper_id": 1,
+    "2d_coord": [
+      1.171488881111145,
+      2.245018720626831
+    ],
+    "MSU_id": 233,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "Each model was rated on a normalized 0-100 scale, where scores above 90 reflected accurate and complete results, 70-89 indicated mostly correct outputs with minor issues, 50-69 reflected partial success with notable omissions, and scores below 50 indicated critical errors. Evaluations were independently conducted by three genomics experts using anonymized outputs and a standardized rubric to ensure fairness and consistency."
+  },
+  {
+    "sentence": "Evaluations were conducted using anonymized outputs and a standardized rubric to ensure fairness and consistency.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 234,
+    "para_id": 37,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.14036522805690765,
+      -0.86719810962677
+    ],
+    "MSU_id": 234,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "Each model was rated on a normalized 0-100 scale, where scores above 90 reflected accurate and complete results, 70-89 indicated mostly correct outputs with minor issues, 50-69 reflected partial success with notable omissions, and scores below 50 indicated critical errors. Evaluations were independently conducted by three genomics experts using anonymized outputs and a standardized rubric to ensure fairness and consistency."
+  },
+  {
+    "sentence": "We conducted iterative experiments on a multiagent workflow.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 251,
+    "para_id": 41,
+    "paper_id": 1,
+    "2d_coord": [
+      0.497428297996521,
+      -0.7711793184280396
+    ],
+    "MSU_id": 251,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "prompting strategies often suffer from instability and lack of control. Based on iterative experiments on multiagent workflow, we designed a modular, multiagent workflow where each LLM-based agent is responsible for a specific subtask aligned with its model capabilities. This design enables finer grained orchestration, greater controllability, and better task transparency."
+  },
+  {
+    "sentence": "We conducted two real-world case studies involving distinct genomic analysis tasks.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 456,
+    "para_id": 81,
+    "paper_id": 1,
+    "2d_coord": [
+      1.2803529500961304,
+      3.35335111618042
+    ],
+    "MSU_id": 456,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "To evaluate the practical effectiveness and generalizability of the AuraGenome framework, we conducted two real-world case studies involving distinct genomic analysis tasks. These studies serve to validate both the multiagent workflow and the visual analytics system in supporting domain-specific generation, exploration, and reuse of circular genome visualizations."
+  },
+  {
+    "sentence": "The case studies evaluate the practical effectiveness and generalizability of the AuraGenome framework.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 5,
+    "msuid": 457,
+    "para_id": 81,
+    "paper_id": 1,
+    "2d_coord": [
+      1.4154412746429443,
+      3.4177331924438477
+    ],
+    "MSU_id": 457,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "To evaluate the practical effectiveness and generalizability of the AuraGenome framework, we conducted two real-world case studies involving distinct genomic analysis tasks. These studies serve to validate both the multiagent workflow and the visual analytics system in supporting domain-specific generation, exploration, and reuse of circular genome visualizations."
+  },
+  {
+    "sentence": "The case studies validate the multiagent workflow in supporting domain-specific generation, exploration, and reuse of circular genome visualizations.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 458,
+    "para_id": 81,
+    "paper_id": 1,
+    "2d_coord": [
+      0.20854032039642334,
+      2.456754684448242
+    ],
+    "MSU_id": 458,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "To evaluate the practical effectiveness and generalizability of the AuraGenome framework, we conducted two real-world case studies involving distinct genomic analysis tasks. These studies serve to validate both the multiagent workflow and the visual analytics system in supporting domain-specific generation, exploration, and reuse of circular genome visualizations."
+  },
+  {
+    "sentence": "The case studies validate the visual analytics system in supporting domain-specific generation, exploration, and reuse of circular genome visualizations.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 459,
+    "para_id": 81,
+    "paper_id": 1,
+    "2d_coord": [
+      0.8133400082588196,
+      3.0412673950195312
+    ],
+    "MSU_id": 459,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "To evaluate the practical effectiveness and generalizability of the AuraGenome framework, we conducted two real-world case studies involving distinct genomic analysis tasks. These studies serve to validate both the multiagent workflow and the visual analytics system in supporting domain-specific generation, exploration, and reuse of circular genome visualizations."
+  },
+  {
+    "sentence": "Iterative co-design sessions were conducted with eight genomics experts.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 461,
+    "para_id": 82,
+    "paper_id": 1,
+    "2d_coord": [
+      1.401723027229309,
+      2.232987403869629
+    ],
+    "MSU_id": 461,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "The system requirements were originally derived through iterative co-design sessions with eight genomics experts. To ensure objective evaluation, the following case studies were carried out by a separate group of two extra experts—denoted as  $E_{A}$  and  $E_{B}$  (mean experience: 10.3 years)—who were not involved in previous sections. These experts applied AuraGenome to authentic genomic analysis scenarios, enabling us to assess its usability and effectiveness in real-world contexts while minimizing evaluative bias."
+  },
+  {
+    "sentence": "Case studies were carried out by a separate group of two extra experts denoted as $E_{A}$ and $E_{B}$.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 462,
+    "para_id": 82,
+    "paper_id": 1,
+    "2d_coord": [
+      1.506868839263916,
+      3.19443416595459
+    ],
+    "MSU_id": 462,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "The system requirements were originally derived through iterative co-design sessions with eight genomics experts. To ensure objective evaluation, the following case studies were carried out by a separate group of two extra experts—denoted as  $E_{A}$  and  $E_{B}$  (mean experience: 10.3 years)—who were not involved in previous sections. These experts applied AuraGenome to authentic genomic analysis scenarios, enabling us to assess its usability and effectiveness in real-world contexts while minimizing evaluative bias."
+  },
+  {
+    "sentence": "The separate group of experts conducted case studies to ensure objective evaluation.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 465,
+    "para_id": 82,
+    "paper_id": 1,
+    "2d_coord": [
+      1.0956273078918457,
+      2.8925743103027344
+    ],
+    "MSU_id": 465,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "The system requirements were originally derived through iterative co-design sessions with eight genomics experts. To ensure objective evaluation, the following case studies were carried out by a separate group of two extra experts—denoted as  $E_{A}$  and  $E_{B}$  (mean experience: 10.3 years)—who were not involved in previous sections. These experts applied AuraGenome to authentic genomic analysis scenarios, enabling us to assess its usability and effectiveness in real-world contexts while minimizing evaluative bias."
+  },
+  {
+    "sentence": "These experts applied AuraGenome to authentic genomic analysis scenarios.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 5,
+    "msuid": 466,
+    "para_id": 82,
+    "paper_id": 1,
+    "2d_coord": [
+      1.1454582214355469,
+      2.8599531650543213
+    ],
+    "MSU_id": 466,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "The system requirements were originally derived through iterative co-design sessions with eight genomics experts. To ensure objective evaluation, the following case studies were carried out by a separate group of two extra experts—denoted as  $E_{A}$  and  $E_{B}$  (mean experience: 10.3 years)—who were not involved in previous sections. These experts applied AuraGenome to authentic genomic analysis scenarios, enabling us to assess its usability and effectiveness in real-world contexts while minimizing evaluative bias."
+  },
+  {
+    "sentence": "Applying AuraGenome to authentic genomic analysis scenarios enabled assessment of its usability and effectiveness in real-world contexts.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 5,
+    "msuid": 467,
+    "para_id": 82,
+    "paper_id": 1,
+    "2d_coord": [
+      0.6074594855308533,
+      2.1129350662231445
+    ],
+    "MSU_id": 467,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "The system requirements were originally derived through iterative co-design sessions with eight genomics experts. To ensure objective evaluation, the following case studies were carried out by a separate group of two extra experts—denoted as  $E_{A}$  and  $E_{B}$  (mean experience: 10.3 years)—who were not involved in previous sections. These experts applied AuraGenome to authentic genomic analysis scenarios, enabling us to assess its usability and effectiveness in real-world contexts while minimizing evaluative bias."
+  },
+  {
+    "sentence": "Applying AuraGenome to authentic genomic analysis scenarios minimized evaluative bias.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 468,
+    "para_id": 82,
+    "paper_id": 1,
+    "2d_coord": [
+      0.5487542152404785,
+      1.7819894552230835
+    ],
+    "MSU_id": 468,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "The system requirements were originally derived through iterative co-design sessions with eight genomics experts. To ensure objective evaluation, the following case studies were carried out by a separate group of two extra experts—denoted as  $E_{A}$  and  $E_{B}$  (mean experience: 10.3 years)—who were not involved in previous sections. These experts applied AuraGenome to authentic genomic analysis scenarios, enabling us to assess its usability and effectiveness in real-world contexts while minimizing evaluative bias."
+  },
+  {
+    "sentence": "$E_{A}$ aimed to investigate chromosomal translocation patterns in AML.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 469,
+    "para_id": 83,
+    "paper_id": 1,
+    "2d_coord": [
+      0.2714853286743164,
+      2.5959997177124023
+    ],
+    "MSU_id": 469,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "In this case,  $E_{A}$  aimed to investigate chromosomal translocation patterns in AML, a hematologic malignancy often driven by specific structural variants. The overall workflow is illustrated in Figure 6."
+  },
+  {
+    "sentence": "To examine the positional distribution of breakpoints and their potential correlation with functional genomic regions, $E_{A}$ uploaded a curated dataset of chromosomal translocations.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 472,
+    "para_id": 84,
+    "paper_id": 1,
+    "2d_coord": [
+      1.233126163482666,
+      2.9560203552246094
+    ],
+    "MSU_id": 472,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "To examine the positional distribution of breakpoints and their potential correlation with functional genomic regions,  $E_{A}$  uploaded a curated dataset of chromosomal translocations. Leveraging AuraGenome's automated parsing and feature extraction, the system computed translocation frequencies and mapped them to brightness levels within a circular layout [see Figure 6(A5)]. To visualize interchromosomal associations,  $E_{A}$  selected a chord layout, which"
+  },
+  {
+    "sentence": "The entire process—from data upload to visualization refinement—was completed within 20 min.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 488,
+    "para_id": 88,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.1793818473815918,
+      0.01138203963637352
+    ],
+    "MSU_id": 488,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "The entire process—from data upload to visualization refinement—was completed within 20 min. Notably,  $E_{A}$  identified that the genomic region chr1:16816819-18551718 exhibited both a high frequency of translocation breakpoints and significant gene upregulation. This integrated insight led  $E_{A}$  to annotate the region as a potential biomarker for AML, suggesting it as a candidate for future experimental validation."
+  },
+  {
+    "sentence": "We conducted a second case study involving expert $E_{B}$.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 492,
+    "para_id": 89,
+    "paper_id": 1,
+    "2d_coord": [
+      1.6328837871551514,
+      3.015129566192627
+    ],
+    "MSU_id": 492,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "To evaluate the reusability and task adaptability of AuraGenome, we conducted a second case study involving expert  $E_{B}$ , who aimed to replicate and extend insights from a widely cited study in Nature[20] that mapped the somatic mutation landscape of the COLO-829 melanoma genome. Building on the workflow established by  $E_{A}$ , this case demonstrates that how the Sequence Log View facilitates the inheritance and contextual reuse of prior visualization logic."
+  },
+  {
+    "sentence": "The aim of the case study was to replicate and extend insights from a widely cited study in Nature that mapped the somatic mutation landscape of the COLO-829 melanoma genome.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 493,
+    "para_id": 89,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.012289389967918396,
+      3.262955665588379
+    ],
+    "MSU_id": 493,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "To evaluate the reusability and task adaptability of AuraGenome, we conducted a second case study involving expert  $E_{B}$ , who aimed to replicate and extend insights from a widely cited study in Nature[20] that mapped the somatic mutation landscape of the COLO-829 melanoma genome. Building on the workflow established by  $E_{A}$ , this case demonstrates that how the Sequence Log View facilitates the inheritance and contextual reuse of prior visualization logic."
+  },
+  {
+    "sentence": "Following $E_B$ uploaded the mutation dataset, AuraGenome automatically rendered two tracks.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 505,
+    "para_id": 93,
+    "paper_id": 1,
+    "2d_coord": [
+      1.180389404296875,
+      2.458932399749756
+    ],
+    "MSU_id": 505,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "Following  $E_B$  uploaded the mutation dataset, AuraGenome automatically rendered two tracks: an orange bar chart encoding zygosity information and a chord layout representing chromosomal rearrangements.  $E_B$  subsequently uploaded an additional dataset with insertion and deletion events and issued a natural language instruction to display validated entries using a dual-color scheme. The system accurately filtered and visualized these mutations according to the user's intent."
+  },
+  {
+    "sentence": "$E_B$ subsequently uploaded an additional dataset with insertion and deletion events.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 508,
+    "para_id": 93,
+    "paper_id": 1,
+    "2d_coord": [
+      2.288940191268921,
+      1.2131062746047974
+    ],
+    "MSU_id": 508,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "Following  $E_B$  uploaded the mutation dataset, AuraGenome automatically rendered two tracks: an orange bar chart encoding zygosity information and a chord layout representing chromosomal rearrangements.  $E_B$  subsequently uploaded an additional dataset with insertion and deletion events and issued a natural language instruction to display validated entries using a dual-color scheme. The system accurately filtered and visualized these mutations according to the user's intent."
+  },
+  {
+    "sentence": "$E_B$ issued a natural language instruction to display validated entries using a dual-color scheme.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 509,
+    "para_id": 93,
+    "paper_id": 1,
+    "2d_coord": [
+      1.733389139175415,
+      2.995353937149048
+    ],
+    "MSU_id": 509,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "Following  $E_B$  uploaded the mutation dataset, AuraGenome automatically rendered two tracks: an orange bar chart encoding zygosity information and a chord layout representing chromosomal rearrangements.  $E_B$  subsequently uploaded an additional dataset with insertion and deletion events and issued a natural language instruction to display validated entries using a dual-color scheme. The system accurately filtered and visualized these mutations according to the user's intent."
+  },
+  {
+    "sentence": "We conducted an in-lab user study.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 522,
+    "para_id": 96,
+    "paper_id": 1,
+    "2d_coord": [
+      1.5377527475357056,
+      3.0188958644866943
+    ],
+    "MSU_id": 522,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "To evaluate the effectiveness and usability of the AuraGenome, we conducted an in-lab user study focusing on system learnability, user experience across disciplines, and its utility in real analysis tasks."
+  },
+  {
+    "sentence": "The purpose of the study was to evaluate the effectiveness and usability of the AuraGenome.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 523,
+    "para_id": 96,
+    "paper_id": 1,
+    "2d_coord": [
+      0.7869512438774109,
+      2.9546988010406494
+    ],
+    "MSU_id": 523,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "To evaluate the effectiveness and usability of the AuraGenome, we conducted an in-lab user study focusing on system learnability, user experience across disciplines, and its utility in real analysis tasks."
+  },
+  {
+    "sentence": "The study focused on system learnability.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 524,
+    "para_id": 96,
+    "paper_id": 1,
+    "2d_coord": [
+      2.670252799987793,
+      1.729634404182434
+    ],
+    "MSU_id": 524,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "To evaluate the effectiveness and usability of the AuraGenome, we conducted an in-lab user study focusing on system learnability, user experience across disciplines, and its utility in real analysis tasks."
+  },
+  {
+    "sentence": "The study focused on user experience across disciplines.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 525,
+    "para_id": 96,
+    "paper_id": 1,
+    "2d_coord": [
+      1.3885729312896729,
+      2.7529993057250977
+    ],
+    "MSU_id": 525,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "To evaluate the effectiveness and usability of the AuraGenome, we conducted an in-lab user study focusing on system learnability, user experience across disciplines, and its utility in real analysis tasks."
+  },
+  {
+    "sentence": "The study focused on the utility of AuraGenome in real analysis tasks.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 526,
+    "para_id": 96,
+    "paper_id": 1,
+    "2d_coord": [
+      1.460670828819275,
+      2.946108341217041
+    ],
+    "MSU_id": 526,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "To evaluate the effectiveness and usability of the AuraGenome, we conducted an in-lab user study focusing on system learnability, user experience across disciplines, and its utility in real analysis tasks."
+  },
+  {
+    "sentence": "A total of 12 participants with a background in biology were recruited for the experiment.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 527,
+    "para_id": 97,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.8217700719833374,
+      -0.24546155333518982
+    ],
+    "MSU_id": 527,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "In total, 12 participants with a background in biology (average experience:  $4 \\pm 1.5$  years) were recruited for the experiment, including 10 bioinformatics researchers  $(P_{1} - P_{10})$  and two wet-lab researchers  $(P_{11}$  and  $P_{12})$ . Each participant was instructed to complete the same visualization task: constructing a multilayered circular chart using the provided genomic variation data (e.g., chromosome location, mutation type, and zygosity). The task was performed using both Circos and AuraGenome. Performance was evaluated through quantitative analysis of task completion time, accuracy, and a posttask questionnaire. Additional qualitative feedback was collected via follow-up interviews."
+  },
+  {
+    "sentence": "Each participant was instructed to complete the same visualization task.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 531,
+    "para_id": 97,
+    "paper_id": 1,
+    "2d_coord": [
+      0.8175782561302185,
+      1.4104686975479126
+    ],
+    "MSU_id": 531,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "In total, 12 participants with a background in biology (average experience:  $4 \\pm 1.5$  years) were recruited for the experiment, including 10 bioinformatics researchers  $(P_{1} - P_{10})$  and two wet-lab researchers  $(P_{11}$  and  $P_{12})$ . Each participant was instructed to complete the same visualization task: constructing a multilayered circular chart using the provided genomic variation data (e.g., chromosome location, mutation type, and zygosity). The task was performed using both Circos and AuraGenome. Performance was evaluated through quantitative analysis of task completion time, accuracy, and a posttask questionnaire. Additional qualitative feedback was collected via follow-up interviews."
+  },
+  {
+    "sentence": "The task involved constructing a multilayered circular chart using the provided genomic variation data.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 532,
+    "para_id": 97,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.5632867813110352,
+      -0.11578606069087982
+    ],
+    "MSU_id": 532,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "In total, 12 participants with a background in biology (average experience:  $4 \\pm 1.5$  years) were recruited for the experiment, including 10 bioinformatics researchers  $(P_{1} - P_{10})$  and two wet-lab researchers  $(P_{11}$  and  $P_{12})$ . Each participant was instructed to complete the same visualization task: constructing a multilayered circular chart using the provided genomic variation data (e.g., chromosome location, mutation type, and zygosity). The task was performed using both Circos and AuraGenome. Performance was evaluated through quantitative analysis of task completion time, accuracy, and a posttask questionnaire. Additional qualitative feedback was collected via follow-up interviews."
+  },
+  {
+    "sentence": "The task was performed using both Circos and AuraGenome.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 5,
+    "msuid": 534,
+    "para_id": 97,
+    "paper_id": 1,
+    "2d_coord": [
+      0.648748517036438,
+      2.77314829826355
+    ],
+    "MSU_id": 534,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "In total, 12 participants with a background in biology (average experience:  $4 \\pm 1.5$  years) were recruited for the experiment, including 10 bioinformatics researchers  $(P_{1} - P_{10})$  and two wet-lab researchers  $(P_{11}$  and  $P_{12})$ . Each participant was instructed to complete the same visualization task: constructing a multilayered circular chart using the provided genomic variation data (e.g., chromosome location, mutation type, and zygosity). The task was performed using both Circos and AuraGenome. Performance was evaluated through quantitative analysis of task completion time, accuracy, and a posttask questionnaire. Additional qualitative feedback was collected via follow-up interviews."
+  },
+  {
+    "sentence": "Participants were randomly assigned to two groups.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 538,
+    "para_id": 98,
+    "paper_id": 1,
+    "2d_coord": [
+      0.2194056212902069,
+      -0.6278560161590576
+    ],
+    "MSU_id": 538,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "The study adopted a within-subject crossover design. Participants were randomly assigned to two groups: Group A  $(n = 6)$  used Circos first, followed by AuraGenome after a 48-h interval, and Group B  $(n = 6)$  followed the reverse order. Each session consisted of the following steps."
+  },
+  {
+    "sentence": "Group A (n = 6) used Circos first, followed by AuraGenome after a 48-h interval.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 539,
+    "para_id": 98,
+    "paper_id": 1,
+    "2d_coord": [
+      -1.1605006456375122,
+      1.5280520915985107
+    ],
+    "MSU_id": 539,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "The study adopted a within-subject crossover design. Participants were randomly assigned to two groups: Group A  $(n = 6)$  used Circos first, followed by AuraGenome after a 48-h interval, and Group B  $(n = 6)$  followed the reverse order. Each session consisted of the following steps."
+  },
+  {
+    "sentence": "Group B (n = 6) followed the reverse order.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 540,
+    "para_id": 98,
+    "paper_id": 1,
+    "2d_coord": [
+      -0.6041586995124817,
+      0.9148187637329102
+    ],
+    "MSU_id": 540,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "The study adopted a within-subject crossover design. Participants were randomly assigned to two groups: Group A  $(n = 6)$  used Circos first, followed by AuraGenome after a 48-h interval, and Group B  $(n = 6)$  followed the reverse order. Each session consisted of the following steps."
+  },
+  {
+    "sentence": "Accuracy scores were evaluated by two independent genomics experts.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 548,
+    "para_id": 99,
+    "paper_id": 1,
+    "2d_coord": [
+      1.3589448928833008,
+      2.3112354278564453
+    ],
+    "MSU_id": 548,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "AuraGenome significantly outperformed Circos in both task efficiency and output accuracy. On average, participants completed the assigned visualization task in 34 min (Standard Deviation  $(\\mathrm{SD}) = 9.16$  using AuraGenome, compared to 112 min  $(\\mathrm{SD} = 16.5)$  with Circos—a  $69\\%$  reduction in time. Notably, one participant was unable to complete the task within the allotted time when using Circos. As shown in Figure 8(a), accuracy scores, evaluated by two independent genomics experts, averaged  $89\\%$ $(\\mathrm{SD} = 4.61)$  with AuraGenome versus  $76\\%$ $(\\mathrm{SD} = 18.31)$  with Circos. AuraGenome also exhibited lower performance variance across participants, suggesting improved consistency."
+  },
+  {
+    "sentence": "We collected open-ended feedback from 12 participants through posttask interviews and questionnaires.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 567,
+    "para_id": 105,
+    "paper_id": 1,
+    "2d_coord": [
+      1.0866936445236206,
+      2.697690486907959
+    ],
+    "MSU_id": 567,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "To complement the quantitative results, we collected open-ended feedback from 12 participants through posttask interviews and questionnaires. We summarized them for further thematic analysis. The result revealed four recurring reflections about AuraGenome's usability, functionality, and areas for growth."
+  },
+  {
+    "sentence": "Two real-world case studies demonstrate its effectiveness in enhancing task performance.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 619,
+    "para_id": 115,
+    "paper_id": 1,
+    "2d_coord": [
+      1.3433070182800293,
+      2.8961706161499023
+    ],
+    "MSU_id": 619,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "In this article, we presented AuraGenome, an LLM-powered framework for generating rapid, reusable, and scalable circular genome visualizations. By integrating multiagent collaboration with interactive visual analytics, AuraGenome enables natural language-driven visualization generation, significantly improving both efficiency and output quality. Two real-world case studies and a comprehensive user study demonstrate its effectiveness in enhancing task performance and reducing cognitive load in genomic research workflows."
+  },
+  {
+    "sentence": "Two real-world case studies demonstrate its effectiveness in reducing cognitive load in genomic research workflows.",
+    "title": "/home/lxy/newdata_3/AuraGenome_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 620,
+    "para_id": 115,
+    "paper_id": 1,
+    "2d_coord": [
+      0.8832671046257019,
+      2.9354896545410156
+    ],
+    "MSU_id": 620,
+    "paper_info": "/home/lxy/newdata_3/AuraGenome_msu",
+    "paragraph_info": "In this article, we presented AuraGenome, an LLM-powered framework for generating rapid, reusable, and scalable circular genome visualizations. By integrating multiagent collaboration with interactive visual analytics, AuraGenome enables natural language-driven visualization generation, significantly improving both efficiency and output quality. Two real-world case studies and a comprehensive user study demonstrate its effectiveness in enhancing task performance and reducing cognitive load in genomic research workflows."
+  },
+  {
+    "sentence": "Circos's initial application was to visualize end-sequence profiling of cancer genomes.",
+    "title": "/home/lxy/newdata_3/Circos_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 685,
+    "para_id": 123,
+    "paper_id": 2,
+    "2d_coord": [
+      0.49852144718170166,
+      3.0658507347106934
+    ],
+    "MSU_id": 685,
+    "paper_info": "/home/lxy/newdata_3/Circos_msu",
+    "paragraph_info": "To address the challenge in displaying large volumes of genomic rearrangement data, we have developed Circos, which applies the circular ideogram layout to display relationships between genomic intervals. This approach builds on the established use of circular maps in which concept relationships extracted from text are displayed (Zytkow and Rauch 1999). Circos's initial application was to visualize end-sequence profiling (Volik et al. 2003) and fingerprint profiling (Krzywinski et al. 2007) of cancer genomes."
+  },
+  {
+    "sentence": "Circos's initial application was to visualize fingerprint profiling of cancer genomes.",
+    "title": "/home/lxy/newdata_3/Circos_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 686,
+    "para_id": 123,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.07764020562171936,
+      2.6168313026428223
+    ],
+    "MSU_id": 686,
+    "paper_info": "/home/lxy/newdata_3/Circos_msu",
+    "paragraph_info": "To address the challenge in displaying large volumes of genomic rearrangement data, we have developed Circos, which applies the circular ideogram layout to display relationships between genomic intervals. This approach builds on the established use of circular maps in which concept relationships extracted from text are displayed (Zytkow and Rauch 1999). Circos's initial application was to visualize end-sequence profiling (Volik et al. 2003) and fingerprint profiling (Krzywinski et al. 2007) of cancer genomes."
+  },
+  {
+    "sentence": "We present a series of image archetypes (Figs. 1-4, see foldout).",
+    "title": "/home/lxy/newdata_3/Circos_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 710,
+    "para_id": 127,
+    "paper_id": 2,
+    "2d_coord": [
+      1.9687557220458984,
+      1.1867564916610718
+    ],
+    "MSU_id": 710,
+    "paper_info": "/home/lxy/newdata_3/Circos_msu",
+    "paragraph_info": "To illustrate how Circos's functionality can be applied to comparative and personal genomics, we present a series of image archetypes (Figs. 1-4, see foldout) that are being used as part of a multipatient whole-genome analysis (data not shown; see Methods) of genomic rearrangements in follicular lymphoma, a common B-cell malignancy. These images range in resolution from whole-genome (3 Gb), to a fingerprint-map contig (10 Mb), to a single bacterial artificial chromosome (BAC) clone (100 kb), and finally to a se"
+  },
+  {
+    "sentence": "These image archetypes are being used as part of a multipatient whole-genome analysis.",
+    "title": "/home/lxy/newdata_3/Circos_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 711,
+    "para_id": 127,
+    "paper_id": 2,
+    "2d_coord": [
+      1.2869232892990112,
+      1.7451480627059937
+    ],
+    "MSU_id": 711,
+    "paper_info": "/home/lxy/newdata_3/Circos_msu",
+    "paragraph_info": "To illustrate how Circos's functionality can be applied to comparative and personal genomics, we present a series of image archetypes (Figs. 1-4, see foldout) that are being used as part of a multipatient whole-genome analysis (data not shown; see Methods) of genomic rearrangements in follicular lymphoma, a common B-cell malignancy. These images range in resolution from whole-genome (3 Gb), to a fingerprint-map contig (10 Mb), to a single bacterial artificial chromosome (BAC) clone (100 kb), and finally to a se"
+  },
+  {
+    "sentence": "The whole-genome analysis focuses on genomic rearrangements in follicular lymphoma.",
+    "title": "/home/lxy/newdata_3/Circos_msu",
+    "category": "Experiment",
+    "rank": 5,
+    "msuid": 712,
+    "para_id": 127,
+    "paper_id": 2,
+    "2d_coord": [
+      0.39562591910362244,
+      2.9543046951293945
+    ],
+    "MSU_id": 712,
+    "paper_info": "/home/lxy/newdata_3/Circos_msu",
+    "paragraph_info": "To illustrate how Circos's functionality can be applied to comparative and personal genomics, we present a series of image archetypes (Figs. 1-4, see foldout) that are being used as part of a multipatient whole-genome analysis (data not shown; see Methods) of genomic rearrangements in follicular lymphoma, a common B-cell malignancy. These images range in resolution from whole-genome (3 Gb), to a fingerprint-map contig (10 Mb), to a single bacterial artificial chromosome (BAC) clone (100 kb), and finally to a se"
+  },
+  {
+    "sentence": "Batch image generation is demonstrated in Figure 8.",
+    "title": "/home/lxy/newdata_3/Circos_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 716,
+    "para_id": 128,
+    "paper_id": 2,
+    "2d_coord": [
+      1.9043633937835693,
+      0.6339254379272461
+    ],
+    "MSU_id": 716,
+    "paper_info": "/home/lxy/newdata_3/Circos_msu",
+    "paragraph_info": "quence contig (10 kb). A second image series (Figs. 5-7) demonstrates how axis breaks and ideogram magnification can be used to zoom in on regions of interest. Batch image generation is demonstrated in Figure 8 (see foldout), which comprises 39 images that illustrate synteny between the dog and human genomes. The configuration and data files to create each figure are available in the Supplemental material."
+  },
+  {
+    "sentence": "Figure 1 shows a whole-genome visual representation of genomic rearrangements in multiple genomes.",
+    "title": "/home/lxy/newdata_3/Circos_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 719,
+    "para_id": 129,
+    "paper_id": 2,
+    "2d_coord": [
+      1.0726165771484375,
+      2.8529410362243652
+    ],
+    "MSU_id": 719,
+    "paper_info": "/home/lxy/newdata_3/Circos_msu",
+    "paragraph_info": "Figure 1 shows a whole-genome visual representation of genomic rearrangements in multiple genomes with the aim to identify breakpoint clusters and recurrent alterations. Presented are structural data derived from primary tumor samples from five patients diagnosed with follicular lymphoma. For each sample, the figure shows large-scale rearrangements, density of small-scale events, and copy number profile (see Methods). For example, at  $130\\mathrm{Mb}$  on chromosome 1, each sample shows large deletions and inversions as well as translocations that involve chromosomes 4, 16, and 17. This region also marks the beginning of significantly increased copy number in three samples (middle three rings in track F) that continues to the end of the 1q arm."
+  },
+  {
+    "sentence": "Presented are structural data derived from primary tumor samples from five patients diagnosed with follicular lymphoma.",
+    "title": "/home/lxy/newdata_3/Circos_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 721,
+    "para_id": 129,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.08663414418697357,
+      2.5678577423095703
+    ],
+    "MSU_id": 721,
+    "paper_info": "/home/lxy/newdata_3/Circos_msu",
+    "paragraph_info": "Figure 1 shows a whole-genome visual representation of genomic rearrangements in multiple genomes with the aim to identify breakpoint clusters and recurrent alterations. Presented are structural data derived from primary tumor samples from five patients diagnosed with follicular lymphoma. For each sample, the figure shows large-scale rearrangements, density of small-scale events, and copy number profile (see Methods). For example, at  $130\\mathrm{Mb}$  on chromosome 1, each sample shows large deletions and inversions as well as translocations that involve chromosomes 4, 16, and 17. This region also marks the beginning of significantly increased copy number in three samples (middle three rings in track F) that continues to the end of the 1q arm."
+  },
+  {
+    "sentence": "For each sample, the figure shows large-scale rearrangements, density of small-scale events, and copy number profile.",
+    "title": "/home/lxy/newdata_3/Circos_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 722,
+    "para_id": 129,
+    "paper_id": 2,
+    "2d_coord": [
+      0.7129389643669128,
+      0.23900994658470154
+    ],
+    "MSU_id": 722,
+    "paper_info": "/home/lxy/newdata_3/Circos_msu",
+    "paragraph_info": "Figure 1 shows a whole-genome visual representation of genomic rearrangements in multiple genomes with the aim to identify breakpoint clusters and recurrent alterations. Presented are structural data derived from primary tumor samples from five patients diagnosed with follicular lymphoma. For each sample, the figure shows large-scale rearrangements, density of small-scale events, and copy number profile (see Methods). For example, at  $130\\mathrm{Mb}$  on chromosome 1, each sample shows large deletions and inversions as well as translocations that involve chromosomes 4, 16, and 17. This region also marks the beginning of significantly increased copy number in three samples (middle three rings in track F) that continues to the end of the 1q arm."
+  },
+  {
+    "sentence": "Each contig in Figure 2 was selected from the map of a different sample (patients 10, 13, and 21).",
+    "title": "/home/lxy/newdata_3/Circos_msu",
+    "category": "Experiment",
+    "rank": 2,
+    "msuid": 737,
+    "para_id": 132,
+    "paper_id": 2,
+    "2d_coord": [
+      0.6017151474952698,
+      1.1321163177490234
+    ],
+    "MSU_id": 737,
+    "paper_info": "/home/lxy/newdata_3/Circos_msu",
+    "paragraph_info": "A BAC-based fingerprint map was generated for each primary tumor sample, and each BAC was annotated with fingerprint-based alignments to the human reference sequence (see Methods). In this manner, the fingerprint map, which typically comprises thousands of contigs, was used to identify large-scale structural changes in the tumor genomes. Figure 2 demonstrates three such large-scale changes at the magnification level of a single fingerprint map contig  $(1 - 10\\mathrm{Mb})$  . Each contig (Fig. 2, track A) was selected from the map of a different sample (patients 10, 13, and 21) and contains at least two BAC clones whose alignments (Fig. 2, track F) indicate a rearrangement breakpoint captured within the BACs."
+  },
+  {
+    "sentence": "Fingerprint-based alignments map BACs 163K07 and 252O11 from a contig of patient 10 to two regions of chromosome 4 (97.1-98.1 Mb, 127.5-128.5 Mb).",
+    "title": "/home/lxy/newdata_3/Circos_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 741,
+    "para_id": 133,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.6058380007743835,
+      2.3174333572387695
+    ],
+    "MSU_id": 741,
+    "paper_info": "/home/lxy/newdata_3/Circos_msu",
+    "paragraph_info": "At this magnification, the correspondence between the order of BACs in the map contig and on the sequence assembly can be demonstrated clearly and used to identify structural changes in the tumor genomes. For example, the fingerprint-based alignments map BACs 163K07 and 252O11 from a contig of patient 10 to two regions of chromosome 4 (97.1-98.1 Mb, 127.5-128.5 Mb), indicating that these BACs capture a rearrangement. Moreover, alignments from the second half of this contig are inverted in their progression, relative to clone order, suggesting that the rearrangement is an inversion. The classical t(14;18) translocation is exemplified by the alignments of BACs 175B19 and 278H11 from a contig of patient 13. The rearrangement in the map contig from"
+  },
+  {
+    "sentence": "The classical t(14;18) translocation is exemplified by the alignments of BACs 175B19 and 278H11 from a contig of patient 13.",
+    "title": "/home/lxy/newdata_3/Circos_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 745,
+    "para_id": 133,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.42844557762145996,
+      2.8250863552093506
+    ],
+    "MSU_id": 745,
+    "paper_info": "/home/lxy/newdata_3/Circos_msu",
+    "paragraph_info": "At this magnification, the correspondence between the order of BACs in the map contig and on the sequence assembly can be demonstrated clearly and used to identify structural changes in the tumor genomes. For example, the fingerprint-based alignments map BACs 163K07 and 252O11 from a contig of patient 10 to two regions of chromosome 4 (97.1-98.1 Mb, 127.5-128.5 Mb), indicating that these BACs capture a rearrangement. Moreover, alignments from the second half of this contig are inverted in their progression, relative to clone order, suggesting that the rearrangement is an inversion. The classical t(14;18) translocation is exemplified by the alignments of BACs 175B19 and 278H11 from a contig of patient 13. The rearrangement in the map contig from"
+  },
+  {
+    "sentence": "Figure 5 shows copy number whole-genome profiles of five follicular lymphoma tumor samples generated from the Affymetrix Mapping 500K array.",
+    "title": "/home/lxy/newdata_3/Circos_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 746,
+    "para_id": 134,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.26807713508605957,
+      0.7203035354614258
+    ],
+    "MSU_id": 746,
+    "paper_info": "/home/lxy/newdata_3/Circos_msu",
+    "paragraph_info": "Figure 5. Copy number whole-genome profiles of five follicular lymphoma tumor samples generated from the Affymetrix Mapping 500K array. Samples are represented in each of the five histograms in tracks A-E. A crop of histogram region  $F$  is shown in the center of the figure to demonstrate the structure of each histogram track. The central thick line (G) represents the average probe value across 250 adjacent probes. The area between this line and  $y = 0$  is filled with green or red depending on whether the average value is positive (i.e., increased copy number value) or negative (decreased copy number value), respectively. Variability within each 250-probe set is shown in histogram components  $H$  and  $I$ , which show the maximum and minimum of three-probe average values within the set, respectively. The area under the maximum and minimum traces is filled with a lighter green or red, respectively."
+  },
+  {
+    "sentence": "Samples are represented in each of the five histograms in tracks A-E.",
+    "title": "/home/lxy/newdata_3/Circos_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 747,
+    "para_id": 134,
+    "paper_id": 2,
+    "2d_coord": [
+      2.804812431335449,
+      -0.7887202501296997
+    ],
+    "MSU_id": 747,
+    "paper_info": "/home/lxy/newdata_3/Circos_msu",
+    "paragraph_info": "Figure 5. Copy number whole-genome profiles of five follicular lymphoma tumor samples generated from the Affymetrix Mapping 500K array. Samples are represented in each of the five histograms in tracks A-E. A crop of histogram region  $F$  is shown in the center of the figure to demonstrate the structure of each histogram track. The central thick line (G) represents the average probe value across 250 adjacent probes. The area between this line and  $y = 0$  is filled with green or red depending on whether the average value is positive (i.e., increased copy number value) or negative (decreased copy number value), respectively. Variability within each 250-probe set is shown in histogram components  $H$  and  $I$ , which show the maximum and minimum of three-probe average values within the set, respectively. The area under the maximum and minimum traces is filled with a lighter green or red, respectively."
+  },
+  {
+    "sentence": "We conducted a whole-genome analysis of the structure of follicular lymphomas.",
+    "title": "/home/lxy/newdata_3/Circos_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 768,
+    "para_id": 138,
+    "paper_id": 2,
+    "2d_coord": [
+      0.6664827466011047,
+      3.24043345451355
+    ],
+    "MSU_id": 768,
+    "paper_info": "/home/lxy/newdata_3/Circos_msu",
+    "paragraph_info": "As part of our whole-genome analysis of the structure of follicular lymphomas, we used short-read Illumina technology to fully sequence a set of BAC clones that capture putative rearrangements. In Figure 3, we show the sequence assembly of nine such BACs (from patients 6, 8, 10, 11, 12, 13, 16, 24, and 25) that capture the t(14;18) translocation to illustrate the fact that this rearrangement's breakpoint position is variable, as previously reported (Cleary and Sklar 1985; Bakhshi et al. 1987; Marculescu et al. 2002)."
+  },
+  {
+    "sentence": "Copy number profiles for chromosomes 6 and 17 of five follicular lymphoma tumor samples were generated from the Affymetrix Mapping 500K array.",
+    "title": "/home/lxy/newdata_3/Circos_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 778,
+    "para_id": 140,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.7859433889389038,
+      0.7041202783584595
+    ],
+    "MSU_id": 778,
+    "paper_info": "/home/lxy/newdata_3/Circos_msu",
+    "paragraph_info": "Figure 6. Copy number profiles for chromosomes 6 and 17 of five follicular lymphoma tumor samples generated from the Affymetrix Mapping 500K array. Probe values were averaged across 20 adjacent probes. Several regions showing large copy number changes are shown on ideograms with an expanded scale. The structure of the histogram track is the same as used in Figure 5. Regions A and B on chromosomes 6 are shown at  $10\\times$  magnification on ideograms C and D, respectively, with ribbons E connecting these regions with their zoomed ideograms. Similarly, region F on chromosome 17 is shown at  $5\\times$  magnification as ideogram G. Regions H and I on ideogram G are shown at  $40\\times$  magnification on ideograms J and K, respectively. Individual probe values are shown as scatterplots on ideograms J and K."
+  },
+  {
+    "sentence": "Sequence contigs that were found to span the breakpoint are shown at higher magnification in Figure 4.",
+    "title": "/home/lxy/newdata_3/Circos_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 790,
+    "para_id": 142,
+    "paper_id": 2,
+    "2d_coord": [
+      0.4507724642753601,
+      3.235261917114258
+    ],
+    "MSU_id": 790,
+    "paper_info": "/home/lxy/newdata_3/Circos_msu",
+    "paragraph_info": "Sequence contigs that were found to span the breakpoint (Fig. 3, track E) are shown at higher magnification in Figure 4. This figure demonstrates the precise structure of alignments within the breakpoint cluster on 14q32 and 18q21, vis-à-vis the exon structure of BCL2 and IGH in these regions. In this figure, sequence contig ideograms are interspersed with reference assembly ideograms to better separate the ribbon groups to chromosomes 14 and 18."
+  },
+  {
+    "sentence": "Figure 5 shows whole-genome copy number profiles of five lymphoma samples.",
+    "title": "/home/lxy/newdata_3/Circos_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 809,
+    "para_id": 146,
+    "paper_id": 2,
+    "2d_coord": [
+      0.6638450622558594,
+      1.5150402784347534
+    ],
+    "MSU_id": 809,
+    "paper_info": "/home/lxy/newdata_3/Circos_msu",
+    "paragraph_info": "Figure 5 depicts one kind of dense data set that benefits from examination at various length scales. This figure shows whole-genome copy number profiles of five lymphoma samples generated using the Affymetrix Mapping 500K array. Although there are several large regions in which copy number values are consistently altered, most of the statistically significant variation in the figure"
+  },
+  {
+    "sentence": "Figure 7 shows copy number profiles for chromosomes 6 and 17 of five follicular lymphoma tumor samples generated from the Affymetrix Mapping 500K array.",
+    "title": "/home/lxy/newdata_3/Circos_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 813,
+    "para_id": 147,
+    "paper_id": 2,
+    "2d_coord": [
+      -0.7484784126281738,
+      0.40691182017326355
+    ],
+    "MSU_id": 813,
+    "paper_info": "/home/lxy/newdata_3/Circos_msu",
+    "paragraph_info": "Figure 7. Copy number profiles for chromosomes 6 and 17 of five follicular lymphoma tumor samples generated from the Affymetrix Mapping 500K array. Regions of interest A and B on chromosomes 6 and  $J$  and  $K$  on chromosomes 17 (corresponding to similarly labeled zoomed ideograms in Fig. 6) are magnified by a continuous scale expansion in these regions. Individual probe values are shown as a scatterplot in the vicinity of regions  $J$  and  $K$ ."
+  },
+  {
+    "sentence": "Whole-genome structural data from primary tumor samples from patients diagnosed with follicular lymphoma were used to generate Figures 1-7.",
+    "title": "/home/lxy/newdata_3/Circos_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 895,
+    "para_id": 161,
+    "paper_id": 2,
+    "2d_coord": [
+      0.36348527669906616,
+      2.3099489212036133
+    ],
+    "MSU_id": 895,
+    "paper_info": "/home/lxy/newdata_3/Circos_msu",
+    "paragraph_info": "Whole-genome structural data (data not shown) from primary tumor samples from patients diagnosed with follicular lymphoma were used to generate Figures 1-7. A BAC library was created from each tumor sample (average insert size of libraries ranged between 130 and  $200\\mathrm{kb}$ ) and subjected to restriction-digest fingerprinting (Marra et al. 1997; Schein et al. 2004; Mathewson et al. 2007) using an EcoRI/EcoRV double digest to a depth of fivefold to sixfold. Rearrangements (translocations, inversions, deletions) were identified from alignments of fingerprinted BACs onto the human reference sequence (Krzywinski et al. 2007). Copy number changes in the samples were identified using the Affymetrix Mapping 500K array. Individual BACs identified to capture rearrangements were subject to short-read Illumina sequencing and assembled with ABysS (Simpson et al. 2009)."
+  },
+  {
+    "sentence": "Each set is represented in Figure 8 as a ribbon whose ends represent the extent of the set alignments on the dog and human chromosomes.",
+    "title": "/home/lxy/newdata_3/Circos_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 909,
+    "para_id": 162,
+    "paper_id": 2,
+    "2d_coord": [
+      0.34218648076057434,
+      2.498446464538574
+    ],
+    "MSU_id": 909,
+    "paper_info": "/home/lxy/newdata_3/Circos_msu",
+    "paragraph_info": "Sequence similarity data relating the dog (UCSC, canFam2, May 2005) and human (UCSC, hg18, Mar 2006) genomes were downloaded from the UCSC Genome Browser (http://www.genome.ucsc.edu) from the chainCanFam2 table (track: Dog Chain; track group: Comparative Genomics). This data set comprises about 2.16 million gapped alignments between the two assemblies. Alignment bundles were built up from individual alignments by a scheme (implemented by bundlelinks, a utility tool in the circostools distribution) that grouped alignments into sets. For a given alignment set, (1) all alignments related the same pair of dog and human chromosomes, (2) any alignment was no further than 250 kb away from its nearest neighbor in the set, and (3) the number of alignments in the set was at least three. Each set is represented in Figure 8 as a ribbon whose ends represent the extent of the set alignments on the dog and human chromosomes. Figure 8 shows sets that spanned at least 250 kb on both human and dog chromosomes."
+  },
+  {
+    "sentence": "We conduct a user study with 8 bioinformatics analysts to evaluate IntelliCircos.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 934,
+    "para_id": 165,
+    "paper_id": 3,
+    "2d_coord": [
+      1.3475531339645386,
+      3.1012721061706543
+    ],
+    "MSU_id": 934,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Genomics data is essential in biological and medical domains, and bioinformatics analysts often manually create circos plots to analyze the data and extract valuable insights. However, creating circos plots is complex, as it requires careful design for multiple track attributes and positional relationships between them. Typically, analysts often seek inspiration from existing circos plots, and they have to iteratively adjust and refine the plot to achieve a satisfactory final design, making the process both tedious and time-intensive. To address these challenges, we propose IntelliCircos, an AI-powered interactive authoring tool that streamlines the process from initial visual design to the final implementation of circos plots. Specifically, we build a new dataset containing 4396 circos plots with corresponding annotations and configurations, which are extracted and labeled from published papers. With the dataset, we further identify track combination patterns, and utilize Large Language Model (LLM) to provide domain-specific design recommendations and configuration references to navigate the design of circos plots. We conduct a user study with 8 bioinformatics analysts to evaluate IntelliCircos, and the results demonstrate its usability and effectiveness in authoring circos plots."
+  },
+  {
+    "sentence": "We collect a dataset of circos plot illustrations and annotations from existing publications, where the quality of the circos plot is guaranteed.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 973,
+    "para_id": 171,
+    "paper_id": 3,
+    "2d_coord": [
+      0.1919102668762207,
+      2.5173511505126953
+    ],
+    "MSU_id": 973,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "To address these challenges, we propose IntelliCircos, a Large Language Model (LLM)-powered interactive authoring tool that streamlines the process from design to the actual implementation of circos plots. First, we collect a dataset of circos plot illustrations and annotations from existing publications, where the quality of the circos plot is guaranteed. We then analyze the relationships of the common track combinations within this dataset. Next, we propose a circos plot recommendation method based on Retrieval Augmented Generation (RAG) [LPP*20]. This method retrieves relevant examples from the above dataset based on user requirements, providing LLM with references and incorporating design patterns into prompts to improve recommendation performance in specific domain scenarios. IntelliCircos allows users to browse and analyze configurations of similar charts, receive progressive design recommendations considering both user-specified constraints and current creation in the user interface, and supports easy refinement of the created circos plot."
+  },
+  {
+    "sentence": "We analyze the relationships of the common track combinations within this dataset.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 974,
+    "para_id": 171,
+    "paper_id": 3,
+    "2d_coord": [
+      1.2754273414611816,
+      -0.22398456931114197
+    ],
+    "MSU_id": 974,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "To address these challenges, we propose IntelliCircos, a Large Language Model (LLM)-powered interactive authoring tool that streamlines the process from design to the actual implementation of circos plots. First, we collect a dataset of circos plot illustrations and annotations from existing publications, where the quality of the circos plot is guaranteed. We then analyze the relationships of the common track combinations within this dataset. Next, we propose a circos plot recommendation method based on Retrieval Augmented Generation (RAG) [LPP*20]. This method retrieves relevant examples from the above dataset based on user requirements, providing LLM with references and incorporating design patterns into prompts to improve recommendation performance in specific domain scenarios. IntelliCircos allows users to browse and analyze configurations of similar charts, receive progressive design recommendations considering both user-specified constraints and current creation in the user interface, and supports easy refinement of the created circos plot."
+  },
+  {
+    "sentence": "We conducted a user study with 8 participants to evaluate the effectiveness and usability of IntelliCircos.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 981,
+    "para_id": 172,
+    "paper_id": 3,
+    "2d_coord": [
+      1.6400667428970337,
+      2.9018659591674805
+    ],
+    "MSU_id": 981,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "We present a usage scenario to illustrate the usage of IntelliCircos, and further conducted a user study with 8 participants to evaluate its effectiveness and usability. The results demonstrate that IntelliCircos can effectively assist users in the design of circos plot and greatly simplifies the implementation of circos plot. The major contributions of this paper can be summarized as follows:"
+  },
+  {
+    "sentence": "In Figure 1 (A), there are three nested rings.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 2,
+    "msuid": 1002,
+    "para_id": 176,
+    "paper_id": 3,
+    "2d_coord": [
+      0.5277412533760071,
+      2.88742733001709
+    ],
+    "MSU_id": 1002,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "as ideogram, highlight, and tile. The position of a track is determined by its inner and outer radii: the inner radius refers to the distance from the inner side of the track to the circle's center, while the outer radius refers to the distance from the outer side of the track to the center. To enhance visual appeal or meet analytical needs, multiple tracks can be grouped within the same concentric rings, forming a structure we refer to as a ring. For example, in Figure 1 (A), there are three nested rings, where the ring Figure 1 (A1) is composed of a tile, and the ring Figure 1 (A2) is composed of two tracks: line and histogram. A circos plot typically consists of multiple concentric rings arranged around the same genomic axis. Angular ranges are used to encode the position coordinates of data across all tracks, effectively mapping data's location on the genomic axis. For example, Figure 1 (B) shows a circos plot with eight tracks, listed from outer to inner as follows Figure 1 (B1 - B8): ideogram, highlight, tile, scatter, line, heatmaps, histogram, and chord. Circos plots are widely used to demonstrate similarities or differences among diverse genomic features associated with the same genomic regions [WJT*23]. Furthermore, Circos [Krz09] is the most commonly used tool for creating circos plots."
+  },
+  {
+    "sentence": "The ring Figure 1 (A1) is composed of a tile.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 2,
+    "msuid": 1003,
+    "para_id": 176,
+    "paper_id": 3,
+    "2d_coord": [
+      -1.9833141565322876,
+      0.8710637092590332
+    ],
+    "MSU_id": 1003,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "as ideogram, highlight, and tile. The position of a track is determined by its inner and outer radii: the inner radius refers to the distance from the inner side of the track to the circle's center, while the outer radius refers to the distance from the outer side of the track to the center. To enhance visual appeal or meet analytical needs, multiple tracks can be grouped within the same concentric rings, forming a structure we refer to as a ring. For example, in Figure 1 (A), there are three nested rings, where the ring Figure 1 (A1) is composed of a tile, and the ring Figure 1 (A2) is composed of two tracks: line and histogram. A circos plot typically consists of multiple concentric rings arranged around the same genomic axis. Angular ranges are used to encode the position coordinates of data across all tracks, effectively mapping data's location on the genomic axis. For example, Figure 1 (B) shows a circos plot with eight tracks, listed from outer to inner as follows Figure 1 (B1 - B8): ideogram, highlight, tile, scatter, line, heatmaps, histogram, and chord. Circos plots are widely used to demonstrate similarities or differences among diverse genomic features associated with the same genomic regions [WJT*23]. Furthermore, Circos [Krz09] is the most commonly used tool for creating circos plots."
+  },
+  {
+    "sentence": "The ring Figure 1 (A2) is composed of two tracks: line and histogram.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 2,
+    "msuid": 1004,
+    "para_id": 176,
+    "paper_id": 3,
+    "2d_coord": [
+      -0.53609699010849,
+      1.8128753900527954
+    ],
+    "MSU_id": 1004,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "as ideogram, highlight, and tile. The position of a track is determined by its inner and outer radii: the inner radius refers to the distance from the inner side of the track to the circle's center, while the outer radius refers to the distance from the outer side of the track to the center. To enhance visual appeal or meet analytical needs, multiple tracks can be grouped within the same concentric rings, forming a structure we refer to as a ring. For example, in Figure 1 (A), there are three nested rings, where the ring Figure 1 (A1) is composed of a tile, and the ring Figure 1 (A2) is composed of two tracks: line and histogram. A circos plot typically consists of multiple concentric rings arranged around the same genomic axis. Angular ranges are used to encode the position coordinates of data across all tracks, effectively mapping data's location on the genomic axis. For example, Figure 1 (B) shows a circos plot with eight tracks, listed from outer to inner as follows Figure 1 (B1 - B8): ideogram, highlight, tile, scatter, line, heatmaps, histogram, and chord. Circos plots are widely used to demonstrate similarities or differences among diverse genomic features associated with the same genomic regions [WJT*23]. Furthermore, Circos [Krz09] is the most commonly used tool for creating circos plots."
+  },
+  {
+    "sentence": "Figure 1 (B) shows a circos plot with eight tracks.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 2,
+    "msuid": 1008,
+    "para_id": 176,
+    "paper_id": 3,
+    "2d_coord": [
+      -0.477448046207428,
+      1.150767207145691
+    ],
+    "MSU_id": 1008,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "as ideogram, highlight, and tile. The position of a track is determined by its inner and outer radii: the inner radius refers to the distance from the inner side of the track to the circle's center, while the outer radius refers to the distance from the outer side of the track to the center. To enhance visual appeal or meet analytical needs, multiple tracks can be grouped within the same concentric rings, forming a structure we refer to as a ring. For example, in Figure 1 (A), there are three nested rings, where the ring Figure 1 (A1) is composed of a tile, and the ring Figure 1 (A2) is composed of two tracks: line and histogram. A circos plot typically consists of multiple concentric rings arranged around the same genomic axis. Angular ranges are used to encode the position coordinates of data across all tracks, effectively mapping data's location on the genomic axis. For example, Figure 1 (B) shows a circos plot with eight tracks, listed from outer to inner as follows Figure 1 (B1 - B8): ideogram, highlight, tile, scatter, line, heatmaps, histogram, and chord. Circos plots are widely used to demonstrate similarities or differences among diverse genomic features associated with the same genomic regions [WJT*23]. Furthermore, Circos [Krz09] is the most commonly used tool for creating circos plots."
+  },
+  {
+    "sentence": "The eight tracks are listed from outer to inner as ideogram, highlight, tile, scatter, line, heatmaps, histogram, and chord.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 2,
+    "msuid": 1009,
+    "para_id": 176,
+    "paper_id": 3,
+    "2d_coord": [
+      2.9785327911376953,
+      1.2070388793945312
+    ],
+    "MSU_id": 1009,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "as ideogram, highlight, and tile. The position of a track is determined by its inner and outer radii: the inner radius refers to the distance from the inner side of the track to the circle's center, while the outer radius refers to the distance from the outer side of the track to the center. To enhance visual appeal or meet analytical needs, multiple tracks can be grouped within the same concentric rings, forming a structure we refer to as a ring. For example, in Figure 1 (A), there are three nested rings, where the ring Figure 1 (A1) is composed of a tile, and the ring Figure 1 (A2) is composed of two tracks: line and histogram. A circos plot typically consists of multiple concentric rings arranged around the same genomic axis. Angular ranges are used to encode the position coordinates of data across all tracks, effectively mapping data's location on the genomic axis. For example, Figure 1 (B) shows a circos plot with eight tracks, listed from outer to inner as follows Figure 1 (B1 - B8): ideogram, highlight, tile, scatter, line, heatmaps, histogram, and chord. Circos plots are widely used to demonstrate similarities or differences among diverse genomic features associated with the same genomic regions [WJT*23]. Furthermore, Circos [Krz09] is the most commonly used tool for creating circos plots."
+  },
+  {
+    "sentence": "We conducted a track combination analysis to identify common patterns.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 1086,
+    "para_id": 190,
+    "paper_id": 3,
+    "2d_coord": [
+      0.9662600755691528,
+      1.7458901405334473
+    ],
+    "MSU_id": 1086,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "To support our recommendation method, we built a circos plot dataset including three modalities: circos plots (bitmaps), annotations (natural language), and configurations (structured files). We constructed the dataset through a three-step workflow: paper collection, illustration-annotation pair extraction, and illustration labeling. We then conducted a track combination analysis to identify common patterns. The workflow and analysis details are as follows:"
+  },
+  {
+    "sentence": "Positive samples were sourced from the Circos [Krz09] website and image searches on Google and Bing.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 1110,
+    "para_id": 194,
+    "paper_id": 3,
+    "2d_coord": [
+      1.030763864517212,
+      3.330803871154785
+    ],
+    "MSU_id": 1110,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "manual extraction of circos plot illustrations and their corresponding annotations from numerous papers, we developed a deep learning-based method to identify illustration-annotation pairs and filter out irrelevant information. We used PDFFigure2.0 [CD16] to render PDFs into bitmaps and PyMuPDF [Con15] to locate and crop illustrations, excluding images smaller than  $10\\%$  of the page width (e.g., icons). Poppler's paragraph grouping mechanism [Tea18] was then applied to match annotations with illustrations, resulting in 29,701 matched pairs with metadata such as paper source, page number, and position. To isolate circos plot illustrations, we trained a binary classification deep learning model using ResNet50 [KK21] fine-tuned with pre-trained weights from ImageNET1K_V2 [DDS*09]. Positive samples were sourced from the Circos [Krz09] website and image searches on Google and Bing, while negative samples came from VIS30K [CLL*21]. All images were in PNG (Portable Network Graphics) format and resized to  $224*224$  pixels as input. The dataset was split into  $80\\%$  for training and  $20\\%$  for testing. After training for 5 epochs, the model achieved  $99.23\\%$  accuracy on the test set. Using this model, we extracted 4,531 illustration-annotation pairs. After manual verification for accuracy and completeness, we retained 4,396 valid pairs."
+  },
+  {
+    "sentence": "Negative samples came from VIS30K [CLL*21].",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 1111,
+    "para_id": 194,
+    "paper_id": 3,
+    "2d_coord": [
+      0.7370678186416626,
+      2.5598692893981934
+    ],
+    "MSU_id": 1111,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "manual extraction of circos plot illustrations and their corresponding annotations from numerous papers, we developed a deep learning-based method to identify illustration-annotation pairs and filter out irrelevant information. We used PDFFigure2.0 [CD16] to render PDFs into bitmaps and PyMuPDF [Con15] to locate and crop illustrations, excluding images smaller than  $10\\%$  of the page width (e.g., icons). Poppler's paragraph grouping mechanism [Tea18] was then applied to match annotations with illustrations, resulting in 29,701 matched pairs with metadata such as paper source, page number, and position. To isolate circos plot illustrations, we trained a binary classification deep learning model using ResNet50 [KK21] fine-tuned with pre-trained weights from ImageNET1K_V2 [DDS*09]. Positive samples were sourced from the Circos [Krz09] website and image searches on Google and Bing, while negative samples came from VIS30K [CLL*21]. All images were in PNG (Portable Network Graphics) format and resized to  $224*224$  pixels as input. The dataset was split into  $80\\%$  for training and  $20\\%$  for testing. After training for 5 epochs, the model achieved  $99.23\\%$  accuracy on the test set. Using this model, we extracted 4,531 illustration-annotation pairs. After manual verification for accuracy and completeness, we retained 4,396 valid pairs."
+  },
+  {
+    "sentence": "All images were in PNG format.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 2,
+    "msuid": 1112,
+    "para_id": 194,
+    "paper_id": 3,
+    "2d_coord": [
+      2.119025707244873,
+      1.9888843297958374
+    ],
+    "MSU_id": 1112,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "manual extraction of circos plot illustrations and their corresponding annotations from numerous papers, we developed a deep learning-based method to identify illustration-annotation pairs and filter out irrelevant information. We used PDFFigure2.0 [CD16] to render PDFs into bitmaps and PyMuPDF [Con15] to locate and crop illustrations, excluding images smaller than  $10\\%$  of the page width (e.g., icons). Poppler's paragraph grouping mechanism [Tea18] was then applied to match annotations with illustrations, resulting in 29,701 matched pairs with metadata such as paper source, page number, and position. To isolate circos plot illustrations, we trained a binary classification deep learning model using ResNet50 [KK21] fine-tuned with pre-trained weights from ImageNET1K_V2 [DDS*09]. Positive samples were sourced from the Circos [Krz09] website and image searches on Google and Bing, while negative samples came from VIS30K [CLL*21]. All images were in PNG (Portable Network Graphics) format and resized to  $224*224$  pixels as input. The dataset was split into  $80\\%$  for training and  $20\\%$  for testing. After training for 5 epochs, the model achieved  $99.23\\%$  accuracy on the test set. Using this model, we extracted 4,531 illustration-annotation pairs. After manual verification for accuracy and completeness, we retained 4,396 valid pairs."
+  },
+  {
+    "sentence": "All images were resized to 224×224 pixels as input.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 1113,
+    "para_id": 194,
+    "paper_id": 3,
+    "2d_coord": [
+      3.089873790740967,
+      0.2462264895439148
+    ],
+    "MSU_id": 1113,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "manual extraction of circos plot illustrations and their corresponding annotations from numerous papers, we developed a deep learning-based method to identify illustration-annotation pairs and filter out irrelevant information. We used PDFFigure2.0 [CD16] to render PDFs into bitmaps and PyMuPDF [Con15] to locate and crop illustrations, excluding images smaller than  $10\\%$  of the page width (e.g., icons). Poppler's paragraph grouping mechanism [Tea18] was then applied to match annotations with illustrations, resulting in 29,701 matched pairs with metadata such as paper source, page number, and position. To isolate circos plot illustrations, we trained a binary classification deep learning model using ResNet50 [KK21] fine-tuned with pre-trained weights from ImageNET1K_V2 [DDS*09]. Positive samples were sourced from the Circos [Krz09] website and image searches on Google and Bing, while negative samples came from VIS30K [CLL*21]. All images were in PNG (Portable Network Graphics) format and resized to  $224*224$  pixels as input. The dataset was split into  $80\\%$  for training and  $20\\%$  for testing. After training for 5 epochs, the model achieved  $99.23\\%$  accuracy on the test set. Using this model, we extracted 4,531 illustration-annotation pairs. After manual verification for accuracy and completeness, we retained 4,396 valid pairs."
+  },
+  {
+    "sentence": "The dataset was split into 80% for training and 20% for testing.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 1114,
+    "para_id": 194,
+    "paper_id": 3,
+    "2d_coord": [
+      3.0103368759155273,
+      0.39647069573402405
+    ],
+    "MSU_id": 1114,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "manual extraction of circos plot illustrations and their corresponding annotations from numerous papers, we developed a deep learning-based method to identify illustration-annotation pairs and filter out irrelevant information. We used PDFFigure2.0 [CD16] to render PDFs into bitmaps and PyMuPDF [Con15] to locate and crop illustrations, excluding images smaller than  $10\\%$  of the page width (e.g., icons). Poppler's paragraph grouping mechanism [Tea18] was then applied to match annotations with illustrations, resulting in 29,701 matched pairs with metadata such as paper source, page number, and position. To isolate circos plot illustrations, we trained a binary classification deep learning model using ResNet50 [KK21] fine-tuned with pre-trained weights from ImageNET1K_V2 [DDS*09]. Positive samples were sourced from the Circos [Krz09] website and image searches on Google and Bing, while negative samples came from VIS30K [CLL*21]. All images were in PNG (Portable Network Graphics) format and resized to  $224*224$  pixels as input. The dataset was split into  $80\\%$  for training and  $20\\%$  for testing. After training for 5 epochs, the model achieved  $99.23\\%$  accuracy on the test set. Using this model, we extracted 4,531 illustration-annotation pairs. After manual verification for accuracy and completeness, we retained 4,396 valid pairs."
+  },
+  {
+    "sentence": "We enlisted five annotators with visualization experience.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 1124,
+    "para_id": 195,
+    "paper_id": 3,
+    "2d_coord": [
+      1.2104077339172363,
+      3.1371774673461914
+    ],
+    "MSU_id": 1124,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Illustration Labeling. Inspired by the Circos configuration format and XML (Extensible Markup Language) syntax, we use the syntax in Figure 2 to label illustrations. This syntax offers a structured representation to capture the core elements of circos plots, i.e., structures and track types. While it conceals implementation details to minimize the burden and cost of dataset annotation. To facilitate this process, we developed a web-based labeling tool and enlisted five annotators with visualization experience. Each circos plot was labeled by two annotators. On average, each annotator labeled approximately 1,800 illustrations, and the entire process took six weeks."
+  },
+  {
+    "sentence": "Each circos plot was labeled by two annotators.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 1125,
+    "para_id": 195,
+    "paper_id": 3,
+    "2d_coord": [
+      -0.009014829993247986,
+      2.1060259342193604
+    ],
+    "MSU_id": 1125,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Illustration Labeling. Inspired by the Circos configuration format and XML (Extensible Markup Language) syntax, we use the syntax in Figure 2 to label illustrations. This syntax offers a structured representation to capture the core elements of circos plots, i.e., structures and track types. While it conceals implementation details to minimize the burden and cost of dataset annotation. To facilitate this process, we developed a web-based labeling tool and enlisted five annotators with visualization experience. Each circos plot was labeled by two annotators. On average, each annotator labeled approximately 1,800 illustrations, and the entire process took six weeks."
+  },
+  {
+    "sentence": "On average, each annotator labeled approximately 1,800 illustrations.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 1126,
+    "para_id": 195,
+    "paper_id": 3,
+    "2d_coord": [
+      1.7509422302246094,
+      2.665276527404785
+    ],
+    "MSU_id": 1126,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Illustration Labeling. Inspired by the Circos configuration format and XML (Extensible Markup Language) syntax, we use the syntax in Figure 2 to label illustrations. This syntax offers a structured representation to capture the core elements of circos plots, i.e., structures and track types. While it conceals implementation details to minimize the burden and cost of dataset annotation. To facilitate this process, we developed a web-based labeling tool and enlisted five annotators with visualization experience. Each circos plot was labeled by two annotators. On average, each annotator labeled approximately 1,800 illustrations, and the entire process took six weeks."
+  },
+  {
+    "sentence": "The entire labeling process took six weeks.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 1127,
+    "para_id": 195,
+    "paper_id": 3,
+    "2d_coord": [
+      -1.1816319227218628,
+      1.0923521518707275
+    ],
+    "MSU_id": 1127,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Illustration Labeling. Inspired by the Circos configuration format and XML (Extensible Markup Language) syntax, we use the syntax in Figure 2 to label illustrations. This syntax offers a structured representation to capture the core elements of circos plots, i.e., structures and track types. While it conceals implementation details to minimize the burden and cost of dataset annotation. To facilitate this process, we developed a web-based labeling tool and enlisted five annotators with visualization experience. Each circos plot was labeled by two annotators. On average, each annotator labeled approximately 1,800 illustrations, and the entire process took six weeks."
+  },
+  {
+    "sentence": "We conducted a detailed analysis of the track combinations used in circos plots within our dataset.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 1128,
+    "para_id": 196,
+    "paper_id": 3,
+    "2d_coord": [
+      -0.9921993613243103,
+      0.49526649713516235
+    ],
+    "MSU_id": 1128,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Track Combination Analysis. We conducted a detailed analysis of the track combinations used in circos plots within our dataset. First, we examined the number of rings (Figure 3 (A)) and tracks types (Figure 3 (B)) per plot. The results show that many plots use more than five rings, indicating complex requirements for track combination and ordering. Next, we analyzed the number of tracks per ring (Figure 3 (C)), revealing that multiple tracks are typically stacked rather than synthesized within the same ring. Figure 3 (D)"
+  },
+  {
+    "sentence": "We examined the number of rings per plot.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 1129,
+    "para_id": 196,
+    "paper_id": 3,
+    "2d_coord": [
+      -0.23317991197109222,
+      2.4044713973999023
+    ],
+    "MSU_id": 1129,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Track Combination Analysis. We conducted a detailed analysis of the track combinations used in circos plots within our dataset. First, we examined the number of rings (Figure 3 (A)) and tracks types (Figure 3 (B)) per plot. The results show that many plots use more than five rings, indicating complex requirements for track combination and ordering. Next, we analyzed the number of tracks per ring (Figure 3 (C)), revealing that multiple tracks are typically stacked rather than synthesized within the same ring. Figure 3 (D)"
+  },
+  {
+    "sentence": "We examined the track types per plot.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 1130,
+    "para_id": 196,
+    "paper_id": 3,
+    "2d_coord": [
+      0.1128876581788063,
+      0.9385956525802612
+    ],
+    "MSU_id": 1130,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Track Combination Analysis. We conducted a detailed analysis of the track combinations used in circos plots within our dataset. First, we examined the number of rings (Figure 3 (A)) and tracks types (Figure 3 (B)) per plot. The results show that many plots use more than five rings, indicating complex requirements for track combination and ordering. Next, we analyzed the number of tracks per ring (Figure 3 (C)), revealing that multiple tracks are typically stacked rather than synthesized within the same ring. Figure 3 (D)"
+  },
+  {
+    "sentence": "We analyzed the number of tracks per ring.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 1133,
+    "para_id": 196,
+    "paper_id": 3,
+    "2d_coord": [
+      0.5002169013023376,
+      3.199342727661133
+    ],
+    "MSU_id": 1133,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Track Combination Analysis. We conducted a detailed analysis of the track combinations used in circos plots within our dataset. First, we examined the number of rings (Figure 3 (A)) and tracks types (Figure 3 (B)) per plot. The results show that many plots use more than five rings, indicating complex requirements for track combination and ordering. Next, we analyzed the number of tracks per ring (Figure 3 (C)), revealing that multiple tracks are typically stacked rather than synthesized within the same ring. Figure 3 (D)"
+  },
+  {
+    "sentence": "The distribution of different tracks in the dataset is illustrated.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 1142,
+    "para_id": 198,
+    "paper_id": 3,
+    "2d_coord": [
+      2.3141016960144043,
+      1.1718863248825073
+    ],
+    "MSU_id": 1142,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "illustrates the distribution of different tracks in the dataset. To further understand the relationships between track types, we calculated pairwise relationships for the two primary track combination modes: stacked and synthesized."
+  },
+  {
+    "sentence": "Figure 6 illustrates a usage scenario in which a bioinformatics analyst, Alex, utilized Recom Edit Panel to create a circos plot.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 1295,
+    "para_id": 228,
+    "paper_id": 3,
+    "2d_coord": [
+      -2.1683692932128906,
+      -0.34858325123786926
+    ],
+    "MSU_id": 1295,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Figure 6: This figure illustrates a usage scenario in which a bioinformatics analyst, Alex, utilized Recom Edit Panel to create circos plot, following (A) gain a design recommendation, (B) find reference papers that are similar to the requirements, and (C-D) check reference papers' corresponding illustration and annotation."
+  },
+  {
+    "sentence": "Mice data and attachment datasets were obtained via the Data Panel.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 1305,
+    "para_id": 231,
+    "paper_id": 3,
+    "2d_coord": [
+      0.7752318978309631,
+      1.8331210613250732
+    ],
+    "MSU_id": 1305,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "and mice, along with attachment datasets via the Data Panel. Intell-Circos parsed and displayed these files."
+  },
+  {
+    "sentence": "Alex started to create a circos plot.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 2,
+    "msuid": 1308,
+    "para_id": 232,
+    "paper_id": 3,
+    "2d_coord": [
+      -2.454984188079834,
+      -1.0969997644424438
+    ],
+    "MSU_id": 1308,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Then, Alex started to create a circos plot. Firstly, Alex opened the Recom Edit Panel to request recommendations with a prompt for design inspiration: \"Given genomic data for humans and mice, compare their gene conversation scores and the homology relationship between genes, and display the sampling situation of gene sequencing.\" IntelliCircos provided the following recommendation: `<ideogram><split>``<highlight><line>``<split><scatter>``<split><chord>`. This can be interpreted as: the `<ideogram>` track displays genomic information, the `<highlight>` track shows gene conservation scores, the `<line>` track displays homology relationships, the `<scatter>` track shows the sampling information of gene sequencing, the `<chord>` track illustrates relationships between genomic data (Figure 6 (A)). However, Alex felt the `<scatter>` track was improper for displaying gene sequencing sampling. She re-entered the prompt, requesting a new track: \"The sampling profile refers to gene segments measured in high-throughput sequencing and is used to show coverage of gene locations, recommend the new view type for this data type.\" Subsequently, IntelliCircos recommended: `<ideogram><split>``<highlight><line>``<split><tile>``<split><chord>` and explained: \"I suggest using a `<tile>` track instead of a `<scatter>` track as it can display overlapping ranges effectively.\""
+  },
+  {
+    "sentence": "Alex felt the '<scatter>' track was improper for displaying gene sequencing sampling.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 2,
+    "msuid": 1317,
+    "para_id": 232,
+    "paper_id": 3,
+    "2d_coord": [
+      0.044730834662914276,
+      1.7589472532272339
+    ],
+    "MSU_id": 1317,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Then, Alex started to create a circos plot. Firstly, Alex opened the Recom Edit Panel to request recommendations with a prompt for design inspiration: \"Given genomic data for humans and mice, compare their gene conversation scores and the homology relationship between genes, and display the sampling situation of gene sequencing.\" IntelliCircos provided the following recommendation: `<ideogram><split>``<highlight><line>``<split><scatter>``<split><chord>`. This can be interpreted as: the `<ideogram>` track displays genomic information, the `<highlight>` track shows gene conservation scores, the `<line>` track displays homology relationships, the `<scatter>` track shows the sampling information of gene sequencing, the `<chord>` track illustrates relationships between genomic data (Figure 6 (A)). However, Alex felt the `<scatter>` track was improper for displaying gene sequencing sampling. She re-entered the prompt, requesting a new track: \"The sampling profile refers to gene segments measured in high-throughput sequencing and is used to show coverage of gene locations, recommend the new view type for this data type.\" Subsequently, IntelliCircos recommended: `<ideogram><split>``<highlight><line>``<split><tile>``<split><chord>` and explained: \"I suggest using a `<tile>` track instead of a `<scatter>` track as it can display overlapping ranges effectively.\""
+  },
+  {
+    "sentence": "We conducted a user study with 8 participants (P1–P8).",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 1340,
+    "para_id": 236,
+    "paper_id": 3,
+    "2d_coord": [
+      1.5455507040023804,
+      3.1498327255249023
+    ],
+    "MSU_id": 1340,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "To evaluate the usability and effectiveness of IntelliCircos, we conducted a user study with 8 participants  $(\\mathrm{P_1 - P_8})$ . They were asked to use IntelliCircos to create circos plots and give both qualitative and quantitative feedback. The study setting is introduced in Section 8.1, and the results are presented in Section 8.2. We did not conduct a comparative study since there are no appropriate baselines. Existing tools like Circos and RCircos are often used by bioinformatics analysts. Also, these tools primarily assist in the implementation while overlooking the design process. In contrast, IntelliCircos supports both design and implementation, seamlessly integrating these two stages. It makes it difficult and unfair to compare IntelliCircos with existing tools. As a result, we opted for a qualitative assessment of users' experiences with IntelliCircos, comparing it to their current practices."
+  },
+  {
+    "sentence": "The user study was conducted to evaluate the usability and effectiveness of IntelliCircos.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 5,
+    "msuid": 1341,
+    "para_id": 236,
+    "paper_id": 3,
+    "2d_coord": [
+      1.3224002122879028,
+      2.8057947158813477
+    ],
+    "MSU_id": 1341,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "To evaluate the usability and effectiveness of IntelliCircos, we conducted a user study with 8 participants  $(\\mathrm{P_1 - P_8})$ . They were asked to use IntelliCircos to create circos plots and give both qualitative and quantitative feedback. The study setting is introduced in Section 8.1, and the results are presented in Section 8.2. We did not conduct a comparative study since there are no appropriate baselines. Existing tools like Circos and RCircos are often used by bioinformatics analysts. Also, these tools primarily assist in the implementation while overlooking the design process. In contrast, IntelliCircos supports both design and implementation, seamlessly integrating these two stages. It makes it difficult and unfair to compare IntelliCircos with existing tools. As a result, we opted for a qualitative assessment of users' experiences with IntelliCircos, comparing it to their current practices."
+  },
+  {
+    "sentence": "Participants were asked to use IntelliCircos to create circos plots.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 1342,
+    "para_id": 236,
+    "paper_id": 3,
+    "2d_coord": [
+      -2.1739253997802734,
+      -0.873328685760498
+    ],
+    "MSU_id": 1342,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "To evaluate the usability and effectiveness of IntelliCircos, we conducted a user study with 8 participants  $(\\mathrm{P_1 - P_8})$ . They were asked to use IntelliCircos to create circos plots and give both qualitative and quantitative feedback. The study setting is introduced in Section 8.1, and the results are presented in Section 8.2. We did not conduct a comparative study since there are no appropriate baselines. Existing tools like Circos and RCircos are often used by bioinformatics analysts. Also, these tools primarily assist in the implementation while overlooking the design process. In contrast, IntelliCircos supports both design and implementation, seamlessly integrating these two stages. It makes it difficult and unfair to compare IntelliCircos with existing tools. As a result, we opted for a qualitative assessment of users' experiences with IntelliCircos, comparing it to their current practices."
+  },
+  {
+    "sentence": "Participants were asked to give both qualitative and quantitative feedback.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 1343,
+    "para_id": 236,
+    "paper_id": 3,
+    "2d_coord": [
+      1.435301423072815,
+      2.911808490753174
+    ],
+    "MSU_id": 1343,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "To evaluate the usability and effectiveness of IntelliCircos, we conducted a user study with 8 participants  $(\\mathrm{P_1 - P_8})$ . They were asked to use IntelliCircos to create circos plots and give both qualitative and quantitative feedback. The study setting is introduced in Section 8.1, and the results are presented in Section 8.2. We did not conduct a comparative study since there are no appropriate baselines. Existing tools like Circos and RCircos are often used by bioinformatics analysts. Also, these tools primarily assist in the implementation while overlooking the design process. In contrast, IntelliCircos supports both design and implementation, seamlessly integrating these two stages. It makes it difficult and unfair to compare IntelliCircos with existing tools. As a result, we opted for a qualitative assessment of users' experiences with IntelliCircos, comparing it to their current practices."
+  },
+  {
+    "sentence": "We recruited eight graduate students from different local universities in biology-related majors.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 1356,
+    "para_id": 238,
+    "paper_id": 3,
+    "2d_coord": [
+      0.9629608392715454,
+      2.987278461456299
+    ],
+    "MSU_id": 1356,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Participants. We recruited eight graduate students from different local universities in biology-related majors, each with over three years of experience in circos plots creation. All participants are familiar with creating circos plots, with a frequency of 1-5 plots per month. Participants self-reported their familiarity with Circos with a rating of  $5.9 \\pm 1.1$ , where 1 represents \"No Experience\" and 7 represents \"Expert\"."
+  },
+  {
+    "sentence": "Each participant had over three years of experience in circos plots creation.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 1357,
+    "para_id": 238,
+    "paper_id": 3,
+    "2d_coord": [
+      -2.3324289321899414,
+      -0.9274688959121704
+    ],
+    "MSU_id": 1357,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Participants. We recruited eight graduate students from different local universities in biology-related majors, each with over three years of experience in circos plots creation. All participants are familiar with creating circos plots, with a frequency of 1-5 plots per month. Participants self-reported their familiarity with Circos with a rating of  $5.9 \\pm 1.1$ , where 1 represents \"No Experience\" and 7 represents \"Expert\"."
+  },
+  {
+    "sentence": "All participants are familiar with creating circos plots, with a frequency of 1-5 plots per month.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 1358,
+    "para_id": 238,
+    "paper_id": 3,
+    "2d_coord": [
+      -2.434424877166748,
+      -1.0000770092010498
+    ],
+    "MSU_id": 1358,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Participants. We recruited eight graduate students from different local universities in biology-related majors, each with over three years of experience in circos plots creation. All participants are familiar with creating circos plots, with a frequency of 1-5 plots per month. Participants self-reported their familiarity with Circos with a rating of  $5.9 \\pm 1.1$ , where 1 represents \"No Experience\" and 7 represents \"Expert\"."
+  },
+  {
+    "sentence": "Participants self-reported their familiarity with Circos with a rating of $5.9 pm 1.1$, where 1 represents 'No Experience' and 7 represents 'Expert'.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 5,
+    "msuid": 1359,
+    "para_id": 238,
+    "paper_id": 3,
+    "2d_coord": [
+      0.879761278629303,
+      0.9132318496704102
+    ],
+    "MSU_id": 1359,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Participants. We recruited eight graduate students from different local universities in biology-related majors, each with over three years of experience in circos plots creation. All participants are familiar with creating circos plots, with a frequency of 1-5 plots per month. Participants self-reported their familiarity with Circos with a rating of  $5.9 \\pm 1.1$ , where 1 represents \"No Experience\" and 7 represents \"Expert\"."
+  },
+  {
+    "sentence": "In our user study, participants were asked to create a circos plot using IntelliCircos.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 1360,
+    "para_id": 239,
+    "paper_id": 3,
+    "2d_coord": [
+      -0.9502933621406555,
+      0.7964171171188354
+    ],
+    "MSU_id": 1360,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Task and Data. In our user study, participants were asked to create a circos plot using IntelliCircos. They were required to use the provided data as sufficient as possible. We utilized example data from CircosJS [Koc16], which includes track data for plotting alongside chromosomes, label data for annotation elements in different tracks, and link data to establish connections between pairs of genomic regions. This dataset meets the requirements of circos plots, including relationships and multi-layered annotations across various scales [Krz09], and its manageable size ensured the study did not last for too long."
+  },
+  {
+    "sentence": "Participants were required to use the provided data as sufficient as possible.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 1361,
+    "para_id": 239,
+    "paper_id": 3,
+    "2d_coord": [
+      -0.6860499382019043,
+      -2.184479236602783
+    ],
+    "MSU_id": 1361,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Task and Data. In our user study, participants were asked to create a circos plot using IntelliCircos. They were required to use the provided data as sufficient as possible. We utilized example data from CircosJS [Koc16], which includes track data for plotting alongside chromosomes, label data for annotation elements in different tracks, and link data to establish connections between pairs of genomic regions. This dataset meets the requirements of circos plots, including relationships and multi-layered annotations across various scales [Krz09], and its manageable size ensured the study did not last for too long."
+  },
+  {
+    "sentence": "All studies were conducted through one-to-one in-person meetings, each lasting about an hour.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 1366,
+    "para_id": 240,
+    "paper_id": 3,
+    "2d_coord": [
+      1.0692929029464722,
+      1.78325617313385
+    ],
+    "MSU_id": 1366,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Procedure. All studies were conducted through one-to-one in-person meetings, each lasting about an hour. Prior to the user study, we briefly introduced the study procedure to participants and gained their consent for video recording the whole process. The evaluation consisted of four stages: a training session, an experimental session, a post-study questionnaire session, and a post-study semi-structured interview. During the training session, we first introduced the features of IntelliCircos, and demonstrated the whole usage process by creating an example circos plot (10 minutes). Then, participants were asked to freely explore the system to familiarize themselves with the features (5 minutes). Next, they were asked to create a circos plot using IntelliCircos (25 minutes). After this, participants were asked to complete a 7-point Likert questionnaire in a think-aloud protocol, where users were encouraged to justify their ratings (5 minutes). Specifically, a rating of 1 represents \"strongly disagree\", while a rating of 7 represents \"strongly agree\". Finally, the study concluded with a semi-structured interview (15 minutes). This interview included topics on the practices with exiting tools, and experience with IntelliCircos."
+  },
+  {
+    "sentence": "Prior to the user study, we briefly introduced the study procedure to participants and gained their consent for video recording the whole process.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 1367,
+    "para_id": 240,
+    "paper_id": 3,
+    "2d_coord": [
+      0.24890285730361938,
+      1.4751681089401245
+    ],
+    "MSU_id": 1367,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Procedure. All studies were conducted through one-to-one in-person meetings, each lasting about an hour. Prior to the user study, we briefly introduced the study procedure to participants and gained their consent for video recording the whole process. The evaluation consisted of four stages: a training session, an experimental session, a post-study questionnaire session, and a post-study semi-structured interview. During the training session, we first introduced the features of IntelliCircos, and demonstrated the whole usage process by creating an example circos plot (10 minutes). Then, participants were asked to freely explore the system to familiarize themselves with the features (5 minutes). Next, they were asked to create a circos plot using IntelliCircos (25 minutes). After this, participants were asked to complete a 7-point Likert questionnaire in a think-aloud protocol, where users were encouraged to justify their ratings (5 minutes). Specifically, a rating of 1 represents \"strongly disagree\", while a rating of 7 represents \"strongly agree\". Finally, the study concluded with a semi-structured interview (15 minutes). This interview included topics on the practices with exiting tools, and experience with IntelliCircos."
+  },
+  {
+    "sentence": "We report our user study results.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 1376,
+    "para_id": 241,
+    "paper_id": 3,
+    "2d_coord": [
+      1.795234203338623,
+      2.723405361175537
+    ],
+    "MSU_id": 1376,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "In the following, we report our user study results including challenges of current circos plot creation tools, participants' questionnaire ratings (Figure 7), and feedback to our tool."
+  },
+  {
+    "sentence": "Figure 7 (Q1 - Q4) depicts the distributions of ratings, as well as the medians (MDs) and interquartile ranges (IQRs) for all participants.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 1402,
+    "para_id": 245,
+    "paper_id": 3,
+    "2d_coord": [
+      2.129509925842285,
+      -0.9175069332122803
+    ],
+    "MSU_id": 1402,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "In terms of usability, Figure 7 (Q1 - Q4) depicts the distributions of ratings, as well as the medians (MDs) and interquartile ranges (IQRs) for all participants. Overall, IntelliCircos was easy to learn and use, with both aspects receiving median ratings of 6 or higher. While some participants gave low ratings on certain aspects, all expressed interest in using IntelliCircos in their future work (Q1). For instance,  $\\mathrm{P}_6$  gave scores under four for Q8 but still rated 6 for Q1.  $\\mathrm{P}_5$  rated 4 for Q2, stating the steep learning curve for novice genomics researchers. Notably, during the interview, all participants praised the seamless integration between design and implementation, as well as the three interactive modules (Recom Edit Panel, Reference Panel, and Configuration Panel)."
+  },
+  {
+    "sentence": "Feedback on IntelliCircos was collected.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 2,
+    "msuid": 1421,
+    "para_id": 247,
+    "paper_id": 3,
+    "2d_coord": [
+      1.6885446310043335,
+      2.8369975090026855
+    ],
+    "MSU_id": 1421,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Feedback on IntelliCircos. Overall, feedback from all participants on IntelliCircos was positive. Participants found the user in"
+  },
+  {
+    "sentence": "However, early testing revealed challenges in formulating complex prompts.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 1467,
+    "para_id": 254,
+    "paper_id": 3,
+    "2d_coord": [
+      0.7092573046684265,
+      1.9162203073501587
+    ],
+    "MSU_id": 1467,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "Streamlining the Creation Process from Design to Implementation. IntelliCircos simplifies the creation of circos plots by providing AI-generated recommendations and similar design references sourced from high-quality examples. The tool also automates the implementation of designs while offering customizable configuration options for fine-tuning the created visualization. One important lesson we learned was balancing simplicity and flexibility in the design-to-implementation workflow. Our findings revealed that most participants preferred the progressive recommendation approach over fully-automated suggestions or manual design, as it allowed them to iteratively refine the results to better align with their preferences. This highlights the importance of workflows that adapt to users' evolving needs. Natural language input further simplified the design process by allowing users to intuitively express their requirements. However, early testing revealed challenges in formulating complex prompts. To address this, we integrated predefined templates and auto-completion features, which were well-received by the participants. This underscores the value of intuitive UI enhancements in reducing the learning curve. While track-level configuration provides flexibility for customization, participants found it cumbersome when many adjustments were needed. A promising future direction is to enable users to select circos plots as references, allowing the tool to learn from these examples and recommend similar designs that better align with user preferences, thereby reducing the need for manual adjustments."
+  },
+  {
+    "sentence": "Participants in the user study were tasked to create circos plots using IntelliCircos.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 1501,
+    "para_id": 258,
+    "paper_id": 3,
+    "2d_coord": [
+      -1.2672184705734253,
+      0.41980794072151184
+    ],
+    "MSU_id": 1501,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "**Evaluations.** In our user study, participants were tasked to create circos plots using IntelliCircos to evaluate its support for plot creation. However, the evaluation process could be improved from several perspectives. First, while we assessed the usability and effectiveness of IntelliCircos's main features, we did not evaluate AI assistance in terms of trust and perceived cognitive load, which is an interesting part to dive deeper for empirical insights as suggested by [YWWW19, GKC*23]. Examining these aspects would offer additional insights into the tool's overall effectiveness. Second, this paper primarily focuses on the design and development of the tool, and as outlined in Section 8.1, we did not include a baseline comparison in our study. However, a thorough empirical investigation comparing different approaches (e.g., IntelliCircos and Circos software) could provide a broader understanding of their respective strengths and limitations. Third, the study's participant pool was limited. Future work should involve a larger and more diverse group, including those not experienced creators to better assess the tool's real-world value. Lastly, all questions in the questionnaire are positive. A better design approach would involve inverting the polarity of questions to validate participants' responses."
+  },
+  {
+    "sentence": "The task was designed to evaluate IntelliCircos’s support for plot creation.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 4,
+    "msuid": 1502,
+    "para_id": 258,
+    "paper_id": 3,
+    "2d_coord": [
+      -2.1022911071777344,
+      -0.9685037136077881
+    ],
+    "MSU_id": 1502,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "**Evaluations.** In our user study, participants were tasked to create circos plots using IntelliCircos to evaluate its support for plot creation. However, the evaluation process could be improved from several perspectives. First, while we assessed the usability and effectiveness of IntelliCircos's main features, we did not evaluate AI assistance in terms of trust and perceived cognitive load, which is an interesting part to dive deeper for empirical insights as suggested by [YWWW19, GKC*23]. Examining these aspects would offer additional insights into the tool's overall effectiveness. Second, this paper primarily focuses on the design and development of the tool, and as outlined in Section 8.1, we did not include a baseline comparison in our study. However, a thorough empirical investigation comparing different approaches (e.g., IntelliCircos and Circos software) could provide a broader understanding of their respective strengths and limitations. Third, the study's participant pool was limited. Future work should involve a larger and more diverse group, including those not experienced creators to better assess the tool's real-world value. Lastly, all questions in the questionnaire are positive. A better design approach would involve inverting the polarity of questions to validate participants' responses."
+  },
+  {
+    "sentence": "The study assessed the usability and effectiveness of IntelliCircos’s main features.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 1504,
+    "para_id": 258,
+    "paper_id": 3,
+    "2d_coord": [
+      1.1418465375900269,
+      1.4145869016647339
+    ],
+    "MSU_id": 1504,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "**Evaluations.** In our user study, participants were tasked to create circos plots using IntelliCircos to evaluate its support for plot creation. However, the evaluation process could be improved from several perspectives. First, while we assessed the usability and effectiveness of IntelliCircos's main features, we did not evaluate AI assistance in terms of trust and perceived cognitive load, which is an interesting part to dive deeper for empirical insights as suggested by [YWWW19, GKC*23]. Examining these aspects would offer additional insights into the tool's overall effectiveness. Second, this paper primarily focuses on the design and development of the tool, and as outlined in Section 8.1, we did not include a baseline comparison in our study. However, a thorough empirical investigation comparing different approaches (e.g., IntelliCircos and Circos software) could provide a broader understanding of their respective strengths and limitations. Third, the study's participant pool was limited. Future work should involve a larger and more diverse group, including those not experienced creators to better assess the tool's real-world value. Lastly, all questions in the questionnaire are positive. A better design approach would involve inverting the polarity of questions to validate participants' responses."
+  },
+  {
+    "sentence": "The study did not evaluate AI assistance in terms of trust.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 1505,
+    "para_id": 258,
+    "paper_id": 3,
+    "2d_coord": [
+      1.0374231338500977,
+      -0.43284258246421814
+    ],
+    "MSU_id": 1505,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "**Evaluations.** In our user study, participants were tasked to create circos plots using IntelliCircos to evaluate its support for plot creation. However, the evaluation process could be improved from several perspectives. First, while we assessed the usability and effectiveness of IntelliCircos's main features, we did not evaluate AI assistance in terms of trust and perceived cognitive load, which is an interesting part to dive deeper for empirical insights as suggested by [YWWW19, GKC*23]. Examining these aspects would offer additional insights into the tool's overall effectiveness. Second, this paper primarily focuses on the design and development of the tool, and as outlined in Section 8.1, we did not include a baseline comparison in our study. However, a thorough empirical investigation comparing different approaches (e.g., IntelliCircos and Circos software) could provide a broader understanding of their respective strengths and limitations. Third, the study's participant pool was limited. Future work should involve a larger and more diverse group, including those not experienced creators to better assess the tool's real-world value. Lastly, all questions in the questionnaire are positive. A better design approach would involve inverting the polarity of questions to validate participants' responses."
+  },
+  {
+    "sentence": "The study did not evaluate AI assistance in terms of perceived cognitive load.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 1506,
+    "para_id": 258,
+    "paper_id": 3,
+    "2d_coord": [
+      1.2604427337646484,
+      0.3691078722476959
+    ],
+    "MSU_id": 1506,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "**Evaluations.** In our user study, participants were tasked to create circos plots using IntelliCircos to evaluate its support for plot creation. However, the evaluation process could be improved from several perspectives. First, while we assessed the usability and effectiveness of IntelliCircos's main features, we did not evaluate AI assistance in terms of trust and perceived cognitive load, which is an interesting part to dive deeper for empirical insights as suggested by [YWWW19, GKC*23]. Examining these aspects would offer additional insights into the tool's overall effectiveness. Second, this paper primarily focuses on the design and development of the tool, and as outlined in Section 8.1, we did not include a baseline comparison in our study. However, a thorough empirical investigation comparing different approaches (e.g., IntelliCircos and Circos software) could provide a broader understanding of their respective strengths and limitations. Third, the study's participant pool was limited. Future work should involve a larger and more diverse group, including those not experienced creators to better assess the tool's real-world value. Lastly, all questions in the questionnaire are positive. A better design approach would involve inverting the polarity of questions to validate participants' responses."
+  },
+  {
+    "sentence": "The study did not include a baseline comparison.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 1510,
+    "para_id": 258,
+    "paper_id": 3,
+    "2d_coord": [
+      1.3455275297164917,
+      1.5824519395828247
+    ],
+    "MSU_id": 1510,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "**Evaluations.** In our user study, participants were tasked to create circos plots using IntelliCircos to evaluate its support for plot creation. However, the evaluation process could be improved from several perspectives. First, while we assessed the usability and effectiveness of IntelliCircos's main features, we did not evaluate AI assistance in terms of trust and perceived cognitive load, which is an interesting part to dive deeper for empirical insights as suggested by [YWWW19, GKC*23]. Examining these aspects would offer additional insights into the tool's overall effectiveness. Second, this paper primarily focuses on the design and development of the tool, and as outlined in Section 8.1, we did not include a baseline comparison in our study. However, a thorough empirical investigation comparing different approaches (e.g., IntelliCircos and Circos software) could provide a broader understanding of their respective strengths and limitations. Third, the study's participant pool was limited. Future work should involve a larger and more diverse group, including those not experienced creators to better assess the tool's real-world value. Lastly, all questions in the questionnaire are positive. A better design approach would involve inverting the polarity of questions to validate participants' responses."
+  },
+  {
+    "sentence": "The study's participant pool was limited.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 3,
+    "msuid": 1512,
+    "para_id": 258,
+    "paper_id": 3,
+    "2d_coord": [
+      -0.8944501280784607,
+      1.2311104536056519
+    ],
+    "MSU_id": 1512,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "**Evaluations.** In our user study, participants were tasked to create circos plots using IntelliCircos to evaluate its support for plot creation. However, the evaluation process could be improved from several perspectives. First, while we assessed the usability and effectiveness of IntelliCircos's main features, we did not evaluate AI assistance in terms of trust and perceived cognitive load, which is an interesting part to dive deeper for empirical insights as suggested by [YWWW19, GKC*23]. Examining these aspects would offer additional insights into the tool's overall effectiveness. Second, this paper primarily focuses on the design and development of the tool, and as outlined in Section 8.1, we did not include a baseline comparison in our study. However, a thorough empirical investigation comparing different approaches (e.g., IntelliCircos and Circos software) could provide a broader understanding of their respective strengths and limitations. Third, the study's participant pool was limited. Future work should involve a larger and more diverse group, including those not experienced creators to better assess the tool's real-world value. Lastly, all questions in the questionnaire are positive. A better design approach would involve inverting the polarity of questions to validate participants' responses."
+  },
+  {
+    "sentence": "All questions in the questionnaire were positive.",
+    "title": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "category": "Experiment",
+    "rank": 2,
+    "msuid": 1515,
+    "para_id": 258,
+    "paper_id": 3,
+    "2d_coord": [
+      0.15895982086658478,
+      1.9878495931625366
+    ],
+    "MSU_id": 1515,
+    "paper_info": "/home/lxy/newdata_3/IntelliCircos_msu",
+    "paragraph_info": "**Evaluations.** In our user study, participants were tasked to create circos plots using IntelliCircos to evaluate its support for plot creation. However, the evaluation process could be improved from several perspectives. First, while we assessed the usability and effectiveness of IntelliCircos's main features, we did not evaluate AI assistance in terms of trust and perceived cognitive load, which is an interesting part to dive deeper for empirical insights as suggested by [YWWW19, GKC*23]. Examining these aspects would offer additional insights into the tool's overall effectiveness. Second, this paper primarily focuses on the design and development of the tool, and as outlined in Section 8.1, we did not include a baseline comparison in our study. However, a thorough empirical investigation comparing different approaches (e.g., IntelliCircos and Circos software) could provide a broader understanding of their respective strengths and limitations. Third, the study's participant pool was limited. Future work should involve a larger and more diverse group, including those not experienced creators to better assess the tool's real-world value. Lastly, all questions in the questionnaire are positive. A better design approach would involve inverting the polarity of questions to validate participants' responses."
+  }
+]

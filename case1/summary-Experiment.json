@@ -19,7 +19,7 @@
     "MSU_ids": [
       12
     ],
-    "summary": "Summary:\nThe common theme across the papers appears to be the investigation of continuous flame flashback during mode transition. This suggests a shared focus on the phenomenon of flame behavior under changing operational modes, indicating a specific and focused research area."
+    "summary": "The common theme across the papers appears to be the investigation of continuous flame flashback during mode transition. This suggests a shared focus on the phenomenon of flame behavior under changing operational modes, indicating a specific and focused research area."
   },
   {
     "hex_coord": [
@@ -67,3 +67,4 @@
     "summary": "The sentence provided discusses a comparison of transition processes from scram to ram and ram to scram by manipulating injection pressure. The common theme across these papers appears to be the study of transition processes in fluid dynamics, suggesting a specific focus on flow behavior under varying conditions."
   }
 ]
+

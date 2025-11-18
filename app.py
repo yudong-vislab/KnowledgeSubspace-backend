@@ -60,7 +60,52 @@ if HAS_COMPRESS:
 
 # ================= Paths =================
 ROOT_DIR = pathlib.Path(__file__).parent.resolve()
-DATA_PATH = ROOT_DIR / "data" / "semantic_map_data.json"
+
+# 语义图数据根目录 & 默认 case
+CASE_DATA_ROOT = ROOT_DIR / "data"
+_DEFAULT_CASE_RAW = (os.getenv("DEFAULT_CASE") or "case3").strip().lower()
+
+def _normalize_case_id(pid: Optional[str]) -> str:
+    """
+    把各种大小写/空格形式统一成 'case1' / 'case2' / 'case3'，
+    如果不认识就回退到默认 case。
+    """
+    if not pid:
+        return "case3"
+    t = str(pid).strip().lower()
+    t = t.replace(" ", "")
+    if t in ("case1", "1"):
+        return "case1"
+    if t in ("case2", "2"):
+        return "case2"
+    if t in ("case3", "3"):
+        return "case3"
+    # 兜底：环境变量里设的 DEFAULT_CASE
+    dc = _DEFAULT_CASE_RAW.replace(" ", "")
+    if dc in ("case1", "case2", "case3"):
+        return dc
+    return "case3"
+
+def _match_case_id(text: str) -> Optional[str]:
+    """
+    在自然语言里模糊匹配 case 标识，如：
+      - in case 1 / for case1 / on case 2
+    """
+    if not text:
+        return None
+    t = text.lower()
+    for key in ("case 1", "case1", "case 2", "case2", "case 3", "case3"):
+        if key in t:
+            return _normalize_case_id(key)
+    return None
+
+def get_data_path(project_id: Optional[str] = None) -> pathlib.Path:
+    """
+    根据 project_id(case1/2/3) 决定 semantic_map_data.json 的路径。
+    """
+    cid = _normalize_case_id(project_id or _DEFAULT_CASE_RAW)
+    return CASE_DATA_ROOT / cid / "semantic_map_data.json"
+
 
 PDF_ROOT = ROOT_DIR / "data" / "pdf"        # e.g., data/pdf/case1/*.pdf
 INDEX_ROOT = ROOT_DIR / "data" / "indexes"  # e.g., data/indexes/case1/<doc_stem>/
@@ -95,8 +140,12 @@ def _ensure_full_package(data: dict) -> dict:
     data.setdefault("build_info", {"ts": int(time.time()), "tool": "app.py@runtime"})
     return data
 
-def load_data(): return _ensure_full_package(_json_load(DATA_PATH))
-def save_data(data): _json_save(DATA_PATH, data)
+def load_data(project_id: Optional[str] = None):
+    return _ensure_full_package(_json_load(get_data_path(project_id)))
+
+def save_data(data, project_id: Optional[str] = None):
+    _json_save(get_data_path(project_id), data)
+
 
 def parse_subspace_command(s: str) -> str:
     """
@@ -288,53 +337,65 @@ def is_subspace_command(s: str) -> bool:
         # "show X and Y" 这种也判定为 UI 控制（常见口语化）
         if re.match(r"^(show|hide)\s+\w+", t):
             return True
+    # 2) 兜底：如果句子里既有 all 又有 subspaces，也当成子空间指令
+    if "subspace" in t or "subspaces" in t:
+        return True
     return False
 
 
 # ================= Semantic map minimal routes (unchanged interface) =================
 @app.get("/api/semantic-map")
 def get_semantic_map():
-    # 加载最新的语义图数据
-    data = load_data()
-    
-    # 获取当前文件的 ETag（用于版本控制）
-    etag = _file_etag(DATA_PATH)
-    
-    # 获取客户端请求的 ETag，如果相同则返回 304（表示数据未变）
+    # 从 query 里拿 case：?project_id=case1 或 ?case=1
+    raw_pid = request.args.get("project_id") or request.args.get("case")
+    project_id = _normalize_case_id(raw_pid) if raw_pid else None
+
+    # 加载对应 case 的语义图数据
+    data = load_data(project_id)
+
+    # 当前文件的路径 & ETag（用于版本控制）
+    data_path = get_data_path(project_id)
+    etag = _file_etag(data_path)
+
     inm = request.headers.get("If-None-Match")
-    
     if inm and etag and inm == etag:
         resp = make_response("", 304)
         resp.headers["ETag"] = etag
-        resp.headers["Cache-Control"] = "public, max-age=60"  # 控制缓存
+        resp.headers["Cache-Control"] = "public, max-age=60"
         return resp
-    
-    # 如果数据有变化，则返回新数据
+
     resp = jsonify(data)
     if etag:
-        resp.headers["ETag"] = etag  # 设置新的 ETag
-        resp.headers["Cache-Control"] = "public, max-age=60"  # 控制缓存
+        resp.headers["ETag"] = etag
+        resp.headers["Cache-Control"] = "public, max-age=60"
     return resp
-
 
 @app.get("/api/semantic-map/indices")
 def get_indices_only():
-    data = load_data()
+    raw_pid = request.args.get("project_id") or request.args.get("case")
+    project_id = _normalize_case_id(raw_pid) if raw_pid else None
+    data = load_data(project_id)
     return jsonify(data.get("indices", {}))
 
 @app.get("/api/semantic-map/msu/<int:mid>")
 def get_msu_detail(mid: int):
-    data = load_data()
+    raw_pid = request.args.get("project_id") or request.args.get("case")
+    project_id = _normalize_case_id(raw_pid) if raw_pid else None
+    data = load_data(project_id)
     msu = data.get("msu_index", {}).get(str(mid)) or data.get("msu_index", {}).get(mid)
     if msu is None:
         abort(404, f"MSU {mid} not found")
     return jsonify(msu)
 
+
 @app.post("/api/subspaces")
 def create_subspace():
     body = request.get_json(force=True) or {}
+    raw_pid = body.get("project_id") or request.args.get("project_id") or request.args.get("case")
+    project_id = _normalize_case_id(raw_pid) if raw_pid else None
+
     name = (body.get("subspaceName") or "").strip()
-    data = load_data()
+    data = load_data(project_id)
     new_idx = len(data.get("subspaces", []))
     subspace = {
         "panelIdx": new_idx,
@@ -343,22 +404,26 @@ def create_subspace():
         "countries": body.get("countries", [])
     }
     data.setdefault("subspaces", []).append(subspace)
-    save_data(data)
-    return jsonify({"index": new_idx, "subspace": subspace}), 201
+    save_data(data, project_id)
+    return jsonify({"index": new_idx, "subspace": subspace, "project_id": project_id}), 201
 
 @app.patch("/api/subspaces/<int:idx>")
 def rename_subspace(idx: int):
     body = request.get_json(force=True) or {}
+    raw_pid = body.get("project_id") or request.args.get("project_id") or request.args.get("case")
+    project_id = _normalize_case_id(raw_pid) if raw_pid else None
+
     new_name = (body.get("subspaceName") or "").strip()
     if not new_name:
         abort(400, "subspaceName required")
-    data = load_data()
+    data = load_data(project_id)
     subs = data.get("subspaces", [])
     if idx < 0 or idx >= len(subs):
         abort(404, "subspace not found")
     subs[idx]["subspaceName"] = new_name
-    save_data(data)
-    return jsonify({"index": idx, "subspace": subs[idx]})
+    save_data(data, project_id)
+    return jsonify({"index": idx, "subspace": subs[idx], "project_id": project_id})
+
 
 # ================= RAG Service (per-PDF indexing & structured answering) =================
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
@@ -706,12 +771,18 @@ def query_gpt():
     if task_type == "subspace" or is_subspace_command(user_query):
         try:
             tool_prompt = (
-                "You are a UI command normalizer for controlling subspace visibility.\n"
-                "From the USER text, output STRICT JSON: {\"command\":\"<string>\"}\n"
-                "Allowed forms:\n"
+                "You are a UI command normalizer for controlling subspace visibility across THREE cases: case1, case2, case3.\n"
+                "From the USER text, output STRICT JSON: "
+                "{\"command\":\"<string>\",\"project_id\":\"case1|case2|case3|null\"}\n"
+                "Allowed command forms:\n"
                 "- \"show all subspaces\" / \"hide all subspaces\"\n"
                 "- \"show <name1>, <name2>\"  or  \"hide <name1>, <name2>\"\n"
-                "Do NOT add extra keys. If ambiguous, choose the most likely show/hide with top-2 names.\n"
+                "Case selection rules:\n"
+                "- If the user mentions case 1 / case1, set project_id=\"case1\".\n"
+                "- If case 2 / case2, set project_id=\"case2\".\n"
+                "- If case 3 / case3, set project_id=\"case3\".\n"
+                "- If not clearly specified, set project_id=\"null\".\n"
+                "Do NOT add extra keys.\n"
                 f"USER: {user_query}\nJSON:"
             )
             resp = client.chat.completions.create(
@@ -721,15 +792,35 @@ def query_gpt():
             )
             js = json.loads(resp.choices[0].message.content or "{}")
             cmd_from_llm = (js.get("command") or "").strip()
+            pid_from_llm = js.get("project_id")
+            if isinstance(pid_from_llm, str):
+                pid_from_llm = pid_from_llm.strip().lower()
+                if pid_from_llm in ("case1", "case2", "case3"):
+                    project_id = pid_from_llm
+                else:
+                    project_id = None
+            else:
+                project_id = None
         except Exception:
             cmd_from_llm = ""
+            project_id = None
+
+        # 规则兜底：如果 LLM 没认出 case，就从自然语言里模糊匹配一次
+        if not project_id:
+            project_id = _match_case_id(user_query)
 
         command = cmd_from_llm if cmd_from_llm else parse_subspace_command(user_query)
+
         return jsonify({
             "mode": "subspace/control",
-            "payload": { "text": command },
+            "payload": {
+                "text": command,
+                # 新增：告诉前端当前指令针对哪个 case
+                "project_id": project_id  # e.g. "case1" / "case2" / "case3" / null
+            },
             "meta": {}
         }), 200
+
 
     # 1) NL intent for RAG（规则优先，失败走 LLM）
     intent = parse_intent_rules(user_query)

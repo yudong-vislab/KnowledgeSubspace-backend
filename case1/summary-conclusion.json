@@ -41,7 +41,7 @@
     "MSU_ids": [
       70
     ],
-    "summary": "Summary: The sentence extracted from the paper \"largeeddyMSU\" highlights the negative impact of Mach number fluctuations on the stability of a scramjet. This cluster appears to revolve around the aerodynamic challenges associated with scramjet propulsion systems, specifically focusing on how Mach number variability impacts stability."
+    "summary": "The sentence extracted from the paper \"largeeddyMSU\" highlights the negative impact of Mach number fluctuations on the stability of a scramjet. This cluster appears to revolve around the aerodynamic challenges associated with scramjet propulsion systems, specifically focusing on how Mach number variability impacts stability."
   },
   {
     "hex_coord": [
@@ -52,7 +52,7 @@
     "MSU_ids": [
       81
     ],
-    "summary": "Summary: This cluster indicates a shared focus on research related to backpressure-induced unstable flames, particularly in investigating their physical mechanisms. The sentences are likely discussing different aspects or findings within this specific research domain."
+    "summary": "This cluster indicates a shared focus on research related to backpressure-induced unstable flames, particularly in investigating their physical mechanisms. The sentences are likely discussing different aspects or findings within this specific research domain."
   },
   {
     "hex_coord": [
@@ -88,7 +88,7 @@
       88,
       267
     ],
-    "summary": "Summary: The sentences extracted from the paper \"largeeddyMSU\" focus on studying flame stabilization mechanisms in separated flow, particularly investigating cavity shear-layer stabilized combustion. These sentences are related as they discuss different aspects of the same research topic, highlighting the common theme of flame stabilization in separated flow."
+    "summary": "The sentences extracted from the paper \"largeeddyMSU\" focus on studying flame stabilization mechanisms in separated flow, particularly investigating cavity shear-layer stabilized combustion. These sentences are related as they discuss different aspects of the same research topic, highlighting the common theme of flame stabilization in separated flow."
   },
   {
     "hex_coord": [
@@ -99,7 +99,7 @@
     "MSU_ids": [
       89
     ],
-    "summary": "Summary: The collection of sentences, despite their brevity, points towards a shared focus on investigating unsteady flame dynamics in separated flow, emphasizing the pursuit of a comprehensive understanding within this specific research domain. The proximity of these sentences is indicative of a cohesive exploration of this particular topic."
+    "summary": "The collection of sentences, despite their brevity, points towards a shared focus on investigating unsteady flame dynamics in separated flow, emphasizing the pursuit of a comprehensive understanding within this specific research domain. The proximity of these sentences is indicative of a cohesive exploration of this particular topic."
   },
   {
     "hex_coord": [
@@ -110,7 +110,7 @@
     "MSU_ids": [
       195
     ],
-    "summary": "Summary: The sentence extracted from the paper \"largeeddyMSU\" suggests that finite-rate chemical kinetics effects are prevalent across the domain, particularly where the convective timescale is approximately equal to the mixing timescale. These findings imply a focus on the interaction between chemical kinetics and turbulent flow dynamics."
+    "summary": "The sentence extracted from the paper \"largeeddyMSU\" suggests that finite-rate chemical kinetics effects are prevalent across the domain, particularly where the convective timescale is approximately equal to the mixing timescale. These findings imply a focus on the interaction between chemical kinetics and turbulent flow dynamics."
   },
   {
     "hex_coord": [
@@ -191,7 +191,7 @@
       274,
       403
     ],
-    "summary": "Summary: The cluster of sentences addresses the topic of combustion instability in cavity-assisted jet-wake interactions, particularly focusing on issues such as flow oscillation and transient thermal choking. These discussions suggest a shared focus on the challenges of combustion control in complex flow environments."
+    "summary": "The cluster of sentences addresses the topic of combustion instability in cavity-assisted jet-wake interactions, particularly focusing on issues such as flow oscillation and transient thermal choking. These discussions suggest a shared focus on the challenges of combustion control in complex flow environments."
   },
   {
     "hex_coord": [
@@ -202,7 +202,7 @@
     "MSU_ids": [
       282
     ],
-    "summary": "Summary: The sentence extracted from the paper \"Large Eddy Simulation of Jet-Wake Stabilized Combustion\" suggests that achieving pure jet-wake stabilized combustion is challenging under low inflow stagnation temperatures. This indicates a focus on the difficulties associated with achieving stable combustion in such conditions. The cluster likely pertains to the challenges of combustion stability in specific temperature environments and the role of jet-wake interactions."
+    "summary": "The sentence extracted from the paper \"Large Eddy Simulation of Jet-Wake Stabilized Combustion\" suggests that achieving pure jet-wake stabilized combustion is challenging under low inflow stagnation temperatures. This indicates a focus on the difficulties associated with achieving stable combustion in such conditions. The cluster likely pertains to the challenges of combustion stability in specific temperature environments and the role of jet-wake interactions."
   },
   {
     "hex_coord": [
@@ -236,7 +236,7 @@
       362,
       388
     ],
-    "summary": "Summary: The cluster of sentences from the papers \"Large Eddy Simulation of High-Speed Reacting Flows Using MSU-TUD Turbulence Model\" reveals a common focus on flame behavior within a cavity environment, specifically highlighting the flame's potential transition to cavity mode and the dominance of the jet-wake flame in heat release. The sentences are discussing different aspects of the behavior of flames within cavities, suggesting a coherent theme."
+    "summary": "The cluster of sentences from the papers \"Large Eddy Simulation of High-Speed Reacting Flows Using MSU-TUD Turbulence Model\" reveals a common focus on flame behavior within a cavity environment, specifically highlighting the flame's potential transition to cavity mode and the dominance of the jet-wake flame in heat release. The sentences are discussing different aspects of the behavior of flames within cavities, suggesting a coherent theme."
   },
   {
     "hex_coord": [
@@ -269,7 +269,7 @@
     "MSU_ids": [
       419
     ],
-    "summary": "Summary: The common theme among the sentences revolves around the analysis of self-sustained shear-layer oscillations induced by vortex shedding, as evidenced by the reference to large eddy simulations in the paper \"largeeddyMSU.\"\n\nRelationship: The sentences are likely discussing different aspects or findings related to the self-sustained shear-layer oscillations induced by vortex shedding within the context of the large eddy simulation study, suggesting a shared focus on this phenomenon."
+    "summary": "The common theme among the sentences revolves around the analysis of self-sustained shear-layer oscillations induced by vortex shedding, as evidenced by the reference to large eddy simulations in the paper \"largeeddyMSU.\"\n\nRelationship: The sentences are likely discussing different aspects or findings related to the self-sustained shear-layer oscillations induced by vortex shedding within the context of the large eddy simulation study, suggesting a shared focus on this phenomenon."
   },
   {
     "hex_coord": [
@@ -280,7 +280,7 @@
     "MSU_ids": [
       461
     ],
-    "summary": "Summary: The common theme among the provided sentences is the optimization of dimensional parameters in a combustor to suppress low-frequency oscillations. These sentences likely relate to the study of combustion control and performance enhancement in engineering systems."
+    "summary": "The common theme among the provided sentences is the optimization of dimensional parameters in a combustor to suppress low-frequency oscillations. These sentences likely relate to the study of combustion control and performance enhancement in engineering systems."
   },
   {
     "hex_coord": [
@@ -335,7 +335,7 @@
     "MSU_ids": [
       591
     ],
-    "summary": "Summary: The sentences suggest a common focus on enhancing user-friendliness and interpretability in medical systems, particularly in the context of medical imaging and computer-aided diagnosis (CAD) systems."
+    "summary": "The sentences suggest a common focus on enhancing user-friendliness and interpretability in medical systems, particularly in the context of medical imaging and computer-aided diagnosis (CAD) systems."
   },
   {
     "hex_coord": [
@@ -424,7 +424,7 @@
       751,
       796
     ],
-    "summary": "Summary: The sentences suggest a common theme related to the analysis and deployment of machine learning models. They focus on the compatibility and adoption of specific tools, aiming for consistent configurations and streamlined workflow deployments in the context of model embeddings."
+    "summary": "The sentences suggest a common theme related to the analysis and deployment of machine learning models. They focus on the compatibility and adoption of specific tools, aiming for consistent configurations and streamlined workflow deployments in the context of model embeddings."
   },
   {
     "hex_coord": [
@@ -512,7 +512,7 @@
     "MSU_ids": [
       973
     ],
-    "summary": "Summary: The sentence extracted from the paper \"temporalvisMSU\" indicates a consistent combustion mode despite spatial variation in flame shape, suggesting a focus on the relationship between flame characteristics and combustion behavior. The common theme revolves around understanding the stability of combustion modes amidst spatial variations in flame shape."
+    "summary": "The sentence extracted from the paper \"temporalvisMSU\" indicates a consistent combustion mode despite spatial variation in flame shape, suggesting a focus on the relationship between flame characteristics and combustion behavior. The common theme revolves around understanding the stability of combustion modes amidst spatial variations in flame shape."
   },
   {
     "hex_coord": [
@@ -523,7 +523,7 @@
     "MSU_ids": [
       974
     ],
-    "summary": "Summary: The cluster of sentences suggests a common focus on analyzing systems' capabilities in differentiating between transient structural changes and true combustion mode transitions. This likely indicates a shared interest in studying temporal visualization techniques for identifying and understanding these distinctions."
+    "summary": "The cluster of sentences suggests a common focus on analyzing systems' capabilities in differentiating between transient structural changes and true combustion mode transitions. This likely indicates a shared interest in studying temporal visualization techniques for identifying and understanding these distinctions."
   },
   {
     "hex_coord": [
@@ -545,7 +545,7 @@
     "MSU_ids": [
       993
     ],
-    "summary": "Summary: The sentences suggest a common theme of analyzing and differentiating combustion behaviors across varied cases using clustering techniques. The relationship between the sentences indicates a focus on the effectiveness of a system in characterizing these behaviors, potentially hinting at research in the field of combustion analysis and visualization."
+    "summary": "The sentences suggest a common theme of analyzing and differentiating combustion behaviors across varied cases using clustering techniques. The relationship between the sentences indicates a focus on the effectiveness of a system in characterizing these behaviors, potentially hinting at research in the field of combustion analysis and visualization."
   },
   {
     "hex_coord": [
@@ -556,7 +556,7 @@
     "MSU_ids": [
       994
     ],
-    "summary": "Summary: The common theme among the provided sentences is the analysis of combustion behaviors through systems that effectively separate and characterize them despite fluctuations in OH field trajectories at steady state. These sentences seem related in the context of studying combustion dynamics and monitoring field trajectories."
+    "summary": "The common theme among the provided sentences is the analysis of combustion behaviors through systems that effectively separate and characterize them despite fluctuations in OH field trajectories at steady state. These sentences seem related in the context of studying combustion dynamics and monitoring field trajectories."
   },
   {
     "hex_coord": [
@@ -657,7 +657,7 @@
     "MSU_ids": [
       1041
     ],
-    "summary": "Summary: The common theme across the sentences is the development of TemporalFlowViz as an integrated visual analytics tool that combines deep learning, trajectory-based reasoning, and semantic interpretability to understand combustion dynamics in scientific simulations. These sentences likely discuss different aspects of this tool's capabilities and features."
+    "summary": "The common theme across the sentences is the development of TemporalFlowViz as an integrated visual analytics tool that combines deep learning, trajectory-based reasoning, and semantic interpretability to understand combustion dynamics in scientific simulations. These sentences likely discuss different aspects of this tool's capabilities and features."
   },
   {
     "hex_coord": [
@@ -679,7 +679,7 @@
     "MSU_ids": [
       1047
     ],
-    "summary": "Summary: The common theme across the sentences is the utilization of a multimodal annotation workflow to facilitate scalable and automated labeling of scientific phenomena. This indicates a focus on enhancing the efficiency and accuracy of data annotation processes using multiple modalities, potentially within the context of scientific research."
+    "summary": "The common theme across the sentences is the utilization of a multimodal annotation workflow to facilitate scalable and automated labeling of scientific phenomena. This indicates a focus on enhancing the efficiency and accuracy of data annotation processes using multiple modalities, potentially within the context of scientific research."
   },
   {
     "hex_coord": [
@@ -690,6 +690,7 @@
     "MSU_ids": [
       1048
     ],
-    "summary": "Summary: The shared theme among the sentences is the automation of labeling scientific phenomena to alleviate the burden on experts, hinting at a focus on developing efficiency through automated processes in scientific analysis. The sentences are related through this common thread of enhancing productivity and streamlining tasks in scientific endeavors."
+    "summary": "The shared theme among the sentences is the automation of labeling scientific phenomena to alleviate the burden on experts, hinting at a focus on developing efficiency through automated processes in scientific analysis. The sentences are related through this common thread of enhancing productivity and streamlining tasks in scientific endeavors."
   }
 ]
+

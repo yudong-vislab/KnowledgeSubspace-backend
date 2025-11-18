@@ -1,7 +1,7 @@
 {
   "version": "1.1",
   "build_info": {
-    "ts": 1762398433,
+    "ts": 1763432928,
     "tool": "build_semantic_map_from_db_summary.py",
     "options": {
       "strict_format": false,
@@ -1698,7 +1698,7 @@
           "r": 9,
           "modality": "text",
           "country_id": "c3",
-          "summary": "The core theme of this cluster revolves around the visualization of large-scale spatial time series using GeoChron. The extracted sentence highlights the involvement of expert analysts such as climate change researchers and air pollution control specialists in this visualization process.\n\n**Relationship Synthesis:**\nThe sentence suggests that GeoChron is a tool used by expert analysts from diverse fields, emphasizing the importance of visualizing spatial time series data for climate change research and air pollution control. This points to a shared focus on leveraging GeoChron for specialized analysis across disciplines, showcasing the intersection of technology, spatial data, and environmental research.",
+          "summary": "**Summary:**\nThe core theme of this cluster revolves around the visualization of large-scale spatial time series using GeoChron. The extracted sentence highlights the involvement of expert analysts such as climate change researchers and air pollution control specialists in this visualization process.\n\n**Relationship Synthesis:**\nThe sentence suggests that GeoChron is a tool used by expert analysts from diverse fields, emphasizing the importance of visualizing spatial time series data for climate change research and air pollution control. This points to a shared focus on leveraging GeoChron for specialized analysis across disciplines, showcasing the intersection of technology, spatial data, and environmental research.",
           "msu_ids": [
             2331
           ]
@@ -2842,7 +2842,7 @@
           "r": 5,
           "modality": "text",
           "country_id": "c2",
-          "summary": "The cluster of sentences revolves around the importance of reducing uncertainty in direct radiative effects over biomass burning regions by constraining absorbing aerosols. The highlighted sentence underscores the necessity for additional research in this area.",
+          "summary": "**Summary:**\nThe cluster of sentences revolves around the importance of reducing uncertainty in direct radiative effects over biomass burning regions by constraining absorbing aerosols. The highlighted sentence underscores the necessity for additional research in this area.",
           "msu_ids": [
             1252
           ]
@@ -2852,7 +2852,7 @@
           "r": 1,
           "modality": "text",
           "country_id": "c2",
-          "summary": "The shared theme across the paper titles and extracted sentence revolves around improving the accuracy of models in assessing direct radiative effects over biomass burning regions. The focus is on reducing uncertainties by constraining absorbing aerosols, emphasizing the importance of integrated data sources for robust conclusions.",
+          "summary": "**Summary:**\nThe shared theme across the paper titles and extracted sentence revolves around improving the accuracy of models in assessing direct radiative effects over biomass burning regions. The focus is on reducing uncertainties by constraining absorbing aerosols, emphasizing the importance of integrated data sources for robust conclusions.",
           "msu_ids": [
             1254
           ]
@@ -4065,7 +4065,7 @@
           "r": 5,
           "modality": "text",
           "country_id": "c2",
-          "summary": "The cluster of sentences addresses the reduction of modeled uncertainty in direct radiative effects over biomass burning regions by constraining absorbing aerosols, demonstrated through the analysis of daily averages of Aerosol Optical Depth (AOD) and formaldehyde column data. The common theme revolves around improving modeling accuracy in depicting the impact of absorbing aerosols on direct radiative effects in these specific regions rather than coincidental proximity.",
+          "summary": "**Summary:**\nThe cluster of sentences addresses the reduction of modeled uncertainty in direct radiative effects over biomass burning regions by constraining absorbing aerosols, demonstrated through the analysis of daily averages of Aerosol Optical Depth (AOD) and formaldehyde column data. The common theme revolves around improving modeling accuracy in depicting the impact of absorbing aerosols on direct radiative effects in these specific regions rather than coincidental proximity.",
           "msu_ids": [
             1233
           ]
@@ -4105,7 +4105,7 @@
           "r": 2,
           "modality": "text",
           "country_id": "c2",
-          "summary": "The common theme across these sentences pertains to the reduction of modeled uncertainty in direct radiative effects specifically related to biomass burning regions. The discussion revolves around the impact of constraining absorbing aerosols on this uncertainty, as evidenced by the comparison between default and corrected simulations in the provided data.",
+          "summary": "**Summary:**\nThe common theme across these sentences pertains to the reduction of modeled uncertainty in direct radiative effects specifically related to biomass burning regions. The discussion revolves around the impact of constraining absorbing aerosols on this uncertainty, as evidenced by the comparison between default and corrected simulations in the provided data.",
           "msu_ids": [
             1275
           ]
@@ -4115,7 +4115,7 @@
           "r": 4,
           "modality": "text",
           "country_id": "c2",
-          "summary": "The cluster of sentences indicates a common focus on reducing modeled uncertainty in direct radiative effects over biomass burning regions through constraining absorbing aerosols, with specific mention of the threefold reduction achieved in this context. The relationship suggests a shared exploration of methodological advancements in addressing this environmental challenge.",
+          "summary": "**Summary:**\nThe cluster of sentences indicates a common focus on reducing modeled uncertainty in direct radiative effects over biomass burning regions through constraining absorbing aerosols, with specific mention of the threefold reduction achieved in this context. The relationship suggests a shared exploration of methodological advancements in addressing this environmental challenge.",
           "msu_ids": [
             1276
           ]
